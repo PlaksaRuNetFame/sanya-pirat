@@ -21994,26 +21994,26 @@ do
 					local character = player.Character
 
 					if character then
-						if character:FindFirstChild("HumanoidRootPart") then
-							local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+						-- БЕЗОПАСНАЯ ПРОВЕРКА: Сначала ищем части, чтобы скрипт не падал
+						local rootPart = character:FindFirstChild("HumanoidRootPart")
+						local humanoid2 = character:FindFirstChildOfClass("Humanoid")
 
-							if humanoid2 then
-								if humanoid2.Health then
-									local torso = character:FindFirstChild("Torso")
+						if rootPart and humanoid2 then
+							if humanoid2.Health then
+								local torso = character:FindFirstChild("Torso")
 
-									if not (not torso or torso.Transparency == 1) then
-										if not fn20(humanoid2, "15128849047") then
-											if not character:FindFirstChildWhichIsA("ForceField") then
-												if not (character:GetAttribute("Ulted") and (character:GetAttribute("Character") == "Batter" or character:GetAttribute("Character") == "Bald") or character:FindFirstChild("Counter")) then
-													local position = character.HumanoidRootPart.Position
+								if not (not torso or torso.Transparency == 1) then
+									if not fn20(humanoid2, "15128849047") then
+										if not character:FindFirstChildWhichIsA("ForceField") then
+											if not (character:GetAttribute("Ulted") and (character:GetAttribute("Character") == "Batter" or character:GetAttribute("Character") == "Bald") or character:FindFirstChild("Counter")) then
+												local position = rootPart.Position
 
-													if position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700 then
-														local health2 = humanoid2.Health
+												if position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700 then
+													local health2 = humanoid2.Health
 
-														if health2 > 0 and health2 < huge then
-															huge = health2
-															v6 = player
-														end
+													if health2 > 0 and health2 < huge then
+														huge = health2
+														v6 = player
 													end
 												end
 											end
