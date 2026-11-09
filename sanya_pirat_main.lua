@@ -307,10 +307,6 @@ if getgenv().ScriptExecuted then
 	return
 end
 
-if identifyexecutor() then
-	identifyexecutor()
-end
-
 getgenv().ScriptExecuted = true
 local flag
 flag = false
