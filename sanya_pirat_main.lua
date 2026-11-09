@@ -1,0 +1,25689 @@
+local ProtectionConfig = {
+    SecretKey = "2009",
+    
+    -- The name of your Hub (shown in the kick message if they try to bypass)
+    HubName = "SANYA PIRAT"
+}
+
+-- Anti-Bypass Logic: Checks if the Key System successfully set the global variable
+if not _G[ProtectionConfig.SecretKey] then
+    local player = game:GetService("Players").LocalPlayer
+    if player then
+        player:Kick("\nð¡ï¸ Unauthorized Execution ð¡ï¸\n\nPlease use the official Key System to run " .. ProtectionConfig.HubName)
+    end
+    return -- Stops the rest of the script from loading!
+end
+
+-------------------------------------------------------------------------------
+-- ð YOUR MAIN SCRIPT CODE STARTS HERE ð
+-------------------------------------------------------------------------------
+
+print(ProtectionConfig.HubName .. " Loaded Successfully!")
+
+local SANYA_PIRAT_LINK = "https://t.me/sanyapiratit"
+
+do
+	local v = pcall
+	local v2 = error
+	local v3 = type
+	local v4 = typeof
+	local v5 = select
+	local v6 = ipairs
+
+	local random = math and math.random or function()
+		return 0
+	end
+
+	local str = "hduSjOT3xk44"
+
+	local function fn()
+		v2("[SANYA PIRAT] This script could not verify its runtime environment.", 0)
+	end
+
+	local tbl = {}
+
+	tbl[#tbl + 1] = function()
+		if v4(Enum.Material.Plastic) ~= "EnumItem" then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		local HttpService = game:GetService("HttpService")
+		local json = HttpService:JSONEncode({ p = true })
+
+		if v3(json) ~= "string" then
+			v2("x")
+		end
+
+		local data = HttpService:JSONDecode(json)
+
+		if v3(data) ~= "table" or data.p ~= true then
+			v2("x")
+		end
+
+		local v7 = HttpService:GenerateGUID(false)
+
+		if v3(v7) ~= "string" or #v7 ~= 36 or string.sub(v7, 9, 9) ~= "-" then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		local n = Vector3.new(1, 2, 3) + Vector3.one
+
+		if v4(n) ~= "Vector3" then
+			v2("x")
+		end
+
+		if n.X ~= 2 or n.Y ~= 3 or n.Z ~= 4 then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		local Workspace_ = game:GetService("Workspace")
+
+		if v4(Workspace_) ~= "Instance" then
+			v2("x")
+		end
+
+		if Workspace_:IsA("Workspace") ~= true then
+			v2("x")
+		end
+
+		if Workspace_:IsA("NC_" .. str) ~= false then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		if v(getfenv, 2147483647) then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		if v(function()
+			return game()
+		end) then
+			v2("x")
+		end
+
+		if v(function()
+			for k in game, nil, nil do
+			end
+		end) then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		local part, v7 = v(Instance.new, "Part")
+
+		if not part or v4(v7) ~= "Instance" then
+			v2("x")
+		end
+
+		local name = "P_" .. str
+		v7.Name = name
+
+		if v7.Name ~= name then
+			v2("x")
+		end
+
+		if v(function()
+			return v7["NP_" .. str]
+		end) then
+			v2("x")
+		end
+
+		v(function()
+			v7:Destroy()
+		end)
+	end
+
+	tbl[#tbl + 1] = function()
+		if v4(game) ~= "Instance" then
+			v2("x")
+		end
+	end
+
+	tbl[#tbl + 1] = function()
+		if v(Instance.new, "NC_" .. str .. tostring(random(1, 1000000))) then
+			v2("x")
+		end
+	end
+
+	local flag = false
+
+	for _, v7 in v6(tbl) do
+		if not v(v7) then
+			flag = true
+		end
+	end
+
+	local n = 0
+
+	local function fn2(arg)
+		if not v(arg) then
+			n += 1
+		end
+	end
+
+	local tbl2 = {}
+
+	tbl2[#tbl2 + 1] = function()
+		local info = debug and debug.info
+		if v3(info) ~= "function" then
+			return
+		end
+		local n2 = 0
+
+		if info(v, "s") ~= "[C]" then
+			n2 = 1
+		end
+
+		if info(v3, "s") ~= "[C]" then
+			n2 += 1
+		end
+
+		if info(v4, "s") ~= "[C]" then
+			n2 += 1
+		end
+
+		if n2 >= 2 then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local info = debug and debug.info
+
+		if v3(info) == "function" and info(print, "s") ~= "[C]" then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local n2 = 0
+
+		local connection = game:GetService("RunService").Heartbeat:Connect(function()
+			n2 += 1
+		end)
+
+		local n3 = 0
+
+		while true do
+			task.wait()
+			n3 += 1
+			if not (n2 >= 2 or n3 >= 8) then
+				continue
+			end
+			break
+		end
+
+		connection:Disconnect()
+
+		if n2 < 2 then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local localPlayer = game:GetService("Players").LocalPlayer
+
+		if v4(localPlayer) ~= "Instance" then
+			v2("x")
+		end
+
+		local userId = localPlayer.UserId
+
+		if v3(userId) ~= "number" or userId <= 0 then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local count = collectgarbage("count")
+		local tbl3 = {}
+
+		for i = 1, 400 do
+			tbl3[i] = { i }
+		end
+
+		if collectgarbage("count") <= count then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local flag2 = false
+
+		local function fn3(...)
+			if v5("#", ...) > 0 then
+				flag2 = true
+			end
+		end
+
+		fn3()
+
+		if flag2 then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local tbl3 = {}
+
+		local v7, v8 = v(function()
+			v2(tbl3)
+		end)
+
+		if v8 ~= tbl3 then
+			v2("x")
+		end
+	end
+
+	tbl2[#tbl2 + 1] = function()
+		local now = os.clock()
+		task.wait()
+
+		if os.clock() - now <= 0 then
+			v2("x")
+		end
+	end
+
+	for _, v7 in v6(tbl2) do
+		fn2(v7)
+	end
+
+	-- Environment verification bypassed
+	if false and (flag or n >= 4) then
+		fn()
+	end
+end
+
+if getgenv().ScriptExecuted then
+	return
+end
+
+if identifyexecutor() then
+	identifyexecutor()
+end
+
+getgenv().ScriptExecuted = true
+local flag
+flag = false
+local TweenService
+TweenService = game:GetService("TweenService")
+local RunService
+RunService = game:GetService("RunService")
+-- Existing authentication state from the supplied script is retained.
+local flag2 = true -- Unlocks Premium features
+_G.KeyValidated = true
+
+task.spawn(function()
+	local tbl = { "ParticleEmitter", "Trail", "Beam", "Fire", "Smoke", "Sparkles", "Explosion", "Sound" }
+
+	local tbl2 = {
+		Thrown = true,
+		Preload = true,
+		Built = true,
+		Benchs = true,
+		["Floor/Roads"] = true,
+		GrassBottom = true,
+		GrassTop = true,
+		Stuff = true,
+		Trash = true,
+		Trees = true,
+		Grass = true,
+		Walls = true,
+		Tunnel = true,
+	}
+
+	local function fn(arg)
+		for _, v in tbl, nil, nil do
+			if arg:IsA(v) then
+				return true
+			end
+		end
+
+		if (arg:IsA("Folder") or arg:IsA("Model")) and tbl2[arg.Name] then
+			return true
+		end
+		return false
+	end
+
+	local function fn2(descendant)
+		if fn(descendant) then
+			task.defer(function()
+				if descendant and descendant.Parent then
+					descendant:Destroy()
+				end
+			end)
+		end
+	end
+
+	workspace.DescendantAdded:Connect(fn2)
+
+	for _, v in workspace:GetDescendants() do
+		fn2(v)
+	end
+
+	print("[zkayreal] Super Fix Lag Activated!")
+end)
+
+local tbl
+
+tbl = {
+	"France",
+	"Netherlands",
+	"United States",
+	"United Kingdom",
+	"Australia",
+	"Germany",
+	"India",
+	"Brazil",
+	"Singapore",
+	"Japan",
+}
+
+local flag3
+flag3 = true
+local HttpService
+HttpService = game:GetService("HttpService")
+local v, fn
+
+do
+	local str = "SanyaPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name
+	local str2 = str .. "/settings.json"
+
+	local function fn2()
+		if not isfolder("SanyaPiratHub") then
+			makefolder("SanyaPiratHub")
+		end
+
+		if not isfolder(str) then
+			makefolder(str)
+		end
+	end
+
+	v = table.clone({ country = tbl[1], webhookUrl = "" })
+
+	fn = function()
+		fn2()
+		local ok, result = pcall(HttpService.JSONEncode, HttpService, v)
+
+		if ok then
+			writefile(str2, result)
+		else
+			warn("[SANYA PIRAT] Failed to encode settings:", result)
+		end
+	end
+
+	local function fn3()
+		fn2()
+		if not isfile(str2) then
+			return
+		end
+		local ok, result = pcall(readfile, str2)
+		if not ok then
+			warn("[SANYA PIRAT] Failed to read settings file:", result)
+			return
+		end
+		local ok2, result2 = pcall(HttpService.JSONDecode, HttpService, result)
+		if not ok2 or type(result2) ~= "table" then
+			warn("[SANYA PIRAT] Failed to decode settings file, using defaults")
+			return
+		end
+
+		for k, v2 in pairs(result2) do
+			v[k] = v2
+		end
+	end
+
+	fn3()
+end
+
+getgenv().TimeFarmed = getgenv().TimeFarmed or 0
+getgenv().session_start = getgenv().session_start or os.time()
+getgenv().carriedKills = getgenv().carriedKills or 0
+getgenv().emotes = getgenv().emotes or 0
+-- UI bridge shared with the unchanged farming logic below.
+local tbl3 = {}
+local doServerHop = getgenv().DoServerHop
+if doServerHop == nil then
+    doServerHop = true
+end
+local uiActions = {}
+local fn4
+
+do
+-- BEGIN EMBEDDED LIBRARY FROM ui.txt (example script excluded)
+local Library = (function()
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local GuiService = game:GetService("GuiService")
+local RunService = game:GetService("RunService")
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+local MarketplaceService = game:GetService("MarketplaceService")
+local StatsService = game:GetService("Stats")
+
+local LocalPlayer = Players.LocalPlayer
+
+local Library = {}
+
+Library.Flags = {}
+Library.Windows = {}
+
+local function normalize(source, map)
+    local opts = {}
+    if type(source) == "string" then
+        opts.Name = source
+    elseif type(source) == "table" then
+        for key, value in pairs(source) do
+            opts[key] = value
+        end
+    end
+    for from, to in pairs(map or {}) do
+        if opts[to] == nil and opts[from] ~= nil then
+            opts[to] = opts[from]
+        end
+    end
+    if opts.Range then
+        opts.Min = opts.Min or opts.Range[1]
+        opts.Max = opts.Max or opts.Range[2]
+    end
+    return opts
+end
+
+local function finishElement(tab, opts, element, frame, kind)
+    element._type = kind
+    element._frame = frame
+    element._listeners = element._listeners or {}
+    local window = tab and tab.Window
+    local searchText = opts.Name or opts.Text or opts.Title
+    element._searchName = type(searchText) == "string" and searchText or ""
+    element._searchKey = string.lower(element._searchName)
+    if tab and tab._items then
+        table.insert(tab._items, element)
+    end
+    if opts.Flag then
+        Library.Flags[opts.Flag] = element
+        if window then
+            window:_flagCreated(opts.Flag, element)
+        end
+    end
+    element._userVisible = opts.Visible ~= false
+    function element:IsVisible()
+        return element._userVisible
+    end
+    function element:_isShown()
+        return element._userVisible and not (tab and tab._userVisible == false)
+    end
+    function element:SetVisible(visible)
+        visible = visible and true or false
+        if visible == element._userVisible or element._destroyed then
+            return
+        end
+        element._userVisible = visible
+        if not visible then
+            if element._onHide then
+                element._onHide()
+            end
+            if element.Open and type(element.SetOpen) == "function" then
+                element:SetOpen(false)
+            end
+        end
+        if frame then
+            frame.Visible = visible
+        end
+        if window then
+            window._controlsDirty = true
+        end
+    end
+    if frame and not element._userVisible then
+        frame.Visible = false
+    end
+    -- Tooltip: a string, or { Title, Text, Icon }. nil, false or "" hides it.
+    function element:SetTooltip(tip)
+        element._tooltip = tip
+        if frame and window and not element._tooltipBound then
+            element._tooltipBound = true
+            window:_attachTooltip(element, frame)
+        end
+    end
+    function element:GetTooltip()
+        return element._tooltip
+    end
+    if opts.Tooltip ~= nil and opts.Tooltip ~= false then
+        element:SetTooltip(opts.Tooltip)
+    end
+    function element:Destroy()
+        if element._destroyed then
+            return
+        end
+        element._destroyed = true
+        if window and window._tipOwner == element then
+            window:_hideTooltip()
+        end
+        for _, disconnect in ipairs(element._listeners) do
+            disconnect()
+        end
+        element._listeners = {}
+        if tab and tab._items then
+            local index = table.find(tab._items, element)
+            if index then
+                table.remove(tab._items, index)
+            end
+        end
+        if opts.Flag and Library.Flags[opts.Flag] == element then
+            Library.Flags[opts.Flag] = nil
+        end
+        if window then
+            window._controlsDirty = true
+        end
+        if frame then
+            frame:Destroy()
+        end
+    end
+    return element
+end
+
+Library.Theme = {
+    Background = Color3.fromRGB(5, 8, 6),
+    Surface = Color3.fromRGB(8, 13, 10),
+    Surface2 = Color3.fromRGB(12, 20, 15),
+    Surface3 = Color3.fromRGB(19, 33, 24),
+    Stroke = Color3.fromRGB(25, 51, 34),
+    StrokeHover = Color3.fromRGB(40, 128, 74),
+    Accent = Color3.fromRGB(45, 235, 132),
+    AccentDark = Color3.fromRGB(3, 18, 10),
+    Text = Color3.fromRGB(228, 246, 234),
+    Muted = Color3.fromRGB(120, 157, 133),
+    Warning = Color3.fromRGB(240, 176, 108),
+    Success = Color3.fromRGB(70, 220, 130),
+    Error = Color3.fromRGB(240, 120, 120),
+}
+
+-- Order decides which key wins when two theme colors are identical.
+local THEME_KEYS = {
+    "Accent", "AccentDark", "Background", "Surface", "Surface2", "Surface3",
+    "Stroke", "StrokeHover", "Text", "Muted", "Warning", "Success", "Error",
+}
+
+local function rgb(r, g, b)
+    return Color3.fromRGB(r, g, b)
+end
+
+local function preset(background, surface, surface2, surface3, strokeColor, strokeHover, accent, accentDark, text, muted)
+    return {
+        Background = rgb(table.unpack(background)),
+        Surface = rgb(table.unpack(surface)),
+        Surface2 = rgb(table.unpack(surface2)),
+        Surface3 = rgb(table.unpack(surface3)),
+        Stroke = rgb(table.unpack(strokeColor)),
+        StrokeHover = rgb(table.unpack(strokeHover)),
+        Accent = rgb(table.unpack(accent)),
+        AccentDark = rgb(table.unpack(accentDark)),
+        Text = rgb(table.unpack(text)),
+        Muted = rgb(table.unpack(muted)),
+    }
+end
+
+Library.ThemePresets = {
+    SANYA_PIRAT = preset({ 5, 8, 6 }, { 8, 13, 10 }, { 12, 20, 15 }, { 19, 33, 24 }, { 25, 51, 34 }, { 40, 128, 74 }, { 45, 235, 132 }, { 3, 18, 10 }, { 228, 246, 234 }, { 120, 157, 133 }),
+    -- Colours here must not be pure white, pure black or any other colour the
+    -- library hard-codes, or those objects would get bound to the theme.
+    Midnight = preset({ 15, 18, 26 }, { 18, 22, 31 }, { 22, 26, 37 }, { 37, 44, 60 }, { 34, 40, 55 }, { 70, 84, 112 }, { 128, 160, 246 }, { 14, 18, 30 }, { 228, 232, 242 }, { 116, 126, 148 }),
+    Ocean = preset({ 12, 20, 24 }, { 15, 24, 29 }, { 18, 29, 35 }, { 31, 48, 56 }, { 29, 44, 52 }, { 58, 92, 104 }, { 110, 214, 222 }, { 10, 24, 28 }, { 226, 238, 240 }, { 108, 134, 140 }),
+    Rose = preset({ 22, 15, 18 }, { 27, 18, 22 }, { 32, 21, 26 }, { 48, 34, 40 }, { 45, 30, 37 }, { 98, 64, 78 }, { 246, 160, 186 }, { 30, 14, 20 }, { 240, 228, 232 }, { 138, 112, 120 }),
+    Emerald = preset({ 13, 20, 17 }, { 16, 24, 20 }, { 20, 29, 24 }, { 33, 47, 40 }, { 30, 44, 37 }, { 62, 96, 78 }, { 132, 226, 170 }, { 12, 26, 18 }, { 228, 240, 233 }, { 110, 136, 122 }),
+    Amber = preset({ 22, 18, 13 }, { 27, 22, 16 }, { 32, 26, 19 }, { 49, 41, 31 }, { 46, 38, 28 }, { 100, 82, 58 }, { 246, 196, 120 }, { 30, 22, 10 }, { 242, 236, 226 }, { 140, 126, 106 }),
+    Mono = preset({ 16, 16, 17 }, { 20, 20, 21 }, { 25, 25, 26 }, { 40, 40, 42 }, { 38, 38, 40 }, { 84, 84, 88 }, { 236, 236, 240 }, { 20, 20, 22 }, { 234, 234, 236 }, { 122, 122, 128 }),
+    Nebula = preset({ 14, 12, 28 }, { 18, 15, 35 }, { 23, 19, 43 }, { 39, 32, 68 }, { 35, 29, 62 }, { 84, 68, 140 }, { 199, 125, 255 }, { 22, 10, 40 }, { 236, 230, 252 }, { 124, 114, 160 }),
+    Synthwave = preset({ 20, 12, 30 }, { 25, 15, 37 }, { 31, 18, 45 }, { 52, 30, 72 }, { 47, 27, 66 }, { 110, 58, 150 }, { 255, 94, 198 }, { 38, 8, 30 }, { 250, 232, 246 }, { 150, 118, 160 }),
+    Sakura = preset({ 24, 14, 20 }, { 29, 17, 24 }, { 35, 20, 29 }, { 54, 32, 45 }, { 50, 29, 41 }, { 112, 66, 92 }, { 255, 158, 200 }, { 36, 12, 24 }, { 248, 232, 240 }, { 150, 112, 132 }),
+    Velvet = preset({ 20, 10, 16 }, { 25, 12, 20 }, { 31, 15, 25 }, { 50, 25, 40 }, { 46, 23, 37 }, { 104, 52, 82 }, { 222, 110, 170 }, { 30, 8, 20 }, { 244, 228, 238 }, { 142, 106, 126 }),
+    Crimson = preset({ 18, 10, 12 }, { 23, 12, 15 }, { 28, 14, 18 }, { 46, 24, 29 }, { 42, 22, 27 }, { 104, 46, 56 }, { 244, 74, 94 }, { 32, 8, 12 }, { 244, 230, 232 }, { 142, 106, 112 }),
+    Sunset = preset({ 22, 13, 14 }, { 27, 16, 17 }, { 33, 19, 21 }, { 52, 31, 32 }, { 48, 28, 30 }, { 112, 62, 58 }, { 255, 138, 92 }, { 34, 14, 8 }, { 248, 234, 228 }, { 150, 118, 110 }),
+    Gold = preset({ 14, 13, 11 }, { 18, 17, 14 }, { 23, 21, 17 }, { 38, 35, 28 }, { 35, 32, 26 }, { 92, 80, 54 }, { 232, 196, 122 }, { 30, 22, 8 }, { 240, 234, 222 }, { 136, 126, 106 }),
+    Cyber = preset({ 13, 13, 15 }, { 17, 17, 19 }, { 21, 21, 24 }, { 36, 36, 40 }, { 33, 33, 37 }, { 86, 84, 70 }, { 250, 226, 72 }, { 30, 26, 4 }, { 240, 240, 232 }, { 126, 124, 118 }),
+    Toxic = preset({ 11, 14, 11 }, { 14, 18, 14 }, { 18, 23, 18 }, { 31, 39, 30 }, { 28, 36, 28 }, { 74, 98, 60 }, { 184, 255, 74 }, { 18, 30, 6 }, { 232, 242, 228 }, { 116, 134, 110 }),
+    Matcha = preset({ 16, 19, 14 }, { 20, 23, 17 }, { 24, 28, 21 }, { 40, 46, 34 }, { 37, 42, 31 }, { 84, 98, 70 }, { 176, 214, 140 }, { 18, 26, 10 }, { 236, 240, 228 }, { 128, 136, 116 }),
+    Aurora = preset({ 10, 20, 22 }, { 12, 25, 27 }, { 15, 30, 33 }, { 26, 50, 53 }, { 24, 45, 48 }, { 50, 104, 104 }, { 94, 240, 180 }, { 6, 30, 22 }, { 224, 246, 240 }, { 102, 142, 134 }),
+    Frost = preset({ 13, 17, 23 }, { 16, 21, 28 }, { 20, 26, 34 }, { 34, 43, 56 }, { 31, 40, 52 }, { 72, 92, 118 }, { 164, 214, 255 }, { 12, 22, 34 }, { 230, 238, 246 }, { 114, 128, 146 }),
+    Abyss = preset({ 7, 11, 22 }, { 9, 14, 28 }, { 12, 18, 35 }, { 22, 31, 58 }, { 20, 28, 52 }, { 44, 64, 120 }, { 72, 148, 255 }, { 6, 14, 34 }, { 226, 234, 250 }, { 100, 116, 152 }),
+    -- Seasonal and themed palettes.
+    Halloween = preset({ 18, 12, 20 }, { 23, 15, 25 }, { 28, 18, 30 }, { 46, 30, 48 }, { 43, 28, 44 }, { 104, 62, 40 }, { 255, 138, 36 }, { 36, 16, 4 }, { 246, 234, 224 }, { 146, 120, 128 }),
+    Haunted = preset({ 14, 12, 20 }, { 18, 15, 26 }, { 22, 18, 32 }, { 38, 31, 54 }, { 35, 29, 50 }, { 70, 96, 64 }, { 156, 255, 110 }, { 14, 30, 8 }, { 232, 240, 228 }, { 120, 116, 140 }),
+    Christmas = preset({ 12, 20, 15 }, { 15, 25, 19 }, { 19, 30, 23 }, { 32, 50, 38 }, { 30, 46, 35 }, { 100, 54, 56 }, { 236, 72, 80 }, { 34, 8, 10 }, { 240, 244, 236 }, { 120, 142, 128 }),
+    Valentine = preset({ 24, 12, 17 }, { 30, 14, 21 }, { 36, 17, 25 }, { 58, 27, 40 }, { 54, 25, 37 }, { 130, 56, 84 }, { 255, 92, 140 }, { 40, 8, 20 }, { 252, 232, 240 }, { 160, 112, 132 }),
+    Lunar = preset({ 22, 10, 10 }, { 28, 12, 12 }, { 34, 15, 14 }, { 54, 24, 22 }, { 50, 22, 20 }, { 130, 92, 40 }, { 246, 196, 84 }, { 38, 16, 6 }, { 250, 236, 222 }, { 160, 120, 108 }),
+    Tropical = preset({ 10, 22, 24 }, { 12, 27, 30 }, { 15, 33, 36 }, { 26, 54, 58 }, { 24, 50, 54 }, { 44, 110, 110 }, { 255, 170, 90 }, { 36, 18, 6 }, { 232, 246, 244 }, { 104, 144, 142 }),
+    Dracula = preset({ 24, 25, 33 }, { 29, 30, 40 }, { 34, 36, 47 }, { 52, 55, 70 }, { 48, 50, 64 }, { 98, 114, 164 }, { 189, 147, 249 }, { 26, 18, 44 }, { 246, 246, 238 }, { 126, 132, 168 }),
+    Coffee = preset({ 20, 16, 13 }, { 25, 20, 16 }, { 30, 24, 19 }, { 48, 39, 31 }, { 45, 36, 29 }, { 104, 82, 62 }, { 214, 170, 124 }, { 32, 22, 12 }, { 240, 230, 218 }, { 142, 124, 108 }),
+}
+
+Library.ThemeName = "SANYA_PIRAT"
+
+Library.Assets = {
+    Shadow = "rbxassetid://6014261993",
+    Glow = "rbxassetid://8992230677",
+    Logo = { Image = "", Tint = false, Scale = 1 },
+}
+
+local LUCIDE_URL = "https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/lucide/dist/Icons.lua"
+local lucideSet = nil
+
+local function loadLucide()
+    if lucideSet ~= nil then
+        return lucideSet
+    end
+    local ok, result = pcall(function()
+        local source = game:HttpGet(LUCIDE_URL)
+        return loadstring(source)()
+    end)
+    if ok and type(result) == "table" then
+        lucideSet = result
+    else
+        lucideSet = false
+        warn("[AirFlow] lucide icons unavailable: " .. tostring(result))
+    end
+    return lucideSet
+end
+
+local FONT_PRESETS = {
+    ValleySans = {
+        Regular = "https://raw.githubusercontent.com/HelsinkiTypeStudio/valley-sans/main/fonts/ttf/ValleySans-Regular.ttf",
+        Medium = "https://raw.githubusercontent.com/HelsinkiTypeStudio/valley-sans/main/fonts/ttf/ValleySans-Medium.ttf",
+        SemiBold = "https://raw.githubusercontent.com/HelsinkiTypeStudio/valley-sans/main/fonts/ttf/ValleySans-SemiBold.ttf",
+    },
+}
+
+local FONT_WEIGHTS = {
+    Regular = { 400, Enum.FontWeight.Regular },
+    Medium = { 500, Enum.FontWeight.Medium },
+    SemiBold = { 600, Enum.FontWeight.SemiBold },
+    Bold = { 700, Enum.FontWeight.Bold },
+}
+
+function Library:LoadFont(opts)
+    opts = normalize(opts, {})
+    if type(writefile) ~= "function" or type(isfile) ~= "function" or typeof(getcustomasset) ~= "function" then
+        warn("[AirFlow] custom fonts need writefile, isfile and getcustomasset")
+        return false
+    end
+    local name = opts.Name or "CustomFont"
+    local weights = opts.Weights or FONT_PRESETS[name]
+    if type(weights) ~= "table" then
+        warn("[AirFlow] no font weights for " .. name)
+        return false
+    end
+    local folder = opts.Folder or "AirFlowFonts"
+    pcall(function()
+        if type(isfolder) == "function" and type(makefolder) == "function" and not isfolder(folder) then
+            makefolder(folder)
+        end
+    end)
+    local faces = {}
+    for weightName, url in pairs(weights) do
+        local info = FONT_WEIGHTS[weightName]
+        if info then
+            local path = folder .. "/" .. name .. "-" .. weightName .. ".ttf"
+            local ok = true
+            if not isfile(path) then
+                ok = pcall(function()
+                    writefile(path, game:HttpGet(url))
+                end)
+            end
+            if ok then
+                table.insert(faces, { name = weightName, weight = info[1], style = "normal", assetId = getcustomasset(path) })
+            else
+                warn("[AirFlow] could not download " .. weightName .. " weight of " .. name)
+            end
+        end
+    end
+    if #faces == 0 then
+        return false
+    end
+    local familyPath = folder .. "/" .. name .. ".json"
+    local okWrite = pcall(function()
+        writefile(familyPath, HttpService:JSONEncode({ name = name, faces = faces }))
+    end)
+    if not okWrite then
+        return false
+    end
+    local family = getcustomasset(familyPath)
+    local function face(weightName, fallback)
+        local info = FONT_WEIGHTS[weightName]
+        if info and weights[weightName] then
+            return Font.new(family, info[2])
+        end
+        return fallback
+    end
+    Library.Fonts.Regular = face("Regular", Library.Fonts.Regular)
+    Library.Fonts.Medium = face("Medium", face("Regular", Library.Fonts.Medium))
+    Library.Fonts.Bold = face("SemiBold", face("Bold", Library.Fonts.Bold))
+    return true
+end
+
+function Library:PreloadIcons()
+    return loadLucide() ~= false
+end
+
+-- Numbers, digit strings and asset URLs are custom images; anything else is
+-- a lucide name.
+local function assetId(value)
+    if type(value) == "number" then
+        return "rbxassetid://" .. string.format("%.0f", value)
+    end
+    if type(value) == "string" then
+        if value:match("^%d+$") then
+            return "rbxassetid://" .. value
+        end
+        if value:find("^rbxassetid://") or value:find("^rbxasset://") or value:find("^rbxthumb://") or value:find("^http") then
+            return value
+        end
+    end
+    return nil
+end
+
+-- Returns image, rect offset, rect size, whether it is a custom image, and
+-- whether that custom image should still take the theme tint.
+local function resolveIcon(icon)
+    if typeof(icon) == "table" then
+        return assetId(icon.Image) or icon.Image, icon.RectOffset, icon.RectSize, true, icon.Tint == true
+    end
+    local asset = assetId(icon)
+    if asset then
+        return asset, nil, nil, true, false
+    end
+    if type(icon) ~= "string" then
+        return nil
+    end
+    local name = icon:gsub("^lucide:", "")
+    local set = loadLucide()
+    if not set then
+        return nil
+    end
+    local entry = (set.Icons and set.Icons[name]) or set[name]
+    if type(entry) == "table" then
+        local image = entry.Image
+        if type(image) == "number" then
+            image = "rbxassetid://" .. tostring(image)
+        end
+        local sheet = (set.Spritesheets and set.Spritesheets[tostring(image)]) or image
+        return sheet, entry.ImageRectPosition, entry.ImageRectSize
+    elseif type(entry) == "string" then
+        return entry
+    end
+    warn("[AirFlow] unknown lucide icon: " .. name)
+    return nil
+end
+
+local BUTTON_HINT_ICON = "chevron-right"
+
+local FONT_FAMILY = "rbxasset://fonts/families/BuilderSans.json"
+Library.Fonts = {
+    Regular = Font.new(FONT_FAMILY, Enum.FontWeight.Regular),
+    Medium = Font.new(FONT_FAMILY, Enum.FontWeight.Medium),
+    Bold = Font.new(FONT_FAMILY, Enum.FontWeight.SemiBold),
+}
+
+local Theme = Library.Theme
+local Assets = Library.Assets
+
+-- The supplied SANYA_PIRAT mark is embedded as a transparent PNG.
+-- Only its empty outer padding was trimmed; its original colors are preserved.
+-- File/custom-asset support is required to show a local image in Roblox.
+local EMBEDDED_LOGO = [=[
+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
+hoTjgWWkDrozO3767R/9OQ5vWx8FwwgRThsYbDva1bLt+Te1x89Px99UvinlnP/ud3xsOPARSyRAAPxsHjInkXTiiBkXbsborcvW/m7Jj3/xRTy0eyPaIp+T
+CBEivN0yRABDh/rWxn06UppK1Q74eWSzASbW1CHb2YNE4GLgSO+W++6851v+5gOLsbytP3qbI0SI8LYNiJl96bTuHtzOvNJaRQapknL0H+5DI6XkjpUb1y59
++PG/93/z0uro7Y0QIcLbPiAityPX09G1gZW774ylYmA5jbpEdd+Sn//2p5sXPfdjLN13OHprI0SI8FpxWvYQ0QU90OTOveBdl13NNSjf0dtx980//Ur70wdv
+warWyCA+QoQIf0AZIoC2zTt3it7g8J6Nm59YdMevf4CL9+1CczQ4iRAhwh8irmiqn/OlD3wK761LRr+MCBEiRDgdieURIkSIECFChAgRIkSIECFChAgRIkSI
+ECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRxuL/AyZrZel7DV9x
+AAAAAElFTkSuQmCC
+]=]
+
+local function decodeBase64(data)
+    data = data:gsub("%s+", "")
+    local lookup = {}
+    local alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    for i = 1, #alphabet do
+        lookup[alphabet:byte(i)] = i - 1
+    end
+    local out = {}
+    for i = 1, #data, 4 do
+        local a, b, c, d = data:byte(i, i + 3)
+        local n = lookup[a] * 262144 + lookup[b] * 4096 + (lookup[c] or 0) * 64 + (lookup[d] or 0)
+        local x, y, z = n // 65536, n // 256 % 256, n % 256
+        if d ~= 61 then
+            out[#out + 1] = string.char(x, y, z)
+        elseif c ~= 61 then
+            out[#out + 1] = string.char(x, y)
+        else
+            out[#out + 1] = string.char(x)
+        end
+    end
+    return table.concat(out)
+end
+
+do
+    local ok, reason = pcall(function()
+        if type(writefile) ~= "function" then
+            error("writefile is unavailable", 0)
+        end
+        -- Use a flat path so the logo does not require folder-creation APIs.
+        local path = "SANYA_PIRATLogo.png"
+        writefile(path, decodeBase64(EMBEDDED_LOGO))
+        local function tryAsset(resolver)
+            if type(resolver) ~= "function" then
+                return false
+            end
+            local loaded, asset = pcall(resolver, path)
+            if loaded and type(asset) == "string" and asset ~= "" then
+                Assets.Logo = { Image = asset, Tint = false, Scale = 1 }
+                return true
+            end
+            return false
+        end
+        if not (tryAsset(getcustomasset) or tryAsset(getsynasset)) then
+            error("getcustomasset / getsynasset is unavailable or could not load the logo", 0)
+        end
+    end)
+    if not ok then
+        warn("[SANYA PIRAT] Custom logo unavailable: " .. tostring(reason))
+    end
+end
+local Fonts = Library.Fonts
+
+local TOUCH = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+Library.Touch = TOUCH
+
+local SIDEBAR_WIDTH = 188
+local HEADER_HEIGHT = 62
+local TAB_TILE_HEIGHT = 34
+local CARD_HEIGHT = TOUCH and 54 or 48
+local CARD_HEIGHT_DESC = TOUCH and 70 or 64
+local DROPDOWN_OPTION_HEIGHT = TOUCH and 40 or 34
+local CHIP_HEIGHT = TOUCH and 34 or 28
+local PROFILE_HEIGHT = 64
+local SEARCH_WIDTH = 176
+local STACK_BELOW = 440
+
+-- Elements read their geometry from one of these. Cards stand alone on a tab,
+-- rows sit flush inside a groupbox.
+local METRICS = {
+    Card = {
+        Compact = false,
+        Height = CARD_HEIGHT,
+        DescHeight = CARD_HEIGHT_DESC,
+        Chip = CHIP_HEIGHT,
+        Option = DROPDOWN_OPTION_HEIGHT,
+        TextSize = 14,
+        DescSize = 13,
+        TitleHeight = 18,
+        DescGap = 20,
+        DescLine = 17,
+        Slider = CARD_HEIGHT_DESC,
+    },
+    Row = {
+        Compact = true,
+        Height = TOUCH and 40 or 32,
+        DescHeight = TOUCH and 54 or 46,
+        Chip = TOUCH and 30 or 24,
+        Option = TOUCH and 34 or 28,
+        TextSize = 13,
+        DescSize = 12,
+        TitleHeight = 16,
+        DescGap = 17,
+        DescLine = 15,
+        Slider = TOUCH and 54 or 46,
+    },
+}
+
+local tweenInfoCache = {}
+
+-- Theme bindings: every instance property painted with a theme color is
+-- remembered by theme key, so SetTheme can repaint the whole UI live.
+-- Held strongly: an Instance's Lua handle can be collected while the Instance
+-- still exists, which would silently drop it from a weak table. Destroyed
+-- objects are pruned instead, once they have been parentless for two sweeps.
+local themeBindings = {}
+local themeHooks = {}
+local themeLookup = {}
+local orphanMarks = {}
+local bindingCount = 0
+local sweepAt = 4000
+
+local function pruneTable(map, counted)
+    for object in pairs(map) do
+        if object.Parent == nil then
+            if orphanMarks[object] then
+                map[object] = nil
+                orphanMarks[object] = nil
+                if counted then
+                    bindingCount -= 1
+                end
+            else
+                orphanMarks[object] = true
+            end
+        else
+            orphanMarks[object] = nil
+        end
+    end
+end
+
+local function sweepBindings()
+    pruneTable(themeBindings, true)
+    pruneTable(themeHooks, false)
+    sweepAt = math.max(4000, bindingCount * 2)
+end
+
+local function colorKey(color)
+    return math.floor(color.R * 255 + 0.5) .. "," .. math.floor(color.G * 255 + 0.5) .. "," .. math.floor(color.B * 255 + 0.5)
+end
+
+local function rebuildThemeLookup()
+    table.clear(themeLookup)
+    for index = #THEME_KEYS, 1, -1 do
+        local name = THEME_KEYS[index]
+        themeLookup[colorKey(Library.Theme[name])] = name
+    end
+end
+rebuildThemeLookup()
+
+local function bindColors(object, props)
+    for property, value in pairs(props) do
+        if typeof(value) == "Color3" then
+            local name = themeLookup[colorKey(value)]
+            local bound = themeBindings[object]
+            if name then
+                if not bound then
+                    bound = {}
+                    themeBindings[object] = bound
+                    bindingCount += 1
+                    if bindingCount >= sweepAt then
+                        sweepBindings()
+                    end
+                end
+                bound[property] = name
+            elseif bound then
+                bound[property] = nil
+            end
+        end
+    end
+end
+
+-- Repaints every bound property from the colours on screen to the new theme.
+-- One Heartbeat loop lerps each theme key once per frame and assigns the
+-- result, instead of creating a tween per object, which hitched the frame the
+-- theme changed on large UIs. A change mid-fade picks up from what is shown.
+local shownTheme = table.clone(Library.Theme)
+local themeDriver = nil
+
+local function paintBinding(object, bound, colors)
+    for property, name in pairs(bound) do
+        local color = colors[name]
+        if color then
+            object[property] = color
+        end
+    end
+end
+
+local function paintBindings(colors)
+    for object, bound in pairs(themeBindings) do
+        pcall(paintBinding, object, bound, colors)
+    end
+end
+
+local function driveTheme(duration)
+    if themeDriver then
+        themeDriver:Disconnect()
+        themeDriver = nil
+    end
+    local from, colors = {}, {}
+    for _, name in ipairs(THEME_KEYS) do
+        local target = Library.Theme[name]
+        local current = shownTheme[name] or target
+        if current ~= target then
+            from[name] = current
+            colors[name] = current
+        end
+    end
+    local function finish()
+        for _, name in ipairs(THEME_KEYS) do
+            colors[name] = Library.Theme[name]
+            shownTheme[name] = Library.Theme[name]
+        end
+        paintBindings(colors)
+    end
+    if duration <= 0 or next(from) == nil then
+        finish()
+        return
+    end
+    local elapsed = 0
+    themeDriver = RunService.Heartbeat:Connect(function(deltaTime)
+        elapsed += deltaTime
+        if elapsed >= duration then
+            themeDriver:Disconnect()
+            themeDriver = nil
+            finish()
+            return
+        end
+        local alpha = 1 - (1 - elapsed / duration) ^ 5
+        for name, start in pairs(from) do
+            local color = start:Lerp(Library.Theme[name], alpha)
+            colors[name] = color
+            shownTheme[name] = color
+        end
+        paintBindings(colors)
+    end)
+end
+
+-- Runs fn now and again whenever the theme changes, while owner exists.
+local function onTheme(owner, fn)
+    themeHooks[owner] = fn
+    fn()
+end
+
+local function tween(object, props, duration, style, direction, raw)
+    duration = duration or 0.2
+    if not raw then
+        bindColors(object, props)
+    end
+    if duration <= 0 then
+        for key, value in pairs(props) do
+            object[key] = value
+        end
+        return nil
+    end
+    style = style or Enum.EasingStyle.Quart
+    direction = direction or Enum.EasingDirection.Out
+    local key = duration .. style.Name .. direction.Name
+    local info = tweenInfoCache[key]
+    if not info then
+        info = TweenInfo.new(duration, style, direction)
+        tweenInfoCache[key] = info
+    end
+    local t = TweenService:Create(object, info, props)
+    t:Play()
+    return t
+end
+
+local function create(className, props, children)
+    local inst = Instance.new(className)
+    for key, value in pairs(props) do
+        if key ~= "Parent" then
+            inst[key] = value
+        end
+    end
+    bindColors(inst, props)
+    if children then
+        for _, child in ipairs(children) do
+            child.Parent = inst
+        end
+    end
+
+    if props.Parent then
+        inst.Parent = props.Parent
+    end
+    return inst
+end
+
+-- Corners in pixels follow the player's corner radius setting: each one
+-- remembers the radius it was drawn at, and Library:SetCornerRadius rescales
+-- them all. Scale corners (pills, circles) stay as they are.
+Library.Roundness = 1
+-- A strong table: weak keys would drop the Lua handles for corners nothing
+-- else in Lua holds, and those corners would never rescale. Destroyed ones
+-- are pruned whenever the radius changes.
+Library._cornerBases = {}
+
+local function corner(parent, radius)
+    radius = radius or UDim.new(0, 8)
+    local object = create("UICorner", {
+        CornerRadius = radius.Scale == 0 and UDim.new(0, math.floor(radius.Offset * Library.Roundness + 0.5)) or radius,
+        Parent = parent,
+    })
+    if radius.Scale == 0 then
+        Library._cornerBases[object] = radius.Offset
+    end
+    return object
+end
+
+-- A corner that ignores the setting, for shapes that animate their own
+-- radius (the minimized island, the morph panels).
+function Library._fixedCorner(parent, radius)
+    return create("UICorner", { CornerRadius = radius, Parent = parent })
+end
+
+-- The radius the window's own corners are drawn at right now.
+function Library._radius(pixels)
+    return math.floor(pixels * Library.Roundness + 0.5)
+end
+
+local function stroke(parent, color, transparency, thickness)
+    return create("UIStroke", {
+        Color = color or Theme.Stroke,
+        Transparency = transparency or 0,
+        Thickness = thickness or 1,
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+        Parent = parent,
+    })
+end
+
+local function padding(parent, left, right, top, bottom)
+    return create("UIPadding", {
+        PaddingLeft = UDim.new(0, left or 0),
+        PaddingRight = UDim.new(0, right or 0),
+        PaddingTop = UDim.new(0, top or 0),
+        PaddingBottom = UDim.new(0, bottom or 0),
+        Parent = parent,
+    })
+end
+
+local function label(props)
+    local defaults = {
+        BackgroundTransparency = 1,
+        TextColor3 = Theme.Text,
+        TextSize = 14,
+        FontFace = Fonts.Medium,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        TextYAlignment = Enum.TextYAlignment.Center,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+    }
+    for key, value in pairs(props) do
+        defaults[key] = value
+    end
+    return create("TextLabel", defaults)
+end
+
+local function glow(parent, size, position, transparency, rotation)
+    local image = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = position,
+        Size = size,
+        BackgroundTransparency = 1,
+        Image = Assets.Glow,
+        ImageColor3 = Color3.fromRGB(226, 218, 230),
+        ImageTransparency = 1,
+        Visible = false,
+        ZIndex = 0,
+        Parent = parent,
+    })
+    local gradient = create("UIGradient", {
+        Rotation = rotation or 90,
+        Parent = image,
+    })
+    onTheme(gradient, function()
+        gradient.Color = ColorSequence.new(Color3.fromRGB(255, 255, 255), Theme.Accent)
+    end)
+    return image
+end
+
+local function edgeHighlight(parent)
+    return create("Frame", {
+        Position = UDim2.fromOffset(0, 0),
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Color3.new(1, 1, 1),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 0,
+        Parent = parent,
+    })
+end
+
+local CUSTOM_ICON_SCALE = 1.35
+
+local function applyIcon(imageLabel, icon, fixedSize)
+    local image, rectOffset, rectSize, custom, tint = resolveIcon(icon)
+    if not image then
+        return
+    end
+    imageLabel.Image = image
+    imageLabel.ImageRectOffset = rectOffset or Vector2.zero
+    imageLabel.ImageRectSize = rectSize or Vector2.zero
+    -- SANYA_PIRAT's full-color mark keeps its supplied gradient, not a theme tint.
+    local keepColours = custom and not tint
+    imageLabel:SetAttribute("CustomIcon", keepColours or nil)
+    if keepColours then
+        -- Original colours, and out of the theme's reach.
+        tween(imageLabel, { ImageColor3 = Color3.new(1, 1, 1) }, 0)
+    end
+    -- Uploaded images usually carry transparent padding and read smaller than
+    -- the lucide set, so they are drawn larger. A table icon can pick its own
+    -- Scale. Brand logos pass fixedSize, their slots are already sized for them.
+    local scale = custom and not fixedSize and icon ~= Assets.Logo and (typeof(icon) == "table" and tonumber(icon.Scale) or CUSTOM_ICON_SCALE) or 1
+    local scaler = imageLabel:FindFirstChild("CustomIconScale")
+    if scale ~= 1 then
+        scaler = scaler or create("UIScale", { Name = "CustomIconScale", Parent = imageLabel })
+        scaler.Scale = scale
+    elseif scaler then
+        scaler:Destroy()
+    end
+end
+
+-- Selection state for icons: tinted icons change colour, custom images keep
+-- their colours and dim instead.
+local function tintIcon(imageLabel, color, active, duration)
+    if imageLabel:GetAttribute("CustomIcon") then
+        tween(imageLabel, { ImageTransparency = active and 0 or 0.4 }, duration)
+    else
+        tween(imageLabel, { ImageColor3 = color }, duration)
+    end
+end
+
+local function defaultParent()
+    local hidden
+    pcall(function()
+        if typeof(gethui) == "function" then
+            hidden = gethui()
+        end
+    end)
+    if typeof(hidden) == "Instance" then
+        return hidden
+    end
+    local core
+    pcall(function()
+        core = game:GetService("CoreGui")
+        local probe = Instance.new("Folder")
+        probe.Parent = core
+        probe:Destroy()
+    end)
+    if core then
+        return core
+    end
+    return LocalPlayer:WaitForChild("PlayerGui")
+end
+
+local insetFrame, insetValue = nil, Vector2.zero
+local function pointerPosition()
+    local frame = time()
+    if insetFrame ~= frame then
+        insetFrame = frame
+        insetValue = GuiService:GetGuiInset()
+    end
+    return UserInputService:GetMouseLocation() - insetValue
+end
+
+local function isPress(input)
+    return input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch
+end
+
+local function usingTouch()
+    return UserInputService:GetLastInputType() == Enum.UserInputType.Touch
+end
+
+-- A press that turned into a scroll is not a tap. Returns a check to call
+-- from the click handler.
+local function tapGuard(button, getScroller)
+    local startCanvas
+    button.InputBegan:Connect(function(input)
+        if isPress(input) then
+            local frame = getScroller()
+            startCanvas = frame and frame.CanvasPosition
+        end
+    end)
+    return function()
+        local frame = getScroller()
+        return not (startCanvas and frame and (frame.CanvasPosition - startCanvas).Magnitude > 4)
+    end
+end
+
+local function pointInside(point, object)
+    local position, size = object.AbsolutePosition, object.AbsoluteSize
+    return point.X >= position.X and point.X <= position.X + size.X
+        and point.Y >= position.Y and point.Y <= position.Y + size.Y
+end
+
+local function isMove(input)
+    return input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch
+end
+
+local function glowIcon(parent, icon, color, position)
+    local holder = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = position,
+        Size = UDim2.fromOffset(16, 16),
+        BackgroundTransparency = 1,
+        Parent = parent,
+    })
+    local image = create("ImageLabel", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ImageColor3 = color,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = holder,
+    })
+    applyIcon(image, icon)
+    return holder, image
+end
+
+local function arrowIndicator(parent, anchorX, offsetX)
+    local holder = create("Frame", {
+        AnchorPoint = Vector2.new(anchorX, 0.5),
+        Position = UDim2.new(anchorX, offsetX, 0.5, 0),
+        Size = UDim2.fromOffset(18, 18),
+        BackgroundTransparency = 1,
+        Parent = parent,
+    })
+    local indicator = {}
+    local image = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(16, 16),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = holder,
+    })
+    applyIcon(image, "chevron-down")
+    if image.Image ~= "" then
+        function indicator:Set(open)
+            tween(image, {
+                Rotation = open and 180 or 0,
+                ImageColor3 = open and Theme.Accent or Theme.Muted,
+            }, 0.3, Enum.EasingStyle.Quint)
+        end
+        return indicator
+    end
+    image:Destroy()
+    local function glyph(rotation, transparency)
+        return label({
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.fromOffset(18, 18),
+            Text = "âº",
+            TextSize = 22,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextColor3 = Theme.Muted,
+            TextTransparency = transparency,
+            Rotation = rotation,
+            Parent = holder,
+        })
+    end
+    local down = glyph(90, 0)
+    local up = glyph(270, 1)
+    function indicator:Set(open)
+        tween(down, { TextTransparency = open and 1 or 0 }, 0.2)
+        tween(up, { TextTransparency = open and 0 or 1, TextColor3 = open and Theme.Accent or Theme.Muted }, 0.2)
+    end
+    return indicator
+end
+
+local ripplePool = {}
+
+local function ripple(button)
+    local mouse = pointerPosition()
+    local diameter = math.max(button.AbsoluteSize.X, button.AbsoluteSize.Y) * 2.2
+    local circle = table.remove(ripplePool)
+    -- A pooled circle can't be reparented if it was destroyed along the way.
+    if circle and not pcall(function()
+        circle.Parent = nil
+    end) then
+        circle = nil
+    end
+    if not circle then
+        circle = create("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            BackgroundColor3 = Theme.Accent,
+            BorderSizePixel = 0,
+        })
+        corner(circle, UDim.new(1, 0))
+    end
+    circle.Position = UDim2.fromOffset(mouse.X - button.AbsolutePosition.X, mouse.Y - button.AbsolutePosition.Y)
+    circle.Size = UDim2.fromOffset(0, 0)
+    circle.BackgroundColor3 = Theme.Accent
+    circle.BackgroundTransparency = 0.82
+    circle.ZIndex = button.ZIndex + 1
+    circle.Parent = button
+    tween(circle, { Size = UDim2.fromOffset(diameter, diameter), BackgroundTransparency = 1 }, 0.55)
+    task.delay(0.55, function()
+        -- A button destroyed mid-ripple takes the circle with it: drop it.
+        if circle.Parent ~= button or not button.Parent then
+            pcall(circle.Destroy, circle)
+            return
+        end
+        circle.Parent = nil
+        if #ripplePool < 4 then
+            table.insert(ripplePool, circle)
+        else
+            circle:Destroy()
+        end
+    end)
+end
+
+local function flashStroke(strokeObject)
+    if not strokeObject or strokeObject:GetAttribute("Hidden") then
+        return
+    end
+    tween(strokeObject, { Color = Theme.Accent, Transparency = 0.2 }, 0.08)
+    task.delay(0.12, function()
+        tween(strokeObject, { Color = Theme.Stroke, Transparency = 0 }, 0.35)
+    end)
+end
+
+local function hoverStroke(target, strokeObject)
+    target.MouseEnter:Connect(function()
+        tween(strokeObject, { Color = Theme.StrokeHover }, 0.12)
+    end)
+    target.MouseLeave:Connect(function()
+        tween(strokeObject, { Color = Theme.Stroke }, 0.25)
+    end)
+end
+
+local KEY_NAMES = {
+    [Enum.KeyCode.LeftControl] = "LCtrl",
+    [Enum.KeyCode.RightControl] = "RCtrl",
+    [Enum.KeyCode.LeftShift] = "LShift",
+    [Enum.KeyCode.RightShift] = "RShift",
+    [Enum.KeyCode.LeftAlt] = "LAlt",
+    [Enum.KeyCode.RightAlt] = "RAlt",
+    [Enum.KeyCode.Return] = "Enter",
+    [Enum.KeyCode.Escape] = "Esc",
+    [Enum.KeyCode.Backspace] = "Backspace",
+}
+
+local function keyName(keyCode)
+    if keyCode == nil then
+        return "None"
+    end
+    return KEY_NAMES[keyCode] or keyCode.Name
+end
+
+local function safeCall(callback, ...)
+    if type(callback) ~= "function" then
+        return
+    end
+    local ok, err = pcall(callback, ...)
+    if not ok then
+        warn("[AirFlow] callback error: " .. tostring(err))
+    end
+end
+
+-- Runs a user callback on its own thread and waits for it with task.wait.
+-- A callback that yields inside an engine call (InvokeServer and the like)
+-- resumes at game identity, which can no longer touch the GUI in CoreGui;
+-- keeping that on a separate thread leaves the caller's identity intact.
+local function isolatedCall(callback)
+    local result = nil
+    task.spawn(function()
+        result = table.pack(pcall(callback))
+    end)
+    while result == nil do
+        task.wait()
+    end
+    return table.unpack(result, 1, result.n)
+end
+
+local function numberFormat(min, max, step)
+    local decimals = 0
+    local text = tostring(step)
+    local dot = text:find("%.")
+    if dot then
+        decimals = #text - dot
+    end
+    local pattern = "%." .. decimals .. "f"
+    return {
+        snap = function(value)
+            value = math.floor(value / step + 0.5) * step
+            return math.clamp(value, min, max)
+        end,
+        format = function(value)
+            return string.format(pattern, value)
+        end,
+    }
+end
+
+local function metricsOf(tab)
+    return tab._metrics or METRICS.Card
+end
+
+-- Width of a value control inside a groupbox row. Every dropdown and input in
+-- a groupbox uses the same share of the row, so their left edges line up.
+local function rowControlWidth(frame, window)
+    local width = frame.AbsoluteSize.X / window.Scale.Scale
+    return math.clamp(math.floor(width * 0.48), 90, 220)
+end
+
+local function card(tab, className, height, opts)
+    local compact = metricsOf(tab).Compact
+    local props = {
+        Size = UDim2.new(1, 0, 0, height),
+        BackgroundColor3 = Theme.Surface2,
+        BackgroundTransparency = compact and 1 or 0,
+        BorderSizePixel = 0,
+        LayoutOrder = tab:_nextOrder(),
+        Parent = tab.List,
+    }
+    if className == "TextButton" then
+        props.AutoButtonColor = false
+        props.Text = ""
+    end
+    local frame = create(className, props)
+    frame:SetAttribute("NoDrag", true)
+    corner(frame)
+    local frameStroke = stroke(frame, Theme.Stroke, compact and 1 or 0)
+    if compact then
+        frameStroke:SetAttribute("Hidden", true)
+    end
+    return frame, frameStroke
+end
+
+local function titleDesc(parent, name, desc, rightReserve, metrics)
+    metrics = metrics or METRICS.Card
+    local title, descLabel
+    if desc then
+        local top = math.floor((metrics.DescHeight - (metrics.DescGap + metrics.DescLine)) / 2)
+        title = label({
+            Position = UDim2.fromOffset(14, top),
+            Size = UDim2.new(1, -(14 + rightReserve), 0, metrics.TitleHeight),
+            Text = name,
+            TextSize = metrics.TextSize,
+            Parent = parent,
+        })
+        descLabel = label({
+            Position = UDim2.fromOffset(14, top + metrics.DescGap),
+            Size = UDim2.new(1, -(14 + rightReserve), 0, metrics.DescLine),
+            Text = desc,
+            TextSize = metrics.DescSize,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = parent,
+        })
+    else
+        title = label({
+            Position = UDim2.fromOffset(14, 0),
+            Size = UDim2.new(1, -(14 + rightReserve), 1, 0),
+            Text = name,
+            TextSize = metrics.TextSize,
+            Parent = parent,
+        })
+    end
+    return title, descLabel
+end
+
+local function beginElement(tab, opts, map, className, rightReserve, fallbackName)
+    opts = normalize(opts, map)
+    local metrics = metricsOf(tab)
+    local height = opts.Desc and metrics.DescHeight or metrics.Height
+    local frame, frameStroke = card(tab, className or "Frame", height, opts)
+    hoverStroke(frame, frameStroke)
+    local title, descLabel
+    if rightReserve then
+        title, descLabel = titleDesc(frame, opts.Name or fallbackName, opts.Desc, rightReserve, metrics)
+    end
+    return opts, frame, frameStroke, height, title, descLabel
+end
+
+local function reserveRight(title, descLabel, width)
+    if title then
+        title.Size = UDim2.new(1, -(14 + width), title.Size.Y.Scale, title.Size.Y.Offset)
+    end
+    if descLabel then
+        descLabel.Size = UDim2.new(1, -(14 + width), 0, descLabel.Size.Y.Offset)
+    end
+end
+
+local Tab = {}
+Tab.__index = Tab
+
+function Tab:_nextOrder()
+    self._order = self._order + 1
+    return self._order
+end
+
+function Tab:Section(text)
+    local visible = not (type(text) == "table" and text.Visible == false)
+    if type(text) == "table" then
+        text = text.Name or text.Title or ""
+    end
+    local inset = metricsOf(self).Compact and 14 or 2
+    local holder = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 28),
+        BackgroundTransparency = 1,
+        LayoutOrder = self:_nextOrder(),
+        Parent = self.List,
+    })
+    local text_ = label({
+        Position = UDim2.fromOffset(inset, 8),
+        Size = UDim2.new(0, 0, 0, 16),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = string.upper(text),
+        TextSize = 12,
+        TextColor3 = Theme.Muted,
+        TextTruncate = Enum.TextTruncate.None,
+        Parent = holder,
+    })
+    local ruleInset = inset == 2 and 0 or inset
+    local rule = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -ruleInset, 0, 16),
+        Size = UDim2.new(1, -12, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = holder,
+    })
+    local function fitRule()
+        rule.Size = UDim2.new(1, -(text_.AbsoluteSize.X / self.Window.Scale.Scale + inset + 12 + ruleInset), 0, 1)
+    end
+    text_:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitRule)
+    task.defer(fitRule)
+    return finishElement(self, { Visible = visible }, {
+        Set = function(_, value)
+            text_.Text = string.upper(value)
+        end,
+    }, holder, "Section")
+end
+
+function Tab:Divider(opts)
+    local caption = type(opts) == "table" and (opts.Text or opts.Name) or type(opts) == "string" and opts or nil
+    if caption then
+        -- A centred caption with a rule on each side.
+        local inset = metricsOf(self).Compact and 14 or 2
+        local holder = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 18),
+            BackgroundTransparency = 1,
+            LayoutOrder = self:_nextOrder(),
+            Parent = self.List,
+        })
+        local text_ = label({
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.new(0, 0, 0, 14),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = caption,
+            TextSize = 11,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            Parent = holder,
+        })
+        padding(text_, 8, 8)
+        local rules = {}
+        for index, anchor in ipairs({ 0, 1 }) do
+            rules[index] = create("Frame", {
+                AnchorPoint = Vector2.new(anchor, 0.5),
+                Position = UDim2.new(anchor, anchor == 0 and inset or -inset, 0.5, 0),
+                Size = UDim2.new(0.5, -inset, 0, 1),
+                BackgroundColor3 = Theme.Stroke,
+                BorderSizePixel = 0,
+                Parent = holder,
+            })
+        end
+        local function fitRules()
+            local half = text_.AbsoluteSize.X / self.Window.Scale.Scale / 2
+            for _, rule in ipairs(rules) do
+                rule.Size = UDim2.new(0.5, -(inset + half), 0, 1)
+            end
+        end
+        text_:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitRules)
+        task.defer(fitRules)
+        return finishElement(self, { Visible = not (type(opts) == "table" and opts.Visible == false) }, {
+            Set = function(_, value)
+                text_.Text = tostring(value)
+            end,
+        }, holder, "Divider")
+    end
+    local line = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        LayoutOrder = self:_nextOrder(),
+        Parent = self.List,
+    })
+    if metricsOf(self).Compact then
+        line.BackgroundTransparency = 1
+        line.Size = UDim2.new(1, 0, 0, 9)
+        create("Frame", {
+            Position = UDim2.fromOffset(14, 4),
+            Size = UDim2.new(1, -28, 0, 1),
+            BackgroundColor3 = Theme.Stroke,
+            BorderSizePixel = 0,
+            Parent = line,
+        })
+    end
+    return finishElement(self, { Visible = not (type(opts) == "table" and opts.Visible == false) }, {}, line, "Divider")
+end
+
+function Tab:Label(opts)
+    opts = normalize(opts, { Name = "Text", Title = "Text" })
+    local text_ = label({
+        Size = UDim2.new(1, 0, 0, 18),
+        Text = Library._rich(opts.Text or ""),
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Library._color(opts.Color) or Theme.Muted,
+        RichText = true,
+        LayoutOrder = self:_nextOrder(),
+        Parent = self.List,
+    })
+    if metricsOf(self).Compact then
+        text_.TextSize = 12
+        padding(text_, 14, 14)
+    else
+        padding(text_, 2)
+    end
+    local handle = {
+        Set = function(_, value)
+            text_.Text = Library._rich(value)
+        end,
+        Get = function()
+            return text_.Text
+        end,
+        SetColor = function(_, color)
+            tween(text_, { TextColor3 = Library._color(color) or Theme.Muted }, 0.25)
+        end,
+    }
+    if type(opts.Update) == "function" then
+        local rate = math.max(tonumber(opts.UpdateRate) or 1, 0.05)
+        local running = true
+        handle._listeners = handle._listeners or {}
+        table.insert(handle._listeners, function()
+            running = false
+        end)
+        task.spawn(function()
+            while running and text_.Parent do
+                local ok, value = isolatedCall(opts.Update)
+                if ok and value ~= nil then
+                    text_.Text = Library._rich(value)
+                elseif not ok then
+                    warn("[AirFlow] label update error: " .. tostring(value))
+                end
+                task.wait(rate)
+            end
+        end)
+        function handle:SetUpdateRate(seconds)
+            rate = math.max(tonumber(seconds) or rate, 0.05)
+        end
+    end
+    return finishElement(self, opts, handle, text_, "Label")
+end
+
+function Tab:Paragraph(opts)
+    opts = normalize(opts, { Title = "Name" })
+    local frame = card(self, "Frame", 0, opts)
+    frame.AutomaticSize = Enum.AutomaticSize.Y
+    if metricsOf(self).Compact then
+        padding(frame, 14, 14, 6, 8)
+    else
+        padding(frame, 14, 14, 11, 12)
+    end
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 4),
+        Parent = frame,
+    })
+    label({
+        Size = UDim2.new(1, 0, 0, 14),
+        Text = opts.Name or "",
+        LayoutOrder = 1,
+        Parent = frame,
+    })
+    local content = label({
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        Text = Library._rich(opts.Content or ""),
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextWrapped = true,
+        TextTruncate = Enum.TextTruncate.None,
+        TextYAlignment = Enum.TextYAlignment.Top,
+        RichText = true,
+        LayoutOrder = 2,
+        Parent = frame,
+    })
+    return finishElement(self, opts, {
+        Set = function(_, value)
+            content.Text = Library._rich(value)
+        end,
+    }, frame, "Paragraph")
+end
+
+local function rowButton(tab, opts)
+    local primary = opts.Style == "Primary"
+    local boxHeight = TOUCH and 34 or 28
+    local height = boxHeight + 6 + (opts.Desc and 16 or 0)
+    local button = card(tab, "TextButton", height, opts)
+
+    local box = create("Frame", {
+        Position = UDim2.fromOffset(14, 3),
+        Size = UDim2.new(1, -28, 0, boxHeight),
+        BackgroundColor3 = primary and Theme.Accent or Theme.Surface3,
+        BackgroundTransparency = primary and 0.12 or 0.45,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = button,
+    })
+    corner(box, UDim.new(0, 6))
+    local boxStroke = stroke(box, primary and Theme.Accent or Theme.Stroke, primary and 0.4 or 0)
+
+    local row = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Parent = box,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = row,
+    })
+    local textColor = primary and Theme.AccentDark or Theme.Text
+    if opts.Icon then
+        local image = create("ImageLabel", {
+            Size = UDim2.fromOffset(14, 14),
+            BackgroundTransparency = 1,
+            ImageColor3 = primary and Theme.AccentDark or Theme.Accent,
+            ScaleType = Enum.ScaleType.Fit,
+            LayoutOrder = 1,
+            Parent = row,
+        })
+        applyIcon(image, opts.Icon)
+    end
+    local title = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = opts.Name or "Button",
+        TextSize = 13,
+        TextColor3 = textColor,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = row,
+    })
+    if opts.Desc then
+        label({
+            Position = UDim2.fromOffset(14, boxHeight + 6),
+            Size = UDim2.new(1, -28, 0, 14),
+            Text = opts.Desc,
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = button,
+        })
+    end
+
+    local restBg = primary and 0.12 or 0.45
+    button.MouseEnter:Connect(function()
+        tween(box, { BackgroundTransparency = primary and 0 or 0.2 }, 0.12)
+        tween(boxStroke, primary and { Transparency = 0 } or { Color = Theme.StrokeHover }, 0.12)
+    end)
+    button.MouseLeave:Connect(function()
+        tween(box, { BackgroundTransparency = restBg }, 0.25)
+        tween(boxStroke, primary and { Transparency = 0.4 } or { Color = Theme.Stroke }, 0.25)
+    end)
+    button.MouseButton1Click:Connect(function()
+        ripple(box)
+        safeCall(opts.Callback)
+    end)
+
+    return finishElement(tab, opts, {
+        SetText = function(_, value)
+            title.Text = value
+        end,
+    }, button, "Button")
+end
+
+function Tab:Button(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc" })
+    if metricsOf(self).Compact then
+        return rowButton(self, opts)
+    end
+    local primary = opts.Style == "Primary"
+    local height = opts.Desc and CARD_HEIGHT_DESC or CARD_HEIGHT
+    local button, buttonStroke = card(self, "TextButton", height, opts)
+    button.ClipsDescendants = true
+
+    if primary then
+        tween(button, { BackgroundColor3 = Theme.Accent, BackgroundTransparency = 0.12 }, 0)
+        tween(buttonStroke, { Color = Theme.Accent }, 0)
+        buttonStroke.Transparency = 0.4
+        button.MouseEnter:Connect(function()
+            tween(button, { BackgroundTransparency = 0 }, 0.12)
+            tween(buttonStroke, { Transparency = 0 }, 0.12)
+        end)
+        button.MouseLeave:Connect(function()
+            tween(button, { BackgroundTransparency = 0.12 }, 0.25)
+            tween(buttonStroke, { Transparency = 0.4 }, 0.25)
+        end)
+    else
+        hoverStroke(button, buttonStroke)
+    end
+
+    local textColor = primary and Theme.AccentDark or Theme.Text
+    local iconOffset = 0
+    if opts.Icon then
+        glowIcon(button, opts.Icon, primary and Theme.AccentDark or Theme.Accent, UDim2.new(0, 14, 0.5, 0))
+        iconOffset = 26
+    end
+    local title = titleDesc(button, opts.Name or "Button", opts.Desc, 30)
+    if iconOffset > 0 then
+        for _, child in ipairs(button:GetChildren()) do
+            if child:IsA("TextLabel") then
+                child.Position = child.Position + UDim2.fromOffset(iconOffset, 0)
+                child.Size = child.Size - UDim2.fromOffset(iconOffset, 0)
+            end
+        end
+    end
+    if primary then
+        for _, child in ipairs(button:GetChildren()) do
+            if child:IsA("TextLabel") then
+                tween(child, { TextColor3 = textColor }, 0)
+            end
+        end
+    end
+
+    glowIcon(button, BUTTON_HINT_ICON, primary and Theme.AccentDark or Theme.Muted, UDim2.new(1, -30, 0.5, 0))
+
+    button.MouseButton1Click:Connect(function()
+        ripple(button)
+        safeCall(opts.Callback)
+    end)
+
+    return finishElement(self, opts, {
+        SetText = function(_, value)
+            title.Text = value
+        end,
+    }, button, "Button")
+end
+
+function Tab:Toggle(opts)
+    local button, buttonStroke
+    opts, button, buttonStroke = beginElement(self, opts, { Title = "Name", Description = "Desc", CurrentValue = "Default", Value = "Default" }, "TextButton", 56, "Toggle")
+
+    local pill = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -14, 0.5, 0),
+        Size = TOUCH and UDim2.fromOffset(44, 24) or UDim2.fromOffset(36, 20),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = button,
+    })
+    corner(pill, UDim.new(1, 0))
+    stroke(pill, Theme.Stroke)
+
+    local knob = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 3, 0.5, 0),
+        Size = TOUCH and UDim2.fromOffset(18, 18) or UDim2.fromOffset(14, 14),
+        BackgroundColor3 = Theme.Muted,
+        BorderSizePixel = 0,
+        Parent = pill,
+    })
+    corner(knob, UDim.new(1, 0))
+    local pillGlow = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.new(1, 24, 1, 24),
+        BackgroundTransparency = 1,
+        Image = Assets.Glow,
+        ImageColor3 = Theme.Accent,
+        ImageTransparency = 1,
+        ZIndex = 0,
+        Parent = pill,
+    })
+
+    local self_ = { Value = opts.Default == true }
+
+    local function render(animate)
+        local on = self_.Value
+        local duration = animate and 0.25 or 0
+        tween(pill, { BackgroundColor3 = on and Theme.Accent or Theme.Surface3 }, duration)
+        tween(pillGlow, { ImageTransparency = on and 0.75 or 1 }, duration)
+        local knobSize = TOUCH and 18 or 14
+        tween(knob, {
+            Position = on and UDim2.new(0, (TOUCH and 44 or 36) - 3 - knobSize, 0.5, 0) or UDim2.new(0, 3, 0.5, 0),
+            BackgroundColor3 = on and Theme.AccentDark or Theme.Muted,
+        }, duration, Enum.EasingStyle.Back)
+        if animate then
+            tween(knob, { Size = UDim2.fromOffset(knobSize + 4, knobSize - 2) }, 0.08)
+            task.delay(0.08, function()
+                tween(knob, { Size = UDim2.fromOffset(knobSize, knobSize) }, 0.2, Enum.EasingStyle.Back)
+            end)
+        end
+    end
+
+    local fromClick = false
+    function self_:Set(value, silent)
+        value = value == true
+        if value == self_.Value then
+            return
+        end
+        self_.Value = value
+        render(true)
+        if not fromClick then
+            flashStroke(buttonStroke)
+        end
+        if not silent then
+            safeCall(opts.Callback, value)
+        end
+    end
+
+    function self_:Get()
+        return self_.Value
+    end
+
+    render(false)
+    button.MouseButton1Click:Connect(function()
+        fromClick = true
+        self_:Set(not self_.Value)
+        fromClick = false
+    end)
+
+    local handle = finishElement(self, opts, self_, button, "Toggle")
+    if self_.Value then
+        safeCall(opts.Callback, true)
+    end
+    return handle
+end
+
+function Tab:Slider(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc", CurrentValue = "Default", Value = "Default", Increment = "Step" })
+    local min = opts.Min or 0
+    local max = opts.Max or 100
+    local step = opts.Step or 1
+    local suffix = opts.Suffix or ""
+    local numbers = numberFormat(min, max, step)
+
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local height = metrics.Slider
+    local frame, frameStroke = card(self, "Frame", height, opts)
+    hoverStroke(frame, frameStroke)
+
+    label({
+        Position = UDim2.fromOffset(14, compact and 5 or 12),
+        Size = UDim2.new(1, -120, 0, 18),
+        Text = opts.Name or "Slider",
+        TextSize = metrics.TextSize,
+        Parent = frame,
+    })
+
+    local valueChip = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, compact and -14 or -10, 0, compact and 2 or 9),
+        Size = UDim2.fromOffset(40, 24),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = frame,
+    })
+    corner(valueChip, UDim.new(0, 6))
+    local chipStroke = stroke(valueChip)
+    local valueLabel = label({
+        Size = UDim2.new(1, 0, 1, 0),
+        TextSize = 13,
+        TextColor3 = Theme.Accent,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        TextTruncate = Enum.TextTruncate.None,
+        Parent = valueChip,
+    })
+    local valueBox = create("TextBox", {
+        Position = UDim2.fromOffset(9, 0),
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Text = "",
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Medium,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ClearTextOnFocus = false,
+        Visible = false,
+        Parent = valueChip,
+    })
+    create("UISizeConstraint", { MinSize = Vector2.new(14, 0), Parent = valueBox })
+    local suffixLabel = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = suffix,
+        TextSize = 13,
+        TextColor3 = Theme.Accent,
+        TextTruncate = Enum.TextTruncate.None,
+        Visible = false,
+        Parent = valueChip,
+    })
+    local chipButton = create("TextButton", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 2,
+        Parent = valueChip,
+    })
+    local editing = false
+    local function fitChip(instant)
+        local width
+        if editing then
+            width = 9 + valueBox.AbsoluteSize.X / (self.Window.Scale.Scale) + suffixLabel.TextBounds.X + 9
+            suffixLabel.Position = UDim2.fromOffset(9 + valueBox.AbsoluteSize.X / (self.Window.Scale.Scale), 0)
+        else
+            width = valueLabel.TextBounds.X + 18
+        end
+        width = math.max(width, 36)
+        if instant then
+            valueChip.Size = UDim2.fromOffset(width, 24)
+        else
+            tween(valueChip, { Size = UDim2.fromOffset(width, 24) }, 0.2)
+        end
+    end
+    valueLabel:GetPropertyChangedSignal("TextBounds"):Connect(function()
+        if not editing then
+            fitChip(false)
+        end
+    end)
+    valueBox:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if editing then
+            fitChip(false)
+        end
+    end)
+
+    local track = create("Frame", {
+        Position = UDim2.new(0, 14, 0, height - (compact and 13 or 18)),
+        Size = UDim2.new(1, -28, 0, 5),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = frame,
+    })
+    corner(track, UDim.new(1, 0))
+    local fill = create("Frame", {
+        Size = UDim2.new(0, 0, 1, 0),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        Parent = track,
+    })
+    corner(fill, UDim.new(1, 0))
+
+    local knobGlow = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.fromOffset(28, 28),
+        BackgroundTransparency = 1,
+        Image = Assets.Glow,
+        ImageColor3 = Theme.Accent,
+        ImageTransparency = 0.85,
+        ZIndex = 2,
+        Parent = track,
+    })
+    local knob = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.fromOffset(12, 12),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        ZIndex = 3,
+        Parent = track,
+    })
+    corner(knob, UDim.new(1, 0))
+
+    local hit = create("TextButton", {
+        Position = UDim2.new(0, 8, 0, height - (compact and 13 or 18) - (TOUCH and 19 or 13)),
+        Size = UDim2.new(1, -16, 0, TOUCH and 40 or 28),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 4,
+        Parent = frame,
+    })
+
+    local self_ = { Value = math.clamp(opts.Default or min, min, max) }
+    local dragging = false
+    chipButton.MouseEnter:Connect(function()
+        tween(chipStroke, { Color = Theme.StrokeHover }, 0.12)
+    end)
+    chipButton.MouseLeave:Connect(function()
+        if not valueBox:IsFocused() then
+            tween(chipStroke, { Color = Theme.Stroke }, 0.2)
+        end
+    end)
+    chipButton.MouseButton1Click:Connect(function()
+        editing = true
+        valueBox.Text = numbers.format(self_.Value)
+        valueLabel.Visible = false
+        valueBox.Visible = true
+        suffixLabel.Visible = suffix ~= ""
+        chipButton.Visible = false
+        tween(chipStroke, { Color = Theme.StrokeHover }, 0.12)
+        valueBox:CaptureFocus()
+        task.defer(fitChip, false)
+    end)
+    valueBox.FocusLost:Connect(function()
+        local typed = tonumber(valueBox.Text)
+        editing = false
+        valueBox.Visible = false
+        suffixLabel.Visible = false
+        valueLabel.Visible = true
+        chipButton.Visible = true
+        tween(chipStroke, { Color = Theme.Stroke }, 0.2)
+        if typed then
+            self_:Set(typed)
+        end
+        fitChip(false)
+    end)
+    hit.MouseEnter:Connect(function()
+        if not dragging then
+            tween(knobGlow, { ImageTransparency = 0.78, Size = UDim2.fromOffset(34, 34) }, 0.15)
+        end
+    end)
+    hit.MouseLeave:Connect(function()
+        if not dragging then
+            tween(knobGlow, { ImageTransparency = 0.85, Size = UDim2.fromOffset(28, 28) }, 0.2)
+        end
+    end)
+
+    local snap = numbers.snap
+
+    local function fraction()
+        return (max - min) == 0 and 0 or (self_.Value - min) / (max - min)
+    end
+
+    local function moveTo(frac, duration, style)
+        style = style or Enum.EasingStyle.Linear
+        tween(fill, { Size = UDim2.new(frac, 0, 1, 0) }, duration, style)
+        tween(knob, { Position = UDim2.new(frac, 0, 0.5, 0) }, duration, style)
+        tween(knobGlow, { Position = UDim2.new(frac, 0, 0.5, 0) }, duration, style)
+    end
+
+    local function render(duration, style)
+        moveTo(fraction(), duration, style)
+        valueLabel.Text = numbers.format(self_.Value) .. suffix
+    end
+
+    local function settleTo(previousFrac)
+        local target = fraction()
+        local width = math.max(track.AbsoluteSize.X, 1)
+        local overshoot = (target >= previousFrac and 1 or -1) * (5 / width)
+        moveTo(math.clamp(target + overshoot, 0, 1), 0.22, Enum.EasingStyle.Quint)
+        task.delay(0.22, function()
+            if not dragging then
+                moveTo(fraction(), 0.18, Enum.EasingStyle.Quint)
+            end
+        end)
+        valueLabel.Text = numbers.format(self_.Value) .. suffix
+    end
+
+    local function bounceKnob()
+        tween(knob, { Size = UDim2.fromOffset(14, 12) }, 0.08)
+        tween(knobGlow, { Size = UDim2.fromOffset(32, 32), ImageTransparency = 0.78 }, 0.12)
+        task.delay(0.1, function()
+            tween(knob, { Size = UDim2.fromOffset(12, 12) }, 0.25, Enum.EasingStyle.Quint)
+            tween(knobGlow, { Size = UDim2.fromOffset(28, 28), ImageTransparency = 0.85 }, 0.25)
+        end)
+    end
+
+    function self_:Set(value, silent)
+        value = snap(tonumber(value) or min)
+        if value == self_.Value then
+            return
+        end
+        local previousFrac = fraction()
+        self_.Value = value
+        if dragging then
+            render(0.05)
+        else
+            settleTo(previousFrac)
+            bounceKnob()
+            flashStroke(frameStroke)
+        end
+        if not silent then
+            safeCall(opts.Callback, value)
+        end
+    end
+
+    function self_:Get()
+        return self_.Value
+    end
+
+    local function updateFromX(x)
+        local frac = math.clamp((x - track.AbsolutePosition.X) / track.AbsoluteSize.X, 0, 1)
+        self_:Set(min + (max - min) * frac)
+    end
+
+    hit.InputBegan:Connect(function(input)
+        if isPress(input) then
+            dragging = true
+            self_.Dragging = true
+            tween(knob, { Size = UDim2.fromOffset(16, 16) }, 0.15, Enum.EasingStyle.Back)
+            tween(knobGlow, { Size = UDim2.fromOffset(44, 44), ImageTransparency = 0.7 }, 0.15)
+            updateFromX(pointerPosition().X)
+        end
+    end)
+
+    self.Window:_listen("Changed", function(input)
+        if dragging and isMove(input) then
+            updateFromX(pointerPosition().X)
+        end
+    end, self_)
+
+    self.Window:_listen("Ended", function(input)
+        if dragging and isPress(input) then
+            dragging = false
+            self_.Dragging = false
+            tween(knob, { Size = UDim2.fromOffset(12, 12) }, 0.2)
+            tween(knobGlow, { Size = UDim2.fromOffset(28, 28), ImageTransparency = 0.85 }, 0.2)
+            safeCall(opts.OnRelease, self_.Value)
+        end
+    end, self_)
+
+    self_.Value = snap(self_.Value)
+    render(0)
+    task.defer(fitChip, true)
+    return finishElement(self, opts, self_, frame, "Slider")
+end
+
+function Tab:Dropdown(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc", CurrentOption = "Default", Value = "Default", MultipleOptions = "Multi", Values = "Options" })
+    if opts.Multi and type(opts.Default) ~= "table" and opts.Default ~= nil then
+        opts.Default = { opts.Default }
+    elseif not opts.Multi and type(opts.Default) == "table" then
+        opts.Default = opts.Default[1]
+    end
+    local multi = opts.Multi == true
+    local options = opts.Options or {}
+    local frame, frameStroke, height
+    opts, frame, frameStroke, height = beginElement(self, opts, {}, "Frame")
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local chipHeight = metrics.Chip
+    local window = self.Window
+    local ROW = TOUCH and 40 or 30
+    local MAX_ROWS = opts.MaxRows or 6
+    -- Stacked: the chip spans the whole row, with the name (if any) above it.
+    local stacked = compact and opts.Stacked == true
+    local stackTop = 2
+    if stacked then
+        stackTop = (opts.Name or "") ~= "" and 20 or 2
+        chipHeight = TOUCH and 34 or 30
+        height = stackTop + chipHeight + 4
+        frame.Size = UDim2.new(1, 0, 0, height)
+    end
+
+    local header = create("TextButton", {
+        Size = UDim2.new(1, 0, 0, height),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = frame,
+    })
+    local titleLabel, descLabel
+    if not stacked then
+        titleLabel, descLabel = titleDesc(header, opts.Name or "Dropdown", opts.Desc, 180, metrics)
+    elseif stackTop > 2 then
+        titleLabel = label({
+            Position = UDim2.fromOffset(14, 1),
+            Size = UDim2.new(1, -28, 0, 16),
+            Text = opts.Name,
+            TextSize = metrics.TextSize,
+            Parent = header,
+        })
+    end
+
+    local chip = create("Frame", {
+        AnchorPoint = stacked and Vector2.zero or Vector2.new(1, 0.5),
+        Position = stacked and UDim2.fromOffset(14, stackTop) or UDim2.new(1, compact and -14 or -10, 0.5, 0),
+        Size = UDim2.fromOffset(60, chipHeight),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = header,
+    })
+    corner(chip, UDim.new(0, 6))
+    local chipStroke = stroke(chip)
+    local valueLabel = label({
+        Position = UDim2.fromOffset(10, 0),
+        Size = UDim2.new(1, -34, 1, 0),
+        TextColor3 = Theme.Muted,
+        TextSize = 13,
+        TextTruncate = Enum.TextTruncate.None,
+        ClipsDescendants = true,
+        Parent = chip,
+    })
+    local arrow = arrowIndicator(chip, 1, -6)
+    local measure = label({
+        Size = UDim2.fromOffset(0, chipHeight),
+        AutomaticSize = Enum.AutomaticSize.X,
+        TextSize = 13,
+        Visible = false,
+        Parent = chip,
+    })
+    local fullText = ""
+    local function trimmed()
+        local maxText = (stacked and frame.AbsoluteSize.X / window.Scale.Scale - 28 or compact and rowControlWidth(frame, window) or 190) - 10 - 34
+        measure.Text = fullText
+        if measure.TextBounds.X <= maxText then
+            return fullText
+        end
+        local text = fullText
+        while #text > 1 do
+            text = text:sub(1, -2)
+            measure.Text = text .. ".."
+            if measure.TextBounds.X <= maxText then
+                return text .. ".."
+            end
+        end
+        return ".."
+    end
+    local function fitChip(instant)
+        if stacked then
+            chip.Size = UDim2.new(1, -28, 0, chipHeight)
+            return
+        end
+        local width
+        if compact then
+            width = rowControlWidth(frame, window)
+        else
+            width = math.clamp(valueLabel.TextBounds.X + 10 + 34, 60, 190)
+        end
+        reserveRight(titleLabel, descLabel, width + (compact and 24 or 20))
+        if instant then
+            chip.Size = UDim2.fromOffset(width, chipHeight)
+        else
+            tween(chip, { Size = UDim2.fromOffset(width, chipHeight) }, 0.2)
+        end
+    end
+    valueLabel:GetPropertyChangedSignal("TextBounds"):Connect(function()
+        if not compact then
+            fitChip(false)
+        end
+    end)
+    if compact then
+        -- The chip follows the row every frame; re-measuring the text waits
+        -- until the width stops changing so resizing stays cheap.
+        local lastWidth, pending = 0, false
+        frame:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+            local width = frame.AbsoluteSize.X
+            if width == lastWidth then
+                return
+            end
+            lastWidth = width
+            fitChip(true)
+            if not pending then
+                pending = true
+                task.delay(0.12, function()
+                    pending = false
+                    valueLabel.Text = trimmed()
+                end)
+            end
+        end)
+    end
+
+    -- Popup: floats over the window under the chip, with search, bulk
+    -- actions for multi selection and a scrolling list of checkbox rows.
+    -- The popup is a plain clipped frame that unfolds out of the chip, so text
+    -- stays crisp. The shadow sits outside the clip.
+    local popup = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0),
+        Size = UDim2.fromOffset(220, 0),
+        BackgroundTransparency = 1,
+        Visible = false,
+        ZIndex = 45,
+        Parent = window.Body,
+    })
+    popup:SetAttribute("NoDrag", true)
+    local popupShadow = create("ImageLabel", {
+        Position = UDim2.fromOffset(-18, -12),
+        Size = UDim2.new(1, 36, 1, 36),
+        BackgroundTransparency = 1,
+        Image = Assets.Shadow,
+        ImageColor3 = Color3.new(0, 0, 0),
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Slice,
+        SliceCenter = Rect.new(49, 49, 450, 450),
+        Parent = popup,
+    })
+    local panel = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = popup,
+    })
+    corner(panel, UDim.new(0, 10))
+    local panelStroke = stroke(panel, Theme.Stroke, 1)
+    edgeHighlight(panel)
+    local inner = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 120),
+        BackgroundTransparency = 1,
+        Parent = panel,
+    })
+    padding(inner, 8, 8, 8, 8)
+
+    local searchHolder = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 32),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = inner,
+    })
+    corner(searchHolder, UDim.new(0, 7))
+    local searchStroke = stroke(searchHolder)
+    local searchIconHolder, searchIcon = glowIcon(searchHolder, "search", Theme.Muted, UDim2.new(0, 10, 0.5, 0))
+    searchIconHolder.Size = UDim2.fromOffset(14, 14)
+    local searchBox = create("TextBox", {
+        Position = UDim2.fromOffset(32, 0),
+        Size = UDim2.new(1, -40, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        PlaceholderText = opts.SearchPlaceholder or "Search",
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        ClearTextOnFocus = false,
+        Parent = searchHolder,
+    })
+    searchBox.Focused:Connect(function()
+        tween(searchStroke, { Color = Theme.StrokeHover }, 0.15)
+        tween(searchIcon, { ImageColor3 = Theme.Accent }, 0.15)
+    end)
+    searchBox.FocusLost:Connect(function()
+        tween(searchStroke, { Color = Theme.Stroke }, 0.2)
+        tween(searchIcon, { ImageColor3 = Theme.Muted }, 0.2)
+    end)
+
+    local actions = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 28),
+        BackgroundTransparency = 1,
+        Visible = multi,
+        Parent = inner,
+    })
+    local function actionButton(text, position)
+        local button = create("TextButton", {
+            Position = position,
+            Size = UDim2.new(0.5, -3, 1, 0),
+            BackgroundColor3 = Theme.Surface3,
+            BackgroundTransparency = 0.35,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            ClipsDescendants = true,
+            Parent = actions,
+        })
+        corner(button, UDim.new(0, 6))
+        local buttonStroke = stroke(button)
+        label({
+            Size = UDim2.fromScale(1, 1),
+            Text = text,
+            TextSize = 12,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            Parent = button,
+        })
+        button.MouseEnter:Connect(function()
+            tween(button, { BackgroundTransparency = 0.05 }, 0.15)
+            tween(buttonStroke, { Color = Theme.StrokeHover }, 0.15)
+        end)
+        button.MouseLeave:Connect(function()
+            tween(button, { BackgroundTransparency = 0.35 }, 0.25)
+            tween(buttonStroke, { Color = Theme.Stroke }, 0.25)
+        end)
+        button.MouseButton1Click:Connect(function()
+            ripple(button)
+        end)
+        return button
+    end
+    local selectAll = actionButton(opts.SelectAllText or "Select all", UDim2.fromOffset(0, 0))
+    local clearAll = actionButton(opts.ClearAllText or "Clear all", UDim2.new(0.5, 3, 0, 0))
+
+    local list = create("ScrollingFrame", {
+        Size = UDim2.new(1, 0, 0, 100),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = TOUCH and 4 or 3,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        -- Sized by hand: AutomaticCanvasSize under the window's UIScale
+        -- sometimes leaves the canvas short, so the list would not scroll.
+        CanvasSize = UDim2.new(),
+        Parent = inner,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = list,
+    })
+    local noResults = label({
+        Size = UDim2.new(1, 0, 0, ROW),
+        Text = opts.NoResultsText or "No results",
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        LayoutOrder = 0,
+        Visible = false,
+        Parent = list,
+    })
+
+    local self_ = { Open = false }
+    local selected = {}
+    local optionButtons = {}
+    local filter = ""
+
+    local function matches(option)
+        return filter == "" or string.find(string.lower(tostring(option)), filter, 1, true) ~= nil
+    end
+
+    -- Option labels are rich text, so the part matching the search can light up.
+    local function escapeRich(text)
+        return (text:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
+    end
+    local function optionText(option)
+        local text = tostring(option)
+        local at = filter ~= "" and string.find(string.lower(text), filter, 1, true)
+        if not at then
+            return escapeRich(text)
+        end
+        local stop = at + #filter - 1
+        return escapeRich(text:sub(1, at - 1))
+            .. '<font color="#' .. Theme.Accent:ToHex() .. '"><b>' .. escapeRich(text:sub(at, stop)) .. "</b></font>"
+            .. escapeRich(text:sub(stop + 1))
+    end
+
+    if multi then
+        for _, value in ipairs(opts.Default or {}) do
+            selected[value] = true
+        end
+    elseif opts.Default ~= nil then
+        selected[opts.Default] = true
+    end
+
+    local function currentValue()
+        if multi then
+            local picked = {}
+            for _, option in ipairs(options) do
+                if selected[option] then
+                    table.insert(picked, option)
+                end
+            end
+            return picked
+        end
+        for _, option in ipairs(options) do
+            if selected[option] then
+                return option
+            end
+        end
+        return nil
+    end
+
+    -- A picked row rests on a faint accent tint; hovering lifts either kind.
+    local function restRow(entry, duration)
+        local on, hover = entry.On == true, entry.Hover == true
+        tween(entry.Frame, {
+            BackgroundColor3 = on and Theme.Accent or Theme.Surface3,
+            BackgroundTransparency = on and (hover and 0.8 or 0.88) or (hover and 0.55 or 1),
+        }, duration)
+        tween(entry.Label, { TextColor3 = (on or hover) and Theme.Text or Theme.Muted }, duration)
+    end
+
+    local function paintOption(button, animate)
+        local on = selected[button.Option] == true
+        if button.On == on and animate then
+            return
+        end
+        button.On = on
+        local duration = animate and 0.18 or 0
+        restRow(button, duration)
+        if multi then
+            tween(button.Box, { BackgroundColor3 = on and Theme.Accent or Theme.Surface2 }, duration)
+            tween(button.BoxStroke, { Color = on and Theme.Accent or Theme.Stroke }, duration)
+        else
+            tween(button.Bar, {
+                BackgroundTransparency = on and 0 or 1,
+                Size = UDim2.fromOffset(3, on and ROW - 14 or 4),
+            }, animate and 0.3 or 0, Enum.EasingStyle.Quint)
+        end
+        tween(button.Check, { ImageTransparency = on and 0 or 1 }, duration)
+        if animate and on then
+            button.CheckScale.Scale = 0.5
+            tween(button.CheckScale, { Scale = 1 }, 0.3, Enum.EasingStyle.Back)
+        else
+            button.CheckScale.Scale = 1
+        end
+    end
+
+    local function renderValue(animate)
+        local value = currentValue()
+        if #options == 0 then
+            fullText = opts.EmptyText or "None"
+        elseif multi then
+            -- Two names at most, then a count, so a long pick stays readable.
+            if #value > 2 then
+                fullText = tostring(value[1]) .. ", " .. tostring(value[2]) .. "  +" .. (#value - 2)
+            else
+                fullText = #value > 0 and table.concat(value, ", ") or (opts.NoneText or "None")
+            end
+        else
+            fullText = value ~= nil and tostring(value) or (opts.NoneText or "None")
+        end
+        valueLabel.Text = trimmed()
+        -- A picked value reads in full colour; "None" stays muted.
+        local picked = #options > 0 and (if multi then #value > 0 else value ~= nil)
+        tween(valueLabel, { TextColor3 = picked and Theme.Text or Theme.Muted }, animate and 0.15 or 0)
+        for _, button in pairs(optionButtons) do
+            paintOption(button, animate)
+        end
+    end
+
+    local function visibleCount()
+        local count = 0
+        for _, option in ipairs(options) do
+            if matches(option) then
+                count += 1
+            end
+        end
+        return count
+    end
+
+    local searchShown = true
+    local targetSize = Vector2.new(220, 120)
+    local opened = false
+    local function layoutPopup(instant)
+        searchShown = opts.Searchable ~= false and #options > (opts.SearchAfter or 0)
+        searchHolder.Visible = searchShown
+        local top = 0
+        if searchShown then
+            top += 38
+        end
+        actions.Position = UDim2.fromOffset(0, top)
+        if multi and #options > 0 then
+            actions.Visible = true
+            top += 34
+        else
+            actions.Visible = false
+        end
+        local count = visibleCount()
+        noResults.Visible = count == 0
+        local rows = math.clamp(count, 1, MAX_ROWS)
+        local listHeight = rows * ROW + (rows - 1) * 2
+        list.CanvasSize = UDim2.fromOffset(0, math.max(count, 1) * (ROW + 2) - 2)
+        local scale = window.Scale.Scale
+        -- Shrink the list to whichever side of the chip has more room, so the
+        -- popup never runs off a short window (phones in landscape).
+        local host = window:_popupHost(frame)
+        local bodyHeight = host.AbsoluteSize.Y / scale
+        local chipTop = (chip.AbsolutePosition.Y - host.AbsolutePosition.Y) / scale
+        local room = math.max(bodyHeight - (chipTop + chip.AbsoluteSize.Y / scale) - 14, chipTop - 14) - top - 16
+        if room >= ROW then
+            listHeight = math.min(listHeight, room)
+        end
+        list.Position = UDim2.fromOffset(0, top)
+        list.Size = UDim2.new(1, 0, 0, listHeight)
+        local width = math.max(math.floor(chip.AbsoluteSize.X / scale), opts.PopupWidth or 210)
+        local bodyWidth = host.AbsoluteSize.X / scale
+        width = math.min(width, math.max(bodyWidth - 16, 120))
+        targetSize = Vector2.new(width, top + listHeight + 16)
+        inner.Size = UDim2.new(1, 0, 0, targetSize.Y)
+        if not opened then
+            return
+        end
+        if instant then
+            popup.Size = UDim2.fromOffset(targetSize.X, targetSize.Y)
+        else
+            tween(popup, { Size = UDim2.fromOffset(targetSize.X, targetSize.Y) }, 0.22, Enum.EasingStyle.Quint)
+        end
+    end
+
+    local function applyFilter()
+        for option, button in pairs(optionButtons) do
+            local shown = matches(option)
+            button.Frame.Visible = shown
+            if shown then
+                button.Label.Text = optionText(option)
+            end
+        end
+    end
+
+    local scroller = nil
+    local function place()
+        local body = window:_popupHost(frame)
+        local scale = window.Scale.Scale
+        if scroller then
+            local centre = chip.AbsolutePosition + chip.AbsoluteSize / 2
+            if not pointInside(centre, scroller) then
+                self_:SetOpen(false)
+                return
+            end
+        end
+        local bodySize = body.AbsoluteSize / scale
+        local chipPosition = (chip.AbsolutePosition - body.AbsolutePosition) / scale
+        local chipSize = chip.AbsoluteSize / scale
+        local right = math.clamp(chipPosition.X + chipSize.X, targetSize.X + 8, math.max(bodySize.X - 8, targetSize.X + 8))
+        local below = chipPosition.Y + chipSize.Y + 6
+        -- Opening upward pins the content to the bottom edge so it unfolds from the chip.
+        if below + targetSize.Y > bodySize.Y - 8 and chipPosition.Y - 6 - targetSize.Y >= 8 then
+            popup.AnchorPoint = Vector2.new(1, 1)
+            popup.Position = UDim2.fromOffset(right, chipPosition.Y - 6)
+            inner.AnchorPoint = Vector2.new(0, 1)
+            inner.Position = UDim2.fromScale(0, 1)
+        else
+            popup.AnchorPoint = Vector2.new(1, 0)
+            popup.Position = UDim2.fromOffset(right, below)
+            inner.AnchorPoint = Vector2.zero
+            inner.Position = UDim2.fromScale(0, 0)
+        end
+    end
+
+    local stopFollowing = nil
+    local closeGeneration = 0
+    -- The page behind stops scrolling while the popup is open, so wheel and
+    -- swipe input always reach the list instead of dragging the page away.
+    local lockedScroller = nil
+    local function unlockScroller()
+        if lockedScroller then
+            lockedScroller.ScrollingEnabled = true
+            lockedScroller = nil
+        end
+    end
+    local function scrollToSelected()
+        list.CanvasPosition = Vector2.zero
+        if multi then
+            return
+        end
+        local value = currentValue()
+        if value == nil then
+            return
+        end
+        for index, option in ipairs(options) do
+            if option == value then
+                list.CanvasPosition = Vector2.new(0, math.max(0, (index - 2) * (ROW + 2)))
+                return
+            end
+        end
+    end
+    local function setOpen(open)
+        if open == self_.Open then
+            return
+        end
+        self_.Open = open
+        arrow:Set(open)
+        tween(chipStroke, { Color = open and Theme.Accent or Theme.Stroke, Transparency = open and 0.35 or 0 }, 0.2)
+        tween(chip, { BackgroundColor3 = open and Theme.Surface2 or Theme.Surface }, 0.2)
+        closeGeneration += 1
+        if open then
+            if window._closePopup and window._closePopup ~= self_._close then
+                window._closePopup()
+            end
+            window._closePopup = self_._close
+            scroller = frame:FindFirstAncestorWhichIsA("ScrollingFrame")
+            if scroller and scroller.ScrollingEnabled then
+                lockedScroller = scroller
+                scroller.ScrollingEnabled = false
+            end
+            -- Drawn over a floating panel when the dropdown lives in one.
+            popup.Parent = window:_popupHost(frame)
+            filter = ""
+            searchBox.Text = ""
+            searchBox.PlaceholderText = opts.SearchPlaceholder or (#options > 6 and ("Search " .. #options .. " options") or "Search")
+            applyFilter()
+            layoutPopup(true)
+            renderValue(false)
+            scrollToSelected()
+            opened = true
+            popup.Size = UDim2.fromOffset(targetSize.X, 0)
+            place()
+            popup.Visible = true
+            tween(popup, { Size = UDim2.fromOffset(targetSize.X, targetSize.Y) }, 0.3, Enum.EasingStyle.Quint)
+            tween(panelStroke, { Transparency = 0 }, 0.12)
+            tween(popupShadow, { ImageTransparency = 0.4 }, 0.3)
+            if not stopFollowing then
+                stopFollowing = window:_listen("Render", place)
+            end
+        else
+            if window._closePopup == self_._close then
+                window._closePopup = nil
+            end
+            unlockScroller()
+            if searchBox:IsFocused() then
+                searchBox:ReleaseFocus()
+            end
+            opened = false
+            tween(popup, { Size = UDim2.fromOffset(targetSize.X, 0) }, 0.2, Enum.EasingStyle.Quint)
+            tween(popupShadow, { ImageTransparency = 1 }, 0.16)
+            local generation = closeGeneration
+            task.delay(0.14, function()
+                if closeGeneration == generation and not self_.Open then
+                    tween(panelStroke, { Transparency = 1 }, 0.06)
+                end
+            end)
+            task.delay(0.21, function()
+                if closeGeneration == generation and not self_.Open then
+                    popup.Visible = false
+                    if stopFollowing then
+                        stopFollowing()
+                        stopFollowing = nil
+                    end
+                end
+            end)
+        end
+    end
+    self_._close = function()
+        setOpen(false)
+    end
+
+    local function commit()
+        renderValue(true)
+        safeCall(opts.Callback, currentValue())
+    end
+
+    local function buildOptions()
+        local keep = {}
+        for index, option in ipairs(options) do
+            keep[option] = index
+        end
+        for option, button in pairs(optionButtons) do
+            if not keep[option] then
+                button.Frame:Destroy()
+                optionButtons[option] = nil
+            end
+        end
+        for index, option in ipairs(options) do
+            local existing = optionButtons[option]
+            if existing then
+                existing.Frame.LayoutOrder = index
+                continue
+            end
+            local row = create("TextButton", {
+                Size = UDim2.new(1, -6, 0, ROW),
+                BackgroundColor3 = Theme.Surface3,
+                BackgroundTransparency = 1,
+                BorderSizePixel = 0,
+                Text = "",
+                AutoButtonColor = false,
+                LayoutOrder = index,
+                Parent = list,
+            })
+            corner(row, UDim.new(0, 7))
+            -- Multi selection ticks a checkbox on the left. A single pick
+            -- gets an accent bar on the left edge and a check on the right.
+            local box, boxStroke, bar, check
+            if multi then
+                box = create("Frame", {
+                    AnchorPoint = Vector2.new(0, 0.5),
+                    Position = UDim2.new(0, 8, 0.5, 0),
+                    Size = UDim2.fromOffset(18, 18),
+                    BackgroundColor3 = Theme.Surface2,
+                    BorderSizePixel = 0,
+                    Parent = row,
+                })
+                corner(box, UDim.new(0, 5))
+                boxStroke = stroke(box, Theme.Stroke)
+                check = create("ImageLabel", {
+                    AnchorPoint = Vector2.new(0.5, 0.5),
+                    Position = UDim2.fromScale(0.5, 0.5),
+                    Size = UDim2.fromOffset(12, 12),
+                    BackgroundTransparency = 1,
+                    ImageColor3 = Theme.AccentDark,
+                    ImageTransparency = 1,
+                    ScaleType = Enum.ScaleType.Fit,
+                    Parent = box,
+                })
+            else
+                bar = create("Frame", {
+                    AnchorPoint = Vector2.new(0, 0.5),
+                    Position = UDim2.new(0, 3, 0.5, 0),
+                    Size = UDim2.fromOffset(3, 4),
+                    BackgroundColor3 = Theme.Accent,
+                    BackgroundTransparency = 1,
+                    BorderSizePixel = 0,
+                    Parent = row,
+                })
+                corner(bar, UDim.new(1, 0))
+                check = create("ImageLabel", {
+                    AnchorPoint = Vector2.new(1, 0.5),
+                    Position = UDim2.new(1, -10, 0.5, 0),
+                    Size = UDim2.fromOffset(14, 14),
+                    BackgroundTransparency = 1,
+                    ImageColor3 = Theme.Accent,
+                    ImageTransparency = 1,
+                    ScaleType = Enum.ScaleType.Fit,
+                    Parent = row,
+                })
+            end
+            applyIcon(check, "check")
+            local checkScale = create("UIScale", { Parent = check })
+            local text_ = label({
+                Position = UDim2.fromOffset(multi and 36 or 14, 0),
+                Size = UDim2.new(1, multi and -44 or -46, 1, 0),
+                Text = optionText(option),
+                TextSize = 13,
+                TextColor3 = Theme.Muted,
+                RichText = true,
+                Parent = row,
+            })
+            local entry = { Option = option, Frame = row, Box = box, BoxStroke = boxStroke, Bar = bar, Check = check, CheckScale = checkScale, Label = text_, On = nil, Hover = false }
+            local isTap = tapGuard(row, function()
+                return list
+            end)
+            row.MouseEnter:Connect(function()
+                -- Touch fires enter without a matching leave; skip the hover.
+                if usingTouch() then
+                    return
+                end
+                entry.Hover = true
+                restRow(entry, 0.15)
+                if boxStroke and not selected[option] then
+                    tween(boxStroke, { Color = Theme.StrokeHover }, 0.15)
+                end
+            end)
+            row.MouseLeave:Connect(function()
+                entry.Hover = false
+                restRow(entry, 0.25)
+                if boxStroke and not selected[option] then
+                    tween(boxStroke, { Color = Theme.Stroke }, 0.25)
+                end
+            end)
+            row.MouseButton1Click:Connect(function()
+                if not isTap() then
+                    return
+                end
+                if selected[option] then
+                    if not multi and opts.AllowNone == false then
+                        setOpen(false)
+                        return
+                    end
+                    selected[option] = nil
+                else
+                    if not multi then
+                        selected = {}
+                    end
+                    selected[option] = true
+                end
+                commit()
+                if not multi then
+                    setOpen(false)
+                end
+            end)
+            optionButtons[option] = entry
+            paintOption(entry, false)
+        end
+        applyFilter()
+        if self_.Open then
+            layoutPopup(false)
+        end
+    end
+
+    selectAll.MouseButton1Click:Connect(function()
+        for _, option in ipairs(options) do
+            if matches(option) then
+                selected[option] = true
+            end
+        end
+        commit()
+    end)
+    clearAll.MouseButton1Click:Connect(function()
+        selected = {}
+        commit()
+    end)
+
+    function self_:Set(value, silent)
+        selected = {}
+        if multi then
+            for _, item in ipairs(type(value) == "table" and value or { value }) do
+                selected[item] = true
+            end
+        elseif value ~= nil then
+            selected[value] = true
+        end
+        renderValue(self_.Open)
+        flashStroke(frameStroke)
+        if not silent then
+            safeCall(opts.Callback, currentValue())
+        end
+    end
+
+    function self_:Get()
+        return currentValue()
+    end
+
+    local function sameValue(a, b)
+        if type(a) ~= "table" or type(b) ~= "table" then
+            return a == b
+        end
+        if #a ~= #b then
+            return false
+        end
+        for index, item in ipairs(a) do
+            if b[index] ~= item then
+                return false
+            end
+        end
+        return true
+    end
+
+    -- A kept pick only counts once its option exists, so a list filled in after a
+    -- config load changes the value; the callback runs so scripts see it.
+    function self_:Refresh(newOptions, keepSelection, silent)
+        local before = currentValue()
+        options = newOptions or {}
+        if not keepSelection then
+            selected = {}
+        end
+        buildOptions()
+        renderValue(false)
+        if not silent and not sameValue(before, currentValue()) then
+            safeCall(opts.Callback, currentValue())
+        end
+    end
+
+    -- Every pick, including ones whose option isn't in the list right now, so
+    -- saving never drops them.
+    function self_:_saveValue()
+        local picked = currentValue()
+        if multi then
+            local seen = {}
+            for _, item in ipairs(picked) do
+                seen[item] = true
+            end
+            for item in pairs(selected) do
+                if not seen[item] then
+                    table.insert(picked, item)
+                end
+            end
+            return picked
+        end
+        if picked == nil then
+            picked = next(selected)
+        end
+        return picked
+    end
+
+    function self_:SetOpen(open)
+        setOpen(open == true)
+    end
+
+    local headerTap = tapGuard(header, function()
+        return frame:FindFirstAncestorWhichIsA("ScrollingFrame")
+    end)
+    header.MouseButton1Click:Connect(function()
+        if headerTap() then
+            setOpen(not self_.Open)
+        end
+    end)
+    -- The chip answers the pointer before it is opened.
+    header.MouseEnter:Connect(function()
+        if not self_.Open and not usingTouch() then
+            tween(chipStroke, { Color = Theme.StrokeHover }, 0.15)
+            tween(chip, { BackgroundColor3 = Theme.Surface2 }, 0.15)
+        end
+    end)
+    header.MouseLeave:Connect(function()
+        if not self_.Open then
+            tween(chipStroke, { Color = Theme.Stroke }, 0.25)
+            tween(chip, { BackgroundColor3 = Theme.Surface }, 0.25)
+        end
+    end)
+    searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+        filter = string.lower(searchBox.Text)
+        applyFilter()
+        if self_.Open then
+            layoutPopup(false)
+        end
+    end)
+    self_._listeners = {
+        function()
+            setOpen(false)
+            unlockScroller()
+            if stopFollowing then
+                stopFollowing()
+                stopFollowing = nil
+            end
+            popup:Destroy()
+        end,
+    }
+    window:_listen("Began", function(input)
+        if not self_.Open then
+            return
+        end
+        if input.KeyCode == Enum.KeyCode.Escape then
+            setOpen(false)
+        elseif isPress(input) then
+            local point = pointerPosition()
+            if not pointInside(point, popup) and not pointInside(point, header) then
+                setOpen(false)
+            end
+        end
+    end, self_)
+
+    buildOptions()
+    renderValue(false)
+    task.defer(fitChip, true)
+    return finishElement(self, opts, self_, frame, "Dropdown")
+end
+
+Library._amountSuffixes = { k = 1e3, m = 1e6, b = 1e9, t = 1e12, qa = 1e15, qi = 1e18 }
+
+function Library._parseAmount(text)
+    text = string.lower(tostring(text)):gsub("[%s,_%$]", "")
+    text = text:gsub("kg$", ""):gsub("/s$", "")
+    local number = tonumber(text)
+    if number then
+        return number
+    end
+    local digits, suffix = text:match("^(.-)(%a+)$")
+    local scale = suffix and Library._amountSuffixes[suffix]
+    number = digits and tonumber(digits)
+    if number and scale then
+        return number * scale
+    end
+    return nil
+end
+
+function Tab:Input(opts)
+    local frame, frameStroke, _, titleLabel, descLabel
+    opts, frame, frameStroke, _, titleLabel, descLabel = beginElement(self, opts, { Title = "Name", Description = "Desc", PlaceholderText = "Placeholder", CurrentValue = "Default", Value = "Default" }, "Frame", 160, "Input")
+    local compact = metricsOf(self).Compact
+    local boxHeight = compact and metricsOf(self).Chip + 2 or 30
+
+    local boxHolder = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, compact and -14 or -10, 0.5, 0),
+        Size = UDim2.fromOffset(170, boxHeight),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = frame,
+    })
+    corner(boxHolder, UDim.new(0, 6))
+    local boxStroke = stroke(boxHolder)
+
+    local boxIcon = opts.Icon
+    if boxIcon then
+        glowIcon(boxHolder, boxIcon, Theme.Muted, UDim2.new(0, 8, 0.5, 0))
+    end
+    local box = create("TextBox", {
+        Position = UDim2.fromOffset(boxIcon and 30 or 8, 0),
+        Size = UDim2.new(1, boxIcon and -38 or -16, 1, 0),
+        BackgroundTransparency = 1,
+        Text = opts.Default or "",
+        PlaceholderText = opts.Placeholder or "",
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = compact and 13 or 14,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ClearTextOnFocus = false,
+        TextTruncate = Enum.TextTruncate.None,
+        ClipsDescendants = true,
+        Parent = boxHolder,
+    })
+    boxHolder.ClipsDescendants = true
+
+    local lastText = box.Text
+    local value = opts.Numeric and Library._parseAmount(lastText) or nil
+    if opts.Numeric and not value then
+        lastText = ""
+    end
+    local focused = false
+    local textInset = (boxIcon and 30 or 8) + 8
+    local function fitBox(instant)
+        local width
+        if compact then
+            width = rowControlWidth(frame, self.Window)
+        else
+            local cardWidth = frame.AbsoluteSize.X / self.Window.Scale.Scale
+            local maxWidth = math.clamp(cardWidth - 14 - 110 - 20, 100, 200)
+            local measured = box.TextBounds.X
+            if #box.Text == 0 then
+                measured = math.min(box.TextBounds.X, 90)
+            end
+            width = math.clamp(measured + textInset + 12, 90, maxWidth) + (focused and 8 or 0)
+            width = math.min(width, maxWidth + 8)
+        end
+        reserveRight(titleLabel, descLabel, width + (compact and 24 or 20))
+        if instant then
+            boxHolder.Size = UDim2.fromOffset(width, boxHeight)
+        else
+            tween(boxHolder, { Size = UDim2.fromOffset(width, boxHeight) }, 0.18)
+        end
+    end
+    local lastWidth = 0
+    frame:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if frame.AbsoluteSize.X ~= lastWidth then
+            lastWidth = frame.AbsoluteSize.X
+            fitBox(true)
+        end
+    end)
+    box:GetPropertyChangedSignal("Text"):Connect(function()
+        fitBox(false)
+    end)
+    box:GetPropertyChangedSignal("TextBounds"):Connect(function()
+        fitBox(false)
+    end)
+    task.defer(fitBox, true)
+
+    box.Focused:Connect(function()
+        focused = true
+        tween(boxStroke, { Color = Theme.StrokeHover }, 0.15)
+        fitBox(false)
+    end)
+    box.FocusLost:Connect(function(enterPressed)
+        focused = false
+        tween(boxStroke, { Color = Theme.Stroke }, 0.15)
+        fitBox(false)
+        if opts.Numeric then
+            local number = Library._parseAmount(box.Text)
+            if not number then
+                box.Text = lastText
+                return
+            end
+            lastText, value = box.Text, number
+            safeCall(opts.Callback, number, enterPressed)
+            return
+        end
+        safeCall(opts.Callback, box.Text, enterPressed)
+    end)
+
+    return finishElement(self, opts, {
+        Set = function(_, newValue)
+            box.Text = tostring(newValue)
+            if opts.Numeric then
+                local number = Library._parseAmount(box.Text)
+                if number then
+                    lastText, value = box.Text, number
+                else
+                    box.Text = lastText
+                end
+            end
+            flashStroke(frameStroke)
+        end,
+        Get = function()
+            if opts.Numeric then
+                return value
+            end
+            return box.Text
+        end,
+        _saveValue = opts.Numeric and function()
+            return lastText
+        end or nil,
+    }, frame, "Input")
+end
+
+function Tab:Keybind(opts)
+    local frame, frameStroke, _, titleLabel, descLabel
+    opts, frame, frameStroke, _, titleLabel, descLabel = beginElement(self, opts, { Title = "Name", Description = "Desc", CurrentKeybind = "Default", Value = "Default" }, "Frame", 110, "Keybind")
+    if type(opts.Default) == "string" then
+        opts.Default = Enum.KeyCode[opts.Default]
+    end
+    local compact = metricsOf(self).Compact
+    local chipHeight = metricsOf(self).Chip
+
+    local chip = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, compact and -14 or -10, 0.5, 0),
+        Size = UDim2.fromOffset(44, chipHeight),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        ClipsDescendants = true,
+        Parent = frame,
+    })
+    corner(chip, UDim.new(0, 6))
+    local chipStroke = stroke(chip)
+    local chipLabel = label({
+        Size = UDim2.new(1, 0, 1, 0),
+        TextSize = 13,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        TextTruncate = Enum.TextTruncate.None,
+        Parent = chip,
+    })
+
+    local self_ = { Value = opts.Default, Listening = false }
+
+    local function fitChip(instant)
+        local width = math.max(chipLabel.TextBounds.X + 20, TOUCH and 44 or 36)
+        reserveRight(titleLabel, descLabel, width + (compact and 24 or 20))
+        if instant then
+            chip.Size = UDim2.fromOffset(width, chipHeight)
+        else
+            tween(chip, { Size = UDim2.fromOffset(width, chipHeight) }, 0.2)
+        end
+    end
+    chipLabel:GetPropertyChangedSignal("TextBounds"):Connect(function()
+        fitChip(false)
+    end)
+
+    local function render()
+        chipLabel.Text = self_.Listening and "..." or keyName(self_.Value)
+        tween(chipStroke, { Color = self_.Listening and Theme.StrokeHover or Theme.Stroke }, 0.15)
+        tween(chipLabel, { TextColor3 = self_.Listening and Theme.Accent or Theme.Muted }, 0.15)
+    end
+
+    function self_:Set(keyCode, silent)
+        local wasListening = self_.Listening
+        self_.Value = keyCode
+        self_.Listening = false
+        render()
+        if not wasListening then
+            flashStroke(frameStroke)
+        end
+        if not silent then
+            safeCall(opts.OnChanged, keyCode)
+        end
+    end
+
+    chip.MouseButton1Click:Connect(function()
+        self_.Listening = not self_.Listening
+        render()
+    end)
+
+    self.Window:_listen("Began", function(input, gameProcessed)
+        if input.UserInputType ~= Enum.UserInputType.Keyboard then
+            return
+        end
+        if self_.Listening then
+            self.Window._consumedKey = input.KeyCode
+            self.Window._consumedAt = os.clock()
+            if input.KeyCode == Enum.KeyCode.Escape then
+                self_.Listening = false
+                render()
+            else
+                self_:Set(input.KeyCode)
+            end
+            return
+        end
+        if not gameProcessed and self_.Value ~= nil and input.KeyCode == self_.Value then
+            safeCall(opts.Callback, input.KeyCode)
+        end
+    end, self_)
+
+    render()
+    task.defer(fitChip, true)
+    function self_:Get()
+        return self_.Value
+    end
+    self_._onHide = function()
+        if self_.Listening then
+            self_.Listening = false
+            render()
+        end
+    end
+    return finishElement(self, opts, self_, frame, "Keybind")
+end
+
+function Tab:ColorPicker(opts)
+    local PANEL_HEIGHT = 194
+    local frame, frameStroke, height
+    opts, frame, frameStroke, height = beginElement(self, opts, { Title = "Name", Description = "Desc", Color = "Default", CurrentValue = "Default", Value = "Default" }, "Frame")
+    frame.ClipsDescendants = true
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+
+    local header = create("TextButton", {
+        Size = UDim2.new(1, 0, 0, height),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = frame,
+    })
+    titleDesc(header, opts.Name or "Color", opts.Desc, 140, metrics)
+
+    -- Closed, the row shows the hex code beside a rounded swatch.
+    local swatch = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, compact and -38 or -34, 0.5, 0),
+        Size = UDim2.fromOffset(22, 22),
+        BorderSizePixel = 0,
+        Parent = header,
+    })
+    corner(swatch, UDim.new(0, 6))
+    stroke(swatch, Theme.Stroke)
+    local swatchHex = label({
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, compact and -68 or -64, 0.5, 0),
+        Size = UDim2.fromOffset(64, 16),
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Right,
+        Parent = header,
+    })
+    local arrow = arrowIndicator(header, 1, compact and -14 or -12)
+
+    local panel = create("Frame", {
+        Position = UDim2.fromOffset(14, height + 2),
+        Size = UDim2.new(1, -28, 0, PANEL_HEIGHT - 12),
+        BackgroundTransparency = 1,
+        Visible = false,
+        Parent = frame,
+    })
+
+    -- Saturation runs left to right, brightness top to bottom.
+    local svBox = create("TextButton", {
+        Size = UDim2.new(1, 0, 0, 118),
+        BackgroundColor3 = Color3.new(1, 1, 1),
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = panel,
+    })
+    corner(svBox, UDim.new(0, 8))
+    stroke(svBox, Theme.Stroke)
+    local svHueGradient = create("UIGradient", {
+        Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.new(1, 0, 0)),
+        Parent = svBox,
+    })
+    local svDark = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BorderSizePixel = 0,
+        Parent = svBox,
+    })
+    corner(svDark, UDim.new(0, 8))
+    create("UIGradient", {
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1),
+            NumberSequenceKeypoint.new(1, 0),
+        }),
+        Rotation = 90,
+        Parent = svDark,
+    })
+
+    -- Both handles are a white ring filled with the colour under them, with a
+    -- faint dark edge so they read on light and dark spots alike.
+    local function knob(parent, size)
+        local ring = create("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Size = UDim2.fromOffset(size, size),
+            BackgroundColor3 = Color3.new(1, 1, 1),
+            BorderSizePixel = 0,
+            ZIndex = 3,
+            Parent = parent,
+        })
+        corner(ring, UDim.new(1, 0))
+        stroke(ring, Color3.new(0, 0, 0), 0.7)
+        local fill = create("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.new(1, -4, 1, -4),
+            BorderSizePixel = 0,
+            ZIndex = 3,
+            Parent = ring,
+        })
+        corner(fill, UDim.new(1, 0))
+        return ring, fill
+    end
+    local svCursor, svFill = knob(svBox, 14)
+
+    -- Hue is a slim horizontal track under the square.
+    local hueBar = create("TextButton", {
+        Position = UDim2.fromOffset(0, 132),
+        Size = UDim2.new(1, 0, 0, 10),
+        BackgroundColor3 = Color3.new(1, 1, 1),
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = panel,
+    })
+    corner(hueBar, UDim.new(1, 0))
+    create("UIGradient", {
+        Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+            ColorSequenceKeypoint.new(1 / 6, Color3.fromRGB(255, 255, 0)),
+            ColorSequenceKeypoint.new(2 / 6, Color3.fromRGB(0, 255, 0)),
+            ColorSequenceKeypoint.new(3 / 6, Color3.fromRGB(0, 255, 255)),
+            ColorSequenceKeypoint.new(4 / 6, Color3.fromRGB(0, 0, 255)),
+            ColorSequenceKeypoint.new(5 / 6, Color3.fromRGB(255, 0, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0)),
+        }),
+        Parent = hueBar,
+    })
+    local hueCursor, hueFill = knob(hueBar, 16)
+    hueCursor.Position = UDim2.fromScale(0, 0.5)
+
+    -- Bottom row: a preview chip and hex field on the left, RGB on the right.
+    local hexHolder = create("Frame", {
+        Position = UDim2.fromOffset(0, 154),
+        Size = UDim2.fromOffset(compact and 110 or 124, 28),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = panel,
+    })
+    corner(hexHolder, UDim.new(0, 7))
+    local hexStroke = stroke(hexHolder)
+    local preview = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 6, 0.5, 0),
+        Size = UDim2.fromOffset(16, 16),
+        BorderSizePixel = 0,
+        Parent = hexHolder,
+    })
+    corner(preview, UDim.new(0, 4))
+    stroke(preview, Theme.Stroke)
+    local hexBox = create("TextBox", {
+        Position = UDim2.fromOffset(30, 0),
+        Size = UDim2.new(1, -38, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        TextTruncate = Enum.TextTruncate.None,
+        ClipsDescendants = false,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ClearTextOnFocus = false,
+        Parent = hexHolder,
+    })
+    local rgbLabel = label({
+        Position = UDim2.fromOffset(compact and 118 or 134, 154),
+        Size = UDim2.new(1, compact and -118 or -134, 0, 28),
+        TextXAlignment = Enum.TextXAlignment.Right,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = panel,
+    })
+
+    local self_ = { Open = false }
+    local hue, sat, val = Color3.toHSV(opts.Default or Theme.Accent)
+    local dragTarget = nil
+
+    local function toHex(color)
+        return string.format("#%02X%02X%02X",
+            math.floor(color.R * 255 + 0.5),
+            math.floor(color.G * 255 + 0.5),
+            math.floor(color.B * 255 + 0.5))
+    end
+
+    local function render(duration)
+        local color = Color3.fromHSV(hue, sat, val)
+        self_.Value = color
+        swatch.BackgroundColor3 = color
+        preview.BackgroundColor3 = color
+        svFill.BackgroundColor3 = color
+        hueFill.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
+        swatchHex.Text = toHex(color)
+        svHueGradient.Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.fromHSV(hue, 1, 1))
+        tween(svCursor, { Position = UDim2.fromScale(sat, 1 - val) }, duration, Enum.EasingStyle.Quint)
+        tween(hueCursor, { Position = UDim2.fromScale(hue, 0.5) }, duration, Enum.EasingStyle.Quint)
+        if not hexBox:IsFocused() then
+            hexBox.Text = toHex(color)
+        end
+        rgbLabel.Text = string.format("%d  %d  %d",
+            math.floor(color.R * 255 + 0.5),
+            math.floor(color.G * 255 + 0.5),
+            math.floor(color.B * 255 + 0.5))
+    end
+
+    local function commit(duration, silent)
+        render(duration)
+        if not silent then
+            safeCall(opts.Callback, self_.Value)
+        end
+    end
+
+    function self_:Set(color, silent)
+        hue, sat, val = Color3.toHSV(color)
+        commit(0.25, silent)
+        flashStroke(frameStroke)
+    end
+
+    function self_:Get()
+        return self_.Value
+    end
+
+    local function setOpen(open)
+        self_.Open = open
+        tween(frame, { Size = UDim2.new(1, 0, 0, open and (height + PANEL_HEIGHT) or height) }, 0.35, Enum.EasingStyle.Quint)
+        arrow:Set(open)
+        if open then
+            panel.Visible = true
+        else
+            task.delay(0.35, function()
+                if not self_.Open then
+                    panel.Visible = false
+                end
+            end)
+        end
+    end
+
+    function self_:SetOpen(open)
+        setOpen(open == true)
+    end
+
+    header.MouseButton1Click:Connect(function()
+        setOpen(not self_.Open)
+    end)
+
+    local function updateSV(position)
+        sat = math.clamp((position.X - svBox.AbsolutePosition.X) / svBox.AbsoluteSize.X, 0, 1)
+        val = 1 - math.clamp((position.Y - svBox.AbsolutePosition.Y) / svBox.AbsoluteSize.Y, 0, 1)
+        commit(0.04)
+    end
+    local function updateHue(position)
+        hue = math.clamp((position.X - hueBar.AbsolutePosition.X) / hueBar.AbsoluteSize.X, 0, 0.999)
+        commit(0.04)
+    end
+
+    svBox.InputBegan:Connect(function(input)
+        if isPress(input) then
+            dragTarget = "sv"
+            tween(svCursor, { Size = UDim2.fromOffset(18, 18) }, 0.2, Enum.EasingStyle.Quint)
+            updateSV(pointerPosition())
+        end
+    end)
+    hueBar.InputBegan:Connect(function(input)
+        if isPress(input) then
+            dragTarget = "hue"
+            tween(hueCursor, { Size = UDim2.fromOffset(20, 20) }, 0.2, Enum.EasingStyle.Quint)
+            updateHue(pointerPosition())
+        end
+    end)
+    self.Window:_listen("Changed", function(input)
+        if not dragTarget or not isMove(input) then
+            return
+        end
+        local position = pointerPosition()
+        if dragTarget == "sv" then
+            updateSV(position)
+        else
+            updateHue(position)
+        end
+    end, self_)
+    self.Window:_listen("Ended", function(input)
+        if dragTarget and isPress(input) then
+            dragTarget = nil
+            tween(svCursor, { Size = UDim2.fromOffset(14, 14) }, 0.25, Enum.EasingStyle.Quint)
+            tween(hueCursor, { Size = UDim2.fromOffset(16, 16) }, 0.25, Enum.EasingStyle.Quint)
+        end
+    end, self_)
+
+    hexBox.Focused:Connect(function()
+        tween(hexStroke, { Color = Theme.StrokeHover }, 0.15)
+    end)
+    hexBox.FocusLost:Connect(function()
+        tween(hexStroke, { Color = Theme.Stroke }, 0.15)
+        local r, g, b = hexBox.Text:match("^%s*#?(%x%x)(%x%x)(%x%x)%s*$")
+        if r then
+            self_:Set(Color3.fromRGB(tonumber(r, 16), tonumber(g, 16), tonumber(b, 16)))
+        else
+            hexBox.Text = toHex(self_.Value)
+        end
+    end)
+
+    render(0)
+    return finishElement(self, opts, self_, frame, "ColorPicker")
+end
+
+function Tab:Stepper(opts)
+    local frame, frameStroke, _, titleLabel, descLabel
+    opts, frame, frameStroke, _, titleLabel, descLabel = beginElement(self, opts, { Title = "Name", Description = "Desc", CurrentValue = "Default", Value = "Default", Increment = "Step" }, "Frame", 150, "Stepper")
+    local min = opts.Min or 0
+    local max = opts.Max or 100
+    local step = opts.Step or 1
+    local suffix = opts.Suffix or ""
+    local numbers = numberFormat(min, max, step)
+    local compact = metricsOf(self).Compact
+    local chipHeight = metricsOf(self).Chip
+
+    local group = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, compact and -14 or -10, 0.5, 0),
+        Size = UDim2.fromOffset(0, chipHeight),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = frame,
+    })
+    corner(group, UDim.new(0, 6))
+    local groupStroke = stroke(group)
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        Parent = group,
+    })
+
+    local function stepButton(text, order)
+        local button = create("TextButton", {
+            Size = UDim2.fromOffset(chipHeight, chipHeight),
+            BackgroundTransparency = 1,
+            Text = text,
+            TextColor3 = Theme.Muted,
+            TextSize = 18,
+            FontFace = Fonts.Medium,
+            AutoButtonColor = false,
+            LayoutOrder = order,
+            Parent = group,
+        })
+        button.MouseEnter:Connect(function()
+            tween(button, { TextColor3 = Theme.Accent }, 0.12)
+        end)
+        button.MouseLeave:Connect(function()
+            tween(button, { TextColor3 = Theme.Muted }, 0.2)
+        end)
+        return button
+    end
+    local minus = stepButton("â", 1)
+    local valueLabel = label({
+        Size = UDim2.new(0, 30, 1, 0),
+        TextSize = 13,
+        TextColor3 = Theme.Accent,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = group,
+    })
+    local plus = stepButton("+", 3)
+    local function fitValue(instant)
+        local width = math.max(valueLabel.TextBounds.X + 12, 30)
+        if instant then
+            valueLabel.Size = UDim2.new(0, width, 1, 0)
+        else
+            tween(valueLabel, { Size = UDim2.new(0, width, 1, 0) }, 0.2)
+        end
+    end
+    valueLabel:GetPropertyChangedSignal("TextBounds"):Connect(function()
+        fitValue(false)
+    end)
+    group:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        reserveRight(titleLabel, descLabel, group.AbsoluteSize.X / self.Window.Scale.Scale + (compact and 24 or 20))
+    end)
+
+    local self_ = { Value = math.clamp(opts.Default or min, min, max) }
+    local snap = numbers.snap
+    local fromButton = false
+    local function render()
+        valueLabel.Text = numbers.format(self_.Value) .. suffix
+        tween(minus, { TextTransparency = self_.Value <= min and 0.6 or 0 }, 0.15)
+        tween(plus, { TextTransparency = self_.Value >= max and 0.6 or 0 }, 0.15)
+    end
+    function self_:Set(value, silent)
+        value = snap(tonumber(value) or min)
+        if value == self_.Value then
+            return
+        end
+        self_.Value = value
+        render()
+        if not fromButton then
+            flashStroke(frameStroke)
+        end
+        if not silent then
+            safeCall(opts.Callback, value)
+        end
+    end
+    function self_:Get()
+        return self_.Value
+    end
+
+    local function bump(direction)
+        fromButton = true
+        self_:Set(self_.Value + direction * step)
+        fromButton = false
+        tween(groupStroke, { Color = Theme.StrokeHover }, 0.08)
+        task.delay(0.12, function()
+            tween(groupStroke, { Color = Theme.Stroke }, 0.2)
+        end)
+    end
+    local function holdRepeat(button, direction)
+        local holding = false
+        button.InputBegan:Connect(function(input)
+            if not isPress(input) then
+                return
+            end
+            holding = true
+            bump(direction)
+            task.delay(0.4, function()
+                while holding do
+                    bump(direction)
+                    task.wait(0.07)
+                end
+            end)
+        end)
+        button.InputEnded:Connect(function(input)
+            if isPress(input) then
+                holding = false
+            end
+        end)
+        button.MouseLeave:Connect(function()
+            holding = false
+        end)
+    end
+    holdRepeat(minus, -1)
+    holdRepeat(plus, 1)
+
+    render()
+    task.defer(fitValue, true)
+    return finishElement(self, opts, self_, frame, "Stepper")
+end
+
+function Tab:Progress(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc", CurrentValue = "Default", Value = "Default" })
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local extra = compact and 6 or 10
+    local frame, frameStroke = card(self, "Frame", (opts.Desc and metrics.DescHeight or metrics.Height) + extra, opts)
+    hoverStroke(frame, frameStroke)
+    local top
+    if opts.Desc then
+        top = math.floor((metrics.DescHeight - (metrics.DescGap + metrics.DescLine)) / 2) - 2
+    else
+        top = compact and 5 or 12
+    end
+
+    label({
+        Position = UDim2.fromOffset(14, top),
+        Size = UDim2.new(1, -110, 0, 18),
+        Text = opts.Name or "Progress",
+        TextSize = metrics.TextSize,
+        Parent = frame,
+    })
+    if opts.Desc then
+        label({
+            Position = UDim2.fromOffset(14, top + metrics.DescGap),
+            Size = UDim2.new(1, -110, 0, metrics.DescLine),
+            Text = opts.Desc,
+            TextSize = metrics.DescSize,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = frame,
+        })
+    end
+    local valueLabel = label({
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -14, 0, top),
+        Size = UDim2.fromOffset(90, 18),
+        TextXAlignment = Enum.TextXAlignment.Right,
+        TextSize = 13,
+        TextColor3 = Library._color(opts.TextColor) or Theme.Accent,
+        RichText = true,
+        Parent = frame,
+    })
+    local track = create("Frame", {
+        Position = UDim2.new(0, 14, 1, compact and -12 or -16),
+        Size = UDim2.new(1, -28, 0, 5),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = frame,
+    })
+    corner(track, UDim.new(1, 0))
+    local fill = create("Frame", {
+        Size = UDim2.new(0, 0, 1, 0),
+        BackgroundColor3 = Library._color(opts.Color) or Theme.Accent,
+        BorderSizePixel = 0,
+        Parent = track,
+    })
+    corner(fill, UDim.new(1, 0))
+
+    local self_ = { Value = math.clamp(opts.Default or 0, 0, 1) }
+    local formatter = opts.Format
+    local function render(duration)
+        local frac = self_.Value
+        tween(fill, { Size = UDim2.new(frac, 0, 1, 0) }, duration, Enum.EasingStyle.Quint)
+        if type(formatter) == "function" then
+            valueLabel.Text = Library._rich(formatter(frac))
+        else
+            valueLabel.Text = string.format("%d%%", math.floor(frac * 100 + 0.5))
+        end
+    end
+    function self_:Set(value, silent)
+        value = math.clamp(tonumber(value) or 0, 0, 1)
+        if value == self_.Value then
+            return
+        end
+        self_.Value = value
+        render(0.35)
+        if not silent then
+            safeCall(opts.Callback, value)
+        end
+    end
+    function self_:Get()
+        return self_.Value
+    end
+    function self_:SetColor(color)
+        tween(fill, { BackgroundColor3 = Library._color(color) or Theme.Accent }, 0.25)
+    end
+    -- The percentage's colour; nil goes back to the accent.
+    function self_:SetTextColor(color)
+        tween(valueLabel, { TextColor3 = Library._color(color) or Theme.Accent }, 0.25)
+    end
+    -- Runs render now, and again on a theme change for theme tags in Format.
+    onTheme(valueLabel, function()
+        render(0)
+    end)
+    return finishElement(self, opts, self_, frame, "Progress")
+end
+
+-- An always-open list the player puts in order: drag a row (by its grip on
+-- touch, anywhere on PC) or nudge it with the arrows. Past MaxRows the list
+-- scrolls, and dragging near its top or bottom edge scrolls it along.
+function Tab:OrderList(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc", Options = "Items", Values = "Items" })
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local window = self.Window
+    local ROW = TOUCH and 40 or 32
+    local GAP = 4
+    local STEP = ROW + GAP
+    local GRIP = TOUCH and 34 or 26
+    local ARROW = TOUCH and 30 or 22
+    local maxRows = math.max(math.floor(tonumber(opts.MaxRows) or 6), 1)
+    local numbered = opts.Numbered ~= false
+    local arrows = opts.Arrows ~= false
+
+    local frame = card(self, "Frame", 0, opts)
+    frame.AutomaticSize = Enum.AutomaticSize.Y
+    if compact then
+        padding(frame, 14, 14, 6, 8)
+    else
+        padding(frame, 14, 14, 11, 12)
+    end
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = frame,
+    })
+    local name = tostring(opts.Name or "")
+    label({
+        Size = UDim2.new(1, 0, 0, 18),
+        Text = name,
+        TextSize = metrics.TextSize,
+        Visible = name ~= "",
+        LayoutOrder = 1,
+        Parent = frame,
+    })
+    if opts.Desc then
+        label({
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            Text = opts.Desc,
+            TextSize = metrics.DescSize,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextWrapped = true,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 2,
+            Parent = frame,
+        })
+    end
+    local scroller = create("ScrollingFrame", {
+        Size = UDim2.new(1, 0, 0, ROW + 2),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = TOUCH and 4 or 3,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        -- Sized by hand, like the dropdown list, so it scrolls under UIScale.
+        CanvasSize = UDim2.new(),
+        ScrollingEnabled = false,
+        LayoutOrder = 3,
+        Parent = frame,
+    })
+    scroller:SetAttribute("NoDrag", true)
+    local content = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Parent = scroller,
+    })
+    local empty = label({
+        Size = UDim2.new(1, 0, 0, ROW),
+        Text = tostring(opts.EmptyText or "Nothing to order"),
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Visible = false,
+        Parent = content,
+    })
+
+    -- A lucide icon, or a text glyph when the icon set didn't load.
+    local function iconButton(parent, icon, glyph, rotation, props)
+        props.BackgroundTransparency = 1
+        props.Text = ""
+        props.AutoButtonColor = false
+        props.Parent = parent
+        local button = create("TextButton", props)
+        local image = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = TOUCH and UDim2.fromOffset(16, 16) or UDim2.fromOffset(14, 14),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Muted,
+            ScaleType = Enum.ScaleType.Fit,
+            Parent = button,
+        })
+        applyIcon(image, icon)
+        if image.Image ~= "" then
+            return button, { Object = image, Color = "ImageColor3", Fade = "ImageTransparency" }
+        end
+        image:Destroy()
+        local text_ = label({
+            Size = UDim2.fromScale(1, 1),
+            Text = glyph,
+            TextSize = 18,
+            TextColor3 = Theme.Muted,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextTruncate = Enum.TextTruncate.None,
+            Rotation = rotation,
+            Parent = button,
+        })
+        return button, { Object = text_, Color = "TextColor3", Fade = "TextTransparency" }
+    end
+    local function tint(icon, color, transparency, duration)
+        tween(icon.Object, { [icon.Color] = color, [icon.Fade] = transparency }, duration)
+    end
+
+    local self_ = {}
+    local entries = {}
+    -- The last order Set asked for, including items not in the list right now,
+    -- so a saved order still applies once Refresh brings those items in.
+    local remembered = {}
+    local dragging = nil
+    local nudge, beginDrag
+
+    local function slotY(slot)
+        return 1 + (slot - 1) * STEP
+    end
+
+    local function values()
+        local list = {}
+        for index, entry in ipairs(entries) do
+            list[index] = entry.Value
+        end
+        return list
+    end
+
+    local function layout(instant)
+        local count = #entries
+        for slot, entry in ipairs(entries) do
+            entry.Index.Text = tostring(slot)
+            if entry ~= dragging then
+                tween(entry.Frame, { Position = UDim2.fromOffset(3, slotY(slot)) }, instant and 0 or 0.22, Enum.EasingStyle.Quint)
+            end
+            if entry.UpIcon then
+                tween(entry.UpIcon.Object, { [entry.UpIcon.Fade] = slot == 1 and 0.7 or 0 }, instant and 0 or 0.15)
+                tween(entry.DownIcon.Object, { [entry.DownIcon.Fade] = slot == count and 0.7 or 0 }, instant and 0 or 0.15)
+            end
+        end
+    end
+
+    local function fit()
+        local count = #entries
+        local canvas = math.max(count, 1) * STEP - GAP + 2
+        local shown = math.clamp(count, 1, maxRows)
+        local height = shown * STEP - GAP + 2
+        local scrolling = count > maxRows
+        scroller.Size = UDim2.new(1, 0, 0, height)
+        scroller.CanvasSize = UDim2.fromOffset(0, canvas)
+        content.Size = UDim2.new(1, scrolling and -8 or 0, 0, canvas)
+        if not dragging then
+            scroller.ScrollingEnabled = scrolling
+        end
+        empty.Visible = count == 0
+        local maxScroll = math.max(canvas - height, 0)
+        if scroller.CanvasPosition.Y > maxScroll then
+            scroller.CanvasPosition = Vector2.new(0, maxScroll)
+        end
+    end
+
+    local function changed(silent)
+        self_.Value = values()
+        if not silent then
+            safeCall(opts.Callback, values())
+        end
+    end
+
+    local function listScroller()
+        if scroller.ScrollingEnabled then
+            return scroller
+        end
+        return frame:FindFirstAncestorWhichIsA("ScrollingFrame")
+    end
+
+    local function newEntry(value)
+        local row = create("Frame", {
+            Size = UDim2.new(1, -6, 0, ROW),
+            BackgroundColor3 = Theme.Surface,
+            BorderSizePixel = 0,
+            Parent = content,
+        })
+        corner(row, UDim.new(0, 7))
+        local entry = { Value = value, Frame = row }
+        entry.Stroke = stroke(row)
+        entry.Scale = create("UIScale", { Parent = row })
+        local grip
+        grip, entry.GripIcon = iconButton(row, "grip-vertical", "=", 0, {
+            Size = UDim2.new(0, GRIP, 1, 0),
+        })
+        local x = GRIP
+        entry.Index = label({
+            Position = UDim2.fromOffset(x, 0),
+            Size = UDim2.new(0, 22, 1, 0),
+            TextSize = 12,
+            TextColor3 = Theme.Accent,
+            TextTruncate = Enum.TextTruncate.None,
+            Visible = numbered,
+            Parent = row,
+        })
+        if numbered then
+            x += 22
+        end
+        local right = arrows and ARROW * 2 + 8 or 10
+        entry.Text = label({
+            Position = UDim2.fromOffset(x, 0),
+            Size = UDim2.new(1, -(x + right), 1, 0),
+            Text = tostring(value),
+            TextSize = 13,
+            Parent = row,
+        })
+        local buttons = {}
+        if arrows then
+            local up, down
+            up, entry.UpIcon = iconButton(row, "chevron-up", "âº", -90, {
+                AnchorPoint = Vector2.new(1, 0),
+                Position = UDim2.new(1, -(ARROW + 6), 0, 0),
+                Size = UDim2.new(0, ARROW, 1, 0),
+            })
+            down, entry.DownIcon = iconButton(row, "chevron-down", "âº", 90, {
+                AnchorPoint = Vector2.new(1, 0),
+                Position = UDim2.new(1, -4, 0, 0),
+                Size = UDim2.new(0, ARROW, 1, 0),
+            })
+            for button, direction in pairs({ [up] = -1, [down] = 1 }) do
+                local icon = direction < 0 and entry.UpIcon or entry.DownIcon
+                local isTap = tapGuard(button, listScroller)
+                button.MouseEnter:Connect(function()
+                    if not usingTouch() then
+                        tween(icon.Object, { [icon.Color] = Theme.Accent }, 0.12)
+                    end
+                end)
+                button.MouseLeave:Connect(function()
+                    tween(icon.Object, { [icon.Color] = Theme.Muted }, 0.2)
+                end)
+                button.MouseButton1Click:Connect(function()
+                    if isTap() then
+                        nudge(entry, direction)
+                    end
+                end)
+                table.insert(buttons, button)
+            end
+        end
+        grip.InputBegan:Connect(function(input)
+            if isPress(input) then
+                beginDrag(entry)
+            end
+        end)
+        -- On PC the whole row drags; on touch only the grip does, so a swipe
+        -- across the rows still scrolls.
+        row.InputBegan:Connect(function(input)
+            if input.UserInputType ~= Enum.UserInputType.MouseButton1 then
+                return
+            end
+            local point = pointerPosition()
+            for _, button in ipairs(buttons) do
+                if pointInside(point, button) then
+                    return
+                end
+            end
+            beginDrag(entry)
+        end)
+        row.MouseEnter:Connect(function()
+            if not usingTouch() and entry ~= dragging then
+                tween(entry.Stroke, { Color = Theme.StrokeHover }, 0.12)
+                tint(entry.GripIcon, Theme.Text, 0, 0.12)
+            end
+        end)
+        row.MouseLeave:Connect(function()
+            if entry ~= dragging then
+                tween(entry.Stroke, { Color = Theme.Stroke }, 0.25)
+                tint(entry.GripIcon, Theme.Muted, 0, 0.25)
+            end
+        end)
+        return entry
+    end
+
+    -- Reuses the rows whose item is still in the list, so a reorder slides
+    -- rows instead of rebuilding them.
+    local function build(list)
+        local pool = {}
+        for _, entry in ipairs(entries) do
+            pool[entry.Value] = pool[entry.Value] or {}
+            table.insert(pool[entry.Value], entry)
+        end
+        local nextEntries = {}
+        for index, value in ipairs(list) do
+            local bucket = pool[value]
+            local entry = bucket and table.remove(bucket, 1)
+            if not entry then
+                entry = newEntry(value)
+                entry.Frame.Position = UDim2.fromOffset(3, slotY(index))
+            end
+            nextEntries[index] = entry
+        end
+        for _, bucket in pairs(pool) do
+            for _, entry in ipairs(bucket) do
+                entry.Frame:Destroy()
+            end
+        end
+        entries = nextEntries
+    end
+
+    -- items sorted by where they sit in ranking; the rest keep their order after.
+    local function arrange(items, ranking)
+        local left = {}
+        for _, value in ipairs(items) do
+            left[value] = (left[value] or 0) + 1
+        end
+        local result = {}
+        for _, pass in ipairs({ ranking, items }) do
+            for _, value in ipairs(pass) do
+                if (left[value] or 0) > 0 then
+                    left[value] -= 1
+                    table.insert(result, value)
+                end
+            end
+        end
+        return result
+    end
+
+    local function scrollIntoView(slot)
+        local top = slotY(slot) - 1
+        local view = scroller.AbsoluteWindowSize.Y / window.Scale.Scale
+        local y = scroller.CanvasPosition.Y
+        if top < y then
+            y = top
+        elseif top + ROW + 2 > y + view then
+            y = top + ROW + 2 - view
+        end
+        if y ~= scroller.CanvasPosition.Y then
+            tween(scroller, { CanvasPosition = Vector2.new(0, math.max(y, 0)) }, 0.2)
+        end
+    end
+
+    function nudge(entry, direction)
+        if dragging then
+            return
+        end
+        local from = table.find(entries, entry)
+        local to = from and from + direction
+        if not to or to < 1 or to > #entries then
+            return
+        end
+        entries[from], entries[to] = entries[to], entries[from]
+        layout(false)
+        tween(entry.Stroke, { Color = Theme.Accent }, 0.08)
+        task.delay(0.18, function()
+            if entry ~= dragging then
+                tween(entry.Stroke, { Color = Theme.Stroke }, 0.3)
+            end
+        end)
+        scrollIntoView(to)
+        changed(false)
+    end
+
+    local grabOffset, lastPointer = 0, nil
+    local startEntries, stopRender, lockedPage = nil, nil, nil
+
+    -- Moves the held row under the pointer and slides the others out of its way.
+    local function follow(pointer)
+        local scale = window.Scale.Scale
+        local y = (pointer.Y - grabOffset - scroller.AbsolutePosition.Y) / scale + scroller.CanvasPosition.Y
+        y = math.clamp(y, slotY(1), slotY(#entries))
+        dragging.Frame.Position = UDim2.fromOffset(3, y)
+        local slot = math.clamp(math.floor((y - 1) / STEP + 0.5) + 1, 1, #entries)
+        local current = table.find(entries, dragging)
+        if current ~= slot then
+            table.remove(entries, current)
+            table.insert(entries, slot, dragging)
+            layout(false)
+        end
+    end
+
+    -- Holding the row near the list's top or bottom edge scrolls it, faster
+    -- the closer the pointer gets.
+    local function autoScroll(deltaTime)
+        if not dragging or not lastPointer then
+            return
+        end
+        local scale = window.Scale.Scale
+        local top = scroller.AbsolutePosition.Y
+        local bottom = top + scroller.AbsoluteSize.Y
+        local zone = ROW * scale
+        local speed = 0
+        if lastPointer.Y < top + zone then
+            speed = -(top + zone - lastPointer.Y) / zone
+        elseif lastPointer.Y > bottom - zone then
+            speed = (lastPointer.Y - (bottom - zone)) / zone
+        end
+        if speed == 0 then
+            return
+        end
+        local maxScroll = math.max(scroller.CanvasSize.Y.Offset - scroller.AbsoluteWindowSize.Y / scale, 0)
+        local y = math.clamp(scroller.CanvasPosition.Y + math.clamp(speed, -1.5, 1.5) * 360 * deltaTime, 0, maxScroll)
+        if y ~= scroller.CanvasPosition.Y then
+            scroller.CanvasPosition = Vector2.new(0, y)
+            follow(lastPointer)
+        end
+    end
+
+    function beginDrag(entry)
+        if dragging or #entries < 2 or self_._destroyed then
+            return
+        end
+        dragging = entry
+        startEntries = table.clone(entries)
+        lastPointer = pointerPosition()
+        grabOffset = lastPointer.Y - entry.Frame.AbsolutePosition.Y
+        entry.Frame.ZIndex = 5
+        tween(entry.Frame, { BackgroundColor3 = Theme.Surface3 }, 0.12)
+        tween(entry.Stroke, { Color = Theme.Accent }, 0.12)
+        tween(entry.Scale, { Scale = 1.02 }, 0.18, Enum.EasingStyle.Back)
+        tint(entry.GripIcon, Theme.Accent, 0, 0.12)
+        -- Neither the list nor the page scrolls under the finger while dragging.
+        scroller.ScrollingEnabled = false
+        local page = frame:FindFirstAncestorWhichIsA("ScrollingFrame")
+        if page and page.ScrollingEnabled then
+            lockedPage = page
+            page.ScrollingEnabled = false
+        end
+        stopRender = window:_listen("Render", autoScroll)
+    end
+
+    local function endDrag(silent)
+        local entry = dragging
+        if not entry then
+            return
+        end
+        dragging = nil
+        lastPointer = nil
+        if stopRender then
+            stopRender()
+            stopRender = nil
+        end
+        if lockedPage then
+            lockedPage.ScrollingEnabled = true
+            lockedPage = nil
+        end
+        tween(entry.Frame, { BackgroundColor3 = Theme.Surface }, 0.2)
+        tween(entry.Stroke, { Color = Theme.Stroke }, 0.25)
+        tween(entry.Scale, { Scale = 1 }, 0.2)
+        tint(entry.GripIcon, Theme.Muted, 0, 0.25)
+        task.delay(0.22, function()
+            if entry ~= dragging then
+                entry.Frame.ZIndex = 1
+            end
+        end)
+        layout(false)
+        fit()
+        for index, other in ipairs(entries) do
+            if startEntries[index] ~= other then
+                changed(silent)
+                break
+            end
+        end
+    end
+
+    window:_listen("Changed", function(input)
+        if dragging and isMove(input) then
+            lastPointer = pointerPosition()
+            follow(lastPointer)
+        end
+    end, self_)
+    window:_listen("Ended", function(input)
+        if dragging and isPress(input) then
+            endDrag(false)
+        end
+    end, self_)
+    table.insert(self_._listeners, function()
+        endDrag(true)
+    end)
+    self_._onHide = function()
+        endDrag(false)
+    end
+
+    -- Reorders the items already in the list. Unknown items are remembered for
+    -- a later Refresh; items missing from the list keep their order after.
+    function self_:Set(list, silent)
+        if type(list) ~= "table" then
+            return
+        end
+        endDrag(true)
+        remembered = table.clone(list)
+        build(arrange(values(), remembered))
+        layout(false)
+        fit()
+        changed(silent)
+    end
+
+    function self_:Get()
+        return values()
+    end
+
+    -- Replaces the items. Items that were already there keep the player's
+    -- order unless keepOrder is false; new ones go to the end.
+    function self_:Refresh(items, keepOrder, silent)
+        endDrag(true)
+        items = type(items) == "table" and table.clone(items) or {}
+        if keepOrder ~= false then
+            items = arrange(items, self_:_saveValue())
+        else
+            remembered = {}
+        end
+        build(items)
+        layout(false)
+        fit()
+        changed(silent)
+    end
+
+    -- The shown order, then remembered items that aren't in the list right now.
+    function self_:_saveValue()
+        local list = values()
+        local left = {}
+        for _, value in ipairs(list) do
+            left[value] = (left[value] or 0) + 1
+        end
+        for _, value in ipairs(remembered) do
+            if (left[value] or 0) > 0 then
+                left[value] -= 1
+            else
+                table.insert(list, value)
+            end
+        end
+        return list
+    end
+
+    build(type(opts.Items) == "table" and opts.Items or {})
+    layout(true)
+    fit()
+    self_.Value = values()
+    return finishElement(self, opts, self_, frame, "OrderList")
+end
+
+
+for name, method in pairs(table.clone(Tab)) do
+    if type(method) == "function" and name:sub(1, 1) ~= "_" and name:sub(1, 6) ~= "Create" then
+        Tab["Create" .. name] = method
+    end
+end
+
+local function detectExecutor()
+    local name
+    pcall(function()
+        if typeof(identifyexecutor) == "function" then
+            name = (identifyexecutor())
+        elseif typeof(getexecutorname) == "function" then
+            name = getexecutorname()
+        end
+    end)
+    if type(name) == "string" and #name > 0 then
+        return name
+    end
+    return RunService:IsStudio() and "Studio" or "Unknown"
+end
+
+local function executorReport(opts)
+    local executor = detectExecutor()
+    local supported = opts.SupportedExecutors
+    if type(supported) == "table" then
+        local lowered = string.lower(executor)
+        for _, name in ipairs(supported) do
+            if string.find(lowered, string.lower(tostring(name)), 1, true) then
+                return executor, true, "Your executor is supported and fully compatible."
+            end
+        end
+        return executor, false, "Not on the supported list. Some features may not work."
+    end
+    local capabilities = {
+        { "writefile", writefile },
+        { "readfile", readfile },
+        { "getcustomasset", getcustomasset },
+        { "setclipboard", setclipboard or toclipboard },
+        { "request", request or http_request or (syn and syn.request) },
+    }
+    local missing = {}
+    for _, entry in ipairs(capabilities) do
+        if type(entry[2]) ~= "function" then
+            table.insert(missing, entry[1])
+        end
+    end
+    if #missing == 0 then
+        return executor, true, "Your executor is supported and fully compatible."
+    end
+    return executor, false, "Missing " .. table.concat(missing, ", ") .. ". Some features may not work."
+end
+
+-- "Don't ask again" on the unsupported executor warning: the executor's
+-- name goes in a file in the script folder, and the warning is skipped while
+-- the same executor is in use. Resetting the folder brings it back.
+-- A table, not separate locals: the main chunk is at Luau's 200 local limit.
+local UnsupportedSkip = {}
+
+function UnsupportedSkip.Path(folder)
+    return tostring(folder) .. "/unsupported_skip.txt"
+end
+
+function UnsupportedSkip.Available()
+    return type(writefile) == "function" and type(readfile) == "function" and type(isfile) == "function"
+end
+
+function UnsupportedSkip.Saved(folder, executor)
+    if not UnsupportedSkip.Available() then
+        return false
+    end
+    local path = UnsupportedSkip.Path(folder)
+    local ok, saved = pcall(function()
+        return isfile(path) and readfile(path) or nil
+    end)
+    return ok and saved == executor
+end
+
+function UnsupportedSkip.Write(folder, path, content)
+    if not UnsupportedSkip.Available() then
+        return false
+    end
+    return pcall(function()
+        if type(isfolder) == "function" and type(makefolder) == "function" then
+            local built = ""
+            for segment in tostring(folder):gmatch("[^/\\]+") do
+                built = built == "" and segment or built .. "/" .. segment
+                if not isfolder(built) then
+                    makefolder(built)
+                end
+            end
+        end
+        writefile(path, content)
+    end)
+end
+
+function UnsupportedSkip.Save(folder, executor)
+    return UnsupportedSkip.Write(folder, UnsupportedSkip.Path(folder), executor)
+end
+
+-- Custom disclaimers ticked "Don't show again": one key per line in
+-- disclaimers.txt. The key is the disclaimer's Id, or a hash of its title
+-- and text, so rewording a disclaimer shows it again.
+function UnsupportedSkip.DisclaimerKey(entry)
+    if entry.Id ~= nil then
+        return (tostring(entry.Id):gsub("[\r\n]", " "))
+    end
+    local source = tostring(entry.Title) .. "\0" .. tostring(entry.Text)
+    local hash = 5381
+    for index = 1, #source do
+        hash = (hash * 33 + source:byte(index)) % 4294967296
+    end
+    return string.format("%08x", hash)
+end
+
+function UnsupportedSkip.DisclaimerAccepted(folder, key)
+    if not UnsupportedSkip.Available() then
+        return false
+    end
+    local path = tostring(folder) .. "/disclaimers.txt"
+    local ok, saved = pcall(function()
+        return isfile(path) and readfile(path) or ""
+    end)
+    if not ok or type(saved) ~= "string" then
+        return false
+    end
+    for line in saved:gmatch("[^\r\n]+") do
+        if line == key then
+            return true
+        end
+    end
+    return false
+end
+
+function UnsupportedSkip.AcceptDisclaimer(folder, key)
+    if UnsupportedSkip.DisclaimerAccepted(folder, key) then
+        return true
+    end
+    local path = tostring(folder) .. "/disclaimers.txt"
+    local ok, saved = pcall(function()
+        return isfile(path) and readfile(path) or ""
+    end)
+    saved = ok and type(saved) == "string" and saved or ""
+    if saved ~= "" and not saved:match("\n$") then
+        saved ..= "\n"
+    end
+    return UnsupportedSkip.Write(folder, path, saved .. key .. "\n")
+end
+
+local gameInfoCache = nil
+
+local function fetchGameInfo()
+    if gameInfoCache == nil then
+        local ok, info = pcall(function()
+            return MarketplaceService:GetProductInfo(game.PlaceId)
+        end)
+        gameInfoCache = ok and type(info) == "table" and info or false
+    end
+    return gameInfoCache or nil
+end
+
+local function detectGameName()
+    local info = fetchGameInfo()
+    if info and info.Name then
+        return info.Name
+    end
+    return RunService:IsStudio() and "Studio" or "Unknown game"
+end
+
+local REGION_NAMES = {
+    US = "United States", GB = "United Kingdom", DE = "Germany", FR = "France",
+    NL = "Netherlands", SG = "Singapore", JP = "Japan", AU = "Australia",
+    BR = "Brazil", IN = "India", HK = "Hong Kong", CA = "Canada",
+}
+
+local function detectRegion(callback)
+    task.spawn(function()
+        local requester = request or http_request or (syn and syn.request) or (http and http.request)
+        local region
+        if type(requester) == "function" then
+            pcall(function()
+                local response = requester({ Url = "https://ipinfo.io/json", Method = "GET" })
+                local body = type(response) == "table" and (response.Body or response.body) or nil
+                if type(body) == "string" then
+                    local data = HttpService:JSONDecode(body)
+                    if type(data) == "table" and data.country then
+                        local label = REGION_NAMES[data.country] or data.country
+                        region = data.city and (data.city .. ", " .. label) or label
+                    end
+                end
+            end)
+        end
+        callback(region or "Unavailable")
+    end)
+end
+
+local NOTIFY_COLORS = setmetatable({}, {
+    __index = function(_, kind)
+        if kind == "Success" or kind == "Warning" or kind == "Error" then
+            return Theme[kind]
+        end
+        return nil
+    end,
+})
+
+local Window = {}
+Window.__index = Window
+
+function Library.Window(_, opts)
+    opts = normalize(opts, { Name = "Title", LoadingSubtitle = "Subtitle", ToggleUIKeybind = "Keybind" })
+
+    if type(opts.Keybind) == "string" then
+        opts.Keybind = Enum.KeyCode[opts.Keybind]
+    end
+    local size = opts.Size or UDim2.fromOffset(760, 520)
+    local keybind = opts.Keybind or Enum.KeyCode.RightControl
+
+    local self = setmetatable({
+        Tabs = {},
+        CurrentTab = nil,
+        Open = true,
+        Keybind = keybind,
+        _connections = {},
+        _controls = {},
+        _inputListeners = { Began = {}, Changed = {}, Ended = {}, Render = {} },
+        _frameSteps = {},
+        _destroyed = false,
+        _identity = { Names = {}, Avatars = {} },
+        _pinned = {},
+        Minimized = false,
+        _hideName = false,
+        _hideAvatar = false,
+        Title = opts.Title or "Airflow",
+        _logoIcon = opts.Icon or Assets.Logo,
+        _sessionStart = os.clock(),
+        _islandLocked = opts.IslandDraggable == false,
+    }, Window)
+    local saving = type(opts.ConfigurationSaving) == "table" and opts.ConfigurationSaving or {}
+    self.ConfigFolder = saving.FolderName or "AirflowUI"
+    self.ConfigName = saving.FileName
+    self._configListeners = {}
+    self._pendingFlags = {}
+
+    local startTheme = opts.DefaultTheme or opts.Theme
+    if startTheme ~= nil then
+        Library.DefaultTheme = startTheme
+    end
+    self:_applyDefaultTheme()
+    self._uiScale = math.clamp(tonumber(opts.UIScale) or 1, 0.6, 1.5)
+    self._adaptive = opts.AdaptiveSize ~= false
+    self.UIScale = self._uiScale
+    if opts.Density ~= nil then
+        Library:SetDensity(opts.Density)
+    end
+    if opts.CornerRadius ~= nil then
+        Library:SetCornerRadius(opts.CornerRadius, true)
+    end
+    local function dispatch(kind)
+        return function(...)
+            for _, handler in ipairs(self._inputListeners[kind]) do
+                handler(...)
+            end
+        end
+    end
+    local renderDispatch = dispatch("Render")
+    table.insert(self._connections, RunService.RenderStepped:Connect(function(deltaTime)
+        renderDispatch(deltaTime)
+        for _, step in ipairs(self._frameSteps) do
+            step(deltaTime)
+        end
+    end))
+    table.insert(self._connections, UserInputService.InputBegan:Connect(dispatch("Began")))
+    table.insert(self._connections, UserInputService.InputChanged:Connect(dispatch("Changed")))
+    table.insert(self._connections, UserInputService.InputEnded:Connect(dispatch("Ended")))
+
+    local gui = create("ScreenGui", {
+        Name = opts.Name or "AirflowUI",
+        IgnoreGuiInset = true,
+        ResetOnSpawn = false,
+        DisplayOrder = 999,
+        ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+    })
+    self.Gui = gui
+
+    local root = create("Frame", {
+        Name = "Window",
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = size,
+        BackgroundTransparency = 1,
+        Parent = gui,
+    })
+    self.Root = root
+    local scale = create("UIScale", { Parent = root })
+    self.Scale = scale
+
+    local shadow = create("ImageLabel", {
+        Position = UDim2.fromOffset(-25, -25),
+        Size = UDim2.new(1, 50, 1, 50),
+        BackgroundTransparency = 1,
+        Image = Assets.Shadow,
+        ImageColor3 = Color3.new(0, 0, 0),
+        ImageTransparency = 0.6,
+        ScaleType = Enum.ScaleType.Slice,
+        SliceCenter = Rect.new(49, 49, 450, 450),
+        Parent = root,
+    })
+    self.Shadow = shadow
+    self._shadowRest = 0.6
+
+    -- The body is a plain Frame so resizing never re-renders the window into a
+    -- texture. It only moves into the fader CanvasGroup while fading.
+    local fader = create("CanvasGroup", {
+        Name = "Fader",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        GroupTransparency = 1,
+        ZIndex = 2,
+        Parent = root,
+    })
+    self._fader = fader
+    self._bodyAlpha = 1
+    local body = create("Frame", {
+        Name = "Body",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        ZIndex = 2,
+        Parent = fader,
+    })
+    self.Body = body
+    corner(body, UDim.new(0, 10))
+    self.BodyStroke = stroke(body, Theme.Stroke)
+    edgeHighlight(body)
+    -- Background image: made first so everything else in the body draws over it.
+    self._backgroundImage = create("ImageLabel", {
+        Name = "BackgroundImage",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ScaleType = Enum.ScaleType.Crop,
+        ImageTransparency = 1,
+        Visible = false,
+        ZIndex = 0,
+        Parent = body,
+    })
+    corner(self._backgroundImage, UDim.new(0, 10))
+    self.BackgroundTransparency = math.clamp(tonumber(opts.BackgroundTransparency) or 0.35, 0, 1)
+    self._backgroundGeneration = 0
+
+    -- The sidebar is a flush, solid rail down the left edge, split from the
+    -- content by a single hairline.
+    local sidebar = create("Frame", {
+        Name = "Sidebar",
+        Size = UDim2.new(0, SIDEBAR_WIDTH, 1, 0),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = body,
+    })
+    self.Sidebar = sidebar
+    -- One rounded fill that runs past the rail's right edge, where the rail
+    -- clips it: the left corners round with the window, the right edge is
+    -- square, and nothing overlaps, so it fades evenly when see-through.
+    local sidebarFill = create("Frame", {
+        Name = "Fill",
+        Size = UDim2.new(1, 24, 1, 0),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        ZIndex = 0,
+        Parent = sidebar,
+    })
+    corner(sidebarFill, UDim.new(0, 10))
+    self.SidebarFill = sidebarFill
+    create("Frame", {
+        Name = "Divider",
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.fromScale(1, 0),
+        Size = UDim2.new(0, 1, 1, 0),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        ZIndex = 2,
+        Parent = sidebar,
+    })
+
+    local header = create("Frame", {
+        Name = "Header",
+        Size = UDim2.new(1, 0, 0, HEADER_HEIGHT),
+        BackgroundTransparency = 1,
+        Parent = sidebar,
+    })
+    local logo = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 14, 0.5, 0),
+        Size = UDim2.fromOffset(32, 32),
+        BackgroundTransparency = 1,
+        Image = "",
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = header,
+    })
+    applyIcon(logo, opts.Icon or Assets.Logo, true)
+    local subtitle = opts.Version or opts.Subtitle
+    label({
+        Position = UDim2.new(0, 56, 0.5, subtitle and -15 or -9),
+        Size = UDim2.new(1, -68, 0, 18),
+        Text = self.Title,
+        TextSize = 14,
+        FontFace = Fonts.Bold,
+        Parent = header,
+    })
+    if subtitle then
+        label({
+            Position = UDim2.new(0, 56, 0.5, 3),
+            Size = UDim2.new(1, -68, 0, 14),
+            Text = tostring(subtitle),
+            TextSize = 11,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = header,
+        })
+    end
+
+    local profileEnabled = opts.Profile ~= false
+    local tabList = create("ScrollingFrame", {
+        Name = "Tabs",
+        Position = UDim2.fromOffset(0, HEADER_HEIGHT),
+        Size = UDim2.new(1, 0, 1, -(HEADER_HEIGHT + (profileEnabled and PROFILE_HEIGHT + 4 or 12))),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 0,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        CanvasSize = UDim2.new(),
+        Parent = sidebar,
+    })
+    self.TabList = tabList
+    -- The highlight sits beside the stack of buttons, so it scrolls and clips
+    -- with them and glides between tiles.
+    local indicator = create("Frame", {
+        Position = UDim2.fromOffset(8, 2),
+        Size = UDim2.new(1, -16, 0, TAB_TILE_HEIGHT),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.35,
+        BorderSizePixel = 0,
+        Visible = false,
+        Parent = tabList,
+    })
+    corner(indicator, UDim.new(0, 7))
+    -- The active tab is just a quiet neutral fill with white text; the bar
+    -- is kept for callers but stays hidden.
+    local pill = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.fromOffset(2, 14),
+        BackgroundColor3 = Theme.Accent,
+        Visible = false,
+        BorderSizePixel = 0,
+        Parent = indicator,
+    })
+    corner(pill, UDim.new(1, 0))
+    self._indicatorPill = pill
+    self.Indicator = indicator
+    local stack = create("Frame", {
+        Name = "Stack",
+        Position = UDim2.fromOffset(8, 2),
+        Size = UDim2.new(1, -16, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        ZIndex = 2,
+        Parent = tabList,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = stack,
+    })
+    self._tabStack = stack
+
+    -- More tabs than fit: a fade and a small "more" chip at the hidden end.
+    self:_overflowHint(sidebar, tabList, stack, true, Theme.Surface)
+
+    if profileEnabled then
+        self:_buildProfile(sidebar)
+    end
+
+    local content = create("Frame", {
+        Name = "Content",
+        Position = UDim2.fromOffset(SIDEBAR_WIDTH + 1, 0),
+        Size = UDim2.new(1, -(SIDEBAR_WIDTH + 1), 1, 0),
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        Parent = body,
+    })
+    self.Content = content
+    self:_sidebarResize(sidebar, tonumber(opts.SidebarWidth) or SIDEBAR_WIDTH)
+    self._outLayer = create("CanvasGroup", {
+        Name = "TransitionOut",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Visible = false,
+        ZIndex = 2,
+        Parent = content,
+    })
+    self._inLayer = create("CanvasGroup", {
+        Name = "TransitionIn",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Visible = false,
+        ZIndex = 3,
+        Parent = content,
+    })
+
+    local minimizeButton = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -14, 0, 14),
+        Size = UDim2.fromOffset(34, 34),
+        BackgroundColor3 = Theme.Surface2,
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 5,
+        Parent = content,
+    })
+    minimizeButton:SetAttribute("NoDrag", true)
+    -- A bare "minimize" arrows glyph, no box: muted at rest, full text
+    -- colour and a touch smaller on hover, as if pulling in.
+    local minimizeGlyph = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(20, 20),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = minimizeButton,
+    })
+    applyIcon(minimizeGlyph, "minimize-2")
+    minimizeButton.MouseEnter:Connect(function()
+        tween(minimizeGlyph, { ImageColor3 = Theme.Text, Size = UDim2.fromOffset(18, 18) }, 0.2, Enum.EasingStyle.Quint)
+    end)
+    minimizeButton.MouseLeave:Connect(function()
+        tween(minimizeGlyph, { ImageColor3 = Theme.Muted, Size = UDim2.fromOffset(20, 20) }, 0.25, Enum.EasingStyle.Quint)
+    end)
+    minimizeButton.MouseButton1Click:Connect(function()
+        self:Minimize()
+    end)
+    self.MinimizeButton = minimizeButton
+
+    if opts.Search ~= false then
+        self:_buildSearch(content)
+    end
+
+    local notifyHolder = create("Frame", {
+        Name = "Notifications",
+        AnchorPoint = Vector2.new(1, 1),
+        Position = UDim2.new(1, -20, 1, -20),
+        Size = UDim2.new(0, 280, 1, -40),
+        BackgroundTransparency = 1,
+        Parent = gui,
+    })
+    local function fitToasts()
+        notifyHolder.Size = UDim2.new(0, math.min(280, gui.AbsoluteSize.X - 40), 1, -40)
+    end
+    table.insert(self._connections, gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitToasts))
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        VerticalAlignment = Enum.VerticalAlignment.Bottom,
+        Padding = UDim.new(0, 4),
+        Parent = notifyHolder,
+    })
+    self.NotifyHolder = notifyHolder
+    self._notifyOrder = 0
+    self._toasts = {}
+    self.MaxNotifications = opts.MaxNotifications or 4
+
+    self._controlsDirty = true
+    table.insert(self._connections, body.DescendantAdded:Connect(function()
+        self._controlsDirty = true
+    end))
+    table.insert(self._connections, body.DescendantRemoving:Connect(function()
+        self._controlsDirty = true
+    end))
+
+    self:SetDragStyle(opts.DragStyle or (opts.DragSkeleton == false and "Off" or "Outline"))
+    self:SetIslandStyle(opts.IslandStyle)
+    if opts.Transparent then
+        self:SetTransparent(true)
+    end
+    if opts.Background then
+        task.spawn(self.SetBackground, self, opts.Background)
+    end
+    self:_enableDrag()
+    self.MaxSize = opts.MaxSize
+    self.KeepOnScreen = opts.KeepOnScreen ~= false
+    self:_enableResize(opts.MinSize or Vector2.new(480, 360))
+    -- The window's exact size rides along in configs as a hidden flag.
+    if opts.SaveSize ~= false then
+        local window = self
+        local sizeFlag = { _type = "WindowSize", _listeners = {} }
+        function sizeFlag:Get()
+            local current = window:GetSize()
+            return { Width = current.X, Height = current.Y }
+        end
+        function sizeFlag:Set(value)
+            if type(value) == "table" and tonumber(value.Width) and tonumber(value.Height) then
+                window:SetSize(Vector2.new(tonumber(value.Width), tonumber(value.Height)))
+            end
+        end
+        local flag = type(opts.SaveSize) == "string" and opts.SaveSize or "__WindowSize"
+        Library.Flags[flag] = sizeFlag
+        self:_flagCreated(flag, sizeFlag)
+    end
+
+    table.insert(self._connections, UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if gameProcessed then
+            return
+        end
+        if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == self.Keybind then
+            task.defer(function()
+                local consumed = self._consumedKey == input.KeyCode and os.clock() - (self._consumedAt or 0) < 0.2
+                self._consumedKey = nil
+                if not consumed and not self._destroyed then
+                    if self.Minimized then
+                        self:Restore()
+                    else
+                        self:Toggle(not self.Open)
+                    end
+                end
+            end)
+        end
+    end))
+
+    pcall(function()
+        if typeof(syn) == "table" and typeof(syn.protect_gui) == "function" then
+            syn.protect_gui(gui)
+        end
+    end)
+    gui.Parent = opts.Parent or defaultParent()
+
+    scale.Scale = 0.9
+    shadow.ImageTransparency = 1
+    self.BodyStroke.Transparency = 1
+    root.Visible = false
+    self:_fitToScreen(true)
+    table.insert(self._connections, gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        self:_fitToScreen()
+        self:_clampToScreen()
+    end))
+    local toggleOpts = opts.ToggleButton
+    if toggleOpts == nil or toggleOpts == true then
+        toggleOpts = {}
+    end
+    if type(toggleOpts) == "table" then
+        self:_createToggleButton(toggleOpts)
+    end
+    -- The toggle button already brings a hidden window back.
+    local toggleShown = self.ToggleButton ~= nil and self:_toggleButtonAllowed()
+    if (opts.OpenButton ~= nil and opts.OpenButton ~= false) or (opts.OpenButton == nil and TOUCH and not toggleShown) then
+        self:_createOpenButton(type(opts.OpenButton) == "table" and opts.OpenButton or {})
+    end
+    if opts.Backdrop ~= false then
+        self:_buildBackdrop(type(opts.Backdrop) == "table" and opts.Backdrop or {})
+    end
+    self._introDone = false
+
+    table.insert(Library.Windows, self)
+
+    if opts.Home ~= false then
+        self:_buildHome(type(opts.Home) == "table" and opts.Home or {})
+    end
+
+    local loading = opts.Loading
+    if type(loading) == "table" then
+        opts.LoadingDuration = loading.Duration or opts.LoadingDuration
+        opts.LoadingText = loading.Text or loading.Subtitle or opts.LoadingText
+        opts.LoadingSteps = loading.Steps or opts.LoadingSteps
+        opts.LoadingTitle = loading.Title or opts.LoadingTitle
+        loading = loading.Enabled ~= false
+    end
+    -- An executor off the supported list (or missing the file / asset API)
+    -- stops at a warning card before the window opens.
+    local prompts = {}
+    local gate = opts.UnsupportedExecutor
+    if gate ~= false then
+        gate = type(gate) == "table" and gate or {}
+        local list = opts.SupportedExecutors or (type(opts.Home) == "table" and opts.Home.SupportedExecutors or nil)
+        local executor, supported, message = executorReport({ SupportedExecutors = list })
+        if not supported and not UnsupportedSkip.Saved(self.ConfigFolder, executor) then
+            local block = gate.Block == true
+            local folder = self.ConfigFolder
+            table.insert(prompts, {
+                Title = gate.Title or "Unsupported executor",
+                Subtitle = executor,
+                Text = block and ((gate.Text or message) .. " This script can't run here.") or (gate.Text or message),
+                Icon = "shield-alert",
+                Color = Theme.Warning,
+                ContinueText = "Continue anyway",
+                ExitText = "Exit",
+                Block = block,
+                RememberText = "Don't ask again on this executor",
+                Remember = function()
+                    UnsupportedSkip.Save(folder, executor)
+                end,
+            })
+        end
+    end
+    -- Custom disclaimers queue up after the executor warning, in order. Each
+    -- one must be accepted (or skipped by an earlier "Don't show again").
+    local disclaimers = opts.Disclaimer or opts.Disclaimers
+    if type(disclaimers) == "string" or (type(disclaimers) == "table" and (disclaimers.Title ~= nil or disclaimers.Text ~= nil)) then
+        disclaimers = { disclaimers }
+    end
+    if type(disclaimers) == "table" then
+        for _, entry in ipairs(disclaimers) do
+            if type(entry) == "string" then
+                entry = { Text = entry }
+            end
+            if type(entry) == "table" then
+                local key = UnsupportedSkip.DisclaimerKey(entry)
+                local folder = self.ConfigFolder
+                local block = entry.Block == true
+                local rememberable = entry.Remember ~= false and not block
+                if not (rememberable and UnsupportedSkip.DisclaimerAccepted(folder, key)) then
+                    local callback = entry.Callback
+                    table.insert(prompts, {
+                        Title = entry.Title or "Disclaimer",
+                        Subtitle = entry.Subtitle,
+                        Text = entry.Text or "",
+                        Icon = entry.Icon or "info",
+                        Color = entry.Color or Theme.Accent,
+                        ContinueText = entry.AcceptText or "I understand",
+                        ExitText = entry.DeclineText == nil and "Exit" or entry.DeclineText,
+                        RememberText = rememberable and (entry.RememberText or "Don't show again") or nil,
+                        Remember = function()
+                            UnsupportedSkip.AcceptDisclaimer(folder, key)
+                        end,
+                        Callback = type(callback) == "function" and callback or nil,
+                        Block = block,
+                    })
+                end
+            end
+        end
+    end
+    if #prompts > 0 then
+        opts._prompts = prompts
+    end
+    if loading == false and opts._prompts then
+        opts.LoadingDuration = opts.LoadingDuration or 0.5
+        loading = true
+    end
+    if loading == false then
+        task.defer(function()
+            self:_playIntro()
+        end)
+    else
+        self:_showLoader(opts)
+    end
+    return self
+end
+
+Library.CreateWindow = Library.Window
+
+
+
+function Library:Notify(opts)
+    local window = Library.Windows[#Library.Windows]
+    if window then
+        return window:Notify(opts)
+    end
+end
+
+function Library:Confirm(opts)
+    local window = Library.Windows[#Library.Windows]
+    if window then
+        return window:Confirm(opts)
+    end
+end
+
+function Library:Dialog(opts)
+    local window = Library.Windows[#Library.Windows]
+    if window then
+        return window:Dialog(opts)
+    end
+end
+
+local function isShown(object, stopAt, point)
+    local child = object
+    while child and child ~= stopAt and child:IsA("GuiObject") do
+        if not child.Visible then
+            return false
+        end
+        local parent = child.Parent
+        if parent and parent ~= stopAt and parent:IsA("GuiObject") and (parent.ClipsDescendants or parent:IsA("ScrollingFrame")) and not pointInside(point, parent) then
+            return false
+        end
+        child = parent
+    end
+    return true
+end
+
+function Window:_refreshControls()
+    local controls = {}
+    for _, object in ipairs(self.Body:GetDescendants()) do
+        if object:IsA("GuiButton") or object:IsA("TextBox") or object:GetAttribute("NoDrag") then
+            table.insert(controls, object)
+        end
+    end
+    self._controls = controls
+    self._controlsDirty = false
+end
+
+function Window:_overControl(point)
+    if self._dialog or self:_overPopout(point) then
+        return true
+    end
+    if self._controlsDirty then
+        self:_refreshControls()
+    end
+    for _, object in ipairs(self._controls) do
+        if object.Parent and pointInside(point, object) and isShown(object, self.Body, point) then
+            return true
+        end
+    end
+    return false
+end
+
+-- Tooltips: one shared card per window that follows the pointer over any
+-- element built with Tooltip = "..." or { Title, Text, Icon }. It appears
+-- after a short hover (straight away when moving from one tooltip to the
+-- next), hides on press, and shows on a long press on touch screens.
+function Window:_tooltipCard()
+    if self._tip then
+        return self._tip
+    end
+    local holder = create("CanvasGroup", {
+        Name = "Tooltip",
+        Size = UDim2.fromOffset(0, 0),
+        BackgroundTransparency = 1,
+        GroupTransparency = 1,
+        Visible = false,
+        ZIndex = 60,
+        Parent = self.Gui,
+    })
+    local tipScale = create("UIScale", { Parent = holder })
+    -- Bare text, no card: a dark outline keeps it readable over anything.
+    -- The holder is sized from the text by hand, since scale sizes inside an
+    -- automatic size would stretch it across the screen.
+    local PAD = 4
+    local panel = create("Frame", {
+        Position = UDim2.fromOffset(PAD, PAD),
+        Size = UDim2.fromOffset(0, 0),
+        AutomaticSize = Enum.AutomaticSize.XY,
+        BackgroundTransparency = 1,
+        Parent = holder,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = panel,
+    })
+    local function outline(object)
+        create("UIStroke", {
+            Color = Color3.new(0, 0, 0),
+            Transparency = 0.35,
+            Thickness = 1,
+            ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual,
+            Parent = object,
+        })
+    end
+    local head = create("Frame", {
+        Size = UDim2.fromOffset(0, 18),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        LayoutOrder = 1,
+        Parent = panel,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = head,
+    })
+    local icon = create("ImageLabel", {
+        Size = UDim2.fromOffset(14, 14),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        LayoutOrder = 1,
+        Parent = head,
+    })
+    local title = label({
+        Size = UDim2.fromOffset(0, 18),
+        AutomaticSize = Enum.AutomaticSize.X,
+        TextSize = 13,
+        FontFace = Fonts.Bold,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = head,
+    })
+    outline(title)
+    local body = label({
+        Size = UDim2.fromOffset(0, 0),
+        AutomaticSize = Enum.AutomaticSize.XY,
+        TextSize = 12,
+        FontFace = Fonts.Medium,
+        TextWrapped = true,
+        TextTruncate = Enum.TextTruncate.None,
+        TextYAlignment = Enum.TextYAlignment.Top,
+        LineHeight = 1.1,
+        LayoutOrder = 2,
+        Parent = panel,
+    })
+    outline(body)
+    create("UISizeConstraint", { MaxSize = Vector2.new(240, math.huge), Parent = body })
+    local function fit()
+        local scale = math.max(tipScale.Scale, 0.01)
+        local size = panel.AbsoluteSize / scale
+        holder.Size = UDim2.fromOffset(size.X + PAD * 2, size.Y + PAD * 2)
+    end
+    panel:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+    local tip = {
+        Holder = holder,
+        Scale = tipScale,
+        Pad = PAD,
+        Head = head,
+        Icon = icon,
+        Title = title,
+        Body = body,
+        Shown = false,
+        Fit = fit,
+    }
+    self._tip = tip
+    -- Follow the pointer, and drop the card once its element is gone or off
+    -- screen (tab switched, window hidden or minimized).
+    self:_listen("Render", function(deltaTime)
+        local owner = self._tipOwner
+        if not owner then
+            return
+        end
+        local frame = owner._frame
+        if owner._destroyed or not self.Open or self.Minimized or not frame or not frame.Parent
+            or (owner._isShown and not owner:_isShown()) or not isShown(frame, self.Body, frame.AbsolutePosition + frame.AbsoluteSize / 2) then
+            self:_hideTooltip()
+            return
+        end
+        local pointer = pointerPosition() - self.Gui.AbsolutePosition
+        local pad = tip.Pad * tipScale.Scale
+        local size = holder.AbsoluteSize - Vector2.one * pad * 2
+        local view = self.Gui.AbsoluteSize
+        local x, y
+        if tip.Touch then
+            x, y = pointer.X - size.X / 2, pointer.Y - size.Y - 30
+        else
+            x, y = pointer.X + 14, pointer.Y + 20
+            if x + size.X > view.X - 8 then
+                x = pointer.X - size.X - 10
+            end
+            if y + size.Y > view.Y - 8 then
+                y = pointer.Y - size.Y - 12
+            end
+        end
+        local target = Vector2.new(
+            math.clamp(x, 8, math.max(8, view.X - size.X - 8)),
+            math.clamp(y, 8, math.max(8, view.Y - size.Y - 8))
+        )
+        local current = tip.Position
+        if not current or tip.Snap then
+            -- Rises a few pixels into place as it fades in.
+            current = target + Vector2.new(0, 6)
+            tip.Snap = false
+        else
+            current = current:Lerp(target, math.min(deltaTime * 22, 1))
+        end
+        tip.Position = current
+        holder.Position = UDim2.fromOffset(math.floor(current.X - pad + 0.5), math.floor(current.Y - pad + 0.5))
+    end)
+    -- A press anywhere (a dropdown chip inside the card, a key) hides it.
+    self:_listen("Began", function(input)
+        if self._tipOwner and not tip.Touch and (input.UserInputType == Enum.UserInputType.MouseButton1
+            or input.UserInputType == Enum.UserInputType.MouseButton2 or input.UserInputType == Enum.UserInputType.Keyboard) then
+            self:_hideTooltip()
+        end
+    end)
+    return tip
+end
+
+function Window:_showTooltip(element, touch)
+    local value = element._tooltip
+    local text, titleText, iconName
+    if type(value) == "table" then
+        text, titleText, iconName = value.Text or value.Content or value.Desc, value.Title or value.Name, value.Icon
+    elseif value ~= nil and value ~= false then
+        text = tostring(value)
+    end
+    if (text == nil or text == "") and (titleText == nil or titleText == "") then
+        return
+    end
+    local tip = self:_tooltipCard()
+    tip.Title.Text = titleText or ""
+    tip.Title.Visible = titleText ~= nil and titleText ~= ""
+    tip.Icon.Visible = iconName ~= nil
+    if iconName ~= nil then
+        applyIcon(tip.Icon, iconName)
+    end
+    tip.Head.Visible = tip.Title.Visible or iconName ~= nil
+    tip.Body.Text = text or ""
+    tip.Body.Visible = text ~= nil and text ~= ""
+    tip.Fit()
+    tip.Body.TextColor3 = Theme.Text
+    tip.Scale.Scale = math.max(self.Scale.Scale, 0.75)
+    tip.Touch = touch == true
+    local wasShown = tip.Shown
+    self._tipOwner = element
+    tip.Shown = true
+    tip.Generation = (tip.Generation or 0) + 1
+    local holder = tip.Holder
+    if not wasShown then
+        tip.Snap = true
+        holder.Visible = true
+        holder.GroupTransparency = 1
+        tip.Scale.Scale = tip.Scale.Scale * 0.96
+    end
+    tween(holder, { GroupTransparency = 0 }, 0.14, Enum.EasingStyle.Quad)
+    tween(tip.Scale, { Scale = math.max(self.Scale.Scale, 0.75) }, 0.18, Enum.EasingStyle.Back)
+end
+
+function Window:_hideTooltip(element)
+    local tip = self._tip
+    if not tip or not tip.Shown or (element and self._tipOwner ~= element) then
+        return
+    end
+    self._tipOwner = nil
+    self._tipHiddenAt = os.clock()
+    tip.Shown = false
+    tip.Generation = (tip.Generation or 0) + 1
+    local generation = tip.Generation
+    tween(tip.Holder, { GroupTransparency = 1 }, 0.1, Enum.EasingStyle.Quad)
+    task.delay(0.1, function()
+        if tip.Generation == generation then
+            tip.Holder.Visible = false
+        end
+    end)
+end
+
+function Window:_attachTooltip(element, frame)
+    local hovering, token, pressAt = false, 0, nil
+    local function begin(delay, touch)
+        token += 1
+        local mine = token
+        task.delay(delay, function()
+            if token ~= mine or not hovering or element._destroyed or self._destroyed then
+                return
+            end
+            -- A finger that moved was scrolling, not holding.
+            if touch and pressAt and (pointerPosition() - pressAt).Magnitude > 10 then
+                return
+            end
+            self:_showTooltip(element, touch)
+        end)
+    end
+    table.insert(element._listeners, (function()
+        local connections = {
+            frame.MouseEnter:Connect(function()
+                if usingTouch() then
+                    return
+                end
+                hovering = true
+                local recent = os.clock() - (self._tipHiddenAt or 0) < 0.35 or self._tipOwner ~= nil
+                begin(recent and 0 or 0.45, false)
+            end),
+            frame.MouseLeave:Connect(function()
+                hovering = false
+                token += 1
+                self:_hideTooltip(element)
+            end),
+            frame.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.Touch then
+                    hovering = true
+                    pressAt = pointerPosition()
+                    begin(0.5, true)
+                end
+            end),
+            frame.InputEnded:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.Touch then
+                    hovering = false
+                    token += 1
+                    self:_hideTooltip(element)
+                end
+            end),
+        }
+        return function()
+            for _, connection in ipairs(connections) do
+                connection:Disconnect()
+            end
+        end
+    end)())
+end
+
+-- While dragging, a stand-in follows the pointer while the window stays put,
+-- and the window glides into its spot on release. The look is the player's
+-- Drag Style; "Off" drags the window itself.
+Library.DragStyles = { "Outline", "Brackets", "Ghost", "Frame", "Off" }
+
+local function makeSkeleton(window)
+    local root = window.Root
+    local style = window.DragStyle or "Outline"
+    local skeleton = create("Frame", {
+        AnchorPoint = root.AnchorPoint,
+        Position = root.Position,
+        Size = UDim2.fromOffset(root.AbsoluteSize.X, root.AbsoluteSize.Y),
+        BackgroundColor3 = style == "Ghost" and Theme.Background or Theme.Accent,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 40,
+        Parent = window.Gui,
+    })
+    corner(skeleton, UDim.new(0, 10))
+    -- Each part fades from hidden to its shown values, and back on release.
+    local parts = {}
+    local function part(object, shown)
+        local hidden = {}
+        for key in pairs(shown) do
+            hidden[key] = 1
+        end
+        table.insert(parts, { Object = object, Shown = shown, Hidden = hidden })
+    end
+    local function brackets(length, inset)
+        for _, spot in ipairs({ Vector2.new(0, 0), Vector2.new(1, 0), Vector2.new(0, 1), Vector2.new(1, 1) }) do
+            local at = UDim2.new(spot.X, spot.X == 0 and inset or -inset, spot.Y, spot.Y == 0 and inset or -inset)
+            for _, size in ipairs({ UDim2.fromOffset(length, 2), UDim2.fromOffset(2, length) }) do
+                local bracket = create("Frame", {
+                    AnchorPoint = spot,
+                    Position = at,
+                    Size = size,
+                    BackgroundColor3 = Theme.Accent,
+                    BackgroundTransparency = 1,
+                    BorderSizePixel = 0,
+                    Parent = skeleton,
+                })
+                corner(bracket, UDim.new(1, 0))
+                part(bracket, { BackgroundTransparency = 0 })
+            end
+        end
+    end
+    if style == "Brackets" then
+        -- Just the four corners of the window, a little longer.
+        brackets(22, 0)
+    elseif style == "Ghost" then
+        -- A see-through copy of the window's panel.
+        part(skeleton, { BackgroundTransparency = 0.35 })
+        part(stroke(skeleton, Theme.Stroke, 1, 1), { Transparency = 0 })
+    elseif style == "Frame" then
+        -- A single quiet line, nothing else.
+        part(stroke(skeleton, Theme.StrokeHover, 1, 1), { Transparency = 0 })
+    else
+        -- Outline: a faint accent wash, an outline and corner brackets.
+        part(skeleton, { BackgroundTransparency = 0.92 })
+        part(stroke(skeleton, Theme.Accent, 1, 1.5), { Transparency = 0.2 })
+        brackets(16, 6)
+    end
+    local scale = create("UIScale", { Scale = 1.02, Parent = skeleton })
+    for _, item in ipairs(parts) do
+        tween(item.Object, item.Shown, 0.15, Enum.EasingStyle.Quad)
+    end
+    tween(scale, { Scale = 1 }, 0.25, Enum.EasingStyle.Quint)
+    local function fade()
+        for _, item in ipairs(parts) do
+            tween(item.Object, item.Hidden, 0.2, Enum.EasingStyle.Quad)
+        end
+        task.delay(0.22, function()
+            skeleton:Destroy()
+        end)
+    end
+    return skeleton, fade
+end
+
+function Window:_enableDrag()
+    local dragging, moved = false, false
+    local grabOffset, pressPoint = Vector2.zero, Vector2.zero
+    local target = nil
+    local skeleton, fadeSkeleton = nil, nil
+
+    local function centre()
+        local root = self.Root
+        return root.AbsolutePosition + root.AbsoluteSize * root.AnchorPoint - self.Gui.AbsolutePosition
+    end
+
+    local function dropSkeleton()
+        if not skeleton then
+            return
+        end
+        local spot = Vector2.new(skeleton.Position.X.Offset, skeleton.Position.Y.Offset)
+        if self.KeepOnScreen then
+            spot = self:_clampedCentre(spot)
+        end
+        if self._clampTween then
+            self._clampTween:Cancel()
+        end
+        self._clampTween = tween(self.Root, { Position = UDim2.fromOffset(spot.X, spot.Y) }, 0.3, Enum.EasingStyle.Quint)
+        fadeSkeleton()
+        skeleton, fadeSkeleton = nil, nil
+    end
+
+    table.insert(self._connections, UserInputService.InputBegan:Connect(function(input)
+        if not isPress(input) then
+            return
+        end
+        if not self.Open or not self.Root.Visible then
+            return
+        end
+        local point = pointerPosition()
+        if self._resizeActive or (self._grip and pointInside(point, self._grip)) then
+            return
+        end
+        if not pointInside(point, self.Body) or self:_overControl(point) then
+            return
+        end
+        if self._clampTween then
+            self._clampTween:Cancel()
+            self._clampTween = nil
+        end
+        dragging, moved = true, false
+        pressPoint = point
+        grabOffset = point - centre()
+    end))
+
+    table.insert(self._connections, UserInputService.InputEnded:Connect(function(input)
+        if not dragging then
+            return
+        end
+        if isPress(input) then
+            dragging = false
+            target = nil
+            if skeleton then
+                dropSkeleton()
+            else
+                self:_clampToScreen()
+            end
+        end
+    end))
+
+    table.insert(self._frameSteps, function(deltaTime)
+        if not dragging then
+            return
+        end
+        local point = pointerPosition()
+        if not moved and (point - pressPoint).Magnitude > 3 then
+            moved = true
+            if self.DragSkeleton then
+                skeleton, fadeSkeleton = makeSkeleton(self)
+            end
+        end
+        if not moved then
+            return
+        end
+        -- Hidden or minimized mid-drag: land it where the outline is.
+        if skeleton and (not self.Open or not self.Root.Visible) then
+            dragging = false
+            dropSkeleton()
+            return
+        end
+        target = point - grabOffset
+        local alpha = 1 - math.exp(-deltaTime * 45)
+        if skeleton then
+            local current = Vector2.new(skeleton.Position.X.Offset, skeleton.Position.Y.Offset)
+            local step = current:Lerp(target, alpha)
+            skeleton.Position = UDim2.fromOffset(step.X, step.Y)
+        else
+            local step = centre():Lerp(target, alpha)
+            self.Root.Position = UDim2.fromOffset(step.X, step.Y)
+        end
+    end)
+end
+
+-- One of Library.DragStyles; anything else falls back to "Outline".
+-- Returns the style it settled on.
+function Window:SetDragStyle(style)
+    style = table.find(Library.DragStyles, style) and style or "Outline"
+    self.DragStyle = style
+    self.DragSkeleton = style ~= "Off"
+    return style
+end
+
+function Window:GetDragStyle()
+    return self.DragStyle
+end
+
+-- How the minimized island shows the session card: opening it while
+-- hovered, or keeping it open the whole time it's minimized.
+Library.IslandStyles = { "Show on Hover", "Always Show" }
+
+-- One of Library.IslandStyles; anything else falls back to "Show on Hover".
+-- Returns the style it settled on.
+function Window:SetIslandStyle(style)
+    style = table.find(Library.IslandStyles, style) and style or "Show on Hover"
+    self.IslandStyle = style
+    if self._islandSettle then
+        self._islandSettle()
+    end
+    return style
+end
+
+function Window:GetIslandStyle()
+    return self.IslandStyle
+end
+
+-- The older on/off switch: off is the "Off" style, on brings back the
+-- default style if it was off.
+function Window:SetDragSkeleton(enabled)
+    if enabled == false then
+        self:SetDragStyle("Off")
+    elseif self.DragStyle == "Off" or not self.DragStyle then
+        self:SetDragStyle("Outline")
+    end
+end
+
+-- The sidebar's divider is a grab strip: dragging it sets the rail's width,
+-- kept between a usable minimum and enough room for the content.
+function Window:_sidebarResize(sidebar, width)
+    local divider = sidebar:FindFirstChild("Divider")
+    local want = width
+    local function apply(value, remember)
+        if remember ~= false then
+            want = value
+        end
+        local room = self.Body.AbsoluteSize.X / self.Scale.Scale - 300
+        value = math.floor(math.clamp(value, 150, math.max(math.min(300, room), 150)))
+        self.SidebarWidth = value
+        sidebar.Size = UDim2.new(0, value, 1, 0)
+        self.Content.Position = UDim2.fromOffset(value + 1, 0)
+        self.Content.Size = UDim2.new(1, -(value + 1), 1, 0)
+    end
+    self.SetSidebarWidth = function(_, value)
+        apply(tonumber(value) or SIDEBAR_WIDTH)
+    end
+    apply(width)
+    local grip = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, 0, 0, 0),
+        Size = UDim2.new(0, 6, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 6,
+        Parent = sidebar,
+    })
+    grip:SetAttribute("NoDrag", true)
+    local dragging, startX, startWidth = false, 0, width
+    local function light(on)
+        if divider then
+            tween(divider, { BackgroundColor3 = on and Theme.Accent or Theme.Stroke }, 0.15)
+        end
+    end
+    grip.MouseEnter:Connect(function()
+        light(true)
+    end)
+    grip.MouseLeave:Connect(function()
+        if not dragging then
+            light(false)
+        end
+    end)
+    grip.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging, startX, startWidth = true, input.Position.X, self.SidebarWidth
+            want = startWidth
+            light(true)
+        end
+    end)
+    self:_listen("Changed", function(input)
+        if dragging and isMove(input) then
+            apply(startWidth + (input.Position.X - startX) / self.Scale.Scale)
+        end
+    end)
+    self:_listen("Ended", function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+            dragging = false
+            light(false)
+        end
+    end)
+    -- Shrinking the window pulls an over-wide rail back in.
+    self.Body:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if not dragging then
+            apply(want, false)
+        end
+    end)
+end
+
+-- See-through window: the body and sidebar let the game show through, and the
+-- shadow lightens so it doesn't smudge behind them.
+function Window:SetTransparent(enabled)
+    self.Transparent = enabled == true
+    local on = self.Transparent
+    self._shadowRest = on and 0.85 or 0.6
+    tween(self.Body, { BackgroundTransparency = on and 0.35 or 0 }, 0.25)
+    -- See-through, the rail stays a touch more solid than the body so the
+    -- tabs keep their contrast; over a background image it lets more through.
+    local railAlpha = on and 0.5 or (self.Background and 0.45 or 0)
+    tween(self.SidebarFill, { BackgroundTransparency = railAlpha }, 0.25)
+    if self.Open and not self.Minimized and self.Root.Visible then
+        tween(self.Shadow, { ImageTransparency = self._shadowRest }, 0.25)
+    end
+end
+
+local function orderedChildren(parent)
+    local children = {}
+    for _, child in ipairs(parent:GetChildren()) do
+        if child:IsA("GuiObject") then
+            table.insert(children, child)
+        end
+    end
+    table.sort(children, function(a, b)
+        return a.LayoutOrder < b.LayoutOrder
+    end)
+    return children
+end
+
+local function popIn(object, delay, force)
+    if not object.Visible and not force then
+        return
+    end
+    object.Visible = false
+    task.delay(delay, function()
+        if not object.Parent then
+            return
+        end
+        local scaleObject = create("UIScale", { Scale = 0.94, Parent = object })
+        object.Visible = true
+        tween(scaleObject, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+        task.delay(0.4, function()
+            scaleObject:Destroy()
+        end)
+    end)
+end
+
+function Window:_revealCards(tab, baseDelay)
+    local container = tab.CurrentSubTab or tab
+    if container._revealed then
+        return
+    end
+    container._revealed = true
+    local index = 0
+    local function reveal(object)
+        popIn(object, (baseDelay or 0) + index * 0.035)
+        index += 1
+    end
+    local columns = container._columnSet
+    for _, child in ipairs(orderedChildren(container.List)) do
+        if columns and child == columns.Holder then
+            local left, right = orderedChildren(columns.Left), orderedChildren(columns.Right)
+            for row = 1, math.max(#left, #right) do
+                if left[row] then
+                    reveal(left[row])
+                end
+                if right[row] then
+                    reveal(right[row])
+                end
+            end
+        else
+            reveal(child)
+        end
+    end
+end
+
+function Window:_playIntro(morph)
+    if self._introDone or self._destroyed then
+        return
+    end
+    self._introDone = true
+    self:_refreshBackdrop(true)
+    task.delay(0.4, function()
+        self:_refreshToggleButton()
+    end)
+    -- Build the minimized bar ahead of time so the first minimize doesn't
+    -- pay for it mid-click.
+    task.delay(1.5, function()
+        if not self._destroyed and not self.MiniBar then
+            self:_buildMiniBar()
+        end
+    end)
+    local root, shadow, scale = self.Root, self.Shadow, self.Scale
+    if self.CurrentTab then
+        self:_revealCards(self.CurrentTab, morph and 0.15 or 0.25)
+    end
+    root.Visible = true
+    if morph then
+        scale.Scale = self._fitScale or 1
+        root.Position = UDim2.fromScale(0.5, 0.5)
+        self:_fade(0, 0.3)
+        tween(self.BodyStroke, { Transparency = 0 }, 0.3)
+        tween(shadow, { ImageTransparency = 0.6 }, 0.3)
+    else
+        root.Position = UDim2.new(0.5, 0, 0.5, 24)
+        tween(scale, { Scale = self._fitScale or 1 }, 0.5, Enum.EasingStyle.Back)
+        tween(root, { Position = UDim2.fromScale(0.5, 0.5) }, 0.5, Enum.EasingStyle.Quint)
+        self:_fade(0, 0.35)
+        tween(self.BodyStroke, { Transparency = 0 }, 0.35)
+    end
+    if not morph then
+        tween(shadow, { ImageTransparency = 0.6 }, 0.5)
+    end
+
+    for index, tab in ipairs(self.Tabs) do
+        popIn(tab._button, 0.1 + index * 0.05, true)
+    end
+    self.Indicator.Visible = false
+    task.delay(0.15 + #self.Tabs * 0.05, function()
+        if self.CurrentTab then
+            self:_placeIndicator(self.CurrentTab)
+        end
+    end)
+end
+
+function Window:_showLoader(opts)
+    local duration = opts.LoadingDuration or 1.6
+    local gui = self.Gui
+    -- A compact card: logo, title and subtitle on top, a checklist of the
+    -- loading steps under a hairline, and a thin progress line along the
+    -- bottom edge. Everything but the prompt cards lives in one canvas group
+    -- so it can fade as a unit.
+    local steps = opts.LoadingSteps or { "Preparing interface", "Loading icons", "Almost there" }
+    local WIDTH, PAD, STEP = 340, 22, 24
+    local listTop = 80
+    local height = listTop + #steps * STEP + 18
+    local loader = create("CanvasGroup", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 10),
+        Size = UDim2.fromOffset(WIDTH, height),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        GroupTransparency = 1,
+        ZIndex = 10,
+        Parent = gui,
+    })
+    local loaderCorner = corner(loader, UDim.new(0, 12))
+    local loaderStroke = stroke(loader, Theme.Stroke, 1)
+    local loaderScale = create("UIScale", { Scale = 0.97, Parent = loader })
+    local loaderShadow = create("ImageLabel", {
+        Position = UDim2.fromOffset(-25, -25),
+        Size = UDim2.new(1, 50, 1, 50),
+        BackgroundTransparency = 1,
+        Image = Assets.Shadow,
+        ImageColor3 = Color3.new(0, 0, 0),
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Slice,
+        SliceCenter = Rect.new(49, 49, 450, 450),
+        ZIndex = 0,
+        Parent = loader,
+    })
+    local content = create("CanvasGroup", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Parent = loader,
+    })
+
+    local logo = create("ImageLabel", {
+        Position = UDim2.fromOffset(PAD, PAD),
+        Size = UDim2.fromOffset(30, 30),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = content,
+    })
+    applyIcon(logo, opts.Icon or Assets.Logo, true)
+    local TEXT_X = PAD + 42
+    local titleLabel = label({
+        Position = UDim2.fromOffset(TEXT_X, PAD - 2),
+        Size = UDim2.new(1, -(TEXT_X + 70), 0, 18),
+        Text = opts.LoadingTitle or opts.Title or "Airflow",
+        TextSize = 15,
+        FontFace = Fonts.Bold,
+        Parent = content,
+    })
+    local statusLabel = label({
+        Position = UDim2.fromOffset(TEXT_X, PAD + 17),
+        Size = UDim2.new(1, -(TEXT_X + 70), 0, 15),
+        Text = opts.LoadingText or opts.Subtitle or "Loading",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = content,
+    })
+    local percentLabel = label({
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -PAD, 0, PAD + 6),
+        Size = UDim2.fromOffset(56, 16),
+        Text = "0%",
+        TextSize = 13,
+        FontFace = Fonts.Medium,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Right,
+        Parent = content,
+    })
+    create("Frame", {
+        Position = UDim2.fromOffset(PAD, listTop - 14),
+        Size = UDim2.new(1, -PAD * 2, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = content,
+    })
+
+    -- Each step: a marker and its text. Pending is a dim dot, the running
+    -- step a turning arc, and a finished one a check.
+    local rows = {}
+    for index, text in ipairs(steps) do
+        local row = create("Frame", {
+            Position = UDim2.fromOffset(PAD, listTop + (index - 1) * STEP),
+            Size = UDim2.new(1, -PAD * 2, 0, STEP),
+            BackgroundTransparency = 1,
+            Parent = content,
+        })
+        local dot = create("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.new(0, 7, 0.5, 0),
+            Size = UDim2.fromOffset(6, 6),
+            BackgroundColor3 = Theme.Surface3,
+            BorderSizePixel = 0,
+            Parent = row,
+        })
+        corner(dot, UDim.new(1, 0))
+        local spinner = create("Frame", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.new(0, 7, 0.5, 0),
+            Size = UDim2.fromOffset(12, 12),
+            BackgroundTransparency = 1,
+            Visible = false,
+            Parent = row,
+        })
+        corner(spinner, UDim.new(1, 0))
+        local spinnerStroke = create("UIStroke", {
+            Color = Theme.Accent,
+            Thickness = 2,
+            Parent = spinner,
+        })
+        create("UIGradient", {
+            Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0),
+                NumberSequenceKeypoint.new(0.5, 0),
+                NumberSequenceKeypoint.new(0.501, 1),
+                NumberSequenceKeypoint.new(1, 1),
+            }),
+            Parent = spinnerStroke,
+        })
+        local check = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.new(0, 7, 0.5, 0),
+            Size = UDim2.fromOffset(14, 14),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Accent,
+            ImageTransparency = 1,
+            ScaleType = Enum.ScaleType.Fit,
+            Parent = row,
+        })
+        applyIcon(check, "check")
+        local stepLabel = label({
+            Position = UDim2.fromOffset(24, 0),
+            Size = UDim2.new(1, -24, 1, 0),
+            Text = tostring(text),
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTransparency = 1,
+            Parent = row,
+        })
+        rows[index] = { Dot = dot, Spinner = spinner, Check = check, Label = stepLabel, State = "pending" }
+        -- The rows fade in one after another once the card is up.
+        task.delay(0.15 + index * 0.06, function()
+            if loader.Parent and rows[index].State == "pending" then
+                tween(stepLabel, { TextTransparency = 0.45 }, 0.3)
+            end
+        end)
+    end
+    local function setStep(index, state)
+        local row = rows[index]
+        if not row or row.State == state then
+            return
+        end
+        row.State = state
+        row.Dot.Visible = state == "pending"
+        row.Spinner.Visible = state == "active"
+        tween(row.Check, { ImageTransparency = state == "done" and 0 or 1 }, 0.2)
+        tween(row.Label, {
+            TextTransparency = state == "pending" and 0.45 or 0,
+            TextColor3 = state == "active" and Theme.Text or Theme.Muted,
+        }, 0.2)
+    end
+
+    local track = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.fromScale(0, 1),
+        Size = UDim2.new(1, 0, 0, 2),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = content,
+    })
+    local fill = create("Frame", {
+        Size = UDim2.fromScale(0, 1),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        Parent = track,
+    })
+
+    tween(loader, { GroupTransparency = 0, Position = UDim2.fromScale(0.5, 0.5) }, 0.45, Enum.EasingStyle.Quint)
+    tween(loaderScale, { Scale = 1 }, 0.45, Enum.EasingStyle.Quint)
+    tween(loaderShadow, { ImageTransparency = 0.55 }, 0.4)
+    tween(fill, { Size = UDim2.fromScale(0.85, 1) }, duration * 0.8, Enum.EasingStyle.Quart)
+    -- The percentage follows the bar and the running step's arc turns.
+    local percentStep
+    percentStep = RunService.RenderStepped:Connect(function(deltaTime)
+        if not loader.Parent then
+            percentStep:Disconnect()
+            return
+        end
+        percentLabel.Text = math.floor(fill.Size.X.Scale * 100 + 0.5) .. "%"
+        for _, row in ipairs(rows) do
+            if row.State == "active" then
+                row.Spinner.Rotation = (row.Spinner.Rotation + deltaTime * 360) % 360
+            end
+        end
+    end)
+
+    task.spawn(loadLucide)
+
+    for index in ipairs(steps) do
+        task.delay(duration * (index - 1) / #steps, function()
+            if not loader.Parent then
+                return
+            end
+            if index > 1 then
+                setStep(index - 1, "done")
+            end
+            setStep(index, "active")
+        end)
+    end
+    local function completeSteps()
+        for index in ipairs(rows) do
+            setStep(index, "done")
+        end
+    end
+
+    local function finish()
+        completeSteps()
+        tween(content, { GroupTransparency = 1 }, 0.18)
+
+        local fit = self._fitScale or 1
+        local target = self.Root.Size
+        tween(loader, {
+            Size = UDim2.fromOffset(target.X.Offset * fit, target.Y.Offset * fit),
+            Position = UDim2.fromScale(0.5, 0.5),
+        }, 0.5, Enum.EasingStyle.Quint)
+        tween(loaderCorner, { CornerRadius = UDim.new(0, Library._radius(10)) }, 0.5, Enum.EasingStyle.Quint)
+        tween(loaderScale, { Scale = 1 }, 0.5, Enum.EasingStyle.Quint)
+
+        task.delay(0.28, function()
+            self:_playIntro(true)
+            tween(loader, { GroupTransparency = 1 }, 0.25)
+            tween(loaderStroke, { Transparency = 1 }, 0.2)
+            tween(loaderShadow, { ImageTransparency = 1 }, 0.2)
+        end)
+        task.delay(0.6, function()
+            loader:Destroy()
+        end)
+    end
+
+    -- Prompt cards (unsupported executor, custom disclaimers): the checklist
+    -- gives way to one card at a time, each with Exit and Continue, before
+    -- the window opens.
+    local function hideBar()
+        completeSteps()
+        tween(content, { GroupTransparency = 1 }, 0.18)
+    end
+
+    local function showCard(info, onContinue)
+        local WIDTH, PAD, MAX_BODY = 360, 24, 220
+        local tone = info.Color or Theme.Accent
+        -- Fixed width from the start, so the body wraps at its final width
+        -- while the loader is still resizing.
+        local warnCard = create("CanvasGroup", {
+            AnchorPoint = Vector2.new(0.5, 0),
+            Position = UDim2.fromScale(0.5, 0),
+            Size = UDim2.new(0, WIDTH, 1, 0),
+            BackgroundTransparency = 1,
+            GroupTransparency = 1,
+            ZIndex = 5,
+            Parent = loader,
+        })
+        local badge = create("Frame", {
+            Position = UDim2.fromOffset(PAD, PAD),
+            Size = UDim2.fromOffset(44, 44),
+            BackgroundColor3 = tone,
+            BackgroundTransparency = 0.86,
+            BorderSizePixel = 0,
+            Parent = warnCard,
+        })
+        corner(badge, UDim.new(0, 12))
+        stroke(badge, tone, 1).Transparency = 0.6
+        local badgeIcon = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.fromOffset(22, 22),
+            BackgroundTransparency = 1,
+            ImageColor3 = tone,
+            ScaleType = Enum.ScaleType.Fit,
+            Parent = badge,
+        })
+        applyIcon(badgeIcon, info.Icon or "info")
+        label({
+            Position = UDim2.fromOffset(PAD + 58, info.Subtitle and PAD + 3 or PAD + 12),
+            Size = UDim2.new(1, -(PAD * 2 + 58), 0, 20),
+            Text = info.Title,
+            TextSize = 17,
+            Parent = warnCard,
+        })
+        if info.Subtitle then
+            label({
+                Position = UDim2.fromOffset(PAD + 58, PAD + 25),
+                Size = UDim2.new(1, -(PAD * 2 + 58), 0, 16),
+                Text = tostring(info.Subtitle),
+                TextSize = 13,
+                TextColor3 = tone,
+                Parent = warnCard,
+            })
+        end
+        -- Long text scrolls past MAX_BODY instead of pushing the card off screen.
+        local scroller = create("ScrollingFrame", {
+            Position = UDim2.fromOffset(PAD, PAD + 60),
+            Size = UDim2.new(1, -PAD * 2, 0, 16),
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            ScrollBarThickness = TOUCH and 4 or 3,
+            ScrollBarImageColor3 = Theme.Accent,
+            ScrollBarImageTransparency = 0.4,
+            ScrollingDirection = Enum.ScrollingDirection.Y,
+            CanvasSize = UDim2.new(),
+            Parent = warnCard,
+        })
+        local body = label({
+            Size = UDim2.new(1, -8, 0, 0),
+            Text = tostring(info.Text),
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextWrapped = true,
+            TextTruncate = Enum.TextTruncate.None,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            Parent = scroller,
+        })
+        local row = create("Frame", {
+            AnchorPoint = Vector2.new(0, 1),
+            Position = UDim2.new(0, PAD, 1, -PAD + 4),
+            Size = UDim2.new(1, -PAD * 2, 0, 34),
+            BackgroundTransparency = 1,
+            Parent = warnCard,
+        })
+        create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            HorizontalAlignment = Enum.HorizontalAlignment.Right,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, 8),
+            Parent = row,
+        })
+
+        -- Don't ask again: only offered when Continue is, and the executor
+        -- can write the file that remembers it.
+        local remember = false
+        local rememberRow = nil
+        if not info.Block and info.RememberText and UnsupportedSkip.Available() then
+            local boxSize = TOUCH and 20 or 16
+            rememberRow = create("TextButton", {
+                AnchorPoint = Vector2.new(0, 1),
+                Position = UDim2.new(0, PAD, 1, -PAD + 4 - 34 - 12),
+                Size = UDim2.new(1, -PAD * 2, 0, TOUCH and 28 or 22),
+                BackgroundTransparency = 1,
+                Text = "",
+                AutoButtonColor = false,
+                Parent = warnCard,
+            })
+            local box = create("Frame", {
+                AnchorPoint = Vector2.new(0, 0.5),
+                Position = UDim2.fromScale(0, 0.5),
+                Size = UDim2.fromOffset(boxSize, boxSize),
+                BackgroundColor3 = Theme.Surface2,
+                BorderSizePixel = 0,
+                Parent = rememberRow,
+            })
+            corner(box, UDim.new(0, 4))
+            local boxStroke = stroke(box, Theme.Stroke, 1)
+            local check = create("ImageLabel", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                Position = UDim2.fromScale(0.5, 0.5),
+                Size = UDim2.fromOffset(boxSize - 4, boxSize - 4),
+                BackgroundTransparency = 1,
+                ImageColor3 = Theme.AccentDark,
+                ImageTransparency = 1,
+                ScaleType = Enum.ScaleType.Fit,
+                Parent = box,
+            })
+            applyIcon(check, "check")
+            local rememberLabel = label({
+                Position = UDim2.fromOffset(boxSize + 8, 0),
+                Size = UDim2.new(1, -(boxSize + 8), 1, 0),
+                Text = info.RememberText,
+                TextSize = 12,
+                FontFace = Fonts.Regular,
+                TextColor3 = Theme.Muted,
+                Parent = rememberRow,
+            })
+            rememberRow.MouseEnter:Connect(function()
+                tween(boxStroke, { Color = remember and Theme.Accent or Theme.StrokeHover }, 0.12)
+                tween(rememberLabel, { TextColor3 = Theme.Text }, 0.12)
+            end)
+            rememberRow.MouseLeave:Connect(function()
+                tween(boxStroke, { Color = remember and Theme.Accent or Theme.Stroke }, 0.2)
+                tween(rememberLabel, { TextColor3 = remember and Theme.Text or Theme.Muted }, 0.2)
+            end)
+            rememberRow.MouseButton1Click:Connect(function()
+                remember = not remember
+                tween(box, { BackgroundColor3 = remember and Theme.Accent or Theme.Surface2 }, 0.15)
+                tween(boxStroke, { Color = remember and Theme.Accent or Theme.Stroke }, 0.15)
+                tween(check, { ImageTransparency = remember and 0 or 1 }, 0.15)
+                tween(rememberLabel, { TextColor3 = remember and Theme.Text or Theme.Muted }, 0.15)
+            end)
+        end
+
+        local chosen = false
+        local function button(text, primary, order, callback)
+            local frame = create("TextButton", {
+                Size = UDim2.fromOffset(0, 34),
+                AutomaticSize = Enum.AutomaticSize.X,
+                BackgroundColor3 = primary and Theme.Accent or Theme.Surface2,
+                BackgroundTransparency = primary and 0.12 or 0,
+                BorderSizePixel = 0,
+                Text = "",
+                AutoButtonColor = false,
+                LayoutOrder = order,
+                Parent = row,
+            })
+            corner(frame, UDim.new(0, 7))
+            local frameStroke = stroke(frame, primary and Theme.Accent or Theme.Stroke, 1)
+            frameStroke.Transparency = primary and 0.4 or 0
+            padding(frame, 14, 14)
+            label({
+                Size = UDim2.new(0, 0, 1, 0),
+                AutomaticSize = Enum.AutomaticSize.X,
+                Text = text,
+                TextSize = 13,
+                TextColor3 = primary and Theme.AccentDark or Theme.Text,
+                TextXAlignment = Enum.TextXAlignment.Center,
+                Parent = frame,
+            })
+            frame.MouseEnter:Connect(function()
+                if primary then
+                    tween(frame, { BackgroundTransparency = 0 }, 0.12)
+                    tween(frameStroke, { Transparency = 0 }, 0.12)
+                else
+                    tween(frameStroke, { Color = Theme.StrokeHover }, 0.12)
+                end
+            end)
+            frame.MouseLeave:Connect(function()
+                if primary then
+                    tween(frame, { BackgroundTransparency = 0.12 }, 0.2)
+                    tween(frameStroke, { Transparency = 0.4 }, 0.2)
+                else
+                    tween(frameStroke, { Color = Theme.Stroke }, 0.2)
+                end
+            end)
+            frame.MouseButton1Click:Connect(function()
+                if chosen then
+                    return
+                end
+                chosen = true
+                callback()
+            end)
+        end
+        if info.ExitText ~= false then
+            button(info.ExitText or "Exit", info.Block, 1, function()
+                if info.Callback then
+                    task.spawn(info.Callback, false)
+                end
+                tween(loader, { GroupTransparency = 1, Position = UDim2.new(0.5, 0, 0.5, 12) }, 0.25, Enum.EasingStyle.Quint)
+                tween(loaderShadow, { ImageTransparency = 1 }, 0.2)
+                task.delay(0.25, function()
+                    self:Destroy()
+                end)
+            end)
+        end
+        if not info.Block then
+            button(info.ContinueText or "Continue", true, 2, function()
+                if remember and info.Remember then
+                    info.Remember()
+                end
+                if info.Callback then
+                    task.spawn(info.Callback, true)
+                end
+                tween(warnCard, { GroupTransparency = 1 }, 0.15)
+                task.delay(0.15, function()
+                    warnCard:Destroy()
+                    onContinue()
+                end)
+            end)
+        end
+
+        -- The card grows to fit the message, then it fades in. The wrapped
+        -- height can land a few frames late (font loading, the scroller's
+        -- layout), so the card refits whenever it changes.
+        local laidOut = false
+        -- TextBounds of wrapped text stops at the label's current height, so
+        -- the card would fit to its own clipped text; the full wrapped height
+        -- is measured at the body's width instead.
+        local function measure()
+            local ok, size = pcall(function()
+                local params = Instance.new("GetTextBoundsParams")
+                params.Text = body.Text
+                params.Font = body.FontFace
+                params.Size = body.TextSize
+                params.Width = WIDTH - PAD * 2 - 8
+                return game:GetService("TextService"):GetTextBoundsAsync(params)
+            end)
+            return ok and size and math.ceil(size.Y) + 2 or body.TextBounds.Y
+        end
+        local function fit(duration)
+            local textHeight = math.max(measure(), 16)
+            local bodyHeight = math.min(textHeight, MAX_BODY)
+            body.Size = UDim2.new(1, -8, 0, textHeight)
+            scroller.Size = UDim2.new(1, -PAD * 2, 0, bodyHeight)
+            scroller.CanvasSize = UDim2.fromOffset(0, textHeight)
+            local height = PAD + 60 + bodyHeight + 18 + 34 + PAD - 4
+            if rememberRow then
+                height += rememberRow.Size.Y.Offset + 10
+            end
+            tween(loader, { Size = UDim2.fromOffset(WIDTH, height) }, duration, Enum.EasingStyle.Quint)
+        end
+        body:GetPropertyChangedSignal("TextBounds"):Connect(function()
+            if laidOut and loader.Parent and warnCard.Parent then
+                fit(0.2)
+            end
+        end)
+        task.delay(0.15, function()
+            if not loader.Parent then
+                return
+            end
+            laidOut = true
+            fit(0.35)
+            task.delay(0.12, function()
+                tween(warnCard, { GroupTransparency = 0 }, 0.3)
+                badge.Size = UDim2.fromOffset(34, 34)
+                badge.Position = UDim2.fromOffset(PAD + 5, PAD + 5)
+                tween(badge, { Size = UDim2.fromOffset(44, 44), Position = UDim2.fromOffset(PAD, PAD) }, 0.45, Enum.EasingStyle.Back)
+            end)
+        end)
+    end
+
+    local function runPrompts(queue, index)
+        if not loader.Parent then
+            return
+        end
+        local info = queue[index]
+        if not info then
+            finish()
+            return
+        end
+        showCard(info, function()
+            runPrompts(queue, index + 1)
+        end)
+    end
+
+    task.delay(duration, function()
+        tween(fill, { Size = UDim2.fromScale(1, 1) }, 0.25, Enum.EasingStyle.Quint)
+        task.delay(0.25, function()
+            if not loader.Parent then
+                return
+            end
+            if opts._prompts then
+                hideBar()
+                runPrompts(opts._prompts, 1)
+            else
+                finish()
+            end
+        end)
+    end)
+end
+
+function Window:_fitToScreen(instant)
+    local viewport = self.Gui.AbsoluteSize
+    if viewport.X == 0 or viewport.Y == 0 then
+        return
+    end
+    local size = self.Root.Size
+    -- The player's UI scale, times the adaptive factor for this screen, shrunk
+    -- further when the window wouldn't fit.
+    local wanted = (self._uiScale or 1) * (self._adaptive ~= false and Library._adaptiveFactor(viewport) or 1)
+    local scale = math.min(wanted, (viewport.X - 24) / math.max(size.X.Offset, 1), (viewport.Y - 24) / math.max(size.Y.Offset, 1))
+    self._fitScale = math.max(scale, 0.45)
+    if self._introDone and self.Open then
+        if instant then
+            self.Scale.Scale = self._fitScale
+        else
+            tween(self.Scale, { Scale = self._fitScale }, 0.2)
+        end
+    end
+end
+
+-- Adaptive size: the window is drawn for a 1080p screen and grows on larger
+-- ones (up to 1.75x on 4K) or shrinks a little on small laptops, so it covers
+-- about the same share of any screen. 1080p-class screens, windowed or with
+-- the topbar inset, stay at exactly 1. Touch screens only use the fit.
+function Library._adaptiveFactor(viewport)
+    if TOUCH then
+        return 1
+    end
+    local factor = math.min(viewport.X / 1920, viewport.Y / 1020)
+    if factor > 0.9 and factor < 1.15 then
+        return 1
+    end
+    return math.clamp(math.floor(factor * 20 + 0.5) / 20, 0.85, 1.75)
+end
+
+function Window:SetAdaptiveSize(enabled)
+    self._adaptive = enabled ~= false
+    self:_fitToScreen()
+    task.delay(0.22, function()
+        if not self._destroyed then
+            self:_clampToScreen()
+        end
+    end)
+end
+
+function Window:GetAdaptiveSize()
+    return self._adaptive ~= false
+end
+
+-- UI scale: 0.6 to 1.5 on top of the automatic fit to small screens.
+function Window:SetUIScale(value)
+    value = math.clamp(tonumber(value) or 1, 0.6, 1.5)
+    self.UIScale = value
+    self._uiScale = value
+    self:_fitToScreen()
+    task.delay(0.22, function()
+        if not self._destroyed then
+            self:_clampToScreen()
+        end
+    end)
+end
+
+function Window:GetUIScale()
+    return self._uiScale or 1
+end
+
+-- Density: the spacing between cards, groupboxes and rows. Shared by every
+-- window, like the theme. Anything built with Library._space follows it.
+Library.DensityModes = { Compact = 0.55, Default = 1, Comfortable = 1.45 }
+Library.Density = "Default"
+
+-- Small gaps (a groupbox's 2px rows) still move visibly between modes.
+function Library._spaced(base, factor)
+    if base <= 0 then
+        return 0
+    end
+    return math.max(math.floor(base * factor + (factor - 1) * 4 + 0.5), 0)
+end
+
+function Library._space(object, base)
+    local factor = Library.DensityModes[Library.Density] or 1
+    if object:IsA("UIListLayout") or object:IsA("UIGridLayout") then
+        object:SetAttribute("Space", base)
+        object.Padding = UDim.new(0, Library._spaced(base, factor))
+    elseif object:IsA("UIPadding") then
+        -- base is { left, right, top, bottom }
+        object:SetAttribute("SpaceL", base[1])
+        object:SetAttribute("SpaceR", base[2])
+        object:SetAttribute("SpaceT", base[3])
+        object:SetAttribute("SpaceB", base[4])
+        object.PaddingLeft = UDim.new(0, math.floor(base[1] * math.sqrt(factor) + 0.5))
+        object.PaddingRight = UDim.new(0, math.floor(base[2] * math.sqrt(factor) + 0.5))
+        object.PaddingTop = UDim.new(0, Library._spaced(base[3], factor))
+        object.PaddingBottom = UDim.new(0, Library._spaced(base[4], factor))
+    end
+    return object
+end
+
+function Library:SetDensity(mode)
+    if type(mode) == "string" then
+        for name in pairs(Library.DensityModes) do
+            if name:lower() == mode:lower() then
+                mode = name
+                break
+            end
+        end
+    end
+    if not Library.DensityModes[mode] then
+        mode = "Default"
+    end
+    Library.Density = mode
+    for _, window in ipairs(Library.Windows) do
+        if window.Gui and window.Gui.Parent then
+            for _, object in ipairs(window.Gui:GetDescendants()) do
+                local base = object:GetAttribute("Space")
+                if base then
+                    Library._space(object, base)
+                elseif object:GetAttribute("SpaceL") then
+                    Library._space(object, {
+                        object:GetAttribute("SpaceL"), object:GetAttribute("SpaceR"),
+                        object:GetAttribute("SpaceT"), object:GetAttribute("SpaceB"),
+                    })
+                end
+            end
+        end
+    end
+    return mode
+end
+
+function Window:SetDensity(mode)
+    return Library:SetDensity(mode)
+end
+
+function Window:GetDensity()
+    return Library.Density
+end
+
+-- Nearest centre that keeps the whole window inside the viewport.
+function Window:_clampedCentre(centre)
+    local viewport = self.Gui.AbsoluteSize
+    local half = self.Root.AbsoluteSize / 2
+    return Vector2.new(
+        math.clamp(centre.X, math.min(half.X, viewport.X / 2), math.max(viewport.X - half.X, viewport.X / 2)),
+        math.clamp(centre.Y, math.min(half.Y, viewport.Y / 2), math.max(viewport.Y - half.Y, viewport.Y / 2))
+    )
+end
+
+function Window:_clampToScreen()
+    if not self.KeepOnScreen or self._resizeActive then
+        return
+    end
+    local root = self.Root
+    local centre = root.AbsolutePosition + root.AbsoluteSize / 2 - self.Gui.AbsolutePosition
+    local clamped = self:_clampedCentre(centre)
+    if (clamped - centre).Magnitude > 0.5 then
+        self._clampTween = tween(root, { Position = UDim2.fromOffset(clamped.X, clamped.Y) }, 0.25, Enum.EasingStyle.Quint)
+    end
+end
+
+function Window:_createOpenButton(opts)
+    local gui = self.Gui
+    local pill = create("TextButton", {
+        AnchorPoint = Vector2.new(0.5, 0),
+        Position = UDim2.new(0.5, 0, 0, 14),
+        Size = UDim2.fromOffset(0, 40),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 30,
+        Parent = gui,
+    })
+    corner(pill, UDim.new(1, 0))
+    stroke(pill, Theme.Stroke)
+    padding(pill, 12, 16)
+    local icon = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 0, 0.5, 0),
+        Size = UDim2.fromOffset(20, 20),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        ZIndex = 31,
+        Parent = pill,
+    })
+    applyIcon(icon, opts.Icon or Assets.Logo, true)
+    label({
+        Position = UDim2.fromOffset(28, 0),
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = opts.Title or "Airflow",
+        TextSize = 13,
+        TextTruncate = Enum.TextTruncate.None,
+        ZIndex = 31,
+        Parent = pill,
+    })
+    self.OpenButton = pill
+
+    local dragging, moved = false, false
+    local grab = Vector2.zero
+    pill.InputBegan:Connect(function(input)
+        if isPress(input) then
+            dragging = true
+            moved = false
+            grab = pointerPosition() - pill.AbsolutePosition
+        end
+    end)
+    table.insert(self._connections, UserInputService.InputChanged:Connect(function(input)
+        if not dragging then
+            return
+        end
+        if isMove(input) then
+            local point = pointerPosition() - grab - gui.AbsolutePosition
+            if (point - (pill.AbsolutePosition - gui.AbsolutePosition)).Magnitude > 3 then
+                moved = true
+            end
+            pill.AnchorPoint = Vector2.new(0, 0)
+            pill.Position = UDim2.fromOffset(
+                math.clamp(point.X, 0, math.max(gui.AbsoluteSize.X - pill.AbsoluteSize.X, 0)),
+                math.clamp(point.Y, 0, math.max(gui.AbsoluteSize.Y - pill.AbsoluteSize.Y, 0))
+            )
+        end
+    end))
+    table.insert(self._connections, UserInputService.InputEnded:Connect(function(input)
+        if dragging and isPress(input) then
+            dragging = false
+            if not moved then
+                self:Toggle()
+            end
+        end
+    end))
+end
+
+-- Square floating button that minimizes and restores the window. Shown on
+-- touch devices only, or everywhere with Platform = "Both".
+function Window:_toggleButtonAllowed()
+    return self._toggleEnabled and (TOUCH or self._togglePlatform == "Both")
+end
+
+function Window:_refreshToggleButton()
+    local button = self.ToggleButton
+    if not button then
+        return
+    end
+    local shown = self._introDone and not self._destroyed and self:_toggleButtonAllowed()
+    if shown and not button.Visible then
+        button.Visible = true
+        button.Size = UDim2.fromOffset(0, 0)
+        tween(button, { Size = UDim2.fromOffset(self._toggleSize, self._toggleSize) }, 0.45, Enum.EasingStyle.Quint)
+    elseif not shown then
+        button.Visible = false
+    end
+    -- Folded (window minimized or hidden): the outline takes the accent.
+    local folded = self.Minimized or not self.Open
+    tween(self._toggleStroke, { Color = folded and Theme.Accent or Theme.Stroke, Transparency = folded and 0.3 or 0 }, 0.35)
+    local icon = self._toggleIcon
+    tween(icon, { Rotation = folded and 180 or 0 }, 0.5, Enum.EasingStyle.Quint)
+    if not icon:GetAttribute("CustomIcon") then
+        tween(icon, { ImageColor3 = folded and Theme.Text or Theme.Accent }, 0.35)
+    end
+end
+
+function Window:_createToggleButton(opts)
+    local gui = self.Gui
+    local size = tonumber(opts.Size) or (TOUCH and 56 or 50)
+    local iconSize = math.floor(size * 0.46)
+    self._toggleEnabled = opts.Enabled ~= false
+    self._togglePlatform = opts.Platform == "Both" and "Both" or "Mobile"
+    self._toggleSize = size
+    local button = create("TextButton", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = opts.Position or UDim2.new(0, 18 + size / 2, 0.5, 0),
+        Size = UDim2.fromOffset(size, size),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        ClipsDescendants = true,
+        Visible = false,
+        ZIndex = 30,
+        Parent = gui,
+    })
+    corner(button, UDim.new(0, 12))
+    local buttonStroke = stroke(button, Theme.Stroke)
+    local icon = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(iconSize, iconSize),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        ZIndex = 31,
+        Parent = button,
+    })
+    local buttonScale = create("UIScale", { Parent = button })
+    self.ToggleButton = button
+    self._toggleStroke = buttonStroke
+    self._toggleIcon = icon
+    self:SetToggleButtonIcon(opts.Icon or "layout-grid")
+
+    local dragging, moved = false, false
+    local grab = Vector2.zero
+    button.InputBegan:Connect(function(input)
+        if isPress(input) then
+            dragging = true
+            moved = false
+            grab = pointerPosition() - button.AbsolutePosition
+            tween(buttonScale, { Scale = 0.94 }, 0.18, Enum.EasingStyle.Quint)
+        end
+    end)
+    table.insert(self._connections, UserInputService.InputChanged:Connect(function(input)
+        if not dragging or not isMove(input) then
+            return
+        end
+        local point = pointerPosition() - grab - gui.AbsolutePosition
+        if (point - (button.AbsolutePosition - gui.AbsolutePosition)).Magnitude > 3 then
+            moved = true
+        end
+        if moved then
+            button.AnchorPoint = Vector2.zero
+            button.Position = UDim2.fromOffset(
+                math.clamp(point.X, 0, math.max(gui.AbsoluteSize.X - button.AbsoluteSize.X, 0)),
+                math.clamp(point.Y, 0, math.max(gui.AbsoluteSize.Y - button.AbsoluteSize.Y, 0))
+            )
+        end
+    end))
+    table.insert(self._connections, UserInputService.InputEnded:Connect(function(input)
+        if not dragging or not isPress(input) then
+            return
+        end
+        dragging = false
+        tween(buttonScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Quint)
+        if moved then
+            return
+        end
+        ripple(button)
+        if not self.Open then
+            self:Toggle(true)
+        elseif self.Minimized then
+            self:Restore()
+        else
+            self:Minimize()
+        end
+    end))
+end
+
+function Window:SetToggleButton(enabled)
+    self._toggleEnabled = enabled ~= false
+    self:_refreshToggleButton()
+end
+
+function Window:SetToggleButtonPlatform(platform)
+    self._togglePlatform = platform == "Both" and "Both" or "Mobile"
+    self:_refreshToggleButton()
+end
+
+function Window:SetToggleButtonIcon(icon)
+    local image = self._toggleIcon
+    if not image then
+        return
+    end
+    image.Image = ""
+    applyIcon(image, icon)
+    if image.Image == "" then
+        applyIcon(image, Assets.Logo)
+    end
+    if not image:GetAttribute("CustomIcon") then
+        tween(image, { ImageColor3 = (self.Minimized or not self.Open) and Theme.Text or Theme.Accent }, 0)
+    end
+end
+
+function Window:_enableResize(minSize)
+    local maxSize = self.MaxSize or Vector2.new(math.huge, math.huge)
+    self._minSize = minSize
+    local root = self.Root
+    local grip = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(1, 4, 1, 4),
+        Size = UDim2.fromOffset(32, 32),
+        BackgroundTransparency = 1,
+        Active = true,
+        ZIndex = 20,
+        Parent = root,
+    })
+    self._grip = grip
+    -- An arc that traces the window's own rounded corner: a rounded square
+    -- laid over the corner whose outline fades out away from it, so only the
+    -- curve and a short run of each edge show. Faint at rest, accent in use.
+    local gripArc = create("Frame", {
+        AnchorPoint = Vector2.new(1, 1),
+        Position = UDim2.fromOffset(12, 12),
+        Size = UDim2.fromOffset(26, 26),
+        BackgroundTransparency = 1,
+        ZIndex = 20,
+        Parent = grip,
+    })
+    corner(gripArc, UDim.new(0, 10))
+    local gripStroke = create("UIStroke", {
+        Color = Theme.Muted,
+        Thickness = 2,
+        Transparency = 0.55,
+        Parent = gripArc,
+    })
+    create("UIGradient", {
+        Rotation = 45,
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1),
+            NumberSequenceKeypoint.new(0.55, 1),
+            NumberSequenceKeypoint.new(0.85, 0),
+            NumberSequenceKeypoint.new(1, 0),
+        }),
+        Parent = gripStroke,
+    })
+    local function lightGrip(on)
+        tween(gripStroke, {
+            Color = on and Theme.Accent or Theme.Muted,
+            Transparency = on and 0 or 0.55,
+        }, on and 0.15 or 0.3, Enum.EasingStyle.Quint)
+    end
+
+    -- The size follows the pointer through a critically damped spring, so it
+    -- glides after the cursor and eases to rest when released instead of
+    -- snapping. While resizing, the window is anchored at its top-left corner
+    -- so only the right and bottom edges move and nothing jitters on half pixels.
+    local STIFFNESS = 20
+    local resizing = false
+    local startSize = Vector2.zero
+    local startPointer = Vector2.zero
+    local current = Vector2.zero
+    local velocity = Vector2.zero
+    local target = Vector2.zero
+    local applied = Vector2.zero
+
+    local function readSize()
+        return Vector2.new(root.Size.X.Offset, root.Size.Y.Offset)
+    end
+
+    local function pin()
+        if root.AnchorPoint == Vector2.zero then
+            return
+        end
+        -- A clamp tween still writing centre coordinates would fight the new anchor.
+        if self._clampTween then
+            self._clampTween:Cancel()
+            self._clampTween = nil
+        end
+        local topLeft = root.AbsolutePosition - self.Gui.AbsolutePosition
+        root.AnchorPoint = Vector2.zero
+        root.Position = UDim2.fromOffset(topLeft.X, topLeft.Y)
+    end
+
+    local function unpin()
+        local topLeft = root.AbsolutePosition - self.Gui.AbsolutePosition
+        local half = root.AbsoluteSize / 2
+        root.AnchorPoint = Vector2.new(0.5, 0.5)
+        root.Position = UDim2.fromOffset(topLeft.X + half.X, topLeft.Y + half.Y)
+    end
+
+    local function clampSize(size)
+        return Vector2.new(
+            math.floor(math.clamp(size.X, minSize.X, maxSize.X) + 0.5),
+            math.floor(math.clamp(size.Y, minSize.Y, maxSize.Y) + 0.5)
+        )
+    end
+
+    grip.InputBegan:Connect(function(input)
+        if not isPress(input) or not self.Open then
+            return
+        end
+        if not self._resizeActive then
+            pin()
+            current = readSize()
+            velocity = Vector2.zero
+            applied = current
+        end
+        self._resizeActive = true
+        resizing = true
+        startSize = current
+        startPointer = pointerPosition()
+        target = clampSize(startSize)
+        lightGrip(true)
+    end)
+    grip.MouseEnter:Connect(function()
+        if not resizing then
+            lightGrip(true)
+        end
+    end)
+    grip.MouseLeave:Connect(function()
+        if not resizing then
+            lightGrip(false)
+        end
+    end)
+    table.insert(self._connections, UserInputService.InputEnded:Connect(function(input)
+        if resizing and isPress(input) then
+            resizing = false
+            lightGrip(false)
+        end
+    end))
+
+    table.insert(self._frameSteps, function(deltaTime)
+        if not self._resizeActive then
+            return
+        end
+        if resizing then
+            local delta = (pointerPosition() - startPointer) / self.Scale.Scale
+            target = clampSize(startSize + delta)
+        end
+        local dt = math.min(deltaTime, 1 / 30)
+        local decay = math.exp(-STIFFNESS * dt)
+        local offset = current - target
+        local drift = (velocity + offset * STIFFNESS) * dt
+        velocity = (velocity - drift * STIFFNESS) * decay
+        current = target + (offset + drift) * decay
+
+        local rounded = Vector2.new(math.floor(current.X + 0.5), math.floor(current.Y + 0.5))
+        if rounded ~= applied then
+            applied = rounded
+            root.Size = UDim2.fromOffset(rounded.X, rounded.Y)
+        end
+
+        if not resizing and (current - target).Magnitude < 0.3 and velocity.Magnitude < 3 then
+            current = target
+            velocity = Vector2.zero
+            applied = target
+            root.Size = UDim2.fromOffset(target.X, target.Y)
+            unpin()
+            self._resizeActive = false
+            self:_fitToScreen()
+            self:_clampToScreen()
+        end
+    end)
+end
+
+-- The window's own size in pixels, before the UI scale and screen fit.
+function Window:GetSize()
+    return Vector2.new(self.Root.Size.X.Offset, self.Root.Size.Y.Offset)
+end
+
+-- Resizes to an exact size, kept within MinSize and MaxSize. Ignored while the
+-- player is dragging the grip.
+function Window:SetSize(size, instant)
+    if typeof(size) == "UDim2" then
+        size = Vector2.new(size.X.Offset, size.Y.Offset)
+    end
+    if typeof(size) ~= "Vector2" or self._resizeActive then
+        return
+    end
+    local minSize = self._minSize or Vector2.zero
+    local maxSize = self.MaxSize or Vector2.new(math.huge, math.huge)
+    size = Vector2.new(
+        math.floor(math.clamp(size.X, minSize.X, maxSize.X) + 0.5),
+        math.floor(math.clamp(size.Y, minSize.Y, maxSize.Y) + 0.5)
+    )
+    if size == self:GetSize() then
+        return
+    end
+    local duration = (instant or not self.Root.Visible) and 0 or 0.3
+    tween(self.Root, { Size = UDim2.fromOffset(size.X, size.Y) }, duration, Enum.EasingStyle.Quint)
+    task.delay(duration + 0.02, function()
+        if not self._destroyed then
+            self:_fitToScreen()
+            self:_clampToScreen()
+        end
+    end)
+end
+
+-- Configs are plain JSON, one file per config, in the same shape as a share code:
+--   {"Folder":"MyHub","Name":"farm","Version":1,"Config":"{\"AutoFarm\":{\"Value\":true,\"Type\":\"Toggle\"}}"}
+-- Config holds the flags as their own JSON string, each one {"Value":...,"Type":...}.
+-- Colours are {"Hex":"ff5a5a"}, keybinds are key names, an empty dropdown has no Value.
+
+local CONFIG_VERSION = 1
+local LEGACY_SHARE_PREFIX = "airflow:"
+
+local function configPath(self, name)
+    return self.ConfigFolder .. "/" .. name .. ".json"
+end
+
+local function fileApiAvailable()
+    return type(writefile) == "function" and type(readfile) == "function" and type(isfile) == "function"
+end
+
+-- Makes every missing folder along the path, so FolderName can be "Hub/Game".
+local function ensureFolder(folder)
+    if type(isfolder) ~= "function" or type(makefolder) ~= "function" then
+        return
+    end
+    local path = ""
+    for segment in tostring(folder):gmatch("[^/\\]+") do
+        path = path == "" and segment or path .. "/" .. segment
+        if not isfolder(path) then
+            makefolder(path)
+        end
+    end
+end
+
+local function colorToHex(color)
+    return string.format("%02x%02x%02x",
+        math.floor(color.R * 255 + 0.5),
+        math.floor(color.G * 255 + 0.5),
+        math.floor(color.B * 255 + 0.5))
+end
+
+local function colorFromValue(value)
+    if type(value) == "table" then
+        if type(value.Hex) == "string" then
+            value = value.Hex
+        elseif type(value[1]) == "number" then
+            -- Older configs stored { r, g, b } in 0-1.
+            return Color3.new(value[1], value[2] or 0, value[3] or 0)
+        end
+    end
+    if type(value) == "string" then
+        local r, g, b = value:match("^%s*#?(%x%x)(%x%x)(%x%x)%s*$")
+        if r then
+            return Color3.fromRGB(tonumber(r, 16), tonumber(g, 16), tonumber(b, 16))
+        end
+    end
+    return nil
+end
+
+local function serializeFlag(element)
+    local kind = element._type
+    local value = element:Get()
+    if type(element._saveValue) == "function" then
+        value = element:_saveValue()
+    end
+    if kind == "Keybind" then
+        return { Type = kind, Value = value and value.Name or nil }
+    elseif kind == "ColorPicker" then
+        return { Type = kind, Value = typeof(value) == "Color3" and { Hex = colorToHex(value) } or nil }
+    end
+    return { Type = kind, Value = value }
+end
+
+local function deserializeFlag(element, entry, silent)
+    local kind = element._type
+    local value = entry.Value
+    if kind == "Keybind" then
+        element:Set(type(value) == "string" and Enum.KeyCode[value] or nil, silent)
+    elseif kind == "ColorPicker" then
+        local color = colorFromValue(value)
+        if color then
+            element:Set(color, silent)
+        end
+    elseif kind == "Dropdown" then
+        -- A dropdown saved with nothing picked has no Value at all.
+        element:Set(value, silent)
+    elseif kind == "Toggle" then
+        if type(value) == "boolean" then
+            element:Set(value, silent)
+        end
+    elseif kind == "Slider" or kind == "Stepper" or kind == "Progress" then
+        local number = tonumber(value)
+        if number then
+            element:Set(number, silent)
+        end
+    elseif value ~= nil then
+        element:Set(value, silent)
+    end
+end
+
+local function entryMatches(element, entry)
+    return type(entry) == "table" and (entry.Type == nil or entry.Type == element._type)
+end
+
+-- Flags a config holds but no element has claimed yet are kept here. They are
+-- applied when an element with that flag is created and written back on save,
+-- so a config survives elements that only exist some of the time.
+local function collectFlags(self)
+    local data = {}
+    if self and self._pendingFlags then
+        for flag, pending in pairs(self._pendingFlags) do
+            data[flag] = pending.Entry
+        end
+    end
+    for flag, element in pairs(Library.Flags) do
+        if element._type and type(element.Get) == "function" then
+            local ok, entry = pcall(serializeFlag, element)
+            if ok then
+                data[flag] = entry
+            end
+        end
+    end
+    return data
+end
+
+function Window:_applyFlags(data, silent)
+    silent = silent == true
+    self._pendingFlags = {}
+    for flag, entry in pairs(data) do
+        local element = Library.Flags[flag]
+        if element and type(element.Set) == "function" then
+            if entryMatches(element, entry) then
+                pcall(deserializeFlag, element, entry, silent)
+            end
+        elseif type(entry) == "table" then
+            self._pendingFlags[flag] = { Entry = entry, Silent = silent }
+        end
+    end
+end
+
+-- Every flagged element reports here: its starting value becomes its default,
+-- and a value waiting from an earlier load is applied once the constructor returns.
+function Window:_flagCreated(flag, element)
+    local ok, entry = pcall(serializeFlag, element)
+    if ok then
+        element._defaultEntry = entry
+    end
+    local pending = self._pendingFlags and self._pendingFlags[flag]
+    if not pending then
+        return
+    end
+    task.defer(function()
+        if self._pendingFlags[flag] ~= pending or Library.Flags[flag] ~= element or element._destroyed then
+            return
+        end
+        self._pendingFlags[flag] = nil
+        if entryMatches(element, pending.Entry) then
+            pcall(deserializeFlag, element, pending.Entry, pending.Silent)
+        end
+    end)
+end
+
+-- Anything listening for config changes (the config manager's status line).
+function Window:_configChanged()
+    for _, handler in ipairs(self._configListeners) do
+        safeCall(handler)
+    end
+end
+
+function Window:OnConfigChanged(handler)
+    table.insert(self._configListeners, handler)
+    return function()
+        local index = table.find(self._configListeners, handler)
+        if index then
+            table.remove(self._configListeners, index)
+        end
+    end
+end
+
+local function validConfigName(name)
+    return type(name) == "string" and name ~= "" and not name:find('[\\/:%*%?"<>|]')
+end
+
+local function encodeConfig(self, name, flags)
+    return HttpService:JSONEncode({
+        Folder = self.ConfigFolder,
+        Name = name,
+        Version = CONFIG_VERSION,
+        Config = HttpService:JSONEncode(flags),
+    })
+end
+
+local B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+local B64_INDEX = {}
+for index = 1, #B64 do
+    B64_INDEX[B64:byte(index)] = index - 1
+end
+
+-- Only for reading the old "airflow:<base64>" share codes.
+local function base64Decode(text)
+    if #text % 4 ~= 0 then
+        return nil
+    end
+    local out = {}
+    for index = 1, #text, 4 do
+        local n, pad = 0, 0
+        for offset = 0, 3 do
+            local byte = text:byte(index + offset)
+            local value = B64_INDEX[byte]
+            if byte == 61 and index + 3 >= #text then
+                pad += 1
+                value = 0
+            elseif value == nil or pad > 0 then
+                return nil
+            end
+            n = n * 64 + value
+        end
+        if pad > 2 then
+            return nil
+        end
+        local chunk = string.char(bit32.extract(n, 16, 8), bit32.extract(n, 8, 8), bit32.extract(n, 0, 8))
+        table.insert(out, chunk:sub(1, 3 - pad))
+    end
+    return table.concat(out)
+end
+
+-- Reads a config file or a pasted code: the JSON above (Config as a string or
+-- a table), a bare flag table, or an old "airflow:" code. Returns flags, info.
+local function decodeConfig(text)
+    text = tostring(text or ""):match("^%s*(.-)%s*$")
+    if text:sub(1, #LEGACY_SHARE_PREFIX) == LEGACY_SHARE_PREFIX then
+        text = base64Decode((text:sub(#LEGACY_SHARE_PREFIX + 1):gsub("%s", "")))
+        if not text then
+            return nil, "invalid config code"
+        end
+    end
+    local ok, data = pcall(function()
+        return HttpService:JSONDecode(text)
+    end)
+    if not ok or type(data) ~= "table" then
+        return nil, "invalid config code"
+    end
+    local info = {}
+    -- A bare flag table could have a flag named Config, but its entry carries a Type.
+    if type(data.Config) == "string" or (type(data.Config) == "table" and data.Config.Type == nil) then
+        info.Folder = type(data.Folder) == "string" and data.Folder or nil
+        info.Name = type(data.Name) == "string" and data.Name or nil
+        info.Version = tonumber(data.Version)
+        local flags = data.Config
+        if type(flags) == "string" then
+            ok, flags = pcall(function()
+                return HttpService:JSONDecode(data.Config)
+            end)
+            if not ok then
+                return nil, "invalid config code"
+            end
+        end
+        if type(flags) ~= "table" then
+            return nil, "invalid config code"
+        end
+        data = flags
+    end
+    for flag, entry in pairs(data) do
+        if type(flag) ~= "string" or type(entry) ~= "table" then
+            return nil, "invalid config code"
+        end
+    end
+    return data, info
+end
+
+local function writeConfig(self, name, data)
+    if not validConfigName(name) then
+        return false, "invalid config name"
+    end
+    if not fileApiAvailable() then
+        return false, "file API unavailable"
+    end
+    local encoded, text = pcall(encodeConfig, self, name, data)
+    if not encoded then
+        return false, "could not encode config"
+    end
+    ensureFolder(self.ConfigFolder)
+    return pcall(writefile, configPath(self, name), text)
+end
+
+local function readConfig(self, name)
+    if not fileApiAvailable() then
+        return nil, "file API unavailable"
+    end
+    if not validConfigName(name) then
+        return nil, "invalid config name"
+    end
+    local path = configPath(self, name)
+    if not isfile(path) then
+        return nil, "no config named " .. tostring(name)
+    end
+    local ok, text = pcall(readfile, path)
+    if not ok or type(text) ~= "string" then
+        return nil, "could not read " .. name
+    end
+    local data, info = decodeConfig(text)
+    if not data then
+        return nil, "config is not valid JSON"
+    end
+    return data, info
+end
+
+function Window:ConfigExists(name)
+    return validConfigName(name) and fileApiAvailable() and isfile(configPath(self, name)) or false
+end
+
+function Window:SaveConfig(name)
+    name = name or self.ConfigName
+    if not name then
+        return false, "no config name"
+    end
+    local ok, err = writeConfig(self, name, collectFlags(self))
+    if ok then
+        self.ConfigName = name
+    end
+    return ok, err
+end
+
+function Window:LoadConfig(name, silent)
+    name = name or self.ConfigName
+    if not name then
+        return false, "no config name"
+    end
+    local data, err = readConfig(self, name)
+    if not data then
+        return false, err
+    end
+    self:_applyFlags(data, silent)
+    self.ConfigName = name
+    self.LoadedConfig = name
+    self:_configChanged()
+    return true
+end
+
+function Window:DeleteConfig(name)
+    if not fileApiAvailable() or type(delfile) ~= "function" then
+        return false, "file API unavailable"
+    end
+    if not validConfigName(name) then
+        return false, "invalid config name"
+    end
+    local path = configPath(self, name)
+    if not isfile(path) then
+        return false, "no config named " .. name
+    end
+    local ok, err = pcall(delfile, path)
+    if not ok then
+        return false, err
+    end
+    if self.LoadedConfig == name then
+        self.LoadedConfig = nil
+    end
+    self:_configChanged()
+    return true
+end
+
+-- Moves the file and anything pointing at it: the loaded name and both autoloads.
+function Window:RenameConfig(name, newName)
+    if not validConfigName(newName) then
+        return false, "invalid config name"
+    end
+    if name == newName then
+        return true
+    end
+    if self:ConfigExists(newName) then
+        return false, newName .. " already exists"
+    end
+    local data, err = readConfig(self, name)
+    if not data then
+        return false, err
+    end
+    local ok
+    ok, err = writeConfig(self, newName, data)
+    if not ok then
+        return false, err
+    end
+    if type(delfile) == "function" then
+        pcall(delfile, configPath(self, name))
+    end
+    if self.LoadedConfig == name then
+        self.LoadedConfig = newName
+    end
+    if self.ConfigName == name then
+        self.ConfigName = newName
+    end
+    for _, scope in ipairs({ "Global", "Account" }) do
+        if self:GetAutoload(scope) == name then
+            self:SetAutoload(newName, scope)
+        end
+    end
+    self:_configChanged()
+    return true
+end
+
+function Window:ListConfigs()
+    local names = {}
+    if type(listfiles) ~= "function" or type(isfolder) ~= "function" or not isfolder(self.ConfigFolder) then
+        return names
+    end
+    local ok, paths = pcall(listfiles, self.ConfigFolder)
+    if not ok or type(paths) ~= "table" then
+        return names
+    end
+    for _, path in ipairs(paths) do
+        local name = path:match("([^/\\]+)%.json$")
+        if name then
+            table.insert(names, name)
+        end
+    end
+    table.sort(names, function(a, b)
+        return a:lower() < b:lower()
+    end)
+    return names
+end
+
+-- Puts every flagged element back to the value it was created with.
+function Window:ResetConfig(silent)
+    self._pendingFlags = {}
+    for _, element in pairs(Library.Flags) do
+        if element._defaultEntry and type(element.Set) == "function" then
+            pcall(deserializeFlag, element, element._defaultEntry, silent == true)
+        end
+    end
+    self:_configChanged()
+    return true
+end
+
+-- Empties a folder and removes it, one file at a time when the executor has
+-- no delfolder or it refuses a folder that still has files in it.
+local function wipeFolder(path)
+    if type(isfolder) ~= "function" or not isfolder(path) then
+        return true
+    end
+    if type(delfolder) == "function" and pcall(delfolder, path) and not isfolder(path) then
+        return true
+    end
+    if type(listfiles) == "function" then
+        local ok, entries = pcall(listfiles, path)
+        for _, entry in ipairs(ok and entries or {}) do
+            if isfolder(entry) then
+                wipeFolder(entry)
+            elseif type(delfile) == "function" then
+                pcall(delfile, entry)
+            end
+        end
+    end
+    if type(delfolder) == "function" then
+        pcall(delfolder, path)
+    end
+    return not isfolder(path)
+end
+
+-- Deletes the script's whole workspace folder: configs, themes, the default
+-- theme, autoload, settings and the execution count.
+function Window:ClearWorkspace()
+    local ok = wipeFolder(self.ConfigFolder)
+    self.LoadedConfig = nil
+    for _, handler in ipairs(self._workspaceListeners or {}) do
+        safeCall(handler)
+    end
+    self:_configChanged()
+    return ok
+end
+
+-- Share codes are the same JSON a config file holds.
+
+function Window:ExportConfig(name)
+    local data, err
+    if name then
+        data, err = readConfig(self, name)
+        if not data then
+            return nil, err
+        end
+    else
+        data = collectFlags(self)
+        name = self.LoadedConfig or self.ConfigName
+    end
+    local ok, code = pcall(encodeConfig, self, name, data)
+    if not ok then
+        return nil, "could not encode config"
+    end
+    return code
+end
+
+-- Reads a code without applying it. Returns flags and { Folder, Name, Version }.
+function Window:DecodeConfig(code)
+    return decodeConfig(code)
+end
+
+-- saveAs: a name to save under, true for the name inside the code, or nil to
+-- only apply it. Codes made for another folder are refused unless force is set.
+function Window:ImportConfig(code, saveAs, force)
+    local data, info = decodeConfig(code)
+    if not data then
+        return false, info
+    end
+    if not force and info.Folder and info.Folder ~= self.ConfigFolder then
+        return false, "config is for " .. info.Folder
+    end
+    if saveAs == true then
+        saveAs = info.Name
+        if not validConfigName(saveAs) then
+            return false, "config has no usable name"
+        end
+    end
+    if saveAs then
+        local ok, err = writeConfig(self, saveAs, data)
+        if not ok then
+            return false, err
+        end
+    end
+    self:_applyFlags(data)
+    if saveAs then
+        self.ConfigName = saveAs
+        self.LoadedConfig = saveAs
+    end
+    self:_configChanged()
+    return true, nil, saveAs
+end
+
+local function readText(path)
+    if not fileApiAvailable() or not isfile(path) then
+        return nil
+    end
+    local ok, text = pcall(readfile, path)
+    if ok and type(text) == "string" and text ~= "" then
+        return text
+    end
+    return nil
+end
+
+local function removeFile(path)
+    if fileApiAvailable() and type(delfile) == "function" and isfile(path) then
+        pcall(delfile, path)
+    end
+end
+
+-- Manager settings (autoload mode) live beside the configs, apart
+-- from the flags, so loading a config never changes them.
+
+local function settingsPath(self)
+    return self.ConfigFolder .. "/configsettings.txt"
+end
+
+function Window:_readConfigSettings()
+    local text = readText(settingsPath(self))
+    if text then
+        local ok, data = pcall(function()
+            return HttpService:JSONDecode(text)
+        end)
+        if ok and type(data) == "table" then
+            return data
+        end
+    end
+    return {}
+end
+
+function Window:_writeConfigSettings(changes)
+    if not fileApiAvailable() then
+        return false, "file API unavailable"
+    end
+    local data = self:_readConfigSettings()
+    for key, value in pairs(changes) do
+        data[key] = value
+    end
+    ensureFolder(self.ConfigFolder)
+    return pcall(writefile, settingsPath(self), HttpService:JSONEncode(data))
+end
+
+-- Autoload: one config name kept next to the configs, either for every
+-- account ("Global") or only the local player ("Account").
+
+local function autoloadPath(self, scope)
+    if scope == "Account" then
+        return self.ConfigFolder .. "/autoload_" .. tostring(LocalPlayer and LocalPlayer.UserId or 0) .. ".txt"
+    end
+    return self.ConfigFolder .. "/autoload.txt"
+end
+
+function Window:GetAutoloadMode()
+    return self:_readConfigSettings().AutoloadMode == "Account" and "Account" or "Global"
+end
+
+function Window:GetAutoload(scope)
+    if scope then
+        return readText(autoloadPath(self, scope))
+    end
+    return readText(autoloadPath(self, "Account")) or readText(autoloadPath(self, "Global"))
+end
+
+function Window:SetAutoload(name, scope)
+    if not fileApiAvailable() then
+        return false, "file API unavailable"
+    end
+    scope = scope or self:GetAutoloadMode()
+    local ok, err = true, nil
+    if name == nil or name == "" then
+        removeFile(autoloadPath(self, scope))
+        if scope == "Global" then
+            removeFile(autoloadPath(self, "Account"))
+        end
+    else
+        ensureFolder(self.ConfigFolder)
+        ok, err = pcall(writefile, autoloadPath(self, scope), tostring(name))
+        if ok and scope == "Global" then
+            removeFile(autoloadPath(self, "Account"))
+        end
+    end
+    self:_configChanged()
+    return ok, err
+end
+
+-- Switching the mode moves the current autoload so only one stays active.
+function Window:SetAutoloadMode(mode)
+    mode = mode == "Account" and "Account" or "Global"
+    if mode == self:GetAutoloadMode() then
+        return true
+    end
+    local current = self:GetAutoload()
+    local ok, err = self:_writeConfigSettings({ AutoloadMode = mode })
+    if not ok then
+        return false, err
+    end
+    removeFile(autoloadPath(self, mode == "Account" and "Global" or "Account"))
+    if current then
+        return self:SetAutoload(current, mode)
+    end
+    self:_configChanged()
+    return true
+end
+
+function Window:LoadAutoload(silent)
+    local name = self:GetAutoload()
+    if not name then
+        return false, "no autoload config"
+    end
+    return self:LoadConfig(name, silent)
+end
+
+-- Themes
+
+Library._themeListeners = {}
+
+local function toColor(value)
+    if typeof(value) == "Color3" then
+        return value
+    elseif type(value) == "string" then
+        local r, g, b = value:match("^%s*#?(%x%x)(%x%x)(%x%x)%s*$")
+        if r then
+            return Color3.fromRGB(tonumber(r, 16), tonumber(g, 16), tonumber(b, 16))
+        end
+    elseif type(value) == "table" then
+        local r, g, b = value[1] or value.R, value[2] or value.G, value[3] or value.B
+        if tonumber(r) and tonumber(g) and tonumber(b) then
+            return Color3.fromRGB(r, g, b)
+        end
+    end
+    return nil
+end
+
+local function hexOf(color)
+    return string.format("#%02X%02X%02X",
+        math.floor(color.R * 255 + 0.5),
+        math.floor(color.G * 255 + 0.5),
+        math.floor(color.B * 255 + 0.5))
+end
+
+-- Coloured text for statuses, metrics, table cells and labels. A theme key
+-- used as a tag, <Success>online</Success>, follows theme changes; plain
+-- rich text such as <font color="#ff5a5a"> works too. Library.Colorize wraps
+-- text for you. Table fields, not locals: the chunk is at Luau's 200 limit.
+Library._toneTags = {}
+for _, name in ipairs(THEME_KEYS) do
+    Library._toneTags[string.lower(name)] = name
+end
+
+-- A theme key, a Color3, "#rrggbb" or { r, g, b } as a Color3.
+function Library._color(value)
+    if type(value) == "string" then
+        local key = Library._toneTags[string.lower(value)]
+        if key then
+            return Theme[key]
+        end
+    end
+    return toColor(value)
+end
+
+function Library._rich(text)
+    text = tostring(text == nil and "" or text)
+    if not string.find(text, "<", 1, true) then
+        return text
+    end
+    return (string.gsub(text, "<(/?)(%a+%d*)>", function(slash, name)
+        local key = Library._toneTags[string.lower(name)]
+        if not key then
+            return nil
+        end
+        if slash == "/" then
+            return "</font>"
+        end
+        return '<font color="' .. hexOf(Theme[key]) .. '">'
+    end))
+end
+
+-- Library.Colorize("12 ms", "Success") or Library:Colorize(text, Color3).
+function Library.Colorize(...)
+    local args = { ... }
+    if args[1] == Library then
+        table.remove(args, 1)
+    end
+    local text, color = tostring(args[1] == nil and "" or args[1]), args[2]
+    local key = type(color) == "string" and Library._toneTags[string.lower(color)]
+    if key then
+        return "<" .. key .. ">" .. text .. "</" .. key .. ">"
+    end
+    local resolved = toColor(color)
+    if not resolved then
+        return text
+    end
+    return '<font color="' .. hexOf(resolved) .. '">' .. text .. "</font>"
+end
+
+-- The window's corner radius in pixels, 0 (square) to 20; every other
+-- rounded corner scales with it. The default is 10. Corners ease to the new
+-- radius instead of jumping. Returns the radius it settled on.
+function Library:SetCornerRadius(pixels, instant)
+    pixels = math.clamp(math.floor((tonumber(pixels) or 10) + 0.5), 0, 20)
+    Library.Roundness = pixels / 10
+    for object, base in pairs(Library._cornerBases) do
+        if not object.Parent then
+            Library._cornerBases[object] = nil
+        else
+            local radius = UDim.new(0, math.floor(base * Library.Roundness + 0.5))
+            if instant then
+                object.CornerRadius = radius
+            else
+                tween(object, { CornerRadius = radius }, 0.25, Enum.EasingStyle.Quint)
+            end
+        end
+    end
+    return pixels
+end
+
+function Library:GetCornerRadius()
+    return math.floor(Library.Roundness * 10 + 0.5)
+end
+
+function Library:SetTheme(theme, instant)
+    if type(theme) == "string" then
+        local found = Library.ThemePresets[theme]
+        if not found then
+            return false
+        end
+        Library.ThemeName = theme
+        theme = found
+    elseif type(theme) ~= "table" then
+        return false
+    end
+    local changed = false
+    for _, name in ipairs(THEME_KEYS) do
+        local color = toColor(theme[name])
+        if color and color ~= Theme[name] then
+            Theme[name] = color
+            changed = true
+        end
+    end
+    if not changed then
+        return true
+    end
+    rebuildThemeLookup()
+    sweepBindings()
+    driveTheme(instant and 0 or 0.3)
+    for owner, fn in pairs(themeHooks) do
+        if owner.Parent then
+            pcall(fn)
+        end
+    end
+    for _, fn in ipairs(Library._themeListeners) do
+        pcall(fn)
+    end
+    return true
+end
+
+function Library:GetTheme()
+    local copy = {}
+    for _, name in ipairs(THEME_KEYS) do
+        copy[name] = Theme[name]
+    end
+    return copy
+end
+
+-- The script's starting theme: a preset name or a colour table. A default the
+-- player picked in the theme manager still wins over it.
+function Library:SetDefaultTheme(theme)
+    Library.DefaultTheme = theme
+    if theme == nil then
+        return true
+    end
+    local live = false
+    for _, window in ipairs(Library.Windows) do
+        if not window._destroyed then
+            if window:GetDefaultTheme() then
+                return true
+            end
+            live = true
+        end
+    end
+    return Library:SetTheme(theme, not live)
+end
+
+function Library:GetDefaultTheme()
+    return Library.DefaultTheme
+end
+
+local function themeFolder(self)
+    return self.ConfigFolder .. "/themes"
+end
+
+function Window:SaveTheme(name)
+    if not fileApiAvailable() then
+        return false, "file API unavailable"
+    end
+    if type(name) ~= "string" or name == "" then
+        return false, "theme needs a name"
+    end
+    ensureFolder(self.ConfigFolder)
+    ensureFolder(themeFolder(self))
+    local data = {}
+    for _, key in ipairs(THEME_KEYS) do
+        data[key] = hexOf(Theme[key])
+    end
+    return pcall(function()
+        writefile(themeFolder(self) .. "/" .. name .. ".json", HttpService:JSONEncode(data))
+    end)
+end
+
+function Window:LoadTheme(name, instant)
+    if Library.ThemePresets[name] then
+        return Library:SetTheme(name, instant)
+    end
+    local text = readText(themeFolder(self) .. "/" .. tostring(name) .. ".json")
+    if not text then
+        return false, "no theme named " .. tostring(name)
+    end
+    local ok, data = pcall(function()
+        return HttpService:JSONDecode(text)
+    end)
+    if not ok or type(data) ~= "table" then
+        return false, "theme is not valid JSON"
+    end
+    Library.ThemeName = name
+    return Library:SetTheme(data, instant)
+end
+
+function Window:DeleteTheme(name)
+    if not fileApiAvailable() or type(delfile) ~= "function" then
+        return false, "file API unavailable"
+    end
+    local path = themeFolder(self) .. "/" .. tostring(name) .. ".json"
+    if not isfile(path) then
+        return false, "no theme named " .. tostring(name)
+    end
+    delfile(path)
+    if self:GetDefaultTheme() == name then
+        self:SetDefaultTheme(nil)
+    end
+    return true
+end
+
+function Window:ListThemes()
+    local names = {}
+    if type(listfiles) ~= "function" or type(isfolder) ~= "function" or not isfolder(themeFolder(self)) then
+        return names
+    end
+    for _, path in ipairs(listfiles(themeFolder(self))) do
+        local name = path:match("([^/\\]+)%.json$")
+        if name then
+            table.insert(names, name)
+        end
+    end
+    table.sort(names)
+    return names
+end
+
+function Window:GetDefaultTheme()
+    return readText(themeFolder(self) .. "/default.txt")
+end
+
+function Window:SetDefaultTheme(name)
+    if not fileApiAvailable() then
+        return false, "file API unavailable"
+    end
+    ensureFolder(self.ConfigFolder)
+    ensureFolder(themeFolder(self))
+    local path = themeFolder(self) .. "/default.txt"
+    if name == nil or name == "" then
+        if isfile(path) and type(delfile) == "function" then
+            pcall(delfile, path)
+        end
+        return true
+    end
+    return pcall(writefile, path, tostring(name))
+end
+
+function Window:_applyDefaultTheme()
+    local name = self:GetDefaultTheme()
+    if name then
+        local ok, loaded = pcall(self.LoadTheme, self, name, true)
+        if ok and loaded then
+            return
+        end
+    end
+    if Library.DefaultTheme ~= nil then
+        pcall(Library.SetTheme, Library, Library.DefaultTheme, true)
+    end
+end
+
+-- Background images
+
+-- Image assets anyone can use, from Fluent-modded's themes.
+Library.BackgroundPresets = {
+    ["Deep Violet"] = "rbxassetid://136310484943077",
+    ["Blood Red"] = "rbxassetid://121343473918667",
+    ["Cyanic"] = "rbxassetid://95656189244173",
+    ["Amber Glow"] = "rbxassetid://107795771598485",
+    ["Bloomings"] = "rbxassetid://133541508207801",
+    ["Lavender Pink"] = "rbxassetid://126107479485287",
+}
+Library.BackgroundPresetOrder = { "Deep Violet", "Blood Red", "Cyanic", "Amber Glow", "Bloomings", "Lavender Pink" }
+
+-- Table fields, not locals: the library chunk is at Luau's 200 local limit.
+Library._imageExtensions = { png = true, jpg = true, jpeg = true, webp = true, gif = true, bmp = true }
+
+function Window:_backgroundFolder()
+    return self.ConfigFolder .. "/backgrounds"
+end
+
+function Window:_trimBackground(source)
+    return (tostring(source or ""):match("^%s*(.-)%s*$"))
+end
+
+-- Turns a background source into something ImageLabel.Image takes. Web images
+-- are downloaded once into backgrounds/cache and loaded with getcustomasset,
+-- so this yields the first time a URL is used.
+function Window:_resolveBackground(source)
+    source = self:_trimBackground(source)
+    local preset = Library.BackgroundPresets[source]
+    if preset then
+        return preset
+    end
+    if source:match("^%d+$") then
+        return "rbxassetid://" .. source
+    end
+    if source:match("^rbxassetid://%d+") or source:match("^rbxasset://") or source:match("^rbxthumb://")
+        or source:match("^https?://www%.roblox%.com/asset") then
+        return source
+    end
+    local canLoad = fileApiAvailable() and typeof(getcustomasset) == "function"
+    if source:match("^https?://") then
+        if not canLoad then
+            return nil, "web images need writefile and getcustomasset"
+        end
+        local clean = source:match("^[^?#]+") or source
+        local ext = (clean:match("%.(%w+)$") or "png"):lower()
+        if not Library._imageExtensions[ext] then
+            ext = "png"
+        end
+        local key = (clean:gsub("^https?://", ""):gsub("[^%w]", "_")):sub(-60)
+        local folder = self:_backgroundFolder() .. "/cache"
+        local path = folder .. "/" .. key .. "_" .. #source .. "." .. ext
+        if not isfile(path) then
+            local ok, body = pcall(function()
+                local request = (syn and syn.request) or http_request or request
+                if request then
+                    local response = request({ Url = source, Method = "GET" })
+                    return response and response.Body
+                end
+                return game:HttpGet(source, true)
+            end)
+            if not ok or type(body) ~= "string" or #body < 128 then
+                return nil, "could not download the image"
+            end
+            local head = body:sub(1, 64):lower()
+            if head:find("<!doctype") or head:find("<html") then
+                return nil, "that link is a web page, not an image"
+            end
+            ensureFolder(folder)
+            if not pcall(writefile, path, body) then
+                return nil, "could not save the image"
+            end
+        end
+        local ok, asset = pcall(getcustomasset, path)
+        if ok and type(asset) == "string" and asset ~= "" then
+            return asset
+        end
+        pcall(delfile, path)
+        return nil, "the downloaded file is not an image"
+    end
+    -- A file in the backgrounds folder, or any path in the workspace.
+    if canLoad then
+        for _, path in ipairs({ self:_backgroundFolder() .. "/" .. source, source }) do
+            if isfile(path) then
+                local ok, asset = pcall(getcustomasset, path)
+                if ok and type(asset) == "string" and asset ~= "" then
+                    return asset
+                end
+                return nil, "could not load " .. source
+            end
+        end
+    end
+    return nil, "no image called " .. source
+end
+
+-- source: a preset name, an image asset id, an rbxassetid:// link, an http(s)
+-- image URL, or an image file in <ConfigFolder>/backgrounds. nil or "None"
+-- removes it. May yield while a web image downloads.
+function Window:SetBackground(source)
+    self._backgroundGeneration += 1
+    local generation = self._backgroundGeneration
+    local image = self._backgroundImage
+    source = source ~= false and self:_trimBackground(source) or ""
+    if source == "" or source == "None" then
+        self.Background = nil
+        tween(image, { ImageTransparency = 1 }, 0.25)
+        task.delay(0.25, function()
+            if self._backgroundGeneration == generation then
+                image.Visible = false
+                image.Image = ""
+            end
+        end)
+        self:SetTransparent(self.Transparent)
+        return true
+    end
+    local asset, err = self:_resolveBackground(source)
+    if self._backgroundGeneration ~= generation or self._destroyed then
+        return false, "replaced by a newer background"
+    end
+    if not asset then
+        return false, err
+    end
+    self.Background = source
+    image.Image = asset
+    image.Visible = true
+    tween(image, { ImageTransparency = self.BackgroundTransparency }, 0.3)
+    self:SetTransparent(self.Transparent)
+    return true
+end
+
+function Window:GetBackground()
+    return self.Background
+end
+
+-- 0 shows the image fully, 1 hides it behind the theme background colour.
+function Window:SetBackgroundTransparency(value)
+    self.BackgroundTransparency = math.clamp(tonumber(value) or 0.35, 0, 1)
+    if self.Background then
+        tween(self._backgroundImage, { ImageTransparency = self.BackgroundTransparency }, 0.15)
+    end
+end
+
+-- Preset names, then the image files in <ConfigFolder>/backgrounds.
+function Window:ListBackgrounds()
+    local names = table.clone(Library.BackgroundPresetOrder)
+    local folder = self:_backgroundFolder()
+    if type(listfiles) == "function" and type(isfolder) == "function" and isfolder(folder) then
+        local files = {}
+        for _, path in ipairs(listfiles(folder)) do
+            local name = path:match("([^/\]+)$")
+            local ext = name and name:match("%.(%w+)$")
+            if ext and Library._imageExtensions[ext:lower()] then
+                table.insert(files, name)
+            end
+        end
+        table.sort(files)
+        for _, name in ipairs(files) do
+            table.insert(names, name)
+        end
+    end
+    return names
+end
+
+local function emptyState(parent, icon, text)
+    local holder = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, -10),
+        Size = UDim2.fromOffset(200, 70),
+        BackgroundTransparency = 1,
+        Parent = parent,
+    })
+    local image = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0),
+        Position = UDim2.new(0.5, 0, 0, 0),
+        Size = UDim2.fromOffset(26, 26),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ImageTransparency = 0.15,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = holder,
+    })
+    applyIcon(image, icon)
+    local caption = label({
+        Position = UDim2.fromOffset(0, 36),
+        Size = UDim2.new(1, 0, 0, 16),
+        Text = text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Parent = holder,
+    })
+    return holder, caption, image
+end
+
+local function fadeSlideIn(group, restY)
+    restY = restY or 0
+    group.GroupTransparency = 1
+    group.Position = UDim2.fromOffset(0, restY + 14)
+    group.Visible = true
+    tween(group, { GroupTransparency = 0, Position = UDim2.fromOffset(0, restY) }, 0.32, Enum.EasingStyle.Quint)
+end
+
+local function formatDuration(seconds)
+    seconds = math.max(math.floor(seconds), 0)
+    local days = math.floor(seconds / 86400)
+    local hours = math.floor(seconds / 3600) % 24
+    local minutes = math.floor(seconds / 60) % 60
+    if days > 0 then
+        return string.format("%dd %dh", days, hours)
+    elseif hours > 0 then
+        return string.format("%dh %dm", hours, minutes)
+    elseif minutes > 0 then
+        return string.format("%dm %ds", minutes, seconds % 60)
+    end
+    return string.format("%ds", seconds)
+end
+
+local function shortId(id)
+    if type(id) ~= "string" or id == "" then
+        return "Studio"
+    end
+    if #id > 16 then
+        return id:sub(1, 8) .. "..." .. id:sub(-4)
+    end
+    return id
+end
+
+local function copyToClipboard(text)
+    local setter = setclipboard or toclipboard or (Clipboard and Clipboard.set)
+    if type(setter) ~= "function" then
+        return false
+    end
+    return (pcall(setter, tostring(text)))
+end
+
+local function fetchServers(order)
+    local url = string.format(
+        "https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=%s&limit=100&excludeFullGames=true",
+        game.PlaceId,
+        order
+    )
+    local ok, body = pcall(function()
+        return game:HttpGet(url)
+    end)
+    if not ok or type(body) ~= "string" then
+        return nil
+    end
+    local decoded, data = pcall(function()
+        return HttpService:JSONDecode(body)
+    end)
+    if not decoded or type(data) ~= "table" or type(data.data) ~= "table" then
+        return nil
+    end
+    return data.data
+end
+
+-- Small on/off pill used on the home card for the privacy switches.
+local function miniSwitch(parent, initial, order, callback)
+    local pill = create("TextButton", {
+        Size = UDim2.fromOffset(30, 16),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    corner(pill, UDim.new(1, 0))
+    stroke(pill)
+    local knob = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 2, 0.5, 0),
+        Size = UDim2.fromOffset(12, 12),
+        BackgroundColor3 = Theme.Muted,
+        BorderSizePixel = 0,
+        Parent = pill,
+    })
+    corner(knob, UDim.new(1, 0))
+    local on = initial == true
+    local function render(animate)
+        local duration = animate and 0.22 or 0
+        tween(pill, { BackgroundColor3 = on and Theme.Accent or Theme.Surface3 }, duration)
+        tween(knob, {
+            Position = on and UDim2.new(0, 16, 0.5, 0) or UDim2.new(0, 2, 0.5, 0),
+            BackgroundColor3 = on and Theme.AccentDark or Theme.Muted,
+        }, duration, Enum.EasingStyle.Back)
+    end
+    pill.MouseButton1Click:Connect(function()
+        on = not on
+        render(true)
+        safeCall(callback, on)
+    end)
+    render(false)
+    return pill
+end
+
+local function softButton(parent, text, props, callback)
+    local button = create("TextButton", {
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.45,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        ClipsDescendants = true,
+        Parent = parent,
+    })
+    for key, value in pairs(props) do
+        button[key] = value
+    end
+    corner(button, UDim.new(0, 6))
+    local buttonStroke = stroke(button)
+    local text_ = label({
+        Size = UDim2.fromScale(1, 1),
+        Text = text,
+        TextSize = 12,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Parent = button,
+    })
+    if button.AutomaticSize == Enum.AutomaticSize.X then
+        text_.Size = UDim2.new(0, 0, 1, 0)
+        text_.AutomaticSize = Enum.AutomaticSize.X
+        text_.TextTruncate = Enum.TextTruncate.None
+        padding(button, 14, 14)
+    end
+    button.MouseEnter:Connect(function()
+        tween(button, { BackgroundTransparency = 0.15 }, 0.12)
+        tween(buttonStroke, { Color = Theme.StrokeHover }, 0.12)
+    end)
+    button.MouseLeave:Connect(function()
+        tween(button, { BackgroundTransparency = 0.45 }, 0.25)
+        tween(buttonStroke, { Color = Theme.Stroke }, 0.25)
+    end)
+    button.MouseButton1Click:Connect(function()
+        ripple(button)
+        safeCall(callback)
+    end)
+    return button, text_
+end
+
+local function panelCard(parent, height, order)
+    local frame = create("Frame", {
+        Size = UDim2.new(1, 0, 0, height),
+        BackgroundColor3 = Theme.Surface2,
+        BorderSizePixel = 0,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    frame:SetAttribute("NoDrag", true)
+    corner(frame, UDim.new(0, 10))
+    stroke(frame)
+    return frame
+end
+
+local STAT_TYPES = {
+    Players = { "users", "Players" },
+    Friends = { "user-check", "Friends" },
+    Execs = { "zap", "Execs" },
+    Session = { "timer", "Session" },
+    Uptime = { "timer", "Session" },
+    FPS = { "gauge", "FPS" },
+    Ping = { "wifi", "Ping" },
+    Executor = { "terminal", "Executor" },
+    Game = { "gamepad-2", "Game" },
+    Region = { "globe", "Region" },
+    Time = { "clock", "Time" },
+    ServerAge = { "server", "Server age" },
+    Memory = { "cpu", "Memory" },
+}
+
+-- Health colour for a live metric: Success under good, Warning under bad,
+-- Error past it. lowerIsBetter flips the scale (ping, memory).
+function Library._healthColor(value, good, bad, lowerIsBetter)
+    if type(value) ~= "number" then
+        return Theme.Text
+    end
+    if lowerIsBetter then
+        return value <= good and Theme.Success or value <= bad and Theme.Warning or Theme.Error
+    end
+    return value >= good and Theme.Success or value >= bad and Theme.Warning or Theme.Error
+end
+
+local function bumpExecutions(folder)
+    if not fileApiAvailable() then
+        return nil
+    end
+    local path = folder .. "/executions.txt"
+    local count = 0
+    pcall(function()
+        ensureFolder(folder)
+        if isfile(path) then
+            count = tonumber(readfile(path)) or 0
+        end
+    end)
+    count += 1
+    pcall(writefile, path, tostring(count))
+    return count
+end
+
+-- Containers: a tab or sub tab owns a scrolling list. Elements added straight
+-- to it stack full width, groupboxes go into two columns underneath.
+
+local function buildContainer(owner, parent, top, emptyIcon, emptyText)
+    local list = create("ScrollingFrame", {
+        Position = UDim2.fromOffset(0, top),
+        Size = UDim2.new(1, 0, 1, -top),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 2,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.5,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        CanvasSize = UDim2.new(),
+        Parent = parent,
+    })
+    Library._space(padding(list, 24, 24, 2, 24), { 24, 24, 2, 24 })
+    Library._space(create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 8),
+        Parent = list,
+    }), 8)
+    owner.List = list
+    owner._items = {}
+    owner._groupboxes = {}
+    owner._childCount = 0
+    owner._emptyText = emptyText
+    owner._empty, owner._emptyCaption = emptyState(parent, emptyIcon, emptyText)
+    list.ChildAdded:Connect(function(child)
+        if child:IsA("GuiObject") then
+            owner._childCount += 1
+            owner:_refreshEmpty()
+        end
+    end)
+    list.ChildRemoved:Connect(function(child)
+        if child:IsA("GuiObject") then
+            owner._childCount = math.max(owner._childCount - 1, 0)
+            owner:_refreshEmpty()
+        end
+    end)
+    owner:_refreshEmpty()
+    return list
+end
+
+function Tab:_refreshEmpty()
+    local empty = self._empty
+    if not empty then
+        return
+    end
+    if self._subTabs then
+        empty.Visible = false
+    else
+        empty.Visible = self._childCount == 0
+    end
+end
+
+function Tab:_columns()
+    if self._columnSet then
+        return self._columnSet
+    end
+    local holder = create("Frame", {
+        Name = "Columns",
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 100000,
+        Parent = self.List,
+    })
+    local layout = Library._space(create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 10),
+        Parent = holder,
+    }), 10)
+    local function column(order)
+        local frame = create("Frame", {
+            Size = UDim2.new(0.5, -5, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            BackgroundTransparency = 1,
+            LayoutOrder = order,
+            Parent = holder,
+        })
+        Library._space(create("UIListLayout", {
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, 10),
+            Parent = frame,
+        }), 10)
+        return frame
+    end
+    local set = { Holder = holder, Left = column(1), Right = column(2), Counts = { 0, 0 }, Stacked = false }
+    local window = self.Window
+    -- Narrow windows stack the right column under the left one.
+    local function relayout()
+        local width = holder.AbsoluteSize.X / window.Scale.Scale
+        if width <= 0 then
+            return
+        end
+        local stacked = width < STACK_BELOW
+        local gap = layout.Padding.Offset
+        if stacked == set.Stacked and gap == set.Gap then
+            return
+        end
+        set.Stacked = stacked
+        set.Gap = gap
+        layout.FillDirection = stacked and Enum.FillDirection.Vertical or Enum.FillDirection.Horizontal
+        local size = stacked and UDim2.new(1, 0, 0, 0) or UDim2.new(0.5, -gap / 2, 0, 0)
+        set.Left.Size = size
+        set.Right.Size = size
+    end
+    holder:GetPropertyChangedSignal("AbsoluteSize"):Connect(relayout)
+    layout:GetPropertyChangedSignal("Padding"):Connect(relayout)
+    task.defer(relayout)
+    self._columnSet = set
+    return set
+end
+
+function Tab:Groupbox(opts, icon)
+    if self._groupbox then
+        return self.Parent:Groupbox(opts, icon)
+    end
+    opts = normalize(opts, { Title = "Name" })
+    if icon ~= nil and opts.Icon == nil then
+        opts.Icon = icon
+    end
+    local window = self.Window
+    local set = self:_columns()
+    local side = opts.Side
+    if side == "Left" or side == 1 then
+        side = 1
+    elseif side == "Right" or side == 2 then
+        side = 2
+    else
+        side = set.Counts[1] <= set.Counts[2] and 1 or 2
+    end
+    set.Counts[side] += 1
+
+    local box = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundColor3 = Theme.Surface2,
+        BorderSizePixel = 0,
+        LayoutOrder = set.Counts[side],
+        Parent = side == 1 and set.Left or set.Right,
+    })
+    box:SetAttribute("NoDrag", true)
+    corner(box, UDim.new(0, 10))
+    stroke(box)
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = box,
+    })
+
+    -- The header is a filled strip: icon and bold title on the left, a
+    -- chevron on the right. Pressing anywhere on it folds the box.
+    local header = create("TextButton", {
+        Size = UDim2.new(1, 0, 0, 40),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        LayoutOrder = 1,
+        Parent = box,
+    })
+    corner(header, UDim.new(0, 10))
+    -- Squares the strip's lower corners so it meets the body flat.
+    local headerFill = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.fromScale(0, 1),
+        Size = UDim2.new(1, 0, 0, 10),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = header,
+    })
+    local titleX = 14
+    if opts.Icon then
+        local headerIcon = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0, 0.5),
+            Position = UDim2.new(0, 14, 0.5, 0),
+            Size = UDim2.fromOffset(14, 14),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Accent,
+            ScaleType = Enum.ScaleType.Fit,
+            ZIndex = 2,
+            Parent = header,
+        })
+        applyIcon(headerIcon, opts.Icon)
+        titleX = 37
+    end
+    local collapseButton = create("ImageLabel", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -14, 0.5, 0),
+        Size = UDim2.fromOffset(14, 14),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        ZIndex = 2,
+        Parent = header,
+    })
+    applyIcon(collapseButton, "chevron-down")
+    -- Beside the chevron, a button that pops the box out into a floating
+    -- panel (and docks it back once it's out). PopOut = false leaves it off.
+    local canPop = opts.PopOut ~= false
+    local popButton, popIcon
+    if canPop then
+        popButton = create("TextButton", {
+            AnchorPoint = Vector2.new(1, 0.5),
+            Position = UDim2.new(1, -34, 0.5, 0),
+            Size = UDim2.fromOffset(24, 24),
+            BackgroundColor3 = Theme.Surface2,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            ZIndex = 3,
+            Parent = header,
+        })
+        corner(popButton, UDim.new(0, 6))
+        popIcon = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.fromOffset(13, 13),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Muted,
+            ImageTransparency = TOUCH and 0 or 0.45,
+            ScaleType = Enum.ScaleType.Fit,
+            ZIndex = 3,
+            Parent = popButton,
+        })
+        applyIcon(popIcon, "picture-in-picture-2")
+    end
+    local title = label({
+        Position = UDim2.fromOffset(titleX, 0),
+        Size = UDim2.new(1, -(titleX + (canPop and 66 or 40)), 1, 0),
+        Text = opts.Name or "Groupbox",
+        TextSize = 13,
+        FontFace = Fonts.Bold,
+        ZIndex = 2,
+        Parent = header,
+    })
+
+    local rule = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        LayoutOrder = 2,
+        Parent = box,
+    })
+    local body = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        LayoutOrder = 3,
+        Parent = box,
+    })
+    local inner = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = body,
+    })
+    Library._space(padding(inner, 0, 0, 6, 8), { 0, 0, 6, 8 })
+    Library._space(create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = inner,
+    }), 2)
+
+    local group = setmetatable({
+        Name = opts.Name or "Groupbox",
+        Window = window,
+        Parent = self,
+        List = inner,
+        Frame = box,
+        _frame = box,
+        _order = 0,
+        _groupbox = true,
+        _metrics = METRICS.Row,
+        _items = {},
+    }, Tab)
+    table.insert(self._groupboxes, group)
+
+    local collapsed = false
+    local generation = 0
+    local function setCollapsed(value, instant)
+        value = value == true
+        if value == collapsed then
+            return
+        end
+        collapsed = value
+        generation += 1
+        local current = generation
+        local duration = instant and 0 or 0.32
+        -- Anything open inside the box (a dropdown list, a picker, a focused
+        -- box) closes with it, rather than floating over a folded header.
+        if value then
+            for _, element in ipairs(group._items) do
+                if element._onHide then
+                    element._onHide()
+                end
+                if element.Open and type(element.SetOpen) == "function" then
+                    element:SetOpen(false)
+                end
+            end
+        end
+        window._controlsDirty = true
+        local scale = window.Scale.Scale
+        if value then
+            body.AutomaticSize = Enum.AutomaticSize.None
+            body.Size = UDim2.new(1, 0, 0, body.AbsoluteSize.Y / scale)
+            tween(body, { Size = UDim2.new(1, 0, 0, 0) }, duration, Enum.EasingStyle.Quint)
+        else
+            tween(body, { Size = UDim2.new(1, 0, 0, inner.AbsoluteSize.Y / scale) }, duration, Enum.EasingStyle.Quint)
+            local function settle()
+                if generation == current and not collapsed then
+                    body.AutomaticSize = Enum.AutomaticSize.Y
+                    body.Size = UDim2.new(1, 0, 0, 0)
+                end
+            end
+            if duration > 0 then
+                task.delay(duration, settle)
+            else
+                settle()
+            end
+        end
+        local motion = instant and 0 or 0.3
+        -- Folded, the strip is the whole box: the hairline under it drops out
+        -- of the layout once the body has closed, so the box ends exactly at
+        -- the strip and both share the same rounded corners.
+        if value then
+            local function fold()
+                if generation == current and collapsed then
+                    rule.Visible = false
+                    headerFill.Visible = false
+                end
+            end
+            if duration > 0 then
+                task.delay(duration, fold)
+            else
+                fold()
+            end
+        else
+            rule.Visible = true
+            headerFill.Visible = true
+        end
+        tween(collapseButton, { Rotation = value and -90 or 0 }, motion, Enum.EasingStyle.Quint)
+    end
+
+    local function hover(on)
+        local duration = on and 0.15 or 0.25
+        tween(collapseButton, { ImageColor3 = on and Theme.Text or Theme.Muted }, duration)
+        if popIcon and not TOUCH then
+            tween(popIcon, { ImageTransparency = on and 0 or 0.45 }, duration)
+        end
+    end
+    header.MouseEnter:Connect(function()
+        hover(true)
+    end)
+    header.MouseLeave:Connect(function()
+        hover(false)
+    end)
+    local isTap = tapGuard(header, function()
+        return box:FindFirstAncestorWhichIsA("ScrollingFrame")
+    end)
+    -- Popping out: the box itself is lifted out of its column into a panel
+    -- on the window's pop-out layer, and a slot holds its place in the column
+    -- (pressing the slot docks it back). The header drags the panel; a drop
+    -- is clamped on screen and the spot is remembered for the next pop-out.
+    local popped, popGeneration = false, 0
+    local panel, panelScale, panelShadow, slot, stopPanel
+    local dragStart, dragOrigin, dragMoved, suppressClick = nil, nil, false, false
+    local animating = false
+
+    local function layerScale()
+        return math.max(window.Scale.Scale, 0.05)
+    end
+    local function toLayer(point)
+        return (point - window._popLayer.AbsolutePosition) / layerScale()
+    end
+    -- Keeps a panel's top-centre spot on screen, header always reachable.
+    local function clampSpot(spot, width, height)
+        local view = window._popLayer.AbsoluteSize / layerScale()
+        local margin = 8
+        local x = math.clamp(spot.X, width / 2 + margin, math.max(view.X - width / 2 - margin, width / 2 + margin))
+        local y = math.clamp(spot.Y, margin, math.max(view.Y - math.min(height, 120) - margin, margin))
+        return Vector2.new(x, y)
+    end
+    local function closeInner()
+        for _, element in ipairs(group._items) do
+            if element._onHide then
+                element._onHide()
+            end
+            if element.Open and type(element.SetOpen) == "function" then
+                element:SetOpen(false)
+            end
+        end
+    end
+    local function setPopIcon(out)
+        if popIcon then
+            applyIcon(popIcon, out and "minimize-2" or "picture-in-picture-2")
+        end
+    end
+
+    local function popOut()
+        if popped or not canPop or not box.Parent or group._destroyed then
+            return
+        end
+        -- A dock still in flight lands first, so the box is back in its column.
+        if group._settleDock then
+            group._settleDock()
+        end
+        local layer = window:_popoutLayer()
+        popped = true
+        group._popped = true
+        popGeneration += 1
+        local current = popGeneration
+        closeInner()
+        window:_closePopups()
+        local scale = layerScale()
+        local column = box.Parent
+        local from = toLayer(box.AbsolutePosition)
+        local width = box.AbsoluteSize.X / scale
+        local height = box.AbsoluteSize.Y / scale
+
+        -- The slot left behind: starts at the box's height so nothing below
+        -- jumps, then eases down to a slim bar.
+        slot = create("TextButton", {
+            Size = UDim2.new(1, 0, 0, height),
+            BackgroundColor3 = Theme.Surface2,
+            BackgroundTransparency = 0.6,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            ClipsDescendants = true,
+            LayoutOrder = box.LayoutOrder,
+            Parent = column,
+        })
+        slot:SetAttribute("NoDrag", true)
+        corner(slot, UDim.new(0, 10))
+        stroke(slot, Theme.Stroke, 1).Transparency = 0.3
+        local slotLabel = label({
+            Size = UDim2.new(1, -24, 0, 40),
+            Position = UDim2.fromOffset(12, 0),
+            Text = Library._rich(group.Name) .. '<font transparency="0.4">  Â·  popped out, click to dock</font>',
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            RichText = true,
+            TextTransparency = 1,
+            Parent = slot,
+        })
+        local thisSlot = slot
+        slot.MouseEnter:Connect(function()
+            tween(thisSlot, { BackgroundTransparency = 0.35 }, 0.15)
+        end)
+        slot.MouseLeave:Connect(function()
+            tween(thisSlot, { BackgroundTransparency = 0.6 }, 0.25)
+        end)
+        slot.MouseButton1Click:Connect(function()
+            if slot == thisSlot then
+                group:Dock()
+            end
+        end)
+        tween(slot, { Size = UDim2.new(1, 0, 0, 40) }, 0.42, Enum.EasingStyle.Quint)
+        tween(slotLabel, { TextTransparency = 0 }, 0.3)
+        slot.Visible = box.Visible
+
+        panel = create("Frame", {
+            Name = "PopOut",
+            AnchorPoint = Vector2.new(0.5, 0),
+            Position = UDim2.fromOffset(from.X + width / 2, from.Y),
+            Size = UDim2.fromOffset(width, height),
+            BackgroundTransparency = 1,
+            Parent = layer,
+        })
+        panel:SetAttribute("NoDrag", true)
+        panelScale = create("UIScale", { Parent = panel })
+        panelShadow = create("ImageLabel", {
+            Position = UDim2.fromOffset(-24, -18),
+            Size = UDim2.new(1, 48, 1, 44),
+            BackgroundTransparency = 1,
+            Image = Assets.Shadow,
+            ImageColor3 = Color3.new(0, 0, 0),
+            ImageTransparency = 1,
+            ScaleType = Enum.ScaleType.Slice,
+            SliceCenter = Rect.new(49, 49, 450, 450),
+            ZIndex = 0,
+            Parent = panel,
+        })
+        table.insert(window._popPanels, panel)
+        box.Parent = panel
+        window._controlsDirty = true
+        setPopIcon(true)
+
+        -- Lifts off the column: a spring up and out to its float spot, with
+        -- the shadow deepening under it.
+        local spot = clampSpot(group._popSpot or Vector2.new(from.X + width / 2 + 22, from.Y - 14), width, height)
+        animating = true
+        panelScale.Scale = 0.97
+        tween(panel, { Position = UDim2.fromOffset(spot.X, spot.Y) }, 0.5, Enum.EasingStyle.Quint)
+        tween(panelScale, { Scale = 1 }, 0.55, Enum.EasingStyle.Back)
+        tween(panelShadow, { ImageTransparency = 0.35 }, 0.4)
+        task.delay(0.5, function()
+            if popGeneration == current then
+                animating = false
+            end
+        end)
+
+        -- Each frame: the panel follows the box's height (folding, rows
+        -- coming and going), mirrors its visibility, and stays on screen.
+        local thisPanel = panel
+        stopPanel = window:_listen("Render", function()
+            if panel ~= thisPanel or not thisPanel.Parent then
+                return
+            end
+            local boxHeight = box.AbsoluteSize.Y / layerScale()
+            if math.abs(thisPanel.Size.Y.Offset - boxHeight) > 0.5 then
+                thisPanel.Size = UDim2.fromOffset(thisPanel.Size.X.Offset, boxHeight)
+            end
+            thisPanel.Visible = box.Visible
+            if slot then
+                slot.Visible = box.Visible
+            end
+            if not animating and not dragStart then
+                local position = Vector2.new(thisPanel.Position.X.Offset, thisPanel.Position.Y.Offset)
+                local clamped = clampSpot(position, thisPanel.Size.X.Offset, boxHeight)
+                if (clamped - position).Magnitude > 0.5 then
+                    thisPanel.Position = UDim2.fromOffset(clamped.X, clamped.Y)
+                end
+            end
+        end)
+    end
+
+    local function dock(instant)
+        if not popped then
+            return
+        end
+        popped = false
+        group._popped = false
+        popGeneration += 1
+        dragStart, dragMoved, suppressClick = nil, false, false
+        closeInner()
+        window:_closePopups()
+        local oldPanel, oldSlot, oldStop, oldScale, oldShadow = panel, slot, stopPanel, panelScale, panelShadow
+        panel, slot, stopPanel = nil, nil, nil
+        setPopIcon(false)
+        group._popSpot = Vector2.new(oldPanel.Position.X.Offset, oldPanel.Position.Y.Offset)
+        local settled = false
+        local function settle()
+            if settled then
+                return
+            end
+            settled = true
+            if group._settleDock == settle then
+                group._settleDock = nil
+            end
+            if oldStop then
+                oldStop()
+            end
+            local index = table.find(window._popPanels, oldPanel)
+            if index then
+                table.remove(window._popPanels, index)
+            end
+            -- Back into the column, unless it was popped again meanwhile.
+            if box.Parent == oldPanel then
+                if oldSlot and oldSlot.Parent and not group._destroyed then
+                    box.Parent = oldSlot.Parent
+                    box.LayoutOrder = oldSlot.LayoutOrder
+                end
+            end
+            if oldSlot then
+                oldSlot:Destroy()
+            end
+            if box.Parent ~= oldPanel then
+                oldPanel:Destroy()
+            end
+            animating = false
+            window._controlsDirty = true
+        end
+        group._settleDock = settle
+        -- Flies home only when its slot is on screen; otherwise (another tab,
+        -- the window hidden) it just drops back into place.
+        local canFly = not instant and oldSlot and oldSlot.Parent and window.Root.Visible and box.Visible
+            and oldSlot.AbsoluteSize.X > 0 and isShown(oldSlot, window.Body, oldSlot.AbsolutePosition + oldSlot.AbsoluteSize / 2)
+        if not canFly then
+            settle()
+            return
+        end
+        animating = true
+        local scale = layerScale()
+        local height = box.AbsoluteSize.Y / scale
+        local width = oldSlot.AbsoluteSize.X / scale
+        tween(oldSlot, { Size = UDim2.new(1, 0, 0, height) }, 0.36, Enum.EasingStyle.Quint)
+        local oldLabel = oldSlot:FindFirstChildWhichIsA("TextLabel")
+        if oldLabel then
+            tween(oldLabel, { TextTransparency = 1 }, 0.12)
+        end
+        -- The slot's top stays put as it grows, so its spot is the landing.
+        local target = toLayer(oldSlot.AbsolutePosition)
+        tween(oldPanel, {
+            Position = UDim2.fromOffset(target.X + width / 2, target.Y),
+            Size = UDim2.fromOffset(width, height),
+        }, 0.36, Enum.EasingStyle.Quint)
+        tween(oldScale, { Scale = 1 }, 0.2)
+        tween(oldShadow, { ImageTransparency = 1 }, 0.3)
+        task.delay(0.37, settle)
+    end
+
+    -- Dragging the floating panel by its header.
+    header.InputBegan:Connect(function(input)
+        if not popped or not isPress(input) or not panel then
+            return
+        end
+        dragStart = Vector2.new(input.Position.X, input.Position.Y)
+        dragOrigin = Vector2.new(panel.Position.X.Offset, panel.Position.Y.Offset)
+        dragMoved = false
+        suppressClick = false
+    end)
+    window:_listen("Changed", function(input)
+        if not dragStart or not panel or not isMove(input) then
+            return
+        end
+        local delta = Vector2.new(input.Position.X, input.Position.Y) - dragStart
+        if not dragMoved then
+            if delta.Magnitude < (TOUCH and 8 or 5) then
+                return
+            end
+            dragMoved, suppressClick = true, true
+            animating = false
+            closeInner()
+            window:_closePopups()
+            tween(panelScale, { Scale = 1.025 }, 0.18, Enum.EasingStyle.Quint)
+            tween(panelShadow, { ImageTransparency = 0.15 }, 0.18)
+        end
+        local spot = clampSpot(dragOrigin + delta / layerScale(), panel.Size.X.Offset, panel.Size.Y.Offset)
+        panel.Position = UDim2.fromOffset(spot.X, spot.Y)
+    end, group)
+    window:_listen("Ended", function(input)
+        if not dragStart or not isPress(input) then
+            return
+        end
+        dragStart = nil
+        if dragMoved and panel then
+            dragMoved = false
+            tween(panelScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+            tween(panelShadow, { ImageTransparency = 0.35 }, 0.3)
+            group._popSpot = Vector2.new(panel.Position.X.Offset, panel.Position.Y.Offset)
+        end
+    end, group)
+    if popButton then
+        popButton.MouseEnter:Connect(function()
+            tween(popButton, { BackgroundTransparency = 0 }, 0.15)
+            tween(popIcon, { ImageColor3 = Theme.Text }, 0.15)
+        end)
+        popButton.MouseLeave:Connect(function()
+            tween(popButton, { BackgroundTransparency = 1 }, 0.25)
+            tween(popIcon, { ImageColor3 = Theme.Muted }, 0.25)
+        end)
+        popButton.MouseButton1Click:Connect(function()
+            if popped then
+                dock()
+            else
+                popOut()
+            end
+        end)
+    end
+
+    header.MouseButton1Click:Connect(function()
+        if suppressClick then
+            suppressClick = false
+            return
+        end
+        if isTap() then
+            setCollapsed(not collapsed)
+        end
+    end)
+
+    function group:PopOut()
+        popOut()
+    end
+    function group:Dock()
+        dock()
+    end
+    function group:IsPoppedOut()
+        return popped
+    end
+    function group:SetCollapsed(value)
+        setCollapsed(value)
+    end
+    function group:Collapse()
+        setCollapsed(true)
+    end
+    function group:Expand()
+        setCollapsed(false)
+    end
+    function group:IsCollapsed()
+        return collapsed
+    end
+    function group:SetTitle(text)
+        group.Name = tostring(text)
+        title.Text = group.Name
+    end
+    group._userVisible = opts.Visible ~= false
+    function group:IsVisible()
+        return group._userVisible
+    end
+    function group:SetVisible(visible)
+        visible = visible and true or false
+        if visible == group._userVisible then
+            return
+        end
+        group._userVisible = visible
+        if not visible then
+            for _, element in ipairs(group._items) do
+                if element._onHide then
+                    element._onHide()
+                end
+                if element.Open and type(element.SetOpen) == "function" then
+                    element:SetOpen(false)
+                end
+            end
+        end
+        box.Visible = visible
+        window._controlsDirty = true
+    end
+    if not group._userVisible then
+        box.Visible = false
+    end
+    function group:Destroy()
+        for index = #group._items, 1, -1 do
+            local element = group._items[index]
+            if type(element.Destroy) == "function" then
+                element:Destroy()
+            end
+        end
+        local owner = group.Parent
+        local index = table.find(owner._groupboxes, group)
+        if index then
+            table.remove(owner._groupboxes, index)
+        end
+        set.Counts[side] = math.max(set.Counts[side] - 1, 0)
+        dock(true)
+        group._destroyed = true
+        window._controlsDirty = true
+        box:Destroy()
+    end
+
+    if opts.Collapsed then
+        setCollapsed(true, true)
+    end
+    if opts.PoppedOut then
+        task.defer(popOut)
+    end
+    return group
+end
+
+local function sideGroupbox(side)
+    return function(self, opts, icon)
+        opts = normalize(opts, { Title = "Name" })
+        opts.Side = side
+        return self:Groupbox(opts, icon)
+    end
+end
+
+Tab.CreateGroupbox = Tab.Groupbox
+Tab.AddGroupbox = Tab.Groupbox
+Tab.AddLeftGroupbox = sideGroupbox("Left")
+Tab.AddRightGroupbox = sideGroupbox("Right")
+
+-- Button rows: equal-width buttons side by side.
+
+function Tab:ButtonRow(opts)
+    local specs = type(opts) == "table" and (opts.Buttons or opts) or {}
+    local compact = metricsOf(self).Compact
+    local boxHeight = TOUCH and 34 or 30
+    local frame = card(self, "Frame", boxHeight + (compact and 4 or 14), {})
+    local inset = compact and 14 or 7
+    local holder = create("Frame", {
+        Position = UDim2.fromOffset(inset, compact and 2 or 7),
+        Size = UDim2.new(1, -inset * 2, 0, boxHeight),
+        BackgroundTransparency = 1,
+        Parent = frame,
+    })
+    local count = math.max(#specs, 1)
+    local handle = { Buttons = {} }
+    local names = {}
+    for index, spec in ipairs(specs) do
+        if type(spec) == "string" then
+            spec = { Name = spec }
+        end
+        local text = spec.Name or spec.Title or "Button"
+        table.insert(names, text)
+        local button, text_ = softButton(holder, text, {
+            Position = UDim2.new((index - 1) / count, (index - 1) * 6 / count, 0, 0),
+            Size = UDim2.new(1 / count, -6 * (count - 1) / count, 1, 0),
+        }, function()
+            safeCall(spec.Callback)
+        end)
+        text_.TextSize = 13
+        if spec.Style == "Primary" then
+            tween(button, { BackgroundColor3 = Theme.Accent, BackgroundTransparency = 0.12 }, 0)
+            tween(text_, { TextColor3 = Theme.AccentDark }, 0)
+        elseif spec.Style == "Danger" then
+            tween(text_, { TextColor3 = Theme.Error }, 0)
+        end
+        handle.Buttons[index] = { Button = button, Label = text_ }
+    end
+    function handle:SetText(index, text)
+        local entry = handle.Buttons[index]
+        if entry then
+            entry.Label.Text = tostring(text)
+        end
+    end
+    return finishElement(self, { Name = table.concat(names, " "), Visible = not (type(opts) == "table" and opts.Visible == false) }, handle, frame, "ButtonRow")
+end
+
+-- A text box with an action button beside it, for naming new configs and themes.
+-- Without buttonText the box spans the row on its own.
+local function actionInput(tab, placeholder, buttonText, callback)
+    local boxHeight = TOUCH and 34 or 30
+    local frame = card(tab, "Frame", boxHeight + 4, {})
+    local inset = metricsOf(tab).Compact and 14 or 7
+    local box
+    local button = buttonText and softButton(frame, buttonText, {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -inset, 0, 2),
+        Size = UDim2.fromOffset(0, boxHeight),
+        AutomaticSize = Enum.AutomaticSize.X,
+    }, function()
+        safeCall(callback, box.Text)
+    end)
+    local holder = create("Frame", {
+        Position = UDim2.fromOffset(inset, 2),
+        Size = UDim2.new(1, -(inset * 2 + (button and 70 or 0)), 0, boxHeight),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = frame,
+    })
+    corner(holder, UDim.new(0, 6))
+    local holderStroke = stroke(holder)
+    box = create("TextBox", {
+        Position = UDim2.fromOffset(8, 0),
+        Size = UDim2.new(1, -16, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        PlaceholderText = placeholder,
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        ClearTextOnFocus = false,
+        Parent = holder,
+    })
+    box.Focused:Connect(function()
+        tween(holderStroke, { Color = Theme.StrokeHover }, 0.15)
+    end)
+    box.FocusLost:Connect(function(enterPressed)
+        tween(holderStroke, { Color = Theme.Stroke }, 0.2)
+        if enterPressed and box.Text ~= "" then
+            safeCall(callback, box.Text)
+        end
+    end)
+    if button then
+        local function fit()
+            local width = button.AbsoluteSize.X / tab.Window.Scale.Scale
+            holder.Size = UDim2.new(1, -(inset * 2 + width + 6), 0, boxHeight)
+        end
+        button:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+        task.defer(fit)
+    end
+    return finishElement(tab, { Name = placeholder }, {
+        Get = function()
+            return box.Text
+        end,
+        Set = function(_, value)
+            box.Text = tostring(value or "")
+        end,
+    }, frame, "ActionInput")
+end
+
+local function trim(text)
+    return (tostring(text or ""):match("^%s*(.-)%s*$"))
+end
+
+-- Managers go in their own groupbox when added straight to a tab.
+local function managerHost(tab, opts, name, icon)
+    if tab._groupbox then
+        return tab
+    end
+    local host = tab:Groupbox({ Name = opts.Name or name, Icon = opts.Icon or icon, Side = opts.Side })
+    -- Library chrome, not a script feature: the feature list skips it.
+    host._manager = true
+    return host
+end
+
+function Tab:ConfigManager(opts)
+    opts = normalize(opts, { Title = "Name" })
+    local host = managerHost(self, opts, "Configs", "folder")
+    local window = self.Window
+    local manager = {}
+    local list, status, modeList
+
+    local function notify(ok, title, detail)
+        window:Notify({ Title = title, Content = detail, Type = ok and "Success" or "Error", Duration = 3 })
+    end
+
+    local function refreshStatus()
+        status:Set(("loaded: %s   |   autoload: %s"):format(window.LoadedConfig or "none", window:GetAutoload() or "none"))
+    end
+
+    local function pickedName()
+        local name = list:Get()
+        if not name then
+            notify(false, "No config selected", "Pick one from the list first")
+        end
+        return name
+    end
+
+    local nameInput = actionInput(host, opts.Placeholder or "config name", nil, function(text)
+        manager:Create(text)
+    end)
+    local names = window:ListConfigs()
+    local initial = window.LoadedConfig or window:GetAutoload()
+    list = host:Dropdown({
+        Stacked = true,
+        Options = names,
+        Default = table.find(names, initial) and initial or nil,
+        EmptyText = "--",
+        NoneText = "--",
+    })
+    host:ButtonRow({
+        { Name = "Create", Callback = function() manager:Create(nameInput:Get()) end },
+        { Name = "Save", Callback = function() manager:Save() end },
+    })
+    host:ButtonRow({
+        { Name = "Load", Callback = function() manager:Load() end },
+        { Name = "Delete", Style = "Danger", Callback = function() manager:Delete() end },
+    })
+    host:ButtonRow({
+        { Name = "Set autoload", Callback = function() manager:SetAutoload() end },
+        { Name = "Clear autoload", Callback = function() manager:ClearAutoload() end },
+    })
+    host:ButtonRow({
+        { Name = "Rename", Callback = function() manager:Rename(nil, nameInput:Get()) end },
+        { Name = "Reset", Style = "Danger", Callback = function() manager:Reset() end },
+    })
+    status = host:Label("loaded: none   |   autoload: none")
+    modeList = host:Dropdown({
+        Name = "Autoload mode",
+        Stacked = true,
+        Options = { "All accounts", "This account" },
+        Default = window:GetAutoloadMode() == "Account" and "This account" or "All accounts",
+        AllowNone = false,
+        Callback = function(choice)
+            manager:SetAutoloadMode(choice == "This account" and "Account" or "Global")
+        end,
+    })
+    host:Button({ Name = "Refresh list", Callback = function() manager:Refresh() end })
+    host:Divider({ Text = "share" })
+    host:Button({ Name = "Copy code", Callback = function() manager:Export() end })
+    local codeInput = actionInput(host, "paste a config code...", nil, function(text)
+        manager:Import(text)
+    end)
+    host:Button({ Name = "Import code", Callback = function() manager:Import(codeInput:Get()) end })
+
+    function manager:Refresh()
+        local names = window:ListConfigs()
+        local keep = list:Get()
+        list:Refresh(names, true)
+        if keep and not table.find(names, keep) then
+            list:Set(window.LoadedConfig and table.find(names, window.LoadedConfig) and window.LoadedConfig or nil, true)
+        end
+        refreshStatus()
+    end
+
+    local function select(name)
+        manager:Refresh()
+        list:Set(name, true)
+    end
+
+    function manager:Create(name)
+        name = trim(name)
+        if name == "" then
+            notify(false, "Name the config", "Type a name before creating it")
+            return
+        end
+        if not validConfigName(name) then
+            notify(false, "Invalid name", 'Names cannot contain \\ / : * ? " < > |')
+            return
+        end
+        local ok, err = window:SaveConfig(name)
+        if ok then
+            window.LoadedConfig = name
+            nameInput:Set("")
+            select(name)
+        end
+        notify(ok, ok and "Config created" or "Create failed", ok and name or tostring(err))
+    end
+
+    function manager:Save(name)
+        name = name or list:Get()
+        if not name then
+            local typed = trim(nameInput:Get())
+            if typed == "" then
+                notify(false, "No config selected", "Pick one from the list or type a name")
+                return
+            end
+            return manager:Create(typed)
+        end
+        local ok, err = window:SaveConfig(name)
+        if ok then
+            window.LoadedConfig = name
+            refreshStatus()
+        end
+        notify(ok, ok and "Config saved" or "Save failed", ok and name or tostring(err))
+    end
+
+    function manager:Load(name)
+        name = name or pickedName()
+        if not name then
+            return
+        end
+        local ok, err = window:LoadConfig(name)
+        notify(ok, ok and "Config loaded" or "Load failed", ok and name or tostring(err))
+    end
+
+    function manager:Delete(name)
+        name = name or pickedName()
+        if not name then
+            return
+        end
+        window:Confirm({
+            Title = "Delete config",
+            Content = "Remove " .. name .. "? This cannot be undone.",
+            Icon = "trash-2",
+            ConfirmText = "Delete",
+            Callback = function()
+                local ok, err = window:DeleteConfig(name)
+                if ok then
+                    if window:GetAutoload("Account") == name then
+                        window:SetAutoload(nil, "Account")
+                    end
+                    if window:GetAutoload("Global") == name then
+                        window:SetAutoload(nil, "Global")
+                    end
+                    list:Set(nil, true)
+                end
+                manager:Refresh()
+                notify(ok, ok and "Config deleted" or "Delete failed", ok and name or tostring(err))
+            end,
+        })
+    end
+
+    function manager:Rename(name, newName)
+        name = name or pickedName()
+        if not name then
+            return
+        end
+        newName = trim(newName)
+        if newName == "" then
+            notify(false, "Name the config", "Type the new name in the name box")
+            return
+        end
+        if not validConfigName(newName) then
+            notify(false, "Invalid name", 'Names cannot contain \\ / : * ? " < > |')
+            return
+        end
+        local ok, err = window:RenameConfig(name, newName)
+        if ok then
+            nameInput:Set("")
+            select(newName)
+        end
+        notify(ok, ok and "Config renamed" or "Rename failed", ok and (name .. " -> " .. newName) or tostring(err))
+    end
+
+    function manager:Reset()
+        window:Confirm({
+            Title = "Reset settings",
+            Content = "Put every setting back to its default and delete this script's folder? Saved configs, themes and autoload are removed for good.",
+            Icon = "rotate-ccw",
+            ConfirmText = "Reset",
+            Callback = function()
+                window:ResetConfig()
+                local wiped = window:ClearWorkspace()
+                window:_applyDefaultTheme()
+                list:Set(nil, true)
+                manager:Refresh()
+                modeList:Set("All accounts", true)
+                notify(wiped, wiped and "Settings reset" or "Reset incomplete",
+                    wiped and "Everything is back to its default" or "Some files in " .. window.ConfigFolder .. " could not be deleted")
+            end,
+        })
+    end
+
+    function manager:SetAutoload(name)
+        name = name or pickedName()
+        if not name then
+            return
+        end
+        local ok, err = window:SetAutoload(name)
+        notify(ok, ok and "Autoload set" or "Autoload failed", ok and name or tostring(err))
+    end
+
+    function manager:ClearAutoload()
+        local current = window:GetAutoload()
+        if not current then
+            notify(false, "No autoload", "Nothing is set to autoload")
+            return
+        end
+        local ok, err = window:SetAutoload(nil)
+        notify(ok, ok and "Autoload cleared" or "Clear failed", ok and current or tostring(err))
+    end
+
+    function manager:ToggleAutoload(name)
+        name = name or pickedName()
+        if not name then
+            return
+        end
+        if window:GetAutoload() == name then
+            manager:ClearAutoload()
+        else
+            manager:SetAutoload(name)
+        end
+    end
+
+    function manager:SetAutoloadMode(mode)
+        local ok, err = window:SetAutoloadMode(mode)
+        local label_ = mode == "Account" and "This account" or "All accounts"
+        if modeList:Get() ~= label_ then
+            modeList:Set(label_, true)
+        end
+        notify(ok ~= false, ok ~= false and "Autoload mode" or "Mode change failed", ok ~= false and label_ or tostring(err))
+    end
+
+    function manager:Export(name)
+        local code, err = window:ExportConfig(name)
+        if not code then
+            notify(false, "Export failed", tostring(err))
+            return nil
+        end
+        window:CopyToClipboard(code, "Config code")
+        return code
+    end
+
+    function manager:Import(code)
+        code = trim(code)
+        if code == "" then
+            notify(false, "Nothing to import", "Paste a config code first")
+            return
+        end
+        local data, info = window:DecodeConfig(code)
+        if not data then
+            notify(false, "Import failed", "Invalid config code")
+            return
+        end
+        -- The typed name wins; otherwise the code's own name, never overwriting a config.
+        local saveAs = trim(nameInput:Get())
+        if saveAs == "" then
+            saveAs = nil
+            if validConfigName(info.Name) then
+                saveAs = info.Name
+                local index = 2
+                while window:ConfigExists(saveAs) do
+                    saveAs = ("%s (%d)"):format(info.Name, index)
+                    index += 1
+                end
+            end
+        elseif not validConfigName(saveAs) then
+            notify(false, "Invalid name", 'Names cannot contain \\ / : * ? " < > |')
+            return
+        end
+        local function run()
+            local ok, err = window:ImportConfig(code, saveAs, true)
+            if ok then
+                codeInput:Set("")
+                if saveAs then
+                    nameInput:Set("")
+                    select(saveAs)
+                end
+            end
+            notify(ok, ok and "Config imported" or "Import failed", ok and (saveAs or "Applied to current settings") or tostring(err))
+        end
+        if info.Folder and info.Folder ~= window.ConfigFolder then
+            window:Confirm({
+                Title = "Different script",
+                Content = ("This config was made for %s. Import it anyway? Only matching settings are applied."):format(info.Folder),
+                Icon = "triangle-alert",
+                ConfirmText = "Import",
+                Callback = run,
+            })
+            return
+        end
+        run()
+    end
+
+    local disconnect = window:OnConfigChanged(function()
+        -- Configs can arrive from elsewhere (a cloud install), so the list is reread.
+        manager:Refresh()
+        if window.LoadedConfig and list:Get() == nil then
+            list:Set(window.LoadedConfig, true)
+        end
+    end)
+    status._listeners = status._listeners or {}
+    table.insert(status._listeners, disconnect)
+
+    refreshStatus()
+    return manager
+end
+
+local PRESET_ORDER = {
+    "Midnight", "Nebula", "Synthwave", "Sakura", "Velvet", "Rose", "Crimson", "Sunset", "Amber", "Gold",
+    "Cyber", "Toxic", "Matcha", "Emerald", "Aurora", "Ocean", "Frost", "Abyss", "Mono",
+    "Halloween", "Haunted", "Christmas", "Valentine", "Lunar", "Tropical", "Dracula", "Coffee",
+}
+
+local function presetNames()
+    local names, seen = {}, {}
+    for _, name in ipairs(PRESET_ORDER) do
+        if Library.ThemePresets[name] then
+            table.insert(names, name)
+            seen[name] = true
+        end
+    end
+    local extra = {}
+    for name in pairs(Library.ThemePresets) do
+        if not seen[name] then
+            table.insert(extra, name)
+        end
+    end
+    table.sort(extra)
+    for _, name in ipairs(extra) do
+        table.insert(names, name)
+    end
+    return names
+end
+
+function Tab:ThemeManager(opts)
+    opts = normalize(opts, { Title = "Name" })
+    local host = managerHost(self, opts, "Themes", "palette")
+    local window = self.Window
+    local manager = {}
+    local themes, status, defaultRow, presets
+    local weather, weatherMode, dim, transparent, dragSkeleton, islandStyle
+    local background, backgroundInput, backgroundOpacity, backgroundLabel
+    local uiScale, density, adaptive, cornerRadius
+
+    local function notify(ok, title, detail)
+        window:Notify({ Title = title, Content = detail, Type = ok and "Success" or "Error", Duration = 3 })
+    end
+
+    local function refreshStatus()
+        local current = window:GetDefaultTheme()
+        status:Set("Default theme: " .. (current or "none"))
+        local picked = themes:Get() or presets:Get()
+        defaultRow:SetText(2, (picked and picked == current) and "Clear Default" or "Set Default")
+    end
+
+    local function pickedTheme()
+        local name = themes:Get()
+        if not name then
+            notify(false, "No theme selected", "Pick one from the list first")
+        end
+        return name
+    end
+
+    presets = host:Dropdown({
+        Name = "Preset",
+        Options = presetNames(),
+        Default = Library.ThemePresets[Library.ThemeName or ""] and Library.ThemeName or nil,
+        NoneText = "custom",
+        AllowNone = false,
+        Callback = function(name)
+            if name then
+                Library:SetTheme(name)
+                themes:Set(nil, true)
+                refreshStatus()
+            end
+        end,
+    })
+    local labels = { None = "None", Snow = "Snow", Rain = "Rain", Ember = "Hell Fire", Sakura = "Sakura", Fireflies = "Fireflies", Matrix = "Matrix" }
+    if window._backdrop and opts.Weather ~= false then
+        weather = host:Dropdown({
+            Name = "Weather",
+            Options = { "Snow", "Rain", "Hell Fire", "Sakura", "Fireflies", "Matrix", "None" },
+            Default = labels[window.Weather] or "None",
+            AllowNone = false,
+            Callback = function(name)
+                if name then
+                    window:SetWeather(name)
+                end
+            end,
+        })
+    end
+    if window._backdrop and opts.Weather ~= false then
+        weatherMode = host:Dropdown({
+            Name = "Weather Mode",
+            Options = { "Screen", "UI" },
+            Default = window.WeatherMode,
+            AllowNone = false,
+            Callback = function(mode)
+                if mode then
+                    window:SetWeatherMode(mode)
+                end
+            end,
+        })
+    end
+    if window._backdrop and opts.Dim ~= false then
+        dim = host:Toggle({
+            Name = "Dim",
+            Default = window._backdropDim,
+            Callback = function(value)
+                window:SetDim(value)
+            end,
+        })
+    end
+    if opts.Transparent ~= false then
+        transparent = host:Toggle({
+            Name = "Transparent",
+            Default = window.Transparent == true,
+            Callback = function(value)
+                window:SetTransparent(value)
+            end,
+        })
+    end
+    if opts.DragSkeleton ~= false and opts.DragStyle ~= false then
+        dragSkeleton = host:Dropdown({
+            Name = "Drag Style",
+            Options = Library.DragStyles,
+            Default = window.DragStyle,
+            AllowNone = false,
+            Callback = function(style)
+                if style then
+                    window:SetDragStyle(style)
+                end
+            end,
+        })
+    end
+    if opts.IslandStyle ~= false then
+        islandStyle = host:Dropdown({
+            Name = "Dynamic Island",
+            Options = Library.IslandStyles,
+            Default = window.IslandStyle,
+            AllowNone = false,
+            Callback = function(style)
+                if style then
+                    window:SetIslandStyle(style)
+                end
+            end,
+        })
+    end
+    if opts.AdaptiveSize ~= false then
+        adaptive = host:Toggle({
+            Name = "Adaptive Size",
+            Default = window:GetAdaptiveSize(),
+            Callback = function(value)
+                window:SetAdaptiveSize(value)
+            end,
+        })
+    end
+    if opts.Scale ~= false then
+        uiScale = host:Slider({
+            Name = "UI Scale",
+            Min = 60,
+            Max = 150,
+            Increment = 5,
+            Default = math.floor(window:GetUIScale() * 100 + 0.5),
+            Suffix = "%",
+            -- Rescaling mid-drag would move the slider out from under the
+            -- pointer, so a drag applies on release.
+            Callback = function(value)
+                if not (uiScale and uiScale.Dragging) then
+                    window:SetUIScale(value / 100)
+                end
+            end,
+            OnRelease = function(value)
+                window:SetUIScale(value / 100)
+            end,
+        })
+    end
+    if opts.Density ~= false then
+        density = host:Dropdown({
+            Name = "Density",
+            Options = { "Compact", "Default", "Comfortable" },
+            Default = Library.Density,
+            AllowNone = false,
+            Callback = function(mode)
+                if mode then
+                    Library:SetDensity(mode)
+                end
+            end,
+        })
+    end
+    if opts.CornerRadius ~= false then
+        cornerRadius = host:Slider({
+            Name = "Corner Radius",
+            Min = 0,
+            Max = 20,
+            Increment = 1,
+            Default = Library:GetCornerRadius(),
+            Suffix = "px",
+            Callback = function(value)
+                Library:SetCornerRadius(value)
+            end,
+        })
+    end
+    if opts.Background ~= false then
+        -- The dropdown shows listed images by name, "custom" for ids and links.
+        backgroundLabel = function(source)
+            if source == nil or source == "" then
+                return "None"
+            end
+            return table.find(window:ListBackgrounds(), source) and source or nil
+        end
+        local function applyBackground(source, fromList)
+            task.spawn(function()
+                local ok, err = window:SetBackground(source)
+                if ok and not fromList then
+                    background:Set(backgroundLabel(window.Background), true)
+                elseif not ok and err ~= "replaced by a newer background" then
+                    notify(false, "Background failed", tostring(err))
+                end
+            end)
+        end
+        local options = window:ListBackgrounds()
+        table.insert(options, 1, "None")
+        background = host:Dropdown({
+            Name = "Background",
+            Options = options,
+            Default = backgroundLabel(window.Background),
+            NoneText = "custom",
+            AllowNone = false,
+            Callback = function(name)
+                if name then
+                    applyBackground(name, true)
+                end
+            end,
+        })
+        backgroundInput = actionInput(host, "image id or url", "Set", function(text)
+            text = trim(text)
+            if text == "" then
+                notify(false, "No image", "Paste an image id or link first")
+                return
+            end
+            applyBackground(text)
+        end)
+        backgroundOpacity = host:Slider({
+            Name = "Background Opacity",
+            Min = 0,
+            Max = 100,
+            Default = math.floor((1 - window.BackgroundTransparency) * 100 + 0.5),
+            Suffix = "%",
+            Callback = function(value)
+                window:SetBackgroundTransparency(1 - value / 100)
+            end,
+        })
+    end
+    local nameInput = actionInput(host, opts.Placeholder or "theme name", "Create", function(text)
+        manager:Create(text)
+    end)
+    themes = host:Dropdown({
+        Name = "Theme",
+        Options = window:ListThemes(),
+        Default = (function()
+            local current = window:GetDefaultTheme()
+            return current and not Library.ThemePresets[current] and current or nil
+        end)(),
+        EmptyText = "no themes",
+        NoneText = "select",
+        Callback = function()
+            refreshStatus()
+        end,
+    })
+    host:ButtonRow({
+        { Name = "Save", Callback = function() manager:Save() end },
+        { Name = "Load", Callback = function() manager:Load() end },
+    })
+    defaultRow = host:ButtonRow({
+        { Name = "Delete", Callback = function() manager:Delete() end },
+        { Name = "Set Default", Callback = function() manager:ToggleDefault() end },
+    })
+    status = host:Label("Default theme: none")
+
+    function manager:Refresh()
+        themes:Refresh(window:ListThemes(), true)
+        if background then
+            local options = window:ListBackgrounds()
+            table.insert(options, 1, "None")
+            background:Refresh(options, true, true)
+        end
+        refreshStatus()
+    end
+
+    function manager:Create(name)
+        name = trim(name)
+        if name == "" then
+            notify(false, "Name the theme", "Type a name before creating it")
+            return
+        end
+        if Library.ThemePresets[name] then
+            notify(false, "Name taken", name .. " is a built-in preset")
+            return
+        end
+        local ok, err = window:SaveTheme(name)
+        manager:Refresh()
+        if ok then
+            themes:Set(name, true)
+            nameInput:Set("")
+            refreshStatus()
+        end
+        notify(ok, ok and "Theme created" or "Create failed", ok and name or tostring(err))
+    end
+
+    function manager:Save(name)
+        name = name or pickedTheme()
+        if not name then
+            return
+        end
+        local ok, err = window:SaveTheme(name)
+        notify(ok, ok and "Theme saved" or "Save failed", ok and name or tostring(err))
+    end
+
+    function manager:Load(name)
+        name = name or pickedTheme()
+        if not name then
+            return
+        end
+        local ok, err = window:LoadTheme(name)
+        if ok then
+            presets:Set(nil, true)
+        end
+        notify(ok ~= false, ok and "Theme loaded" or "Load failed", ok and name or tostring(err))
+    end
+
+    function manager:Delete(name)
+        name = name or pickedTheme()
+        if not name then
+            return
+        end
+        window:Confirm({
+            Title = "Delete theme",
+            Content = "Remove " .. name .. "? This cannot be undone.",
+            Icon = "trash-2",
+            ConfirmText = "Delete",
+            Callback = function()
+                local ok, err = window:DeleteTheme(name)
+                manager:Refresh()
+                notify(ok, ok and "Theme deleted" or "Delete failed", ok and name or tostring(err))
+            end,
+        })
+    end
+
+    function manager:ToggleDefault(name)
+        name = name or themes:Get() or presets:Get()
+        if not name then
+            notify(false, "Nothing selected", "Pick a theme or a preset first")
+            return
+        end
+        local clearing = window:GetDefaultTheme() == name
+        local ok, err = window:SetDefaultTheme(not clearing and name or nil)
+        refreshStatus()
+        notify(ok ~= false, clearing and "Default cleared" or "Default theme set", ok ~= false and name or tostring(err))
+    end
+
+    if opts.Customize ~= false then
+        host:Divider()
+        local fields = opts.Colors or {
+            { "Accent", "Accent" },
+            { "Background", "Background" },
+            { "Surface2", "Surface" },
+            { "Text", "Text" },
+            { "Muted", "Muted text" },
+        }
+        for _, field in ipairs(fields) do
+            local key, title = field[1], field[2] or field[1]
+            local pending, scheduled = nil, false
+            local picker
+            picker = host:ColorPicker({
+                Name = title,
+                Default = Theme[key],
+                Callback = function(color)
+                    -- Dragging the picker fires every frame; repaint at most
+                    -- a dozen times a second.
+                    pending = color
+                    if scheduled then
+                        return
+                    end
+                    scheduled = true
+                    task.delay(0.08, function()
+                        scheduled = false
+                        Library:SetTheme({ [key] = pending }, true)
+                        presets:Set(nil, true)
+                    end)
+                end,
+            })
+            table.insert(Library._themeListeners, function()
+                if picker.Value ~= Theme[key] then
+                    picker:Set(Theme[key], true)
+                end
+            end)
+        end
+    end
+
+    -- One hidden flag carries the palette and the look settings above, so
+    -- configs save and load the theme. Not a flag per toggle: flagged toggles
+    -- would count as running features on the minimized island.
+    if opts.Flag ~= false then
+        local flag = type(opts.Flag) == "string" and opts.Flag or "__Theme"
+        local look = { _type = "Theme", _searchName = "Theme", _searchKey = "theme", _listeners = {} }
+
+        function look:Get()
+            local colors = {}
+            for _, key in ipairs(THEME_KEYS) do
+                colors[key] = colorToHex(Theme[key])
+            end
+            return {
+                Name = presets:Get() or themes:Get(),
+                Colors = colors,
+                Weather = weather and window.Weather or nil,
+                WeatherMode = weatherMode and window.WeatherMode or nil,
+                -- if-expressions, not and/or: a switched-off value is false, not nil.
+                Dim = if dim then window._backdropDim == true else nil,
+                Transparent = if transparent then window.Transparent == true else nil,
+                DragStyle = dragSkeleton and window.DragStyle or nil,
+                IslandStyle = islandStyle and window.IslandStyle or nil,
+                CornerRadius = cornerRadius and Library:GetCornerRadius() or nil,
+                UIScale = uiScale and window:GetUIScale() or nil,
+                AdaptiveSize = if adaptive then window:GetAdaptiveSize() else nil,
+                Density = density and Library.Density or nil,
+                -- "" is no background; a missing field leaves it alone on load.
+                Background = background and (window.Background or "") or nil,
+                BackgroundTransparency = background and window.BackgroundTransparency or nil,
+            }
+        end
+
+        function look:Set(value)
+            if type(value) ~= "table" then
+                return
+            end
+            if type(value.Colors) == "table" then
+                Library:SetTheme(value.Colors)
+            end
+            local name = type(value.Name) == "string" and value.Name or nil
+            if name and Library.ThemePresets[name] then
+                Library.ThemeName = name
+                presets:Set(name, true)
+                themes:Set(nil, true)
+            else
+                if name then
+                    Library.ThemeName = name
+                end
+                presets:Set(nil, true)
+                themes:Set(name and table.find(window:ListThemes(), name) and name or nil, true)
+            end
+            if weather and type(value.Weather) == "string" then
+                window:SetWeather(value.Weather)
+                weather:Set(labels[window.Weather] or "None", true)
+            end
+            if weatherMode and type(value.WeatherMode) == "string" then
+                window:SetWeatherMode(value.WeatherMode)
+                weatherMode:Set(window.WeatherMode, true)
+            end
+            if dim and type(value.Dim) == "boolean" then
+                window:SetDim(value.Dim)
+                dim:Set(value.Dim, true)
+            end
+            if transparent and type(value.Transparent) == "boolean" then
+                window:SetTransparent(value.Transparent)
+                transparent:Set(value.Transparent, true)
+            end
+            if dragSkeleton and type(value.DragStyle) == "string" then
+                dragSkeleton:Set(window:SetDragStyle(value.DragStyle), true)
+            elseif dragSkeleton and type(value.DragSkeleton) == "boolean" then
+                -- Configs saved before drag styles.
+                window:SetDragSkeleton(value.DragSkeleton)
+                dragSkeleton:Set(window.DragStyle, true)
+            end
+            if islandStyle and type(value.IslandStyle) == "string" then
+                islandStyle:Set(window:SetIslandStyle(value.IslandStyle), true)
+            end
+            if cornerRadius and tonumber(value.CornerRadius) then
+                cornerRadius:Set(Library:SetCornerRadius(value.CornerRadius), true)
+            end
+            if adaptive and type(value.AdaptiveSize) == "boolean" then
+                window:SetAdaptiveSize(value.AdaptiveSize)
+                adaptive:Set(value.AdaptiveSize, true)
+            end
+            if uiScale and tonumber(value.UIScale) then
+                window:SetUIScale(tonumber(value.UIScale))
+                uiScale:Set(math.floor(window:GetUIScale() * 100 + 0.5), true)
+            end
+            if density and type(value.Density) == "string" then
+                density:Set(Library:SetDensity(value.Density), true)
+            end
+            if background and tonumber(value.BackgroundTransparency) then
+                window:SetBackgroundTransparency(tonumber(value.BackgroundTransparency))
+                backgroundOpacity:Set(math.floor((1 - window.BackgroundTransparency) * 100 + 0.5), true)
+            end
+            if background and type(value.Background) == "string" and value.Background ~= (window.Background or "") then
+                local source = value.Background
+                background:Set(backgroundLabel(source), true)
+                -- A web image may download first; don't hold up the rest of the config.
+                task.spawn(window.SetBackground, window, source)
+            end
+            refreshStatus()
+        end
+
+        Library.Flags[flag] = look
+        window:_flagCreated(flag, look)
+    end
+
+    -- A reset wipes the themes folder, so drop the stale list.
+    window._workspaceListeners = window._workspaceListeners or {}
+    table.insert(window._workspaceListeners, function()
+        themes:Set(nil, true)
+        manager:Refresh()
+    end)
+
+    refreshStatus()
+    return manager
+end
+
+Tab.CreateButtonRow = Tab.ButtonRow
+Tab.CreateConfigManager = Tab.ConfigManager
+Tab.CreateThemeManager = Tab.ThemeManager
+
+-- Status: read-only key/value lines, mostly for groupboxes, in several styles.
+
+local STATUS_HEIGHT = { Plain = 22, Row = 24, Badge = 28, Dot = 24, Bar = 38, Stat = 46 }
+
+-- Tone: a theme key, a Color3 or "#rrggbb".
+local function toneColor(tone)
+    return Library._color(tone) or Theme.Accent
+end
+
+local function formatNumber(value)
+    if value == math.floor(value) then
+        return tostring(math.floor(value))
+    end
+    return string.format("%.1f", value)
+end
+
+local function parseFraction(value, max)
+    if type(value) == "number" and type(max) == "number" then
+        return value, max
+    end
+    if type(value) == "string" then
+        local cleaned = (value:gsub(",", ""))
+        local current, total = cleaned:match("^%s*(%-?[%d%.]+)%s*/%s*(%-?[%d%.]+)")
+        if current then
+            return tonumber(current), tonumber(total)
+        end
+    end
+    return nil, nil
+end
+
+function Tab:Status(opts)
+    opts = normalize(opts, { Title = "Name", Text = "Value", Content = "Value", CurrentValue = "Value", Default = "Value" })
+    local style = STATUS_HEIGHT[opts.Style] and opts.Style or "Plain"
+    local compact = metricsOf(self).Compact
+    local window = self.Window
+    local height = STATUS_HEIGHT[style]
+    local pad = compact and 0 or 8
+    local frame = card(self, "Frame", height + pad * 2, opts)
+    local holder = create("Frame", {
+        Position = UDim2.fromOffset(14, pad),
+        Size = UDim2.new(1, -28, 0, height),
+        BackgroundTransparency = 1,
+        Parent = frame,
+    })
+
+    local handle = { Value = opts.Value, Max = opts.Max, Tone = opts.Tone or "Accent", Name = opts.Name or "", Color = opts.Color or opts.ValueColor }
+    local keyLabel, valueLabel, chip, chipStroke, dot, pulse, fill
+    local tinted = false
+
+    local function keyText()
+        return style == "Plain" and (handle.Name .. ":") or handle.Name
+    end
+
+    if style == "Plain" then
+        create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            VerticalAlignment = Enum.VerticalAlignment.Center,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, 5),
+            Parent = holder,
+        })
+        keyLabel = label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 1,
+            Parent = holder,
+        })
+        valueLabel = label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            TextSize = 12,
+            TextColor3 = Theme.Text,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 2,
+            Parent = holder,
+        })
+    elseif style == "Stat" then
+        keyLabel = label({
+            Position = UDim2.fromOffset(0, 3),
+            Size = UDim2.new(1, 0, 0, 14),
+            TextSize = 11,
+            TextColor3 = Theme.Muted,
+            Parent = holder,
+        })
+        valueLabel = label({
+            Position = UDim2.fromOffset(0, 18),
+            Size = UDim2.new(1, 0, 0, 24),
+            TextSize = 20,
+            FontFace = Fonts.Bold,
+            TextColor3 = Theme.Text,
+            Parent = holder,
+        })
+    else
+        local keyX = 0
+        if style == "Dot" then
+            keyX = 18
+            pulse = create("Frame", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                Position = UDim2.new(0, 5, 0.5, 0),
+                Size = UDim2.fromOffset(8, 8),
+                BackgroundColor3 = toneColor(handle.Tone),
+                BackgroundTransparency = 0.4,
+                BorderSizePixel = 0,
+                Parent = holder,
+            })
+            corner(pulse, UDim.new(1, 0))
+            dot = create("Frame", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                Position = UDim2.new(0, 5, 0.5, 0),
+                Size = UDim2.fromOffset(8, 8),
+                BackgroundColor3 = toneColor(handle.Tone),
+                BorderSizePixel = 0,
+                Parent = holder,
+            })
+            corner(dot, UDim.new(1, 0))
+            if opts.Pulse ~= false then
+                TweenService:Create(pulse, TweenInfo.new(1.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, -1), {
+                    Size = UDim2.fromOffset(20, 20),
+                    BackgroundTransparency = 1,
+                }):Play()
+            else
+                pulse.Visible = false
+            end
+        end
+        local rowHeight = style == "Bar" and 18 or height
+        keyLabel = label({
+            Position = UDim2.fromOffset(keyX, 0),
+            Size = UDim2.new(0.55, -keyX, 0, rowHeight),
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = holder,
+        })
+        if style == "Badge" then
+            tinted = true
+            chip = create("Frame", {
+                AnchorPoint = Vector2.new(1, 0.5),
+                Position = UDim2.new(1, 0, 0.5, 0),
+                Size = UDim2.fromOffset(0, 22),
+                AutomaticSize = Enum.AutomaticSize.X,
+                BackgroundColor3 = toneColor(handle.Tone),
+                BackgroundTransparency = 0.86,
+                BorderSizePixel = 0,
+                Parent = holder,
+            })
+            corner(chip, UDim.new(1, 0))
+            chipStroke = stroke(chip, toneColor(handle.Tone), 0.6)
+            padding(chip, 10, 10)
+            valueLabel = label({
+                Size = UDim2.new(0, 0, 1, 0),
+                AutomaticSize = Enum.AutomaticSize.X,
+                TextSize = 12,
+                TextColor3 = toneColor(handle.Tone),
+                TextTruncate = Enum.TextTruncate.None,
+                Parent = chip,
+            })
+        else
+            valueLabel = label({
+                AnchorPoint = Vector2.new(1, 0),
+                Position = UDim2.new(1, 0, 0, 0),
+                Size = UDim2.new(0.45, 0, 0, rowHeight),
+                TextSize = 12,
+                TextColor3 = Theme.Text,
+                TextXAlignment = Enum.TextXAlignment.Right,
+                Parent = holder,
+            })
+        end
+        if style == "Bar" then
+            local track = create("Frame", {
+                Position = UDim2.fromOffset(0, 25),
+                Size = UDim2.new(1, 0, 0, 5),
+                BackgroundColor3 = Theme.Surface3,
+                BorderSizePixel = 0,
+                ClipsDescendants = true,
+                Parent = holder,
+            })
+            corner(track, UDim.new(1, 0))
+            fill = create("Frame", {
+                Size = UDim2.new(0, 0, 1, 0),
+                BackgroundColor3 = toneColor(handle.Tone),
+                BorderSizePixel = 0,
+                Parent = track,
+            })
+            corner(fill, UDim.new(1, 0))
+        end
+    end
+
+    local lastText = nil
+    local function render(animate)
+        keyLabel.Text = Library._rich(keyText())
+        local value = handle.Value
+        local text = value == nil and (opts.Placeholder or "-") or tostring(value)
+        if style == "Bar" then
+            local current, total = parseFraction(value, handle.Max)
+            if current and total then
+                handle.Max = total
+                text = formatNumber(current) .. " / " .. formatNumber(total)
+                local fraction = total > 0 and math.clamp(current / total, 0, 1) or 0
+                tween(fill, { Size = UDim2.new(fraction, 0, 1, 0) }, animate and 0.4 or 0, Enum.EasingStyle.Quint)
+            elseif type(value) == "number" and value <= 1 then
+                text = string.format("%d%%", math.floor(value * 100 + 0.5))
+                tween(fill, { Size = UDim2.new(math.clamp(value, 0, 1), 0, 1, 0) }, animate and 0.4 or 0, Enum.EasingStyle.Quint)
+            end
+        end
+        text = Library._rich((opts.Prefix or "") .. text .. (opts.Suffix or ""))
+        local changed = lastText ~= nil and text ~= lastText
+        lastText = text
+        valueLabel.Text = text
+        local tone = toneColor(handle.Tone)
+        local duration = animate and 0.25 or 0
+        -- Color paints the whole value; inline tags still win over it.
+        local valueColor = not tinted and Library._color(handle.Color) or Theme.Text
+        if not tinted and not (changed and animate and opts.Flash ~= false) then
+            tween(valueLabel, { TextColor3 = valueColor }, duration)
+        end
+        if chip then
+            tween(chip, { BackgroundColor3 = tone }, duration)
+            tween(chipStroke, { Color = tone }, duration)
+            tween(valueLabel, { TextColor3 = tone }, duration)
+        end
+        if dot then
+            tween(dot, { BackgroundColor3 = tone }, duration)
+            tween(pulse, { BackgroundColor3 = tone }, 0)
+        end
+        if fill then
+            tween(fill, { BackgroundColor3 = tone }, duration)
+        end
+        -- A brief accent flash marks a changed value.
+        if changed and animate and not tinted and opts.Flash ~= false then
+            tween(valueLabel, { TextColor3 = Theme.Accent }, 0.08)
+            task.delay(0.1, function()
+                if valueLabel.Parent then
+                    tween(valueLabel, { TextColor3 = Library._color(handle.Color) or Theme.Text }, 0.45)
+                end
+            end)
+        end
+    end
+
+    keyLabel.RichText = true
+    valueLabel.RichText = true
+    -- Theme tags in the text are baked to colours, so repaint on theme change.
+    onTheme(holder, function()
+        if lastText ~= nil then
+            render(false)
+        end
+    end)
+
+    function handle:Set(value, max)
+        handle.Value = value
+        if max ~= nil then
+            handle.Max = max
+        end
+        render(true)
+    end
+    function handle:Get()
+        return handle.Value
+    end
+    function handle:SetTone(tone)
+        handle.Tone = tone
+        render(true)
+    end
+    -- nil goes back to the normal text colour.
+    function handle:SetColor(color)
+        handle.Color = color
+        render(true)
+    end
+    function handle:SetName(name)
+        handle.Name = tostring(name)
+        render(false)
+    end
+    function handle:Text()
+        return valueLabel.Text
+    end
+    -- The value's resting colour, for the copy pinned on the minimized island.
+    function handle._shownColor()
+        if handle.Color ~= nil then
+            return Library._color(handle.Color) or Theme.Text
+        end
+        if style == "Badge" or style == "Dot" or style == "Bar" then
+            return toneColor(handle.Tone)
+        end
+        return Theme.Text
+    end
+
+    handle._listeners = {}
+    if type(opts.Update) == "function" then
+        local rate = math.max(tonumber(opts.UpdateRate) or 1, 0.05)
+        local running = true
+        table.insert(handle._listeners, function()
+            running = false
+        end)
+        task.spawn(function()
+            while running and frame.Parent do
+                local ok, value, extra = isolatedCall(opts.Update)
+                if ok then
+                    if value ~= nil then
+                        handle.Value = value
+                    end
+                    if type(extra) == "number" then
+                        handle.Max = extra
+                    elseif type(extra) == "string" or typeof(extra) == "Color3" then
+                        handle.Tone = extra
+                    end
+                    render(true)
+                else
+                    warn("[AirFlow] status update error: " .. tostring(value))
+                end
+                task.wait(rate)
+            end
+        end)
+        function handle:SetUpdateRate(seconds)
+            rate = math.max(tonumber(seconds) or rate, 0.05)
+        end
+    end
+    if opts.Pin then
+        table.insert(window._pinned, handle)
+        table.insert(handle._listeners, function()
+            local index = table.find(window._pinned, handle)
+            if index then
+                table.remove(window._pinned, index)
+            end
+        end)
+    end
+
+    render(false)
+    return finishElement(self, opts, handle, frame, "Status")
+end
+
+function Tab:Statuses(entries, shared)
+    local handles = {}
+    for index, entry in ipairs(entries or {}) do
+        local entryOpts = type(entry) == "table" and table.clone(entry) or { Name = tostring(entry) }
+        for key, value in pairs(shared or {}) do
+            if entryOpts[key] == nil then
+                entryOpts[key] = value
+            end
+        end
+        local handle = self:Status(entryOpts)
+        handles[entryOpts.Name or entryOpts.Title or index] = handle
+    end
+    return handles
+end
+
+-- Status list: a read-only block of rows that grows up to MaxRows, then
+-- scrolls inside itself. Rows are reused between refreshes so nothing flickers.
+function Tab:StatusList(opts)
+    opts = normalize(opts, { Title = "Name" })
+    local compact = metricsOf(self).Compact
+    local window = self.Window
+    local maxRows = math.max(math.floor(tonumber(opts.MaxRows) or 5), 1)
+    local frame = card(self, "Frame", 0, opts)
+    frame.AutomaticSize = Enum.AutomaticSize.Y
+    if compact then
+        padding(frame, 14, 14, 6, 8)
+    else
+        padding(frame, 14, 14, 11, 12)
+    end
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 4),
+        Parent = frame,
+    })
+    local heading = label({
+        Size = UDim2.new(1, 0, 0, 16),
+        Text = string.upper(tostring(opts.Name or "")),
+        TextSize = 11,
+        TextColor3 = Theme.Muted,
+        Visible = tostring(opts.Name or "") ~= "",
+        LayoutOrder = 1,
+        Parent = frame,
+    })
+    local scroller = create("ScrollingFrame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 2,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        CanvasSize = UDim2.new(),
+        ScrollingEnabled = false,
+        LayoutOrder = 2,
+        Parent = frame,
+    })
+    scroller:SetAttribute("NoDrag", true)
+    local content = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = scroller,
+    })
+    local contentPadding = padding(content, 0, 0, 0, 0)
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = content,
+    })
+    local empty = label({
+        Size = UDim2.new(1, 0, 0, 24),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        Text = tostring(opts.EmptyText or "Nothing yet"),
+        TextSize = 13,
+        LineHeight = 1.1,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextWrapped = true,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 0,
+        Parent = content,
+    })
+
+    local rowObjects, rows, signature, raw = {}, {}, nil, {}
+    local handle = { _listeners = {} }
+
+    -- Fits the list to its first MaxRows rows, measured, so wrapped rows count
+    -- at their real height. Past MaxRows the list scrolls.
+    local function fit()
+        if handle._destroyed then
+            return
+        end
+        local scale = window.Scale.Scale
+        local count = #rows
+        local height = 0
+        if count == 0 then
+            height = empty.AbsoluteSize.Y / scale
+        else
+            local shown = math.min(count, maxRows)
+            for index = 1, shown do
+                height += rowObjects[index].Frame.AbsoluteSize.Y / scale
+            end
+            height += (shown - 1) * 2
+        end
+        height = math.ceil(height)
+        local scrolling = count > maxRows
+        scroller.ScrollingEnabled = scrolling
+        contentPadding.PaddingRight = UDim.new(0, scrolling and 8 or 0)
+        if scroller.Size.Y.Offset ~= height then
+            scroller.Size = UDim2.new(1, 0, 0, height)
+        end
+        local maxScroll = math.max(scroller.AbsoluteCanvasSize.Y - scroller.AbsoluteWindowSize.Y, 0) / scale
+        if scroller.CanvasPosition.Y > maxScroll then
+            scroller.CanvasPosition = Vector2.new(0, maxScroll)
+        end
+    end
+
+    local function fitText(row)
+        if row.Value.Visible then
+            row.Text.Size = UDim2.new(1, -(math.ceil(row.Value.AbsoluteSize.X / window.Scale.Scale) + 12), 0, 24)
+        else
+            row.Text.Size = UDim2.new(1, 0, 0, 24)
+        end
+    end
+
+    local function newRow(order)
+        local holder = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            BackgroundTransparency = 1,
+            LayoutOrder = order,
+            Parent = content,
+        })
+        local row = {
+            Frame = holder,
+            Text = label({
+                Size = UDim2.new(1, 0, 0, 24),
+                AutomaticSize = Enum.AutomaticSize.Y,
+                Text = "",
+                TextSize = 13,
+                LineHeight = 1.1,
+                FontFace = Fonts.Regular,
+                TextColor3 = Theme.Muted,
+                TextWrapped = true,
+                TextTruncate = Enum.TextTruncate.None,
+                RichText = true,
+                Parent = holder,
+            }),
+            Value = label({
+                AnchorPoint = Vector2.new(1, 0),
+                Position = UDim2.new(1, 0, 0, 0),
+                Size = UDim2.new(0, 0, 0, 24),
+                AutomaticSize = Enum.AutomaticSize.X,
+                Text = "",
+                TextSize = 12,
+                FontFace = Fonts.Medium,
+                TextColor3 = Theme.Text,
+                RichText = true,
+                TextXAlignment = Enum.TextXAlignment.Right,
+                TextTruncate = Enum.TextTruncate.None,
+                Visible = false,
+                Parent = holder,
+            }),
+        }
+        row.Connections = {
+            holder:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit),
+            row.Value:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+                fitText(row)
+            end),
+        }
+        return row
+    end
+
+    local function normalizeRow(entry)
+        if type(entry) == "table" then
+            local text = entry.Text or entry.Name or entry[1]
+            local tone = entry.Tone or entry.Color
+            return {
+                Text = tostring(text == nil and "" or text),
+                Value = entry.Value ~= nil and tostring(entry.Value) or nil,
+                Tone = (type(tone) == "string" or typeof(tone) == "Color3") and tone or nil,
+            }
+        end
+        return { Text = tostring(entry) }
+    end
+
+    local function rowKey(entry)
+        return entry.Text .. "\0" .. (entry.Value or "\1") .. "\0" .. tostring(entry.Tone or "")
+    end
+
+    -- Tone tints the value, or the text when there is no value.
+    local function paint(row, entry)
+        local key = rowKey(entry)
+        if row.Key == key then
+            return
+        end
+        row.Key = key
+        row.Text.Text = Library._rich(entry.Text)
+        local tone = entry.Tone and Library._color(entry.Tone) or nil
+        if entry.Value then
+            row.Value.Text = Library._rich(entry.Value)
+            row.Value.Visible = true
+            tween(row.Value, { TextColor3 = tone or Theme.Text }, 0)
+            tween(row.Text, { TextColor3 = Theme.Muted }, 0)
+        else
+            row.Value.Visible = false
+            tween(row.Text, { TextColor3 = tone or Theme.Muted }, 0)
+        end
+        fitText(row)
+    end
+
+    local function dropRow(row)
+        for _, connection in ipairs(row.Connections) do
+            connection:Disconnect()
+        end
+        row.Frame:Destroy()
+    end
+
+    function handle:Set(list)
+        if type(list) ~= "table" or handle._destroyed then
+            return
+        end
+        local nextRows, keys = {}, {}
+        raw = {}
+        for index, entry in ipairs(list) do
+            raw[index] = type(entry) == "table" and table.clone(entry) or entry
+            local row = normalizeRow(entry)
+            nextRows[index] = row
+            keys[index] = rowKey(row)
+        end
+        local nextSignature = table.concat(keys, "\2") .. "#" .. #nextRows
+        if nextSignature == signature then
+            return
+        end
+        signature = nextSignature
+        rows = nextRows
+        for index, entry in ipairs(rows) do
+            local row = rowObjects[index]
+            if not row then
+                row = newRow(index)
+                rowObjects[index] = row
+            end
+            paint(row, entry)
+        end
+        for index = #rowObjects, #rows + 1, -1 do
+            dropRow(rowObjects[index])
+            rowObjects[index] = nil
+        end
+        empty.Visible = #rows == 0
+        fit()
+    end
+    function handle:Get()
+        local copy = {}
+        for index, entry in ipairs(raw) do
+            copy[index] = type(entry) == "table" and table.clone(entry) or entry
+        end
+        return copy
+    end
+    function handle:Clear()
+        handle:Set({})
+    end
+    function handle:SetName(text)
+        text = tostring(text or "")
+        heading.Text = string.upper(text)
+        heading.Visible = text ~= ""
+        handle._searchName = text
+        handle._searchKey = string.lower(text)
+    end
+    local rate = math.max(tonumber(opts.UpdateRate) or 1, 0.05)
+    function handle:SetUpdateRate(seconds)
+        rate = math.max(tonumber(seconds) or rate, 0.05)
+    end
+
+    -- Theme tags are baked into the text, so a theme change repaints the rows.
+    onTheme(content, function()
+        for index, row in ipairs(rowObjects) do
+            if rows[index] then
+                row.Key = nil
+                paint(row, rows[index])
+            end
+        end
+    end)
+
+    local emptyConnection = empty:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+    table.insert(handle._listeners, function()
+        handle._destroyed = true
+        emptyConnection:Disconnect()
+        for _, row in ipairs(rowObjects) do
+            for _, connection in ipairs(row.Connections) do
+                connection:Disconnect()
+            end
+        end
+    end)
+
+    -- Refreshes only while someone can see it: window open and not minimized,
+    -- its tab and sub tab showing, and neither it nor its groupbox hidden.
+    local function onScreen()
+        if window._destroyed or not window.Open or window.Minimized or not handle._userVisible then
+            return false
+        end
+        local page = self
+        if page._groupbox then
+            if page._userVisible == false then
+                return false
+            end
+            page = page.Parent
+        end
+        if page._isSubTab then
+            if page.Parent.CurrentSubTab ~= page then
+                return false
+            end
+            page = page.Parent
+        end
+        return window.CurrentTab == page
+    end
+
+    if type(opts.Update) == "function" then
+        local alive = true
+        table.insert(handle._listeners, function()
+            alive = false
+        end)
+        task.defer(function()
+            local first = true
+            while alive and frame.Parent do
+                if first or onScreen() then
+                    first = false
+                    local ok, result = isolatedCall(opts.Update)
+                    if ok then
+                        if result ~= nil then
+                            handle:Set(result)
+                        end
+                    else
+                        warn("[AirFlow] status list update error: " .. tostring(result))
+                    end
+                end
+                task.wait(rate)
+            end
+        end)
+    end
+
+    handle:Set(opts.Rows or {})
+    return finishElement(self, opts, handle, frame, "StatusList")
+end
+
+Tab.CreateStatus = Tab.Status
+Tab.AddStatus = Tab.Status
+Tab.CreateStatuses = Tab.Statuses
+Tab.CreateStatusList = Tab.StatusList
+Tab.AddStatusList = Tab.StatusList
+
+-- Image and Viewport: media cards. Image shows a picture from the same sources
+-- as window backgrounds, plus "Avatar" for the player's headshot. Viewport
+-- shows a 3D model or the player's avatar, turning slowly; drag it to spin it
+-- by hand.
+
+function Tab:_mediaCard(opts, defaultHeight)
+    opts = normalize(opts, { Title = "Name", Description = "Desc" })
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local mediaHeight = math.clamp(tonumber(opts.Height) or defaultHeight, 40, 600)
+    local inset = compact and 14 or 8
+    local hasHead = type(opts.Name) == "string" and opts.Name ~= ""
+    local titleTop = compact and 4 or 10
+    local mediaTop = hasHead and (titleTop + (opts.Desc and 38 or 22)) or (compact and 4 or inset)
+    local height = mediaTop + mediaHeight + (compact and 6 or inset)
+    local frame, frameStroke = card(self, "Frame", height, opts)
+    hoverStroke(frame, frameStroke)
+    local title, descLabel
+    if hasHead then
+        title = label({
+            Position = UDim2.fromOffset(14, titleTop),
+            Size = UDim2.new(1, -28, 0, metrics.TitleHeight),
+            Text = opts.Name,
+            TextSize = metrics.TextSize,
+            Parent = frame,
+        })
+        if opts.Desc then
+            descLabel = label({
+                Position = UDim2.fromOffset(14, titleTop + metrics.TitleHeight + 1),
+                Size = UDim2.new(1, -28, 0, metrics.DescLine),
+                Text = opts.Desc,
+                TextSize = metrics.DescSize,
+                FontFace = Fonts.Regular,
+                TextColor3 = Theme.Muted,
+                Parent = frame,
+            })
+        end
+    end
+    local media = create("Frame", {
+        Position = UDim2.fromOffset(inset, mediaTop),
+        Size = UDim2.new(1, -inset * 2, 0, mediaHeight),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.5,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = frame,
+    })
+    corner(media, UDim.new(0, 6))
+    stroke(media, Theme.Stroke)
+    local placeholder = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(22, 22),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ImageTransparency = 0.3,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = media,
+    })
+    -- A caption over the bottom of the picture, on a dark fade.
+    local captionHolder = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.fromScale(0, 1),
+        Size = UDim2.new(1, 0, 0, 30),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BackgroundTransparency = 0.35,
+        BorderSizePixel = 0,
+        Visible = false,
+        ZIndex = 3,
+        Parent = media,
+    })
+    create("UIGradient", {
+        Rotation = 90,
+        Transparency = NumberSequence.new(1, 0),
+        Parent = captionHolder,
+    })
+    local caption = label({
+        Position = UDim2.fromOffset(10, 8),
+        Size = UDim2.new(1, -20, 1, -10),
+        TextSize = 12,
+        TextColor3 = Color3.new(1, 1, 1),
+        ZIndex = 4,
+        Parent = captionHolder,
+    })
+    local function setCaption(text)
+        text = text ~= nil and tostring(text) or ""
+        caption.Text = text
+        captionHolder.Visible = text ~= ""
+    end
+    setCaption(opts.Caption)
+    return opts, {
+        Frame = frame,
+        Stroke = frameStroke,
+        Media = media,
+        Placeholder = placeholder,
+        Title = title,
+        Desc = descLabel,
+        SetCaption = setCaption,
+    }
+end
+
+function Tab:Image(opts)
+    local parts
+    opts, parts = self:_mediaCard(opts, 160)
+    local window = self.Window
+    local media = parts.Media
+    applyIcon(parts.Placeholder, "image")
+    -- Enum lookups throw on unknown names.
+    local function scaleType(name, fallback)
+        local ok, value = pcall(function()
+            return Enum.ScaleType[tostring(name)]
+        end)
+        return ok and value or fallback
+    end
+    local image = create("ImageLabel", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ImageTransparency = 1,
+        ScaleType = scaleType(opts.ScaleType or "Crop", Enum.ScaleType.Crop),
+        ZIndex = 2,
+        Parent = media,
+    })
+    corner(image, UDim.new(0, 6))
+    if opts.Color then
+        image.ImageColor3 = opts.Color
+    end
+
+    local handle = { Value = nil }
+    local generation = 0
+
+    -- Yields while a web image downloads. Returns ok, err like SetBackground.
+    function handle:SetImage(source)
+        generation += 1
+        local current = generation
+        handle.Value = source
+        if source == nil or source == "" or source == "None" then
+            tween(image, { ImageTransparency = 1 }, 0.2)
+            tween(parts.Placeholder, { ImageTransparency = 0.3 }, 0.2)
+            return true
+        end
+        local asset, err
+        if type(source) == "number" then
+            asset = "rbxassetid://" .. math.floor(source)
+        elseif type(source) == "string" and ({ avatar = true, headshot = true })[source:lower()] then
+            asset = "rbxthumb://type=AvatarHeadShot&id=" .. LocalPlayer.UserId .. "&w=420&h=420"
+        else
+            local ok, result, message = pcall(window._resolveBackground, window, tostring(source))
+            if ok then
+                asset, err = result, message
+            else
+                err = tostring(result)
+            end
+        end
+        if generation ~= current then
+            return false, "replaced by a newer image"
+        end
+        if not asset then
+            warn("[AirFlow] image: " .. tostring(err))
+            return false, err
+        end
+        image.ImageTransparency = 1
+        image.Image = asset
+        -- Fade in once it has loaded, or after a few seconds regardless.
+        task.spawn(function()
+            local waited = 0
+            while not image.IsLoaded and waited < 4 and generation == current and image.Parent do
+                waited += task.wait(0.05)
+            end
+            if generation == current and image.Parent then
+                tween(image, { ImageTransparency = 0 }, 0.35)
+                tween(parts.Placeholder, { ImageTransparency = 1 }, 0.2)
+            end
+        end)
+        return true
+    end
+    handle.Set = handle.SetImage
+
+    function handle:Get()
+        return handle.Value
+    end
+
+    function handle:SetCaption(text)
+        parts.SetCaption(text)
+    end
+
+    function handle:SetScaleType(name)
+        image.ScaleType = scaleType(name, image.ScaleType)
+    end
+
+    function handle:SetColor(color)
+        image.ImageColor3 = typeof(color) == "Color3" and color or Color3.new(1, 1, 1)
+    end
+
+    function handle:SetTitle(text)
+        if parts.Title then
+            parts.Title.Text = tostring(text)
+        end
+    end
+
+    if opts.Image ~= nil then
+        task.spawn(handle.SetImage, handle, opts.Image)
+    end
+    return finishElement(self, opts, handle, parts.Frame, "Image")
+end
+
+function Tab:Viewport(opts)
+    local parts
+    opts, parts = self:_mediaCard(opts, 180)
+    local window = self.Window
+    local media = parts.Media
+    applyIcon(parts.Placeholder, "box")
+
+    local viewport = create("ViewportFrame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ImageTransparency = 1,
+        Ambient = opts.Ambient or Color3.fromRGB(165, 160, 175),
+        LightColor = opts.LightColor or Color3.fromRGB(255, 250, 245),
+        LightDirection = Vector3.new(-0.6, -1, -0.8),
+        ZIndex = 2,
+        Parent = media,
+    })
+    local camera = Instance.new("Camera")
+    camera.FieldOfView = math.clamp(tonumber(opts.FieldOfView) or 35, 10, 90)
+    camera.Parent = viewport
+    viewport.CurrentCamera = camera
+    local world = Instance.new("WorldModel")
+    world.Parent = viewport
+
+    local handle = {
+        Model = nil,
+        Spin = opts.Spin ~= false,
+        SpinSpeed = tonumber(opts.SpinSpeed) or 25,
+    }
+    local angle = math.rad(tonumber(opts.Angle) or 0)
+    local pitch = math.rad(tonumber(opts.Pitch) or 10)
+    local distanceScale = tonumber(opts.Distance) or 1
+    local center, distance, basis = nil, 10, CFrame.new()
+    local source = nil
+    local generation = 0
+    local dragging, lastX, resumeAt = false, 0, 0
+
+    local function place()
+        if not center then
+            return
+        end
+        local direction = basis:VectorToWorldSpace(Vector3.new(
+            math.sin(angle) * math.cos(pitch),
+            math.sin(pitch),
+            -math.cos(angle) * math.cos(pitch)
+        ))
+        camera.CFrame = CFrame.lookAt(center + direction * distance, center)
+    end
+
+    local function fit(model)
+        local cf, size
+        if model:IsA("Model") then
+            cf, size = model:GetBoundingBox()
+            basis = model:GetPivot().Rotation
+        elseif model:IsA("BasePart") then
+            cf, size = model.CFrame, model.Size
+            basis = model.CFrame.Rotation
+        else
+            return false
+        end
+        center = cf.Position
+        local radius = math.max(size.Magnitude / 2, 0.5)
+        distance = radius / math.tan(math.rad(camera.FieldOfView / 2)) * distanceScale
+        place()
+        return true
+    end
+
+    -- A copy with its scripts and sounds stripped and every part anchored.
+    local function prepare(instance)
+        local copy = instance
+        if opts.Clone ~= false then
+            local archivable = instance.Archivable
+            pcall(function()
+                instance.Archivable = true
+            end)
+            local ok, result = pcall(instance.Clone, instance)
+            pcall(function()
+                instance.Archivable = archivable
+            end)
+            copy = ok and result or nil
+        end
+        if not copy then
+            return nil
+        end
+        local function clean(object)
+            if object:IsA("LuaSourceContainer") or object:IsA("Sound") or object:IsA("ForceField") then
+                object:Destroy()
+            elseif object:IsA("BasePart") then
+                object.Anchored = true
+                object.CanCollide = false
+            end
+        end
+        for _, object in ipairs(copy:GetDescendants()) do
+            pcall(clean, object)
+        end
+        if copy:IsA("BasePart") then
+            copy.Anchored = true
+        end
+        local humanoid = copy:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+        end
+        return copy
+    end
+
+    local function resolve(value)
+        if type(value) == "function" then
+            local ok, result = pcall(value)
+            value = ok and result or nil
+        end
+        if type(value) == "string" and ({ avatar = true, player = true, character = true })[value:lower()] then
+            value = LocalPlayer
+        end
+        if typeof(value) == "Instance" and value:IsA("Player") then
+            local character = value.Character
+            if not character then
+                character = value.CharacterAdded:Wait()
+                -- Let the body parts and accessories load in.
+                task.wait(0.5)
+            end
+            value = character
+        end
+        return typeof(value) == "Instance" and value or nil
+    end
+
+    -- Yields while waiting for a character to spawn.
+    function handle:SetModel(value)
+        generation += 1
+        local current = generation
+        source = value
+        if handle.Model then
+            handle.Model:Destroy()
+            handle.Model = nil
+        end
+        center = nil
+        if value == nil then
+            tween(viewport, { ImageTransparency = 1 }, 0.2)
+            tween(parts.Placeholder, { ImageTransparency = 0.3 }, 0.2)
+            return true
+        end
+        local instance = resolve(value)
+        if generation ~= current then
+            return false, "replaced by a newer model"
+        end
+        if not instance then
+            return false, "no model to show"
+        end
+        local copy = prepare(instance)
+        if not copy then
+            return false, "could not copy the model"
+        end
+        copy.Parent = world
+        handle.Model = copy
+        if not fit(copy) then
+            copy:Destroy()
+            handle.Model = nil
+            return false, "not a Model or a part"
+        end
+        viewport.ImageTransparency = 1
+        tween(viewport, { ImageTransparency = 0 }, 0.35)
+        tween(parts.Placeholder, { ImageTransparency = 1 }, 0.2)
+        return true
+    end
+    handle.Set = handle.SetModel
+
+    function handle:Get()
+        return handle.Model
+    end
+
+    -- Copies the source again, e.g. after the character respawned or changed.
+    function handle:Refresh()
+        return handle:SetModel(source)
+    end
+
+    function handle:SetSpin(enabled)
+        handle.Spin = enabled ~= false
+    end
+
+    function handle:SetSpinSpeed(degrees)
+        handle.SpinSpeed = tonumber(degrees) or handle.SpinSpeed
+    end
+
+    function handle:SetAngle(degrees)
+        angle = math.rad(tonumber(degrees) or 0)
+        place()
+    end
+
+    function handle:SetCaption(text)
+        parts.SetCaption(text)
+    end
+
+    function handle:SetTitle(text)
+        if parts.Title then
+            parts.Title.Text = tostring(text)
+        end
+    end
+
+    media.InputBegan:Connect(function(input)
+        if isPress(input) and handle.Model then
+            dragging = true
+            lastX = pointerPosition().X
+        end
+    end)
+    window:_listen("Changed", function(input)
+        if dragging and isMove(input) then
+            local x = pointerPosition().X
+            angle -= (x - lastX) * 0.012
+            lastX = x
+            place()
+        end
+    end, handle)
+    window:_listen("Ended", function(input)
+        if dragging and isPress(input) then
+            dragging = false
+            resumeAt = os.clock() + 1.5
+        end
+    end, handle)
+    window:_listen("Render", function(deltaTime)
+        if handle.Spin and center and not dragging and os.clock() >= resumeAt and window.Open and not window.Minimized
+            and parts.Frame.Visible then
+            angle += math.rad(handle.SpinSpeed) * deltaTime
+            place()
+        end
+    end, handle)
+
+    if opts.Model ~= nil then
+        task.spawn(handle.SetModel, handle, opts.Model)
+    end
+    return finishElement(self, opts, handle, parts.Frame, "Viewport")
+end
+
+-- Table: rows under a header, sortable by clicking a column. Rank = true adds
+-- a # column with medals for the top three, for leaderboards.
+
+function Tab:Table(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc", Data = "Rows", OnRowClick = "Callback" })
+    local window = self.Window
+    local metrics = metricsOf(self)
+    local compact = metrics.Compact
+    local rowHeight = tonumber(opts.RowHeight) or (TOUCH and 32 or 26)
+    local maxRows = math.max(math.floor(tonumber(opts.MaxRows) or 8), 1)
+    local headerHeight = TOUCH and 28 or 24
+    local textSize = compact and 12 or 13
+    local inset = compact and 14 or 8
+    local hasHead = type(opts.Name) == "string" and opts.Name ~= ""
+    local titleTop = compact and 4 or 10
+    local searchable = opts.Search ~= false
+    local searchHeight = TOUCH and 30 or 26
+    local searchTop = hasHead and (titleTop + (opts.Desc and 38 or 22)) or (compact and 4 or inset)
+    local gridTop = searchTop + (searchable and searchHeight + 6 or 0)
+    local bottom = compact and 6 or inset
+
+    local frame, frameStroke = card(self, "Frame", gridTop + headerHeight + rowHeight + bottom, opts)
+    hoverStroke(frame, frameStroke)
+    local title
+    if hasHead then
+        title = label({
+            Position = UDim2.fromOffset(14, titleTop),
+            Size = UDim2.new(1, -28, 0, metrics.TitleHeight),
+            Text = opts.Name,
+            TextSize = metrics.TextSize,
+            Parent = frame,
+        })
+        if opts.Desc then
+            label({
+                Position = UDim2.fromOffset(14, titleTop + metrics.TitleHeight + 1),
+                Size = UDim2.new(1, -28, 0, metrics.DescLine),
+                Text = opts.Desc,
+                TextSize = metrics.DescSize,
+                FontFace = Fonts.Regular,
+                TextColor3 = Theme.Muted,
+                Parent = frame,
+            })
+        end
+    end
+    -- Search: filters rows by any cell's text as you type. A count of what
+    -- matches shows on the right while it filters.
+    local query = ""
+    local searchBox, searchCount
+    if searchable then
+        local holder = create("Frame", {
+            Position = UDim2.fromOffset(inset, searchTop),
+            Size = UDim2.new(1, -inset * 2, 0, searchHeight),
+            BackgroundColor3 = Theme.Surface,
+            BorderSizePixel = 0,
+            Parent = frame,
+        })
+        holder:SetAttribute("NoDrag", true)
+        corner(holder, UDim.new(0, 6))
+        local searchStroke = stroke(holder)
+        local iconHolder, searchIcon = glowIcon(holder, "search", Theme.Muted, UDim2.new(0, 9, 0.5, 0))
+        iconHolder.Size = UDim2.fromOffset(13, 13)
+        searchCount = label({
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.new(1, -9, 0, 0),
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = "",
+            TextSize = 11,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            Visible = false,
+            Parent = holder,
+        })
+        searchBox = create("TextBox", {
+            Position = UDim2.fromOffset(29, 0),
+            Size = UDim2.new(1, -90, 1, 0),
+            BackgroundTransparency = 1,
+            Text = "",
+            PlaceholderText = opts.SearchPlaceholder or "Search",
+            PlaceholderColor3 = Theme.Muted,
+            TextColor3 = Theme.Text,
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            TextTruncate = Enum.TextTruncate.AtEnd,
+            ClearTextOnFocus = false,
+            Parent = holder,
+        })
+        searchBox.Focused:Connect(function()
+            tween(searchStroke, { Color = Theme.StrokeHover }, 0.15)
+            tween(searchIcon, { ImageColor3 = Theme.Accent }, 0.15)
+        end)
+        searchBox.FocusLost:Connect(function()
+            tween(searchStroke, { Color = Theme.Stroke }, 0.2)
+            tween(searchIcon, { ImageColor3 = Theme.Muted }, 0.2)
+        end)
+    end
+
+    local grid = create("Frame", {
+        Position = UDim2.fromOffset(inset, gridTop),
+        Size = UDim2.new(1, -inset * 2, 0, headerHeight + rowHeight),
+        BackgroundColor3 = Theme.Surface,
+        BackgroundTransparency = 0.2,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = frame,
+    })
+    corner(grid, UDim.new(0, 6))
+    stroke(grid, Theme.Stroke)
+    local header = create("Frame", {
+        Size = UDim2.new(1, 0, 0, headerHeight),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.45,
+        BorderSizePixel = 0,
+        Parent = grid,
+    })
+    create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.fromScale(0, 1),
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = header,
+    })
+    local body = create("ScrollingFrame", {
+        Position = UDim2.fromOffset(0, headerHeight),
+        Size = UDim2.new(1, 0, 1, -headerHeight),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 2,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        AutomaticCanvasSize = Enum.AutomaticSize.Y,
+        CanvasSize = UDim2.new(),
+        Parent = grid,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = body,
+    })
+    local empty = label({
+        Position = UDim2.fromOffset(0, headerHeight),
+        Size = UDim2.new(1, 0, 0, rowHeight),
+        Text = opts.EmptyText or "Nothing here yet",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Parent = grid,
+    })
+
+    local handle = { Rows = {} }
+    local shownCount = nil
+    local columns, headerCells = {}, {}
+    local pool = {}
+    local sortKey, sortDescending = nil, false
+    local shownHeight = nil
+    local MEDALS = {
+        Color3.fromRGB(245, 200, 90),
+        Color3.fromRGB(200, 206, 218),
+        Color3.fromRGB(214, 146, 96),
+    }
+
+    local function alignment(column)
+        local align = type(column.Align) == "string" and column.Align:lower() or nil
+        if align == "right" then
+            return Enum.TextXAlignment.Right
+        elseif align == "center" or align == "centre" then
+            return Enum.TextXAlignment.Center
+        end
+        return Enum.TextXAlignment.Left
+    end
+
+    -- Widths: a number above 1 is pixels, up to 1 is a share of what the pixel
+    -- columns leave, and the rest split whatever share is left.
+    local function layoutColumns()
+        local pixels, shares, autos = 0, 0, 0
+        for _, column in ipairs(columns) do
+            local width = tonumber(column.Width)
+            if width and width > 1 then
+                pixels += width
+            elseif width and width > 0 then
+                shares += width
+            else
+                autos += 1
+            end
+        end
+        local left = math.max(1 - shares, 0)
+        for _, column in ipairs(columns) do
+            local width = tonumber(column.Width)
+            local share
+            if width and width > 1 then
+                column.UDim = UDim.new(0, width)
+            else
+                share = (width and width > 0) and width or (autos > 0 and left / autos or 0)
+                column.UDim = UDim.new(share, -pixels * share)
+            end
+        end
+    end
+
+    local function columnValue(row, column)
+        if column.Rank then
+            return nil
+        end
+        if row[1] ~= nil or column.Key == nil then
+            return row[column.Index]
+        end
+        return row[column.Key]
+    end
+
+    local function display(value, column, row)
+        if type(column.Format) == "function" then
+            local ok, text = pcall(column.Format, value, row)
+            if ok and text ~= nil then
+                return tostring(text)
+            end
+        end
+        if type(value) == "number" then
+            local whole = value == math.floor(value)
+            local text = whole and string.format("%d", value) or string.format("%.2f", value)
+            -- Thousands separators on the whole part.
+            local sign, int, rest = text:match("^(%-?)(%d+)(.*)$")
+            if int then
+                int = int:reverse():gsub("(%d%d%d)", "%1,"):reverse():gsub("^,", "")
+                return sign .. int .. rest
+            end
+            return text
+        end
+        if value == nil then
+            return ""
+        end
+        return tostring(value)
+    end
+
+    local function paintHeader()
+        for _, cell in ipairs(headerCells) do
+            local column = cell.Column
+            local active = sortKey ~= nil and sortKey == column
+            tween(cell.Label, { TextColor3 = active and Theme.Text or Theme.Muted }, 0.15)
+            cell.Arrow.Visible = active
+            if active then
+                tween(cell.Arrow, { Rotation = sortDescending and 0 or 180 }, 0.2, Enum.EasingStyle.Quint)
+            end
+        end
+    end
+
+    local function sortedRows()
+        local list = {}
+        for index, row in ipairs(handle.Rows) do
+            list[index] = { Row = row, Index = index }
+        end
+        if sortKey then
+            local column = sortKey
+            table.sort(list, function(a, b)
+                local x, y = columnValue(a.Row, column), columnValue(b.Row, column)
+                local nx, ny = tonumber(x), tonumber(y)
+                if nx and ny then
+                    if nx ~= ny then
+                        if sortDescending then
+                            return nx > ny
+                        end
+                        return nx < ny
+                    end
+                elseif x ~= nil and y ~= nil then
+                    local sx, sy = string.lower(tostring(x)), string.lower(tostring(y))
+                    if sx ~= sy then
+                        if sortDescending then
+                            return sx > sy
+                        end
+                        return sx < sy
+                    end
+                elseif x ~= y then
+                    -- Empty cells sink to the bottom either way.
+                    return x ~= nil
+                end
+                return a.Index < b.Index
+            end)
+        end
+        -- Ranks come from the full order, so filtering never renumbers them.
+        for position, item in ipairs(list) do
+            item.Rank = position
+        end
+        if query == "" then
+            return list
+        end
+        local shown = {}
+        for _, item in ipairs(list) do
+            for _, column in ipairs(columns) do
+                if not column.Rank then
+                    local text = display(columnValue(item.Row, column), column, item.Row)
+                    text = string.lower((string.gsub(text, "<[^>]->", "")))
+                    if string.find(text, query, 1, true) then
+                        table.insert(shown, item)
+                        break
+                    end
+                end
+            end
+        end
+        return shown
+    end
+
+    local function newRow()
+        local rowFrame = create("TextButton", {
+            Size = UDim2.new(1, 0, 0, rowHeight),
+            BackgroundColor3 = Theme.Surface3,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            AutoButtonColor = false,
+            Text = "",
+            Parent = body,
+        })
+        -- The accent bar on a highlighted row sits beside the cells, outside
+        -- their layout.
+        local marker = create("Frame", {
+            Position = UDim2.new(0, 3, 0.5, 0),
+            AnchorPoint = Vector2.new(0, 0.5),
+            Size = UDim2.new(0, 2, 1, -10),
+            BackgroundColor3 = Theme.Accent,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            Parent = rowFrame,
+        })
+        corner(marker, UDim.new(1, 0))
+        local cellsFrame = create("Frame", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Parent = rowFrame,
+        })
+        padding(cellsFrame, 10, 10)
+        create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            VerticalAlignment = Enum.VerticalAlignment.Center,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Parent = cellsFrame,
+        })
+        local entry = { Frame = rowFrame, Marker = marker, Cells = {}, Hover = false }
+        for order, column in ipairs(columns) do
+            local cell = create("Frame", {
+                Size = UDim2.new(column.UDim.Scale, column.UDim.Offset, 1, 0),
+                BackgroundTransparency = 1,
+                LayoutOrder = order,
+                Parent = cellsFrame,
+            })
+            local text = label({
+                Size = UDim2.new(1, -6, 1, 0),
+                TextSize = textSize,
+                FontFace = column.Rank and Fonts.Bold or Fonts.Regular,
+                TextColor3 = Theme.Text,
+                TextXAlignment = alignment(column),
+                RichText = not column.Rank,
+                Parent = cell,
+            })
+            local badge
+            if column.Rank then
+                text.Size = UDim2.fromScale(1, 1)
+                text.TextXAlignment = Enum.TextXAlignment.Center
+                badge = create("Frame", {
+                    AnchorPoint = Vector2.new(0.5, 0.5),
+                    Position = UDim2.fromScale(0.5, 0.5),
+                    Size = UDim2.fromOffset(rowHeight - 8, rowHeight - 8),
+                    BackgroundTransparency = 1,
+                    BorderSizePixel = 0,
+                    ZIndex = 0,
+                    Parent = cell,
+                })
+                corner(badge, UDim.new(1, 0))
+            end
+            entry.Cells[order] = { Label = text, Badge = badge }
+        end
+        local canTap = tapGuard(rowFrame, function()
+            return body
+        end)
+        rowFrame.MouseEnter:Connect(function()
+            entry.Hover = true
+            tween(rowFrame, { BackgroundTransparency = 0.35 }, 0.1)
+        end)
+        rowFrame.MouseLeave:Connect(function()
+            entry.Hover = false
+            tween(rowFrame, {
+                BackgroundColor3 = entry.Highlighted and Theme.Accent or Theme.Surface3,
+                BackgroundTransparency = entry.Rest or 1,
+            }, 0.2)
+        end)
+        rowFrame.MouseButton1Click:Connect(function()
+            if entry.Data and canTap() then
+                safeCall(opts.Callback, entry.Data, entry.Index)
+            end
+        end)
+        return entry
+    end
+
+    local function fitHeight(instant)
+        local count = shownCount or #handle.Rows
+        local visible = math.clamp(count, 1, maxRows)
+        local gridHeight = headerHeight + visible * rowHeight
+        local total = gridTop + gridHeight + bottom
+        if shownHeight == total then
+            return
+        end
+        local duration = (instant or shownHeight == nil) and 0 or 0.25
+        shownHeight = total
+        tween(grid, { Size = UDim2.new(1, -inset * 2, 0, gridHeight) }, duration, Enum.EasingStyle.Quint)
+        tween(frame, { Size = UDim2.new(1, 0, 0, total) }, duration, Enum.EasingStyle.Quint)
+    end
+
+    local function render()
+        local list = sortedRows()
+        for position, item in ipairs(list) do
+            local entry = pool[position]
+            if not entry then
+                entry = newRow()
+                pool[position] = entry
+            end
+            local row = item.Row
+            entry.Data = row
+            entry.Index = item.Index
+            entry.Frame.LayoutOrder = position
+            entry.Frame.Visible = true
+            local highlighted = row.Highlight == true
+            if not highlighted and type(opts.Highlight) == "function" then
+                local ok, result = pcall(opts.Highlight, row, item.Index)
+                highlighted = ok and result == true
+            end
+            entry.Highlighted = highlighted
+            entry.Rest = highlighted and 0.86 or (position % 2 == 0 and 0.78 or 1)
+            if not entry.Hover then
+                entry.Frame.BackgroundColor3 = highlighted and Theme.Accent or Theme.Surface3
+                entry.Frame.BackgroundTransparency = entry.Rest
+                bindColors(entry.Frame, { BackgroundColor3 = entry.Frame.BackgroundColor3 })
+            end
+            entry.Marker.BackgroundTransparency = highlighted and 0 or 1
+            for order, column in ipairs(columns) do
+                local cell = entry.Cells[order]
+                if column.Rank then
+                    local medal = MEDALS[item.Rank]
+                    cell.Label.Text = tostring(item.Rank)
+                    cell.Label.TextColor3 = medal and Color3.fromRGB(28, 22, 18) or Theme.Muted
+                    bindColors(cell.Label, { TextColor3 = cell.Label.TextColor3 })
+                    cell.Badge.BackgroundColor3 = medal or Theme.Surface3
+                    cell.Badge.BackgroundTransparency = medal and 0.05 or 1
+                else
+                    local value = columnValue(row, column)
+                    cell.Label.Text = Library._rich(display(value, column, row))
+                    -- Column Color: a colour, a theme key or a function(value, row)
+                    -- returning either. A row's Colors[key or index] beats it.
+                    local wanted = column.Color
+                    if type(wanted) == "function" then
+                        local ok, result = pcall(wanted, value, row)
+                        wanted = ok and result or nil
+                    end
+                    if type(row.Colors) == "table" then
+                        local own = row.Colors[column.Key or column.Index]
+                        if own == nil then
+                            own = row.Colors[column.Index]
+                        end
+                        if own ~= nil then
+                            wanted = own
+                        end
+                    end
+                    local color = Library._color(wanted) or (highlighted and Theme.Accent or Theme.Text)
+                    cell.Label.TextColor3 = color
+                    bindColors(cell.Label, { TextColor3 = color })
+                end
+            end
+        end
+        for position = #list + 1, #pool do
+            pool[position].Frame.Visible = false
+            pool[position].Data = nil
+        end
+        shownCount = #list
+        empty.Visible = #list == 0
+        empty.Text = (#list == 0 and query ~= "" and #handle.Rows > 0) and (opts.NoMatchText or "No rows match")
+            or (opts.EmptyText or "Nothing here yet")
+        if searchCount then
+            searchCount.Visible = query ~= ""
+            searchCount.Text = #list .. " / " .. #handle.Rows
+        end
+        fitHeight()
+    end
+
+    local function buildHeader()
+        for _, cell in ipairs(headerCells) do
+            cell.Frame:Destroy()
+        end
+        table.clear(headerCells)
+        for _, entry in ipairs(pool) do
+            entry.Frame:Destroy()
+        end
+        table.clear(pool)
+        local row = header:FindFirstChild("Cells") or create("Frame", {
+            Name = "Cells",
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Parent = header,
+        })
+        if not row:FindFirstChildOfClass("UIListLayout") then
+            padding(row, 10, 10)
+            create("UIListLayout", {
+                FillDirection = Enum.FillDirection.Horizontal,
+                VerticalAlignment = Enum.VerticalAlignment.Center,
+                SortOrder = Enum.SortOrder.LayoutOrder,
+                Parent = row,
+            })
+        end
+        for order, column in ipairs(columns) do
+            local cell = create("TextButton", {
+                Size = UDim2.new(column.UDim.Scale, column.UDim.Offset, 1, 0),
+                BackgroundTransparency = 1,
+                AutoButtonColor = false,
+                Text = "",
+                LayoutOrder = order,
+                Parent = row,
+            })
+            local align = column.Rank and Enum.TextXAlignment.Center or alignment(column)
+            local right = align == Enum.TextXAlignment.Right
+            local text = label({
+                Size = UDim2.new(1, align == Enum.TextXAlignment.Center and 0 or -16, 1, 0),
+                Position = UDim2.fromOffset(right and 16 or 0, 0),
+                Text = string.upper(column.Name),
+                TextSize = 11,
+                FontFace = Fonts.Bold,
+                TextColor3 = Theme.Muted,
+                TextXAlignment = align,
+                Parent = cell,
+            })
+            local arrow = create("ImageLabel", {
+                AnchorPoint = Vector2.new(0, 0.5),
+                Position = UDim2.new(0, 0, 0.5, 0),
+                Size = UDim2.fromOffset(12, 12),
+                BackgroundTransparency = 1,
+                ImageColor3 = Theme.Accent,
+                ScaleType = Enum.ScaleType.Fit,
+                Visible = false,
+                Parent = cell,
+            })
+            applyIcon(arrow, "chevron-down")
+            -- The arrow sits just after the header text (before it when the
+            -- column is right aligned).
+            local function placeArrow()
+                local width = text.TextBounds.X
+                if right then
+                    arrow.Position = UDim2.new(1, -(width + 15), 0.5, 0)
+                elseif align == Enum.TextXAlignment.Center then
+                    arrow.Position = UDim2.new(0.5, width / 2 + 3, 0.5, 0)
+                else
+                    local cellWidth = cell.AbsoluteSize.X / math.max(window.Scale.Scale, 0.01)
+                    arrow.Position = UDim2.new(0, math.clamp(width + 4, 0, math.max(cellWidth - 12, 0)), 0.5, 0)
+                end
+            end
+            text:GetPropertyChangedSignal("TextBounds"):Connect(placeArrow)
+            cell:GetPropertyChangedSignal("AbsoluteSize"):Connect(placeArrow)
+            task.defer(placeArrow)
+            local sortable = column.Sortable and not column.Rank
+            if sortable then
+                cell.MouseEnter:Connect(function()
+                    if sortKey ~= column then
+                        tween(text, { TextColor3 = Theme.Text }, 0.12)
+                    end
+                end)
+                cell.MouseLeave:Connect(function()
+                    if sortKey ~= column then
+                        tween(text, { TextColor3 = Theme.Muted }, 0.2)
+                    end
+                end)
+                cell.MouseButton1Click:Connect(function()
+                    -- Numbers sort high to low first, text A to Z; the second
+                    -- click flips it and the third goes back to the given order.
+                    if sortKey ~= column then
+                        local numeric = false
+                        for _, data in ipairs(handle.Rows) do
+                            local value = columnValue(data, column)
+                            if value ~= nil then
+                                numeric = tonumber(value) ~= nil
+                                break
+                            end
+                        end
+                        sortKey, sortDescending = column, numeric
+                        column.FirstDescending = numeric
+                    elseif sortDescending == column.FirstDescending then
+                        sortDescending = not sortDescending
+                    else
+                        sortKey = nil
+                    end
+                    paintHeader()
+                    render()
+                end)
+            end
+            table.insert(headerCells, { Frame = cell, Label = text, Arrow = arrow, Column = column })
+        end
+        paintHeader()
+    end
+
+    function handle:SetColumns(list)
+        table.clear(columns)
+        if opts.Rank then
+            table.insert(columns, { Name = "#", Rank = true, Width = TOUCH and 40 or 36, Sortable = false })
+        end
+        for index, column in ipairs(type(list) == "table" and list or {}) do
+            if type(column) ~= "table" then
+                column = { Name = tostring(column) }
+            end
+            local name = column.Name or column.Title or ("Column " .. index)
+            table.insert(columns, {
+                Name = name,
+                Key = column.Key or name,
+                Index = index,
+                Width = column.Width,
+                Align = column.Align,
+                Format = column.Format,
+                Color = column.Color,
+                Sortable = column.Sortable ~= false and opts.Sortable ~= false,
+            })
+        end
+        sortKey = nil
+        layoutColumns()
+        buildHeader()
+        render()
+    end
+
+    local function findColumn(key)
+        if type(key) == "number" then
+            return columns[key + (opts.Rank and 1 or 0)]
+        end
+        for _, column in ipairs(columns) do
+            if not column.Rank and (column.Key == key or column.Name == key) then
+                return column
+            end
+        end
+        return nil
+    end
+
+    function handle:SetRows(rows)
+        handle.Rows = {}
+        for index, row in ipairs(type(rows) == "table" and rows or {}) do
+            handle.Rows[index] = type(row) == "table" and row or { row }
+        end
+        render()
+    end
+    handle.Set = handle.SetRows
+
+    function handle:GetRows()
+        return handle.Rows
+    end
+    handle.Get = handle.GetRows
+
+    function handle:AddRow(row, position)
+        row = type(row) == "table" and row or { row }
+        if tonumber(position) then
+            table.insert(handle.Rows, math.clamp(math.floor(position), 1, #handle.Rows + 1), row)
+        else
+            table.insert(handle.Rows, row)
+        end
+        render()
+        return #handle.Rows
+    end
+
+    -- Replaces a row (by its index in the list you gave) and flashes it.
+    function handle:UpdateRow(index, row)
+        if not handle.Rows[index] then
+            return false
+        end
+        handle.Rows[index] = type(row) == "table" and row or { row }
+        render()
+        for _, entry in ipairs(pool) do
+            if entry.Index == index and entry.Frame.Visible then
+                local restColor = entry.Highlighted and Theme.Accent or Theme.Surface3
+                tween(entry.Frame, { BackgroundColor3 = Theme.Accent, BackgroundTransparency = 0.7 }, 0.08)
+                task.delay(0.1, function()
+                    if not entry.Hover then
+                        tween(entry.Frame, { BackgroundColor3 = restColor, BackgroundTransparency = entry.Rest }, 0.5)
+                    end
+                end)
+                break
+            end
+        end
+        return true
+    end
+
+    function handle:RemoveRow(index)
+        if not handle.Rows[index] then
+            return false
+        end
+        table.remove(handle.Rows, index)
+        render()
+        return true
+    end
+
+    function handle:Clear()
+        handle:SetRows({})
+    end
+
+    -- Sort(nil) goes back to the given order.
+    function handle:Sort(key, descending)
+        sortKey = key ~= nil and findColumn(key) or nil
+        sortDescending = descending == true
+        if sortKey then
+            sortKey.FirstDescending = sortDescending
+        end
+        paintHeader()
+        render()
+    end
+
+    function handle:SetTitle(text)
+        if title then
+            title.Text = tostring(text)
+        end
+    end
+
+    function handle:SetMaxRows(count)
+        maxRows = math.max(math.floor(tonumber(count) or maxRows), 1)
+        fitHeight()
+    end
+
+    handle:SetColumns(opts.Columns or {})
+    handle:SetRows(opts.Rows or {})
+    if opts.SortBy ~= nil then
+        handle:Sort(opts.SortBy, opts.SortDescending ~= false)
+    end
+    fitHeight(true)
+    if searchBox then
+        searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+            local text = string.lower(trim(searchBox.Text))
+            if text ~= query then
+                query = text
+                body.CanvasPosition = Vector2.zero
+                render()
+            end
+        end)
+    end
+    function handle:SetSearch(text)
+        if searchBox then
+            searchBox.Text = tostring(text or "")
+        end
+    end
+    -- Theme tags in cells are baked to colours; repaint them on theme change.
+    onTheme(grid, render)
+    return finishElement(self, opts, handle, frame, "Table")
+end
+
+Tab.CreateImage = Tab.Image
+Tab.AddImage = Tab.Image
+Tab.CreateViewport = Tab.Viewport
+Tab.AddViewport = Tab.Viewport
+Tab.CreateTable = Tab.Table
+Tab.AddTable = Tab.Table
+Tab.CreateLeaderboard = Tab.Table
+
+local function settleSubOut(ui)
+    if ui.OutFrame then
+        ui.OutFrame.Parent = ui.Area
+        ui.OutFrame.Visible = false
+        ui.OutFrame = nil
+    end
+    ui.Out.Visible = false
+end
+
+local function settleSubIn(ui)
+    if ui.InFrame then
+        ui.InFrame.Parent = ui.Area
+        ui.InFrame.Position = UDim2.fromOffset(0, 0)
+        ui.InFrame = nil
+    end
+    ui.In.Visible = false
+end
+
+function Tab:_setupSubTabs()
+    local top = self._headerBottom
+    local page = self._page
+    local strip = create("ScrollingFrame", {
+        Name = "SubTabs",
+        Position = UDim2.fromOffset(24, top - 4),
+        Size = UDim2.new(1, -48, 0, 32),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 0,
+        ScrollingDirection = Enum.ScrollingDirection.X,
+        AutomaticCanvasSize = Enum.AutomaticSize.X,
+        CanvasSize = UDim2.new(),
+        Parent = page,
+    })
+    strip:SetAttribute("NoDrag", true)
+    local highlight = create("Frame", {
+        Size = UDim2.fromOffset(0, 32),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.35,
+        BorderSizePixel = 0,
+        Visible = false,
+        Parent = strip,
+    })
+    corner(highlight, UDim.new(0, 8))
+    stroke(highlight, Theme.Stroke)
+    local row = create("Frame", {
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        ZIndex = 2,
+        Parent = strip,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 4),
+        Parent = row,
+    })
+    self.Window:_overflowHint(page, strip, row, false, Theme.Background)
+    local areaTop = top + 36
+    local area = create("Frame", {
+        Name = "SubPages",
+        Position = UDim2.fromOffset(0, areaTop),
+        Size = UDim2.new(1, 0, 1, -areaTop),
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        Parent = page,
+    })
+    local ui = {
+        Strip = strip,
+        Row = row,
+        Highlight = highlight,
+        Area = area,
+        Out = create("CanvasGroup", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Visible = false,
+            ZIndex = 2,
+            Parent = area,
+        }),
+        In = create("CanvasGroup", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Visible = false,
+            ZIndex = 3,
+            Parent = area,
+        }),
+        Generation = 0,
+    }
+    self._sub = ui
+    self._subTabs = {}
+    self.List.Visible = false
+    self:_refreshEmpty()
+    -- Keep the pill under the selected tab when widths change after layout.
+    row:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if self.CurrentSubTab and not ui.Moving then
+            self:_placeSubHighlight(self.CurrentSubTab, true)
+        end
+    end)
+end
+
+function Tab:_placeSubHighlight(sub, instant)
+    local ui = self._sub
+    local scale = self.Window.Scale.Scale
+    local button = sub._button
+    local width = button.AbsoluteSize.X / scale
+    if width <= 0 then
+        return
+    end
+    local x = (button.AbsolutePosition.X - ui.Row.AbsolutePosition.X) / scale
+    local props = { Position = UDim2.fromOffset(x, 0), Size = UDim2.fromOffset(width, 32) }
+    if instant or not ui.Highlight.Visible then
+        ui.Highlight.Visible = true
+        ui.Highlight.Position = props.Position
+        ui.Highlight.Size = props.Size
+    else
+        ui.Moving = true
+        tween(ui.Highlight, props, 0.35, Enum.EasingStyle.Quint)
+        task.delay(0.36, function()
+            ui.Moving = false
+        end)
+    end
+    local view = ui.Strip.AbsoluteSize.X / scale
+    local canvasX = ui.Strip.CanvasPosition.X
+    if x < canvasX then
+        tween(ui.Strip, { CanvasPosition = Vector2.new(math.max(x - 8, 0), 0) }, 0.3, Enum.EasingStyle.Quint)
+    elseif x + width > canvasX + view then
+        tween(ui.Strip, { CanvasPosition = Vector2.new(x + width - view + 8, 0) }, 0.3, Enum.EasingStyle.Quint)
+    end
+end
+
+function Tab:SubTab(opts, icon)
+    if self._groupbox or self._isSubTab then
+        return self.Parent:SubTab(opts, icon)
+    end
+    opts = normalize(opts, { Title = "Name", Description = "Desc" })
+    if icon ~= nil and opts.Icon == nil then
+        opts.Icon = icon
+    end
+    if not self._subTabs then
+        self:_setupSubTabs()
+    end
+    local ui = self._sub
+    local index = #self._subTabs + 1
+    local sub = setmetatable({
+        Name = opts.Name or ("Page " .. index),
+        Window = self.Window,
+        Parent = self,
+        _order = 0,
+        _isSubTab = true,
+        _index = index,
+        _iconName = opts.Icon,
+    }, Tab)
+    local frame = create("Frame", {
+        Name = sub.Name,
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Visible = false,
+        Parent = ui.Area,
+    })
+    sub._frame = frame
+    buildContainer(sub, frame, 0, opts.Icon or self._iconName or "layout-grid", opts.EmptyText or "Nothing here yet")
+
+    local button = create("TextButton", {
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        LayoutOrder = index,
+        Parent = ui.Row,
+    })
+    padding(button, 14, 14)
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = button,
+    })
+    if opts.Icon then
+        local image = create("ImageLabel", {
+            Size = UDim2.fromOffset(14, 14),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Muted,
+            ScaleType = Enum.ScaleType.Fit,
+            LayoutOrder = 1,
+            Parent = button,
+        })
+        applyIcon(image, opts.Icon)
+        if image:GetAttribute("CustomIcon") then
+            image.ImageTransparency = 0.4
+        end
+        sub._iconImage = image
+    end
+    sub._label = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = sub.Name,
+        TextSize = 13,
+        TextColor3 = Theme.Muted,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = button,
+    })
+    sub._button = button
+    button.MouseEnter:Connect(function()
+        if self.CurrentSubTab ~= sub then
+            tween(sub._label, { TextColor3 = Theme.Text }, 0.12)
+        end
+    end)
+    button.MouseLeave:Connect(function()
+        if self.CurrentSubTab ~= sub then
+            tween(sub._label, { TextColor3 = Theme.Muted }, 0.2)
+        end
+    end)
+    button.MouseButton1Click:Connect(function()
+        self:SelectSubTab(sub)
+    end)
+
+    table.insert(self._subTabs, sub)
+    if index == 1 then
+        self:SelectSubTab(sub, true)
+    end
+    return sub
+end
+
+Tab.CreateSubTab = Tab.SubTab
+Tab.AddSubTab = Tab.SubTab
+
+function Tab:SelectSubTab(sub, instant)
+    if type(sub) ~= "table" then
+        for index, entry in ipairs(self._subTabs or {}) do
+            if entry.Name == sub or index == sub then
+                sub = entry
+                break
+            end
+        end
+    end
+    if type(sub) ~= "table" or not self._sub then
+        return
+    end
+    local previous = self.CurrentSubTab
+    if previous == sub then
+        return
+    end
+    self.Window:_resetSearch()
+    self.Window:_closePopups()
+    self.CurrentSubTab = sub
+    local ui = self._sub
+    settleSubOut(ui)
+    settleSubIn(ui)
+    ui.Generation += 1
+    local generation = ui.Generation
+
+    local fade = instant and 0 or 0.2
+    if previous then
+        tween(previous._label, { TextColor3 = Theme.Muted }, fade)
+        if previous._iconImage then
+            tintIcon(previous._iconImage, Theme.Muted, false, fade)
+        end
+    end
+    tween(sub._label, { TextColor3 = Theme.Text }, fade)
+    if sub._iconImage then
+        tintIcon(sub._iconImage, Theme.Accent, true, fade)
+    end
+    self:_placeSubHighlight(sub, instant)
+
+    if instant or not previous then
+        if previous then
+            previous._frame.Visible = false
+        end
+        sub._frame.Visible = true
+        return
+    end
+
+    local direction = sub._index > previous._index and 1 or -1
+    ui.OutFrame = previous._frame
+    previous._frame.Parent = ui.Out
+    ui.Out.GroupTransparency = 0
+    ui.Out.Position = UDim2.fromOffset(0, 0)
+    ui.Out.Visible = true
+    tween(ui.Out, { GroupTransparency = 1, Position = UDim2.fromOffset(-direction * 28, 0) }, 0.2)
+
+    ui.InFrame = sub._frame
+    sub._frame.Visible = true
+    sub._frame.Parent = ui.In
+    ui.In.GroupTransparency = 1
+    ui.In.Position = UDim2.fromOffset(direction * 28, 0)
+    ui.In.Visible = true
+    tween(ui.In, { GroupTransparency = 0, Position = UDim2.fromOffset(0, 0) }, 0.34, Enum.EasingStyle.Quint)
+
+    task.delay(0.2, function()
+        if ui.Generation == generation then
+            settleSubOut(ui)
+        end
+    end)
+    task.delay(0.34, function()
+        if ui.Generation == generation then
+            settleSubIn(ui)
+        end
+    end)
+end
+
+-- Search: one box over the whole window. Typing lists matching tabs, pages,
+-- groupboxes and controls from every tab; picking one opens its tab and page,
+-- scrolls it into view and flashes it.
+
+Window._searchIcons = {
+    Tab = "app-window",
+    Page = "panels-top-left",
+    Groupbox = "layout-grid",
+    Button = "mouse-pointer-click",
+    ButtonRow = "mouse-pointer-click",
+    Toggle = "toggle-right",
+    Slider = "sliders-horizontal",
+    Dropdown = "list",
+    Input = "text-cursor-input",
+    Keybind = "keyboard",
+    ColorPicker = "palette",
+    Stepper = "chevrons-up-down",
+    Progress = "activity",
+    Status = "activity",
+    StatusList = "activity",
+    Label = "type",
+    Paragraph = "type",
+    OrderList = "list-ordered",
+}
+
+function Window:_searchResults(query)
+    local results = {}
+    local function consider(name, entry)
+        if type(name) ~= "string" or name == "" then
+            return
+        end
+        local at = string.find(string.lower(name), query, 1, true)
+        if not at then
+            return
+        end
+        entry.Name = name
+        entry.At = at
+        -- Name starts first, then word starts, then anywhere inside a word.
+        entry.Rank = at == 1 and 0 or (string.find(string.sub(name, at - 1, at - 1), "[%s%p]") and 1 or 2)
+        entry.Order = #results + 1
+        table.insert(results, entry)
+    end
+    local function shown(element)
+        return not element._destroyed
+            and element._type ~= "Section" and element._type ~= "Divider"
+            and (element._isShown == nil or element:_isShown())
+    end
+    for _, tab in ipairs(self.Tabs) do
+        consider(tab.Name, { Kind = "Tab", Tab = tab, Icon = tab._iconName })
+        for _, page in ipairs(tab._subTabs or { tab }) do
+            local sub = page._isSubTab and page or nil
+            local path = tab.Name
+            if sub then
+                consider(sub.Name, { Kind = "Page", Tab = tab, Sub = sub, Path = tab.Name })
+                path = tab.Name .. "  âº  " .. sub.Name
+            end
+            if not page._noSearch then
+                for _, element in ipairs(page._items or {}) do
+                    if shown(element) then
+                        consider(element._searchName, { Kind = element._type, Tab = tab, Sub = sub, Target = element, Path = path })
+                    end
+                end
+                for _, group in ipairs(page._groupboxes or {}) do
+                    if group._userVisible ~= false then
+                        consider(group.Name, { Kind = "Groupbox", Tab = tab, Sub = sub, Target = group, Path = path })
+                        local groupPath = path .. "  âº  " .. group.Name
+                        for _, element in ipairs(group._items) do
+                            if shown(element) then
+                                consider(element._searchName, { Kind = element._type, Tab = tab, Sub = sub, Target = element, Group = group, Path = groupPath })
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    table.sort(results, function(a, b)
+        if a.Rank ~= b.Rank then
+            return a.Rank < b.Rank
+        end
+        return a.Order < b.Order
+    end)
+    return results
+end
+
+-- Marks a found control: it pops, a soft accent glow blooms around it, a
+-- sheen of light sweeps across it and a bright spot runs round its border,
+-- then everything breathes once more and fades.
+function Window:_flash(frame, radius)
+    for _, name in ipairs({ "SearchFlash", "SearchGlow" }) do
+        local old = frame:FindFirstChild(name)
+        if old then
+            old:Destroy()
+        end
+    end
+    radius = radius or 8
+    local accent = Theme.Accent
+    local bright = accent:Lerp(Color3.new(1, 1, 1), 0.65)
+
+    -- Outer glow: a wide, faint stroke around a second outline.
+    local halo = create("Frame", {
+        Name = "SearchGlow",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ZIndex = 10,
+        Parent = frame,
+    })
+    corner(halo, UDim.new(0, radius))
+    local haloStroke = create("UIStroke", {
+        Color = accent,
+        Thickness = 1,
+        Transparency = 1,
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+        Parent = halo,
+    })
+
+    -- Wash with a moving sheen: a brighter diagonal band crosses it once.
+    local wash = create("Frame", {
+        Name = "SearchFlash",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = accent,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 10,
+        Parent = frame,
+    })
+    corner(wash, UDim.new(0, radius))
+    local sheen = create("UIGradient", {
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.7),
+            NumberSequenceKeypoint.new(0.4, 0.55),
+            NumberSequenceKeypoint.new(0.5, 0),
+            NumberSequenceKeypoint.new(0.6, 0.55),
+            NumberSequenceKeypoint.new(1, 0.7),
+        }),
+        Rotation = 18,
+        Offset = Vector2.new(-1, 0),
+        Parent = wash,
+    })
+
+    -- Border light: the ring's gradient turns, so a bright spot runs round it.
+    local ring = create("UIStroke", {
+        Color = Color3.new(1, 1, 1),
+        Thickness = 1.6,
+        Transparency = 1,
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+        Parent = wash,
+    })
+    local runner = create("UIGradient", {
+        Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, accent),
+            ColorSequenceKeypoint.new(0.5, bright),
+            ColorSequenceKeypoint.new(1, accent),
+        }),
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.45),
+            NumberSequenceKeypoint.new(0.5, 0),
+            NumberSequenceKeypoint.new(1, 0.45),
+        }),
+        Parent = ring,
+    })
+
+    -- Groupboxes clip their rows, so anything drawn outside a control is cut
+    -- off at its corners. The strokes go on the inside of the control where
+    -- the engine supports it; otherwise everything is inset by its width.
+    local inside = pcall(function()
+        haloStroke.BorderStrokePosition = Enum.BorderStrokePosition.Inner
+        ring.BorderStrokePosition = Enum.BorderStrokePosition.Inner
+    end)
+    local glowWidth = inside and 6 or 3
+    if not inside then
+        halo.Position = UDim2.fromOffset(glowWidth + 1, glowWidth + 1)
+        halo.Size = UDim2.new(1, -(glowWidth + 1) * 2, 1, -(glowWidth + 1) * 2)
+        wash.Position = UDim2.fromOffset(2, 2)
+        wash.Size = UDim2.new(1, -4, 1, -4)
+    end
+
+    -- A small pop, unless something else is scaling the control already. It
+    -- never grows past full size, which would be clipped as well.
+    local pop
+    if not frame:FindFirstChildOfClass("UIScale") then
+        pop = create("UIScale", { Scale = 0.975, Parent = frame })
+        tween(pop, { Scale = 1 }, 0.4, Enum.EasingStyle.Quint)
+    end
+
+    tween(wash, { BackgroundTransparency = 0.8 }, 0.2, Enum.EasingStyle.Quad)
+    tween(ring, { Transparency = 0 }, 0.2, Enum.EasingStyle.Quad)
+    tween(haloStroke, { Thickness = glowWidth, Transparency = 0.72 }, 0.35, Enum.EasingStyle.Quint)
+    tween(sheen, { Offset = Vector2.new(1, 0) }, 0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+    tween(runner, { Rotation = 540 }, 2.2, Enum.EasingStyle.Quad)
+    task.spawn(function()
+        task.wait(0.75)
+        -- One softer breath, then fade out.
+        tween(wash, { BackgroundTransparency = 0.9 }, 0.35, Enum.EasingStyle.Sine)
+        tween(haloStroke, { Thickness = glowWidth / 2, Transparency = 0.85 }, 0.35, Enum.EasingStyle.Sine)
+        task.wait(0.35)
+        tween(wash, { BackgroundTransparency = 0.84 }, 0.3, Enum.EasingStyle.Sine)
+        tween(haloStroke, { Thickness = glowWidth * 0.85, Transparency = 0.76 }, 0.3, Enum.EasingStyle.Sine)
+        task.wait(0.4)
+        tween(wash, { BackgroundTransparency = 1 }, 0.55, Enum.EasingStyle.Quad)
+        tween(ring, { Transparency = 1 }, 0.65, Enum.EasingStyle.Quad)
+        tween(haloStroke, { Thickness = glowWidth, Transparency = 1 }, 0.65, Enum.EasingStyle.Quad)
+        task.wait(0.7)
+        wash:Destroy()
+        halo:Destroy()
+        if pop then
+            pop:Destroy()
+        end
+    end)
+end
+
+function Window:_revealResult(result)
+    local tab, sub, target, group = result.Tab, result.Sub, result.Target, result.Group
+    if self.CurrentTab ~= tab then
+        self:SelectTab(tab)
+    end
+    if sub then
+        tab:SelectSubTab(sub)
+    end
+    if not target then
+        local button = sub and sub._button or tab._button
+        task.delay(0.1, function()
+            if button.Parent then
+                self:_flash(button, sub and 8 or 10)
+            end
+        end)
+        return
+    end
+    local expanding = group ~= nil and group:IsCollapsed()
+    if expanding then
+        group:Expand()
+    end
+    local list = (sub or tab).List
+    task.spawn(function()
+        -- Let the freshly shown page lay out before measuring it.
+        task.wait()
+        task.wait()
+        if expanding then
+            task.wait(0.3)
+        end
+        local frame = target._frame
+        if self._destroyed or target._destroyed or not frame or not frame.Parent or not list then
+            return
+        end
+        local scale = self.Scale.Scale
+        local top = (frame.AbsolutePosition.Y - list.AbsolutePosition.Y) / scale + list.CanvasPosition.Y
+        local height = frame.AbsoluteSize.Y / scale
+        local view = list.AbsoluteWindowSize.Y / scale
+        local limit = math.max(list.AbsoluteCanvasSize.Y / scale - view, 0)
+        local y = math.clamp(top + height / 2 - view / 2, 0, limit)
+        if math.abs(y - list.CanvasPosition.Y) > 2 then
+            tween(list, { CanvasPosition = Vector2.new(0, y) }, 0.45, Enum.EasingStyle.Quint)
+            task.wait(0.25)
+        end
+        if frame.Parent then
+            self:_flash(frame, target._groupbox and 10 or 8)
+        end
+    end)
+end
+
+function Window:_resetSearch()
+    if self.SearchBox and self.SearchBox.Text ~= "" then
+        self.SearchBox.Text = ""
+    end
+end
+
+-- Page titles stop short of the search box and close button.
+function Window:_fitTitle(tab)
+    local right = self.SearchBox and (self._searchWidth or SEARCH_WIDTH) + 72 or 56
+    local reserve = tab._titleX + right
+    tab._title.Size = UDim2.new(1, -reserve, 0, 24)
+    if tab._desc then
+        tab._desc.Size = UDim2.new(1, -reserve, 0, 16)
+    end
+end
+
+function Window:_buildSearch(content)
+    -- No box: the icon and text sit on a thin baseline. Focus draws an
+    -- accent line out from the middle of it.
+    local holder = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -56, 0, 14),
+        Size = UDim2.fromOffset(SEARCH_WIDTH, 34),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 5,
+        Parent = content,
+    })
+    holder:SetAttribute("NoDrag", true)
+    local baseline = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.new(0, 0, 1, -2),
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = holder,
+    })
+    local focusLine = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 1),
+        Position = UDim2.new(0.5, 0, 1, -1),
+        Size = UDim2.new(0, 0, 0, 2),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        ZIndex = 2,
+        Parent = holder,
+    })
+    corner(focusLine, UDim.new(1, 0))
+    -- Kept for the focus handlers below, which recolour it.
+    local _, icon = glowIcon(holder, "search", Theme.Muted, UDim2.new(0, 2, 0.5, -1))
+    icon.Parent.Size = UDim2.fromOffset(15, 15)
+    local box = create("TextBox", {
+        Position = UDim2.fromOffset(26, 0),
+        Size = UDim2.new(1, -28, 1, -2),
+        BackgroundTransparency = 1,
+        Text = "",
+        PlaceholderText = "Search",
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        ClearTextOnFocus = false,
+        Parent = holder,
+    })
+    holder.MouseEnter:Connect(function()
+        if not box:IsFocused() then
+            tween(baseline, { BackgroundColor3 = Theme.StrokeHover }, 0.15)
+        end
+    end)
+    holder.MouseLeave:Connect(function()
+        tween(baseline, { BackgroundColor3 = Theme.Stroke }, 0.25)
+    end)
+    self.SearchBox = box
+
+    -- Results float over the window under the box, like a dropdown popup.
+    local rowHeight = TOUCH and 40 or 34
+    local maxRows = 8
+    local popup = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0),
+        Size = UDim2.fromOffset(300, 0),
+        BackgroundTransparency = 1,
+        Visible = false,
+        ZIndex = 45,
+        Parent = self.Body,
+    })
+    popup:SetAttribute("NoDrag", true)
+    local popupShadow = create("ImageLabel", {
+        Position = UDim2.fromOffset(-18, -12),
+        Size = UDim2.new(1, 36, 1, 36),
+        BackgroundTransparency = 1,
+        Image = Assets.Shadow,
+        ImageColor3 = Color3.new(0, 0, 0),
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Slice,
+        SliceCenter = Rect.new(49, 49, 450, 450),
+        Parent = popup,
+    })
+    local panel = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Parent = popup,
+    })
+    corner(panel, UDim.new(0, 10))
+    local panelStroke = stroke(panel, Theme.Stroke, 1)
+    edgeHighlight(panel)
+    local list = create("ScrollingFrame", {
+        Position = UDim2.fromOffset(6, 6),
+        Size = UDim2.new(1, -12, 1, -12),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = TOUCH and 4 or 3,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        CanvasSize = UDim2.new(),
+        Parent = panel,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = list,
+    })
+    local noResults = label({
+        Size = UDim2.new(1, 0, 0, rowHeight),
+        Text = "No results",
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        LayoutOrder = 0,
+        Visible = false,
+        Parent = list,
+    })
+
+    local rows = {}
+    local results = {}
+    local selected = 1
+    local open = false
+    local generation = 0
+    local shownSize = Vector2.new(300, 0)
+    local stopFollowing = nil
+    local closeResults
+
+    local function place()
+        local scale = self.Scale.Scale
+        local bodyPosition = self.Body.AbsolutePosition
+        local bodyWidth = self.Body.AbsoluteSize.X / scale
+        local right = (holder.AbsolutePosition.X + holder.AbsoluteSize.X - bodyPosition.X) / scale
+        local top = (holder.AbsolutePosition.Y + holder.AbsoluteSize.Y - bodyPosition.Y) / scale + 6
+        right = math.clamp(right, shownSize.X + 8, math.max(bodyWidth - 8, shownSize.X + 8))
+        popup.Position = UDim2.fromOffset(right, top)
+    end
+
+    local function measure()
+        local scale = self.Scale.Scale
+        local bodySize = self.Body.AbsoluteSize / scale
+        local below = (holder.AbsolutePosition.Y + holder.AbsoluteSize.Y - self.Body.AbsolutePosition.Y) / scale + 6
+        local count = math.max(#rows, 1)
+        local height = math.min(count, maxRows) * (rowHeight + 2) - 2 + 12
+        height = math.max(math.min(height, bodySize.Y - below - 12), rowHeight + 12)
+        local width = math.min(math.max(holder.AbsoluteSize.X / scale, 300), math.max(bodySize.X - 16, 160))
+        shownSize = Vector2.new(width, height)
+    end
+
+    local function paintSelection()
+        for index, row in ipairs(rows) do
+            local on = index == selected
+            tween(row.Button, { BackgroundTransparency = on and 0.35 or 1 }, 0.12)
+            tintIcon(row.Icon, on and Theme.Accent or Theme.Muted, on, 0.12)
+        end
+    end
+
+    local function keepSelectionInView()
+        local rowTop = (selected - 1) * (rowHeight + 2)
+        local view = list.AbsoluteWindowSize.Y / self.Scale.Scale
+        local y = list.CanvasPosition.Y
+        if rowTop < y then
+            y = rowTop
+        elseif rowTop + rowHeight > y + view then
+            y = rowTop + rowHeight - view
+        else
+            return
+        end
+        list.CanvasPosition = Vector2.new(0, math.max(y, 0))
+    end
+
+    local function setOpen(value)
+        if value == open then
+            return
+        end
+        open = value
+        generation += 1
+        local current = generation
+        if value then
+            if self._closePopup and self._closePopup ~= closeResults then
+                self._closePopup()
+            end
+            self._closePopup = closeResults
+            place()
+            popup.Size = UDim2.fromOffset(shownSize.X, 0)
+            popup.Visible = true
+            tween(popup, { Size = UDim2.fromOffset(shownSize.X, shownSize.Y) }, 0.26, Enum.EasingStyle.Quint)
+            tween(panelStroke, { Transparency = 0 }, 0.12)
+            tween(popupShadow, { ImageTransparency = 0.55 }, 0.26)
+            if not stopFollowing then
+                stopFollowing = self:_listen("Render", place)
+            end
+        else
+            if self._closePopup == closeResults then
+                self._closePopup = nil
+            end
+            tween(popup, { Size = UDim2.fromOffset(shownSize.X, 0) }, 0.18, Enum.EasingStyle.Quint)
+            tween(popupShadow, { ImageTransparency = 1 }, 0.14)
+            task.delay(0.19, function()
+                if generation == current and not open then
+                    popup.Visible = false
+                    panelStroke.Transparency = 1
+                    if stopFollowing then
+                        stopFollowing()
+                        stopFollowing = nil
+                    end
+                end
+            end)
+        end
+    end
+    closeResults = function()
+        setOpen(false)
+    end
+
+    local function choose(result)
+        if not result then
+            return
+        end
+        setOpen(false)
+        box.Text = ""
+        if box:IsFocused() then
+            box:ReleaseFocus()
+        end
+        self:_revealResult(result)
+    end
+
+    local function escape(text)
+        return (string.gsub(string.gsub(string.gsub(text, "&", "&amp;"), "<", "&lt;"), ">", "&gt;"))
+    end
+
+    local function render(query)
+        for _, row in ipairs(rows) do
+            row.Button:Destroy()
+        end
+        table.clear(rows)
+        results = self:_searchResults(query)
+        selected = 1
+        local accent = colorToHex(Theme.Accent)
+        for index, result in ipairs(results) do
+            if index > 50 then
+                break
+            end
+            local button = create("TextButton", {
+                Size = UDim2.new(1, 0, 0, rowHeight),
+                BackgroundColor3 = Theme.Surface3,
+                BackgroundTransparency = 1,
+                Text = "",
+                AutoButtonColor = false,
+                LayoutOrder = index,
+                Parent = list,
+            })
+            corner(button, UDim.new(0, 7))
+            -- One line of breadcrumbs: tab, sub tab and groupbox in muted
+            -- text, each split by a chevron, ending on the match in accent.
+            local crumbs = create("Frame", {
+                Position = UDim2.fromOffset(10, 0),
+                Size = UDim2.new(1, -20, 1, 0),
+                BackgroundTransparency = 1,
+                ClipsDescendants = true,
+                Parent = button,
+            })
+            create("UIListLayout", {
+                FillDirection = Enum.FillDirection.Horizontal,
+                VerticalAlignment = Enum.VerticalAlignment.Center,
+                SortOrder = Enum.SortOrder.LayoutOrder,
+                Padding = UDim.new(0, 5),
+                Parent = crumbs,
+            })
+            local part = 0
+            local firstIcon = nil
+            local function crumbIcon(icon)
+                if not icon then
+                    return
+                end
+                part += 1
+                local image = create("ImageLabel", {
+                    Size = UDim2.fromOffset(14, 14),
+                    BackgroundTransparency = 1,
+                    ImageColor3 = Theme.Muted,
+                    ScaleType = Enum.ScaleType.Fit,
+                    LayoutOrder = part,
+                    Parent = crumbs,
+                })
+                applyIcon(image, icon)
+                firstIcon = firstIcon or image
+            end
+            local function crumbText(text, color, rich)
+                part += 1
+                return label({
+                    Size = UDim2.new(0, 0, 1, 0),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    Text = text,
+                    RichText = rich == true,
+                    TextSize = 13,
+                    FontFace = color and Fonts.Medium or Fonts.Regular,
+                    TextColor3 = color or Theme.Muted,
+                    TextTruncate = Enum.TextTruncate.None,
+                    LayoutOrder = part,
+                    Parent = crumbs,
+                })
+            end
+            local function chevron()
+                crumbText(">")
+            end
+            local tab, sub, group = result.Tab, result.Sub, result.Group
+            local onTab = result.Kind == "Tab"
+            local onSub = result.Kind == "Page"
+            local onGroup = result.Kind == "Groupbox"
+            crumbIcon(tab._iconName or "layout-grid")
+            if not onTab then
+                crumbText(tab.Name)
+                if sub then
+                    chevron()
+                    crumbIcon(sub._iconName or "layers")
+                    if not onSub then
+                        crumbText(sub.Name)
+                    end
+                end
+                if group and not onGroup then
+                    chevron()
+                    crumbText(group.Name)
+                end
+                if not onSub then
+                    chevron()
+                end
+            end
+            -- The match itself: accent, with the typed part in bold.
+            local name = result.Name
+            local stop = result.At + #query
+            local marked = escape(string.sub(name, 1, result.At - 1))
+                .. "<b>" .. escape(string.sub(name, result.At, stop - 1)) .. "</b>"
+                .. escape(string.sub(name, stop))
+            crumbText(marked, Theme.Accent, true)
+            local image = firstIcon
+            local isTap = tapGuard(button, function()
+                return list
+            end)
+            button.MouseEnter:Connect(function()
+                if not usingTouch() then
+                    selected = index
+                    paintSelection()
+                end
+            end)
+            button.MouseButton1Click:Connect(function()
+                if isTap() then
+                    choose(result)
+                end
+            end)
+            table.insert(rows, { Button = button, Icon = image })
+        end
+        noResults.Visible = #rows == 0
+        list.CanvasSize = UDim2.fromOffset(0, math.max(#rows, 1) * (rowHeight + 2) - 2)
+        list.CanvasPosition = Vector2.zero
+        paintSelection()
+        measure()
+        if open then
+            place()
+            tween(popup, { Size = UDim2.fromOffset(shownSize.X, shownSize.Y) }, 0.2, Enum.EasingStyle.Quint)
+        end
+    end
+
+    local function update()
+        local query = string.match(string.lower(box.Text), "^%s*(.-)%s*$")
+        if query == "" then
+            setOpen(false)
+            return
+        end
+        render(query)
+        setOpen(true)
+    end
+
+    box.Focused:Connect(function()
+        tween(focusLine, { Size = UDim2.new(1, 0, 0, 2) }, 0.35, Enum.EasingStyle.Quint)
+        tween(icon, { ImageColor3 = Theme.Accent }, 0.15)
+        if box.Text ~= "" then
+            update()
+        end
+    end)
+    box.FocusLost:Connect(function(enterPressed)
+        tween(focusLine, { Size = UDim2.new(0, 0, 0, 2) }, 0.3, Enum.EasingStyle.Quint)
+        tween(icon, { ImageColor3 = Theme.Muted }, 0.2)
+        if enterPressed and open then
+            choose(results[selected])
+        end
+    end)
+    box:GetPropertyChangedSignal("Text"):Connect(update)
+    self:_listen("Began", function(input)
+        if not open then
+            return
+        end
+        if input.KeyCode == Enum.KeyCode.Up or input.KeyCode == Enum.KeyCode.Down then
+            if #rows > 0 then
+                local step = input.KeyCode == Enum.KeyCode.Up and -1 or 1
+                selected = math.clamp(selected + step, 1, #rows)
+                paintSelection()
+                keepSelectionInView()
+            end
+        elseif input.KeyCode == Enum.KeyCode.Escape then
+            setOpen(false)
+        elseif isPress(input) then
+            local point = pointerPosition()
+            if not pointInside(point, popup) and not pointInside(point, holder) then
+                setOpen(false)
+            end
+        end
+    end)
+
+    local function fit()
+        local width = content.AbsoluteSize.X / self.Scale.Scale
+        local searchWidth = math.clamp(math.floor(width * 0.32), 110, SEARCH_WIDTH)
+        holder.Size = UDim2.fromOffset(searchWidth, 34)
+        if searchWidth ~= self._searchWidth then
+            self._searchWidth = searchWidth
+            for _, tab in ipairs(self.Tabs) do
+                self:_fitTitle(tab)
+            end
+        end
+    end
+    content:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+    task.defer(fit)
+end
+
+-- Identity: the player's name and headshot shown in the sidebar and on the
+-- home tab. The privacy switches hide them everywhere at once.
+
+function Window:_trackName(textLabel, kind)
+    table.insert(self._identity.Names, { Label = textLabel, Kind = kind })
+    self:_renderIdentity()
+end
+
+function Window:_trackAvatar(image, placeholder)
+    table.insert(self._identity.Avatars, { Image = image, Placeholder = placeholder })
+    self:_renderIdentity(true)
+end
+
+function Window:_renderIdentity(instant)
+    for _, entry in ipairs(self._identity.Names) do
+        if entry.Kind == "User" then
+            entry.Label.Text = self._hideName and "@hidden" or ("@" .. LocalPlayer.Name)
+        else
+            entry.Label.Text = self._hideName and "Hidden" or LocalPlayer.DisplayName
+        end
+    end
+    local duration = instant and 0 or 0.2
+    for _, entry in ipairs(self._identity.Avatars) do
+        tween(entry.Image, { ImageTransparency = self._hideAvatar and 1 or 0 }, duration)
+        tween(entry.Placeholder, { ImageTransparency = self._hideAvatar and 0.2 or 1 }, duration)
+    end
+end
+
+function Window:SetHideName(hidden)
+    self._hideName = hidden == true
+    self:_renderIdentity()
+end
+
+function Window:SetHideAvatar(hidden)
+    self._hideAvatar = hidden == true
+    self:_renderIdentity()
+end
+
+local function avatar(window, parent, props, ringColor, ringTransparency, ringThickness)
+    local holder = create("Frame", {
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = parent,
+    })
+    for key, value in pairs(props) do
+        holder[key] = value
+    end
+    corner(holder, UDim.new(1, 0))
+    stroke(holder, ringColor or Theme.Stroke, ringTransparency or 0, ringThickness or 1)
+    local image = create("ImageLabel", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Image = "rbxthumb://type=AvatarHeadShot&id=" .. tostring(LocalPlayer.UserId) .. "&w=150&h=150",
+        Parent = holder,
+    })
+    corner(image, UDim.new(1, 0))
+    local placeholder = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromScale(0.45, 0.45),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = holder,
+    })
+    applyIcon(placeholder, "user")
+    window:_trackAvatar(image, placeholder)
+    return holder
+end
+
+function Window:_buildProfile(sidebar)
+    create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 1),
+        Position = UDim2.new(0.5, 0, 1, -PROFILE_HEIGHT),
+        Size = UDim2.new(1, -20, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = sidebar,
+    })
+    local card = create("TextButton", {
+        AnchorPoint = Vector2.new(0.5, 1),
+        Position = UDim2.new(0.5, 0, 1, -8),
+        Size = UDim2.new(1, -16, 0, PROFILE_HEIGHT - 16),
+        BackgroundColor3 = Theme.Surface2,
+        BackgroundTransparency = 0,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = sidebar,
+    })
+    corner(card, UDim.new(0, 8))
+    local cardStroke = stroke(card, Theme.Stroke, 0)
+    local head = avatar(self, card, {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 8, 0.5, 0),
+        Size = UDim2.fromOffset(32, 32),
+    })
+    local online = create("Frame", {
+        AnchorPoint = Vector2.new(1, 1),
+        Position = UDim2.new(1, 1, 1, 1),
+        Size = UDim2.fromOffset(9, 9),
+        BackgroundColor3 = Theme.Success,
+        BorderSizePixel = 0,
+        ZIndex = 2,
+        Parent = head,
+    })
+    corner(online, UDim.new(1, 0))
+    stroke(online, Theme.Surface2, 0, 2)
+    local name = label({
+        Position = UDim2.new(0, 48, 0.5, -15),
+        Size = UDim2.new(1, -74, 0, 15),
+        TextSize = 12,
+        FontFace = Fonts.Bold,
+        Parent = card,
+    })
+    self:_trackName(name, "Display")
+    local gameLabel = label({
+        Position = UDim2.new(0, 48, 0.5, 1),
+        Size = UDim2.new(1, -74, 0, 13),
+        Text = "â¦",
+        TextSize = 11,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = card,
+    })
+    local chevron = create("ImageLabel", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -8, 0.5, 0),
+        Size = UDim2.fromOffset(14, 14),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = card,
+    })
+    applyIcon(chevron, "chevron-right")
+    task.spawn(function()
+        gameLabel.Text = detectGameName()
+    end)
+    card.MouseEnter:Connect(function()
+        if usingTouch() then
+            return
+        end
+        tween(cardStroke, { Color = Theme.StrokeHover }, 0.12)
+        tween(chevron, { ImageColor3 = Theme.Text, Position = UDim2.new(1, -6, 0.5, 0) }, 0.15)
+    end)
+    card.MouseLeave:Connect(function()
+        tween(cardStroke, { Color = Theme.Stroke }, 0.2)
+        tween(chevron, { ImageColor3 = Theme.Muted, Position = UDim2.new(1, -8, 0.5, 0) }, 0.2)
+    end)
+    card.MouseButton1Click:Connect(function()
+        if self.Home then
+            self:SelectTab(self.Home)
+        end
+    end)
+    self.Profile = card
+end
+
+-- Server actions
+
+function Window:Rejoin()
+    self:Notify({ Title = "Rejoining", Content = "Teleporting back into this server", Icon = "refresh-cw", Duration = 3 })
+    task.spawn(function()
+        local ok, err = pcall(function()
+            if #Players:GetPlayers() <= 1 or game.JobId == "" then
+                TeleportService:Teleport(game.PlaceId, LocalPlayer)
+            else
+                TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
+            end
+        end)
+        if not ok then
+            self:Notify({ Title = "Rejoin failed", Content = tostring(err), Type = "Error", Duration = 4 })
+        end
+    end)
+end
+
+local function hopServers(window, order, pick, title)
+    task.spawn(function()
+        local servers = fetchServers(order)
+        if not servers then
+            window:Notify({ Title = title .. " failed", Content = "Could not load the server list", Type = "Error", Duration = 4 })
+            return
+        end
+        local candidates = {}
+        for _, server in ipairs(servers) do
+            if type(server) == "table" and server.id ~= game.JobId then
+                local playing, capacity = tonumber(server.playing), tonumber(server.maxPlayers)
+                if playing and capacity and playing < capacity then
+                    table.insert(candidates, server)
+                end
+            end
+        end
+        local target = #candidates > 0 and pick(candidates) or nil
+        if not target then
+            window:Notify({ Title = title .. " failed", Content = "No other open server found", Type = "Warning", Duration = 4 })
+            return
+        end
+        window:Notify({
+            Title = title,
+            Content = string.format("Joining a server with %d/%d players", target.playing, target.maxPlayers),
+            Icon = "server",
+            Duration = 3,
+        })
+        local ok, err = pcall(function()
+            TeleportService:TeleportToPlaceInstance(game.PlaceId, target.id, LocalPlayer)
+        end)
+        if not ok then
+            window:Notify({ Title = title .. " failed", Content = tostring(err), Type = "Error", Duration = 4 })
+        end
+    end)
+end
+
+function Window:ServerHop()
+    hopServers(self, "Desc", function(list)
+        return list[math.random(1, #list)]
+    end, "Server hop")
+end
+
+function Window:JoinLowestServer()
+    hopServers(self, "Asc", function(list)
+        table.sort(list, function(a, b)
+            return a.playing < b.playing
+        end)
+        return list[1]
+    end, "Lowest server")
+end
+
+function Window:CopyToClipboard(text, what)
+    local ok = copyToClipboard(text)
+    self:Notify({
+        Title = ok and "Copied" or "Clipboard unavailable",
+        Content = ok and (what or tostring(text)) or "Your executor has no setclipboard",
+        Type = ok and "Success" or "Error",
+        Icon = ok and "clipboard-check" or nil,
+        Duration = 2.5,
+    })
+    return ok
+end
+
+-- Home
+
+-- Home reads top to bottom: a banner greeting the player, a performance card
+-- with live graphs, the server and links side by side, and a status line.
+
+-- A Home card that grows with its stacked contents.
+function Window:_homeCard(parent, order)
+    local card = panelCard(parent, 0, order)
+    card.AutomaticSize = Enum.AutomaticSize.Y
+    padding(card, 16, 16, 14, 14)
+    create("UIListLayout", { SortOrder = Enum.SortOrder.LayoutOrder, Parent = card })
+    return card
+end
+
+-- A small caps heading at the top of a Home card.
+function Window:_homeCaption(parent, text, order)
+    return label({
+        Size = UDim2.new(1, 0, 0, 22),
+        Text = string.upper(text),
+        TextSize = 10,
+        TextColor3 = Theme.Muted,
+        TextYAlignment = Enum.TextYAlignment.Top,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+end
+
+-- A rounded chip of an icon and short text. Returns the chip, its label and
+-- its icon so callers can recolour them.
+function Window:_homeChip(parent, order, icon, text, color)
+    local chip = create("TextButton", {
+        Size = UDim2.fromOffset(0, 24),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.2,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    corner(chip, UDim.new(0, 6))
+    local chipStroke = stroke(chip)
+    padding(chip, 8, 9)
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = chip,
+    })
+    local image = create("ImageLabel", {
+        Size = UDim2.fromOffset(12, 12),
+        BackgroundTransparency = 1,
+        ImageColor3 = color or Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        LayoutOrder = 1,
+        Parent = chip,
+    })
+    applyIcon(image, icon)
+    local text_ = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = text,
+        TextSize = 12,
+        TextColor3 = color or Theme.Muted,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = chip,
+    })
+    return chip, text_, image, chipStroke
+end
+
+-- A chip that flips on press: on, it takes the accent; off, it sits muted.
+function Window:_homeToggleChip(parent, order, icon, text, initial, callback)
+    local chip, text_, image, chipStroke = self:_homeChip(parent, order, icon, text)
+    local on = initial == true
+    local function paint(duration)
+        tween(chip, { BackgroundColor3 = on and Theme.Accent or Theme.Surface3, BackgroundTransparency = on and 0.85 or 0.2 }, duration)
+        tween(chipStroke, { Color = on and Theme.Accent or Theme.Stroke, Transparency = on and 0.6 or 0 }, duration)
+        tween(text_, { TextColor3 = on and Theme.Accent or Theme.Muted }, duration)
+        tween(image, { ImageColor3 = on and Theme.Accent or Theme.Muted }, duration)
+    end
+    paint(0)
+    chip.MouseButton1Click:Connect(function()
+        on = not on
+        paint(0.2)
+        safeCall(callback, on)
+    end)
+    return chip
+end
+
+function Window:_homeProfile(list, opts, order)
+    local banner = panelCard(list, 140, order)
+    banner.ClipsDescendants = true
+
+    -- The avatar bust stands on the banner's right edge and fades in from
+    -- the left, so it reads as part of the card rather than a framed photo.
+    local bust = create("ImageLabel", {
+        AnchorPoint = Vector2.new(1, 1),
+        Position = UDim2.new(1, -16, 1, 0),
+        Size = UDim2.fromOffset(140, 140),
+        BackgroundTransparency = 1,
+        Image = "rbxthumb://type=AvatarBust&id=" .. tostring(LocalPlayer.UserId) .. "&w=420&h=420",
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = banner,
+    })
+    create("UIGradient", {
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1),
+            NumberSequenceKeypoint.new(0.45, 0),
+            NumberSequenceKeypoint.new(1, 0),
+        }),
+        Parent = bust,
+    })
+    local bustPlaceholder = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.6, 0.55),
+        Size = UDim2.fromOffset(40, 40),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = bust,
+    })
+    applyIcon(bustPlaceholder, "user")
+    self:_trackAvatar(bust, bustPlaceholder)
+
+    local textWidth = UDim2.new(1, -190, 0, 0)
+    label({
+        Position = UDim2.fromOffset(22, 20),
+        Size = textWidth + UDim2.fromOffset(0, 14),
+        Text = string.upper(opts.Welcome or "Welcome back"),
+        TextSize = 10,
+        TextColor3 = Theme.Muted,
+        Parent = banner,
+    })
+    local nameLabel = label({
+        Position = UDim2.fromOffset(22, 35),
+        Size = textWidth + UDim2.fromOffset(0, 32),
+        TextSize = 26,
+        FontFace = Fonts.Bold,
+        Parent = banner,
+    })
+    self:_trackName(nameLabel, "Display")
+    local userLabel = label({
+        Position = UDim2.fromOffset(22, 67),
+        Size = textWidth + UDim2.fromOffset(0, 16),
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = banner,
+    })
+    self:_trackName(userLabel, "User")
+
+    -- Chips along the bottom: tier, time left, then the privacy toggles.
+    local chips = create("Frame", {
+        Position = UDim2.new(0, 22, 1, -40),
+        Size = UDim2.new(1, -44, 0, 24),
+        BackgroundTransparency = 1,
+        Parent = banner,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = chips,
+    })
+    local tier = opts.Tier
+    if tier == nil then
+        tier = "Free"
+    end
+    if tier then
+        local tierChip, tierText, tierIcon = self:_homeChip(chips, 1, opts.TierIcon or self._logoIcon, tostring(tier), Theme.Accent)
+        tierChip.Active = false
+        tierText.FontFace = Fonts.Bold
+        tierIcon.Size = UDim2.fromOffset(13, 13)
+        self.TierLabel = tierText
+    end
+    local expiryChip, expiryText = self:_homeChip(chips, 2, "clock", "")
+    expiryChip.Active = false
+    expiryChip.Visible = false
+    self:_homeToggleChip(chips, 3, "eye-off", "Name", self._hideName, function(on)
+        self:SetHideName(on)
+    end)
+    self:_homeToggleChip(chips, 4, "user-x", "Avatar", self._hideAvatar, function(on)
+        self:SetHideAvatar(on)
+    end)
+
+    return function()
+        local value = opts.Expiry
+        if type(value) == "function" then
+            local ok, result = pcall(value)
+            value = ok and result or nil
+        end
+        if type(value) == "number" then
+            local left = value - os.time()
+            expiryText.Text = left > 0 and (formatDuration(left) .. " left") or "Expired"
+        elseif value ~= nil then
+            expiryText.Text = tostring(value)
+        end
+        expiryChip.Visible = expiryText.Text ~= ""
+    end
+end
+
+-- A large live readout with a short bar history under it. Returns the value
+-- label and a push(value, color) that adds a sample.
+function Window:_homeGraph(parent, order, icon, title, ceiling)
+    local cell = create("Frame", {
+        BackgroundTransparency = 1,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    local holder = glowIcon(cell, icon, Theme.Muted, UDim2.new(0, 0, 0, 7))
+    holder.Size = UDim2.fromOffset(12, 12)
+    label({
+        Position = UDim2.fromOffset(18, 0),
+        Size = UDim2.new(1, -18, 0, 14),
+        Text = string.upper(title),
+        TextSize = 10,
+        TextColor3 = Theme.Muted,
+        Parent = cell,
+    })
+    local value = label({
+        Position = UDim2.fromOffset(0, 16),
+        Size = UDim2.new(1, 0, 0, 28),
+        Text = "â¦",
+        TextSize = 24,
+        FontFace = Fonts.Bold,
+        RichText = true,
+        Parent = cell,
+    })
+    local track = create("Frame", {
+        Position = UDim2.fromOffset(0, 50),
+        Size = UDim2.new(1, 0, 0, 26),
+        BackgroundTransparency = 1,
+        Parent = cell,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Bottom,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = track,
+    })
+    local COUNT = 24
+    local bars, samples = {}, {}
+    for index = 1, COUNT do
+        local bar = create("Frame", {
+            Size = UDim2.new(1 / COUNT, -2, 0, 2),
+            BackgroundColor3 = Theme.Surface3,
+            BorderSizePixel = 0,
+            LayoutOrder = index,
+            Parent = track,
+        })
+        corner(bar, UDim.new(0, 2))
+        bars[index] = bar
+    end
+    local function push(sample, color)
+        table.insert(samples, sample)
+        if #samples > COUNT then
+            table.remove(samples, 1)
+        end
+        local top = ceiling or 1
+        for _, s in ipairs(samples) do
+            top = math.max(top, s)
+        end
+        local offset = COUNT - #samples
+        for index, bar in ipairs(bars) do
+            local s = samples[index - offset]
+            local latest = index == COUNT
+            local height = s and math.max(s / top, 0.08) or 0
+            tween(bar, {
+                Size = UDim2.new(1 / COUNT, -2, height, s and 0 or 2),
+                BackgroundColor3 = (latest and color) or (s and Theme.Muted or Theme.Surface3),
+                BackgroundTransparency = latest and 0 or (s and 0.6 or 0),
+            }, 0.35, Enum.EasingStyle.Quint)
+        end
+    end
+    return value, push
+end
+
+-- A small figure: value over a caps caption.
+function Window:_homeFigure(parent, order, title)
+    local cell = create("Frame", {
+        BackgroundTransparency = 1,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    local value = label({
+        Size = UDim2.new(1, -8, 0, 20),
+        Text = "â¦",
+        TextSize = 15,
+        FontFace = Fonts.Bold,
+        RichText = true,
+        Parent = cell,
+    })
+    label({
+        Position = UDim2.fromOffset(0, 21),
+        Size = UDim2.new(1, -8, 0, 14),
+        Text = string.upper(title),
+        TextSize = 10,
+        TextColor3 = Theme.Muted,
+        Parent = cell,
+    })
+    return value
+end
+
+-- A square tile button: an icon over a short label.
+function Window:_homeAction(parent, order, icon, text, callback)
+    local button = create("TextButton", {
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.5,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        ClipsDescendants = true,
+        LayoutOrder = order,
+        Parent = parent,
+    })
+    corner(button, UDim.new(0, 8))
+    local buttonStroke = stroke(button)
+    local image = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0),
+        Position = UDim2.new(0.5, 0, 0, 11),
+        Size = UDim2.fromOffset(16, 16),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Text,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = button,
+    })
+    applyIcon(image, icon)
+    label({
+        Position = UDim2.new(0, 4, 0, 32),
+        Size = UDim2.new(1, -8, 0, 14),
+        Text = text,
+        TextSize = 11,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Parent = button,
+    })
+    button.MouseEnter:Connect(function()
+        tween(button, { BackgroundTransparency = 0 }, 0.15, Enum.EasingStyle.Quint)
+        tween(buttonStroke, { Color = Theme.StrokeHover }, 0.15)
+        tween(image, { ImageColor3 = Theme.Accent }, 0.15)
+    end)
+    button.MouseLeave:Connect(function()
+        tween(button, { BackgroundTransparency = 0.5 }, 0.25, Enum.EasingStyle.Quint)
+        tween(buttonStroke, { Color = Theme.Stroke }, 0.25)
+        tween(image, { ImageColor3 = Theme.Text }, 0.25)
+    end)
+    button.MouseButton1Click:Connect(function()
+        ripple(button)
+        safeCall(callback)
+    end)
+    return button
+end
+
+function Window:_homeGame(parent, order)
+    local card = self:_homeCard(parent, order)
+    local head = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 46),
+        BackgroundTransparency = 1,
+        LayoutOrder = 1,
+        Parent = card,
+    })
+    local icon = create("ImageLabel", {
+        Size = UDim2.fromOffset(44, 44),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Image = "rbxthumb://type=GameIcon&id=" .. tostring(game.GameId) .. "&w=150&h=150",
+        Parent = head,
+    })
+    corner(icon, UDim.new(0, 10))
+    stroke(icon)
+    local gameName = label({
+        Position = UDim2.fromOffset(56, 3),
+        Size = UDim2.new(1, -56, 0, 20),
+        Text = "Loading",
+        TextSize = 15,
+        FontFace = Fonts.Bold,
+        Parent = head,
+    })
+    local detail = label({
+        Position = UDim2.fromOffset(56, 24),
+        Size = UDim2.new(1, -56, 0, 16),
+        Text = "",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = head,
+    })
+    local owner = nil
+    task.spawn(function()
+        local info = fetchGameInfo()
+        gameName.Text = info and info.Name or detectGameName()
+        owner = info and type(info.Creator) == "table" and info.Creator.Name or nil
+    end)
+
+    local actions = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 2,
+        Parent = card,
+    })
+    padding(actions, 0, 0, 12, 0)
+    create("UIGridLayout", {
+        CellPadding = UDim2.fromOffset(6, 6),
+        CellSize = UDim2.new(0.25, -5, 0, 54),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = actions,
+    })
+    self:_homeAction(actions, 1, "refresh-cw", "Rejoin", function()
+        self:Rejoin()
+    end)
+    self:_homeAction(actions, 2, "shuffle", "Hop", function()
+        self:ServerHop()
+    end)
+    self:_homeAction(actions, 3, "users", "Lowest", function()
+        self:JoinLowestServer()
+    end)
+    self:_homeAction(actions, 4, "copy", "Job ID", function()
+        self:CopyToClipboard(game.JobId, "Job ID")
+    end)
+
+    label({
+        Size = UDim2.new(1, 0, 0, 26),
+        Text = "Job " .. shortId(game.JobId) .. "  Â·  Place " .. tostring(game.PlaceId),
+        TextSize = 11,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextYAlignment = Enum.TextYAlignment.Bottom,
+        LayoutOrder = 3,
+        Parent = card,
+    })
+
+    -- The detail line keeps the player count live.
+    return function()
+        local count = #Players:GetPlayers() .. "/" .. Players.MaxPlayers .. " players"
+        detail.Text = owner and ("by " .. owner .. "  Â·  " .. count) or count
+    end
+end
+
+-- One row of the links card: icon, title and text, and a round icon button.
+function Window:_homeLink(card, order, icon, title, text, buttonIcon, callback)
+    local row = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 46),
+        BackgroundTransparency = 1,
+        LayoutOrder = order,
+        Parent = card,
+    })
+    create("Frame", {
+        Name = "Rule",
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        Parent = row,
+    })
+    local holder = glowIcon(row, icon, Theme.Accent, UDim2.new(0, 0, 0.5, 0))
+    holder.Size = UDim2.fromOffset(16, 16)
+    local titleLabel = label({
+        Position = UDim2.fromOffset(28, 6),
+        Size = UDim2.new(1, -68, 0, 18),
+        Text = title,
+        TextSize = 13,
+        Parent = row,
+    })
+    local textLabel = label({
+        Position = UDim2.fromOffset(28, 24),
+        Size = UDim2.new(1, -68, 0, 15),
+        Text = text,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = row,
+    })
+    local button = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, 0, 0.5, 0),
+        Size = UDim2.fromOffset(30, 30),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 0.5,
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = row,
+    })
+    corner(button, UDim.new(0, 8))
+    local buttonStroke = stroke(button)
+    local image = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(14, 14),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = button,
+    })
+    applyIcon(image, buttonIcon)
+    button.MouseEnter:Connect(function()
+        tween(button, { BackgroundTransparency = 0 }, 0.15, Enum.EasingStyle.Quint)
+        tween(buttonStroke, { Color = Theme.StrokeHover }, 0.15)
+        tween(image, { ImageColor3 = Theme.Accent }, 0.15)
+    end)
+    button.MouseLeave:Connect(function()
+        tween(button, { BackgroundTransparency = 0.5 }, 0.25, Enum.EasingStyle.Quint)
+        tween(buttonStroke, { Color = Theme.Stroke }, 0.25)
+        tween(image, { ImageColor3 = Theme.Muted }, 0.25)
+    end)
+    button.MouseButton1Click:Connect(function()
+        safeCall(callback)
+    end)
+    return row, titleLabel, textLabel
+end
+
+-- Builds the links card into parent, or nothing when there are no links and
+-- the feature list is off. Returns the card (or nil) and the feature refresh.
+function Window:_homeLinks(parent, opts, order)
+    local links = {}
+    if opts.Discord then
+        table.insert(links, {
+            Icon = opts.DiscordIcon or "message-circle",
+            Title = opts.DiscordTitle or "Community",
+            Text = opts.Discord,
+        })
+    end
+    if opts.Website then
+        table.insert(links, {
+            Icon = opts.WebsiteIcon or "globe",
+            Title = opts.WebsiteTitle or "Website",
+            Text = opts.Website,
+        })
+    end
+    for _, link in ipairs(opts.Links or {}) do
+        table.insert(links, link)
+    end
+    local features = opts.Features
+    if #links == 0 and features == false then
+        return nil, function() end
+    end
+    local card = self:_homeCard(parent, order)
+    self:_homeCaption(card, "Links", 0)
+    for index, link in ipairs(links) do
+        local action = type(link.Callback) == "function"
+        self:_homeLink(card, index, link.Icon or "link", link.Title or "", link.Text or "", action and "arrow-up-right" or "copy", function()
+            if action then
+                safeCall(link.Callback)
+            else
+                self:CopyToClipboard(link.Copy or link.Text, link.Title)
+            end
+        end)
+    end
+    local refresh = function() end
+    if features ~= false then
+        if type(features) == "table" then
+            self._featuresTitle = features.Title
+            self._features = features.List or (#features > 0 and features or nil)
+        end
+        local _, _, text_ = self:_homeLink(card, 100,
+            type(features) == "table" and features.Icon or "list-checks",
+            type(features) == "table" and features.Title or "Feature list",
+            "", "chevron-right", function()
+                self:ShowFeatures()
+            end)
+        refresh = function()
+            local desc = type(features) == "table" and features.Desc
+            text_.Text = desc or (self:_featureSummary())
+        end
+        task.defer(refresh)
+    end
+    -- The first row needs no rule above it.
+    local first = nil
+    for _, child in ipairs(card:GetChildren()) do
+        if child:IsA("Frame") and child:FindFirstChild("Rule") and (not first or child.LayoutOrder < first.LayoutOrder) then
+            first = child
+        end
+    end
+    if first then
+        first.Rule.Visible = false
+    end
+    return card, refresh
+end
+
+-- A quiet status line under the cards: executor support on the left, the
+-- hide key on the right.
+function Window:_homeExecutor(list, opts, order)
+    local line = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 26),
+        BackgroundTransparency = 1,
+        LayoutOrder = order,
+        Parent = list,
+    })
+    local executor, supported, message = executorReport(opts)
+    local dot = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 4, 0.5, 0),
+        Size = UDim2.fromOffset(7, 7),
+        BackgroundColor3 = supported and Theme.Success or Theme.Warning,
+        BorderSizePixel = 0,
+        Parent = line,
+    })
+    corner(dot, UDim.new(1, 0))
+    local left = create("Frame", {
+        Position = UDim2.fromOffset(18, 0),
+        Size = UDim2.new(1, -170, 1, 0),
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        Parent = line,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 8),
+        Parent = left,
+    })
+    label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = executor,
+        TextSize = 12,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 1,
+        Parent = left,
+    })
+    label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = message,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = supported and Theme.Muted or Theme.Warning,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = left,
+    })
+
+    local hint = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -2, 0.5, 0),
+        Size = UDim2.fromOffset(0, 22),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Parent = line,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 6),
+        Parent = hint,
+    })
+    label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = TOUCH and "Tap the pill or" or "Hide with",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 1,
+        Parent = hint,
+    })
+    local chip = create("Frame", {
+        Size = UDim2.fromOffset(0, 20),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        LayoutOrder = 2,
+        Parent = hint,
+    })
+    corner(chip, UDim.new(0, 5))
+    stroke(chip)
+    padding(chip, 6, 6)
+    self._keyChipLabel = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = keyName(self.Keybind),
+        TextSize = 11,
+        FontFace = Fonts.Bold,
+        TextTruncate = Enum.TextTruncate.None,
+        Parent = chip,
+    })
+end
+
+-- Feature list: every control the script adds, grouped by tab, or a list the
+-- script writes itself. Items that match a control jump to it when picked.
+
+Window._featureKinds = {
+    Toggle = true,
+    Slider = true,
+    Dropdown = true,
+    Input = true,
+    Keybind = true,
+    ColorPicker = true,
+    Stepper = true,
+    Button = true,
+    ButtonRow = true,
+    OrderList = true,
+}
+
+function Window:_featureGroups()
+    local found, byName = {}, {}
+    for _, tab in ipairs(self.Tabs) do
+        if tab ~= self.Home and tab._userVisible ~= false then
+            local group = { Name = tab.Name, Icon = tab._iconName, Items = {} }
+            for _, page in ipairs(tab._subTabs or { tab }) do
+                local sub = page._isSubTab and page or nil
+                local function add(name, element, box, path)
+                    if type(name) ~= "string" or name == "" then
+                        return
+                    end
+                    local item = {
+                        Name = name,
+                        Kind = element._type == "ButtonRow" and "Button" or element._type,
+                        Path = path,
+                        Result = { Tab = tab, Sub = sub, Target = element, Group = box },
+                    }
+                    table.insert(group.Items, item)
+                    byName[string.lower(name)] = byName[string.lower(name)] or item
+                end
+                local function addElement(element, box, path)
+                    if element._destroyed or not self._featureKinds[element._type] or (element._isShown and not element:_isShown()) then
+                        return
+                    end
+                    if element._type == "ButtonRow" and element.Buttons then
+                        for _, button in ipairs(element.Buttons) do
+                            add(button.Label.Text, element, box, path)
+                        end
+                    else
+                        add(element._searchName, element, box, path)
+                    end
+                end
+                if not page._noSearch then
+                    for _, element in ipairs(page._items or {}) do
+                        addElement(element, nil, sub and sub.Name or nil)
+                    end
+                    for _, box in ipairs(page._groupboxes or {}) do
+                        if box._userVisible ~= false and not box._manager then
+                            for _, element in ipairs(box._items) do
+                                addElement(element, box, sub and (sub.Name .. "  âº  " .. box.Name) or box.Name)
+                            end
+                        end
+                    end
+                end
+            end
+            if #group.Items > 0 then
+                table.insert(found, group)
+            end
+        end
+    end
+    local custom = self._features
+    if type(custom) ~= "table" then
+        return found
+    end
+    -- A written list: groups of items, or bare items, which gather into one
+    -- group where the first one appears.
+    local function customItem(entry)
+        if type(entry) ~= "table" then
+            entry = { Name = entry }
+        end
+        local name = tostring(entry.Name or entry.Title or entry[1] or "")
+        local link = byName[string.lower(name)]
+        return {
+            Name = name,
+            Desc = entry.Desc or entry.Description,
+            Tag = entry.Tag,
+            Icon = entry.Icon,
+            Kind = link and link.Kind,
+            Path = link and link.Path,
+            Result = link and link.Result,
+            Callback = entry.Callback,
+        }
+    end
+    local groups, loose = {}, nil
+    for _, entry in ipairs(custom) do
+        if type(entry) == "table" and type(entry.Items) == "table" then
+            local group = { Name = tostring(entry.Name or entry.Title or "Features"), Icon = entry.Icon, Items = {} }
+            for _, item in ipairs(entry.Items) do
+                table.insert(group.Items, customItem(item))
+            end
+            table.insert(groups, group)
+        else
+            if not loose then
+                loose = { Name = self._featuresTitle or "Features", Items = {} }
+                table.insert(groups, loose)
+            end
+            table.insert(loose.Items, customItem(entry))
+        end
+    end
+    return groups
+end
+
+function Window:_featureSummary()
+    local groups = self:_featureGroups()
+    local count = 0
+    for _, group in ipairs(groups) do
+        count += #group.Items
+    end
+    local text = count .. (count == 1 and " feature" or " features")
+    if type(self._features) ~= "table" and #groups > 0 then
+        text ..= " across " .. #groups .. (#groups == 1 and " tab" or " tabs")
+    end
+    return text, groups, count
+end
+
+-- Opens the feature list over the window. Search filters it; picking an item
+-- linked to a control closes the list and jumps to that control.
+function Window:ShowFeatures()
+    if self._dialog then
+        self._dialog.Close()
+    end
+    local summary, groups, total = self:_featureSummary()
+    local PAD = 16
+    local ROW = TOUCH and 44 or 38
+    local body = self.Body
+
+    local overlay = create("TextButton", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 40,
+        Parent = body,
+    })
+    -- A canvas group so the whole list fades as one on open and close.
+    local card_ = create("CanvasGroup", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 10),
+        Size = UDim2.fromOffset(420, 460),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        GroupTransparency = 1,
+        Active = true,
+        Parent = overlay,
+    })
+    corner(card_, UDim.new(0, 12))
+    local cardStroke = stroke(card_, Theme.Stroke, 1)
+    local cardScale = create("UIScale", { Scale = 0.94, Parent = card_ })
+    local function fit()
+        local scale = self.Scale.Scale
+        local size = body.AbsoluteSize / scale
+        card_.Size = UDim2.fromOffset(math.min(440, size.X - 24), math.min(480, size.Y - 24))
+    end
+    fit()
+    local fitConnection = body:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+
+    local iconHolder = glowIcon(card_, "list-checks", Theme.Accent, UDim2.new(0, PAD, 0, PAD + 10))
+    iconHolder.Size = UDim2.fromOffset(18, 18)
+    label({
+        Position = UDim2.fromOffset(PAD + 28, PAD),
+        Size = UDim2.new(1, -(PAD * 2 + 28 + 36), 0, 18),
+        Text = self._featuresTitle or "Features",
+        TextSize = 15,
+        Parent = card_,
+    })
+    label({
+        Position = UDim2.fromOffset(PAD + 28, PAD + 19),
+        Size = UDim2.new(1, -(PAD * 2 + 28 + 36), 0, 14),
+        Text = summary,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = card_,
+    })
+    local closeButton = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -(PAD - 6), 0, PAD - 6),
+        Size = TOUCH and UDim2.fromOffset(40, 40) or UDim2.fromOffset(32, 32),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = card_,
+    })
+    corner(closeButton, UDim.new(0, 8))
+    local closeIcon = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(16, 16),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = closeButton,
+    })
+    applyIcon(closeIcon, "x")
+    if closeIcon.Image == "" then
+        closeIcon:Destroy()
+        label({ Size = UDim2.fromScale(1, 1), Text = "Ã", TextSize = 20, TextColor3 = Theme.Muted, TextXAlignment = Enum.TextXAlignment.Center, Parent = closeButton })
+    end
+    closeButton.MouseEnter:Connect(function()
+        tween(closeButton, { BackgroundTransparency = 0.5 }, 0.12)
+    end)
+    closeButton.MouseLeave:Connect(function()
+        tween(closeButton, { BackgroundTransparency = 1 }, 0.2)
+    end)
+
+    local top = PAD + 44
+    local searchHolder = create("Frame", {
+        Position = UDim2.fromOffset(PAD, top),
+        Size = UDim2.new(1, -PAD * 2, 0, TOUCH and 36 or 32),
+        BackgroundColor3 = Theme.Surface,
+        BorderSizePixel = 0,
+        Parent = card_,
+    })
+    corner(searchHolder, UDim.new(0, 7))
+    local searchStroke = stroke(searchHolder)
+    local _, searchIcon = glowIcon(searchHolder, "search", Theme.Muted, UDim2.new(0, 10, 0.5, 0))
+    searchIcon.Parent.Size = UDim2.fromOffset(14, 14)
+    local searchBox = create("TextBox", {
+        Position = UDim2.fromOffset(32, 0),
+        Size = UDim2.new(1, -40, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        PlaceholderText = "Search features",
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        ClearTextOnFocus = false,
+        Parent = searchHolder,
+    })
+    searchBox.Focused:Connect(function()
+        tween(searchStroke, { Color = Theme.StrokeHover }, 0.15)
+        tween(searchIcon, { ImageColor3 = Theme.Accent }, 0.15)
+    end)
+    searchBox.FocusLost:Connect(function()
+        tween(searchStroke, { Color = Theme.Stroke }, 0.2)
+        tween(searchIcon, { ImageColor3 = Theme.Muted }, 0.2)
+    end)
+    top += (TOUCH and 36 or 32) + 10
+
+    local scroller = create("ScrollingFrame", {
+        Position = UDim2.fromOffset(PAD, top),
+        Size = UDim2.new(1, -PAD * 2 + 6, 1, -(top + PAD - 4)),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = TOUCH and 4 or 3,
+        ScrollBarImageColor3 = Theme.Accent,
+        ScrollBarImageTransparency = 0.4,
+        ScrollingDirection = Enum.ScrollingDirection.Y,
+        CanvasSize = UDim2.new(),
+        Parent = card_,
+    })
+    local content = create("Frame", {
+        Size = UDim2.new(1, -10, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = scroller,
+    })
+    local layout = create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = content,
+    })
+    -- Canvas sized by hand, as elsewhere, so it scrolls under UIScale.
+    layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        scroller.CanvasSize = UDim2.fromOffset(0, layout.AbsoluteContentSize.Y / self.Scale.Scale + 4)
+    end)
+    local noResults = label({
+        Size = UDim2.new(1, 0, 0, 60),
+        Text = total == 0 and "No features yet" or "No matches",
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Center,
+        LayoutOrder = 0,
+        Visible = total == 0,
+        Parent = content,
+    })
+
+    local dialog = {}
+    local closed = false
+    local stopEscape = nil
+    function dialog.Close()
+        if closed then
+            return
+        end
+        closed = true
+        if self._dialog == dialog then
+            self._dialog = nil
+        end
+        fitConnection:Disconnect()
+        if stopEscape then
+            -- Deferred: Close can run from inside the input dispatch loop.
+            task.defer(stopEscape)
+        end
+        if searchBox:IsFocused() then
+            searchBox:ReleaseFocus()
+        end
+        tween(overlay, { BackgroundTransparency = 1 }, 0.18)
+        tween(card_, { Position = UDim2.new(0.5, 0, 0.5, 8), GroupTransparency = 1 }, 0.18, Enum.EasingStyle.Quint)
+        tween(cardScale, { Scale = 0.96 }, 0.18, Enum.EasingStyle.Quint)
+        tween(cardStroke, { Transparency = 1 }, 0.12)
+        task.delay(0.2, function()
+            overlay:Destroy()
+        end)
+    end
+
+    local sections = {}
+    local order = 0
+    for _, group in ipairs(groups) do
+        order += 1
+        local header = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 30),
+            BackgroundTransparency = 1,
+            LayoutOrder = order,
+            Parent = content,
+        })
+        local headIcon = glowIcon(header, group.Icon or "layout-grid", Theme.Accent, UDim2.new(0, 2, 0, 18))
+        headIcon.Size = UDim2.fromOffset(14, 14)
+        label({
+            Position = UDim2.fromOffset(24, 10),
+            Size = UDim2.new(1, -70, 0, 16),
+            Text = string.upper(group.Name),
+            TextSize = 11,
+            TextColor3 = Theme.Muted,
+            Parent = header,
+        })
+        local countLabel = label({
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.new(1, -4, 0, 10),
+            Size = UDim2.new(0, 40, 0, 16),
+            Text = tostring(#group.Items),
+            TextSize = 11,
+            TextColor3 = Theme.Muted,
+            TextXAlignment = Enum.TextXAlignment.Right,
+            Parent = header,
+        })
+        local section = { Header = header, Count = countLabel, Rows = {} }
+        for _, item in ipairs(group.Items) do
+            order += 1
+            local sub = item.Desc or item.Path
+            local clickable = item.Result ~= nil or type(item.Callback) == "function"
+            local row = create("TextButton", {
+                Size = UDim2.new(1, 0, 0, sub and ROW + 4 or ROW - 4),
+                BackgroundColor3 = Theme.Surface2,
+                BackgroundTransparency = 1,
+                BorderSizePixel = 0,
+                Text = "",
+                AutoButtonColor = false,
+                LayoutOrder = order,
+                Parent = content,
+            })
+            corner(row, UDim.new(0, 8))
+            local rowIcon = glowIcon(row, item.Icon or self._searchIcons[item.Kind] or "check", Theme.Muted, UDim2.new(0, 10, 0.5, 0))
+            rowIcon.Size = UDim2.fromOffset(14, 14)
+            local right = 12 + (clickable and 22 or 0)
+            local tag
+            if item.Tag then
+                tag = create("Frame", {
+                    AnchorPoint = Vector2.new(1, 0.5),
+                    Position = UDim2.new(1, -(clickable and 30 or 10), 0.5, 0),
+                    Size = UDim2.fromOffset(0, 20),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    BackgroundColor3 = Theme.Accent,
+                    BackgroundTransparency = 0.85,
+                    BorderSizePixel = 0,
+                    Parent = row,
+                })
+                corner(tag, UDim.new(0, 5))
+                padding(tag, 7, 7)
+                label({
+                    Size = UDim2.new(0, 0, 1, 0),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    Text = tostring(item.Tag),
+                    TextSize = 11,
+                    TextColor3 = Theme.Accent,
+                    TextTruncate = Enum.TextTruncate.None,
+                    Parent = tag,
+                })
+            end
+            local nameLabel = label({
+                Position = UDim2.fromOffset(34, sub and 5 or 0),
+                Size = UDim2.new(1, -(34 + right), 0, sub and 18 or ROW - 4),
+                Text = item.Name,
+                TextSize = 13,
+                Parent = row,
+            })
+            local subLabel
+            if sub then
+                subLabel = label({
+                    Position = UDim2.fromOffset(34, 23),
+                    Size = UDim2.new(1, -(34 + right), 0, 14),
+                    Text = sub,
+                    TextSize = 11,
+                    FontFace = Fonts.Regular,
+                    TextColor3 = Theme.Muted,
+                    Parent = row,
+                })
+            end
+            if tag then
+                local function reserveTag()
+                    local width = 34 + right + tag.AbsoluteSize.X / self.Scale.Scale + 8
+                    nameLabel.Size = UDim2.new(1, -width, 0, nameLabel.Size.Y.Offset)
+                    if subLabel then
+                        subLabel.Size = UDim2.new(1, -width, 0, 14)
+                    end
+                end
+                tag:GetPropertyChangedSignal("AbsoluteSize"):Connect(reserveTag)
+                task.defer(reserveTag)
+            end
+            if clickable then
+                local go = create("ImageLabel", {
+                    AnchorPoint = Vector2.new(1, 0.5),
+                    Position = UDim2.new(1, -10, 0.5, 0),
+                    Size = UDim2.fromOffset(14, 14),
+                    BackgroundTransparency = 1,
+                    ImageColor3 = Theme.Muted,
+                    ImageTransparency = 0.4,
+                    ScaleType = Enum.ScaleType.Fit,
+                    Parent = row,
+                })
+                applyIcon(go, "arrow-up-right")
+            end
+            local isTap = tapGuard(row, function()
+                return scroller
+            end)
+            row.MouseEnter:Connect(function()
+                if not usingTouch() then
+                    tween(row, { BackgroundTransparency = 0.3 }, 0.12)
+                end
+            end)
+            row.MouseLeave:Connect(function()
+                tween(row, { BackgroundTransparency = 1 }, 0.2)
+            end)
+            row.MouseButton1Click:Connect(function()
+                if not clickable or not isTap() then
+                    return
+                end
+                dialog.Close()
+                if item.Result then
+                    self:_revealResult(item.Result)
+                end
+                safeCall(item.Callback)
+            end)
+            table.insert(section.Rows, { Frame = row, Key = string.lower(item.Name .. " " .. (sub or "")) })
+        end
+        table.insert(sections, section)
+    end
+
+    searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+        local query = string.lower(searchBox.Text)
+        local any = false
+        for _, section in ipairs(sections) do
+            local shown = 0
+            for _, row in ipairs(section.Rows) do
+                local match = query == "" or string.find(row.Key, query, 1, true) ~= nil
+                row.Frame.Visible = match
+                if match then
+                    shown += 1
+                end
+            end
+            section.Header.Visible = shown > 0
+            section.Count.Text = tostring(shown)
+            any = any or shown > 0
+        end
+        noResults.Visible = not any
+        scroller.CanvasPosition = Vector2.zero
+    end)
+    closeButton.MouseButton1Click:Connect(dialog.Close)
+    overlay.MouseButton1Click:Connect(dialog.Close)
+    stopEscape = self:_listen("Began", function(input)
+        if input.KeyCode == Enum.KeyCode.Escape then
+            dialog.Close()
+        end
+    end)
+
+    self._dialog = dialog
+    tween(overlay, { BackgroundTransparency = 0.45 }, 0.25)
+    tween(card_, { Position = UDim2.fromScale(0.5, 0.5), GroupTransparency = 0 }, 0.3, Enum.EasingStyle.Quint)
+    tween(cardScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+    return dialog
+end
+
+function Window:_homeStats(list, opts, order, tab)
+    local show = opts.Stats or { "Players", "Execs", "Session", "FPS", "Ping" }
+    -- FPS and ping get large readouts with a bar history; every other stat
+    -- is a small figure in the row under them.
+    local card = self:_homeCard(list, order)
+    local graphs = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 76),
+        BackgroundTransparency = 1,
+        LayoutOrder = 1,
+        Parent = card,
+    })
+    create("UIGridLayout", {
+        CellPadding = UDim2.fromOffset(24, 0),
+        CellSize = UDim2.new(0.5, -12, 0, 76),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = graphs,
+    })
+    local rule = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 1),
+        BackgroundColor3 = Theme.Stroke,
+        BorderSizePixel = 0,
+        LayoutOrder = 2,
+        Parent = card,
+    })
+    local figures = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 3,
+        Parent = card,
+    })
+    padding(figures, 0, 0, 12, 0)
+    local figureGrid = create("UIGridLayout", {
+        CellPadding = UDim2.fromOffset(0, 8),
+        CellSize = UDim2.new(0.25, 0, 0, 36),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = figures,
+    })
+    local values, sparks = {}, {}
+    local graphCount, figureCount = 0, 0
+    for index, name in ipairs(show) do
+        local kind = STAT_TYPES[name]
+        if kind and not values[name] then
+            if name == "FPS" or name == "Ping" then
+                graphCount += 1
+                values[name], sparks[name] = self:_homeGraph(graphs, index, kind[1], kind[2], name == "FPS" and 60 or 100)
+            else
+                figureCount += 1
+                values[name] = self:_homeFigure(figures, index, kind[2])
+            end
+        end
+    end
+    graphs.Visible = graphCount > 0
+    figures.Visible = figureCount > 0
+    rule.Visible = graphCount > 0 and figureCount > 0
+    if graphCount == 0 then
+        padding(figures, 0, 0, 0, 0)
+    end
+    local function fitFigures()
+        local width = figures.AbsoluteSize.X / self.Scale.Scale
+        local columns = math.clamp(figureCount, 1, width >= 440 and 5 or 3)
+        figureGrid.CellSize = UDim2.new(1 / columns, 0, 0, 36)
+    end
+    figures:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitFigures)
+    task.defer(fitFigures)
+
+    if values.Executor then
+        values.Executor.Text = detectExecutor()
+    end
+    if values.Game then
+        values.Game.Text = "Loading"
+        task.spawn(function()
+            values.Game.Text = detectGameName()
+        end)
+    end
+    if values.Region then
+        values.Region.Text = "Loading"
+        detectRegion(function(region)
+            values.Region.Text = region
+        end)
+    end
+    if values.Execs then
+        local executions = bumpExecutions(opts.StatsFolder or self.ConfigFolder)
+        values.Execs.Text = executions and tostring(executions) or "â"
+    end
+    if values.Friends then
+        local friends = {}
+        local function recount()
+            local total = 0
+            for _, player in ipairs(Players:GetPlayers()) do
+                if player ~= LocalPlayer then
+                    local known = friends[player.UserId]
+                    if known == nil then
+                        local ok, result = pcall(function()
+                            return LocalPlayer:IsFriendsWith(player.UserId)
+                        end)
+                        known = ok and result == true
+                        friends[player.UserId] = known
+                    end
+                    if known then
+                        total += 1
+                    end
+                end
+            end
+            values.Friends.Text = tostring(total)
+        end
+        task.spawn(recount)
+        table.insert(self._connections, Players.PlayerAdded:Connect(function()
+            task.spawn(recount)
+        end))
+        table.insert(self._connections, Players.PlayerRemoving:Connect(function()
+            task.defer(recount)
+        end))
+    end
+
+    local session = values.Session or values.Uptime
+    local started = os.clock()
+    local frames = 0
+    self:_listen("Render", function()
+        frames += 1
+    end)
+    -- FPS, ping and memory are tinted by how healthy they are, unless the
+    -- script turns that off with StatColors = false.
+    local tinted = opts.StatColors ~= false
+    local function tint(valueLabel, color)
+        if tinted and valueLabel.TextColor3 ~= color then
+            tween(valueLabel, { TextColor3 = color }, 0.3)
+        end
+    end
+    return function()
+        if values.FPS then
+            values.FPS.Text = tostring(frames)
+            tint(values.FPS, Library._healthColor(frames, 50, 30))
+            sparks.FPS(frames, Library._healthColor(frames, 50, 30))
+        end
+        frames = 0
+        if values.Ping then
+            local ok, ping = pcall(function()
+                return math.floor(LocalPlayer:GetNetworkPing() * 1000)
+            end)
+            ping = ok and ping or 0
+            values.Ping.Text = ping .. "ms"
+            tint(values.Ping, Library._healthColor(ping, 90, 180, true))
+            sparks.Ping(ping, Library._healthColor(ping, 90, 180, true))
+        end
+        if values.Players then
+            values.Players.Text = #Players:GetPlayers() .. "/" .. Players.MaxPlayers
+        end
+        if session then
+            session.Text = formatDuration(os.clock() - started)
+        end
+        if values.Time then
+            values.Time.Text = os.date(opts.TimeFormat or "%H:%M")
+        end
+        if values.ServerAge then
+            values.ServerAge.Text = formatDuration(workspace.DistributedGameTime)
+        end
+        if values.Memory then
+            local ok, memory = pcall(function()
+                return StatsService:GetTotalMemoryUsageMb()
+            end)
+            values.Memory.Text = ok and string.format("%d MB", memory) or "â"
+            tint(values.Memory, ok and Library._healthColor(memory, 1500, 3000, true) or Theme.Text)
+        end
+    end, function()
+        frames = 0
+    end
+end
+
+local function homePage(sub, page)
+    local list = sub.List
+    if type(page.Content) == "string" then
+        local card_ = panelCard(list, 0, 1)
+        card_.AutomaticSize = Enum.AutomaticSize.Y
+        padding(card_, 16, 16, 14, 16)
+        label({
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            Text = page.Content,
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextWrapped = true,
+            TextTruncate = Enum.TextTruncate.None,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            Parent = card_,
+        })
+    end
+    if type(page.Entries) == "table" then
+        for index, entry in ipairs(page.Entries) do
+            local card_ = panelCard(list, 0, index + 1)
+            card_.AutomaticSize = Enum.AutomaticSize.Y
+            padding(card_, 16, 16, 14, 16)
+            create("UIListLayout", {
+                SortOrder = Enum.SortOrder.LayoutOrder,
+                Padding = UDim.new(0, 6),
+                Parent = card_,
+            })
+            local head = create("Frame", {
+                Size = UDim2.new(1, 0, 0, 20),
+                BackgroundTransparency = 1,
+                LayoutOrder = 1,
+                Parent = card_,
+            })
+            label({
+                Size = UDim2.new(1, -90, 1, 0),
+                Text = entry.Title or entry.Version or "Update",
+                TextSize = 15,
+                Parent = head,
+            })
+            if entry.Date or entry.Tag then
+                local chip = create("Frame", {
+                    AnchorPoint = Vector2.new(1, 0.5),
+                    Position = UDim2.new(1, 0, 0.5, 0),
+                    Size = UDim2.fromOffset(0, 20),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    BackgroundColor3 = Theme.Surface,
+                    BorderSizePixel = 0,
+                    Parent = head,
+                })
+                corner(chip, UDim.new(0, 5))
+                stroke(chip)
+                padding(chip, 8, 8)
+                label({
+                    Size = UDim2.new(0, 0, 1, 0),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    Text = entry.Tag or entry.Date,
+                    TextSize = 11,
+                    TextColor3 = Theme.Muted,
+                    TextTruncate = Enum.TextTruncate.None,
+                    Parent = chip,
+                })
+            end
+            local body = entry.Content or entry.Body
+            if type(entry.Changes) == "table" then
+                body = "â¢ " .. table.concat(entry.Changes, "\nâ¢ ")
+            end
+            if body then
+                label({
+                    Size = UDim2.new(1, 0, 0, 0),
+                    AutomaticSize = Enum.AutomaticSize.Y,
+                    Text = body,
+                    TextSize = 13,
+                    FontFace = Fonts.Regular,
+                    TextColor3 = Theme.Muted,
+                    TextWrapped = true,
+                    TextTruncate = Enum.TextTruncate.None,
+                    TextYAlignment = Enum.TextYAlignment.Top,
+                    LayoutOrder = 2,
+                    Parent = card_,
+                })
+            end
+        end
+    end
+    if type(page.Build) == "function" then
+        safeCall(page.Build, sub, list)
+    else
+        sub._noSearch = true
+    end
+end
+
+function Window:_buildHome(opts)
+    self._hideName = opts.HideName == true
+    self._hideAvatar = opts.HideAvatar == true
+    self:_renderIdentity(true)
+    local tab = self:Tab({
+        Name = opts.Name or "Home",
+        Desc = opts.Desc,
+        Icon = opts.Icon or "house",
+        PageTitle = opts.Title or "Home",
+    })
+    tab._order = 100
+    self.Home = tab
+
+    local pages = opts.Pages or opts.Tabs
+    local overview = tab
+    if type(pages) == "table" and #pages > 0 then
+        overview = tab:SubTab({ Name = opts.OverviewName or "Overview", Icon = opts.TabIcon or "layout-grid" })
+    end
+    overview._noSearch = true
+    overview._order = 100
+    local list = overview.List
+
+    local refreshExpiry = self:_homeProfile(list, opts, 1)
+    local refreshStats, resetStats = self:_homeStats(list, opts, 2, tab)
+
+    -- Server and links side by side, stacked when narrow.
+    local split = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 3,
+        Parent = list,
+    })
+    local splitLayout = create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 10),
+        Parent = split,
+    })
+    local function column(order_)
+        local frame = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            BackgroundTransparency = 1,
+            LayoutOrder = order_,
+            Parent = split,
+        })
+        create("UIListLayout", { SortOrder = Enum.SortOrder.LayoutOrder, Parent = frame })
+        return frame
+    end
+    local leftColumn, rightColumn = column(1), column(2)
+    local refreshGame = self:_homeGame(leftColumn, 1)
+    local linksCard, refreshFeatures = self:_homeLinks(rightColumn, opts, 1)
+    if not linksCard then
+        rightColumn:Destroy()
+    end
+    local function fitSplit()
+        local wide = linksCard ~= nil and split.AbsoluteSize.X / self.Scale.Scale >= 540
+        splitLayout.FillDirection = wide and Enum.FillDirection.Horizontal or Enum.FillDirection.Vertical
+        local size = wide and UDim2.new(0.5, -5, 0, 0) or UDim2.new(1, 0, 0, 0)
+        leftColumn.Size = size
+        if linksCard then
+            rightColumn.Size = size
+        end
+    end
+    split:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitSplit)
+    task.defer(fitSplit)
+
+    self:_homeExecutor(list, opts, 4)
+
+    if type(pages) == "table" then
+        for _, page in ipairs(pages) do
+            homePage(tab:SubTab({ Name = page.Name or page.Title or "Page", Icon = page.Icon }), page)
+        end
+    end
+
+    refreshExpiry()
+    refreshStats()
+    refreshGame()
+    task.spawn(function()
+        while not self._destroyed and tab._page.Parent do
+            task.wait(1)
+            if self.Open and self.CurrentTab == tab then
+                refreshStats()
+                refreshExpiry()
+                refreshGame()
+                refreshFeatures()
+            else
+                resetStats()
+            end
+        end
+    end)
+    return tab
+end
+
+function Window:Tab(opts, icon)
+    opts = normalize(opts, { Title = "Name", Description = "Desc" })
+    if icon ~= nil and opts.Icon == nil then
+        opts.Icon = icon
+    end
+    local tab = setmetatable({
+        Name = opts.Name or "Tab",
+        Window = self,
+        _order = 0,
+    }, Tab)
+
+    local button = create("TextButton", {
+        Size = UDim2.new(1, 0, 0, TAB_TILE_HEIGHT),
+        BackgroundColor3 = Theme.Surface3,
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        LayoutOrder = #self.Tabs + 1,
+        Parent = self._tabStack,
+    })
+    corner(button, UDim.new(0, 7))
+    local buttonStroke = stroke(button, Theme.Stroke, 1)
+    buttonStroke.Enabled = false
+    tab._button = button
+
+    local hasIcon = opts.Icon ~= nil
+    if hasIcon then
+        local iconImage = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.new(0, 20, 0.5, 0),
+            Size = UDim2.fromOffset(16, 16),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Muted,
+            ScaleType = Enum.ScaleType.Fit,
+            Parent = button,
+        })
+        applyIcon(iconImage, opts.Icon)
+        if iconImage:GetAttribute("CustomIcon") then
+            iconImage.ImageTransparency = 0.4
+        end
+        tab._icon = iconImage
+    end
+    tab._label = label({
+        Position = UDim2.fromOffset(hasIcon and 38 or 14, 0),
+        Size = UDim2.new(1, hasIcon and -46 or -22, 1, 0),
+        Text = tab.Name,
+        TextSize = 13,
+        TextColor3 = Theme.Muted,
+        Parent = button,
+    })
+
+    local page = create("Frame", {
+        Name = tab.Name,
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Visible = false,
+        Parent = self.Content,
+    })
+    tab._page = page
+    local titleX = 24
+    if hasIcon then
+        local holder = glowIcon(page, opts.Icon, Theme.Accent, UDim2.new(0, 24, 0, 32))
+        holder.Size = UDim2.fromOffset(20, 20)
+        titleX = 54
+    end
+    tab._titleX = titleX
+    tab._title = label({
+        Position = UDim2.fromOffset(titleX, 20),
+        Size = UDim2.new(1, -titleX, 0, 24),
+        Text = opts.PageTitle or tab.Name,
+        TextSize = 22,
+        Parent = page,
+    })
+    if opts.Desc then
+        tab._desc = label({
+            Position = UDim2.fromOffset(titleX, 44),
+            Size = UDim2.new(1, -titleX, 0, 16),
+            Text = opts.Desc,
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = page,
+        })
+    end
+    local listTop = opts.Desc and 70 or 58
+    tab._headerBottom = listTop
+    tab._iconName = opts.Icon
+    buildContainer(tab, page, listTop, opts.Icon or "layout-grid", opts.EmptyText or "Nothing here yet")
+
+    local pressScale = create("UIScale", { Parent = button })
+    local function release()
+        tween(pressScale, { Scale = 1 }, 0.3, Enum.EasingStyle.Quint)
+    end
+    button.MouseEnter:Connect(function()
+        if self.CurrentTab ~= tab and not usingTouch() then
+            tween(button, { BackgroundTransparency = 0.75 }, 0.2, Enum.EasingStyle.Quint)
+            tween(tab._label, { TextColor3 = Theme.Text }, 0.2)
+            if tab._icon then
+                tintIcon(tab._icon, Theme.Text, true, 0.2)
+            end
+        end
+    end)
+    button.MouseLeave:Connect(function()
+        release()
+        if self.CurrentTab ~= tab then
+            tween(button, { BackgroundTransparency = 1 }, 0.3, Enum.EasingStyle.Quint)
+            tween(tab._label, { TextColor3 = Theme.Muted }, 0.3)
+            if tab._icon then
+                tintIcon(tab._icon, Theme.Muted, false, 0.3)
+            end
+        end
+    end)
+    button.MouseButton1Down:Connect(function()
+        tween(pressScale, { Scale = 0.97 }, 0.15, Enum.EasingStyle.Quint)
+    end)
+    button.MouseButton1Up:Connect(release)
+    local isTap = tapGuard(button, function()
+        return self.TabList
+    end)
+    button.MouseButton1Click:Connect(function()
+        release()
+        if isTap() then
+            self:SelectTab(tab)
+        end
+    end)
+    tab._stroke = buttonStroke
+    self:_fitTitle(tab)
+
+    if not self._introDone then
+        button.Visible = false
+    end
+    table.insert(self.Tabs, tab)
+    if #self.Tabs == 1 then
+        task.defer(function()
+            if not self.CurrentTab then
+                self:SelectTab(tab)
+            end
+        end)
+    end
+    return tab
+end
+
+Window.CreateTab = Window.Tab
+
+-- Cloud configs: a tab for browsing, previewing, installing and publishing
+-- configs other players shared. The library draws it; OnFetch, OnPublish and
+-- the other callbacks are the script's backend. Favorites, installs and the
+-- sort order are remembered in the script's settings file.
+function Window:CloudConfigs(opts)
+    opts = normalize(opts, { Title = "Name", Description = "Desc" })
+    local window = self
+    local tab = self:Tab({
+        Name = opts.Name or "Cloud",
+        Desc = opts.Desc,
+        Icon = opts.Icon or "cloud",
+        PageTitle = opts.PageTitle,
+    })
+    tab._noSearch = true
+    tab.List.Visible = false
+    if tab._empty then
+        tab._empty:Destroy()
+        tab._empty = nil
+    end
+
+    local CARD = 116
+    local ROW = TOUCH and 36 or 32
+    local CHIP = TOUCH and 30 or 26
+    local SORTS = { "Popular", "New", "Top", "Installs" }
+    local SORT_NAMES = { Popular = "Popular", New = "Newest", Top = "Top rated", Installs = "Most installed" }
+    local FILTERS = { "All", "Favorites", "Mine", "Installed" }
+    local NAME_LIMIT = 40
+    local DESC_LIMIT = math.max(math.floor(tonumber(opts.DescriptionLimit) or 300), 20)
+    local pageSize = math.max(math.floor(tonumber(opts.PageSize) or 20), 1)
+    local tagList = type(opts.Tags) == "table" and opts.Tags or {}
+    local maxTags = math.max(math.floor(tonumber(opts.MaxTags) or 3), 0)
+    local anonName = tostring(opts.StreamerName or "SANYA_PIRAT User")
+
+    local cloud = { Tab = tab }
+    local records, byId = {}, {}
+    local cards = {}
+    local hasMore, page, token = false, 0, 0
+    local loading = false
+    local query = { Search = "", Sort = "Popular", Filter = "All", Tag = nil }
+    local views, currentView = {}, nil
+    local detail, detailRecord, detailToken = {}, nil, 0
+
+    local stored = window:_readConfigSettings()
+    local favorites = type(stored.CloudFavorites) == "table" and stored.CloudFavorites or {}
+    local installed = type(stored.CloudInstalled) == "table" and stored.CloudInstalled or {}
+    if table.find(SORTS, stored.CloudSort) then
+        query.Sort = stored.CloudSort
+    elseif table.find(SORTS, opts.Sort) then
+        query.Sort = opts.Sort
+    end
+    local function persist(key, value)
+        window:_writeConfigSettings({ [key] = value })
+    end
+
+    local function notify(ok, title, detail_)
+        window:Notify({ Title = title, Content = detail_, Type = ok and "Success" or "Error", Duration = 3 })
+    end
+
+    -- The Home tab's hide-name switch doubles as streamer mode.
+    local function streamerOn()
+        return window._hideName == true
+    end
+
+    -- Records
+
+    local function countFlags(code)
+        local data = type(code) == "string" and window:DecodeConfig(code)
+        if not data then
+            return nil
+        end
+        local count = 0
+        for _ in pairs(data) do
+            count += 1
+        end
+        return count
+    end
+
+    local function compact(number)
+        number = math.max(math.floor(tonumber(number) or 0), 0)
+        if number >= 1e6 then
+            return (("%.1f"):format(number / 1e6):gsub("%.0$", "")) .. "m"
+        elseif number >= 1e3 then
+            return (("%.1f"):format(number / 1e3):gsub("%.0$", "")) .. "k"
+        end
+        return tostring(number)
+    end
+
+    local function ago(stamp)
+        stamp = tonumber(stamp)
+        if not stamp then
+            return nil
+        end
+        local delta = os.time() - stamp
+        if delta < 60 then
+            return "just now"
+        elseif delta < 3600 then
+            return math.floor(delta / 60) .. "m ago"
+        elseif delta < 86400 then
+            return math.floor(delta / 3600) .. "h ago"
+        elseif delta < 604800 then
+            return math.floor(delta / 86400) .. "d ago"
+        elseif delta < 2592000 then
+            return math.floor(delta / 604800) .. "w ago"
+        end
+        return os.date("%d %b %Y", stamp)
+    end
+
+    local function escape(text)
+        return (text:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;"):gsub("'", "&apos;"))
+    end
+
+    -- Rich text with every match of the search drawn in the accent.
+    local function highlight(text)
+        local needle = string.lower(query.Search)
+        if needle == "" then
+            return escape(text)
+        end
+        local lower = string.lower(text)
+        local hex = colorToHex(Theme.Accent)
+        local out, from = {}, 1
+        while true do
+            local first, last = string.find(lower, needle, from, true)
+            if not first then
+                break
+            end
+            table.insert(out, escape(text:sub(from, first - 1)))
+            table.insert(out, ('<font color="#%s"><b>%s</b></font>'):format(hex, escape(text:sub(first, last))))
+            from = last + 1
+        end
+        table.insert(out, escape(text:sub(from)))
+        return table.concat(out)
+    end
+
+    local function normalizeRecord(raw)
+        if type(raw) ~= "table" then
+            return nil
+        end
+        local id = raw.Id ~= nil and tostring(raw.Id) or HttpService:GenerateGUID(false)
+        local record = byId[id] or { Id = id }
+        for key, value in pairs(raw) do
+            if key ~= "Id" then
+                record[key] = value
+            end
+        end
+        record.Name = tostring(record.Name or "Untitled")
+        record.Author = tostring(record.Author or "Unknown")
+        record.Description = record.Description ~= nil and tostring(record.Description) or ""
+        local tags = {}
+        for _, tag in ipairs(type(record.Tags) == "table" and record.Tags or {}) do
+            table.insert(tags, tostring(tag))
+        end
+        record.Tags = tags
+        record.Installs = tonumber(record.Installs) or 0
+        record.Likes = tonumber(record.Likes) or 0
+        record.Updated = tonumber(record.Updated or record.Created)
+        record.Liked = record.Liked == true
+        if type(record.Code) ~= "string" or record.Code == "" then
+            record.Code = nil
+        end
+        record.Count = tonumber(record.Count) or countFlags(record.Code)
+        record.Mine = record.Mine == true or tonumber(record.AuthorId) == LocalPlayer.UserId or tonumber(record.OwnerId) == LocalPlayer.UserId
+        byId[id] = record
+        return record
+    end
+
+    local function publicRecord(record)
+        return {
+            Id = record.Id,
+            Name = record.Name,
+            Description = record.Description,
+            Author = record.Author,
+            AuthorId = record.AuthorId,
+            Tags = table.clone(record.Tags),
+            Installs = record.Installs,
+            Likes = record.Likes,
+            Liked = record.Liked,
+            Updated = record.Updated,
+            Code = record.Code,
+            Count = record.Count,
+            Folder = record.Folder,
+            Mine = record.Mine,
+        }
+    end
+
+    -- What is kept locally for favorites and installs: no code, it is refetched.
+    local function summary(record)
+        local kept = publicRecord(record)
+        kept.Code = nil
+        kept.Liked = nil
+        return kept
+    end
+
+    local function installState(record)
+        local mark = installed[record.Id]
+        if type(mark) ~= "table" then
+            return nil
+        end
+        if record.Updated and tonumber(mark.Updated) and record.Updated > tonumber(mark.Updated) then
+            return "Update"
+        end
+        return "Installed"
+    end
+
+    local function otherScript(record)
+        return type(record.Folder) == "string" and record.Folder ~= window.ConfigFolder
+    end
+
+    -- Small pieces
+
+    local function iconButton(parent, icon, glyph, size, plain)
+        local button = create("TextButton", {
+            Size = UDim2.fromOffset(size, size),
+            BackgroundColor3 = Theme.Surface2,
+            BackgroundTransparency = plain and 1 or 0,
+            Text = "",
+            AutoButtonColor = false,
+            Parent = parent,
+        })
+        corner(button, UDim.new(0, 8))
+        if not plain then
+            hoverStroke(button, stroke(button))
+        end
+        local image = create("ImageLabel", {
+            AnchorPoint = Vector2.new(0.5, 0.5),
+            Position = UDim2.fromScale(0.5, 0.5),
+            Size = UDim2.fromOffset(15, 15),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Muted,
+            ScaleType = Enum.ScaleType.Fit,
+            Parent = button,
+        })
+        applyIcon(image, icon)
+        if image.Image == "" then
+            image:Destroy()
+            image = label({
+                Size = UDim2.fromScale(1, 1),
+                Text = glyph,
+                TextSize = 15,
+                TextColor3 = Theme.Muted,
+                TextXAlignment = Enum.TextXAlignment.Center,
+                TextTruncate = Enum.TextTruncate.None,
+                Parent = button,
+            })
+        end
+        return button, image
+    end
+
+    local function primary(button, text_)
+        tween(button, { BackgroundColor3 = Theme.Accent, BackgroundTransparency = 0.12 }, 0)
+        tween(text_, { TextColor3 = Theme.AccentDark }, 0)
+        text_.FontFace = Fonts.Bold
+    end
+
+    local function clear(parent)
+        for _, child in ipairs(parent:GetChildren()) do
+            if child:IsA("GuiObject") then
+                child:Destroy()
+            end
+        end
+    end
+
+    local function chip(parent, text, order, onClick)
+        local button = create("TextButton", {
+            Size = UDim2.fromOffset(0, CHIP),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundColor3 = Theme.Surface2,
+            Text = "",
+            AutoButtonColor = false,
+            LayoutOrder = order,
+            Parent = parent,
+        })
+        button:SetAttribute("NoDrag", true)
+        corner(button, UDim.new(1, 0))
+        local chipStroke = stroke(button)
+        padding(button, 12, 12)
+        local text_ = label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = text,
+            TextSize = 12,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            Parent = button,
+        })
+        local object = { Button = button, Label = text_ }
+        function object.Set(on, instant)
+            local duration = instant and 0 or 0.15
+            tween(button, { BackgroundColor3 = on and Theme.Accent or Theme.Surface2 }, duration)
+            tween(text_, { TextColor3 = on and Theme.AccentDark or Theme.Muted }, duration)
+            tween(chipStroke, { Transparency = on and 1 or 0 }, duration)
+        end
+        if onClick then
+            button.MouseButton1Click:Connect(onClick)
+        else
+            button.Active = false
+        end
+        return object
+    end
+
+    local function tagPill(parent, text, order)
+        local pill = label({
+            Size = UDim2.fromOffset(0, 18),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundColor3 = Theme.Surface3,
+            BackgroundTransparency = 0.2,
+            Text = text,
+            TextSize = 11,
+            TextColor3 = Theme.Muted,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = order,
+            Parent = parent,
+        })
+        corner(pill, UDim.new(0, 5))
+        padding(pill, 7, 7)
+        return pill
+    end
+
+    local function hlist(parent, gap, wraps)
+        return create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            VerticalAlignment = Enum.VerticalAlignment.Center,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, gap),
+            Wraps = wraps == true,
+            Parent = parent,
+        })
+    end
+
+    local function vlist(parent, gap)
+        return create("UIListLayout", {
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, gap),
+            Parent = parent,
+        })
+    end
+
+    local function wrapped(parent, text, size, color, order, font)
+        return label({
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            Text = text,
+            TextSize = size,
+            FontFace = font or Fonts.Regular,
+            TextColor3 = color or Theme.Text,
+            TextWrapped = true,
+            TextTruncate = Enum.TextTruncate.None,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            LayoutOrder = order,
+            Parent = parent,
+        })
+    end
+
+    local function scroller(parent, visible)
+        local frame = create("ScrollingFrame", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            ScrollBarThickness = 3,
+            ScrollBarImageColor3 = Theme.Accent,
+            ScrollBarImageTransparency = 0.4,
+            ScrollingDirection = Enum.ScrollingDirection.Y,
+            AutomaticCanvasSize = Enum.AutomaticSize.Y,
+            CanvasSize = UDim2.new(),
+            Visible = visible ~= false,
+            Parent = parent,
+        })
+        frame:SetAttribute("NoDrag", true)
+        return frame
+    end
+
+    -- A text box on the surface colour. Multi-line boxes show a counter.
+    local function field(parent, order, placeholder, height, limit)
+        local multi = height > ROW
+        local holder = create("Frame", {
+            Size = UDim2.new(1, 0, 0, height),
+            BackgroundColor3 = Theme.Surface,
+            BorderSizePixel = 0,
+            ClipsDescendants = true,
+            LayoutOrder = order,
+            Parent = parent,
+        })
+        corner(holder, UDim.new(0, 8))
+        local holderStroke = stroke(holder)
+        local box = create("TextBox", {
+            Position = UDim2.fromOffset(10, multi and 8 or 0),
+            Size = UDim2.new(1, -20, 1, multi and -24 or 0),
+            BackgroundTransparency = 1,
+            Text = "",
+            PlaceholderText = placeholder,
+            PlaceholderColor3 = Theme.Muted,
+            TextColor3 = Theme.Text,
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            TextYAlignment = multi and Enum.TextYAlignment.Top or Enum.TextYAlignment.Center,
+            MultiLine = multi,
+            TextWrapped = multi,
+            ClearTextOnFocus = false,
+            Parent = holder,
+        })
+        local counter = multi and label({
+            AnchorPoint = Vector2.new(1, 1),
+            Position = UDim2.new(1, -10, 1, -4),
+            Size = UDim2.fromOffset(0, 14),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = "",
+            TextSize = 11,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            Parent = holder,
+        })
+        box.Focused:Connect(function()
+            tween(holderStroke, { Color = Theme.StrokeHover }, 0.15)
+        end)
+        box.FocusLost:Connect(function()
+            tween(holderStroke, { Color = Theme.Stroke }, 0.2)
+        end)
+        box:GetPropertyChangedSignal("Text"):Connect(function()
+            local text = box.Text
+            local length = utf8.len(text) or #text
+            if limit and length > limit then
+                local cut = utf8.offset(text, limit + 1)
+                box.Text = cut and text:sub(1, cut - 1) or text:sub(1, limit)
+                return
+            end
+            if counter then
+                counter.Text = limit and (length .. "/" .. limit) or ""
+            end
+        end)
+        if counter and limit then
+            counter.Text = "0/" .. limit
+        end
+        return box, holderStroke
+    end
+
+    local function uniqueName(base)
+        base = trim((tostring(base or ""):gsub('[\\/:%*%?"<>|]', "")))
+        if base == "" then
+            base = "Cloud config"
+        end
+        local name, index = base, 2
+        while window:ConfigExists(name) do
+            name = ("%s (%d)"):format(base, index)
+            index += 1
+        end
+        return name
+    end
+
+    -- Layout: the page holds three views that slide over each other.
+
+    local top = tab._headerBottom
+    -- One pixel wider than the content on every side: root clips the slide,
+    -- and the strokes along its edges would be clipped with it.
+    local root = create("Frame", {
+        Position = UDim2.fromOffset(23, top - 1),
+        Size = UDim2.new(1, -46, 1, -(top + 14)),
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        Parent = tab._page,
+    })
+    for _, name in ipairs({ "Browse", "Detail", "Publish" }) do
+        views[name] = create("Frame", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Visible = false,
+            Parent = root,
+        })
+        padding(views[name], 1, 1, 1, 1)
+    end
+
+    local function showView(view)
+        if currentView == view then
+            return
+        end
+        local previous = currentView
+        currentView = view
+        if previous then
+            previous.Visible = false
+        end
+        local fromX = view == views.Browse and -24 or 24
+        view.Position = UDim2.fromOffset(fromX, 0)
+        view.Visible = true
+        tween(view, { Position = UDim2.fromOffset(0, 0) }, 0.3, Enum.EasingStyle.Quint)
+    end
+
+    -- Browse: search, publish and refresh, the filter strip, then results.
+
+    local browse = views.Browse
+    local toolbar = create("Frame", {
+        Size = UDim2.new(1, 0, 0, ROW),
+        BackgroundTransparency = 1,
+        Parent = browse,
+    })
+    local publishButton, publishText = softButton(toolbar, "Publish", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.fromScale(1, 0),
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+    }, function()
+        cloud:OpenPublish()
+    end)
+    primary(publishButton, publishText)
+    publishButton.Visible = type(opts.OnPublish) == "function"
+    local refreshButton, refreshIcon = iconButton(toolbar, "refresh-cw", "R", ROW)
+    refreshButton.AnchorPoint = Vector2.new(1, 0)
+    local searchHolder = create("Frame", {
+        Size = UDim2.new(1, -(ROW + 8), 1, 0),
+        BackgroundColor3 = Theme.Surface2,
+        BorderSizePixel = 0,
+        Parent = toolbar,
+    })
+    corner(searchHolder, UDim.new(0, 8))
+    local searchStroke = stroke(searchHolder)
+    local searchIcon, searchImage = glowIcon(searchHolder, "search", Theme.Muted, UDim2.new(0, 10, 0.5, 0))
+    searchIcon.Size = UDim2.fromOffset(14, 14)
+    local searchBox = create("TextBox", {
+        Position = UDim2.fromOffset(32, 0),
+        Size = UDim2.new(1, -62, 1, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        PlaceholderText = opts.SearchPlaceholder or (TOUCH and "Search configs..." or "Search configs...   ( / )"),
+        PlaceholderColor3 = Theme.Muted,
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        FontFace = Fonts.Regular,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ClearTextOnFocus = false,
+        ClipsDescendants = true,
+        Parent = searchHolder,
+    })
+    local searchClear = iconButton(searchHolder, "x", "x", 24, true)
+    searchClear.AnchorPoint = Vector2.new(1, 0.5)
+    searchClear.Position = UDim2.new(1, -4, 0.5, 0)
+    searchClear.Visible = false
+
+    local fetch
+    local searchToken = 0
+    local recent = type(stored.CloudRecent) == "table" and stored.CloudRecent or {}
+    local recentFrame = create("Frame", {
+        Position = UDim2.fromOffset(0, ROW + 4),
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundColor3 = Theme.Surface2,
+        BorderSizePixel = 0,
+        Visible = false,
+        ZIndex = 5,
+        Parent = browse,
+    })
+    corner(recentFrame, UDim.new(0, 8))
+    stroke(recentFrame)
+    padding(recentFrame, 6, 6, 6, 6)
+    vlist(recentFrame, 2)
+
+    local function rememberSearch(text)
+        text = trim(text)
+        if #text < 2 then
+            return
+        end
+        for index = #recent, 1, -1 do
+            if string.lower(recent[index]) == string.lower(text) then
+                table.remove(recent, index)
+            end
+        end
+        table.insert(recent, 1, text)
+        while #recent > 6 do
+            table.remove(recent)
+        end
+        persist("CloudRecent", recent)
+    end
+
+    local function showRecent(show)
+        show = show and #recent > 0 and searchBox.Text == ""
+        if show == recentFrame.Visible then
+            return
+        end
+        recentFrame.Visible = show
+        if not show then
+            return
+        end
+        clear(recentFrame)
+        local header = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 20),
+            BackgroundTransparency = 1,
+            LayoutOrder = 0,
+            Parent = recentFrame,
+        })
+        label({
+            Position = UDim2.fromOffset(8, 0),
+            Size = UDim2.new(1, -60, 1, 0),
+            Text = "Recent searches",
+            TextSize = 11,
+            TextColor3 = Theme.Muted,
+            Parent = header,
+        })
+        local wipe = create("TextButton", {
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.new(1, -6, 0, 0),
+            Size = UDim2.fromOffset(0, 20),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundTransparency = 1,
+            Text = "Clear",
+            TextSize = 11,
+            FontFace = Fonts.Medium,
+            TextColor3 = Theme.Accent,
+            AutoButtonColor = false,
+            Parent = header,
+        })
+        wipe.MouseButton1Down:Connect(function()
+            recent = {}
+            persist("CloudRecent", recent)
+            showRecent(false)
+        end)
+        for index, text in ipairs(recent) do
+            local row = create("TextButton", {
+                Size = UDim2.new(1, 0, 0, TOUCH and 32 or 28),
+                BackgroundColor3 = Theme.Surface3,
+                BackgroundTransparency = 1,
+                Text = "",
+                AutoButtonColor = false,
+                LayoutOrder = index,
+                Parent = recentFrame,
+            })
+            corner(row, UDim.new(0, 6))
+            local icon = glowIcon(row, "history", Theme.Muted, UDim2.new(0, 8, 0.5, 0))
+            icon.Size = UDim2.fromOffset(13, 13)
+            label({
+                Position = UDim2.fromOffset(28, 0),
+                Size = UDim2.new(1, -34, 1, 0),
+                Text = text,
+                TextSize = 13,
+                FontFace = Fonts.Regular,
+                Parent = row,
+            })
+            row.MouseEnter:Connect(function()
+                tween(row, { BackgroundTransparency = 0.5 }, 0.1)
+            end)
+            row.MouseLeave:Connect(function()
+                tween(row, { BackgroundTransparency = 1 }, 0.15)
+            end)
+            row.MouseButton1Down:Connect(function()
+                searchToken += 1
+                searchBox.Text = text
+                query.Search = text
+                rememberSearch(text)
+                showRecent(false)
+                searchBox:ReleaseFocus()
+                fetch(false)
+            end)
+        end
+    end
+
+    local function fitToolbar()
+        local scale = window.Scale.Scale
+        local publishWidth = publishButton.Visible and (publishButton.AbsoluteSize.X / scale + 8) or 0
+        refreshButton.Position = UDim2.new(1, -publishWidth, 0, 0)
+        searchHolder.Size = UDim2.new(1, -(publishWidth + ROW + 8), 1, 0)
+        recentFrame.Size = UDim2.new(1, -(publishWidth + ROW + 8), 0, 0)
+    end
+    publishButton:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitToolbar)
+    task.defer(fitToolbar)
+
+    -- A pixel taller than the chips on each side, so their strokes aren't clipped.
+    local filterRow = create("Frame", {
+        Position = UDim2.fromOffset(0, ROW + 7),
+        Size = UDim2.new(1, 0, 0, CHIP + 2),
+        BackgroundTransparency = 1,
+        Parent = browse,
+    })
+    local sortButton = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, -1, 0, 1),
+        Size = UDim2.fromOffset(0, CHIP),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundColor3 = Theme.Surface2,
+        Text = "",
+        AutoButtonColor = false,
+        Parent = filterRow,
+    })
+    corner(sortButton, UDim.new(1, 0))
+    hoverStroke(sortButton, stroke(sortButton))
+    padding(sortButton, 10, 12)
+    hlist(sortButton, 6)
+    local sortIcon = glowIcon(sortButton, "arrow-down-up", Theme.Accent, UDim2.new())
+    sortIcon.Size = UDim2.fromOffset(13, 13)
+    local sortLabel = label({
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = SORT_NAMES[query.Sort],
+        TextSize = 12,
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 2,
+        Parent = sortButton,
+    })
+    local filterStrip = create("ScrollingFrame", {
+        Size = UDim2.new(1, -120, 1, 0),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ScrollBarThickness = 0,
+        ScrollingDirection = Enum.ScrollingDirection.X,
+        AutomaticCanvasSize = Enum.AutomaticSize.X,
+        CanvasSize = UDim2.new(),
+        Parent = filterRow,
+    })
+    filterStrip:SetAttribute("NoDrag", true)
+    hlist(filterStrip, 6)
+    padding(filterStrip, 1, 1, 1, 1)
+    local function fitFilters()
+        local width = sortButton.AbsoluteSize.X / window.Scale.Scale
+        filterStrip.Size = UDim2.new(1, -(width + 8), 1, 0)
+    end
+    sortButton:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitFilters)
+    task.defer(fitFilters)
+
+    local resultsTop = ROW + 8 + CHIP + 10
+    local results = scroller(browse)
+    results.Position = UDim2.fromOffset(0, resultsTop)
+    results.Size = UDim2.new(1, 0, 1, -resultsTop)
+    padding(results, 1, 6, 1, 12)
+    vlist(results, 10)
+    local summaryRow = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 16),
+        BackgroundTransparency = 1,
+        LayoutOrder = 0,
+        Parent = results,
+    })
+    local summaryLabel = label({
+        Size = UDim2.new(1, -100, 1, 0),
+        Text = "",
+        RichText = true,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = summaryRow,
+    })
+    local resetButton = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.fromScale(1, 0),
+        Size = UDim2.fromOffset(0, 16),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Text = "Clear filters",
+        TextSize = 12,
+        FontFace = Fonts.Medium,
+        TextColor3 = Theme.Accent,
+        AutoButtonColor = false,
+        Visible = false,
+        Parent = summaryRow,
+    })
+    local resetFilters
+
+    local function filtered()
+        return query.Search ~= "" or query.Tag ~= nil or query.Filter ~= "All"
+    end
+
+    -- "12 configs in Favorites, tagged PvP, matching "boss"", or "Searching..."
+    local function renderSummary(pending)
+        local parts = {}
+        if query.Filter ~= "All" then
+            table.insert(parts, "in " .. query.Filter)
+        end
+        if query.Tag then
+            table.insert(parts, "tagged " .. escape(query.Tag))
+        end
+        if query.Search ~= "" then
+            table.insert(parts, ('matching <font color="#%s">"%s"</font>'):format(colorToHex(Theme.Accent), escape(query.Search)))
+        end
+        local context = #parts > 0 and (" " .. table.concat(parts, ", ")) or ""
+        if pending or (loading and #records == 0) then
+            summaryLabel.Text = "Searching" .. context .. "..."
+        else
+            local count = #records
+            summaryLabel.Text = ("%d%s config%s%s"):format(count, hasMore and "+" or "", (count == 1 and not hasMore) and "" or "s", context)
+        end
+        resetButton.Visible = filtered()
+    end
+
+    local spin = nil
+    local function busy(on)
+        loading = on
+        if on and not spin then
+            refreshIcon.Rotation = 0
+            spin = TweenService:Create(refreshIcon, TweenInfo.new(0.9, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1), { Rotation = 360 })
+            spin:Play()
+        elseif not on and spin then
+            spin:Cancel()
+            spin = nil
+            tween(refreshIcon, { Rotation = 360 }, 0.35, Enum.EasingStyle.Quint)
+        end
+        renderSummary()
+    end
+    local grid = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 1,
+        Parent = results,
+    })
+    local gridLayout = create("UIGridLayout", {
+        CellSize = UDim2.new(1, 0, 0, CARD),
+        CellPadding = UDim2.fromOffset(8, 8),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = grid,
+    })
+    local function fitGrid()
+        local width = results.AbsoluteSize.X / window.Scale.Scale
+        local columns = width >= 620 and 2 or 1
+        gridLayout.CellSize = UDim2.new(1 / columns, -(columns - 1) * 8 / columns, 0, CARD)
+    end
+    results:GetPropertyChangedSignal("AbsoluteSize"):Connect(fitGrid)
+    task.defer(fitGrid)
+    local moreButton = softButton(results, "Load more", {
+        Size = UDim2.new(1, 0, 0, 32),
+        LayoutOrder = 2,
+        Visible = false,
+    }, function()
+        cloud:LoadMore()
+    end)
+    local stateFrame = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 180),
+        BackgroundTransparency = 1,
+        Visible = false,
+        LayoutOrder = 3,
+        Parent = results,
+    })
+
+    -- Loading placeholders that pulse where cards will land.
+    local skeletons = {}
+    local function addSkeletons(count)
+        for _ = 1, count do
+            local cell = create("Frame", {
+                BackgroundColor3 = Theme.Surface2,
+                BorderSizePixel = 0,
+                LayoutOrder = 100000 + #skeletons,
+                Parent = grid,
+            })
+            corner(cell, UDim.new(0, 10))
+            stroke(cell)
+            for index, spec in ipairs({ { 14, 0.45 }, { 36, 0.3 }, { 58, 0.8 }, { 76, 0.6 } }) do
+                local bar = create("Frame", {
+                    Position = UDim2.fromOffset(14, spec[1]),
+                    Size = UDim2.new(spec[2], -14, 0, index == 1 and 14 or 10),
+                    BackgroundColor3 = Theme.Surface3,
+                    BorderSizePixel = 0,
+                    Parent = cell,
+                })
+                corner(bar, UDim.new(0, 4))
+                TweenService:Create(bar, TweenInfo.new(0.75, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+                    BackgroundTransparency = 0.65,
+                }):Play()
+            end
+            table.insert(skeletons, cell)
+        end
+    end
+    local function clearSkeletons()
+        for _, cell in ipairs(skeletons) do
+            cell:Destroy()
+        end
+        skeletons = {}
+    end
+
+    -- kind: nil hides it, or "empty" / "error" with a message.
+    local function setState(kind, text)
+        clear(stateFrame)
+        stateFrame.Visible = kind ~= nil
+        if not kind then
+            return
+        end
+        local holder, caption = emptyState(stateFrame, kind == "error" and "cloud-off" or "search-x", text)
+        holder.Size = UDim2.fromOffset(280, 70)
+        holder.Position = UDim2.new(0.5, 0, 0, 60)
+        caption.TextWrapped = true
+        caption.TextTruncate = Enum.TextTruncate.None
+        caption.Size = UDim2.new(1, 0, 0, 32)
+        if kind == "error" or filtered() then
+            softButton(stateFrame, kind == "error" and "Try again" or "Clear filters", {
+                AnchorPoint = Vector2.new(0.5, 0),
+                Position = UDim2.new(0.5, 0, 0, 132),
+                Size = UDim2.fromOffset(0, 30),
+                AutomaticSize = Enum.AutomaticSize.X,
+            }, function()
+                if kind == "error" then
+                    cloud:Refresh()
+                else
+                    resetFilters()
+                end
+            end)
+        end
+        renderSummary()
+    end
+
+    -- Cards
+
+    local openDetail, installRecord, refreshRecord
+
+    local function renderCard(card)
+        local record = card.Record
+        card.Title.Text = highlight(record.Name)
+        local meta = { "by " .. record.Author }
+        local when = ago(record.Updated)
+        if when then
+            table.insert(meta, when)
+        end
+        if record.Count then
+            table.insert(meta, record.Count .. (record.Count == 1 and " setting" or " settings"))
+        end
+        card.Meta.Text = table.concat(meta, "  Â·  ")
+        card.Desc.Text = record.Description ~= "" and highlight(record.Description) or "No description"
+        card.Desc.TextTransparency = record.Description ~= "" and 0.2 or 0.55
+        card.Likes.Text = compact(record.Likes)
+        card.Installs.Text = compact(record.Installs)
+        tween(card.Heart, { ImageColor3 = record.Liked and Theme.Accent or Theme.Muted }, 0.15)
+        local state = installState(record)
+        local badge, color
+        if state == "Update" then
+            badge, color = "UPDATE", Theme.Accent
+        elseif state == "Installed" then
+            badge, color = "INSTALLED", Theme.Success
+        elseif record.Mine then
+            badge, color = "YOURS", Theme.Accent
+        elseif otherScript(record) then
+            badge, color = "OTHER SCRIPT", Theme.Warning
+        end
+        card.Badge.Visible = badge ~= nil
+        if badge then
+            card.Badge.Text = badge
+            tween(card.Badge, { TextColor3 = color, BackgroundColor3 = color }, 0)
+        end
+        card.Star.Visible = favorites[record.Id] ~= nil
+        card.InstallText.Text = state == "Update" and "Update" or (state == "Installed" and "Reinstall" or "Install")
+        clear(card.TagRow)
+        for index, tag in ipairs(record.Tags) do
+            if index > 3 then
+                tagPill(card.TagRow, "+" .. (#record.Tags - 3), index)
+                break
+            end
+            tagPill(card.TagRow, tag, index)
+        end
+    end
+
+    local function buildCard(record, order)
+        local frame = create("TextButton", {
+            BackgroundColor3 = Theme.Surface2,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            LayoutOrder = order,
+            Parent = grid,
+        })
+        frame:SetAttribute("NoDrag", true)
+        corner(frame, UDim.new(0, 10))
+        hoverStroke(frame, stroke(frame))
+        padding(frame, 14, 14, 12, 12)
+        local card = { Record = record, Frame = frame }
+        card.Title = label({
+            Size = UDim2.new(1, -110, 0, 18),
+            RichText = true,
+            TextSize = 14,
+            FontFace = Fonts.Bold,
+            Parent = frame,
+        })
+        local corner_ = create("Frame", {
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.fromScale(1, 0),
+            Size = UDim2.fromOffset(0, 18),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundTransparency = 1,
+            Parent = frame,
+        })
+        local cornerLayout = hlist(corner_, 6)
+        cornerLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+        card.Star = label({
+            Size = UDim2.fromOffset(14, 18),
+            Text = "â",
+            TextSize = 13,
+            TextColor3 = Theme.Accent,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 1,
+            Parent = corner_,
+        })
+        card.Badge = label({
+            Size = UDim2.fromOffset(0, 17),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundTransparency = 0.85,
+            TextSize = 10,
+            FontFace = Fonts.Bold,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 2,
+            Parent = corner_,
+        })
+        corner(card.Badge, UDim.new(0, 5))
+        padding(card.Badge, 6, 6)
+        card.Meta = label({
+            Position = UDim2.fromOffset(0, 20),
+            Size = UDim2.new(1, 0, 0, 16),
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            Parent = frame,
+        })
+        card.Desc = label({
+            Position = UDim2.fromOffset(0, 41),
+            RichText = true,
+            Size = UDim2.new(1, 0, 0, 30),
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextWrapped = true,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            Parent = frame,
+        })
+        local bottom = create("Frame", {
+            AnchorPoint = Vector2.new(0, 1),
+            Position = UDim2.fromScale(0, 1),
+            Size = UDim2.new(1, 0, 0, 26),
+            BackgroundTransparency = 1,
+            Parent = frame,
+        })
+        card.TagRow = create("Frame", {
+            Size = UDim2.new(1, -190, 1, 0),
+            BackgroundTransparency = 1,
+            ClipsDescendants = true,
+            Parent = bottom,
+        })
+        hlist(card.TagRow, 4)
+        local install, installText = softButton(bottom, "Install", {
+            AnchorPoint = Vector2.new(1, 0.5),
+            Position = UDim2.new(1, 0, 0.5, 0),
+            Size = UDim2.fromOffset(76, 26),
+        }, function()
+            installRecord(record)
+        end)
+        primary(install, installText)
+        card.InstallText = installText
+        local stats = create("Frame", {
+            AnchorPoint = Vector2.new(1, 0.5),
+            Position = UDim2.new(1, -86, 0.5, 0),
+            Size = UDim2.fromOffset(0, 20),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundTransparency = 1,
+            Parent = bottom,
+        })
+        hlist(stats, 4)
+        local function stat(icon, order_)
+            local holder, image = glowIcon(stats, icon, Theme.Muted, UDim2.new())
+            holder.Size = UDim2.fromOffset(12, 12)
+            holder.LayoutOrder = order_
+            local text_ = label({
+                Size = UDim2.fromOffset(0, 20),
+                AutomaticSize = Enum.AutomaticSize.X,
+                TextSize = 12,
+                TextColor3 = Theme.Muted,
+                TextTruncate = Enum.TextTruncate.None,
+                LayoutOrder = order_ + 1,
+                Parent = stats,
+            })
+            return text_, image
+        end
+        card.Likes, card.Heart = stat("heart", 1)
+        create("Frame", { Size = UDim2.fromOffset(4, 1), BackgroundTransparency = 1, LayoutOrder = 3, Parent = stats })
+        card.Installs = stat("download", 4)
+        local isTap = tapGuard(frame, function()
+            return results
+        end)
+        frame.MouseButton1Click:Connect(function()
+            if isTap() then
+                if query.Search ~= "" then
+                    rememberSearch(query.Search)
+                end
+                openDetail(record)
+            end
+        end)
+        cards[record.Id] = card
+        renderCard(card)
+        return card
+    end
+
+    local function renderList()
+        for _, card in pairs(cards) do
+            card.Frame:Destroy()
+        end
+        cards = {}
+        for index, record in ipairs(records) do
+            buildCard(record, index)
+        end
+    end
+
+    -- Favorites and Installed are kept on this device, so they filter locally.
+    local function localRecords()
+        local source = query.Filter == "Favorites" and favorites or installed
+        local search = string.lower(query.Search)
+        local list = {}
+        for id, entry in pairs(source) do
+            local kept = query.Filter == "Favorites" and entry or (type(entry) == "table" and entry.Record)
+            if type(kept) == "table" then
+                kept = table.clone(kept)
+                kept.Id = id
+                local record = normalizeRecord(kept)
+                local matches = search == "" or string.find(string.lower(record.Name), search, 1, true)
+                    or string.find(string.lower(record.Description), search, 1, true)
+                if matches and query.Tag then
+                    matches = table.find(record.Tags, query.Tag) ~= nil
+                end
+                if matches then
+                    table.insert(list, record)
+                end
+            end
+        end
+        table.sort(list, function(a, b)
+            if query.Sort == "New" then
+                return (a.Updated or 0) > (b.Updated or 0)
+            elseif query.Sort == "Installs" then
+                return a.Installs > b.Installs
+            end
+            return a.Likes > b.Likes
+        end)
+        return list
+    end
+
+    local function emptyText()
+        if query.Filter == "Favorites" then
+            return "No favorites yet. Open a config and press Favorite to keep it here."
+        elseif query.Filter == "Installed" then
+            return "Nothing installed from the cloud yet"
+        elseif query.Filter == "Mine" then
+            return "You haven't published anything yet"
+        elseif query.Search ~= "" or query.Tag then
+            return "No configs match your search"
+        end
+        return tostring(opts.EmptyText or "No configs shared yet. Be the first!")
+    end
+
+    function fetch(more)
+        token += 1
+        local myToken = token
+        if query.Filter == "Favorites" or query.Filter == "Installed" then
+            busy(false)
+            clearSkeletons()
+            records = localRecords()
+            hasMore = false
+            renderList()
+            moreButton.Visible = false
+            setState(#records == 0 and "empty" or nil, emptyText())
+            return
+        end
+        if type(opts.OnFetch) ~= "function" then
+            renderList()
+            setState(#records == 0 and "empty" or nil, emptyText())
+            return
+        end
+        if more then
+            if not hasMore then
+                return
+            end
+            page += 1
+        else
+            page = 1
+            records = {}
+            renderList()
+            results.CanvasPosition = Vector2.zero
+        end
+        busy(true)
+        clearSkeletons()
+        addSkeletons(more and 2 or 4)
+        moreButton.Visible = false
+        setState(nil)
+        local fetchQuery = {
+            Search = query.Search,
+            Sort = query.Sort,
+            Filter = query.Filter,
+            Tag = query.Tag,
+            Page = page,
+            PageSize = pageSize,
+            Folder = window.ConfigFolder,
+            UserId = LocalPlayer.UserId,
+        }
+        task.spawn(function()
+            local ok, list, extra = isolatedCall(function()
+                return opts.OnFetch(fetchQuery)
+            end)
+            if myToken ~= token then
+                return
+            end
+            busy(false)
+            clearSkeletons()
+            if not ok or type(list) ~= "table" then
+                if more then
+                    page -= 1
+                end
+                if not ok then
+                    warn("[AirFlow] cloud OnFetch error: " .. tostring(list))
+                end
+                hasMore = more and hasMore or false
+                moreButton.Visible = false
+                setState("error", not ok and "Could not load configs" or tostring(extra or "Could not load configs"))
+                return
+            end
+            hasMore = extra == true
+            local seen = {}
+            for _, record in ipairs(records) do
+                seen[record] = true
+            end
+            for _, raw in ipairs(list) do
+                local record = normalizeRecord(raw)
+                if record and not seen[record] then
+                    seen[record] = true
+                    table.insert(records, record)
+                    buildCard(record, #records)
+                end
+            end
+            moreButton.Visible = hasMore
+            setState(#records == 0 and "empty" or nil, emptyText())
+        end)
+    end
+
+    -- Near the bottom, the next page loads by itself.
+    results:GetPropertyChangedSignal("CanvasPosition"):Connect(function()
+        if not hasMore or loading then
+            return
+        end
+        local scale = window.Scale.Scale
+        local remaining = results.AbsoluteCanvasSize.Y / scale - results.AbsoluteWindowSize.Y / scale - results.CanvasPosition.Y
+        if remaining < 160 then
+            fetch(true)
+        end
+    end)
+
+    -- Filters and sorting
+
+    local filterChips, tagChips = {}, {}
+    local function renderFilters(instant)
+        for name, object in pairs(filterChips) do
+            object.Set(query.Filter == name, instant)
+        end
+        for name, object in pairs(tagChips) do
+            object.Set(query.Tag == name, instant)
+        end
+        sortLabel.Text = SORT_NAMES[query.Sort]
+    end
+    for index, name in ipairs(FILTERS) do
+        if not (name == "Mine" and opts.MineFilter == false) then
+            filterChips[name] = chip(filterStrip, name, index, function()
+                if query.Filter ~= name then
+                    query.Filter = name
+                    renderFilters()
+                    fetch(false)
+                end
+            end)
+        end
+    end
+    if #tagList > 0 then
+        create("Frame", {
+            Size = UDim2.fromOffset(1, 16),
+            BackgroundColor3 = Theme.Stroke,
+            BorderSizePixel = 0,
+            LayoutOrder = 10,
+            Parent = filterStrip,
+        })
+    end
+    for index, tag in ipairs(tagList) do
+        tag = tostring(tag)
+        tagChips[tag] = chip(filterStrip, tag, 10 + index, function()
+            query.Tag = query.Tag ~= tag and tag or nil
+            renderFilters()
+            fetch(false)
+        end)
+    end
+    sortButton.MouseButton1Click:Connect(function()
+        local index = table.find(SORTS, query.Sort) or 1
+        query.Sort = SORTS[index % #SORTS + 1]
+        persist("CloudSort", query.Sort)
+        renderFilters()
+        fetch(false)
+    end)
+
+    function resetFilters()
+        searchToken += 1
+        searchBox.Text = ""
+        query.Search, query.Tag, query.Filter = "", nil, "All"
+        renderFilters()
+        fetch(false)
+    end
+    resetButton.MouseButton1Click:Connect(resetFilters)
+
+    -- Typing searches after a short pause; Enter searches now.
+    searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+        searchClear.Visible = searchBox.Text ~= ""
+        showRecent(searchBox:IsFocused())
+        searchToken += 1
+        local mine = searchToken
+        local text = trim(searchBox.Text)
+        if text ~= query.Search then
+            renderSummary(true)
+        end
+        task.delay(0.35, function()
+            text = trim(searchBox.Text)
+            if mine == searchToken and text ~= query.Search then
+                query.Search = text
+                fetch(false)
+            end
+        end)
+    end)
+    searchBox.Focused:Connect(function()
+        tween(searchStroke, { Color = Theme.Accent }, 0.15)
+        tween(searchImage, { ImageColor3 = Theme.Accent }, 0.15)
+        showRecent(true)
+    end)
+    searchBox.FocusLost:Connect(function(enterPressed)
+        tween(searchStroke, { Color = Theme.Stroke }, 0.2)
+        tween(searchImage, { ImageColor3 = Theme.Muted }, 0.2)
+        rememberSearch(searchBox.Text)
+        -- Late enough for a press on a recent search to land first.
+        task.delay(0.15, function()
+            if not searchBox:IsFocused() then
+                showRecent(false)
+            end
+        end)
+        if enterPressed then
+            searchToken += 1
+            local text = trim(searchBox.Text)
+            if text ~= query.Search then
+                query.Search = text
+                fetch(false)
+            end
+        end
+    end)
+    searchClear.MouseButton1Click:Connect(function()
+        searchToken += 1
+        searchBox.Text = ""
+        if query.Search ~= "" then
+            query.Search = ""
+            fetch(false)
+        end
+    end)
+    -- "/" jumps to the search box while the list is showing.
+    window:_listen("Began", function(input, processed)
+        if processed or input.KeyCode ~= Enum.KeyCode.Slash then
+            return
+        end
+        if window.Open and window.CurrentTab == tab and currentView == views.Browse and not UserInputService:GetFocusedTextBox() then
+            task.defer(function()
+                searchBox:CaptureFocus()
+                searchBox.Text = searchBox.Text:gsub("/$", "")
+            end)
+        end
+    end, cloud)
+    refreshButton.MouseButton1Click:Connect(function()
+        cloud:Refresh()
+    end)
+
+    -- Actions on a record
+
+    -- Runs callback with the record's code, asking the backend for it first
+    -- when the list came without codes.
+    local function withCode(record, callback, onFail)
+        if record.Code then
+            callback(record.Code)
+            return
+        end
+        local function fail(reason)
+            if onFail then
+                onFail(reason)
+            else
+                notify(false, "Could not load config", reason)
+            end
+        end
+        if type(opts.OnFetchCode) ~= "function" then
+            fail("This config has no code")
+            return
+        end
+        task.spawn(function()
+            local ok, code, reason = isolatedCall(function()
+                return opts.OnFetchCode(publicRecord(record))
+            end)
+            if ok and type(code) == "string" and code ~= "" then
+                record.Code = code
+                record.Count = record.Count or countFlags(code)
+                callback(code)
+            else
+                fail(tostring(reason or (not ok and "the request failed") or "no code came back"))
+            end
+        end)
+    end
+
+    function installRecord(record)
+        if record._busy then
+            return
+        end
+        record._busy = true
+        withCode(record, function(code)
+            record._busy = nil
+            local data, info = window:DecodeConfig(code)
+            if not data then
+                notify(false, "Install failed", "The config code is invalid")
+                return
+            end
+            local count = 0
+            for _ in pairs(data) do
+                count += 1
+            end
+            local mark = installed[record.Id]
+            local saveAs = nil
+            if fileApiAvailable() then
+                -- An update overwrites the config it installed last time.
+                saveAs = type(mark) == "table" and type(mark.Name) == "string" and window:ConfigExists(mark.Name) and mark.Name
+                    or uniqueName(record.Name)
+            end
+            local other = info.Folder and info.Folder ~= window.ConfigFolder
+            local function apply(save)
+                local name = save and saveAs or nil
+                local ok, err = window:ImportConfig(code, name, true)
+                if not ok then
+                    notify(false, "Install failed", tostring(err))
+                    return
+                end
+                installed[record.Id] = { Updated = record.Updated or os.time(), Name = name, At = os.time(), Record = summary(record) }
+                persist("CloudInstalled", installed)
+                record.Installs += 1
+                refreshRecord(record)
+                notify(true, "Config installed", name and ("Saved as " .. name) or "Applied to your current settings")
+                if opts.OnInstall then
+                    task.spawn(safeCall, opts.OnInstall, publicRecord(record), name)
+                end
+            end
+            local content = ("%s by %s changes %d setting%s."):format(record.Name, record.Author, count, count == 1 and "" or "s")
+            if other then
+                content ..= (" It was made for %s, so only matching settings apply."):format(info.Folder)
+            end
+            if saveAs then
+                content ..= (" Install also saves it as %s; Apply only doesn't."):format(saveAs)
+            end
+            local buttons = { { Title = "Cancel" } }
+            table.insert(buttons, { Title = "Apply only", Variant = not saveAs and "Primary" or nil, Callback = function()
+                apply(false)
+            end })
+            if saveAs then
+                table.insert(buttons, { Title = "Install", Variant = "Primary", Callback = function()
+                    apply(true)
+                end })
+            end
+            window:Dialog({
+                Title = installState(record) == "Update" and "Update config" or "Install config",
+                Content = content,
+                Icon = other and "triangle-alert" or "download",
+                Buttons = buttons,
+            })
+        end, function(reason)
+            record._busy = nil
+            notify(false, "Could not load config", reason)
+        end)
+    end
+
+    local function toggleLike(record)
+        if type(opts.OnLike) ~= "function" or record._liking then
+            return
+        end
+        local liked = not record.Liked
+        record.Liked = liked
+        record.Likes = math.max(record.Likes + (liked and 1 or -1), 0)
+        record._liking = true
+        refreshRecord(record)
+        task.spawn(function()
+            local ok, result, reason = isolatedCall(function()
+                return opts.OnLike(publicRecord(record), liked)
+            end)
+            record._liking = nil
+            if not ok or result == false then
+                record.Liked = not liked
+                record.Likes = math.max(record.Likes + (liked and -1 or 1), 0)
+                refreshRecord(record)
+                notify(false, "Like not saved", tostring(reason or "Try again in a moment"))
+            end
+        end)
+    end
+
+    local function toggleFavorite(record)
+        local on = favorites[record.Id] == nil
+        favorites[record.Id] = on and summary(record) or nil
+        persist("CloudFavorites", favorites)
+        refreshRecord(record)
+        window:Notify({
+            Title = on and "Added to favorites" or "Removed from favorites",
+            Content = record.Name,
+            Icon = "star",
+            Duration = 2,
+        })
+    end
+
+    local function removeRecord(record)
+        local index = table.find(records, record)
+        if index then
+            table.remove(records, index)
+        end
+        byId[record.Id] = nil
+        local card = cards[record.Id]
+        if card then
+            card.Frame:Destroy()
+            cards[record.Id] = nil
+        end
+        if #records == 0 and not loading then
+            setState("empty", emptyText())
+        end
+    end
+
+    local function deleteRecord(record)
+        window:Confirm({
+            Title = "Delete config",
+            Content = ("Remove %s from the cloud? People who installed it keep their copy."):format(record.Name),
+            Icon = "trash-2",
+            ConfirmText = "Delete",
+            Callback = function()
+                task.spawn(function()
+                    local ok, result, reason = isolatedCall(function()
+                        return opts.OnDelete(publicRecord(record))
+                    end)
+                    if not ok or result == false then
+                        notify(false, "Delete failed", tostring(reason or "Try again in a moment"))
+                        return
+                    end
+                    favorites[record.Id] = nil
+                    persist("CloudFavorites", favorites)
+                    removeRecord(record)
+                    showView(views.Browse)
+                    notify(true, "Config deleted", record.Name)
+                end)
+            end,
+        })
+    end
+
+    local function reportRecord(record)
+        local reasons = type(opts.ReportReasons) == "table" and opts.ReportReasons or { "Broken", "Spam", "Inappropriate" }
+        local buttons = { { Title = "Cancel" } }
+        for _, reason in ipairs(reasons) do
+            table.insert(buttons, { Title = tostring(reason), Callback = function()
+                task.spawn(function()
+                    local ok, result = isolatedCall(function()
+                        return opts.OnReport(publicRecord(record), tostring(reason))
+                    end)
+                    local sent = ok and result ~= false
+                    notify(sent, sent and "Report sent" or "Report failed", sent and "Thanks for letting us know" or "Try again in a moment")
+                end)
+            end })
+        end
+        window:Dialog({
+            Title = "Report config",
+            Content = ("What's wrong with %s?"):format(record.Name),
+            Icon = "flag",
+            Buttons = buttons,
+        })
+    end
+
+    -- Detail view
+
+    local detailList = scroller(views.Detail)
+    padding(detailList, 1, 8, 1, 16)
+    vlist(detailList, 10)
+
+    local function valueText(entry)
+        local value = type(entry) == "table" and entry.Value or nil
+        if value == nil then
+            return "None"
+        elseif type(value) == "boolean" then
+            return value and "On" or "Off"
+        elseif type(value) == "number" then
+            return (("%.2f"):format(value):gsub("%.?0+$", ""))
+        elseif type(value) == "table" then
+            if type(value.Hex) == "string" then
+                return "#" .. string.upper(value.Hex)
+            elseif type(value.Colors) == "table" then
+                local text = type(value.Name) == "string" and value.Name or "Custom"
+                if type(value.Background) == "string" and value.Background ~= "" then
+                    text ..= ", image"
+                end
+                return text
+            end
+            local parts = {}
+            for index, item in ipairs(value) do
+                parts[index] = tostring(item)
+            end
+            return #parts > 0 and table.concat(parts, ", ") or "None"
+        end
+        return tostring(value)
+    end
+
+    local function encoded(entry)
+        local ok, text = pcall(HttpService.JSONEncode, HttpService, type(entry) == "table" and entry.Value or nil)
+        return ok and text or tostring(entry)
+    end
+
+    local function renderDetail()
+        local record = detailRecord
+        if not record or not detail.Meta then
+            return
+        end
+        detail.Title.Text = record.Name
+        local meta = { "by " .. record.Author }
+        local when = ago(record.Updated)
+        if when then
+            table.insert(meta, "updated " .. when)
+        end
+        if otherScript(record) then
+            table.insert(meta, "made for " .. record.Folder)
+        end
+        detail.Meta.Text = table.concat(meta, "  Â·  ")
+        detail.Stats.Text = ("%s like%s  Â·  %s install%s"):format(
+            compact(record.Likes), record.Likes == 1 and "" or "s",
+            compact(record.Installs), record.Installs == 1 and "" or "s")
+        if detail.BuiltFor ~= record or detail.BuiltMine ~= record.Mine then
+            detail.BuiltFor, detail.BuiltMine = record, record.Mine
+            local row = detail.Actions
+            clear(row)
+            local order = 0
+            local function action(text, style, callback)
+                order += 1
+                local button, text_ = softButton(row, text, {
+                    Size = UDim2.new(0, 0, 0, 30),
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    LayoutOrder = order,
+                }, callback)
+                text_.TextSize = 13
+                if style == "Primary" then
+                    primary(button, text_)
+                elseif style == "Danger" then
+                    tween(text_, { TextColor3 = Theme.Error }, 0)
+                end
+                return text_
+            end
+            detail.InstallLabel = action("Install", "Primary", function()
+                installRecord(record)
+            end)
+            if type(opts.OnLike) == "function" then
+                detail.LikeLabel = action("Like", nil, function()
+                    toggleLike(record)
+                end)
+            end
+            detail.FavoriteLabel = action("Favorite", nil, function()
+                toggleFavorite(record)
+            end)
+            action("Copy code", nil, function()
+                withCode(record, function(code)
+                    window:CopyToClipboard(code, "Config code")
+                end)
+            end)
+            if record.Mine then
+                if type(opts.OnUpdate) == "function" then
+                    action("Edit", nil, function()
+                        cloud:OpenPublish(record)
+                    end)
+                end
+                if type(opts.OnDelete) == "function" then
+                    action("Delete", "Danger", function()
+                        deleteRecord(record)
+                    end)
+                end
+            elseif type(opts.OnReport) == "function" then
+                action("Report", "Danger", function()
+                    reportRecord(record)
+                end)
+            end
+        end
+        local state = installState(record)
+        detail.InstallLabel.Text = state == "Update" and "Update" or (state == "Installed" and "Reinstall" or "Install")
+        if detail.LikeLabel then
+            detail.LikeLabel.Text = (record.Liked and "Liked" or "Like") .. "  Â·  " .. compact(record.Likes)
+        end
+        detail.FavoriteLabel.Text = favorites[record.Id] and "Favorited" or "Favorite"
+    end
+
+    -- Every setting in the config next to the player's own: changed ones
+    -- first, then the same ones, then flags this script doesn't have.
+    local function fillPreview(record, myToken)
+        local function mismatch(text)
+            if detailToken == myToken then
+                detail.Summary.Text = text
+            end
+        end
+        withCode(record, function(code)
+            if detailToken ~= myToken then
+                return
+            end
+            local data = window:DecodeConfig(code)
+            if not data then
+                mismatch("The config code is invalid")
+                return
+            end
+            local current = collectFlags(window)
+            local rows = {}
+            local changed = 0
+            for flag, entry in pairs(data) do
+                local element = Library.Flags[flag]
+                local known = element ~= nil
+                local differs = known and encoded(entry) ~= encoded(current[flag])
+                if differs then
+                    changed += 1
+                end
+                table.insert(rows, {
+                    Name = element and element._searchName ~= "" and element._searchName or flag,
+                    Value = valueText(entry),
+                    Known = known,
+                    Changed = differs,
+                    Rank = differs and 0 or (known and 1 or 2),
+                })
+            end
+            table.sort(rows, function(a, b)
+                if a.Rank ~= b.Rank then
+                    return a.Rank < b.Rank
+                end
+                return string.lower(a.Name) < string.lower(b.Name)
+            end)
+            record.Count = #rows
+            detail.Summary.Text = changed == 0 and ("%d settings, all the same as yours"):format(#rows)
+                or ("%d settings, %d different from yours"):format(#rows, changed)
+            clear(detail.Rows)
+            for index, item in ipairs(rows) do
+                if index > 150 then
+                    wrapped(detail.Rows, ("and %d more"):format(#rows - 150), 12, Theme.Muted, index)
+                    break
+                end
+                local rowFrame = create("Frame", {
+                    Size = UDim2.new(1, 0, 0, 30),
+                    BackgroundColor3 = Theme.Surface2,
+                    BackgroundTransparency = item.Changed and 0 or 0.5,
+                    BorderSizePixel = 0,
+                    LayoutOrder = index,
+                    Parent = detail.Rows,
+                })
+                corner(rowFrame, UDim.new(0, 7))
+                if item.Changed then
+                    local dot = create("Frame", {
+                        AnchorPoint = Vector2.new(0, 0.5),
+                        Position = UDim2.new(0, 10, 0.5, 0),
+                        Size = UDim2.fromOffset(6, 6),
+                        BackgroundColor3 = Theme.Accent,
+                        BorderSizePixel = 0,
+                        Parent = rowFrame,
+                    })
+                    corner(dot, UDim.new(1, 0))
+                end
+                label({
+                    Position = UDim2.fromOffset(24, 0),
+                    Size = UDim2.new(0.55, -24, 1, 0),
+                    Text = item.Known and item.Name or (item.Name .. "  (not in this script)"),
+                    TextSize = 12,
+                    TextColor3 = item.Known and Theme.Text or Theme.Muted,
+                    Parent = rowFrame,
+                })
+                label({
+                    AnchorPoint = Vector2.new(1, 0),
+                    Position = UDim2.new(1, -10, 0, 0),
+                    Size = UDim2.new(0.45, -10, 1, 0),
+                    Text = item.Value,
+                    TextSize = 12,
+                    FontFace = Fonts.Regular,
+                    TextColor3 = item.Changed and Theme.Accent or Theme.Muted,
+                    TextXAlignment = Enum.TextXAlignment.Right,
+                    Parent = rowFrame,
+                })
+            end
+            if cards[record.Id] then
+                renderCard(cards[record.Id])
+            end
+        end, mismatch)
+    end
+
+    function openDetail(record)
+        detailRecord = record
+        detailToken += 1
+        local myToken = detailToken
+        clear(detailList)
+        detail = {}
+        detailList.CanvasPosition = Vector2.zero
+        softButton(detailList, "Back", {
+            Size = UDim2.new(0, 0, 0, 28),
+            AutomaticSize = Enum.AutomaticSize.X,
+            LayoutOrder = 1,
+        }, function()
+            showView(views.Browse)
+        end)
+        detail.Title = wrapped(detailList, record.Name, 20, Theme.Text, 2, Fonts.Bold)
+        detail.Meta = wrapped(detailList, "", 12, Theme.Muted, 3)
+        if record.Description ~= "" then
+            wrapped(detailList, record.Description, 13, Theme.Text, 4)
+        end
+        if #record.Tags > 0 then
+            local tagsRow = create("Frame", {
+                Size = UDim2.new(1, 0, 0, 0),
+                AutomaticSize = Enum.AutomaticSize.Y,
+                BackgroundTransparency = 1,
+                LayoutOrder = 5,
+                Parent = detailList,
+            })
+            hlist(tagsRow, 4, true)
+            for index, tag in ipairs(record.Tags) do
+                tagPill(tagsRow, tag, index)
+            end
+        end
+        detail.Stats = wrapped(detailList, "", 12, Theme.Muted, 6)
+        detail.Actions = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            BackgroundTransparency = 1,
+            LayoutOrder = 7,
+            Parent = detailList,
+        })
+        hlist(detail.Actions, 6, true)
+        create("Frame", {
+            Size = UDim2.new(1, 0, 0, 1),
+            BackgroundColor3 = Theme.Stroke,
+            BorderSizePixel = 0,
+            LayoutOrder = 8,
+            Parent = detailList,
+        })
+        wrapped(detailList, "Settings", 14, Theme.Text, 9, Fonts.Bold)
+        detail.Summary = wrapped(detailList, "Loading settings...", 12, Theme.Muted, 10)
+        detail.Rows = create("Frame", {
+            Size = UDim2.new(1, 0, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            BackgroundTransparency = 1,
+            LayoutOrder = 11,
+            Parent = detailList,
+        })
+        vlist(detail.Rows, 4)
+        renderDetail()
+        showView(views.Detail)
+        fillPreview(record, myToken)
+    end
+
+    function refreshRecord(record)
+        local card = cards[record.Id]
+        if card then
+            renderCard(card)
+        end
+        if detailRecord == record and currentView == views.Detail then
+            renderDetail()
+        end
+    end
+
+    -- Publish view: also the edit form for the player's own configs.
+
+    local form = { Mode = "Publish", Record = nil, Source = false, Tags = {}, Busy = false }
+    local publishList = scroller(views.Publish)
+    padding(publishList, 1, 8, 1, 16)
+    vlist(publishList, 8)
+    softButton(publishList, "Back", {
+        Size = UDim2.new(0, 0, 0, 28),
+        AutomaticSize = Enum.AutomaticSize.X,
+        LayoutOrder = 1,
+    }, function()
+        showView(form.Mode == "Edit" and form.Record and views.Detail or views.Browse)
+    end)
+    local formTitle = wrapped(publishList, "Publish a config", 20, Theme.Text, 2, Fonts.Bold)
+    wrapped(publishList, "Name", 12, Theme.Muted, 3)
+    local nameBox = field(publishList, 4, "What is it for?", ROW, NAME_LIMIT)
+    wrapped(publishList, "Description", 12, Theme.Muted, 5)
+    local descBox = field(publishList, 6, "What does it do, and how should people use it?", 90, DESC_LIMIT)
+    local tagsTitle = wrapped(publishList, "Tags", 12, Theme.Muted, 7)
+    local tagsRow = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 8,
+        Parent = publishList,
+    })
+    hlist(tagsRow, 6, true)
+    tagsTitle.Visible = #tagList > 0 and maxTags > 0
+    tagsRow.Visible = tagsTitle.Visible
+    wrapped(publishList, "Settings to share", 12, Theme.Muted, 9)
+    local sourceRow = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        LayoutOrder = 10,
+        Parent = publishList,
+    })
+    hlist(sourceRow, 6, true)
+    local sourceSummary = wrapped(publishList, "", 12, Theme.Muted, 11)
+    local identityNote = wrapped(publishList, "", 12, Theme.Muted, 12)
+    local formError = wrapped(publishList, "", 12, Theme.Error, 13)
+    formError.Visible = false
+    local submitRow = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 32),
+        BackgroundTransparency = 1,
+        LayoutOrder = 14,
+        Parent = publishList,
+    })
+    hlist(submitRow, 6)
+    local submitButton, submitText = softButton(submitRow, "Publish", {
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        LayoutOrder = 1,
+    }, function()
+        cloud:_submit()
+    end)
+    primary(submitButton, submitText)
+    softButton(submitRow, "Cancel", {
+        Size = UDim2.new(0, 0, 1, 0),
+        AutomaticSize = Enum.AutomaticSize.X,
+        LayoutOrder = 2,
+    }, function()
+        showView(form.Mode == "Edit" and form.Record and views.Detail or views.Browse)
+    end)
+
+    local formTagChips = {}
+    local function renderFormTags()
+        for tag, object in pairs(formTagChips) do
+            object.Set(table.find(form.Tags, tag) ~= nil)
+        end
+        tagsTitle.Text = maxTags > 0 and ("Tags  (%d/%d)"):format(#form.Tags, maxTags) or "Tags"
+    end
+    for index, tag in ipairs(tagList) do
+        tag = tostring(tag)
+        formTagChips[tag] = chip(tagsRow, tag, index, function()
+            local at = table.find(form.Tags, tag)
+            if at then
+                table.remove(form.Tags, at)
+            elseif #form.Tags < maxTags then
+                table.insert(form.Tags, tag)
+            else
+                notify(false, "Too many tags", ("Pick up to %d"):format(maxTags))
+            end
+            renderFormTags()
+        end)
+    end
+
+    -- The code and setting count for the picked source, or nil and why not.
+    local function sourceCode(name)
+        if form.Source == "Keep" then
+            return nil, form.Record and form.Record.Count
+        elseif form.Source then
+            local code, err = window:ExportConfig(form.Source)
+            if not code then
+                return nil, nil, err
+            end
+            return code, countFlags(code)
+        end
+        local ok, code = pcall(encodeConfig, window, name ~= "" and name or "Cloud config", collectFlags(window))
+        if not ok then
+            return nil, nil, "could not encode your settings"
+        end
+        return code, countFlags(code)
+    end
+
+    local sourceChips = {}
+    local function renderSource()
+        for key, object in pairs(sourceChips) do
+            object.Set(key == (form.Source or "*current"))
+        end
+        local _, count, err = sourceCode(trim(nameBox.Text))
+        if err then
+            sourceSummary.Text = tostring(err)
+        elseif form.Source == "Keep" then
+            sourceSummary.Text = "Keeps the settings already published" .. (count and (" (" .. count .. ")") or "")
+        else
+            sourceSummary.Text = ("%d setting%s from %s"):format(count or 0, count == 1 and "" or "s", form.Source or "your current settings")
+        end
+    end
+
+    local function buildSources()
+        clear(sourceRow)
+        sourceChips = {}
+        local order = 0
+        local function add(key, text)
+            order += 1
+            sourceChips[key] = chip(sourceRow, text, order, function()
+                form.Source = key ~= "*current" and key or false
+                renderSource()
+            end)
+        end
+        if form.Mode == "Edit" then
+            add("Keep", "Keep published settings")
+        end
+        add("*current", "Current settings")
+        for _, name in ipairs(window:ListConfigs()) do
+            add(name, name)
+        end
+        renderSource()
+    end
+
+    local function showError(text)
+        formError.Text = tostring(text)
+        formError.Visible = true
+    end
+
+    function cloud:OpenPublish(record)
+        local editing = type(record) == "table" and record.Id and byId[record.Id] or nil
+        if editing then
+            form.Mode, form.Record = "Edit", editing
+            form.Source = "Keep"
+            form.Tags = table.clone(editing.Tags)
+            nameBox.Text = editing.Name
+            descBox.Text = editing.Description
+        elseif form.Mode == "Edit" then
+            -- Leaving an edit starts a fresh draft; a publish draft is kept.
+            form.Mode, form.Record, form.Source, form.Tags = "Publish", nil, false, {}
+            nameBox.Text = ""
+            descBox.Text = ""
+        end
+        formTitle.Text = editing and "Edit config" or "Publish a config"
+        submitText.Text = editing and "Save changes" or "Publish"
+        formError.Visible = false
+        local streamer = streamerOn()
+        identityNote.Text = streamer and ("Your name is hidden, so you publish as " .. anonName)
+            or ("You publish as " .. LocalPlayer.DisplayName)
+        renderFormTags()
+        buildSources()
+        publishList.CanvasPosition = Vector2.zero
+        showView(views.Publish)
+    end
+
+    nameBox:GetPropertyChangedSignal("Text"):Connect(function()
+        formError.Visible = false
+    end)
+
+    function cloud:_submit()
+        if form.Busy then
+            return
+        end
+        local name = trim(nameBox.Text)
+        if name == "" then
+            showError("Give your config a name")
+            return
+        end
+        local code, count, err = sourceCode(name)
+        if err then
+            showError(err)
+            return
+        end
+        if form.Source ~= "Keep" and (count or 0) == 0 then
+            showError("There are no settings to share")
+            return
+        end
+        local editing = form.Mode == "Edit" and form.Record or nil
+        local callback = editing and opts.OnUpdate or opts.OnPublish
+        if type(callback) ~= "function" then
+            showError(editing and "Editing isn't available" or "Publishing isn't available")
+            return
+        end
+        local streamer = streamerOn()
+        local payload = {
+            Name = name,
+            Description = trim(descBox.Text),
+            Tags = table.clone(form.Tags),
+            Code = code,
+            Count = count,
+            Folder = window.ConfigFolder,
+            Author = streamer and anonName or LocalPlayer.DisplayName,
+            AuthorId = not streamer and LocalPlayer.UserId or nil,
+            OwnerId = LocalPlayer.UserId,
+            Streamer = streamer,
+        }
+        form.Busy = true
+        submitText.Text = editing and "Saving..." or "Publishing..."
+        formError.Visible = false
+        task.spawn(function()
+            local ok, result, reason = isolatedCall(function()
+                if editing then
+                    return callback(publicRecord(editing), payload)
+                end
+                return callback(payload)
+            end)
+            form.Busy = false
+            submitText.Text = editing and "Save changes" or "Publish"
+            if not ok or result == false then
+                if not ok then
+                    warn("[AirFlow] cloud publish error: " .. tostring(result))
+                end
+                showError(ok and reason and tostring(reason) or "Something went wrong, try again")
+                return
+            end
+            local merged = table.clone(payload)
+            merged.Code = code or (editing and editing.Code)
+            merged.Updated = os.time()
+            if type(result) == "table" then
+                for key, value in pairs(result) do
+                    merged[key] = value
+                end
+            end
+            if editing then
+                merged.Id = editing.Id
+                normalizeRecord(merged)
+                if favorites[editing.Id] then
+                    favorites[editing.Id] = summary(editing)
+                    persist("CloudFavorites", favorites)
+                end
+                refreshRecord(editing)
+                notify(true, "Config updated", name)
+                openDetail(editing)
+            else
+                nameBox.Text = ""
+                descBox.Text = ""
+                form.Tags = {}
+                form.Source = false
+                if type(result) == "table" then
+                    merged.Mine = true
+                    local record = normalizeRecord(merged)
+                    if query.Filter == "All" or query.Filter == "Mine" then
+                        table.insert(records, 1, record)
+                        renderList()
+                        setState(nil)
+                    end
+                    notify(true, "Config published", name)
+                    openDetail(record)
+                else
+                    notify(true, "Config published", name)
+                    showView(views.Browse)
+                    fetch(false)
+                end
+            end
+        end)
+    end
+
+    -- Handle
+
+    function cloud:Refresh()
+        fetch(false)
+    end
+
+    function cloud:LoadMore()
+        if not loading then
+            fetch(true)
+        end
+    end
+
+    -- For backends that push results instead of answering OnFetch.
+    function cloud:SetConfigs(list, more)
+        token += 1
+        busy(false)
+        clearSkeletons()
+        records = {}
+        for _, raw in ipairs(type(list) == "table" and list or {}) do
+            local record = normalizeRecord(raw)
+            if record then
+                table.insert(records, record)
+            end
+        end
+        hasMore = more == true
+        renderList()
+        moreButton.Visible = hasMore
+        setState(#records == 0 and "empty" or nil, emptyText())
+    end
+
+    function cloud:AddConfigs(list, more)
+        token += 1
+        busy(false)
+        clearSkeletons()
+        for _, raw in ipairs(type(list) == "table" and list or {}) do
+            local record = normalizeRecord(raw)
+            if record and not table.find(records, record) then
+                table.insert(records, record)
+                buildCard(record, #records)
+            end
+        end
+        hasMore = more == true
+        moreButton.Visible = hasMore
+        setState(#records == 0 and "empty" or nil, emptyText())
+    end
+
+    function cloud:UpdateConfig(id, changes)
+        local record = byId[tostring(id)]
+        if record and type(changes) == "table" then
+            local merged = table.clone(changes)
+            merged.Id = record.Id
+            normalizeRecord(merged)
+            refreshRecord(record)
+        end
+    end
+
+    function cloud:RemoveConfig(id)
+        local record = byId[tostring(id)]
+        if record then
+            removeRecord(record)
+            if detailRecord == record and currentView == views.Detail then
+                showView(views.Browse)
+            end
+        end
+    end
+
+    function cloud:SetLoading(on)
+        token += 1
+        busy(on == true)
+        clearSkeletons()
+        if loading then
+            addSkeletons(4)
+            setState(nil)
+        end
+    end
+
+    function cloud:SetError(text)
+        token += 1
+        busy(false)
+        clearSkeletons()
+        setState(text and "error" or nil, tostring(text or ""))
+    end
+
+    function cloud:Open(id)
+        local record = byId[tostring(id)]
+        if record then
+            window:SelectTab(tab)
+            openDetail(record)
+        end
+    end
+
+    function cloud:Back()
+        showView(views.Browse)
+    end
+
+    function cloud:GetQuery()
+        return table.clone(query)
+    end
+
+    function cloud:GetFavorites()
+        local list = {}
+        for id, kept in pairs(favorites) do
+            local copy = table.clone(kept)
+            copy.Id = id
+            table.insert(list, copy)
+        end
+        return list
+    end
+
+    function cloud:GetInstalled()
+        local list = {}
+        for id, mark in pairs(installed) do
+            table.insert(list, { Id = id, Name = mark.Name, Updated = mark.Updated, Record = mark.Record })
+        end
+        return list
+    end
+
+    renderFilters(true)
+    showView(views.Browse)
+    -- The first fetch waits until the tab is opened, so a hidden tab costs nothing.
+    local fetched = false
+    local function firstFetch()
+        if not fetched and tab._page.Visible then
+            fetched = true
+            fetch(false)
+        end
+    end
+    tab._page:GetPropertyChangedSignal("Visible"):Connect(firstFetch)
+    if type(opts.OnFetch) ~= "function" then
+        fetched = true
+        setState("empty", emptyText())
+    else
+        task.defer(firstFetch)
+    end
+    return cloud
+end
+
+Window.CreateCloudConfigs = Window.CloudConfigs
+Window.CloudConfig = Window.CloudConfigs
+Window.CreateCloudConfig = Window.CloudConfigs
+
+-- Tab badges were removed. These stay as no-ops so older scripts that call
+-- them keep running.
+function Tab:SetBadge() end
+
+function Tab:GetBadge()
+    return nil
+end
+
+function Window:Dialog(opts)
+    opts = normalize(opts, { Text = "Content", Message = "Content" })
+    if self._dialog then
+        self._dialog.Close()
+    end
+    local WIDTH = 300
+    local PAD = 18
+
+    local overlay = create("TextButton", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 40,
+        Parent = self.Body,
+    })
+    local card = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 10),
+        Size = UDim2.fromOffset(WIDTH, 120),
+        BackgroundColor3 = Theme.Background,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 41,
+        Parent = overlay,
+    })
+    corner(card, UDim.new(0, 10))
+    local cardStroke = stroke(card, Theme.Stroke, 1)
+    local cardScale = create("UIScale", { Scale = 0.94, Parent = card })
+    local fading = {}
+
+    local titleOffset = 0
+    if opts.Icon then
+        local holder, image = glowIcon(card, opts.Icon, Theme.Accent, UDim2.new(0, PAD, 0, PAD + 9))
+        image.ImageTransparency = 1
+        holder.ZIndex = 42
+        image.ZIndex = 42
+        table.insert(fading, { image, "ImageTransparency", 0 })
+        titleOffset = 24
+    end
+    local title = label({
+        Position = UDim2.fromOffset(PAD + titleOffset, PAD),
+        Size = UDim2.new(1, -(PAD * 2 + titleOffset), 0, 18),
+        Text = opts.Title or "Are you sure?",
+        TextSize = 15,
+        TextTransparency = 1,
+        ZIndex = 42,
+        Parent = card,
+    })
+    table.insert(fading, { title, "TextTransparency", 0 })
+
+    local contentHeight = 0
+    if opts.Content then
+        local content = label({
+            Position = UDim2.fromOffset(PAD, PAD + 24),
+            Size = UDim2.new(1, -PAD * 2, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            Text = opts.Content,
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextWrapped = true,
+            TextTransparency = 1,
+            TextTruncate = Enum.TextTruncate.None,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            ZIndex = 42,
+            Parent = card,
+        })
+        table.insert(fading, { content, "TextTransparency", 0 })
+        contentHeight = math.max(content.TextBounds.Y, 16) + 6
+        content:GetPropertyChangedSignal("TextBounds"):Connect(function()
+            local newHeight = math.max(content.TextBounds.Y, 16) + 6
+            if newHeight ~= contentHeight then
+                contentHeight = newHeight
+                card.Size = UDim2.fromOffset(WIDTH, PAD + 24 + contentHeight + 12 + 34 + PAD)
+                local rowFrame = card:FindFirstChild("ButtonRow")
+                if rowFrame then
+                    rowFrame.Position = UDim2.fromOffset(PAD, PAD + 24 + contentHeight + 12)
+                end
+            end
+        end)
+    end
+
+    local row = create("Frame", {
+        Name = "ButtonRow",
+        Position = UDim2.fromOffset(PAD, PAD + 24 + contentHeight + 12),
+        Size = UDim2.new(1, -PAD * 2, 0, 34),
+        BackgroundTransparency = 1,
+        ZIndex = 42,
+        Parent = card,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        HorizontalAlignment = Enum.HorizontalAlignment.Right,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 8),
+        Parent = row,
+    })
+    card.Size = UDim2.fromOffset(WIDTH, PAD + 24 + contentHeight + 12 + 34 + PAD)
+
+    local dialog = {}
+    local closed = false
+    function dialog.Close()
+        if closed then
+            return
+        end
+        closed = true
+        if self._dialog == dialog then
+            self._dialog = nil
+        end
+        tween(overlay, { BackgroundTransparency = 1 }, 0.18)
+        tween(card, { BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.5, 8) }, 0.18, Enum.EasingStyle.Quint)
+        tween(cardScale, { Scale = 0.96 }, 0.18, Enum.EasingStyle.Quint)
+        tween(cardStroke, { Transparency = 1 }, 0.12)
+        for _, entry in ipairs(fading) do
+            tween(entry[1], { [entry[2]] = 1 }, 0.12)
+        end
+        task.delay(0.2, function()
+            overlay:Destroy()
+        end)
+    end
+
+    for index, spec in ipairs(opts.Buttons or {}) do
+        local primary = spec.Variant == "Primary"
+        local buttonFrame = create("TextButton", {
+            Size = UDim2.fromOffset(0, 34),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundColor3 = primary and Theme.Accent or Theme.Surface2,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            ClipsDescendants = true,
+            LayoutOrder = index,
+            ZIndex = 43,
+            Parent = row,
+        })
+        corner(buttonFrame, UDim.new(0, 7))
+        local buttonStroke = stroke(buttonFrame, primary and Theme.Accent or Theme.Stroke, 1)
+        padding(buttonFrame, 14, 14)
+        local text = label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = spec.Title or spec.Name or "OK",
+            TextSize = 13,
+            TextColor3 = primary and Theme.AccentDark or Theme.Text,
+            TextXAlignment = Enum.TextXAlignment.Center,
+            TextTransparency = 1,
+            ZIndex = 44,
+            Parent = buttonFrame,
+        })
+        local restBg = primary and 0.12 or 0
+        local restStroke = primary and 0.4 or 0
+        table.insert(fading, { buttonFrame, "BackgroundTransparency", restBg })
+        table.insert(fading, { buttonStroke, "Transparency", restStroke })
+        table.insert(fading, { text, "TextTransparency", 0 })
+        buttonFrame.MouseEnter:Connect(function()
+            if closed then
+                return
+            end
+            if primary then
+                tween(buttonFrame, { BackgroundTransparency = 0 }, 0.12)
+                tween(buttonStroke, { Transparency = 0 }, 0.12)
+            else
+                tween(buttonStroke, { Color = Theme.StrokeHover }, 0.12)
+            end
+        end)
+        buttonFrame.MouseLeave:Connect(function()
+            if closed then
+                return
+            end
+            if primary then
+                tween(buttonFrame, { BackgroundTransparency = restBg }, 0.2)
+                tween(buttonStroke, { Transparency = restStroke }, 0.2)
+            else
+                tween(buttonStroke, { Color = Theme.Stroke }, 0.2)
+            end
+        end)
+        buttonFrame.MouseButton1Click:Connect(function()
+            dialog.Close()
+            safeCall(spec.Callback)
+        end)
+    end
+
+    if opts.CloseOnBackdrop ~= false then
+        overlay.MouseButton1Click:Connect(function()
+            dialog.Close()
+            safeCall(opts.OnCancel)
+        end)
+    end
+
+    self._dialog = dialog
+    tween(overlay, { BackgroundTransparency = 0.45 }, 0.25)
+    tween(card, { BackgroundTransparency = 0, Position = UDim2.fromScale(0.5, 0.5) }, 0.3, Enum.EasingStyle.Quint)
+    tween(cardStroke, { Transparency = 0 }, 0.25)
+    tween(cardScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+    for _, entry in ipairs(fading) do
+        tween(entry[1], { [entry[2]] = entry[3] }, 0.25)
+    end
+    return dialog
+end
+
+function Window:Confirm(opts)
+    opts = normalize(opts, { Text = "Content", Message = "Content" })
+    return self:Dialog({
+        Title = opts.Title or "Are you sure?",
+        Content = opts.Content,
+        Icon = opts.Icon,
+        OnCancel = opts.OnCancel,
+        Buttons = {
+            { Title = opts.CancelText or "Cancel", Callback = opts.OnCancel },
+            { Title = opts.ConfirmText or "Confirm", Variant = "Primary", Callback = opts.Callback },
+        },
+    })
+end
+
+function Window:_listen(kind, handler, owner)
+    local list = self._inputListeners[kind]
+    table.insert(list, handler)
+    local function disconnect()
+        for index, entry in ipairs(list) do
+            if entry == handler then
+                table.remove(list, index)
+                break
+            end
+        end
+    end
+    if owner then
+        owner._listeners = owner._listeners or {}
+        table.insert(owner._listeners, disconnect)
+    end
+    return disconnect
+end
+
+function Window:_indicatorY(tab)
+    local stack = self._tabStack
+    return (tab._button.AbsolutePosition.Y - stack.AbsolutePosition.Y) / self.Scale.Scale + stack.Position.Y.Offset
+end
+
+function Window:_placeIndicator(tab)
+    local indicator = self.Indicator
+    local targetY = self:_indicatorY(tab)
+    if not indicator.Visible then
+        indicator.Visible = true
+        indicator.Position = UDim2.fromOffset(8, targetY)
+        indicator.BackgroundTransparency = 1
+        tween(indicator, { BackgroundTransparency = 0.35 }, 0.3)
+    end
+    tween(indicator, { Position = UDim2.fromOffset(8, targetY) }, 0.45, Enum.EasingStyle.Quint)
+end
+
+-- While a tab list or sub tab strip runs past an end, that end gets a fade
+-- and a small chip with a chevron and how many tabs are out of sight there.
+-- Pressing the chip scrolls most of a view toward them.
+function Window:_overflowHint(host, scroller, items, vertical, fadeColor)
+    local overlay = create("Frame", {
+        AnchorPoint = scroller.AnchorPoint,
+        Position = scroller.Position,
+        Size = scroller.Size,
+        BackgroundTransparency = 1,
+        ZIndex = 3,
+        Parent = host,
+    })
+    local function mirror()
+        overlay.Position = scroller.Position
+        overlay.Size = scroller.Size
+        overlay.Visible = scroller.Visible
+    end
+    for _, property in ipairs({ "Position", "Size", "Visible" }) do
+        scroller:GetPropertyChangedSignal(property):Connect(mirror)
+    end
+
+    local function axis(vector)
+        return vertical and vector.Y or vector.X
+    end
+    local function scale()
+        return self.Scale and self.Scale.Scale or 1
+    end
+    local function scrollBy(direction)
+        local view = axis(scroller.AbsoluteWindowSize) / scale()
+        local limit = math.max(axis(scroller.AbsoluteCanvasSize) / scale() - view, 0)
+        local target = math.clamp(axis(scroller.CanvasPosition) + direction * view * 0.75, 0, limit)
+        tween(scroller, { CanvasPosition = vertical and Vector2.new(0, target) or Vector2.new(target, 0) }, 0.35, Enum.EasingStyle.Quint)
+    end
+
+    local hints = {}
+    for _, direction in ipairs({ -1, 1 }) do
+        local far = direction > 0
+        local fade = create("Frame", {
+            AnchorPoint = vertical and Vector2.new(0, far and 1 or 0) or Vector2.new(far and 1 or 0, 0),
+            Position = vertical and UDim2.fromScale(0, far and 1 or 0) or UDim2.fromScale(far and 1 or 0, 0),
+            Size = vertical and UDim2.new(1, 0, 0, 34) or UDim2.new(0, 48, 1, 0),
+            BackgroundColor3 = fadeColor,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            Visible = false,
+            Parent = overlay,
+        })
+        create("UIGradient", {
+            Rotation = vertical and (far and 270 or 90) or (far and 180 or 0),
+            Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0),
+                NumberSequenceKeypoint.new(0.4, 0.2),
+                NumberSequenceKeypoint.new(1, 1),
+            }),
+            Parent = fade,
+        })
+        local home = vertical and UDim2.new(0.5, 0, far and 1 or 0, far and -5 or 5) or UDim2.new(far and 1 or 0, far and -2 or 2, 0.5, 0)
+        local chip = create("TextButton", {
+            AnchorPoint = vertical and Vector2.new(0.5, far and 1 or 0) or Vector2.new(far and 1 or 0, 0.5),
+            Position = home,
+            Size = UDim2.fromOffset(0, 20),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundColor3 = Theme.Surface3,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            Text = "",
+            AutoButtonColor = false,
+            Visible = false,
+            ZIndex = 2,
+            Parent = overlay,
+        })
+        corner(chip, UDim.new(1, 0))
+        local chipStroke = stroke(chip, Theme.Stroke, 1)
+        padding(chip, 7, 7)
+        create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            VerticalAlignment = Enum.VerticalAlignment.Center,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, 3),
+            Parent = chip,
+        })
+        local arrow = create("ImageLabel", {
+            Size = UDim2.fromOffset(12, 12),
+            BackgroundTransparency = 1,
+            ImageColor3 = Theme.Accent,
+            ImageTransparency = 1,
+            ScaleType = Enum.ScaleType.Fit,
+            LayoutOrder = 1,
+            ZIndex = 2,
+            Parent = chip,
+        })
+        applyIcon(arrow, vertical and (far and "chevron-down" or "chevron-up") or (far and "chevron-right" or "chevron-left"))
+        local arrowFade = "ImageTransparency"
+        if arrow.Image == "" then
+            arrow:Destroy()
+            arrow = label({
+                Size = UDim2.fromOffset(10, 20),
+                Text = "âº",
+                TextSize = 16,
+                TextColor3 = Theme.Accent,
+                TextTransparency = 1,
+                TextXAlignment = Enum.TextXAlignment.Center,
+                TextTruncate = Enum.TextTruncate.None,
+                Rotation = vertical and (far and 90 or -90) or (far and 0 or 180),
+                LayoutOrder = 1,
+                ZIndex = 2,
+                Parent = chip,
+            })
+            arrowFade = "TextTransparency"
+        end
+        local count = label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = "",
+            TextSize = 11,
+            TextColor3 = Theme.Text,
+            TextTransparency = 1,
+            TextTruncate = Enum.TextTruncate.None,
+            Visible = false,
+            LayoutOrder = 2,
+            ZIndex = 2,
+            Parent = chip,
+        })
+        chip.MouseEnter:Connect(function()
+            if not usingTouch() then
+                tween(chipStroke, { Color = Theme.StrokeHover }, 0.12)
+            end
+        end)
+        chip.MouseLeave:Connect(function()
+            tween(chipStroke, { Color = Theme.Stroke }, 0.2)
+        end)
+        chip.MouseButton1Click:Connect(function()
+            scrollBy(direction)
+        end)
+        hints[direction] = {
+            Direction = direction,
+            Fade = fade,
+            Chip = chip,
+            Stroke = chipStroke,
+            Arrow = arrow,
+            ArrowFade = arrowFade,
+            Count = count,
+            Home = home,
+            Shown = false,
+            Generation = 0,
+        }
+    end
+
+    local function show(hint, on)
+        if hint.Shown == on then
+            return
+        end
+        hint.Shown = on
+        hint.Generation += 1
+        local away = hint.Home + (vertical and UDim2.fromOffset(0, hint.Direction * 6) or UDim2.fromOffset(hint.Direction * 6, 0))
+        local value = on and 0 or 1
+        if on then
+            hint.Fade.Visible = true
+            hint.Chip.Visible = true
+            hint.Chip.Position = away
+            tween(hint.Chip, { Position = hint.Home, BackgroundTransparency = 0.08 }, 0.3, Enum.EasingStyle.Quint)
+        else
+            tween(hint.Chip, { Position = away, BackgroundTransparency = 1 }, 0.2, Enum.EasingStyle.Quint)
+            local generation = hint.Generation
+            task.delay(0.21, function()
+                if hint.Generation == generation then
+                    hint.Fade.Visible = false
+                    hint.Chip.Visible = false
+                end
+            end)
+        end
+        tween(hint.Fade, { BackgroundTransparency = value }, 0.2)
+        tween(hint.Stroke, { Transparency = value }, 0.2)
+        tween(hint.Arrow, { [hint.ArrowFade] = value }, 0.2)
+        tween(hint.Count, { TextTransparency = value }, 0.2)
+    end
+
+    local function refresh()
+        local view = axis(scroller.AbsoluteWindowSize)
+        local overflow = (axis(scroller.AbsoluteCanvasSize) - view) / scale()
+        local position = axis(scroller.CanvasPosition)
+        local start = axis(scroller.AbsolutePosition)
+        local before, after = 0, 0
+        for _, item in ipairs(items:GetChildren()) do
+            if item:IsA("GuiObject") and item.Visible and axis(item.AbsoluteSize) > 0 then
+                local centre = axis(item.AbsolutePosition) + axis(item.AbsoluteSize) / 2 - start
+                if centre < 0 then
+                    before += 1
+                elseif centre > view then
+                    after += 1
+                end
+            end
+        end
+        for direction, hint in pairs(hints) do
+            local hidden = direction < 0 and before or after
+            hint.Count.Text = tostring(hidden)
+            hint.Count.Visible = hidden > 0
+            show(hint, overflow > 1 and (direction < 0 and position > 1 or direction > 0 and position < overflow - 1))
+        end
+    end
+    for _, property in ipairs({ "CanvasPosition", "AbsoluteCanvasSize", "AbsoluteWindowSize" }) do
+        scroller:GetPropertyChangedSignal(property):Connect(refresh)
+    end
+    task.defer(refresh)
+end
+
+function Window:_scrollTabIntoView(tab)
+    local list = self.TabList
+    local scale = self.Scale.Scale
+    local top = (tab._button.AbsolutePosition.Y - list.AbsolutePosition.Y) / scale + list.CanvasPosition.Y
+    local bottom = top + tab._button.AbsoluteSize.Y / scale
+    local view = list.AbsoluteWindowSize.Y / scale
+    local y = list.CanvasPosition.Y
+    if top - 8 < y then
+        y = top - 8
+    elseif bottom + 8 > y + view then
+        y = bottom + 8 - view
+    else
+        return
+    end
+    tween(list, { CanvasPosition = Vector2.new(0, math.max(0, y)) }, 0.35, Enum.EasingStyle.Quint)
+end
+
+function Window:_closePopups()
+    if self._closePopup then
+        self._closePopup()
+    end
+end
+
+-- Popped-out groupboxes float on one screen-wide layer above the window. It
+-- carries the window's scale, so a panel keeps the size it had in its column,
+-- and it shows while the window is open (minimized included).
+function Window:_popoutLayer()
+    if self._popLayer then
+        return self._popLayer
+    end
+    local layer = create("Frame", {
+        Name = "PopOuts",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ZIndex = 20,
+        Parent = self.Gui,
+    })
+    local layerScale = create("UIScale", { Parent = layer })
+    self._popLayer = layer
+    self._popPanels = {}
+    self:_listen("Render", function()
+        local scale = math.max(self.Scale.Scale, 0.05)
+        if math.abs(layerScale.Scale - scale) > 1e-4 then
+            layerScale.Scale = scale
+            layer.Size = UDim2.fromScale(1 / scale, 1 / scale)
+        end
+        layer.Visible = self.Open == true and not self._destroyed
+    end)
+    return layer
+end
+
+-- Where a control's popup is drawn: the pop-out layer for one inside a
+-- floating panel, otherwise the window body.
+function Window:_popupHost(object)
+    local layer = self._popLayer
+    if layer and object and object:IsDescendantOf(layer) then
+        return layer
+    end
+    return self.Body
+end
+
+-- A floating panel under the point counts as a control, so pressing it never
+-- starts a window drag.
+function Window:_overPopout(point)
+    local layer = self._popLayer
+    if not layer or not layer.Visible then
+        return false
+    end
+    for _, panel in ipairs(self._popPanels) do
+        if panel.Parent and panel.Visible and pointInside(point, panel) then
+            return true
+        end
+    end
+    return false
+end
+
+-- Fades the whole body by lending it to the fader CanvasGroup, then hands it
+-- back to the root once fully shown so it renders directly again.
+function Window:_fade(target, duration)
+    local fader, body = self._fader, self.Body
+    self._fadeGeneration = (self._fadeGeneration or 0) + 1
+    local generation = self._fadeGeneration
+    if body.Parent ~= fader then
+        fader.GroupTransparency = self._bodyAlpha
+        body.Parent = fader
+    end
+    fader.Visible = true
+    self._bodyAlpha = target
+    tween(fader, { GroupTransparency = target }, duration)
+    task.delay(duration + 0.03, function()
+        if self._fadeGeneration == generation and target <= 0 and not self._destroyed then
+            body.Parent = self.Root
+            fader.Visible = false
+        end
+    end)
+end
+
+function Window:SelectTab(tab)
+    if self.CurrentTab == tab then
+        return
+    end
+    local previous = self.CurrentTab
+    self:_resetSearch()
+    self:_closePopups()
+    self.CurrentTab = tab
+
+    self:_settleTransition()
+    local generation = (self._transitionGeneration or 0) + 1
+    self._transitionGeneration = generation
+
+    if previous then
+        tween(previous._label, { TextColor3 = Theme.Muted }, 0.3)
+        if previous._icon then
+            tintIcon(previous._icon, Theme.Muted, false, 0.3)
+        end
+        local outLayer = self._outLayer
+        previous._page.Parent = outLayer
+        self._outPage = previous._page
+        outLayer.GroupTransparency = 0
+        outLayer.Position = UDim2.fromOffset(0, 0)
+        outLayer.Visible = true
+        tween(outLayer, { GroupTransparency = 1, Position = UDim2.fromOffset(0, -6) }, 0.2, Enum.EasingStyle.Quint)
+        task.delay(0.18, function()
+            if self._transitionGeneration == generation then
+                self:_settleOut()
+            end
+        end)
+    end
+
+    tween(tab._button, { BackgroundTransparency = 1 }, 0.2)
+    tween(tab._stroke, { Transparency = 1 }, 0.2)
+    tween(tab._label, { TextColor3 = Theme.Text }, 0.3)
+    if tab._icon then
+        tintIcon(tab._icon, Theme.Text, true, 0.3)
+    end
+
+    self:_placeIndicator(tab)
+    self:_scrollTabIntoView(tab)
+
+    local page = tab._page
+    page.Position = UDim2.fromOffset(0, 0)
+    page.Visible = true
+    page.Parent = self._inLayer
+    self._inPage = page
+    fadeSlideIn(self._inLayer)
+    task.delay(0.32, function()
+        if self._transitionGeneration == generation then
+            self:_settleIn()
+        end
+    end)
+end
+
+function Window:_settleOut()
+    local page = self._outPage
+    if page then
+        page.Parent = self.Content
+        page.Visible = false
+        self._outPage = nil
+    end
+    self._outLayer.Visible = false
+end
+
+function Window:_settleIn()
+    local page = self._inPage
+    if page then
+        page.Parent = self.Content
+        page.Position = UDim2.fromOffset(0, 0)
+        self._inPage = nil
+    end
+    self._inLayer.Visible = false
+end
+
+function Window:_settleTransition()
+    self:_settleOut()
+    self:_settleIn()
+end
+
+-- Backdrop: a black tint over the game while the window is up, with an
+-- optional weather layer (rain, snow or hell fire embers) drifting through it.
+-- It fades out when the window is minimized or hidden and sweeps back in with
+-- a gust when it comes back.
+
+local WEATHER = {
+    -- The rain texture is a wide sheet with one faint streak down the middle
+    -- (about 1/60 of its width, 57% of its height), so it is stretched much
+    -- wider than the drop it draws. See RAIN_STREAK.
+    Rain = { Image = "rbxassetid://241868005", Count = 90, Stretch = true },
+    Snow = { Image = "rbxassetid://99851851", Count = 60 },
+    Ember = { Image = "rbxassetid://242205518", Count = 55 },
+    -- Drawn with plain frames and text, no images: petals are tinted pills
+    -- that flip as they fall, matrix columns are text strips.
+    Sakura = { Petal = true, Count = 46, Glow = Color3.fromRGB(255, 150, 190), GlowAmount = 0.1 },
+    Fireflies = { Image = Assets.Glow, Count = 34, Glow = Color3.fromRGB(70, 150, 60), GlowAmount = 0.16 },
+    Matrix = {
+        Text = true,
+        Count = 38,
+        Glow = Color3.fromRGB(30, 200, 90),
+        GlowAmount = 0.07,
+        Glyphs = "01234567890123456789ã¢ã¤ã¦ã¨ãªã«ã­ã¯ã±ã³ãµã·ã¹ã»ã½ã¿ããããããããããããããããã ã¡ã¢ã¤ã¦ã¨ã©ãªã«ã¬ã­ã¯ã³+-*=<>:",
+    },
+}
+local WEATHER_NAMES = {
+    rain = "Rain",
+    snow = "Snow",
+    ember = "Ember",
+    embers = "Ember",
+    fire = "Ember",
+    hellfire = "Ember",
+    sakura = "Sakura",
+    petals = "Sakura",
+    cherryblossom = "Sakura",
+    firefly = "Fireflies",
+    fireflies = "Fireflies",
+    matrix = "Matrix",
+    matrixrain = "Matrix",
+    code = "Matrix",
+}
+local RAIN_STREAK = Vector2.new(7 / 420, 151 / 263)
+local weatherRandom = Random.new()
+
+-- "UI" keeps the weather inside the window, behind its content; anything
+-- else drifts it across the whole screen.
+local function weatherMode(mode)
+    if type(mode) == "string" and ({ ui = true, window = true, inside = true })[mode:lower()] then
+        return "UI"
+    end
+    return "Screen"
+end
+
+local function weatherName(name)
+    if type(name) ~= "string" then
+        return "None"
+    end
+    return WEATHER_NAMES[(name:lower():gsub("[%s_%-]", ""))] or "None"
+end
+
+local function roll(min, max)
+    return weatherRandom:NextNumber(min, max)
+end
+
+-- Places a particle. `anywhere` scatters it over the whole screen (first
+-- frame after the backdrop appears), otherwise it enters from its edge.
+local function seedParticle(kind, particle, width, height, anywhere)
+    particle.Time = roll(0, 10)
+    particle.Phase = roll(0, math.pi * 2)
+    if kind == "Rain" then
+        local w = roll(2, 3.5)
+        particle.Size = Vector2.new(w, roll(26, 52))
+        particle.VY = roll(950, 1400)
+        particle.VX = particle.VY * 0.12
+        particle.Sway, particle.Spin = 0, 0
+        particle.Rotation = -math.deg(math.atan2(particle.VX, particle.VY))
+        particle.Alpha = roll(0, 0.35)
+        particle.X = roll(-0.15 * width, width)
+        particle.Y = anywhere and roll(-40, height) or roll(-120, -particle.Size.Y)
+    elseif kind == "Snow" then
+        local s = roll(6, 17)
+        particle.Size = Vector2.new(s, s)
+        particle.VY = roll(30, 55) * (0.6 + s / 17)
+        particle.VX = roll(-8, 14)
+        particle.Sway = roll(12, 38)
+        particle.Frequency = roll(0.5, 1.3)
+        particle.Spin = roll(-60, 60)
+        particle.Rotation = roll(0, 360)
+        particle.Alpha = roll(0.05, 0.45)
+        particle.X = roll(0, width)
+        particle.Y = anywhere and roll(-20, height) or roll(-60, -s)
+    elseif kind == "Sakura" then
+        local s = roll(7, 14)
+        particle.Size = Vector2.new(s, s * roll(0.55, 0.75))
+        particle.VY = roll(35, 70)
+        particle.VX = roll(18, 45)
+        particle.Sway = roll(14, 34)
+        particle.Frequency = roll(0.6, 1.4)
+        particle.Flutter = roll(1.2, 2.6)
+        particle.Spin = roll(-90, 90)
+        particle.Rotation = roll(0, 360)
+        particle.Alpha = roll(0.05, 0.35)
+        particle.Color = Color3.fromRGB(255, 205, 220):Lerp(Color3.fromRGB(255, 140, 180), roll(0, 1))
+        particle.X = roll(-0.25 * width, width)
+        particle.Y = anywhere and roll(-20, height) or roll(-60, -s)
+    elseif kind == "Fireflies" then
+        -- They wander instead of crossing the screen, and live a few seconds:
+        -- fade in, pulse, fade out, then turn up somewhere else.
+        local s = roll(14, 28)
+        particle.Size = Vector2.new(s, s)
+        particle.VY = roll(-14, 8)
+        particle.VX = roll(-12, 12)
+        particle.Sway = roll(10, 30)
+        particle.SwayY = roll(8, 22)
+        particle.Frequency = roll(0.3, 0.8)
+        particle.Spin, particle.Rotation = 0, 0
+        particle.Alpha = roll(0, 0.25)
+        particle.Life = roll(5, 11)
+        particle.Age = anywhere and roll(0, particle.Life) or 0
+        particle.Pulse = roll(1.5, 3.5)
+        particle.Color = Color3.fromRGB(200, 255, 120):Lerp(Color3.fromRGB(255, 230, 120), roll(0, 1))
+        particle.X = roll(0, width)
+        particle.Y = roll(height * 0.15, height)
+    elseif kind == "Matrix" then
+        local definition = WEATHER.Matrix
+        if not definition.List then
+            definition.List = {}
+            for _, code in utf8.codes(definition.Glyphs) do
+                table.insert(definition.List, utf8.char(code))
+            end
+        end
+        local list = definition.List
+        local s = math.floor(roll(12, 19))
+        local length = math.floor(roll(8, 20))
+        particle.TextSize = s
+        particle.Size = Vector2.new(s + 6, s * length)
+        particle.VY = roll(160, 360) * (s / 15)
+        particle.VX, particle.Sway, particle.Spin, particle.Rotation = 0, 0, 0, 0
+        -- Smaller columns read as further away: dimmer.
+        particle.Alpha = roll(0, 0.25) + (19 - s) * 0.04
+        particle.X = math.floor(roll(0, width) / 18) * 18 + 9
+        particle.Y = anywhere and roll(-particle.Size.Y / 2, height) or -particle.Size.Y / 2 - roll(0, 240)
+        particle.Chars = {}
+        for index = 1, length do
+            particle.Chars[index] = list[math.random(#list)]
+        end
+        particle.Shuffle = roll(0.05, 0.2)
+    else
+        local s = roll(4, 12)
+        particle.Size = Vector2.new(s, s)
+        particle.VY = -roll(60, 170)
+        particle.VX = roll(-12, 12)
+        particle.Sway = roll(8, 28)
+        particle.Frequency = roll(1, 2.4)
+        particle.Spin = roll(-140, 140)
+        particle.Rotation = roll(0, 360)
+        particle.Alpha = roll(0, 0.3)
+        particle.Color = Color3.fromRGB(255, 70, 20):Lerp(Color3.fromRGB(255, 190, 70), roll(0, 1))
+        particle.X = roll(0, width)
+        particle.Y = anywhere and roll(height * 0.2, height + 10) or height + roll(10, 80)
+    end
+    local label = particle.Label
+    if kind == "Rain" then
+        label.Size = UDim2.fromOffset(particle.Size.X / RAIN_STREAK.X, particle.Size.Y / RAIN_STREAK.Y)
+    else
+        label.Size = UDim2.fromOffset(particle.Size.X, particle.Size.Y)
+    end
+    if kind == "Matrix" then
+        label.TextSize = particle.TextSize
+        label.Text = table.concat(particle.Chars, "\n")
+    elseif kind == "Sakura" then
+        label.BackgroundColor3 = particle.Color
+    else
+        label.ImageColor3 = particle.Color
+            or (kind == "Rain" and Color3.fromRGB(190, 210, 245) or Color3.new(1, 1, 1))
+    end
+end
+
+function Window:_buildBackdrop(opts)
+    local layer = create("Frame", {
+        Name = "Backdrop",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Visible = false,
+        ZIndex = 0,
+        Parent = self.Gui,
+    })
+    local tint = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 0,
+        Parent = layer,
+    })
+    -- Darker towards the top and bottom edges.
+    create("UIGradient", {
+        Rotation = 90,
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0),
+            NumberSequenceKeypoint.new(0.5, 0.3),
+            NumberSequenceKeypoint.new(1, 0),
+        }),
+        Parent = tint,
+    })
+    -- Heat rising from the bottom of the screen, hell fire only.
+    local heat = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.fromScale(0, 1),
+        Size = UDim2.fromScale(1, 0.5),
+        BackgroundColor3 = Color3.fromRGB(255, 60, 15),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 1,
+        Parent = layer,
+    })
+    create("UIGradient", {
+        Rotation = 90,
+        Transparency = NumberSequence.new(1, 0),
+        Parent = heat,
+    })
+    -- Holds the heat and the particles so both move together between the
+    -- screen and the window.
+    local field = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        ClipsDescendants = true,
+        ZIndex = 2,
+        Parent = layer,
+    })
+    heat.Parent = field
+    self._backdrop = layer
+    self._backdropTintFrame = tint
+    self._backdropHeat = heat
+    self._weatherField = field
+    self._weatherParticles = {}
+    self._backdropFade = 0
+    self._weatherKick = 0
+    self._backdropShown = false
+    self._backdropEnabled = opts.Enabled ~= false
+    self._backdropTint = math.clamp(tonumber(opts.Tint) or 0.45, 0, 1)
+    self._backdropDim = opts.Dim ~= false
+    self._dimLevel = self._backdropDim and 1 or 0
+    self._weatherDensity = math.clamp(tonumber(opts.Density) or 1, 0, 3)
+    self._weatherSpeed = math.clamp(tonumber(opts.Speed) or 1, 0.1, 3)
+    self.Weather = weatherName(opts.Weather == nil and "Matrix" or opts.Weather)
+    self.WeatherMode = "Screen"
+    self:SetWeatherMode(opts.Mode)
+    self:_rebuildWeather()
+    table.insert(self._frameSteps, function(deltaTime)
+        self:_stepBackdrop(deltaTime)
+    end)
+end
+
+-- The area the particles cover, in the field's own (unscaled) units.
+function Window:_weatherSize()
+    if self.WeatherMode == "UI" then
+        return Vector2.new(self.Root.Size.X.Offset, self.Root.Size.Y.Offset)
+    end
+    return self.Gui.AbsoluteSize
+end
+
+function Window:_rebuildWeather()
+    for _, particle in ipairs(self._weatherParticles) do
+        particle.Label:Destroy()
+    end
+    self._weatherParticles = {}
+    local definition = WEATHER[self.Weather]
+    if not definition then
+        return
+    end
+    -- The glow along the bottom: red heat for hell fire, a soft tint for the
+    -- others that ask for one.
+    self._backdropHeat.BackgroundColor3 = definition.Glow or Color3.fromRGB(255, 60, 15)
+    local size = self:_weatherSize()
+    -- The window is a fraction of the screen, so it gets fewer particles.
+    local count = definition.Count * self._weatherDensity * (self.WeatherMode == "UI" and 0.45 or 1)
+    for _ = 1, math.floor(count + 0.5) do
+        local instance, property
+        if definition.Text then
+            property = "TextTransparency"
+            instance = create("TextLabel", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                BackgroundTransparency = 1,
+                Text = "",
+                TextColor3 = Color3.fromRGB(90, 255, 140),
+                TextTransparency = 1,
+                FontFace = Font.fromEnum(Enum.Font.Code),
+                TextXAlignment = Enum.TextXAlignment.Center,
+                TextYAlignment = Enum.TextYAlignment.Top,
+                LineHeight = 1,
+                ZIndex = 2,
+                Parent = self._weatherField,
+            })
+            -- A fading tail and a pale leading glyph.
+            create("UIGradient", {
+                Rotation = 90,
+                Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+                    ColorSequenceKeypoint.new(0.88, Color3.new(1, 1, 1)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(235, 255, 240)),
+                }),
+                Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 1),
+                    NumberSequenceKeypoint.new(0.6, 0.45),
+                    NumberSequenceKeypoint.new(1, 0),
+                }),
+                Parent = instance,
+            })
+        elseif definition.Petal then
+            property = "BackgroundTransparency"
+            instance = create("Frame", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                BackgroundColor3 = Color3.fromRGB(255, 190, 210),
+                BackgroundTransparency = 1,
+                BorderSizePixel = 0,
+                ZIndex = 2,
+                Parent = self._weatherField,
+            })
+            corner(instance, UDim.new(1, 0))
+            create("UIGradient", {
+                Rotation = 35,
+                Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.fromRGB(235, 200, 215)),
+                Parent = instance,
+            })
+        else
+            property = "ImageTransparency"
+            instance = create("ImageLabel", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                BackgroundTransparency = 1,
+                Image = definition.Image,
+                ImageTransparency = 1,
+                ScaleType = definition.Stretch and Enum.ScaleType.Stretch or Enum.ScaleType.Fit,
+                ZIndex = 2,
+                Parent = self._weatherField,
+            })
+        end
+        local particle = { Label = instance, Property = property }
+        seedParticle(self.Weather, particle, size.X, size.Y, true)
+        table.insert(self._weatherParticles, particle)
+    end
+end
+
+function Window:_stepBackdrop(deltaTime)
+    local target = self._backdropShown and 1 or 0
+    local fade = self._backdropFade
+    if fade == target and target == 0 then
+        return
+    end
+    if fade < target then
+        fade = math.min(fade + deltaTime / 0.45, target)
+    elseif fade > target then
+        fade = math.max(fade - deltaTime / 0.25, target)
+    end
+    self._backdropFade = fade
+    if fade <= 0 then
+        self._backdrop.Visible = false
+        self._weatherField.Visible = false
+        return
+    end
+    local eased = 1 - (1 - fade) ^ 3
+    local kind = self.Weather
+    -- The dim eases on its own so turning it off doesn't touch the weather.
+    local dim = self._dimLevel
+    if self._backdropDim then
+        dim = math.min(dim + deltaTime / 0.3, 1)
+    else
+        dim = math.max(dim - deltaTime / 0.3, 0)
+    end
+    self._dimLevel = dim
+    self._backdropTintFrame.BackgroundTransparency = 1 - self._backdropTint * eased * dim
+    local definition = WEATHER[kind]
+    self._backdropHeat.BackgroundTransparency = kind == "Ember"
+        and 1 - (0.22 + math.sin(os.clock() * 2.1) * 0.05) * eased
+        or definition and definition.GlowAmount and 1 - (definition.GlowAmount + math.sin(os.clock() * 0.8) * definition.GlowAmount * 0.25) * eased
+        or 1
+
+    -- The gust on restore: particles rush in fast and settle back.
+    local kick = self._weatherKick
+    self._weatherKick = math.max(kick - deltaTime * 1.3, 0)
+    local speed = self._weatherSpeed * (1 + kick * kick * 2.5)
+    local size = self:_weatherSize()
+    local width, height = size.X, size.Y
+    for _, particle in ipairs(self._weatherParticles) do
+        particle.Time += deltaTime
+        particle.X += particle.VX * deltaTime * speed
+        particle.Y += particle.VY * deltaTime * speed
+        particle.Rotation += particle.Spin * deltaTime * speed
+        local margin = math.max(particle.Size.X, particle.Size.Y)
+        if particle.Life then
+            particle.Age += deltaTime
+        end
+        if (particle.Life and particle.Age > particle.Life)
+            or (not particle.Life and ((particle.VY > 0 and particle.Y > height + margin) or (particle.VY < 0 and particle.Y < -margin))) then
+            seedParticle(kind, particle, width, height, false)
+        elseif particle.X > width + margin * 4 then
+            particle.X -= width + margin * 6
+        elseif particle.X < -margin * 4 then
+            particle.X += width + margin * 6
+        end
+        local x = particle.X
+        local alpha = 1 - particle.Alpha
+        if particle.Sway ~= 0 then
+            x += math.sin(particle.Time * particle.Frequency + particle.Phase) * particle.Sway
+        end
+        local y = particle.Y
+        local label = particle.Label
+        if kind == "Ember" then
+            -- Flicker, and burn out on the way up.
+            alpha *= math.clamp(particle.Y / (height * 0.85), 0, 1) ^ 0.6
+            alpha *= 0.75 + math.sin(particle.Time * 9 + particle.Phase) * 0.25
+        elseif kind == "Sakura" then
+            -- Flip: the petal narrows and widens as it turns over.
+            local turn = math.abs(math.cos(particle.Time * particle.Flutter + particle.Phase))
+            label.Size = UDim2.fromOffset(particle.Size.X * (0.3 + turn * 0.7), particle.Size.Y)
+        elseif kind == "Fireflies" then
+            y += math.cos(particle.Time * particle.Frequency * 1.3 + particle.Phase) * particle.SwayY
+            local age, life = particle.Age, particle.Life
+            alpha *= math.clamp(math.min(age / 1.2, (life - age) / 1.2), 0, 1)
+            alpha *= 0.5 + math.sin(particle.Time * particle.Pulse + particle.Phase) * 0.5
+        elseif kind == "Matrix" then
+            particle.Shuffle -= deltaTime * speed
+            if particle.Shuffle <= 0 then
+                particle.Shuffle = roll(0.05, 0.2)
+                local list = WEATHER.Matrix.List
+                local chars = particle.Chars
+                chars[math.random(#chars)] = list[math.random(#list)]
+                chars[#chars] = list[math.random(#list)]
+                label.Text = table.concat(chars, "\n")
+            end
+        end
+        label.Position = UDim2.fromOffset(x, y)
+        label.Rotation = particle.Rotation
+        label[particle.Property or "ImageTransparency"] = 1 - alpha * eased
+    end
+end
+
+function Window:_refreshBackdrop(gust)
+    if not self._backdrop then
+        return
+    end
+    local shown = self._backdropEnabled and self._introDone and self.Open and not self.Minimized and not self._destroyed
+    if shown and not self._backdropShown then
+        self._backdrop.Visible = true
+        self._weatherField.Visible = true
+        if self._backdropFade <= 0 then
+            local size = self:_weatherSize()
+            for _, particle in ipairs(self._weatherParticles) do
+                seedParticle(self.Weather, particle, size.X, size.Y, true)
+            end
+        end
+        if gust then
+            self._weatherKick = 1
+        end
+    end
+    self._backdropShown = shown == true
+end
+
+function Window:SetBackdrop(enabled)
+    if not self._backdrop then
+        return
+    end
+    self._backdropEnabled = enabled ~= false
+    self:_refreshBackdrop(true)
+end
+
+function Window:SetBackdropTint(amount)
+    if not self._backdrop then
+        return
+    end
+    self._backdropTint = math.clamp(tonumber(amount) or 0.45, 0, 1)
+end
+
+-- Turns the black tint on or off, leaving the weather running.
+function Window:SetDim(enabled)
+    if not self._backdrop then
+        return
+    end
+    self._backdropDim = enabled ~= false
+end
+
+function Window:SetWeatherMode(mode)
+    if not self._backdrop then
+        return
+    end
+    mode = weatherMode(mode)
+    local field = self._weatherField
+    if mode == "UI" then
+        -- Under everything else in the body: sidebar, content and glows.
+        field.ZIndex = 0
+        field.Parent = self.Body
+    else
+        field.ZIndex = 2
+        field.Parent = self._backdrop
+    end
+    if mode == self.WeatherMode then
+        return
+    end
+    self.WeatherMode = mode
+    self:_rebuildWeather()
+    if self._backdropShown then
+        self._weatherKick = 1
+    end
+end
+
+function Window:SetWeather(name)
+    if not self._backdrop then
+        return
+    end
+    local kind = weatherName(name)
+    if kind == self.Weather then
+        return
+    end
+    self.Weather = kind
+    self:_rebuildWeather()
+    if self._backdropShown then
+        self._weatherKick = 1
+    end
+end
+
+function Window:SetWeatherDensity(density)
+    if not self._backdrop then
+        return
+    end
+    self._weatherDensity = math.clamp(tonumber(density) or 1, 0, 3)
+    self:_rebuildWeather()
+end
+
+function Window:SetWeatherSpeed(speed)
+    if not self._backdrop then
+        return
+    end
+    self._weatherSpeed = math.clamp(tonumber(speed) or 1, 0.1, 3)
+end
+
+-- Minimize: the window folds into a Dynamic Island style pill hanging from
+-- the top of the screen. Compact, it shows the logo and a live meter of
+-- running toggles. Hovering springs it open into a session card: the
+-- player, the game and session time, frame rate and ping meters, the server
+-- and running counts, and the key that reopens the window. A
+-- notification while minimized opens it briefly to show it. Click or tap
+-- restores.
+
+-- One table, not separate locals: the main chunk is at Luau's 200 local limit.
+local Mini = {
+    -- Sized after the iPhone 18 island: a slimmer, shorter pill sitting close
+    -- to the top edge, opening into a wide card with deep rounded corners.
+    Top = 8, -- gap from the top of the screen
+    Width = TOUCH and 176 or 168, -- compact
+    Height = TOUCH and 36 or 32,
+    Wide = 340, -- expanded and activity
+    Radius = 34, -- corner of the expanded and activity cards
+    Bars = 4,
+    Pinned = 6,
+}
+
+-- The morph is carried by a plain "ghost" panel drawn over the window. The
+-- window body itself never moves or fades, so nothing has to be laid out
+-- again mid-animation: the ghost covers it, the window is hidden underneath,
+-- and on the way back the window is shown under the ghost before it clears.
+local function makeGhost(window, position, size, radius)
+    if window._ghost then
+        window._ghost:Destroy()
+    end
+    local ghost = create("Frame", {
+        Position = UDim2.fromOffset(position.X, position.Y),
+        Size = UDim2.fromOffset(size.X, size.Y),
+        BackgroundColor3 = Theme.Background,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        ZIndex = 29,
+        Parent = window.Gui,
+    })
+    local ghostCorner = Library._fixedCorner(ghost, UDim.new(0, radius))
+    local ghostStroke = stroke(ghost, Theme.Stroke, 1)
+    window._ghost = ghost
+    return ghost, ghostStroke, ghostCorner
+end
+
+local function morphGhost(ghost, ghostCorner, position, size, radius, duration)
+    tween(ghost, {
+        Position = UDim2.fromOffset(position.X, position.Y),
+        Size = UDim2.fromOffset(size.X, size.Y),
+    }, duration, Enum.EasingStyle.Quint)
+    tween(ghostCorner, { CornerRadius = UDim.new(0, radius) }, duration, Enum.EasingStyle.Quint)
+end
+
+local function dissolve(window, ghost, ghostStroke, duration)
+    tween(ghost, { BackgroundTransparency = 1 }, duration, Enum.EasingStyle.Quad)
+    tween(ghostStroke, { Transparency = 1 }, duration, Enum.EasingStyle.Quad)
+    task.delay(duration + 0.02, function()
+        if window._ghost == ghost then
+            window._ghost = nil
+        end
+        ghost:Destroy()
+    end)
+end
+
+function Window:_buildMiniBar()
+    if self.MiniBar then
+        return self.MiniBar
+    end
+    local gui = self.Gui
+
+    -- The island itself: a black pill hanging from the top of the screen. It
+    -- is a canvas so its rounded shape clips whatever layer is showing.
+    local island = create("CanvasGroup", {
+        Name = "Island",
+        AnchorPoint = Vector2.new(0.5, 0),
+        Position = UDim2.new(0.5, 0, 0, Mini.Top),
+        Size = UDim2.fromOffset(Mini.Width, Mini.Height),
+        BackgroundColor3 = Color3.new(0, 0, 0),
+        BorderSizePixel = 0,
+        GroupTransparency = 1,
+        Visible = false,
+        ZIndex = 30,
+        Parent = gui,
+    })
+    local islandCorner = Library._fixedCorner(island, UDim.new(0, Mini.Height / 2))
+    local islandScale = create("UIScale", { Parent = island })
+    self._miniScale = islandScale
+    -- How far the split bubble is out of the pill: drawn back in while the
+    -- island is open, budded off again once it settles to the pill.
+    local merge = create("NumberValue", { Value = 1 })
+    local mergeTween
+    self._miniOrb = island
+
+    -- The wide layers keep a fixed width, so nothing reflows while the island
+    -- grows around them.
+    local function layer(name)
+        return create("CanvasGroup", {
+            Name = name,
+            AnchorPoint = Vector2.new(0.5, 0),
+            Position = UDim2.fromScale(0.5, 0),
+            Size = UDim2.new(0, Mini.Wide, 0, 400),
+            BackgroundTransparency = 1,
+            GroupTransparency = 1,
+            Parent = island,
+        })
+    end
+
+    -- Compact: the logo leading, a live meter of running toggles trailing.
+    -- A graphite surface, lit from the top, so the pill isn't a flat black
+    -- slab; it fades with the layer, leaving the open card black.
+    local compact = create("CanvasGroup", {
+        Name = "Compact",
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Color3.fromRGB(30, 30, 34),
+        BorderSizePixel = 0,
+        Parent = island,
+    })
+    create("UIGradient", {
+        Rotation = 90,
+        Color = ColorSequence.new(Color3.fromRGB(255, 255, 255), Color3.fromRGB(120, 120, 120)),
+        Parent = compact,
+    })
+    -- The logo sits in a soft accent disc, like an app glyph.
+    local logoDisc = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, 5, 0.5, 0),
+        Size = UDim2.fromOffset(Mini.Height - 10, Mini.Height - 10),
+        BackgroundColor3 = Theme.Accent,
+        BackgroundTransparency = 0.82,
+        BorderSizePixel = 0,
+        Parent = compact,
+    })
+    corner(logoDisc, UDim.new(1, 0))
+    local logo = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(16, 16),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = logoDisc,
+    })
+    applyIcon(logo, self._logoIcon, true)
+    -- The script's name beside the logo, so the pill reads at a glance.
+    local miniTitle = label({
+        AnchorPoint = Vector2.new(0, 0.5),
+        Position = UDim2.new(0, Mini.Height + 2, 0.5, 0),
+        Size = UDim2.new(1, -Mini.Height - 2 - 72, 0, 18),
+        Text = self.Title,
+        TextSize = 13,
+        FontFace = Fonts.Bold,
+        TextColor3 = Color3.fromRGB(244, 244, 246),
+        Parent = compact,
+    })
+    local meter = create("Frame", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -14, 0.5, 0),
+        Size = UDim2.fromOffset(0, 18),
+        AutomaticSize = Enum.AutomaticSize.X,
+        BackgroundTransparency = 1,
+        Parent = compact,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        HorizontalAlignment = Enum.HorizontalAlignment.Right,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 7),
+        Parent = meter,
+    })
+    local barsHolder = create("Frame", {
+        Size = UDim2.fromOffset(Mini.Bars * 3 + (Mini.Bars - 1) * 2, 16),
+        BackgroundTransparency = 1,
+        Visible = false,
+        LayoutOrder = 1,
+        Parent = meter,
+    })
+    local bars = {}
+    for index = 1, Mini.Bars do
+        local bar = create("Frame", {
+            AnchorPoint = Vector2.new(0, 0.5),
+            Position = UDim2.new(0, (index - 1) * 5, 0.5, 0),
+            Size = UDim2.fromOffset(3, 3),
+            BackgroundColor3 = Theme.Muted,
+            BorderSizePixel = 0,
+            Parent = barsHolder,
+        })
+        corner(bar, UDim.new(1, 0))
+        bars[index] = bar
+    end
+    local countLabel = label({
+        Size = UDim2.fromOffset(0, 18),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = "",
+        TextSize = 13,
+        FontFace = Fonts.Bold,
+        TextTruncate = Enum.TextTruncate.None,
+        Visible = false,
+        LayoutOrder = 2,
+        Parent = meter,
+    })
+    -- Idle (nothing running): a health dot tinted by frame rate and the
+    -- session clock, so the pill never sits empty.
+    local idleDot = create("Frame", {
+        Size = UDim2.fromOffset(6, 6),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        LayoutOrder = -1,
+        Parent = meter,
+    })
+    corner(idleDot, UDim.new(1, 0))
+    local idleLabel = label({
+        Size = UDim2.fromOffset(0, 18),
+        AutomaticSize = Enum.AutomaticSize.X,
+        Text = "0s",
+        TextSize = 12,
+        FontFace = Fonts.Bold,
+        TextColor3 = Color3.fromRGB(220, 220, 224),
+        TextTruncate = Enum.TextTruncate.None,
+        LayoutOrder = 0,
+        Parent = meter,
+    })
+
+    -- Expanded, on hover: the player's session.
+    local expanded = layer("Expanded")
+    local expandedList = create("Frame", {
+        Position = UDim2.fromOffset(16, 14),
+        Size = UDim2.new(1, -32, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = expanded,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 8),
+        Parent = expandedList,
+    })
+    -- The open card is the player's session, like a now-playing card: who
+    -- and where on top with the session clock, two wide meters for frame
+    -- rate and ping, then chips for the server and what's running.
+    local top = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 48),
+        BackgroundTransparency = 1,
+        LayoutOrder = 1,
+        Parent = expandedList,
+    })
+    local face = create("ImageLabel", {
+        Size = UDim2.fromOffset(48, 48),
+        BackgroundColor3 = Color3.fromRGB(38, 38, 41),
+        BorderSizePixel = 0,
+        Image = "rbxthumb://type=AvatarHeadShot&id=" .. tostring(LocalPlayer.UserId) .. "&w=150&h=150",
+        Parent = top,
+    })
+    corner(face, UDim.new(0, 12))
+    local facePlaceholder = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(20, 20),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Muted,
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = face,
+    })
+    applyIcon(facePlaceholder, "user")
+    self:_trackAvatar(face, facePlaceholder)
+    local nameLabel = label({
+        Position = UDim2.fromOffset(60, 5),
+        Size = UDim2.new(1, -150, 0, 20),
+        TextSize = 15,
+        FontFace = Fonts.Bold,
+        TextColor3 = Color3.fromRGB(244, 244, 246),
+        Parent = top,
+    })
+    self:_trackName(nameLabel, "Display")
+    local tabLabel = label({
+        Position = UDim2.fromOffset(60, 26),
+        Size = UDim2.new(1, -150, 0, 15),
+        Text = "",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        Parent = top,
+    })
+    task.spawn(function()
+        tabLabel.Text = detectGameName()
+    end)
+    local sessionLabel = label({
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, 0, 0, 3),
+        Size = UDim2.fromOffset(90, 24),
+        Text = "0s",
+        TextSize = 20,
+        FontFace = Fonts.Bold,
+        TextColor3 = Color3.fromRGB(244, 244, 246),
+        TextXAlignment = Enum.TextXAlignment.Right,
+        Parent = top,
+    })
+    label({
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, 0, 0, 27),
+        Size = UDim2.fromOffset(90, 14),
+        Text = "session",
+        TextSize = 11,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextXAlignment = Enum.TextXAlignment.Right,
+        Parent = top,
+    })
+
+    -- Two readouts: a large number with its unit, a caption, and a thin
+    -- line under them that fills and tints with how healthy it is.
+    local meters = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 42),
+        BackgroundTransparency = 1,
+        LayoutOrder = 2,
+        Parent = expandedList,
+    })
+    local function meterPill(position, caption)
+        local cell = create("Frame", {
+            Position = position,
+            Size = UDim2.new(0.5, -10, 1, 0),
+            BackgroundTransparency = 1,
+            Parent = meters,
+        })
+        local value = label({
+            Size = UDim2.new(1, -70, 0, 24),
+            Text = "",
+            TextSize = 20,
+            FontFace = Fonts.Bold,
+            TextColor3 = Color3.fromRGB(244, 244, 246),
+            RichText = true,
+            Parent = cell,
+        })
+        label({
+            AnchorPoint = Vector2.new(1, 0),
+            Position = UDim2.new(1, 0, 0, 6),
+            Size = UDim2.fromOffset(70, 14),
+            Text = caption,
+            TextSize = 10,
+            TextColor3 = Theme.Muted,
+            TextXAlignment = Enum.TextXAlignment.Right,
+            Parent = cell,
+        })
+        local track = create("Frame", {
+            AnchorPoint = Vector2.new(0, 1),
+            Position = UDim2.new(0, 0, 1, -4),
+            Size = UDim2.new(1, 0, 0, 3),
+            BackgroundColor3 = Color3.fromRGB(38, 38, 42),
+            BorderSizePixel = 0,
+            Parent = cell,
+        })
+        corner(track, UDim.new(1, 0))
+        local fill = create("Frame", {
+            Size = UDim2.fromScale(0, 1),
+            BackgroundColor3 = Theme.Success,
+            BorderSizePixel = 0,
+            Parent = track,
+        })
+        corner(fill, UDim.new(1, 0))
+        return fill, value
+    end
+    local fpsFill, fpsValue = meterPill(UDim2.fromScale(0, 0), "FRAME RATE")
+    local pingFill, pingValue = meterPill(UDim2.new(0.5, 10, 0, 0), "PING")
+
+    -- Chips: a muted name and a bold value, the running count in accent.
+    local chips = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 30),
+        BackgroundTransparency = 1,
+        LayoutOrder = 3,
+        Parent = expandedList,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        VerticalAlignment = Enum.VerticalAlignment.Center,
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 8),
+        Parent = chips,
+    })
+    local function chipOf(order, name, color)
+        local chipFrame = create("Frame", {
+            Size = UDim2.fromOffset(0, 30),
+            AutomaticSize = Enum.AutomaticSize.X,
+            BackgroundColor3 = Color3.fromRGB(32, 32, 35),
+            BorderSizePixel = 0,
+            LayoutOrder = order,
+            Parent = chips,
+        })
+        corner(chipFrame, UDim.new(1, 0))
+        padding(chipFrame, 14, 14)
+        create("UIListLayout", {
+            FillDirection = Enum.FillDirection.Horizontal,
+            VerticalAlignment = Enum.VerticalAlignment.Center,
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Padding = UDim.new(0, 7),
+            Parent = chipFrame,
+        })
+        label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = name,
+            TextSize = 12,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 1,
+            Parent = chipFrame,
+        })
+        return label({
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = Enum.AutomaticSize.X,
+            Text = "",
+            TextSize = 12,
+            FontFace = Fonts.Bold,
+            TextColor3 = color or Color3.fromRGB(244, 244, 246),
+            TextTruncate = Enum.TextTruncate.None,
+            LayoutOrder = 2,
+            Parent = chipFrame,
+        })
+    end
+    local playersValue = chipOf(1, "Players")
+    local bigCount = chipOf(2, "Running", Theme.Accent)
+    local tabValue = chipOf(3, "Tab")
+
+    -- Pinned statuses are no longer shown here; the holder stays so the
+    -- refresh below has somewhere to keep its rows.
+    local rowsHolder = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        BackgroundTransparency = 1,
+        Visible = false,
+        LayoutOrder = 4,
+        Parent = expandedList,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 2),
+        Parent = rowsHolder,
+    })
+    -- What's running, by name, so the count above has something behind it.
+    local runningNames = label({
+        Size = UDim2.new(1, 0, 0, 15),
+        Text = "",
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Color3.fromRGB(200, 200, 206),
+        RichText = true,
+        Visible = false,
+        LayoutOrder = 4,
+        Parent = expandedList,
+    })
+    local hint = label({
+        Size = UDim2.new(1, 0, 0, 14),
+        TextSize = 11,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        LayoutOrder = 5,
+        Parent = expandedList,
+    })
+
+    -- Frame rate is counted every frame; the card's values refresh twice a
+    -- second while it's open.
+    local sessionStart = self._sessionStart or os.clock()
+    local frames, frameClock, fps = 0, os.clock(), 60
+    self:_listen("Render", function()
+        frames += 1
+        local now = os.clock()
+        if now - frameClock >= 0.5 then
+            fps = math.floor(frames / (now - frameClock) + 0.5)
+            frames, frameClock = 0, now
+        end
+    end)
+    local function refreshSession()
+        sessionLabel.Text = formatDuration(os.clock() - sessionStart)
+        idleLabel.Text = sessionLabel.Text
+        tween(idleDot, { BackgroundColor3 = Library._healthColor(fps, 50, 30) }, 0.4)
+        local unit = '<font size="12" color="#8A8A93"> %s</font>'
+        fpsValue.Text = fps .. string.format(unit, "fps")
+        tween(fpsFill, {
+            Size = UDim2.fromScale(math.clamp(fps / 60, 0.05, 1), 1),
+            BackgroundColor3 = Library._healthColor(fps, 50, 30),
+        }, 0.4, Enum.EasingStyle.Quint)
+        local okPing, ping = pcall(function()
+            return math.floor(LocalPlayer:GetNetworkPing() * 1000)
+        end)
+        ping = okPing and ping or 0
+        pingValue.Text = ping .. string.format(unit, "ms")
+        -- Lower ping fills more: 40ms or less is full, 400ms and up is low.
+        tween(pingFill, {
+            Size = UDim2.fromScale(math.clamp(1 - (ping - 40) / 360, 0.05, 1), 1),
+            BackgroundColor3 = Library._healthColor(ping, 90, 180, true),
+        }, 0.4, Enum.EasingStyle.Quint)
+        playersValue.Text = #Players:GetPlayers() .. "/" .. Players.MaxPlayers
+        local tab = self.CurrentTab
+        tabValue.Text = tab and tab.Name or "-"
+    end
+    task.spawn(function()
+        while island.Parent do
+            if island.Visible and self.Minimized then
+                refreshSession()
+            end
+            task.wait(0.5)
+        end
+    end)
+
+    -- Activity: a notification that arrives while minimized drops in here.
+    local activity = layer("Activity")
+    local activityList = create("Frame", {
+        Position = UDim2.fromOffset(16, 13),
+        Size = UDim2.new(1, -32, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = activity,
+    })
+    local activityChip = create("Frame", {
+        Size = UDim2.fromOffset(34, 34),
+        BackgroundColor3 = Theme.Accent,
+        BackgroundTransparency = 0.85,
+        BorderSizePixel = 0,
+        Parent = activityList,
+    })
+    corner(activityChip, UDim.new(1, 0))
+    local activityIcon = create("ImageLabel", {
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(17, 17),
+        BackgroundTransparency = 1,
+        ImageColor3 = Theme.Accent,
+        ScaleType = Enum.ScaleType.Fit,
+        Parent = activityChip,
+    })
+    local activityText = create("Frame", {
+        Position = UDim2.fromOffset(46, 0),
+        Size = UDim2.new(1, -46, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = activityList,
+    })
+    create("UIListLayout", {
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Padding = UDim.new(0, 1),
+        Parent = activityText,
+    })
+    local activityTitle = label({
+        Size = UDim2.new(1, 0, 0, 18),
+        TextSize = 14,
+        FontFace = Fonts.Bold,
+        LayoutOrder = 1,
+        Parent = activityText,
+    })
+    local activityBody = label({
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        TextSize = 12,
+        FontFace = Fonts.Regular,
+        TextColor3 = Theme.Muted,
+        TextWrapped = true,
+        TextTruncate = Enum.TextTruncate.None,
+        TextYAlignment = Enum.TextYAlignment.Top,
+        MaxVisibleGraphemes = 140,
+        LayoutOrder = 2,
+        Parent = activityText,
+    })
+
+    local hit = create("TextButton", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundTransparency = 1,
+        Text = "",
+        AutoButtonColor = false,
+        ZIndex = 10,
+        Parent = island,
+    })
+
+    -- Morphing between shapes: the island springs to its new size while the
+    -- old layer fades out and the new one fades in just behind it.
+    local layers = { Compact = compact, Expanded = expanded, Activity = activity }
+    local mode = "Compact"
+    local modeToken = 0
+    local sizeTween, cornerTween
+    local hovered, pressed = false, false
+    local hoverToken = 0
+    local dragFrom, dragAnchor, dragging, dragged = nil, nil, false, false
+    local activityToken = 0
+    local activityLive = false
+
+    local function shapeFor(name)
+        if name == "Expanded" then
+            return Vector2.new(Mini.Wide, math.floor(expandedList.AbsoluteSize.Y + 28 + 0.5)), Mini.Radius
+        elseif name == "Activity" then
+            return Vector2.new(Mini.Wide, math.floor(math.max(activityList.AbsoluteSize.Y, 34) + 26 + 0.5)), Mini.Radius
+        end
+        return Vector2.new(Mini.Width, Mini.Height), Mini.Height / 2
+    end
+
+    -- Where the island hangs: the top centre of its shape, as fractions of
+    -- the screen so it keeps its spot across resolutions. Dragging moves it;
+    -- each shape is clamped on screen, so the wide card slides in from an edge
+    -- and the pill goes back to its spot when it folds.
+    local saved = self:_readConfigSettings().IslandPosition
+    if type(saved) == "table" and tonumber(saved.X) and tonumber(saved.Y) then
+        self._islandAnchor = Vector2.new(math.clamp(tonumber(saved.X), 0, 1), math.clamp(tonumber(saved.Y), 0, 1))
+    end
+    local positionTween
+    local function anchorPixels()
+        local view = gui.AbsoluteSize
+        local anchor = self._islandAnchor
+        if not anchor then
+            return Vector2.new(view.X / 2, Mini.Top)
+        end
+        return Vector2.new(anchor.X * view.X, anchor.Y * view.Y)
+    end
+    local function islandSpot(size, from)
+        local view = gui.AbsoluteSize
+        local spot = from or anchorPixels()
+        local margin = 6
+        local x = math.clamp(spot.X, size.X / 2 + margin, math.max(view.X - size.X / 2 - margin, size.X / 2 + margin))
+        local y = math.clamp(spot.Y, margin, math.max(view.Y - size.Y - margin, margin))
+        return Vector2.new(x, y)
+    end
+    local function placeIsland(size, duration, style)
+        local spot = islandSpot(size)
+        if positionTween then
+            positionTween:Cancel()
+            positionTween = nil
+        end
+        if duration and duration > 0 then
+            positionTween = tween(island, { Position = UDim2.fromOffset(spot.X, spot.Y) }, duration, style or Enum.EasingStyle.Quint)
+        else
+            island.Position = UDim2.fromOffset(spot.X, spot.Y)
+        end
+    end
+    self._islandReset = function()
+        self._islandAnchor = nil
+        if island.Visible then
+            placeIsland(Vector2.new(island.Size.X.Offset, island.Size.Y.Offset), 0.35)
+        end
+    end
+
+    local function setMode(name, instant)
+        local size, radius = shapeFor(name)
+        local changed = name ~= mode
+        mode = name
+        modeToken += 1
+        local token = modeToken
+        local current = Vector2.new(island.Size.X.Offset, island.Size.Y.Offset)
+        local growing = size.X > current.X + 1 or size.Y > current.Y + 1
+        local duration = instant and 0 or (growing and 0.5 or 0.38)
+        -- A snap must stop a morph still in flight, or it keeps writing the
+        -- old shape over the new one.
+        if sizeTween then
+            sizeTween:Cancel()
+        end
+        if cornerTween then
+            cornerTween:Cancel()
+        end
+        placeIsland(size, duration)
+        sizeTween = tween(island, { Size = UDim2.fromOffset(size.X, size.Y) }, duration, growing and Enum.EasingStyle.Back or Enum.EasingStyle.Quint)
+        cornerTween = tween(islandCorner, { CornerRadius = UDim.new(0, radius) }, duration, Enum.EasingStyle.Quint)
+        -- The iOS island gives a soft squeeze as it swells open, then springs
+        -- back, so the morph reads as one elastic body rather than a resize.
+        if changed and not instant and not pressed and not dragging then
+            islandScale.Scale = growing and 0.96 or 1.03
+            tween(islandScale, { Scale = 1 }, growing and 0.55 or 0.4, Enum.EasingStyle.Back)
+        end
+        if changed or instant then
+            if mergeTween then
+                mergeTween:Cancel()
+                mergeTween = nil
+            end
+            if instant then
+                merge.Value = name == "Compact" and 1 or 0
+            elseif name == "Compact" then
+                -- Wait for the pill to shrink most of the way, then bud off.
+                task.delay(duration * 0.55, function()
+                    if modeToken == token then
+                        mergeTween = tween(merge, { Value = 1 }, 0.6, Enum.EasingStyle.Back)
+                    end
+                end)
+            else
+                mergeTween = tween(merge, { Value = 0 }, 0.2, Enum.EasingStyle.Quint)
+            end
+        end
+        if not changed and not instant then
+            -- A refit (same shape, new height) bumps the token, which cancels
+            -- a fade-in still waiting from the morph; finish it here or the
+            -- card stays black until the next hover.
+            local target = layers[name]
+            if target.GroupTransparency > 0 then
+                tween(target, { GroupTransparency = 0 }, 0.22, Enum.EasingStyle.Quad)
+            end
+            if target ~= compact and target.Position ~= UDim2.fromScale(0.5, 0) then
+                tween(target, { Position = UDim2.fromScale(0.5, 0) }, 0.32, Enum.EasingStyle.Quint)
+            end
+            return
+        end
+        for key, group in pairs(layers) do
+            if key ~= name then
+                tween(group, { GroupTransparency = 1 }, instant and 0 or 0.14, Enum.EasingStyle.Quad)
+            end
+        end
+        local target = layers[name]
+        if instant then
+            target.GroupTransparency = 0
+            -- Compact fills the island from its corner; only the wide
+            -- layers hang from the centre.
+            if target ~= compact then
+                target.Position = UDim2.fromScale(0.5, 0)
+            end
+        else
+            -- The new layer rises a few pixels into place as it fades in, so
+            -- the content reads as arriving with the shape, not popping in.
+            if target ~= compact then
+                target.Position = UDim2.new(0.5, 0, 0, 6)
+            end
+            task.delay(0.1, function()
+                if modeToken == token then
+                    tween(target, { GroupTransparency = 0 }, 0.22, Enum.EasingStyle.Quad)
+                    if target ~= compact then
+                        tween(target, { Position = UDim2.fromScale(0.5, 0) }, 0.32, Enum.EasingStyle.Quint)
+                    end
+                end
+            end)
+        end
+    end
+
+    local function settleMode()
+        if hovered and not TOUCH and not dragging then
+            setMode("Expanded")
+        elseif activityLive then
+            setMode("Activity")
+        elseif self.IslandStyle == "Always Show" and not dragging then
+            self:_refreshMini()
+            refreshSession()
+            setMode("Expanded")
+        else
+            setMode("Compact")
+        end
+    end
+
+    self._islandSettle = function()
+        if self.Minimized and island.Visible and not dragging then
+            settleMode()
+        end
+    end
+
+    -- Called by Minimize once the window is out of the way: the island is
+    -- reset to its compact pill and its spot handed back for the ghost.
+    function self:_miniLand()
+        hovered, activityLive = false, false
+        activityToken += 1
+        islandScale.Scale = 1
+        setMode("Compact", true)
+        local size = Vector2.new(Mini.Width, Mini.Height)
+        local spot = islandSpot(size)
+        return Vector2.new(spot.X - size.X / 2, spot.Y), size
+    end
+
+    hit.MouseEnter:Connect(function()
+        if usingTouch() or dragging then
+            return
+        end
+        hovered = true
+        hoverToken += 1
+        local token = hoverToken
+        -- Already open (the pointer left and came back within the grace):
+        -- just stay. Otherwise lean in a touch, and only open once the
+        -- pointer rests, so sweeping past the island doesn't burst it open.
+        if mode == "Expanded" then
+            return
+        end
+        if not pressed then
+            tween(islandScale, { Scale = 1.04 }, 0.18, Enum.EasingStyle.Quint)
+        end
+        task.delay(0.12, function()
+            if hoverToken == token and hovered and self.Minimized and not dragging then
+                self:_refreshMini()
+                refreshSession()
+                setMode("Expanded")
+            end
+        end)
+    end)
+    hit.MouseLeave:Connect(function()
+        hovered = false
+        hoverToken += 1
+        local token = hoverToken
+        if not pressed then
+            tween(islandScale, { Scale = 1 }, 0.25, Enum.EasingStyle.Quint)
+        end
+        -- A grace period: the card shifts while it morphs and clamps on
+        -- screen, so a pointer grazing its edge shouldn't snap it shut.
+        task.delay(mode == "Expanded" and 0.28 or 0.1, function()
+            if hoverToken == token and not hovered and self.Minimized then
+                settleMode()
+            end
+        end)
+    end)
+    -- Press and pull to move the island anywhere on screen. It folds to the
+    -- pill while carried, lifts a little, and a drop near its home at the top
+    -- centre snaps back there. A drag never counts as the click that restores.
+    hit.InputBegan:Connect(function(input)
+        if not isPress(input) then
+            return
+        end
+        pressed = true
+        dragged = false
+        tween(islandScale, { Scale = 0.95 }, 0.12, Enum.EasingStyle.Quad)
+        if not self._islandLocked then
+            dragFrom = Vector2.new(input.Position.X, input.Position.Y)
+            dragAnchor = islandSpot(Vector2.new(Mini.Width, Mini.Height))
+        end
+    end)
+    self:_listen("Changed", function(input)
+        if not dragFrom or not isMove(input) or not self.Minimized then
+            return
+        end
+        local delta = Vector2.new(input.Position.X, input.Position.Y) - dragFrom
+        if not dragging then
+            if delta.Magnitude < (TOUCH and 10 or 6) then
+                return
+            end
+            dragging, dragged = true, true
+            hovered = false
+            setMode("Compact")
+            tween(islandScale, { Scale = 1.06 }, 0.2, Enum.EasingStyle.Quint)
+        end
+        local spot = islandSpot(Vector2.new(Mini.Width, Mini.Height), dragAnchor + delta)
+        local view = gui.AbsoluteSize
+        self._islandAnchor = Vector2.new(spot.X / math.max(view.X, 1), spot.Y / math.max(view.Y, 1))
+        if positionTween then
+            positionTween:Cancel()
+            positionTween = nil
+        end
+        island.Position = UDim2.fromOffset(spot.X, spot.Y)
+    end)
+    table.insert(self._connections, UserInputService.InputEnded:Connect(function(input)
+        if not isPress(input) then
+            return
+        end
+        dragFrom = nil
+        if pressed then
+            pressed = false
+            tween(islandScale, { Scale = 1 }, 0.35, Enum.EasingStyle.Back)
+        end
+        if dragging then
+            dragging = false
+            local home = Vector2.new(gui.AbsoluteSize.X / 2, Mini.Top)
+            local spot = islandSpot(Vector2.new(Mini.Width, Mini.Height))
+            if (spot - home).Magnitude < 28 then
+                self._islandAnchor = nil
+                placeIsland(Vector2.new(Mini.Width, Mini.Height), 0.35, Enum.EasingStyle.Back)
+            end
+            local anchor = self._islandAnchor
+            self:_writeConfigSettings({ IslandPosition = anchor and { X = anchor.X, Y = anchor.Y } or false })
+            hovered = not usingTouch() and pointInside(pointerPosition(), island)
+            task.delay(0.1, function()
+                if self.Minimized and not dragging then
+                    settleMode()
+                end
+            end)
+        end
+    end))
+    -- Keeps the island on screen when the viewport changes size.
+    table.insert(self._connections, gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+        if island.Visible and not dragging then
+            placeIsland(Vector2.new(island.Size.X.Offset, island.Size.Y.Offset), 0)
+        end
+    end))
+    hit.MouseButton1Click:Connect(function()
+        if dragged then
+            dragged = false
+            return
+        end
+        if self.Minimized then
+            self:Restore()
+        end
+    end)
+    -- Restore hides the island under the pointer, so MouseLeave never fires.
+    self._miniUnhover = function()
+        hovered, pressed, activityLive = false, false, false
+        dragFrom, dragging = nil, false
+        activityToken += 1
+        islandScale.Scale = 1
+        -- Clicked open while expanded: once the island has faded out, fold it
+        -- back to the pill so the next minimize starts from it.
+        task.delay(0.15, function()
+            if not self.Minimized then
+                setMode("Compact", true)
+            end
+        end)
+    end
+
+    -- A notification while minimized: the island opens to show it for a few
+    -- seconds, then folds back.
+    self._islandActivity = function(opts)
+        if not self.Minimized or not island.Visible then
+            return
+        end
+        local color = NOTIFY_COLORS[opts.Type] or Theme.Accent
+        activityTitle.Text = tostring(opts.Title or "Notification")
+        activityTitle.TextColor3 = NOTIFY_COLORS[opts.Type] or Theme.Text
+        activityBody.Text = tostring(opts.Content or "")
+        activityBody.Visible = activityBody.Text ~= ""
+        local icon = opts.Icon
+        if icon == nil then
+            icon = ({ Success = "circle-check", Warning = "triangle-alert", Error = "circle-x" })[opts.Type] or "bell"
+        end
+        applyIcon(activityIcon, icon)
+        if not activityIcon:GetAttribute("CustomIcon") then
+            activityIcon.ImageColor3 = color
+        end
+        activityChip.BackgroundColor3 = color
+        activityLive = true
+        activityToken += 1
+        local token = activityToken
+        task.defer(function()
+            if activityToken == token and not hovered and not dragging then
+                setMode("Activity")
+                islandScale.Scale = 0.96
+                tween(islandScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+            end
+        end)
+        task.delay(math.clamp(tonumber(opts.Duration) or 3, 1.5, 5), function()
+            if activityToken == token then
+                activityLive = false
+                if self.Minimized and not hovered then
+                    settleMode()
+                end
+            end
+        end)
+    end
+
+    -- The meter dances while anything runs and lies flat when nothing does.
+    local running = 0
+    self:_listen("Render", function()
+        if island.Visible and running > 0 and mode == "Compact" then
+            local now = os.clock()
+            for index, bar in ipairs(bars) do
+                local wave = 0.5 + 0.5 * math.sin(now * (6 + index * 1.4) + index * 1.9)
+                bar.Size = UDim2.fromOffset(3, math.floor(4 + wave * 11 + 0.5))
+            end
+        end
+    end)
+
+    -- Split, like iOS with two Live Activities: when toggles are running and
+    -- a status is pinned, the pill keeps the status (logo leading, value
+    -- trailing) and the running meter buds off into its own little circle
+    -- beside it. One activity alone stays in the single pill.
+    local pinValue = label({
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(1, -14, 0.5, 0),
+        Size = UDim2.new(1, -52, 0, 18),
+        TextSize = 13,
+        FontFace = Fonts.Bold,
+        TextXAlignment = Enum.TextXAlignment.Right,
+        RichText = true,
+        TextTransparency = 1,
+        Parent = compact,
+    })
+    local bubble = create("TextButton", {
+        Name = "IslandBubble",
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Size = UDim2.fromOffset(0, 0),
+        BackgroundColor3 = Color3.fromRGB(26, 26, 30),
+        BorderSizePixel = 0,
+        Text = "",
+        AutoButtonColor = false,
+        Visible = false,
+        ZIndex = 30,
+        Parent = gui,
+    })
+    corner(bubble, UDim.new(1, 0))
+    local split = create("NumberValue", { Value = 0 })
+    local splitOn = false
+    local pinnedLead = nil
+    local function setSplit(on)
+        if on == splitOn then
+            return
+        end
+        splitOn = on
+        barsHolder.Parent = on and bubble or meter
+        barsHolder.AnchorPoint = on and Vector2.new(0.5, 0.5) or Vector2.new(0, 0)
+        barsHolder.Position = on and UDim2.fromScale(0.5, 0.5) or UDim2.new()
+        meter.Visible = not on
+        tween(pinValue, { TextTransparency = on and 0 or 1 }, 0.2, Enum.EasingStyle.Quad)
+        -- Buds off with a spring, and is drawn back in quicker.
+        tween(split, { Value = on and 1 or 0 }, on and 0.55 or 0.3, on and Enum.EasingStyle.Back or Enum.EasingStyle.Quint)
+        if on then
+            islandScale.Scale = 0.96
+            tween(islandScale, { Scale = 1 }, 0.45, Enum.EasingStyle.Back)
+        end
+    end
+    self:_listen("Render", function()
+        local t = split.Value * merge.Value
+        local shown = island.Visible and t > 0.02 and island.GroupTransparency < 0.5
+        bubble.Visible = shown
+        if not shown then
+            return
+        end
+        local origin = gui.AbsolutePosition
+        local pos, size = island.AbsolutePosition - origin, island.AbsoluteSize
+        local d = math.min(size.Y, Mini.Height)
+        local gap = 6
+        -- Buds off the side with room to spare: the right, or the left near
+        -- the right edge of the screen.
+        local right = pos.X + size.X + gap + d <= gui.AbsoluteSize.X
+        local edge = right and pos.X + size.X or pos.X
+        local dir = right and 1 or -1
+        local inner = edge - dir * d * 0.6
+        local outer = edge + dir * (gap + d / 2)
+        local x = inner + (outer - inner) * t
+        local scale = math.clamp(0.35 + 0.65 * t, 0, 1.2)
+        -- Liquid: mid-flight the drop stretches along its path and thins,
+        -- then rounds back into a circle as it settles.
+        local stretch = math.sin(math.clamp(t, 0, 1) * math.pi)
+        bubble.Position = UDim2.fromOffset(x, pos.Y + d / 2)
+        bubble.Size = UDim2.fromOffset(d * scale * (1 + 0.4 * stretch), d * scale * (1 - 0.18 * stretch))
+        bubble.BackgroundTransparency = island.GroupTransparency
+    end)
+    bubble.MouseButton1Click:Connect(function()
+        if self.Minimized then
+            self:Restore()
+        end
+    end)
+
+    local cardRows = {}
+    function self:_refreshMini()
+        local count = 0
+        for _, element in pairs(Library.Flags) do
+            if element._type == "Toggle" and element.Value == true then
+                count += 1
+            end
+        end
+        if count ~= running then
+            local rising = count > running
+            running = count
+            countLabel.Text = tostring(count)
+            for _, bar in ipairs(bars) do
+                tween(bar, { BackgroundColor3 = count > 0 and Theme.Accent or Theme.Muted }, 0.25)
+                if count == 0 then
+                    tween(bar, { Size = UDim2.fromOffset(3, 3) }, 0.25)
+                end
+            end
+            -- A small bump, like a live activity updating.
+            if rising and mode == "Compact" and island.Visible then
+                islandScale.Scale = 1.06
+                tween(islandScale, { Scale = 1 }, 0.4, Enum.EasingStyle.Back)
+            end
+        end
+        bigCount.Text = tostring(count)
+        local names = {}
+        for _, element in pairs(Library.Flags) do
+            if element._type == "Toggle" and element.Value == true and element._searchName ~= "" then
+                table.insert(names, element._searchName)
+            end
+        end
+        table.sort(names)
+        local shownNames = {}
+        for index = 1, math.min(#names, 3) do
+            shownNames[index] = Library._rich(names[index])
+        end
+        local extra = #names - #shownNames
+        runningNames.Text = '<font color="#8A8A93">Running </font>' .. table.concat(shownNames, '<font color="#8A8A93"> Â· </font>')
+            .. (extra > 0 and string.format('<font color="#8A8A93">  +%d</font>', extra) or "")
+        runningNames.Visible = #names > 0
+        pinnedLead = nil
+        for _, handle in ipairs(self._pinned) do
+            if not handle._isShown or handle:_isShown() then
+                pinnedLead = handle
+                break
+            end
+        end
+        if pinnedLead then
+            local text = tostring(pinnedLead:Text() or "")
+            -- A status with nothing to show yet doesn't take the pill.
+            if text:gsub("<[^>]*>", ""):match("%S") then
+                pinValue.Text = text
+                local color = pinnedLead._shownColor and pinnedLead._shownColor() or Theme.Text
+                -- Too dark to read on the black pill: fall back to text colour.
+                local _, _, value = color:ToHSV()
+                pinValue.TextColor3 = value < 0.35 and Theme.Text or color
+            else
+                pinnedLead = nil
+            end
+        end
+        setSplit(running > 0 and pinnedLead ~= nil)
+        -- The pill's own meter: the clock when idle or when the bars budded
+        -- off without a status to keep, the bars and count otherwise.
+        local barsHere = running > 0 and not splitOn
+        idleDot.Visible = not barsHere
+        idleLabel.Visible = not barsHere
+        countLabel.Visible = barsHere
+        barsHolder.Visible = running > 0
+        meter.Visible = not splitOn
+        miniTitle.Visible = not splitOn
+        local key = typeof(self.Keybind) == "EnumItem" and keyName(self.Keybind)
+        hint.Text = TOUCH and "Tap to open" or (key and ("Click or press " .. key .. " to open") or "Click to open")
+
+        local list = {}
+        for _, handle in ipairs(self._pinned) do
+            if (not handle._isShown or handle:_isShown()) and #list < Mini.Pinned then
+                table.insert(list, handle)
+            end
+        end
+        rowsHolder.Visible = false
+        for index = 1, math.max(#list, #cardRows) do
+            local handle = list[index]
+            local row = cardRows[index]
+            if handle then
+                if not row then
+                    local frame = create("Frame", {
+                        Size = UDim2.new(1, 0, 0, 18),
+                        BackgroundTransparency = 1,
+                        LayoutOrder = index,
+                        Parent = rowsHolder,
+                    })
+                    row = {
+                        Frame = frame,
+                        Key = label({
+                            Size = UDim2.new(0.5, -4, 1, 0),
+                            TextSize = 12,
+                            FontFace = Fonts.Regular,
+                            TextColor3 = Theme.Muted,
+                            RichText = true,
+                            Parent = frame,
+                        }),
+                        Value = label({
+                            AnchorPoint = Vector2.new(1, 0),
+                            Position = UDim2.fromScale(1, 0),
+                            Size = UDim2.new(0.5, -4, 1, 0),
+                            TextSize = 12,
+                            TextXAlignment = Enum.TextXAlignment.Right,
+                            RichText = true,
+                            Parent = frame,
+                        }),
+                    }
+                    cardRows[index] = row
+                end
+                row.Frame.Visible = true
+                row.Key.Text = Library._rich(handle.Name)
+                row.Value.Text = handle:Text()
+                -- Carries the status's own colour: its Color, or its tone
+                -- for the tinted styles (badge, dot, bar).
+                local color = handle._shownColor and handle._shownColor() or Theme.Text
+                if row.Value.TextColor3 ~= color then
+                    tween(row.Value, { TextColor3 = color }, 0.2)
+                end
+            elseif row then
+                row.Frame.Visible = false
+            end
+        end
+        -- Rows coming and going change the expanded height.
+        if mode == "Expanded" and (hovered or self.IslandStyle == "Always Show") then
+            task.defer(function()
+                if mode == "Expanded" and (hovered or self.IslandStyle == "Always Show") and self.Minimized then
+                    local size = shapeFor("Expanded")
+                    if math.abs(size.Y - island.Size.Y.Offset) > 1 then
+                        setMode("Expanded")
+                    end
+                end
+            end)
+        end
+    end
+
+    self.MiniBar = island
+    self.Island = island
+    return island
+end
+
+function Window:Minimize()
+    if self.Minimized or not self._introDone or not self.Open or self._destroyed then
+        return
+    end
+    self.Minimized = true
+    self._minimizeGeneration = (self._minimizeGeneration or 0) + 1
+    local generation = self._minimizeGeneration
+    self:_closePopups()
+    self:_refreshToggleButton()
+    self:_refreshBackdrop()
+    local bar = self:_buildMiniBar()
+    self:_refreshMini()
+    local gui = self.Gui
+
+    -- Starts from whatever is on screen: the window, or a ghost still
+    -- mid-flight if a restore was interrupted.
+    local fromPosition = self.Root.AbsolutePosition - gui.AbsolutePosition
+    local fromSize = self.Root.AbsoluteSize
+    local fromAlpha = 1
+    if self._ghost then
+        fromPosition = self._ghost.AbsolutePosition - gui.AbsolutePosition
+        fromSize = self._ghost.AbsoluteSize
+        fromAlpha = self._ghost.BackgroundTransparency
+    end
+
+    -- 1. The ghost fades in over the window while it eases back a touch.
+    local ghost, ghostStroke, ghostCorner = makeGhost(self, fromPosition, fromSize, Library._radius(10))
+    ghost.BackgroundTransparency = fromAlpha
+    ghostStroke.Transparency = fromAlpha
+    tween(ghost, { BackgroundTransparency = 0 }, 0.11, Enum.EasingStyle.Quad)
+    tween(ghostStroke, { Transparency = 0 }, 0.11, Enum.EasingStyle.Quad)
+    tween(self.Scale, { Scale = (self._fitScale or 1) * 0.985 }, 0.11, Enum.EasingStyle.Quad)
+    tween(self.Shadow, { ImageTransparency = 1 }, 0.2)
+    bar.Visible = true
+    bar.GroupTransparency = 1
+
+    task.delay(0.11, function()
+        if self._minimizeGeneration ~= generation or self._destroyed then
+            return
+        end
+        -- 2. Covered by the ghost, the window is hidden and the ghost folds
+        -- down into the island.
+        self.Root.Visible = false
+        self.Scale.Scale = self._fitScale or 1
+        local target, size = self:_miniLand(fromPosition + fromSize / 2)
+        morphGhost(ghost, ghostCorner, target, size, math.floor(size.Y / 2), 0.36)
+        task.delay(0.3, function()
+            if self._minimizeGeneration ~= generation or self._destroyed then
+                return
+            end
+            -- 3. The island fades in on top as the ghost lands.
+            self._miniScale.Scale = 0.9
+            tween(self._miniScale, { Scale = 1 }, 0.3, Enum.EasingStyle.Quint)
+            tween(bar, { GroupTransparency = 0 }, 0.18, Enum.EasingStyle.Quad)
+            dissolve(self, ghost, ghostStroke, 0.2)
+            -- Always Show: once landed as the pill, swell open into the card.
+            if self.IslandStyle == "Always Show" then
+                task.delay(0.22, function()
+                    if self._minimizeGeneration == generation and self._islandSettle then
+                        self._islandSettle()
+                    end
+                end)
+            end
+        end)
+    end)
+
+    task.spawn(function()
+        while self.Minimized and self._minimizeGeneration == generation and not self._destroyed do
+            self:_refreshMini()
+            task.wait(0.5)
+        end
+    end)
+end
+
+function Window:Restore()
+    if not self.Minimized or self._destroyed then
+        return
+    end
+    self.Minimized = false
+    self._minimizeGeneration = (self._minimizeGeneration or 0) + 1
+    local generation = self._minimizeGeneration
+    self:_refreshToggleButton()
+    self:_refreshBackdrop(true)
+    local gui = self.Gui
+    local bar = self.MiniBar
+    local fit = self._fitScale or 1
+    local size = Vector2.new(self.Root.Size.X.Offset, self.Root.Size.Y.Offset) * fit
+    local centre = self.Root.AbsolutePosition + self.Root.AbsoluteSize / 2 - gui.AbsolutePosition
+    local target = centre - size / 2
+
+    -- Picks up from whatever is on screen: a ghost still mid-flight if
+    -- minimize was interrupted, otherwise the island.
+    local fromPosition, fromSize = target, size
+    local fromAlpha = 1
+    if self._ghost then
+        fromPosition = self._ghost.AbsolutePosition - gui.AbsolutePosition
+        fromSize = self._ghost.AbsoluteSize
+        fromAlpha = self._ghost.BackgroundTransparency
+    elseif bar and bar.Visible then
+        fromPosition = self._miniOrb.AbsolutePosition - gui.AbsolutePosition
+        fromSize = self._miniOrb.AbsoluteSize
+    end
+    if bar and bar.Visible then
+        if self._miniUnhover then
+            self._miniUnhover()
+        end
+        tween(bar, { GroupTransparency = 1 }, 0.12, Enum.EasingStyle.Quad)
+        task.delay(0.12, function()
+            if self._minimizeGeneration == generation then
+                bar.Visible = false
+            end
+        end)
+    end
+
+    local ghost, ghostStroke, ghostCorner = makeGhost(self, fromPosition, fromSize, math.floor(math.min(fromSize.X, fromSize.Y) / 2))
+    ghost.BackgroundTransparency = fromAlpha
+    ghostStroke.Transparency = fromAlpha
+    tween(ghost, { BackgroundTransparency = 0 }, 0.1, Enum.EasingStyle.Quad)
+    tween(ghostStroke, { Transparency = 0 }, 0.1, Enum.EasingStyle.Quad)
+    morphGhost(ghost, ghostCorner, target, size, Library._radius(10), 0.4)
+    tween(self.Shadow, { ImageTransparency = self._shadowRest }, 0.45)
+
+    -- Shown under the ghost a little early so its first frames are drawn
+    -- while still covered, then the ghost clears to reveal it.
+    task.delay(0.3, function()
+        if self._minimizeGeneration ~= generation or self._destroyed then
+            return
+        end
+        self.Scale.Scale = fit
+        self.BodyStroke.Transparency = 0
+        self.Root.Visible = true
+    end)
+    task.delay(0.4, function()
+        if self._ghost == ghost and self._minimizeGeneration == generation then
+            dissolve(self, ghost, ghostStroke, 0.22)
+        end
+    end)
+end
+
+-- The minimized island can be dragged anywhere; its spot is remembered in
+-- the config folder. These lock it in place or send it back to the top.
+function Window:SetIslandDraggable(enabled)
+    self._islandLocked = enabled == false
+end
+
+function Window:ResetIslandPosition()
+    self._islandAnchor = nil
+    if self._islandReset then
+        self._islandReset()
+    end
+    self:_writeConfigSettings({ IslandPosition = false })
+end
+
+function Window:SetMinimized(minimized)
+    if minimized then
+        self:Minimize()
+    else
+        self:Restore()
+    end
+end
+
+function Window:Toggle(open)
+    if not self._introDone then
+        return
+    end
+    if self.Minimized then
+        if open ~= false then
+            self:Restore()
+        end
+        return
+    end
+    if open == nil then
+        open = not self.Open
+    end
+    if open == self.Open then
+        return
+    end
+    self.Open = open
+    self:_refreshToggleButton()
+    self:_refreshBackdrop(open)
+    -- Like minimize, a plain ghost panel carries the scale and fade. The body
+    -- is never reparented into the fader or rescaled, which relaid out the
+    -- whole window and stuttered on the keypress frame.
+    self._minimizeGeneration = (self._minimizeGeneration or 0) + 1
+    local generation = self._minimizeGeneration
+    local gui = self.Gui
+    local fit = self._fitScale or 1
+    local size = Vector2.new(self.Root.Size.X.Offset, self.Root.Size.Y.Offset) * fit
+    local centre = self.Root.AbsolutePosition + self.Root.AbsoluteSize / 2 - gui.AbsolutePosition
+    local shrunk = size * 0.94
+    local fromPosition, fromSize, fromAlpha
+    if self._ghost then
+        fromPosition = self._ghost.AbsolutePosition - gui.AbsolutePosition
+        fromSize = self._ghost.AbsoluteSize
+        fromAlpha = self._ghost.BackgroundTransparency
+    end
+    if open then
+        local ghost, ghostStroke, ghostCorner = makeGhost(self, fromPosition or centre - shrunk / 2, fromSize or shrunk, Library._radius(10))
+        ghost.BackgroundTransparency = fromAlpha or 1
+        ghostStroke.Transparency = fromAlpha or 1
+        tween(ghost, { BackgroundTransparency = 0 }, 0.12, Enum.EasingStyle.Quad)
+        tween(ghostStroke, { Transparency = 0 }, 0.12, Enum.EasingStyle.Quad)
+        morphGhost(ghost, ghostCorner, centre - size / 2, size, Library._radius(10), 0.3)
+        tween(self.Shadow, { ImageTransparency = self._shadowRest }, 0.3)
+        -- Shown under the ghost once it covers the spot, then revealed.
+        task.delay(0.2, function()
+            if self._minimizeGeneration ~= generation or self._destroyed then
+                return
+            end
+            self.Scale.Scale = fit
+            self.BodyStroke.Transparency = 0
+            self.Root.Visible = true
+        end)
+        task.delay(0.3, function()
+            if self._ghost == ghost and self._minimizeGeneration == generation then
+                dissolve(self, ghost, ghostStroke, 0.18)
+            end
+        end)
+    else
+        self:_closePopups()
+        local position = fromPosition or self.Root.AbsolutePosition - gui.AbsolutePosition
+        local current = fromSize or self.Root.AbsoluteSize
+        local ghost, ghostStroke, ghostCorner = makeGhost(self, position, current, Library._radius(10))
+        ghost.BackgroundTransparency = fromAlpha or 1
+        ghostStroke.Transparency = fromAlpha or 1
+        tween(ghost, { BackgroundTransparency = 0 }, 0.08, Enum.EasingStyle.Quad)
+        tween(ghostStroke, { Transparency = 0 }, 0.08, Enum.EasingStyle.Quad)
+        tween(self.Shadow, { ImageTransparency = 1 }, 0.16)
+        task.delay(0.08, function()
+            if self._minimizeGeneration ~= generation or self._destroyed then
+                return
+            end
+            self.Root.Visible = false
+            morphGhost(ghost, ghostCorner, centre - shrunk / 2, shrunk, Library._radius(10), 0.2)
+            dissolve(self, ghost, ghostStroke, 0.16)
+        end)
+    end
+end
+
+function Window:SetKeepOnScreen(enabled)
+    self.KeepOnScreen = enabled ~= false
+    if self.KeepOnScreen then
+        self:_clampToScreen()
+    end
+end
+
+function Window:SetKeybind(keyCode)
+    self.Keybind = keyCode
+    if self._keyChipLabel then
+        self._keyChipLabel.Text = keyName(keyCode)
+    end
+end
+
+function Window:Notify(opts)
+    opts = normalize(opts, { Text = "Content", Message = "Content", Image = "Icon" })
+    if self.Minimized and self._islandActivity then
+        self._islandActivity(opts)
+    end
+    local duration = opts.Duration or 4
+    local titleColor = NOTIFY_COLORS[opts.Type] or Theme.Text
+
+    self._notifyOrder = self._notifyOrder + 1
+    local outer = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        BackgroundTransparency = 1,
+        LayoutOrder = self._notifyOrder,
+        Parent = self.NotifyHolder,
+    })
+    local slide = create("Frame", {
+        Position = UDim2.fromOffset(320, 0),
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = outer,
+    })
+    local shadow = create("ImageLabel", {
+        Position = UDim2.fromOffset(-20, -20),
+        Size = UDim2.new(1, 40, 1, 40),
+        BackgroundTransparency = 1,
+        Image = Assets.Shadow,
+        ImageColor3 = Color3.new(0, 0, 0),
+        ImageTransparency = 1,
+        ScaleType = Enum.ScaleType.Slice,
+        SliceCenter = Rect.new(49, 49, 450, 450),
+        ZIndex = 0,
+        Parent = slide,
+    })
+    local toast = create("CanvasGroup", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        GroupTransparency = 1,
+        Parent = slide,
+    })
+    corner(toast, UDim.new(0, 10))
+    local toastStroke = stroke(toast, Theme.Stroke)
+    edgeHighlight(toast)
+    glow(toast, UDim2.fromOffset(260, 120), UDim2.new(1, -10, 0, -10), 0.86, 90)
+
+    local inner = create("Frame", {
+        Size = UDim2.new(1, 0, 0, 0),
+        AutomaticSize = Enum.AutomaticSize.Y,
+        BackgroundTransparency = 1,
+        Parent = toast,
+    })
+    padding(inner, 16, 16, 14, 24)
+
+    local titleOffset = 0
+    if opts.Icon then
+        glowIcon(inner, opts.Icon, titleColor == Theme.Text and Theme.Accent or titleColor, UDim2.new(0, 0, 0, 8))
+        titleOffset = 24
+    end
+    label({
+        Position = UDim2.fromOffset(titleOffset, 0),
+        Size = UDim2.new(1, -28 - titleOffset, 0, 16),
+        Text = opts.Title or "Notification",
+        TextSize = 14,
+        TextColor3 = titleColor,
+        Parent = inner,
+    })
+    local closeButton = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        Position = UDim2.new(1, 6, 0, -5),
+        Size = UDim2.fromOffset(24, 24),
+        BackgroundTransparency = 1,
+        Text = "Ã",
+        TextColor3 = Theme.Muted,
+        TextSize = 22,
+        FontFace = Fonts.Bold,
+        AutoButtonColor = false,
+        Parent = inner,
+    })
+    closeButton.MouseEnter:Connect(function()
+        tween(closeButton, { TextColor3 = Theme.Text }, 0.15)
+    end)
+    closeButton.MouseLeave:Connect(function()
+        tween(closeButton, { TextColor3 = Theme.Muted }, 0.2)
+    end)
+    if opts.Content then
+        label({
+            Position = UDim2.fromOffset(titleOffset, 21),
+            Size = UDim2.new(1, -titleOffset, 0, 0),
+            AutomaticSize = Enum.AutomaticSize.Y,
+            Text = opts.Content,
+            TextSize = 13,
+            FontFace = Fonts.Regular,
+            TextColor3 = Theme.Muted,
+            TextWrapped = true,
+            TextTruncate = Enum.TextTruncate.None,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            Parent = inner,
+        })
+    end
+
+    local track = create("Frame", {
+        AnchorPoint = Vector2.new(0, 1),
+        Position = UDim2.new(0, 16, 1, -8),
+        Size = UDim2.new(1, -32, 0, 3),
+        BackgroundColor3 = Theme.Surface3,
+        BorderSizePixel = 0,
+        Parent = toast,
+    })
+    corner(track, UDim.new(1, 0))
+    local progress = create("Frame", {
+        Size = UDim2.fromScale(1, 1),
+        BackgroundColor3 = Theme.Accent,
+        BorderSizePixel = 0,
+        Parent = track,
+    })
+    corner(progress, UDim.new(1, 0))
+
+    task.defer(function()
+        if outer.Parent then
+            tween(outer, { Size = UDim2.new(1, 0, 0, toast.AbsoluteSize.Y) }, 0.3, Enum.EasingStyle.Quint)
+        end
+    end)
+    tween(slide, { Position = UDim2.fromOffset(0, 0) }, 0.5, Enum.EasingStyle.Back)
+    tween(toast, { GroupTransparency = 0 }, 0.3)
+    tween(shadow, { ImageTransparency = 0.6 }, 0.4)
+    tween(progress, { Size = UDim2.fromScale(0, 1) }, duration, Enum.EasingStyle.Linear)
+
+    local dismissed = false
+    local function dismiss()
+        if dismissed then
+            return
+        end
+        dismissed = true
+        for index, entry in ipairs(self._toasts) do
+            if entry == dismiss then
+                table.remove(self._toasts, index)
+                break
+            end
+        end
+        tween(slide, { Position = UDim2.fromOffset(320, 0) }, 0.3, Enum.EasingStyle.Quint)
+        tween(toast, { GroupTransparency = 1 }, 0.2)
+        tween(toastStroke, { Transparency = 1 }, 0.15)
+        tween(shadow, { ImageTransparency = 1 }, 0.2)
+        task.delay(0.22, function()
+            outer.ClipsDescendants = true
+            tween(outer, { Size = UDim2.new(1, 0, 0, -4) }, 0.22, Enum.EasingStyle.Quint)
+            task.delay(0.24, function()
+                outer:Destroy()
+            end)
+        end)
+    end
+
+    task.delay(duration, dismiss)
+    closeButton.MouseButton1Click:Connect(dismiss)
+
+    table.insert(self._toasts, dismiss)
+    while #self._toasts > self.MaxNotifications do
+        local oldest = table.remove(self._toasts, 1)
+        oldest()
+    end
+
+    return { Dismiss = dismiss }
+end
+
+function Window:Destroy()
+    if self._destroyed then
+        return
+    end
+    self._destroyed = true
+    for index, entry in ipairs(Library.Windows) do
+        if entry == self then
+            table.remove(Library.Windows, index)
+            break
+        end
+    end
+    for _, connection in ipairs(self._connections) do
+        pcall(function()
+            connection:Disconnect()
+        end)
+    end
+    self._connections = {}
+    self._inputListeners = { Began = {}, Changed = {}, Ended = {}, Render = {} }
+    self._frameSteps = {}
+
+    local gui = self.Gui
+    local removed = false
+    local function remove()
+        if removed then
+            return
+        end
+        removed = true
+        if not pcall(gui.Destroy, gui) then
+            pcall(function()
+                gui.Enabled = false
+            end)
+        end
+    end
+    -- The fade out is decoration only. Input is already cut at this point, so
+    -- if any of it fails the gui is removed straight away instead of being
+    -- left frozen on screen.
+    local ok, err = pcall(function()
+        if self._dialog then
+            self._dialog.Close()
+        end
+        self:_closePopups()
+        local fit = self._fitScale or 1
+        tween(self.Scale, { Scale = fit * 0.92 }, 0.22, Enum.EasingStyle.Quint)
+        self:_fade(1, 0.2)
+        tween(self.BodyStroke, { Transparency = 1 }, 0.12)
+        tween(self.Shadow, { ImageTransparency = 1 }, 0.2)
+        if self.MiniBar and self.MiniBar.Visible then
+            tween(self.MiniBar, { GroupTransparency = 1 }, 0.18)
+        end
+        if self._backdrop then
+            -- Frame steps are already cut, so the weather stops where it is.
+            self._weatherField.Visible = false
+            tween(self._backdropTintFrame, { BackgroundTransparency = 1 }, 0.2)
+            tween(self._backdropHeat, { BackgroundTransparency = 1 }, 0.2)
+        end
+        for _, button in ipairs({ self.ToggleButton, self.OpenButton }) do
+            if typeof(button) == "Instance" and button:IsA("GuiObject") then
+                tween(button, { Size = UDim2.fromOffset(0, 0) }, 0.2, Enum.EasingStyle.Quint)
+            end
+        end
+    end)
+    if not ok then
+        warn("[AirFlow] unload animation failed, removing the window directly: " .. tostring(err))
+        remove()
+        return
+    end
+    task.delay(0.24, remove)
+end
+
+Window.Unload = Window.Destroy
+
+-- Unloads every window the library created.
+function Library:Destroy()
+    for index = #Library.Windows, 1, -1 do
+        local window = Library.Windows[index]
+        if window then
+            window:Destroy()
+        end
+    end
+end
+
+Library.Unload = Library.Destroy
+
+-- A script thread that yielded inside an engine call (InvokeServer and the
+-- like) resumes at game identity and can no longer touch the GUI in CoreGui.
+-- Every public call checks for that: it raises the thread back to the identity
+-- the library loaded at, or, when the executor cannot, runs the call on a
+-- trusted Heartbeat thread and waits for its result.
+local getIdentity = getthreadidentity or getidentity or get_thread_identity or (syn and syn.get_thread_identity)
+local setIdentity = setthreadidentity or setidentity or set_thread_identity or (syn and syn.set_thread_identity)
+local loadIdentity = nil
+if getIdentity then
+    local ok, identity = pcall(getIdentity)
+    if ok and type(identity) == "number" then
+        loadIdentity = identity
+    end
+end
+
+local function threadLowered()
+    local window = Library.Windows[#Library.Windows]
+    local probe = window and window.Gui
+    if typeof(probe) ~= "Instance" then
+        return false
+    end
+    return not pcall(function()
+        return probe.Name
+    end)
+end
+
+local trustedQueue = {}
+RunService.Heartbeat:Connect(function()
+    if #trustedQueue == 0 then
+        return
+    end
+    local queue = trustedQueue
+    trustedQueue = {}
+    for _, job in ipairs(queue) do
+        job()
+    end
+end)
+
+local function runTrusted(fn, ...)
+    local args = table.pack(...)
+    local result = nil
+    table.insert(trustedQueue, function()
+        result = table.pack(pcall(fn, table.unpack(args, 1, args.n)))
+    end)
+    while result == nil do
+        task.wait()
+    end
+    if not result[1] then
+        error(result[2], 0)
+    end
+    return table.unpack(result, 2, result.n)
+end
+
+local guardedObjects = setmetatable({}, { __mode = "k" })
+local guardObject
+
+local function guarded(fn)
+    return function(...)
+        if threadLowered() then
+            if setIdentity then
+                pcall(setIdentity, loadIdentity or 8)
+            end
+            if threadLowered() then
+                return guardObject(runTrusted(fn, ...))
+            end
+        end
+        return guardObject(fn(...))
+    end
+end
+
+-- Elements carry their methods as closures, so each returned object gets its
+-- public functions wrapped too; windows and tabs share the guarded metatables.
+function guardObject(...)
+    for index = 1, select("#", ...) do
+        local object = select(index, ...)
+        if type(object) == "table" and not guardedObjects[object] then
+            local meta = getmetatable(object)
+            if meta ~= Window and meta ~= Tab then
+                guardedObjects[object] = true
+                for key, value in pairs(object) do
+                    if type(key) == "string" and type(value) == "function" and key:sub(1, 1) ~= "_" then
+                        object[key] = guarded(value)
+                    elseif type(key) == "number" and type(value) == "table" then
+                        guardObject(value)
+                    end
+                end
+            end
+        end
+    end
+    return ...
+end
+
+for _, class in ipairs({ Library, Window, Tab }) do
+    for key, value in pairs(class) do
+        if type(key) == "string" and type(value) == "function" and key:sub(1, 1) ~= "_" then
+            class[key] = guarded(value)
+        end
+    end
+end
+
+return Library
+end)()
+-- END EMBEDDED LIBRARY
+
+    local Window = Library:CreateWindow({
+        Name = "SANYA_PIRAT",
+        DefaultTheme = "SANYA_PIRAT",
+        Version = "TSB",
+        Icon = Library.Assets.Logo,
+        LoadingTitle = "SANYA_PIRAT",
+        LoadingSubtitle = "TSB",
+        LoadingDuration = 1.2,
+        Size = UDim2.fromOffset(780, 540),
+        ToggleUIKeybind = "RightControl",
+        ToggleButton = {
+            Platform = "Both",
+            Icon = Library.Assets.Logo,
+        },
+        Home = false,
+        Backdrop = {
+            Enabled = true,
+            Weather = "Matrix",
+            Mode = "Screen",
+            Dim = true,
+            Tint = 0.5,
+            Density = 1,
+            Speed = 0.85,
+        },
+        UnsupportedExecutor = false,
+        SaveSize = false,
+        ConfigurationSaving = {
+            Enabled = false,
+            FolderName = "SanyaPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
+        },
+    })
+
+    -- A previously saved library theme must not replace the requested startup palette.
+    Library:SetTheme("SANYA_PIRAT", true)
+
+    local Farm = Window:CreateTab({ Name = "Farm", Icon = "zap" })
+    local Controls = Farm:AddLeftGroupbox({ Name = "Farming", Icon = "repeat" })
+    local Session = Farm:AddRightGroupbox({ Name = "Session", Icon = "activity" })
+
+    Session:CreateStatus({
+        Name = "Plan",
+        Value = flag2 and "Freemium" or "Freemium",
+        Style = "Badge",
+        Tone = "Accent",
+    })
+    local farmStatus = Session:CreateStatus({
+        Name = "Farm status",
+        Value = flag3 and "Running" or "Stopped",
+        Style = "Dot",
+        Tone = flag3 and "Success" or "Error",
+    })
+
+    for _, statistic in ipairs({
+        { Id = "timer", Name = "Time farmed", Value = "00:00:00", Pin = true },
+        { Id = "kills", Name = "Kills farmed", Value = "0", Pin = true },
+        { Id = "kph", Name = "Kills / hr", Value = "0" },
+        { Id = "emotes", Name = "Emotes unlocked", Value = "0" },
+        { Id = "total", Name = "Total kills", Value = "0" },
+    }) do
+        tbl3[statistic.Id] = Session:CreateStatus({
+            Name = statistic.Name,
+            Value = statistic.Value,
+            Style = "Row",
+            Pin = statistic.Pin,
+        })
+    end
+
+    local farmToggle
+    fn4 = function(enabled)
+        flag3 = enabled == true
+        -- Internal stop requests must update the toggle without calling it again.
+        if farmToggle then
+            farmToggle:Set(flag3, true)
+        end
+        farmStatus:Set(flag3 and "Running" or "Stopped")
+        farmStatus:SetTone(flag3 and "Success" or "Error")
+    end
+
+    farmToggle = Controls:CreateToggle({
+        Name = "Farm enabled",
+        Desc = "Start or stop farming",
+        CurrentValue = flag3,
+        Callback = fn4,
+    })
+    fn4(flag3)
+
+    Controls:CreateDropdown({
+        Name = "Region",
+        Options = tbl,
+        CurrentOption = v.country or tbl[1],
+        AllowNone = false,
+        Callback = function(country)
+            if type(country) ~= "string" then
+                return
+            end
+            v.country = country
+            fn()
+            if uiActions.RegionChanged then
+                uiActions.RegionChanged(country)
+            end
+        end,
+    })
+
+    Controls:CreateToggle({
+        Name = "Automatic server hop",
+        CurrentValue = doServerHop,
+        Callback = function(enabled)
+            doServerHop = enabled
+        end,
+    })
+
+    Controls:CreateButton({
+        Name = "Hop Server",
+        Icon = "shuffle",
+        Callback = function()
+            if uiActions.HopServer then
+                uiActions.HopServer()
+            else
+                Window:Notify({
+                    Title = "Still initializing",
+                    Content = "Server hopping will be ready shortly.",
+                    Type = "Warning",
+                    Duration = 3,
+                })
+            end
+        end,
+    })
+
+    local function setRendering(enabled)
+        getgenv().renderEnabled = enabled
+        pcall(function()
+            RunService:Set3dRenderingEnabled(enabled)
+        end)
+    end
+    local renderEnabled = getgenv().renderEnabled ~= nil and getgenv().renderEnabled or false
+    Controls:CreateToggle({
+        Name = "3D rendering",
+        Desc = "Turn off to reduce GPU usage",
+        CurrentValue = renderEnabled,
+        Callback = setRendering,
+    })
+    -- False defaults do not call the library's toggle callback at construction.
+    setRendering(renderEnabled)
+
+    local Settings = Window:CreateTab({ Name = "Settings", Icon = "settings" })
+    local Webhooks = Settings:AddLeftGroupbox({ Name = "Webhooks", Icon = "send" })
+    local Interface = Settings:AddRightGroupbox({ Name = "Interface", Icon = "monitor" })
+
+    local webhookInput = Webhooks:CreateInput({
+        Name = "Webhook URL",
+        PlaceholderText = "https://discord.com/api/webhooks/...",
+        CurrentValue = v.webhookUrl or "",
+        Callback = function(url)
+            v.webhookUrl = url
+            fn()
+        end,
+    })
+    Webhooks:CreateButton({
+        Name = "Test Webhook",
+        Icon = "send",
+        Callback = function()
+            if not uiActions.TestWebhook then
+                Window:Notify({
+                    Title = "Still initializing",
+                    Content = "Webhook reporting will be ready shortly.",
+                    Type = "Warning",
+                    Duration = 3,
+                })
+                return
+            end
+            local url = tostring(webhookInput:Get() or ""):match("^%s*(.-)%s*$")
+            if url == "" then
+                Window:Notify({
+                    Title = "Webhook URL required",
+                    Content = "Enter a webhook URL before sending a test.",
+                    Type = "Warning",
+                    Duration = 3,
+                })
+                return
+            end
+            webhookInput:Set(url)
+            v.webhookUrl = url
+            fn()
+            local ok, response = uiActions.TestWebhook()
+            local status = type(response) == "table" and tonumber(response.StatusCode)
+            local accepted = ok and type(response) == "table" and (
+                (status and status >= 200 and status < 300) or response.Success == true
+            )
+            Window:Notify({
+                Title = accepted and "Webhook sent" or "Webhook not confirmed",
+                Content = accepted and "The current farm summary was sent." or (
+                    status and ("HTTP " .. tostring(status)) or tostring(response or "No response from the executor.")
+                ),
+                Type = accepted and "Success" or "Error",
+                Duration = 4,
+            })
+        end,
+    })
+    Webhooks:CreateParagraph({
+        Title = "Reports",
+        Content = "The existing farm summary is posted every 30 seconds. The URL is saved when you finish editing.",
+    })
+
+    Interface:CreateKeybind({
+        Name = "Toggle interface",
+        CurrentKeybind = "RightControl",
+        OnChanged = function(key)
+            Window:SetKeybind(key)
+        end,
+    })
+    Interface:CreateSlider({
+        Name = "UI scale",
+        Range = { 60, 150 },
+        Increment = 5,
+        Suffix = "%",
+        CurrentValue = 100,
+        Callback = function(value)
+            Window:SetUIScale(value / 100)
+        end,
+    })
+    local themeNames = {}
+    for name in pairs(Library.ThemePresets) do
+        table.insert(themeNames, name)
+    end
+    table.sort(themeNames)
+    Interface:CreateDropdown({
+        Name = "Theme",
+        Options = themeNames,
+        CurrentOption = Library.ThemeName,
+        AllowNone = false,
+        Callback = function(name)
+            Library:SetTheme(name)
+        end,
+    })
+    Interface:CreateToggle({
+        Name = "Matrix rain",
+        Desc = "Green code rain behind the interface",
+        CurrentValue = true,
+        Callback = function(enabled)
+            Window:SetWeather(enabled and "Matrix" or "None")
+        end,
+    })
+    Interface:CreateParagraph({
+        Title = "Interface controls",
+        Content = "Right Control toggles the interface. The floating logo works on mobile and desktop. Minimize the window to keep pinned session statistics visible.",
+    })
+    Settings:CreateParagraph({
+        Title = "Credits",
+        Content = "SANYA_PIRAT interface | Original credit: @ltzhex | idea by: @theomens_",
+    })
+
+    local Discord = Window:CreateTab({ Name = "Discord", Icon = "message-circle" })
+    Discord:CreateParagraph({
+        Title = "SANYA_PIRAT community",
+        Content = "Join the SANYA_PIRAT Discord for updates and support.\n" .. SANYA_PIRAT_LINK,
+    })
+    Discord:CreateButton({
+        Name = "Copy Discord invite",
+        Icon = "copy",
+        Style = "Primary",
+        Callback = function()
+            Window:CopyToClipboard(SANYA_PIRAT_LINK, "SANYA_PIRAT Discord invite")
+        end,
+    })
+    Discord:CreateParagraph({
+        Title = "How to join",
+        Content = "Copy the invite, then paste it into your browser or Discord to join the community.",
+    })
+end
+
+local function fn5()
+	local CoreGui = game:GetService("CoreGui")
+	local StarterGui = game:GetService("StarterGui")
+
+	for _, v2 in ipairs({ "CaptureManager", "CaptureOverlay", "PlayerList" }) do
+		pcall(function()
+			local v3 = CoreGui:FindFirstChild(v2)
+
+			if v3 then
+				v3:Destroy()
+			end
+		end)
+	end
+
+	pcall(function()
+		StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
+	end)
+end
+
+task.spawn(function()
+	fn5()
+
+	while true do
+		pcall(function()
+			game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
+			local playerList = game:GetService("CoreGui"):FindFirstChild("PlayerList")
+
+			if playerList then
+				playerList:Destroy()
+			end
+		end)
+
+		task.wait(0.3)
+	end
+end)
+
+fn5()
+
+if not getgenv().TimeFarmed then
+	getgenv().TimeFarmed = 0
+end
+
+local savedCarriedKills
+savedCarriedKills = getgenv().SavedCarriedKills or 0
+local savedEmotes
+savedEmotes = getgenv().SavedEmotes or 0
+local savedSessionStart
+savedSessionStart = getgenv().SavedSessionStart or os.time()
+local n3
+n3 = 0
+local n4
+n4 = 0
+local n5
+n5 = 0
+local n6
+n6 = 0
+local n7
+n7 = 0
+local flag4
+flag4 = false
+local cFrame
+cFrame = nil
+local v2
+v2 = nil
+local flag5
+flag5 = false
+local flag6
+flag6 = false
+local flag7
+flag7 = false
+local flag8, n8, TeleportService, Players, VirtualInputManager, localPlayer, currentCamera, fn6, fn7
+
+do
+	local flag9 = false
+	flag8 = false
+	n8 = 0
+	TeleportService = game:GetService("TeleportService")
+	Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	VirtualInputManager = game:GetService("VirtualInputManager")
+	localPlayer = Players.LocalPlayer
+	currentCamera = workspace.CurrentCamera
+	local leaderstats
+
+	if not localPlayer:FindFirstChild("leaderstats") or not localPlayer.leaderstats:FindFirstChild("Total Kills") then
+		leaderstats = localPlayer
+	else
+		leaderstats = localPlayer.leaderstats
+	end
+
+	fn6 = function()
+		local name = localPlayer and localPlayer.Name or "Unknown"
+		local v3 = n3
+		local v4 = savedEmotes
+		local v5 = n6
+		local v6 = n4
+		local text = tbl3.timer and tbl3.timer:Get() or "00:00:00"
+
+		local tbl4 = {
+			embeds = {
+				{
+					title = "SANYA PIRAT",
+					color = 0x2DEB84,
+					description = string.format([[**User:** ||%s||
+**Kills farmed:** %s
+**Emotes unlocked:** %s
+**Total kills:** %s
+**Kill / hr:** %s
+**Time farmed:** %s]], name, tostring(v3), tostring(v4), tostring(v5), tostring(v6), text),
+					timestamp = DateTime.now():ToIsoDate(),
+				},
+			},
+		}
+
+		local ok, result = pcall(function()
+			return request({
+				Url = v.webhookUrl,
+				Method = "POST",
+				Headers = { ["Content-Type"] = "application/json" },
+				Body = HttpService:JSONEncode(tbl4),
+			})
+		end)
+
+		if not ok then
+			warn("Webhook request failed: " .. tostring(result))
+		end
+
+		return ok, result
+	end
+
+	uiActions.TestWebhook = fn6
+	workspace.FallenPartsDestroyHeight = (0/0)
+
+	workspace:GetPropertyChangedSignal("FallenPartsDestroyHeight"):Connect(function()
+		local fallenPartsDestroyHeight = workspace.FallenPartsDestroyHeight
+
+		if fallenPartsDestroyHeight == fallenPartsDestroyHeight then
+			workspace.FallenPartsDestroyHeight = (0/0)
+		end
+	end)
+
+	local part = Instance.new("Part", workspace)
+	part.CFrame = CFrame.new(0, -510, 0)
+	part.Anchored = true
+	part.Size = Vector3.new(2048, 1, 2048)
+	part.Transparency = 1
+	part.CanCollide = true
+	part.Name = game:GetService("HttpService"):GenerateGUID()
+	local health = 100
+	local connection = nil
+	local connection2 = nil
+
+	local function fn8(arg)
+		if not arg then
+			return
+		end
+		local humanoid = arg:FindFirstChildOfClass("Humanoid") or arg:WaitForChild("Humanoid", 3)
+		local humanoidRootPart = arg:FindFirstChild("HumanoidRootPart") or arg:WaitForChild("HumanoidRootPart", 3)
+		if not humanoid or not humanoidRootPart then
+			return
+		end
+		health = humanoid.Health
+
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+
+		if connection2 then
+			connection2:Disconnect()
+			connection2 = nil
+		end
+
+		connection2 = RunService.RenderStepped:Connect(function()
+			local humanoidRootPart2 = arg:FindFirstChild("HumanoidRootPart")
+
+			if humanoidRootPart2 then
+				health = humanoid.Health
+				part.CFrame = CFrame.new(humanoidRootPart2.Position.X, -510, humanoidRootPart2.Position.Z)
+			end
+		end)
+
+		connection = humanoid.HealthChanged:Connect(function(health2)
+			local humanoidRootPart2 = arg:FindFirstChild("HumanoidRootPart")
+
+			if health2 <= 0 and humanoidRootPart2 and humanoidRootPart2.CFrame.Y <= 0 then
+				humanoid.Health = health
+			end
+		end)
+	end
+
+	fn8(localPlayer.Character)
+
+	localPlayer.CharacterAdded:Connect(function(character)
+		task.wait(0.1)
+		fn8(character)
+	end)
+
+	local tbl4 = {}
+	local obj = setmetatable({}, { __mode = "k" })
+
+	local function createFolder(parent)
+		if not parent then
+			return nil
+		end
+		local movingExclusion = parent:FindFirstChild("MovingExclusion")
+		if movingExclusion then
+			return movingExclusion
+		end
+		local folder = Instance.new("Folder")
+		folder.Name = "MovingExclusion"
+
+		pcall(function()
+			folder:SetAttribute("SanyaPiratOwned", true)
+		end)
+
+		folder.Parent = parent
+		obj[folder] = true
+		return folder
+	end
+
+	local function fn9(arg)
+		if not arg then
+			return
+		end
+		createFolder(arg)
+
+		local connection3 = arg.ChildRemoved:Connect(function(child)
+			if child.Name == "MovingExclusion" then
+				task.defer(createFolder, arg)
+			end
+		end)
+
+		table.insert(tbl4, connection3)
+	end
+
+	fn9(localPlayer.Character)
+
+	table.insert(tbl4, localPlayer.CharacterAdded:Connect(function(character)
+		task.wait(0.1)
+		fn9(character)
+	end))
+
+	local flag10 = false
+	local v3 = nil
+	local v4 = nil
+	local v5 = nil
+	local tbl5 = {}
+	local model = Instance.new("Model", workspace)
+	local humanoid = Instance.new("Humanoid", model)
+	local part2 = Instance.new("Part", model)
+	part2.Name = "HumanoidRootPart"
+	part2.CanCollide = false
+	part2.Transparency = 1
+	part2.Anchored = true
+	part2.Size = Vector3.new(2, 2, 1)
+	getgenv().InvisHumanoid = humanoid
+	getgenv().InvisPart30 = part2
+	local flag11 = false
+
+	local function fn10()
+		if not flag11 then
+			return
+		end
+		flag11 = false
+		getgenv().InvisActive = false
+		flag10 = false
+
+		if v3 then
+			pcall(function()
+				if v3.IsPlaying then
+					v3:Stop()
+				end
+			end)
+
+			v3 = nil
+		end
+
+		v4 = nil
+		local character = localPlayer.Character
+
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+
+			if humanoidRootPart and v5 then
+				pcall(function()
+					humanoidRootPart.CFrame = v5
+				end)
+			end
+
+			v5 = nil
+			local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+
+			if humanoid2 then
+				pcall(function()
+					workspace.CurrentCamera.CameraSubject = humanoid2
+				end)
+			end
+
+			pcall(function()
+				character:SetAttribute("NoHeadLerp", false)
+			end)
+
+			for _, v6 in pairs(tbl5) do
+				pcall(function()
+					v6:Disconnect()
+				end)
+			end
+
+			tbl5 = {}
+
+			for _, descendant in pairs(character:GetDescendants()) do
+				if descendant:IsA("BasePart") and descendant.Name ~= "HumanoidRootPart" then
+					descendant.LocalTransparencyModifier = 0
+				end
+			end
+		end
+	end
+
+	local function fn11()
+		if v3 then
+			pcall(function()
+				if v3.IsPlaying then
+					v3:Stop()
+				end
+			end)
+
+			v3 = nil
+		end
+
+		v4 = nil
+		v5 = nil
+		flag10 = false
+	end
+
+	local function fn12(arg)
+		if not arg:IsA("BasePart") then
+			return
+		end
+
+		if arg.Name == "HumanoidRootPart" then
+			return
+		end
+
+		if arg.Transparency == 1 then
+			return
+		end
+
+		if arg.Name:lower():find("hitbox") then
+			return
+		end
+		arg.LocalTransparencyModifier = 0.5
+
+		local connection3 = arg:GetPropertyChangedSignal("LocalTransparencyModifier"):Connect(function()
+			if not flag11 then
+				return
+			end
+
+			if arg.LocalTransparencyModifier ~= 0.5 then
+				arg.LocalTransparencyModifier = 0.5
+			end
+		end)
+
+		table.insert(tbl5, connection3)
+	end
+
+	local function fn13(arg)
+		for _, descendant in pairs(arg:GetDescendants()) do
+			fn12(descendant)
+		end
+
+		local connection3 = arg.DescendantAdded:Connect(function(descendant)
+			if flag11 then
+				fn12(descendant)
+			end
+		end)
+
+		table.insert(tbl5, connection3)
+	end
+
+	local function fn14()
+		if flag11 then
+			fn10()
+			return
+		end
+		local character = localPlayer.Character
+		if not character then
+			return
+		end
+		local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		if not humanoid2 or not humanoidRootPart then
+			return
+		end
+		flag11 = true
+		getgenv().InvisActive = true
+		flag10 = false
+		local character2 = localPlayer.Character
+
+		if character2 then
+			fn13(character2)
+		end
+	end
+
+	RunService.Heartbeat:Connect(function()
+		if not flag3 then
+			return
+		end
+
+		if flag6 or flag8 then
+			getgenv().desync = nil
+		end
+
+		local flag12 = getgenv().desync ~= nil
+		if not flag11 and not flag12 then
+			return
+		end
+
+		if flag10 then
+			return
+		end
+		flag10 = true
+		local character = localPlayer.Character
+		local humanoid2 = character and character:FindFirstChildOfClass("Humanoid")
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+		if not character or not humanoid2 or not humanoidRootPart then
+			flag10 = false
+			return
+		end
+
+		if humanoid2.Health <= 0 then
+			if flag11 then
+				task.spawn(fn11)
+			end
+
+			flag10 = false
+			return
+		end
+
+		local cFrame2 = humanoidRootPart.CFrame
+		local velocity = humanoidRootPart.Velocity
+		v5 = cFrame2
+		local currentCamera2 = workspace.CurrentCamera
+		local flag13 = flag12 and not localPlayer.Character:FindFirstChild("AbsoluteImmortal")
+		local cFrame3 = nil
+
+		if flag13 then
+			cFrame3 = getgenv().desync.CFrame
+			cFrame3 = cFrame3 or nil
+		end
+
+		if cFrame3 then
+			local flag14
+
+			if currentCamera2 then
+				flag14 = not (flag11 and not flag12)
+			else
+				flag14 = currentCamera2
+			end
+
+			if flag14 then
+				character:SetAttribute("NoHeadLerp", true)
+				currentCamera2.CameraSubject = humanoid
+			end
+
+			if flag4 and cFrame then
+				part2.CFrame = cFrame
+			else
+				part2.CFrame = cFrame2
+			end
+
+			humanoidRootPart.CFrame = cFrame3
+		end
+
+		local v6 = nil
+
+		if flag11 then
+			if v4 ~= humanoid2 then
+				if v3 then
+					pcall(function()
+						if v3.IsPlaying then
+							v3:Stop()
+						end
+
+						v3:Destroy()
+					end)
+
+					v3 = nil
+				end
+
+				v4 = humanoid2
+			end
+
+			local animator = humanoid2:FindFirstChildOfClass("Animator")
+
+			if animator then
+				if not v3 or v3.Parent == nil then
+					local animation = Instance.new("Animation")
+					animation.AnimationId = "rbxassetid://71181015443030"
+					v3 = animator:LoadAnimation(animation)
+					v3.Priority = Enum.AnimationPriority.Action4
+					v3:Play()
+					v3:AdjustSpeed(0)
+					v3:AdjustWeight(2e9)
+				end
+
+				v6 = v3
+				v6.TimePosition = 13.45
+			end
+		end
+
+		RunService.RenderStepped:Wait()
+		humanoid.CameraOffset = humanoid2.CameraOffset
+
+		if v6 and v6.IsPlaying then
+			pcall(function()
+				v6:Stop()
+			end)
+		end
+
+		if cFrame3 then
+			if flag4 and cFrame then
+				humanoidRootPart.CFrame = cFrame
+			else
+				local flag14 = currentCamera2 and UserInputService.MouseBehavior == Enum.MouseBehavior.LockCenter and not flag12
+
+				if flag14 then
+					flag14 = not (flag11 and not flag12)
+				end
+
+				if flag14 then
+					local lookVector = currentCamera2.CFrame.LookVector
+					local vector = Vector3.new(lookVector.X, 0, lookVector.Z)
+
+					if vector.Magnitude > 0.001 then
+						humanoidRootPart.CFrame = CFrame.new(cFrame2.Position, cFrame2.Position + vector)
+					else
+						humanoidRootPart.CFrame = cFrame2
+					end
+				else
+					humanoidRootPart.CFrame = cFrame2
+				end
+			end
+		end
+
+		humanoidRootPart.Velocity = velocity
+		flag10 = false
+	end)
+
+	fn14()
+
+	task.spawn(function()
+		local function fn15(arg)
+			while true do
+				task.wait()
+				if not (localPlayer.Character == arg and arg:FindFirstChild("HumanoidRootPart") and arg:FindFirstChildOfClass("Humanoid")) then
+					continue
+				end
+				break
+			end
+
+			if localPlayer.Character ~= arg then
+				return
+			end
+			local humanoidRootPart = arg:FindFirstChild("HumanoidRootPart")
+
+			task.spawn(function()
+				while task.wait() and (not localPlayer.Character or localPlayer.Character == arg) do
+					if getgenv().desync and not arg:FindFirstChild("AbsoluteImmortal") then
+						local tbl6 = {}
+
+						local ok, result = pcall(function()
+							return ReplicatedStorage.Resources.NinjaUlt.Afterimage_Despawn:Clone()
+						end)
+
+						local ok2, result2 = pcall(function()
+							return ReplicatedStorage.Resources.VanishingKick.tpthing:Clone()
+						end)
+
+						if ok and result then
+							result.Parent = humanoidRootPart
+							tbl6[1] = result
+
+							for _, child in pairs(result:GetChildren()) do
+								if child:IsA("ParticleEmitter") then
+									child.Enabled = true
+									child.Rate = 100
+								end
+							end
+						end
+
+						if ok2 and result2 then
+							result2.Parent = humanoidRootPart
+							tbl6[2] = result2
+							result2.Enabled = true
+							result2.Rate = 100
+						end
+
+						while true do
+							if tbl6[1] and tbl6[1].Parent then
+								tbl6[1].CFrame = humanoidRootPart.CFrame
+							end
+
+							RunService.RenderStepped:Wait()
+							if not (not getgenv().desync or arg:FindFirstChild("AbsoluteImmortal")) then
+								continue
+							end
+							break
+						end
+
+						for _, v6 in pairs(tbl6) do
+							pcall(function()
+								v6:Destroy()
+							end)
+						end
+					end
+				end
+			end)
+
+			task.spawn(function()
+				for _, descendant in pairs(arg:GetDescendants()) do
+					if descendant:IsA("BasePart") and descendant ~= humanoidRootPart and descendant.Transparency ~= 1 and not descendant.Name:lower():find("hitbox") then
+						task.spawn(function()
+							while task.wait() and (not localPlayer.Character or localPlayer.Character == arg) do
+								if descendant and (flag11 or getgenv().desync and not arg:FindFirstChild("AbsoluteImmortal")) then
+									descendant.Transparency = 0.5
+
+									while true do
+										RunService.RenderStepped:Wait()
+										local flag12 = not flag11
+										local absoluteImmortal
+
+										if flag12 then
+											absoluteImmortal = not getgenv().desync or arg:FindFirstChild("AbsoluteImmortal")
+										else
+											absoluteImmortal = flag12
+										end
+
+										absoluteImmortal = absoluteImmortal or localPlayer.Character and localPlayer.Character ~= arg
+										if not absoluteImmortal then
+											continue
+										end
+										break
+									end
+
+									descendant.Transparency = 0
+								end
+							end
+						end)
+					end
+				end
+			end)
+		end
+
+		if localPlayer.Character then
+			task.spawn(fn15, localPlayer.Character)
+		end
+
+		localPlayer.CharacterAdded:Connect(function(character)
+			task.spawn(fn15, character)
+		end)
+	end)
+
+	local Lighting = game:GetService("Lighting")
+	local Workspace_ = game:GetService("Workspace")
+	local terrain = Workspace:FindFirstChildOfClass("Terrain")
+
+	local function fn15(arg, arg2)
+		pcall(function()
+			arg:Connect(arg2)
+		end)
+	end
+
+	local tbl6 = {
+		function()
+			local color = Color3.fromRGB(0, 85, 190)
+
+			local function fn16(arg)
+				if arg:IsA("Trail") then
+					arg.Color = ColorSequence.new(color)
+					arg.Texture = ""
+					arg.LightEmission = 0.8
+				elseif arg:IsA("ParticleEmitter") then
+					arg.Color = ColorSequence.new(color)
+					arg.LightEmission = 0.75
+				end
+			end
+
+			local function fn17(arg)
+				for _, descendant in ipairs(arg:GetDescendants()) do
+					if descendant:IsA("Trail") or descendant:IsA("ParticleEmitter") then
+						fn16(descendant)
+					end
+				end
+
+				fn15(arg.DescendantAdded, function(arg2)
+					if arg2:IsA("Trail") or arg2:IsA("ParticleEmitter") then
+						fn16(arg2)
+					end
+				end)
+			end
+
+			if localPlayer.Character then
+				fn17(localPlayer.Character)
+			end
+
+			fn15(localPlayer.CharacterAdded, fn17)
+		end,
+		function()
+			local tbl6 = {
+				Bk = 92959017845968,
+				Ft = 129304841254693,
+				Lf = 129249062260004,
+				Rt = 117319232583147,
+				Up = 121193772599100,
+				Dn = 115022734343595,
+			}
+
+			for _, child in ipairs(Lighting:GetChildren()) do
+				if child:IsA("Sky") then
+					child:Destroy()
+				end
+			end
+
+			local sky = Instance.new("Sky")
+
+			for k, v6 in pairs(tbl6) do
+				sky["Skybox" .. k] = "rbxassetid://" .. v6
+			end
+
+			sky.Parent = Lighting
+		end,
+		function()
+			Lighting.ClockTime = 12
+			Lighting.GlobalShadows = false
+			Lighting.Brightness = 0.8
+			Lighting.ExposureCompensation = -0.2
+			local v6 = Lighting
+			Lighting.FogStart = 9e9
+			v6.FogEnd = 9e9
+
+			for _, child in ipairs(Lighting:GetChildren()) do
+				if child:IsA("PostEffect") or child:IsA("SunRaysEffect") then
+					child.Enabled = false
+				end
+			end
+		end,
+		function()
+			fn15(Workspace_.DescendantAdded, function(arg)
+				if arg:IsA("Smoke") then
+					arg:Destroy()
+				elseif arg:IsA("ParticleEmitter") then
+					local model2 = arg:FindFirstAncestorOfClass("Model")
+
+					if not (model2 and model2:FindFirstChild("Class") and model2.Class.Value == "Hero Hunter") then
+						arg:Destroy()
+					end
+				end
+			end)
+		end,
+		function()
+			if not terrain then
+				return
+			end
+
+			for _, child in ipairs(terrain:GetChildren()) do
+				if child:IsA("Clouds") then
+					child.Enabled = false
+				end
+			end
+
+			fn15(terrain.ChildAdded, function(arg)
+				if arg:IsA("Clouds") then
+					arg.Enabled = false
+				end
+			end)
+		end,
+		function()
+			local function fn16()
+				local sky = Lighting:FindFirstChildOfClass("Sky")
+
+				if sky then
+					sky.SunAngularSize = 0
+					sky.SunTextureId = ""
+					sky.MoonAngularSize = 0
+					sky.MoonTextureId = ""
+				end
+			end
+
+			fn16()
+			local atmosphere = Lighting:FindFirstChildOfClass("Atmosphere")
+
+			if atmosphere then
+				atmosphere.Density = 0
+				atmosphere.Haze = 0
+				atmosphere.Glare = 0
+			end
+
+			fn15(Lighting.ChildAdded, function(arg)
+				if arg:IsA("Sky") then
+					task.wait()
+					fn16()
+				elseif arg:IsA("Atmosphere") then
+					arg.Density = 0
+					arg.Haze = 0
+					arg.Glare = 0
+				end
+			end)
+		end,
+	}
+
+	task.spawn(function()
+		local tbl7 = { 1, 2, 3, 4, 5, 6 }
+
+		while #tbl7 > 0 do
+			local n9 = math.random(#tbl7)
+			pcall(tbl6[tbl7[n9]])
+			table.remove(tbl7, n9)
+		end
+	end)
+
+	pcall(function()
+		local level01 = Enum.QualityLevel.Level01
+		v().Rendering.QualityLevel = level01
+	end)
+
+	local flag12 = false
+
+	local function fn16(arg)
+		if typeof(arg) == "Instance" then
+			if arg:IsA("Player") then
+				return arg.Character
+			end
+
+			if arg:IsA("Model") then
+				return arg
+			end
+		end
+
+		return nil
+	end
+
+	local function fn17(arg)
+		return arg and arg:FindFirstChild("HumanoidRootPart") or nil
+	end
+
+	local function fn18(arg)
+		return arg and arg:FindFirstChildOfClass("Humanoid") or nil
+	end
+
+	local function fn19()
+		local players = Players:GetPlayers()
+		local v6 = table.find(players, localPlayer)
+
+		if v6 then
+			table.remove(players, v6)
+		end
+
+		return players
+	end
+
+	local function fn20(arg, arg2)
+		if not arg then
+			return false
+		end
+
+		for _, v6 in pairs(arg:GetPlayingAnimationTracks()) do
+			if v6.Animation.AnimationId:match(arg2) then
+				return true
+			end
+		end
+
+		return false
+	end
+
+	fn7 = function()
+		local huge = math.huge
+		local v6 = nil
+
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				if player ~= v2 then
+					local character = player.Character
+
+					if character then
+						if character:FindFirstChild("HumanoidRootPart") then
+							local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+
+							if humanoid2 then
+								if humanoid2.Health then
+									local torso = character:FindFirstChild("Torso")
+
+									if not (not torso or torso.Transparency == 1) then
+										if not fn20(humanoid2, "15128849047") then
+											if not character:FindFirstChildWhichIsA("ForceField") then
+												if not (character:GetAttribute("Ulted") and (character:GetAttribute("Character") == "Batter" or character:GetAttribute("Character") == "Bald") or character:FindFirstChild("Counter")) then
+													local position = character.HumanoidRootPart.Position
+
+													if position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700 then
+														local health2 = humanoid2.Health
+
+														if health2 > 0 and health2 < huge then
+															huge = health2
+															v6 = player
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+
+		return v6
+	end
+
+	local function fn21(arg)
+		local humanoid2 = arg:WaitForChild("Humanoid")
+
+		arg.DescendantAdded:Connect(function(descendant)
+			if descendant.Name == "Ragdoll" or descendant.Name == "RagdollSim" then
+				if not flag12 and humanoid2.Health > 0 and not arg:FindFirstChild("ExtraHitbox") then
+					task.spawn(function()
+						while true do
+							flag12 = true
+							getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+							task.wait()
+							if not (descendant.Parent ~= arg or humanoid2.Health <= 0) then
+								continue
+							end
+							break
+						end
+
+						flag12 = false
+						getgenv().desync = nil
+					end)
+				end
+			end
+		end)
+
+		task.spawn(function()
+			local playerGui = localPlayer:WaitForChild("PlayerGui")
+			if not playerGui then
+				return
+			end
+			local hotbar = playerGui:WaitForChild("Hotbar")
+			if not hotbar then
+				return
+			end
+			local backpack = hotbar:WaitForChild("Backpack")
+			if not backpack then
+				return
+			end
+			local hotbar2 = backpack:WaitForChild("Hotbar")
+			if not hotbar2 then
+				return
+			end
+			local n22 = hotbar2:WaitForChild("2")
+			if not n22 then
+				return
+			end
+			local base = n22:WaitForChild("Base")
+			if not base then
+				return
+			end
+
+			base.ChildAdded:Connect(function(child)
+				if child.Name == "Cooldown" and localPlayer.Character:GetAttribute("Ulted") then
+					task.spawn(function()
+						flag9 = true
+						task.wait(0.05)
+						flag9 = false
+					end)
+				end
+			end)
+		end)
+
+		local tbl7 = { ["18464351556"] = true, ["18464372850"] = true, ["136370737633649"] = true }
+
+		humanoid2.AnimationPlayed:Connect(function(arg2)
+			local animationId = arg2.Animation.AnimationId
+			if tbl7[animationId:match("%d+")] then
+				v2 = fn7()
+				return
+			end
+
+			local function fn22(arg3)
+				if not arg3 or not arg3:IsA("Player") then
+					return false
+				end
+				local attribute = fn16(arg3)
+				attribute = attribute and attribute:GetAttribute("Character")
+				if type(attribute) ~= "string" then
+					return false
+				end
+				local str = attribute:lower()
+				return str == "hunter" or str == "blade" or str:find("zombie", 1, true) ~= nil
+			end
+
+			local function fn23(arg3)
+				local v6 = nil
+
+				return (RunService.Heartbeat:Connect(function()
+					if not arg3() then
+						v6:Disconnect()
+						return
+					end
+					local v7 = fn17(fn16(localPlayer))
+
+					if v7 then
+						v7.AssemblyLinearVelocity = Vector3.new()
+						v7.AssemblyAngularVelocity = Vector3.new()
+					end
+				end))
+			end
+
+			local connection3 = nil
+			local connection4 = nil
+			local v6 = nil
+			local v7 = nil
+			local flag13 = false
+
+			local function fn24()
+				if connection3 then
+					connection3:Disconnect()
+					connection3 = nil
+				end
+
+				if connection4 then
+					connection4:Disconnect()
+					connection4 = nil
+				end
+
+				if sethiddenproperty then
+					if v6 and v6.Parent then
+						pcall(function()
+							sethiddenproperty(v6, "PhysicsRepRootPart", nil)
+						end)
+					end
+
+					if v7 and v7.Parent then
+						pcall(function()
+							sethiddenproperty(v7, "PhysicsRepRootPart", nil)
+						end)
+					end
+				end
+
+				if v6 and v6.Parent then
+					v6.CFrame = CFrame.new(v6.Position)
+					v6.AssemblyLinearVelocity = Vector3.zero
+					v6.AssemblyAngularVelocity = Vector3.zero
+
+					pcall(function()
+						v6.Velocity = Vector3.zero
+					end)
+
+					pcall(function()
+						v6.RotVelocity = Vector3.zero
+					end)
+
+					local humanoid3 = v6.Parent:FindFirstChildOfClass("Humanoid")
+
+					if humanoid3 then
+						pcall(function()
+							humanoid3.AutoRotate = true
+						end)
+					end
+				end
+
+				v6 = nil
+				v7 = nil
+			end
+
+			local function fn25()
+				fn24()
+			end
+
+			local function fn26(arg3, arg4)
+				if flag13 then
+					return
+				end
+
+				if connection3 then
+					connection3:Disconnect()
+					connection3 = nil
+				end
+
+				if v6 and v6.Parent then
+					v6.AssemblyLinearVelocity = Vector3.zero
+					v6.AssemblyAngularVelocity = Vector3.zero
+
+					pcall(function()
+						v6.Velocity = Vector3.zero
+					end)
+
+					pcall(function()
+						v6.RotVelocity = Vector3.zero
+					end)
+				end
+
+				if not arg3 or not arg4 then
+					return
+				end
+				v6 = arg3
+				v7 = arg4
+
+				if connection4 then
+					connection4:Disconnect()
+					connection4 = nil
+				end
+
+				local humanoid3 = arg3.Parent and arg3.Parent:FindFirstChildOfClass("Humanoid")
+
+				if humanoid3 then
+					connection4 = RunService.RenderStepped:Connect(function()
+						if humanoid3 and humanoid3.Parent then
+							pcall(function()
+								humanoid3.AutoRotate = false
+							end)
+						end
+					end)
+				end
+
+				arg3.CFrame = CFrame.new(0, 0, 5)
+				arg3.AssemblyLinearVelocity = Vector3.zero
+				arg3.AssemblyAngularVelocity = Vector3.zero
+
+				if sethiddenproperty then
+					pcall(function()
+						sethiddenproperty(arg3, "PhysicsRepRootPart", arg3)
+					end)
+
+					pcall(function()
+						sethiddenproperty(arg3, "PhysicsRepRootPart", arg4)
+					end)
+				end
+
+				local v8 = nil
+
+				connection3 = RunService.Heartbeat:Connect(function()
+					if not arg3 or not arg3.Parent or not arg4 or not arg4.Parent then
+						v8:Disconnect()
+
+						if connection3 == v8 then
+							connection3 = nil
+						end
+
+						if sethiddenproperty then
+							if arg3 and arg3.Parent then
+								pcall(function()
+									sethiddenproperty(arg3, "PhysicsRepRootPart", nil)
+								end)
+							end
+
+							if arg4 and arg4.Parent then
+								pcall(function()
+									sethiddenproperty(arg4, "PhysicsRepRootPart", nil)
+								end)
+							end
+						end
+
+						if arg3 and arg3.Parent then
+							arg3.AssemblyLinearVelocity = Vector3.zero
+							arg3.AssemblyAngularVelocity = Vector3.zero
+
+							pcall(function()
+								arg3.Velocity = Vector3.zero
+							end)
+
+							pcall(function()
+								arg3.RotVelocity = Vector3.zero
+							end)
+						end
+
+						return
+					end
+
+					arg3.CFrame = CFrame.new(0, 0, 5)
+					arg3.AssemblyLinearVelocity = Vector3.zero
+					arg3.AssemblyAngularVelocity = Vector3.zero
+
+					if sethiddenproperty then
+						pcall(function()
+							sethiddenproperty(arg3, "PhysicsRepRootPart", arg4)
+						end)
+					end
+				end)
+			end
+
+			if animationId:match("18896229321") then
+				task.wait(0.01)
+				if not flag9 then
+					return
+				end
+				flag13 = false
+				getgenv().desync = nil
+				flag8 = true
+
+				task.spawn(function()
+					local v8 = fn16(localPlayer)
+					if not v8 then
+						return
+					end
+
+					if v8:GetAttribute("Character") ~= "Purple" then
+						return
+					end
+					local n9 = tick() + 3
+					local flag14 = true
+					local now = tick()
+					local n10 = 70
+					local n11 = 30
+
+					local function fn27(arg3)
+						return arg3:match("%d+")
+					end
+
+					local function fn28()
+						for _, v9 in ipairs(localPlayer.Character.Humanoid.Animator:GetPlayingAnimationTracks()) do
+							if fn27(v9.Animation.AnimationId) == "18896229321" then
+								return v9
+							end
+						end
+
+						return nil
+					end
+
+					local v9 = fn28()
+
+					while not v9 do
+						task.wait()
+						v9 = fn28()
+					end
+
+					task.spawn(function()
+						while true do
+							task.wait()
+							v9 = fn28()
+							local flag15 = not v9 or v9.TimePosition >= n10 / n11
+
+							if not flag15 then
+								local n12 = now + 2.2
+								flag15 = tick() >= n12
+							end
+
+							if not flag15 then
+								continue
+							end
+							break
+						end
+
+						flag13 = true
+						if not fn16(localPlayer) then
+							return
+						end
+
+						pcall(function()
+							localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150, 441, 32)
+						end)
+
+						pcall(function()
+							localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150, -505.5, 32)
+						end)
+
+						task.wait(1.5)
+						flag8 = false
+					end)
+
+					fn23(function()
+						return flag14
+					end)
+
+					local tbl8 = {}
+					local v10 = nil
+					local now2 = tick()
+					local v11 = fn16(localPlayer)
+
+					if v11 and fn17(v11) then
+					end
+
+					local function fn29(arg3)
+						if not arg3 then
+							return nil
+						end
+
+						if arg3:IsA("Player") then
+							return fn16(arg3)
+						end
+						return nil
+					end
+
+					local function fn30(arg3)
+						return fn18(fn29(arg3))
+					end
+
+					local function fn31(arg3)
+						return fn17(fn29(arg3))
+					end
+
+					local function fn32(arg3)
+						if not arg3 then
+							return false
+						end
+
+						if arg3:FindFirstChild("ForceField") then
+							return true
+						end
+
+						if arg3:FindFirstChild("AbsoluteImmortal") then
+							return true
+						end
+
+						if arg3:FindFirstChild("BeingGrabbed") then
+							return true
+						end
+
+						if arg3:FindFirstChild("HunterCounter") then
+							return true
+						end
+
+						if arg3:FindFirstChild("AtomicCounter") then
+							return true
+						end
+
+						if arg3:FindFirstChild("forcefield") then
+							return true
+						end
+						return false
+					end
+
+					local function fn33(arg3)
+						local v12 = fn29(arg3)
+						local v13 = v12 and fn18(v12)
+						local v14 = v12 and fn17(v12)
+						if not v12 or not v13 or not v14 then
+							return true
+						end
+
+						if v13.Health <= 0 then
+							return true
+						end
+
+						if arg3:IsA("Player") then
+							if fn32(v12) then
+								return true
+							end
+
+							if v12:FindFirstChild("Counter") then
+								return true
+							end
+
+							if fn20(v13, "15128849047") then
+								return true
+							end
+
+							if v12:GetAttribute("Ulted") and v12:GetAttribute("Character") == "Batter" then
+								return true
+							end
+						end
+
+						local position = v12.HumanoidRootPart.Position
+						if not (position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700) then
+							return true
+						end
+						return false
+					end
+
+					local function fn34(arg3)
+						local v12 = fn30(arg3)
+						local v13
+
+						if v12 then
+							v13 = fn20(v12, "18896222853") or fn20(v12, "137434257516014")
+						else
+							v13 = v12
+						end
+
+						return v13
+					end
+
+					local function fn35(arg3)
+						if not arg3 or not arg3:IsA("Player") then
+							return false
+						end
+						local v12 = fn16(arg3)
+						local v13 = v12 and fn18(v12)
+						if not v12 or not v13 then
+							return false
+						end
+
+						if v13.Health <= 0 then
+							return false
+						end
+
+						if fn20(v13, "15128849047") then
+							return false
+						end
+						return fn32(v12)
+					end
+
+					local function fn36()
+						local weakestDummy = workspace.Live:FindFirstChild("Weakest Dummy")
+						if not weakestDummy then
+							return nil
+						end
+						local v12 = fn18(weakestDummy)
+						if not v12 or v12.Health <= 0 then
+							return nil
+						end
+						return weakestDummy
+					end
+
+					local function fn37(arg3)
+						local tbl9 = {}
+						local tbl10 = {}
+
+						for _, v12 in pairs(fn19()) do
+							if not (v12 == arg3 or tbl8[v12]) then
+								local v13 = fn31(v12)
+
+								if not fn33(v12) and not fn34(v12) and v13 then
+									if fn22(v12) then
+										table.insert(tbl9, v12)
+									else
+										table.insert(tbl10, v12)
+									end
+								end
+							end
+						end
+
+						if #tbl9 > 0 then
+							return tbl9[math.random(1, #tbl9)]
+						end
+
+						if #tbl10 > 0 then
+							return tbl10[math.random(1, #tbl10)]
+						end
+						local v12 = fn36()
+						if v12 and v12 ~= arg3 and not tbl8[v12] then
+							return v12
+						end
+						return nil
+					end
+
+					local function fn38()
+						local v12 = fn16(localPlayer)
+						local v13 = v12 and fn18(v12)
+
+						if v13 then
+							pcall(function()
+								v13.AutoRotate = true
+							end)
+						end
+					end
+
+					local function fn39()
+						for _, v12 in pairs(fn19()) do
+							if tbl8[v12] then
+								continue
+							end
+
+							if fn35(v12) then
+								return true
+							end
+						end
+
+						return false
+					end
+
+					local flag15 = false
+
+					local function fn40()
+						if flag15 then
+							return
+						end
+						flag15 = true
+						fn24()
+						fn38()
+
+						if _ffWatchConn then
+							pcall(function()
+								_ffWatchConn:Disconnect()
+							end)
+						end
+
+						if _dummyRespawnConn then
+							pcall(function()
+								_dummyRespawnConn:Disconnect()
+							end)
+						end
+
+						if _currentTargetAnimConn then
+							pcall(function()
+								_currentTargetAnimConn:Disconnect()
+							end)
+
+							_currentTargetAnimConn = nil
+						end
+
+						flag14 = false
+						fn25()
+					end
+
+					local connection5 = nil
+					local fn41 = nil
+
+					fn41 = function(arg3)
+						if connection5 then
+							pcall(function()
+								connection5:Disconnect()
+							end)
+
+							connection5 = nil
+						end
+
+						fn24()
+						v10 = arg3
+						now2 = tick()
+
+						if arg3 then
+							local v12 = fn16(localPlayer)
+							v12 = v12 and fn17(v12)
+							local v13 = fn31(arg3)
+
+							if v12 and v13 then
+								fn26(v12, v13)
+								local v14 = fn30(arg3)
+
+								if v14 then
+									local animator = v14:FindFirstChildOfClass("Animator")
+
+									connection5 = (animator and animator.AnimationPlayed or v14.AnimationPlayed):Connect(function(arg4)
+										local animationId2 = arg4.Animation.AnimationId
+
+										if animationId2:match("18896222853") or animationId2:match("137434257516014") then
+											if not flag14 then
+												return
+											end
+											local v15 = v10
+											if not v15 then
+												return
+											end
+											tbl8[v15] = true
+											fn24()
+											local v16 = fn37(v15)
+
+											if v16 then
+												fn41(v16)
+
+												if fn37(v16) == nil and not fn39() then
+													task.wait(0.1)
+													tbl8[v16] = true
+													_everybodyDone = true
+													fn40()
+												end
+											elseif fn39() then
+												fn24()
+												v10 = nil
+											else
+												_everybodyDone = true
+												fn40()
+											end
+										end
+									end)
+								end
+							end
+						end
+					end
+
+					workspace.Live.ChildAdded:Connect(function(child)
+						if child.Name == "Weakest Dummy" then
+							tbl8[child] = nil
+						end
+					end)
+
+					RunService.RenderStepped:Connect(function()
+						for _, v12 in pairs(fn19()) do
+							if tbl8[v12] then
+								local v13 = fn16(v12)
+								local v14 = v13 and fn18(v13)
+
+								if v13 and v14 and v14.Health > 0 and not fn32(v13) then
+									tbl8[v12] = nil
+
+									if not v10 then
+										fn41(v12)
+									end
+								end
+							end
+						end
+					end)
+
+					local v12 = fn37(nil)
+
+					if v12 then
+						fn41(v12)
+
+						if fn37(v12) == nil then
+							task.wait(0.1)
+							tbl8[v12] = true
+							fn40()
+							return
+						end
+					end
+
+					while true do
+						if arg2.IsPlaying and tick() < n9 then
+							if flag13 then
+								fn40()
+								break
+							else
+								RunService.Heartbeat:Wait()
+								local now3 = tick()
+								local flag16
+
+								if not v10 then
+									flag16 = true
+								elseif fn33(v10) then
+									if not fn35(v10) then
+										tbl8[v10] = true
+									end
+
+									flag16 = true
+								else
+									flag16 = false
+
+									if now3 - now2 >= 0.8 then
+										tbl8[v10] = true
+										flag16 = true
+									end
+								end
+
+								if flag16 then
+									local v13 = fn37(v10)
+
+									if not v13 then
+										if fn39() then
+											fn24()
+											v10 = nil
+											continue
+										else
+											fn40()
+											break
+										end
+									else
+										fn41(v13)
+
+										if fn37(v13) == nil and not fn39() then
+											task.wait(0.1)
+											tbl8[v13] = true
+											fn40()
+											break
+										else
+											continue
+										end
+									end
+								else
+									continue
+								end
+							end
+						end
+
+						break
+					end
+
+					fn40()
+				end)
+			end
+		end)
+	end
+
+	task.spawn(function()
+		local totalKills = leaderstats:WaitForChild("Total Kills")
+		local attribute = localPlayer:GetAttribute("LastEmoteSpin")
+		local value = totalKills.Value
+		n5 = totalKills.Value - savedCarriedKills
+
+		while true do
+			task.wait(0.25)
+			n6 = totalKills.Value
+			n3 = n6 - n5
+			n7 = n6 - value
+			local attribute2 = localPlayer:GetAttribute("LastEmoteSpin")
+
+			if attribute2 ~= attribute then
+				savedEmotes += 1
+				attribute = attribute2
+			end
+
+			n4 = math.floor(n3 / math.max(os.time() - savedSessionStart, 1) / 3600)
+			tbl3.kills:Set(tostring(n3))
+			tbl3.kph:Set(tostring(n4))
+			tbl3.emotes:Set(tostring(savedEmotes))
+			tbl3.total:Set(tostring(n6))
+		end
+	end)
+
+	task.spawn(function()
+		while true do
+			if flag3 then
+				local genv = getgenv()
+				genv.TimeFarmed = genv.TimeFarmed + 1
+			end
+
+			local timeFarmed = getgenv().TimeFarmed
+			tbl3.timer:Set(string.format("%02d:%02d:%02d", math.floor(timeFarmed / 3600), math.floor(timeFarmed % 3600 / 60), timeFarmed % 60))
+			task.wait(1)
+		end
+	end)
+
+	localPlayer.CharacterAdded:Connect(function(character)
+		task.wait(0.5)
+		fn21(character)
+
+		character:GetAttributeChangedSignal("Ulted"):Connect(function()
+			if localPlayer.Character:GetAttribute("Ulted") then
+				n8 += 1
+				print("[SANYA PIRAT] Ulted detected, time ulted: " .. tostring(n8))
+			end
+		end)
+	end)
+
+	if localPlayer.Character then
+		fn21(localPlayer.Character)
+
+		localPlayer.Character:GetAttributeChangedSignal("Ulted"):Connect(function()
+			if localPlayer.Character:GetAttribute("Ulted") then
+				n8 += 1
+				print("[SANYA PIRAT] Ulted detected, time ulted: " .. tostring(n8))
+			end
+		end)
+	end
+end
+
+do
+	local tbl4 = {
+		{
+			QueryV2 = true,
+			Page = 1,
+			Filters = {
+				Countries = { [v.country] = true },
+				Tags = {},
+				HideFull = true,
+				HideTagged = false,
+				FriendsOnly = false,
+				HidePassword = false,
+			},
+			limit = 60,
+			Category = "Server List",
+			Region = v.country,
+			Sort = { Keys = { { By = "kills", Dir = "low" } } },
+			Search = "",
+			notFull = false,
+		},
+	}
+
+	-- Apply region selections to the active server-browser query as well as settings.
+	uiActions.RegionChanged = function(country)
+		tbl4[1].Filters.Countries = { [country] = true }
+		tbl4[1].Region = country
+	end
+
+	local function fn8()
+		local str = string.format([[getgenv().TimeFarmed=%d
+getgenv().SavedCarriedKills=%d
+getgenv().SavedEmotes=%d
+getgenv().SavedSessionStart=%d
+getgenv().renderEnabled=%s
+]], getgenv().TimeFarmed, n3, savedEmotes, savedSessionStart, tostring(getgenv().renderEnabled or false))
+
+		pcall(queue_on_teleport, str)
+	end
+
+	local function fn9(arg)
+		local tbl5 = {}
+
+		for _, server in ipairs(arg.servers) do
+			local players = server.players
+
+			if players and players >= 10 and players <= 13 and server.id ~= game.JobId then
+				table.insert(tbl5, server)
+			end
+		end
+
+		if #tbl5 == 0 then
+			return nil
+		end
+		return tbl5[math.random(1, #tbl5)]
+	end
+
+	local flag9 = false
+	local flag10 = false
+	local flag11 = false
+
+	doHopServer = function()
+		local flag12 = not flag11 and not flag10
+
+		if flag12 then
+			flag12 = not (doServerHop and flag3)
+		end
+
+		if flag12 then
+			return
+		end
+
+		if flag9 then
+			return
+		end
+		flag9 = true
+
+		while true do
+			task.wait()
+			if not (not flag6 and not flag8) then
+				continue
+			end
+			break
+		end
+
+		fn8()
+		local response = game:GetService("ReplicatedStorage"):WaitForChild("Ranked"):WaitForChild("GetServerBrowserData"):InvokeServer(unpack(tbl4))
+		task.wait(2)
+		flag = false
+
+		if getgenv().PBF_WS then
+			pcall(function()
+				getgenv().PBF_WS:Close()
+			end)
+
+			getgenv().PBF_WS = nil
+		end
+
+		if flag11 then
+			localPlayer:Kick("[SANYA PIRAT] Kicked by force-hop system.")
+		end
+
+		task.spawn(function()
+			while true do
+				print("[SANYA PIRAT] Hopping ...")
+
+				if not flag11 then
+					response = game:GetService("ReplicatedStorage"):WaitForChild("Ranked"):WaitForChild("GetServerBrowserData"):InvokeServer(unpack(tbl4))
+				end
+
+				local v3 = fn9(response)
+
+				if v3 then
+					if stafforcehop then
+						pcall(function()
+							TeleportService:TeleportToPlaceInstance(game.PlaceId, v3.id, localPlayer)
+						end)
+					else
+						pcall(function()
+							game:GetService("ReplicatedStorage"):WaitForChild("Ranked"):WaitForChild("CustomServerHandler"):InvokeServer({
+								Action = "JoinServer",
+								JobId = v3.id,
+								ServerCode = v3.serverCode or "",
+								JoinCode = v3.joinCode or "",
+								Password = nil,
+							})
+						end)
+					end
+				end
+
+				task.wait(3)
+			end
+		end)
+	end
+
+	uiActions.HopServer = function()
+		print("[SANYA PIRAT] Hop server manually...")
+		flag10 = true
+		doHopServer()
+	end
+
+	local tbl5 = {
+		422755031,
+		198131804,
+		681405668,
+		3414432341,
+		339633571,
+		430966809,
+		2039323684,
+		117723419,
+		1015595932,
+		263944298,
+		112905203,
+		2284964418,
+		1266437961,
+		3120648134,
+		1148139861,
+		1633233654,
+		3350014406,
+		971193650,
+		661273560,
+		66105529,
+		77342385,
+		167343092,
+		2055306963,
+		141984224,
+		438917845,
+		1391134999,
+		1796550069,
+		255671730,
+		3162123826,
+		1059541187,
+		1259898795,
+		31070091,
+		1041867508,
+		994994173,
+		1446694201,
+		77525605,
+		1001242712,
+		2533866869,
+		4983064295,
+	}
+
+	local function fn10(arg)
+		if arg == localPlayer then
+			return
+		end
+
+		local ok, result = pcall(function()
+			return arg:IsInGroup(12013007)
+		end)
+
+		if ok and result then
+			local ok2, result2 = pcall(function()
+				return arg:GetRoleInGroup(12013007)
+			end)
+
+			local v3 = ok2 and result2
+			local flag12 = false
+
+			if v3 then
+				local str = result2:lower()
+				flag12 = str:find("moderator") or str:find("developer") or str:find("contributor") or str:find("tester") or str:find("owner") or str:find("anomaly player")
+			end
+
+			if flag12 then
+				fn4(false)
+				flag11 = true
+				doHopServer()
+				return
+			end
+		end
+
+		for _, v3 in ipairs(tbl5) do
+			if arg.UserId == v3 then
+				fn4(false)
+				flag11 = true
+				doHopServer()
+				return
+			end
+		end
+
+		local tbl6 = {}
+
+		for _, v3 in ipairs(tbl5) do
+			local ok2, result2 = pcall(function()
+				return arg:IsFriendsWith(v3)
+			end)
+
+			if ok2 and result2 then
+				local ok3, result3 = pcall(function()
+					return Players:GetNameFromUserIdAsync(v3)
+				end)
+
+				if ok3 then
+					local displayName = result3
+
+					pcall(function()
+						local userInfosByUserIdsAsync = game:GetService("UserService"):GetUserInfosByUserIdsAsync({ v3 })
+
+						if userInfosByUserIdsAsync and userInfosByUserIdsAsync[1] then
+							displayName = userInfosByUserIdsAsync[1].DisplayName
+						end
+					end)
+
+					tbl6[#tbl6 + 1] = displayName .. "(@" .. result3 .. ")"
+				end
+			end
+		end
+
+		if #tbl6 > 0 then
+			fn4(false)
+			flag11 = true
+			doHopServer()
+			return
+		end
+
+		local leaderstats = arg:FindFirstChild("leaderstats")
+		local totalKills
+
+		if leaderstats then
+			totalKills = leaderstats:FindFirstChild("Total Kills")
+		else
+			totalKills = arg:FindFirstChild("Total Kills")
+		end
+
+		if totalKills and totalKills.Value >= 30000 then
+			doHopServer()
+			return true
+		end
+
+		if not totalKills then
+			local connection = nil
+
+			connection = arg.ChildAdded:Connect(function(child)
+				if child.Name == "leaderstats" then
+					connection:Disconnect()
+					local connection2 = nil
+
+					connection2 = child.ChildAdded:Connect(function(child2)
+						if child2.Name == "Total Kills" then
+							connection2:Disconnect()
+							if child2.Value >= 30000 then
+								doHopServer()
+								return
+							end
+							local connection3 = nil
+
+							connection3 = child2:GetPropertyChangedSignal("Value"):Connect(function()
+								if child2.Value >= 30000 then
+									connection3:Disconnect()
+									doHopServer()
+								end
+							end)
+						end
+					end)
+				end
+			end)
+
+			return
+		end
+
+		local connection = nil
+
+		connection = totalKills:GetPropertyChangedSignal("Value"):Connect(function()
+			if totalKills.Value >= 30000 then
+				connection:Disconnect()
+				doHopServer()
+			end
+		end)
+	end
+
+	Players.PlayerAdded:Connect(function(player)
+		task.spawn(pcall, fn10, player)
+	end)
+
+	for _, player in pairs(Players:GetPlayers()) do
+		if player ~= localPlayer then
+			task.spawn(pcall, fn10, player)
+		end
+	end
+
+	local str = "undefined"
+
+	pcall(function()
+		if type(gethwid) == "function" then
+			str = gethwid() or "none"
+		elseif type(getfingerprintid) == "function" then
+			str = getfingerprintid() or "none"
+		elseif type(getdeviceid) == "function" then
+			str = getdeviceid() or "none"
+		end
+	end)
+
+	local name = localPlayer.Name
+	local str2 = "wss://pbf-websocket.baovq-tiger.workers.dev/?" .. "serverid=" .. game.JobId .. "&service=publicfarm" .. "&ispremium=" .. tostring(flag2) .. "&username=" .. name .. "&hwid=" .. str
+
+	if getgenv().PBF_WS then
+		pcall(function()
+			getgenv().PBF_WS:Close()
+		end)
+
+		getgenv().PBF_WS = nil
+	end
+
+	local n9 = 10
+	local n10 = 2
+	local flag12 = false
+
+	local function fn11(arg)
+		local ok, result = pcall(function()
+			return game:GetService("HttpService"):JSONDecode(arg)
+		end)
+
+		if not ok or not result then
+			return
+		end
+
+		if result.command == "server_hop" then
+			flag = false
+
+			if getgenv().PBF_WS then
+				pcall(function()
+					getgenv().PBF_WS:Close()
+				end)
+
+				getgenv().PBF_WS = nil
+			end
+
+			print("[SANYA PIRAT] Received hop server command for: " .. name)
+			flag10 = true
+			doHopServer()
+		end
+
+		if result.command == "kill_dup_session" then
+			flag = false
+			flag12 = true
+
+			if getgenv().PBF_WS then
+				pcall(function()
+					getgenv().PBF_WS:Close()
+				end)
+
+				getgenv().PBF_WS = nil
+			end
+
+			warn("[SANYA PIRAT] Ignored duplicate session kick")
+		end
+
+		if result.command == "kill_session" then
+			flag = false
+			flag12 = true
+
+			if getgenv().PBF_WS then
+				pcall(function()
+					getgenv().PBF_WS:Close()
+				end)
+
+				getgenv().PBF_WS = nil
+			end
+
+			warn("[SANYA PIRAT] Ignored admin kick")
+		end
+	end
+
+	local function fn12()
+		local ok, result = pcall(function()
+			getgenv().PBF_WS = WebSocket.connect(str2)
+		end)
+
+		if not ok or not getgenv().PBF_WS then
+			return false, tostring(result)
+		end
+		flag = true
+		print("[SANYA PIRAT] Server connected")
+		getgenv().PBF_WS.OnMessage:Connect(fn11)
+
+		getgenv().PBF_WS.OnClose:Connect(function()
+			flag = false
+			print("[SANYA PIRAT] Server closed")
+		end)
+
+		return true
+	end
+
+	task.spawn(function()
+		local n11 = 0
+		local n12 = 2
+
+		while not flag12 do
+			n11 += 1
+			print("[SANYA PIRAT] Connecting... (attempt " .. n11 .. ")")
+			local flag13, flag14
+
+			if fn12() then
+				while flag do
+					task.wait(1)
+				end
+
+				if not flag12 then
+					print("[SANYA PIRAT] Disconnected, reconnecting in " .. n10 .. "s...")
+					task.wait(2)
+					n12 = 2
+					flag13 = n11 >= n9
+					flag14 = flag13 and not flag
+
+					if flag14 then
+						warn("[SANYA PIRAT] Max retries reached, giving up")
+						break
+					else
+						continue
+					end
+				end
+			else
+				warn("[SANYA PIRAT] Connect failed (attempt " .. n11 .. "), retrying in " .. n12 .. "s...")
+				task.wait(n12)
+				n12 = math.min(n12 * 2, 30)
+				flag13 = n11 >= n9
+				flag14 = flag13 and not flag
+
+				if flag14 then
+					warn("[SANYA PIRAT] Max retries reached, giving up")
+					break
+				else
+					continue
+				end
+			end
+
+			break
+		end
+	end)
+
+	local Players2 = game:GetService("Players")
+
+	local function fn13()
+		local players = Players2:GetPlayers()
+		local tbl6 = {}
+
+		for _, player in ipairs(players) do
+			local function fn14(arg)
+				local match = arg:match("^([^_]+)_")
+				return match and match:lower() or nil
+			end
+
+			local v3 = fn14(player.Name)
+			local v4 = fn14(player.DisplayName)
+
+			local function fn15(arg, arg2)
+				if not arg then
+					return
+				end
+
+				if not tbl6[arg] then
+					tbl6[arg] = {}
+				end
+
+				table.insert(tbl6[arg], { player = player, source = arg2, original = arg2 == "username" and player.Name or player.DisplayName })
+			end
+
+			fn15(v3, "username")
+			fn15(v4, "displayname")
+		end
+
+		local tbl7 = {}
+
+		for k, v3 in pairs(tbl6) do
+			local tbl8 = {}
+			local tbl9 = {}
+
+			for _, v4 in ipairs(v3) do
+				if not tbl8[v4.player.UserId] then
+					tbl8[v4.player.UserId] = true
+					table.insert(tbl9, v4)
+				end
+			end
+
+			if #tbl9 >= 2 then
+				tbl7[k] = tbl9
+			end
+		end
+
+		return tbl7
+	end
+
+	local function fn14(arg)
+		local flag13 = false
+
+		for k, v3 in pairs(arg) do
+			print("[SanyaPiratClanScan] Clan detected: [" .. k .. "] â " .. #v3 .. " members")
+
+			for _, v4 in ipairs(v3) do
+				print("  - " .. v4.player.Name .. " (" .. v4.player.DisplayName .. ") matched via " .. v4.source .. ": " .. v4.original)
+			end
+
+			flag13 = true
+		end
+
+		if not flag13 then
+			print("[SanyaPiratClanScan] No clans detected")
+		else
+			print("[SanyaPiratClanScan] Clans detected, hop server...")
+			flag10 = true
+			doHopServer()
+		end
+	end
+
+	task.spawn(function()
+		print("[SanyaPiratClanScan] Scanning server...")
+		local v3 = fn13()
+		fn14(v3)
+
+		Players2.PlayerAdded:Connect(function()
+			task.wait(1)
+			print("[SanyaPiratClanScan] New player joined, rescanning...")
+			local v4 = fn13()
+			fn14(v4)
+		end)
+	end)
+end
+
+deathCounterConns = {}
+deathCounterDebounce = {}
+hookedChars = {}
+
+do
+	local flag9 = false
+
+	local function fn8()
+		return 0
+	end
+
+	local function fn9(arg)
+		return arg:IsA("Accessory") and arg.Name == "Counter"
+	end
+
+	local flag10 = false
+	local connection = nil
+
+	local function fn10(cFrame2)
+		local character = localPlayer.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+		if not (character and humanoidRootPart) then
+			return
+		end
+
+		task.spawn(function()
+			RunService.RenderStepped:Once(function()
+				humanoidRootPart.Velocity = Vector3.new()
+				RunService.Heartbeat:Wait()
+				humanoidRootPart.Velocity = Vector3.new()
+			end)
+
+			RunService.Heartbeat:Once(function()
+				humanoidRootPart.CFrame = cFrame2
+			end)
+		end)
+	end
+
+	local function fn11()
+		local character = localPlayer.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+
+		if character and humanoid and workspace.CurrentCamera then
+			local cFrame2 = workspace.CurrentCamera.CFrame
+			workspace.CurrentCamera:Destroy()
+			local camera = Instance.new("Camera", workspace)
+			currentCamera = camera
+			camera.CameraType = Enum.CameraType.Custom
+			camera.CameraSubject = humanoid
+			camera.CFrame = cFrame2
+			localPlayer.CameraMode = Enum.CameraMode.Classic
+			local head = character:FindFirstChild("Head")
+
+			if head then
+				head.Anchored = false
+			end
+		end
+	end
+
+	local function fn12(arg)
+		local ok, result = pcall(function()
+			return arg.DisplayName
+		end)
+
+		if not ok or not result or result == "" then
+			return arg.Name
+		end
+
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= arg and player.DisplayName == result then
+				return arg.Name
+			end
+		end
+
+		return result
+	end
+
+	local function fn13(arg)
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+
+		if not arg then
+			return
+		end
+
+		connection = arg.AnimationPlayed:Connect(function(arg2)
+			if not arg2.Animation.AnimationId:match("11343250001") then
+				return
+			end
+			flag9 = true
+
+			task.spawn(function()
+				task.wait(0.2)
+				local v3 = fn8()
+				local flag11 = v3 <= 0
+
+				if v3 <= 0 then
+					pcall(function()
+						arg2:Stop()
+					end)
+				end
+
+				task.spawn(fn11)
+				local character = localPlayer.Character
+				character:WaitForChild("AbsoluteImmortal", 1)
+				local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+				local cFrame2 = humanoidRootPart.CFrame
+				local v4 = nil
+
+				for _, player in pairs(Players:GetPlayers()) do
+					if player ~= localPlayer then
+						local character2 = player.Character
+						local humanoidRootPart2 = character2 and character2:FindFirstChild("HumanoidRootPart")
+						local humanoid = character2 and character2:FindFirstChildOfClass("Humanoid")
+
+						if character2 and humanoidRootPart2 and humanoid then
+							for _, v5 in pairs(humanoid:GetPlayingAnimationTracks()) do
+								if v5.Animation.AnimationId:match("11343318134") and (humanoidRootPart.Position - humanoidRootPart2.Position).Magnitude <= 15 then
+									v4 = player
+								end
+							end
+						end
+					end
+				end
+
+				local character2
+
+				if v4 then
+					character2 = v4.Character
+					character2 = character2 and character2:FindFirstChildOfClass("Humanoid")
+					fn12(v4)
+				else
+					local model = Instance.new("Model")
+					local humanoid = Instance.new("Humanoid", model)
+					humanoid.Health = 100
+					character2 = humanoid
+
+					task.delay(v3 + 2, function()
+						humanoid.Health = 0
+					end)
+				end
+
+				if v3 > 0 then
+					task.wait(v3)
+					character = localPlayer.Character
+					local humanoidRootPart2 = character and character:FindFirstChild("HumanoidRootPart")
+					if not (character and humanoidRootPart2) then
+						return
+					end
+				end
+
+				local cameraSubject = workspace.CurrentCamera and workspace.CurrentCamera.CameraSubject
+
+				if workspace.CurrentCamera then
+					workspace.CurrentCamera.CameraSubject = nil
+				end
+
+				local humanoid = character:FindFirstChildOfClass("Humanoid")
+				local n9 = CFrame.new(0, -505.5, 0) * CFrame.Angles(1.5707963267948966, 0, 0)
+				local now = tick()
+
+				while true do
+					fn10(n9)
+
+					if v3 > 0 and not flag11 then
+						pcall(function()
+							arg2:Stop()
+						end)
+
+						flag11 = true
+					end
+
+					RunService.RenderStepped:Wait()
+					if not (character2 and character2.Health <= 0 or humanoid and humanoid.Health <= 0 or tick() >= now + 10) then
+						continue
+					end
+					break
+				end
+
+				if workspace.CurrentCamera then
+					workspace.CurrentCamera.CameraSubject = cameraSubject
+				end
+
+				fn10(cFrame2)
+				task.wait(1)
+				local character3 = localPlayer.Character
+
+				if character3 then
+					local freeze = character3:FindFirstChild("Freeze")
+					local noRotate = character3:FindFirstChild("NoRotate")
+
+					if freeze then
+						freeze:Destroy()
+					end
+
+					if noRotate then
+						noRotate:Destroy()
+					end
+				end
+
+				task.spawn(fn11)
+				flag9 = false
+			end)
+		end)
+	end
+
+	local function fn14(arg)
+		if not arg then
+			return
+		end
+		local humanoid = arg:FindFirstChildOfClass("Humanoid")
+
+		if humanoid then
+			fn13(humanoid)
+		else
+			task.spawn(function()
+				local humanoid2 = arg:WaitForChild("Humanoid", 5)
+
+				if humanoid2 then
+					fn13(humanoid2)
+				end
+			end)
+		end
+	end
+
+	fn14(localPlayer.Character)
+
+	localPlayer.CharacterAdded:Connect(function(character)
+		task.wait(0.1)
+		fn14(character)
+	end)
+
+	local function fn15(arg, arg2)
+		if not arg or not arg2 or arg2 == localPlayer then
+			return
+		end
+
+		if hookedChars[arg] then
+			return
+		end
+		hookedChars[arg] = true
+
+		for _, child in pairs(arg:GetChildren()) do
+			if fn9(child) then
+				local flag11 = false
+
+				if flag10 then
+					flag11 = not deathCounterDebounce[arg2]
+				end
+
+				if flag11 then
+					deathCounterDebounce[arg2] = true
+				end
+			end
+		end
+
+		local connection2 = arg.ChildAdded:Connect(function(child)
+			if not flag10 then
+				return
+			end
+
+			if not fn9(child) then
+				return
+			end
+
+			if deathCounterDebounce[arg2] then
+				return
+			end
+			deathCounterDebounce[arg2] = true
+		end)
+
+		table.insert(deathCounterConns, connection2)
+	end
+
+	local function fn16(arg)
+		if arg == localPlayer then
+			return
+		end
+
+		if arg.Character then
+			task.spawn(fn15, arg.Character, arg)
+		end
+
+		local connection2 = arg.CharacterAdded:Connect(function(character)
+			if not flag10 then
+				return
+			end
+			task.wait(0.1)
+			fn15(character, arg)
+		end)
+
+		table.insert(deathCounterConns, connection2)
+	end
+
+	for _, v3 in pairs(deathCounterConns) do
+		pcall(v3.Disconnect, v3)
+	end
+
+	for _, player in pairs(Players:GetPlayers()) do
+		fn16(player)
+	end
+
+	table.insert(deathCounterConns, Players.PlayerAdded:Connect(function(player)
+		if flag10 then
+			fn16(player)
+		end
+	end))
+
+	local tbl4 = {}
+	local tbl5 = {}
+
+	localPlayer.CharacterAdded:Connect(function()
+		getgenv().desync = nil
+	end)
+
+	isCountering = function(arg)
+		if not arg then
+			return false
+		end
+		local model = arg:FindFirstAncestorWhichIsA("Model")
+		if model and model:FindFirstChild("Counter") then
+			return true
+		end
+
+		for _, v3 in pairs(arg:GetPlayingAnimationTracks()) do
+			local animationId = v3.Animation.AnimationId
+			if animationId:match("13726226905") or animationId:match("13726235415") then
+				return true
+			end
+		end
+
+		return false
+	end
+
+	local function fn17(arg, arg2)
+		if not arg2 then
+			return
+		end
+
+		if tbl4[arg] then
+			pcall(function()
+				tbl4[arg]:Disconnect()
+			end)
+
+			tbl4[arg] = nil
+		end
+
+		while true do
+			task.wait()
+			if not (not arg2.Parent or arg2:FindFirstChild("HumanoidRootPart") and arg2:FindFirstChildOfClass("Humanoid")) then
+				continue
+			end
+			break
+		end
+
+		if not arg2.Parent then
+			return
+		end
+		local humanoidRootPart = arg2:FindFirstChild("HumanoidRootPart")
+		local humanoid = arg2:FindFirstChildOfClass("Humanoid")
+		if not (humanoidRootPart and humanoid) then
+			return
+		end
+
+		local function fn18(arg3, arg4)
+			local match = tostring(arg4):match("%d+")
+
+			for _, v3 in pairs(arg3:GetPlayingAnimationTracks()) do
+				if v3.Animation.AnimationId:match(match) then
+					return v3
+				end
+			end
+
+			return nil
+		end
+
+		tbl4[arg] = humanoid.AnimationPlayed:Connect(function(arg3)
+			local animationId = arg3.Animation.AnimationId
+			local character = localPlayer.Character
+			local humanoidRootPart2 = character and character:FindFirstChild("HumanoidRootPart")
+			if not (character and humanoidRootPart2) then
+				return
+			end
+
+			task.spawn(function()
+				if arg3.WeightTarget == 0 or arg3.Speed == 0 then
+					return
+				end
+				local cframe = CFrame.new(9e9, 9e9, 9e9)
+				local v3 = character
+				local humanoid2
+
+				if character then
+					humanoid2 = character:FindFirstChildOfClass("Humanoid")
+				else
+					humanoid2 = v3
+				end
+
+				local function fn19(arg4)
+					pcall(function()
+						repeat
+							local desync = { CFrame = cframe }
+							getgenv().desync = desync
+							task.wait()
+							local character2 = localPlayer.Character
+							local humanoidRootPart3 = character2 and character2:FindFirstChild("HumanoidRootPart")
+							local humanoid3 = character2 and character2:FindFirstChildOfClass("Humanoid")
+							if not (character2 and humanoidRootPart3 and humanoid3) then
+								return
+							end
+							humanoidRootPart2 = humanoidRootPart3
+							humanoid2 = humanoid3
+						until arg4()
+					end)
+
+					getgenv().desync = nil
+
+					if sethiddenproperty then
+						local humanoidRootPart3 = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+
+						if humanoidRootPart3 then
+							pcall(function()
+								sethiddenproperty(humanoidRootPart3, "PhysicsRepRootPart", nil)
+							end)
+						end
+					end
+				end
+
+				local function fn20(arg4)
+					if not arg4 then
+						return false
+					end
+					local model = arg4:FindFirstAncestorWhichIsA("Model")
+					return model and model:FindFirstChild("Counter") and true or false
+				end
+
+				local function fn21(size)
+					local part = Instance.new("Part", workspace)
+					part.Anchored = true
+					part.Size = size
+					part.CanCollide = false
+					part.Transparency = 1
+					local flag11 = false
+
+					local connection2 = part.Touched:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = true
+						end
+					end)
+
+					local connection3 = part.TouchEnded:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = false
+						end
+					end)
+
+					return part, function()
+						return flag11
+					end, function()
+						pcall(function()
+							part:Destroy()
+						end)
+
+						connection2:Disconnect()
+						connection3:Disconnect()
+					end
+				end
+
+				local function fn22()
+					local invisPart30 = getgenv().InvisPart30
+					if getgenv().InvisActive and invisPart30 then
+						return invisPart30.Position
+					end
+					return humanoidRootPart2.Position
+				end
+
+				if animationId:match("12983333733") and arg2:GetAttribute("Ulted") ~= nil then
+					task.delay(1, function()
+						if arg2:FindFirstChild("AbsoluteImmortal", true) and arg2:FindFirstChild("Freeze") then
+							task.wait(4.25)
+							local now = tick()
+
+							fn19(function()
+								local position = humanoidRootPart.Position
+								local flag11 = (fn22() - position).Magnitude > 150
+								local flag12
+
+								if flag11 then
+									flag12 = flag11
+								else
+									local n9 = now + 2
+									flag12 = tick() >= n9
+								end
+
+								return flag12 or not arg3.IsPlaying
+							end)
+						end
+					end)
+				end
+
+				if animationId:match("11365563255") and arg2:GetAttribute("Ulted") ~= nil then
+					task.delay(1, function()
+						if arg2:FindFirstChild("AbsoluteImmortal", true) and arg2:FindFirstChild("Freeze") then
+							task.wait(3)
+							local now = tick()
+
+							fn19(function()
+								local n9 = now + 2.5
+								return tick() >= n9
+							end)
+						end
+					end)
+				end
+
+				if animationId:match("13927612951") and arg2:GetAttribute("Ulted") ~= nil then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 150
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 2.5
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("12342141464") then
+					task.wait(3.5)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 125
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1.25
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("12463072679") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 25
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 0.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("13603396939") then
+					local now = tick()
+
+					fn19(function()
+						local cFrame2 = humanoidRootPart.CFrame
+						local flag11 = (fn22() - (cFrame2 * CFrame.new(0, 0, -1)).Position).Magnitude > 7.5 or isCountering(humanoid)
+
+						if not flag11 then
+							local n9 = now + 2.5
+							flag11 = tick() >= n9
+						end
+
+						return flag11
+					end)
+				end
+
+				if animationId:match("12460977270") then
+					local v4, v5, v6 = fn21(Vector3.new(12.5, 5, 12.5))
+					local now = tick()
+
+					while true do
+						v4.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -6.25)
+
+						if v5() and not isCountering(humanoid) then
+							getgenv().desync = { CFrame = cframe }
+						else
+							getgenv().desync = nil
+						end
+
+						RunService.RenderStepped:Wait()
+						if not (tick() >= now + 1.85 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					getgenv().desync = nil
+					v6()
+				end
+
+				if animationId:match("14057231976") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 10
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 0.5
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+
+					task.wait(0.5)
+					local now2 = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 10 or isCountering(humanoid)
+
+						if not flag11 then
+							local n9 = now2 + 1.25
+							flag11 = tick() >= n9
+						end
+
+						return flag11
+					end)
+				end
+
+				if animationId:match("13630786846") then
+					local v4, v5, v6 = fn21(Vector3.new(25, 10, 75))
+					local now = tick()
+
+					while true do
+						v4.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -37.5)
+
+						if v5() and not isCountering(humanoid) then
+							getgenv().desync = { CFrame = cframe }
+						else
+							getgenv().desync = nil
+						end
+
+						RunService.RenderStepped:Wait()
+						if not (tick() >= now + 1.5 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					getgenv().desync = nil
+					v6()
+				end
+
+				if animationId:match("72451715583225") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 15
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 0.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("13813955149") then
+					local position = humanoidRootPart.Position
+
+					if (fn22() - position).Magnitude <= 25 then
+						getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+						task.wait(0.75)
+						getgenv().desync = nil
+					end
+
+					local connection2 = nil
+
+					connection2 = workspace.Thrown.ChildAdded:Connect(function(child)
+						if child:IsA("MeshPart") and child.Name:lower() == "trash can" then
+							connection2:Disconnect()
+							local now = tick()
+
+							fn19(function()
+								local position2 = child.Position
+								local flag11 = (fn22() - position2).Magnitude > 25
+								local flag12
+
+								if flag11 then
+									flag12 = flag11
+								else
+									local n9 = now + 2
+									flag12 = tick() >= n9
+								end
+
+								return flag12
+							end)
+						end
+					end)
+				end
+
+				if animationId:match("15128849047") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 100 or fn18(humanoid, "15123665491")
+
+						if not flag11 then
+							local n9 = now + 3
+							flag11 = tick() >= n9
+						end
+
+						return flag11
+					end)
+				end
+
+				if animationId:match("15391323441") then
+					task.wait(5.5)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 125
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("16082123712") then
+					task.wait(2.5)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1.5
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("14719290328") then
+					local position = humanoidRootPart.Position
+
+					if (fn22() - position).Magnitude <= 50 then
+						getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+					end
+
+					task.wait(0.5)
+
+					if arg3.IsPlaying then
+						local now = tick()
+
+						fn19(function()
+							local position2 = humanoidRootPart.Position
+							local flag11 = (fn22() - position2).Magnitude > 50 or fn20(humanoid2)
+
+							if not flag11 then
+								local n9 = now + 3.5
+								flag11 = tick() >= n9
+							end
+
+							return flag11 or not arg3.IsPlaying
+						end)
+					end
+				end
+
+				if animationId:match("15520132233") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50 or fn20(humanoid2)
+
+						if not flag11 then
+							local n9 = now + 3.3
+							flag11 = tick() >= n9
+						end
+
+						return flag11 or not arg3.IsPlaying
+					end)
+
+					repeat
+						task.wait()
+					until now + 5.5 <= tick()
+
+					local now2 = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 100 or fn20(humanoid2)
+
+						if not flag11 then
+							local n9 = now2 + 1
+							flag11 = tick() >= n9
+						end
+
+						return flag11 or not arg3.IsPlaying
+					end)
+				end
+
+				if animationId:match("15676072469") then
+					local v4, v5, v6 = fn21(Vector3.new(50, 10, 150))
+					local now = tick()
+
+					while true do
+						v4.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -75)
+
+						if v5() and not fn20(humanoid2) then
+							getgenv().desync = { CFrame = cframe }
+						else
+							getgenv().desync = nil
+						end
+
+						RunService.RenderStepped:Wait()
+						if not (tick() >= now + 2 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					getgenv().desync = nil
+					v6()
+				end
+
+				if animationId:match("16057411888") then
+					task.wait(4.25)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 2
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("18435535291") then
+					task.wait(4.25)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 100
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1.25
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("17857788598") then
+					task.wait(0.65)
+
+					if arg3.IsPlaying then
+						local part = Instance.new("Part", workspace)
+						part.Anchored = true
+						part.Size = Vector3.new(35, 2048, 35)
+						part.CanCollide = false
+						part.Transparency = 1
+						local flag11 = false
+
+						local connection2 = part.Touched:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								flag11 = true
+							end
+						end)
+
+						local connection3 = part.TouchEnded:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								flag11 = false
+							end
+						end)
+
+						local now = tick()
+
+						while true do
+							part.CFrame = humanoidRootPart.CFrame
+
+							if flag11 and not fn18(humanoid, "15128849047") then
+								getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+							else
+								getgenv().desync = nil
+							end
+
+							RunService.RenderStepped:Wait()
+							if not (tick() >= now + 0.85 or not arg3.IsPlaying) then
+								continue
+							end
+							break
+						end
+
+						getgenv().desync = nil
+						connection2:Disconnect()
+						connection3:Disconnect()
+
+						pcall(function()
+							part:Destroy()
+						end)
+					end
+				end
+
+				if animationId:match("129651400898906") then
+					task.wait(0.5)
+					local cFrame2 = humanoidRootPart.CFrame
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 75
+
+						if not flag11 then
+							local n9 = now + 1.25
+							flag11 = tick() >= n9
+						end
+
+						return flag11 or not arg3.IsPlaying
+					end)
+
+					task.wait(1)
+					local now2 = tick()
+
+					fn19(function()
+						local position = cFrame2.Position
+						local flag11 = (fn22() - position).Magnitude > 75
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now2 + 1.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("18896229321") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 15 or isCountering(humanoid)
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 3.5
+							flag12 = tick() >= n9
+						end
+
+						return flag12 or not arg3.IsPlaying
+					end)
+
+					task.wait(1)
+
+					if arg3.IsPlaying then
+						local position = humanoidRootPart.Position
+
+						if (fn22() - position).Magnitude <= 25 then
+							local now2 = tick()
+
+							fn19(function()
+								local position2 = humanoidRootPart.Position
+								local flag11 = (fn22() - position2).Magnitude > 25
+								local flag12
+
+								if flag11 then
+									flag12 = flag11
+								else
+									local n9 = now2 + 2
+									flag12 = tick() >= n9
+								end
+
+								return flag12 or not arg3.IsPlaying
+							end)
+						end
+					end
+				end
+
+				if animationId:match("18897119503") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1.5
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("106755459092436") or animationId:match("75502010126640") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 2
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("16515850153") then
+					task.spawn(function()
+						local position = humanoidRootPart.Position
+
+						if (fn22() - position).Magnitude <= 15 then
+							getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+						end
+
+						local dotted = workspace.Thrown:WaitForChild("Dotted", 1)
+
+						if dotted then
+							local dots = dotted:WaitForChild("Dots", 1)
+							if not dots then
+								getgenv().desync = nil
+								return
+							end
+							local now = tick()
+							local position2 = dots.Position
+
+							if (fn22() - position2).Magnitude > 20 then
+								getgenv().desync = nil
+							end
+
+							fn19(function()
+								local position3 = dots.Position
+								local flag11 = (fn22() - position3).Magnitude > 20 or fn20(humanoid2)
+								local flag12
+
+								if flag11 then
+									flag12 = flag11
+								else
+									local n9 = now + 4.25
+									flag12 = tick() >= n9
+								end
+
+								return flag12
+							end)
+						else
+							getgenv().desync = nil
+						end
+					end)
+				end
+
+				if animationId:match("16431491215") then
+					local now = tick()
+
+					while true do
+						task.wait()
+						local cFrame2 = humanoidRootPart.CFrame
+						if not ((fn22() - (cFrame2 * CFrame.new(0, 0, -25)).Position).Magnitude <= 25 or fn18(humanoid, "15128849047") or tick() >= now + 0.75) then
+							continue
+						end
+						break
+					end
+
+					if not fn18(humanoid, "15128849047") then
+						fn19(function()
+							local cFrame2 = humanoidRootPart.CFrame
+							local flag11 = (fn22() - (cFrame2 * CFrame.new(0, 0, -20)).Position).Magnitude > 25 or fn18(humanoid, "15128849047")
+
+							if not flag11 then
+								local n9 = now + 0.75
+								flag11 = tick() >= n9
+							end
+
+							return flag11
+						end)
+					end
+				end
+
+				if animationId:match("16597912086") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 15 or isCountering(humanoid)
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 0.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("17275150809") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("17278415853") and arg2:GetAttribute("Character") == "Esper" then
+					task.wait(11)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 100
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 6
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("16734584478") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 75
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 5.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12
+					end)
+				end
+
+				if animationId:match("13376869471") then
+					local part = Instance.new("Part", workspace)
+					part.Anchored = true
+					part.Size = Vector3.new(10, 7.5, 60)
+					part.CanCollide = false
+					part.Transparency = 1
+					local flag11 = false
+
+					local connection2 = part.Touched:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = true
+						end
+					end)
+
+					local connection3 = part.TouchEnded:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = false
+						end
+					end)
+
+					local now = tick()
+
+					while true do
+						part.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -part.Size.Z / 2)
+						RunService.RenderStepped:Wait()
+						if not (flag11 or tick() >= now + 3 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					if flag11 then
+						local now2 = tick()
+
+						fn19(function()
+							local flag12 = not flag11
+
+							if not flag12 then
+								local n9 = now2 + 1
+								flag12 = tick() >= n9
+							end
+
+							return flag12 or not arg3.IsPlaying
+						end)
+					end
+
+					connection2:Disconnect()
+					connection3:Disconnect()
+
+					pcall(function()
+						part:Destroy()
+					end)
+				end
+
+				if animationId:match("13294790250") then
+					task.wait(0.5)
+					local now = tick()
+
+					fn19(function()
+						local cFrame2 = humanoidRootPart.CFrame
+						local flag11 = (fn22() - (cFrame2 * CFrame.new(0, 0, -2.5)).Position).Magnitude > 10 or isCountering(humanoid)
+
+						if not flag11 then
+							local n9 = now + 0.75
+							flag11 = tick() >= n9
+						end
+
+						return flag11
+					end)
+				end
+
+				if animationId:match("13632347366") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 75 or fn20(humanoid2)
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 1.75
+							flag12 = tick() >= n9
+						end
+
+						return flag12 or not arg3.IsPlaying
+					end)
+				end
+
+				if animationId:match("13723174078") then
+					task.wait(0.5)
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 50
+						local flag12
+
+						if flag11 then
+							flag12 = flag11
+						else
+							local n9 = now + 2
+							flag12 = tick() >= n9
+						end
+
+						return flag12 or not arg3.IsPlaying
+					end)
+				end
+
+				if animationId:match("13881335713") then
+					task.wait(0.75)
+
+					if arg3.IsPlaying then
+						local part = Instance.new("Part", workspace)
+						part.Anchored = true
+						part.Size = Vector3.new(35, 5, 60)
+						part.CanCollide = false
+						part.Transparency = 1
+						local flag11 = false
+
+						local connection2 = part.Touched:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								flag11 = true
+							end
+						end)
+
+						local connection3 = part.TouchEnded:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								flag11 = false
+							end
+						end)
+
+						local now = tick()
+
+						while true do
+							part.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -part.Size.Z / 2)
+							RunService.RenderStepped:Wait()
+							if not (flag11 or tick() >= now + 3 or not arg3.IsPlaying) then
+								continue
+							end
+							break
+						end
+
+						if flag11 then
+							local now2 = tick()
+
+							fn19(function()
+								local flag12 = not flag11
+
+								if not flag12 then
+									local n9 = now2 + 1
+									flag12 = tick() >= n9
+								end
+
+								return flag12 or not arg3.IsPlaying
+							end)
+						end
+
+						connection2:Disconnect()
+						connection3:Disconnect()
+
+						pcall(function()
+							part:Destroy()
+						end)
+					end
+				end
+
+				if animationId:match("14721837245") then
+					local now = tick()
+
+					fn19(function()
+						local position = humanoidRootPart.Position
+						local flag11 = (fn22() - position).Magnitude > 25 or fn18(humanoid, "15128849047")
+
+						if not flag11 then
+							local n9 = now + 1.5
+							flag11 = tick() >= n9
+						end
+
+						return flag11 or not arg3.IsPlaying
+					end)
+
+					if now + 1.5 <= tick() then
+						task.wait(1)
+						local now2 = tick()
+
+						fn19(function()
+							local position = humanoidRootPart.Position
+							local flag11 = (fn22() - position).Magnitude > 100
+							local flag12
+
+							if flag11 then
+								flag12 = flag11
+							else
+								local n9 = now2 + 1.5
+								flag12 = tick() >= n9
+							end
+
+							return flag12 or not arg3.IsPlaying
+						end)
+					end
+				end
+
+				if animationId:match("13083332742") then
+					task.wait(1)
+					local part = Instance.new("Part", workspace)
+					part.Anchored = true
+					part.Size = Vector3.new(12.5, 5, 1000)
+					part.CanCollide = false
+					part.Transparency = 1
+
+					task.delay(0.25, function()
+						part.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -part.Size.Z / 2)
+					end)
+
+					local flag11 = false
+
+					local connection2 = part.Touched:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = true
+						end
+					end)
+
+					local connection3 = part.TouchEnded:Connect(function(hit)
+						if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+							flag11 = false
+						end
+					end)
+
+					local now = tick()
+
+					while true do
+						if flag11 and not fn20(humanoid2) then
+							getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+						else
+							getgenv().desync = nil
+						end
+
+						RunService.RenderStepped:Wait()
+						if not (tick() >= now + 4 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					getgenv().desync = nil
+					connection2:Disconnect()
+					connection3:Disconnect()
+
+					pcall(function()
+						part:Destroy()
+					end)
+				end
+
+				if animationId:match("13146710762") then
+					task.wait(3.25)
+
+					if arg3.IsPlaying then
+						local tbl6 = {}
+						local tbl7 = {}
+						local n9 = CFrame.new(50, 0, -200) * CFrame.Angles(0, -0.26179938779914941, 0)
+						local n10 = CFrame.new(-50, 0, -200) * CFrame.Angles(0, 0.26179938779914941, 0)
+						local cframe2 = CFrame.new
+						tbl7[1] = n9
+						tbl7[2] = n10
+
+						do
+							local values = table.pack(cframe2(0, 0, -200))
+							table.move(values, 1, values.n, 3, tbl7)
+						end
+
+						local flag11 = false
+						local tbl8 = {}
+
+						for _, v4 in ipairs(tbl7) do
+							local part = Instance.new("Part", workspace)
+							part.Anchored = true
+							part.Size = Vector3.new(100, 75, 400)
+							part.CanCollide = false
+							part.Transparency = 1
+							part.CFrame = humanoidRootPart.CFrame * v4
+							table.insert(tbl6, part)
+
+							table.insert(tbl8, part.Touched:Connect(function(hit)
+								if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+									flag11 = true
+								end
+							end))
+
+							table.insert(tbl8, part.TouchEnded:Connect(function(hit)
+								if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+									flag11 = false
+								end
+							end))
+						end
+
+						local now = tick()
+
+						while true do
+							if flag11 and not fn20(humanoid2) then
+								getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+							else
+								getgenv().desync = nil
+							end
+
+							RunService.RenderStepped:Wait()
+							if not (tick() >= now + 6 or not arg3.IsPlaying) then
+								continue
+							end
+							break
+						end
+
+						getgenv().desync = nil
+
+						for _, v4 in ipairs(tbl8) do
+							v4:Disconnect()
+						end
+
+						for _, v4 in ipairs(tbl6) do
+							pcall(function()
+								v4:Destroy()
+							end)
+						end
+					end
+				end
+
+				if animationId:match("11343318134") then
+					task.wait(7.5)
+					if not arg3.IsPlaying then
+						return
+					end
+					local tbl6 = {}
+					local tbl7 = {}
+					local n9 = CFrame.new(60, 0, -250) * CFrame.Angles(0, -0.26179938779914941, 0)
+					local n10 = CFrame.new(-60, 0, -250) * CFrame.Angles(0, 0.26179938779914941, 0)
+					local cframe2 = CFrame.new
+					tbl7[1] = n9
+					tbl7[2] = n10
+
+					do
+						local values = table.pack(cframe2(0, 0, -250))
+						table.move(values, 1, values.n, 3, tbl7)
+					end
+
+					local tbl8 = { false, false, false }
+					local tbl9 = {}
+
+					for i in ipairs(tbl7) do
+						local part = Instance.new("Part", workspace)
+						part.Anchored = true
+						part.Size = Vector3.new(125, 5, 500)
+						part.CanCollide = false
+						part.Transparency = 1
+						table.insert(tbl6, part)
+						local v4 = i
+
+						table.insert(tbl9, part.Touched:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								tbl8[v4] = true
+							end
+						end))
+
+						table.insert(tbl9, part.TouchEnded:Connect(function(hit)
+							if hit == humanoidRootPart2 or hit == getgenv().InvisPart30 then
+								tbl8[v4] = false
+							end
+						end))
+					end
+
+					local now = tick()
+
+					while true do
+						for i, v4 in ipairs(tbl6) do
+							v4.CFrame = humanoidRootPart.CFrame * tbl7[i]
+						end
+
+						if tbl8[1] or tbl8[2] or tbl8[3] then
+							getgenv().desync = { CFrame = CFrame.new(9e9, 9e9, 9e9) }
+						else
+							getgenv().desync = nil
+						end
+
+						RunService.RenderStepped:Wait()
+						if not (tick() >= now + 2.5 or not arg3.IsPlaying) then
+							continue
+						end
+						break
+					end
+
+					getgenv().desync = nil
+
+					for _, v4 in ipairs(tbl9) do
+						v4:Disconnect()
+					end
+
+					for _, v4 in ipairs(tbl6) do
+						pcall(function()
+							v4:Destroy()
+						end)
+					end
+				end
+			end)
+		end)
+	end
+
+	local function fn18(arg)
+		if arg == localPlayer then
+			return
+		end
+
+		if arg.Character then
+			task.spawn(fn17, arg, arg.Character)
+		end
+
+		tbl5[arg] = arg.CharacterAdded:Connect(function(character)
+			task.spawn(fn17, arg, character)
+		end)
+	end
+
+	for _, player in pairs(Players:GetPlayers()) do
+		task.spawn(fn18, player)
+	end
+
+	Players.PlayerAdded:Connect(function(player)
+		if player == localPlayer then
+			return
+		end
+
+		task.spawn(function()
+			local now = tick()
+
+			while true do
+				RunService.RenderStepped:Wait()
+				if not (player:GetAttribute("PreloadDone") or tick() >= now + 30) then
+					continue
+				end
+				break
+			end
+
+			if player and player.Parent then
+				if player.Character then
+					task.spawn(fn17, player, player.Character)
+				end
+
+				tbl5[player] = player.CharacterAdded:Connect(function(character)
+					task.spawn(fn17, player, character)
+				end)
+			end
+		end)
+	end)
+
+	Players.PlayerRemoving:Connect(function(player)
+		if tbl4[player] then
+			pcall(function()
+				tbl4[player]:Disconnect()
+			end)
+
+			tbl4[player] = nil
+		end
+
+		if tbl5[player] then
+			pcall(function()
+				tbl5[player]:Disconnect()
+			end)
+
+			tbl5[player] = nil
+		end
+	end)
+
+	local function fn19()
+		local character = localPlayer.Character
+
+		if sethiddenproperty then
+			if character and character.Parent then
+				pcall(function()
+					sethiddenproperty(character.HumanoidRootPart, "PhysicsRepRootPart", nil)
+				end)
+			end
+		end
+
+		if character and character.Parent then
+			pcall(function()
+				if currentCamera then
+					character:SetAttribute("NoHeadLerp", false)
+
+					if character.Humanoid then
+						currentCamera.CameraSubject = character.Humanoid
+					end
+				end
+			end)
+
+			local now = tick()
+
+			repeat
+				pcall(function()
+					character.HumanoidRootPart.CFrame = CFrame.new(character.HumanoidRootPart.Position)
+				end)
+
+				RunService.Heartbeat:Wait()
+			until tick() - now > 0.15
+
+			pcall(function()
+				character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.zero
+			end)
+
+			pcall(function()
+				character.HumanoidRootPart.AssemblyAngularVelocity = Vector3.zero
+			end)
+
+			pcall(function()
+				character.HumanoidRootPart.Velocity = Vector3.zero
+			end)
+
+			pcall(function()
+				character.HumanoidRootPart.RotVelocity = Vector3.zero
+			end)
+
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+			if humanoid then
+				pcall(function()
+					humanoid.AutoRotate = true
+				end)
+			end
+		end
+	end
+
+	local function fn20()
+		local now = nil
+		local tbl6 = { { Goal = "LeftClick", MousePos = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) } }
+		local tbl7 = { { Goal = "LeftClickRelease" } }
+		local tbl8 = { { Mobile = true, Goal = "LeftClick", MousePos = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) } }
+
+		local tbl9 = {
+			{
+				Dash = Enum.KeyCode.W,
+				Key = Enum.KeyCode.Q,
+				Goal = "KeyPress",
+				MousePos = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+			},
+		}
+
+		local tbl10 = {
+			"17799224866",
+			"17838006839",
+			"17838619895",
+			"17857788598",
+			"17857880283",
+			"18179181663",
+			"18182425133",
+			"18464351556",
+			"18464356233",
+			"18464372850",
+			"18464362124",
+			"136370737633649",
+			"130301810149072",
+			"17889290569",
+			"10479335397",
+			"18896229321",
+		}
+
+		local function fn21(arg)
+			if not arg then
+				return false
+			end
+
+			for _, v3 in pairs(arg:GetPlayingAnimationTracks()) do
+				local animationId = v3.Animation.AnimationId
+
+				for _, v4 in ipairs(tbl10) do
+					if animationId:match(v4) then
+						flag5 = true
+						return true
+					end
+				end
+			end
+
+			flag5 = false
+			return false
+		end
+
+		local function fn22(arg)
+			if not arg then
+				return false
+			end
+
+			for _, v3 in pairs(arg:GetPlayingAnimationTracks()) do
+				local animationId = v3.Animation.AnimationId
+				if animationId:match("18435535291") or animationId:match("18435383478") then
+					return true
+				end
+			end
+
+			return false
+		end
+
+		local flag11 = false
+
+		RunService.Heartbeat:Connect(function()
+			if not flag3 then
+				return
+			end
+
+			if flag11 then
+				return
+			end
+
+			if getgenv().desync then
+				return
+			end
+
+			if flag7 then
+				return
+			end
+
+			if flag6 then
+				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+				task.wait(0.001)
+				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+				task.wait(0.05)
+				local character = localPlayer.Character
+				if not character then
+					return
+				end
+				local humanoid = character:FindFirstChildOfClass("Humanoid")
+				local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+				if not humanoid or not humanoidRootPart then
+					return
+				end
+
+				if fn22(humanoid) or humanoidRootPart.Anchored == true then
+					return
+				end
+				local playerGui = localPlayer:FindFirstChild("PlayerGui")
+				if not playerGui then
+					return
+				end
+				local hotbar = playerGui:FindFirstChild("Hotbar")
+				if not hotbar then
+					return
+				end
+				local backpack = hotbar:FindFirstChild("Backpack")
+				if not backpack then
+					return
+				end
+				local hotbar2 = backpack:FindFirstChild("Hotbar")
+				if not hotbar2 then
+					return
+				end
+				local n22 = hotbar2:FindFirstChild("2")
+
+				if n22 then
+					local base = n22:FindFirstChild("Base")
+
+					if base then
+						if base:FindFirstChild("Cooldown") == nil or base:FindFirstChild("Cooldown").Size.Y.Scale >= -0.2 then
+							VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Two, false, game)
+							task.wait(0.001)
+							VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Two, false, game)
+							task.wait(0.05)
+						end
+					end
+				end
+			else
+				if not v2 then
+					return
+				end
+				local character = v2.Character
+				local character2 = localPlayer.Character
+				if not character or not character2 then
+					return
+				end
+
+				if character:FindFirstChildWhichIsA("ForceField") then
+					return
+				end
+
+				if character:FindFirstChild("AbsoluteImmortal") then
+					return
+				end
+
+				if character:FindFirstChild("BeingGrabbed") then
+					return
+				end
+
+				if character:FindFirstChild("HunterCounter") then
+					return
+				end
+
+				if character:FindFirstChild("AtomicCounter") then
+					return
+				end
+				local humanoid = character2:FindFirstChildOfClass("Humanoid")
+				if fn21(humanoid) then
+					return
+				end
+				local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+				local torso = character:FindFirstChild("Torso")
+				if not humanoid2 or not torso or torso.Transparency == 1 then
+					return
+				end
+				flag11 = true
+				local communicate = character2:FindFirstChild("Communicate")
+				if not communicate then
+					flag11 = false
+					return
+				end
+
+				if not character2:GetAttribute("HoldingSpace") then
+					local communicate2 = character2:FindFirstChild("Communicate")
+
+					pcall(communicate2.FireServer, communicate2, {
+						Goal = "KeyPress",
+						Key = Enum.KeyCode.Space,
+						MousePos = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+					})
+				end
+
+				if character2:FindFirstChild("Ragdoll") or character2:FindFirstChild("RagdollSim") then
+					communicate:FireServer({ Dash = Enum.KeyCode.S, Key = Enum.KeyCode.Q, Goal = "KeyPress" })
+				end
+
+				if character:FindFirstChild("Ragdoll") or character:FindFirstChild("RagdollSim") or humanoid2.Health <= 10 then
+					if character2:GetAttribute("HoldingM1") then
+						communicate:FireServer(unpack(tbl7))
+						task.wait(0.1)
+					end
+
+					print("spaming moves")
+
+					if not (humanoid2.Health <= 10) then
+						if not now or tick() - now >= 7 then
+							communicate:FireServer(unpack(tbl9))
+							now = tick()
+						end
+					end
+
+					VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.One, false, game)
+					task.wait(0.001)
+					VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.One, false, game)
+					task.wait(0.05)
+					VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Two, false, game)
+					task.wait(0.001)
+					VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Two, false, game)
+					task.wait(0.05)
+					VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Three, false, game)
+					task.wait(0.001)
+					VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Three, false, game)
+					task.wait(0.05)
+					VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Four, false, game)
+					task.wait(0.001)
+					VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Four, false, game)
+				else
+					task.wait(0.1)
+					print("spaming m1")
+
+					if character2:GetAttribute("mobile") then
+						communicate:FireServer(unpack(tbl8))
+					else
+						communicate:FireServer(unpack(tbl6))
+					end
+
+					task.wait(0.1)
+					communicate:FireServer(unpack(tbl7))
+					task.wait(0.1)
+				end
+			end
+
+			flag11 = false
+		end)
+	end
+
+	local function fn21(arg, arg2, arg3)
+		local cframe = CFrame.new(0, 0, 0)
+		local v3, v4 = cframe:ToEulerAnglesYXZ()
+		local cframe2 = CFrame.fromEulerAnglesYXZ(0, v4, 0)
+		return CFrame.new((CFrame.new(cframe.Position) * cframe2 * CFrame.new(0, arg2, arg3)).Position) * cframe2
+	end
+
+	local function fn22()
+		local now = nil
+		v2 = fn7()
+
+		RunService.Heartbeat:Connect(function()
+			if not flag3 then
+				if flag4 then
+					flag4 = false
+					fn19()
+					v2 = fn7()
+				end
+
+				return
+			end
+
+			if flag9 then
+				return
+			end
+
+			if not v2 then
+				flag4 = false
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			local character = v2.Character
+			local character2 = localPlayer.Character
+			if not character2 then
+				return
+			end
+
+			if localPlayer.PlayerGui.Bar.MagicHealth.Health.Bar.Size.X == UDim.new(1, 0) and not character2:FindFirstChildWhichIsA("ForceField") then
+				if not flag7 then
+					if flag4 then
+						flag4 = false
+					end
+
+					fn19()
+					flag7 = true
+
+					task.spawn(function()
+						local now2 = tick()
+
+						while true do
+							pcall(function()
+								localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150, -505.5, 32)
+							end)
+
+							RunService.RenderStepped:Wait()
+							if not (tick() - now2 >= 1 or not flag7) then
+								continue
+							end
+							break
+						end
+					end)
+
+					task.wait(0.5)
+					VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.G, false, game)
+					task.wait(0.001)
+					VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.G, false, game)
+					flag7 = false
+				end
+
+				return
+			end
+
+			if character2:GetAttribute("Ulted") then
+				flag6 = true
+				flag4 = false
+				return
+			end
+
+			flag6 = false
+			if flag8 then
+				return
+			end
+
+			if not character then
+				if flag4 then
+					flag4 = false
+				end
+
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			if character:GetAttribute("Ulted") or character:FindFirstChild("Counter") then
+				if flag4 then
+					flag4 = false
+				end
+
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			local humanoidRootPart2 = character2:FindFirstChild("HumanoidRootPart")
+			local humanoid2 = character2:FindFirstChildOfClass("Humanoid")
+
+			if not humanoidRootPart or not humanoid or not humanoidRootPart2 or not humanoid2 then
+				if flag4 then
+					flag4 = false
+				end
+
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			if character:FindFirstChild("AbsoluteImmortal") then
+				if humanoid.Health <= 20 then
+					fn19()
+					v2 = fn7()
+					return
+				end
+
+				if not now then
+					now = tick()
+				elseif tick() - now >= 5 or character:FindFirstChildOfClass("Humanoid") and character.Humanoid.Health <= 10 then
+					now = nil
+
+					if flag4 then
+						flag4 = false
+					end
+
+					fn19()
+					v2 = fn7()
+					return
+				end
+			end
+
+			if humanoid.Health <= 0 then
+				if flag4 then
+					flag4 = false
+				end
+
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			local torso = character:FindFirstChild("Torso")
+
+			if not torso or torso.Transparency == 1 then
+				if flag4 then
+					flag4 = false
+				end
+
+				fn19()
+				v2 = fn7()
+				return
+			end
+
+			if not flag4 then
+				print("[SANYA PIRAT] Targeting: " .. v2.Name)
+				flag4 = true
+				humanoid2.AutoRotate = false
+			end
+
+			humanoidRootPart2.AssemblyLinearVelocity = Vector3.zero
+			humanoidRootPart2.AssemblyAngularVelocity = Vector3.zero
+
+			if currentCamera then
+				character2:SetAttribute("NoHeadLerp", true)
+				currentCamera.CameraSubject = humanoid
+			end
+
+			if not getgenv().desync then
+				humanoidRootPart2.CFrame = fn21(humanoidRootPart, 0, 5)
+				cFrame = humanoidRootPart2.CFrame
+			else
+				cFrame = fn21(humanoidRootPart, 0, 5)
+			end
+
+			if sethiddenproperty then
+				sethiddenproperty(humanoidRootPart2, "PhysicsRepRootPart", humanoidRootPart)
+			end
+		end)
+	end
+
+	local function fn23()
+		local VirtualUser = game:GetService("VirtualUser")
+
+		localPlayer.Idled:Connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end
+
+	task.spawn(function()
+		while true do
+			local character = localPlayer.Character
+			local attribute = character and character:GetAttribute("Character")
+			character = character and character:FindFirstChild("Communicate")
+
+			if character and attribute ~= "Purple" then
+				pcall(character.FireServer, character, { Goal = "Change Character", Character = "Purple" })
+			end
+
+			task.wait(1)
+		end
+	end)
+
+	task.spawn(function()
+		local thrown = workspace:FindFirstChild("Thrown")
+
+		if thrown then
+			for _, child in pairs(thrown:GetChildren()) do
+				if child.Name:lower():find("debris") or child.Name:lower() == "part" then
+					task.spawn(pcall, _deleteNew, child)
+				end
+			end
+
+			thrown.ChildAdded:Connect(function(child)
+				if child.Name:lower():find("debris") or child.Name:lower() == "part" then
+					task.spawn(pcall, _deleteNew, child)
+				end
+			end)
+		end
+	end)
+
+	task.wait(1)
+	fn20()
+	fn22()
+	fn23()
+end
+
+task.spawn(function()
+	task.wait(1)
+
+	while true do
+		if v.webhookUrl then
+			pcall(fn6)
+			task.wait(30)
+		end
+	end
+end)
+
+task.spawn(function()
+	while true do
+		if getgenv().desync then
+			local now = tick()
+
+			repeat
+				task.wait()
+			until tick() - now >= 20 or not getgenv().desync
+
+			getgenv().desync = nil
+		end
+
+		RunService.RenderStepped:Wait()
+	end
+end)
+
+task.spawn(function()
+	while task.wait(0.25) do
+		local character = localPlayer.Character
+		local communicate = character and character:FindFirstChild("Communicate")
+
+		if communicate then
+			pcall(communicate.FireServer, communicate, { Goal = "Emote Spin" })
+		end
+	end
+end)
+
+task.spawn(function()
+	while true do
+		if (#Players:GetPlayers() <= 7 or n8 >= 7) and not flag6 and not flag8 then
+			doHopServer()
+		end
+
+		task.wait(1)
+	end
+end)
