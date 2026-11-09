@@ -5,7 +5,6 @@ local ProtectionConfig = {
     HubName = "SANYA PIRAT"
 }
 
--- Anti-Bypass Logic: Checks if the Key System successfully set the global variable
 if not _G[ProtectionConfig.SecretKey] then
     local player = game:GetService("Players").LocalPlayer
     if player then
