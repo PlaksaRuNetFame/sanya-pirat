@@ -20262,39 +20262,45 @@ end
 return Library
 end)()
 -- END EMBEDDED LIBRARY
+_G.KeyValidated = true
+getgenv().KeyValidated = true
+if Library then
+    if type(Library.InitKeySystem) == "function" then Library.InitKeySystem = function() return true end end
+    if type(Library.CreateKeySystem) == "function" then Library.CreateKeySystem = function() return true end end
+    if type(Library.KeySystem) == "function" then Library.KeySystem = function() return true end end
+end
 
-    local Window = Library:CreateWindow({
-        Name = "AlexanderPirat",
-        DefaultTheme = "AlexanderPirat",
-        Version = "TSB",
-        Icon = Library.Assets.Logo,
-        LoadingTitle = "AlexanderPirat",
-        LoadingSubtitle = "TSB",
-        LoadingDuration = 1.2,
-        Size = UDim2.fromOffset(780, 540),
-        ToggleUIKeybind = "RightControl",
-		ToggleButton = {
-    	Platform = "Both",
-    	Icon = "zap",
-		}
-
-        Home = false,
-        Backdrop = {
-            Enabled = true,
-            Weather = "Matrix",
-            Mode = "Screen",
-            Dim = true,
-            Tint = 0.5,
-            Density = 1,
-            Speed = 0.85,
-        },
-        UnsupportedExecutor = false,
-        SaveSize = false,
-        ConfigurationSaving = {
-            Enabled = false,
-            FolderName = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
-        },
-    })
+local Window = Library:CreateWindow({
+    Name = "AlexanderPirat",
+    DefaultTheme = "AlexanderPirat",
+    Version = "TSB",
+    Icon = Library.Assets.Logo,
+    LoadingTitle = "AlexanderPirat",
+    LoadingSubtitle = "TSB",
+    LoadingDuration = 1.2,
+    Size = UDim2.fromOffset(780, 540),
+    ToggleUIKeybind = "RightControl",
+    ToggleButton = {
+        Platform = "Both",
+        Icon = "zap",
+    },
+    Home = false,
+    Backdrop = {
+        Enabled = true,
+        Weather = "Matrix",
+        Mode = "Screen",
+        Dim = true,
+        Tint = 0.5,
+        Density = 1,
+        Speed = 0.85,
+    },
+    UnsupportedExecutor = false,
+    SaveSize = false,
+    ConfigurationSaving = {
+        Enabled = false,
+        FolderName = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
+    },
+})
 
     -- A previously saved library theme must not replace the requested startup palette.
     Library:SetTheme("AlexanderPirat", true)
