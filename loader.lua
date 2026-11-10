@@ -1,20 +1,10 @@
 --[[
     ═══════════════════════════════════════════
-              S A N Y A   P I R A T
+              S A N Y A   P I R A T E
             The Strongest Battlegrounds
     ═══════════════════════════════════════════
     Telegram: https://t.me/sanyapiratit
 ]]
-
-local CONFIG = {
-    Secret  = "2009",
-    Version = "1.0.0",
-    Sources = {
-        "https://raw.githubusercontent.com/PlaksaRuNetFame/sanya-pirat/main/sanya_pirat_main.lua",
-        "https://cdn.jsdelivr.net/gh/PlaksaRuNetFame/sanya-pirat@main/sanya_pirat_main.lua",
-    },
-    Telegram = "https://t.me/sanyapiratit",
-}
 
 local function notify(title, text, duration)
     pcall(function()
@@ -26,13 +16,8 @@ local function notify(title, text, duration)
     end)
 end
 
-local function fail(reason)
-    warn("[SANYA PIRAT] " .. reason)
-    notify("SANYA PIRAT", tostring(reason) .. "\n" .. CONFIG.Telegram, 10)
-end
-
 if getgenv().SANYA_PIRAT_LOADED then
-    notify("SANYA PIRAT", "Скрипт уже запущен")
+    notify("SANYA PIRATE", "Скрипт уже запущен")
     return
 end
 getgenv().SANYA_PIRAT_LOADED = true
@@ -45,47 +30,32 @@ if not game:GetService("Players").LocalPlayer then
     game:GetService("Players"):GetPropertyChangedSignal("LocalPlayer"):Wait()
 end
 
-notify("SANYA PIRAT", "Загрузка v" .. CONFIG.Version .. "...")
+notify("SANYA PIRATE", "Загрузка скрипта...")
 
-local source
+local url = "https://raw.githubusercontent.com/PlaksaRuNetFame/sanya-pirat/refs/heads/main/sanya_pirat_main.lua" .. tostring(os.time())
+local ok, body = pcall(function()
+    return game:HttpGet(url, true)
+end)
 
-for i, base in ipairs(CONFIG.Sources) do
-    local url = base .. "?v=" .. tostring(os.time())
-    local ok, body = pcall(function()
-        return game:HttpGet(url, true)
-    end)
-
-    if ok and type(body) == "string" and #body > 10000
-        and body:find("ProtectionConfig", 1, true) then
-        source = body
-        break
-    end
-
-    warn("[SANYA PIRAT] источник " .. i .. " не ответил, пробую следующий")
-    task.wait(1)
-end
-
-if not source then
+if not ok or type(body) ~= "string" or #body < 5000 then
     getgenv().SANYA_PIRAT_LOADED = nil
-    fail("Не удалось скачать скрипт. Проверь интернет или обнови экзекутор.")
+    warn("[SANYA PIRATE] Не удалось загрузить основной скрипт.")
+    notify("SANYA PIRATE", "Ошибка загрузки! Проверь ссылку на GitHub.", 10)
     return
 end
 
-local chunk, err = loadstring(source, "=SANYA_PIRAT_MAIN")
+local chunk, err = loadstring(body, "=SANYA_PIRATE_MAIN")
 if not chunk then
     getgenv().SANYA_PIRAT_LOADED = nil
-    fail("Ошибка компиляции: " .. tostring(err))
+    warn("[SANYA PIRATE] Ошибка компиляции: " .. tostring(err))
     return
 end
 
-_G[CONFIG.Secret] = true
-
-local ok, runErr = pcall(chunk)
-
-if not ok then
+local runOk, runErr = pcall(chunk)
+if not runOk then
     getgenv().SANYA_PIRAT_LOADED = nil
-    fail("Ошибка выполнения: " .. tostring(runErr))
+    warn("[SANYA PIRATE] Ошибка выполнения: " .. tostring(runErr))
     return
 end
 
-notify("SANYA PIRAT", "Загружено v" .. CONFIG.Version .. " | " .. CONFIG.Telegram, 6)
+notify("SANYA PIRATE", "Успешно загружено! t.me/sanypiratit", 6)
