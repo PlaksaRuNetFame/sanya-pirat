@@ -1,4 +1,4 @@
-local URL = "https://raw.githubusercontent.com/PlaksaRuNetFame/sanya-pirat/main/alexander_pirat_main.lua"
+local URL = "https://raw.githubusercontent.com/PlaksaRuNetFame/sanya-pirat/refs/heads/main/sanya_pirat_main.lua"
 
 local function say(text, color)
     print("[DIAG] " .. text)
