@@ -20261,15 +20261,15 @@ end
 
 return Library
 end)()
--- END EMBEDDED LIBRARY
+
 _G.KeyValidated = true
 getgenv().KeyValidated = true
-if Library then
-    if type(Library.InitKeySystem) == "function" then Library.InitKeySystem = function() return true end end
-    if type(Library.CreateKeySystem) == "function" then Library.CreateKeySystem = function() return true end end
-    if type(Library.KeySystem) == "function" then Library.KeySystem = function() return true end end
-end
 
+if Library then
+    Library.InitKeySystem = function() return true end
+    Library.CreateKeySystem = function() return true end
+    Library.KeySystem = function() return true end
+end
 local Window = Library:CreateWindow({
     Name = "AlexanderPirat",
     DefaultTheme = "AlexanderPirat",
