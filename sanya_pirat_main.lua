@@ -1,12 +1,12 @@
 --[[
     ═══════════════════════════════════════════
-            SANYA PIRATE
-          The Strongest Battlegrounds
+                    SANYA PIRATE
+             The Strongest Battlegrounds
     ═══════════════════════════════════════════
     Telegram: https://t.me
 ]]
 
-local ALEXANDER_PIRAT_LINK = "https://t.me/sanyapiratit"
+local ALEXANDER_PIRAT_LINK = "https://t.me"
 
 if getgenv().ScriptExecuted then
 	return
@@ -18,9 +18,12 @@ end
 
 getgenv().ScriptExecuted = true
 
-local flag
-flag = false
-local TweenService
+local flag = false
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+
+local flag2 = true -- Unlocks Premium features
+_G.KeyValidated = true
 
 		return 0
 	end
