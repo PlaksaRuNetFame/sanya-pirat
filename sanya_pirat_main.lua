@@ -1,10 +1,19 @@
+--[[
+    ═══════════════════════════════════════════
+            НЕКИЙ АЛЕКСАНДР ПИРАТ
+          The Strongest Battlegrounds
+    ═══════════════════════════════════════════
+    Telegram: https://t.me/sanyapiratit
+]]
+
 local ProtectionConfig = {
     SecretKey = "2009",
     
     -- The name of your Hub (shown in the kick message if they try to bypass)
-    HubName = "SANYA PIRAT"
+    HubName = "Некий Александр Пират"
 }
 
+-- Anti-Bypass Logic: Checks if the Key System successfully set the global variable
 if not _G[ProtectionConfig.SecretKey] then
     local player = game:GetService("Players").LocalPlayer
     if player then
@@ -17,9 +26,7 @@ end
 -- ð YOUR MAIN SCRIPT CODE STARTS HERE ð
 -------------------------------------------------------------------------------
 
-print(ProtectionConfig.HubName .. " Loaded Successfully!")
-
-local SANYA_PIRAT_LINK = "https://t.me/sanyapiratit"
+local ALEXANDER_PIRAT_LINK = "https://t.me/sanyapiratit"
 
 do
 	local v = pcall
@@ -36,7 +43,7 @@ do
 	local str = "hduSjOT3xk44"
 
 	local function fn()
-		v2("[SANYA PIRAT] This script could not verify its runtime environment.", 0)
+		v2("[Некий Александр Пират] This script could not verify its runtime environment.", 0)
 	end
 
 	local tbl = {}
@@ -307,6 +314,10 @@ if getgenv().ScriptExecuted then
 	return
 end
 
+if identifyexecutor() then
+	identifyexecutor()
+end
+
 getgenv().ScriptExecuted = true
 local flag
 flag = false
@@ -366,7 +377,7 @@ task.spawn(function()
 		fn2(v)
 	end
 
-	print("[zkayreal] Super Fix Lag Activated!")
+	print("[alexanderpirat] Super Fix Lag Activated!")
 end)
 
 local tbl
@@ -391,12 +402,12 @@ HttpService = game:GetService("HttpService")
 local v, fn
 
 do
-	local str = "SanyaPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name
+	local str = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name
 	local str2 = str .. "/settings.json"
 
 	local function fn2()
-		if not isfolder("SanyaPiratHub") then
-			makefolder("SanyaPiratHub")
+		if not isfolder("AlexanderPiratHub") then
+			makefolder("AlexanderPiratHub")
 		end
 
 		if not isfolder(str) then
@@ -413,7 +424,7 @@ do
 		if ok then
 			writefile(str2, result)
 		else
-			warn("[SANYA PIRAT] Failed to encode settings:", result)
+			warn("[Некий Александр Пират] Failed to encode settings:", result)
 		end
 	end
 
@@ -424,12 +435,12 @@ do
 		end
 		local ok, result = pcall(readfile, str2)
 		if not ok then
-			warn("[SANYA PIRAT] Failed to read settings file:", result)
+			warn("[Некий Александр Пират] Failed to read settings file:", result)
 			return
 		end
 		local ok2, result2 = pcall(HttpService.JSONDecode, HttpService, result)
 		if not ok2 or type(result2) ~= "table" then
-			warn("[SANYA PIRAT] Failed to decode settings file, using defaults")
+			warn("[Некий Александр Пират] Failed to decode settings file, using defaults")
 			return
 		end
 
@@ -630,7 +641,7 @@ local function preset(background, surface, surface2, surface3, strokeColor, stro
 end
 
 Library.ThemePresets = {
-    SANYA_PIRAT = preset({ 5, 8, 6 }, { 8, 13, 10 }, { 12, 20, 15 }, { 19, 33, 24 }, { 25, 51, 34 }, { 40, 128, 74 }, { 45, 235, 132 }, { 3, 18, 10 }, { 228, 246, 234 }, { 120, 157, 133 }),
+    AlexanderPirat = preset({ 5, 8, 6 }, { 8, 13, 10 }, { 12, 20, 15 }, { 19, 33, 24 }, { 25, 51, 34 }, { 40, 128, 74 }, { 45, 235, 132 }, { 3, 18, 10 }, { 228, 246, 234 }, { 120, 157, 133 }),
     -- Colours here must not be pure white, pure black or any other colour the
     -- library hard-codes, or those objects would get bound to the theme.
     Midnight = preset({ 15, 18, 26 }, { 18, 22, 31 }, { 22, 26, 37 }, { 37, 44, 60 }, { 34, 40, 55 }, { 70, 84, 112 }, { 128, 160, 246 }, { 14, 18, 30 }, { 228, 232, 242 }, { 116, 126, 148 }),
@@ -663,7 +674,7 @@ Library.ThemePresets = {
     Coffee = preset({ 20, 16, 13 }, { 25, 20, 16 }, { 30, 24, 19 }, { 48, 39, 31 }, { 45, 36, 29 }, { 104, 82, 62 }, { 214, 170, 124 }, { 32, 22, 12 }, { 240, 230, 218 }, { 142, 124, 108 }),
 }
 
-Library.ThemeName = "SANYA_PIRAT"
+Library.ThemeName = "AlexanderPirat"
 
 Library.Assets = {
     Shadow = "rbxassetid://6014261993",
@@ -686,7 +697,7 @@ local function loadLucide()
         lucideSet = result
     else
         lucideSet = false
-        warn("[AirFlow] lucide icons unavailable: " .. tostring(result))
+        warn("[ALEXANDER PIRAT] lucide icons unavailable: " .. tostring(result))
     end
     return lucideSet
 end
@@ -709,16 +720,16 @@ local FONT_WEIGHTS = {
 function Library:LoadFont(opts)
     opts = normalize(opts, {})
     if type(writefile) ~= "function" or type(isfile) ~= "function" or typeof(getcustomasset) ~= "function" then
-        warn("[AirFlow] custom fonts need writefile, isfile and getcustomasset")
+        warn("[ALEXANDER PIRAT] custom fonts need writefile, isfile and getcustomasset")
         return false
     end
     local name = opts.Name or "CustomFont"
     local weights = opts.Weights or FONT_PRESETS[name]
     if type(weights) ~= "table" then
-        warn("[AirFlow] no font weights for " .. name)
+        warn("[ALEXANDER PIRAT] no font weights for " .. name)
         return false
     end
-    local folder = opts.Folder or "AirFlowFonts"
+    local folder = opts.Folder or "AlexanderPiratFonts"
     pcall(function()
         if type(isfolder) == "function" and type(makefolder) == "function" and not isfolder(folder) then
             makefolder(folder)
@@ -738,7 +749,7 @@ function Library:LoadFont(opts)
             if ok then
                 table.insert(faces, { name = weightName, weight = info[1], style = "normal", assetId = getcustomasset(path) })
             else
-                warn("[AirFlow] could not download " .. weightName .. " weight of " .. name)
+                warn("[ALEXANDER PIRAT] could not download " .. weightName .. " weight of " .. name)
             end
         end
     end
@@ -816,7 +827,7 @@ local function resolveIcon(icon)
     elseif type(entry) == "string" then
         return entry
     end
-    warn("[AirFlow] unknown lucide icon: " .. name)
+    warn("[ALEXANDER PIRAT] unknown lucide icon: " .. name)
     return nil
 end
 
@@ -832,7 +843,7 @@ Library.Fonts = {
 local Theme = Library.Theme
 local Assets = Library.Assets
 
--- The supplied SANYA_PIRAT mark is embedded as a transparent PNG.
+-- The supplied AlexanderPirat mark is embedded as a transparent PNG.
 -- Only its empty outer padding was trimmed; its original colors are preserved.
 -- File/custom-asset support is required to show a local image in Roblox.
 local EMBEDDED_LOGO = [=[
@@ -1423,7 +1434,7 @@ do
             error("writefile is unavailable", 0)
         end
         -- Use a flat path so the logo does not require folder-creation APIs.
-        local path = "SANYA_PIRATLogo.png"
+        local path = "AlexanderPiratLogo.png"
         writefile(path, decodeBase64(EMBEDDED_LOGO))
         local function tryAsset(resolver)
             if type(resolver) ~= "function" then
@@ -1441,7 +1452,7 @@ do
         end
     end)
     if not ok then
-        warn("[SANYA PIRAT] Custom logo unavailable: " .. tostring(reason))
+        warn("[Некий Александр Пират] Custom logo unavailable: " .. tostring(reason))
     end
 end
 local Fonts = Library.Fonts
@@ -1793,7 +1804,7 @@ local function applyIcon(imageLabel, icon, fixedSize)
     imageLabel.Image = image
     imageLabel.ImageRectOffset = rectOffset or Vector2.zero
     imageLabel.ImageRectSize = rectSize or Vector2.zero
-    -- SANYA_PIRAT's full-color mark keeps its supplied gradient, not a theme tint.
+    -- AlexanderPirat's full-color mark keeps its supplied gradient, not a theme tint.
     local keepColours = custom and not tint
     imageLabel:SetAttribute("CustomIcon", keepColours or nil)
     if keepColours then
@@ -2047,7 +2058,7 @@ local function safeCall(callback, ...)
     end
     local ok, err = pcall(callback, ...)
     if not ok then
-        warn("[AirFlow] callback error: " .. tostring(err))
+        warn("[ALEXANDER PIRAT] callback error: " .. tostring(err))
     end
 end
 
@@ -2338,7 +2349,7 @@ function Tab:Label(opts)
                 if ok and value ~= nil then
                     text_.Text = Library._rich(value)
                 elseif not ok then
-                    warn("[AirFlow] label update error: " .. tostring(value))
+                    warn("[ALEXANDER PIRAT] label update error: " .. tostring(value))
                 end
                 task.wait(rate)
             end
@@ -11151,7 +11162,7 @@ function Tab:Status(opts)
                     end
                     render(true)
                 else
-                    warn("[AirFlow] status update error: " .. tostring(value))
+                    warn("[ALEXANDER PIRAT] status update error: " .. tostring(value))
                 end
                 task.wait(rate)
             end
@@ -11507,7 +11518,7 @@ function Tab:StatusList(opts)
                             handle:Set(result)
                         end
                     else
-                        warn("[AirFlow] status list update error: " .. tostring(result))
+                        warn("[ALEXANDER PIRAT] status list update error: " .. tostring(result))
                     end
                 end
                 task.wait(rate)
@@ -11682,7 +11693,7 @@ function Tab:Image(opts)
             return false, "replaced by a newer image"
         end
         if not asset then
-            warn("[AirFlow] image: " .. tostring(err))
+            warn("[ALEXANDER PIRAT] image: " .. tostring(err))
             return false, err
         end
         image.ImageTransparency = 1
@@ -15662,7 +15673,7 @@ function Window:CloudConfigs(opts)
     local pageSize = math.max(math.floor(tonumber(opts.PageSize) or 20), 1)
     local tagList = type(opts.Tags) == "table" and opts.Tags or {}
     local maxTags = math.max(math.floor(tonumber(opts.MaxTags) or 3), 0)
-    local anonName = tostring(opts.StreamerName or "SANYA_PIRAT User")
+    local anonName = tostring(opts.StreamerName or "AlexanderPirat User")
 
     local cloud = { Tab = tab }
     local records, byId = {}, {}
@@ -16823,7 +16834,7 @@ function Window:CloudConfigs(opts)
                     page -= 1
                 end
                 if not ok then
-                    warn("[AirFlow] cloud OnFetch error: " .. tostring(list))
+                    warn("[ALEXANDER PIRAT] cloud OnFetch error: " .. tostring(list))
                 end
                 hasMore = more and hasMore or false
                 moreButton.Visible = false
@@ -17697,7 +17708,7 @@ function Window:CloudConfigs(opts)
             submitText.Text = editing and "Save changes" or "Publish"
             if not ok or result == false then
                 if not ok then
-                    warn("[AirFlow] cloud publish error: " .. tostring(result))
+                    warn("[ALEXANDER PIRAT] cloud publish error: " .. tostring(result))
                 end
                 showError(ok and reason and tostring(reason) or "Something went wrong, try again")
                 return
@@ -20709,7 +20720,7 @@ function Window:Destroy()
         end
     end)
     if not ok then
-        warn("[AirFlow] unload animation failed, removing the window directly: " .. tostring(err))
+        warn("[ALEXANDER PIRAT] unload animation failed, removing the window directly: " .. tostring(err))
         remove()
         return
     end
@@ -20835,11 +20846,11 @@ end)()
 -- END EMBEDDED LIBRARY
 
     local Window = Library:CreateWindow({
-        Name = "SANYA_PIRAT",
-        DefaultTheme = "SANYA_PIRAT",
+        Name = "AlexanderPirat",
+        DefaultTheme = "AlexanderPirat",
         Version = "TSB",
         Icon = Library.Assets.Logo,
-        LoadingTitle = "SANYA_PIRAT",
+        LoadingTitle = "AlexanderPirat",
         LoadingSubtitle = "TSB",
         LoadingDuration = 1.2,
         Size = UDim2.fromOffset(780, 540),
@@ -20862,12 +20873,12 @@ end)()
         SaveSize = false,
         ConfigurationSaving = {
             Enabled = false,
-            FolderName = "SanyaPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
+            FolderName = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
         },
     })
 
     -- A previously saved library theme must not replace the requested startup palette.
-    Library:SetTheme("SANYA_PIRAT", true)
+    Library:SetTheme("AlexanderPirat", true)
 
     local Farm = Window:CreateTab({ Name = "Farm", Icon = "zap" })
     local Controls = Farm:AddLeftGroupbox({ Name = "Farming", Icon = "repeat" })
@@ -21082,25 +21093,25 @@ end)()
     })
     Settings:CreateParagraph({
         Title = "Credits",
-        Content = "SANYA_PIRAT interface | Original credit: @ltzhex | idea by: @theomens_",
+        Content = "AlexanderPirat interface | Original credit: @ltzhex | idea by: @theomens_",
     })
 
-    local Discord = Window:CreateTab({ Name = "Discord", Icon = "message-circle" })
+    local Discord = Window:CreateTab({ Name = "Telegram", Icon = "message-circle" })
     Discord:CreateParagraph({
-        Title = "SANYA_PIRAT community",
-        Content = "Join the SANYA_PIRAT Discord for updates and support.\n" .. SANYA_PIRAT_LINK,
+        Title = "Некий Александр Пират",
+        Content = "Join the AlexanderPirat Discord for updates and support.\n" .. ALEXANDER_PIRAT_LINK,
     })
     Discord:CreateButton({
-        Name = "Copy Discord invite",
+        Name = "Скопировать ссылку",
         Icon = "copy",
         Style = "Primary",
         Callback = function()
-            Window:CopyToClipboard(SANYA_PIRAT_LINK, "SANYA_PIRAT Discord invite")
+            Window:CopyToClipboard(ALEXANDER_PIRAT_LINK, "AlexanderPirat Discord invite")
         end,
     })
     Discord:CreateParagraph({
-        Title = "How to join",
-        Content = "Copy the invite, then paste it into your browser or Discord to join the community.",
+        Title = "Как зайти",
+        Content = "Скопируй ссылку и открой в браузере или Телеграме.",
     })
 end
 
@@ -21206,7 +21217,7 @@ do
 		local tbl4 = {
 			embeds = {
 				{
-					title = "SANYA PIRAT",
+					title = "Некий Александр Пират",
 					color = 0x2DEB84,
 					description = string.format([[**User:** ||%s||
 **Kills farmed:** %s
@@ -21318,7 +21329,7 @@ do
 		folder.Name = "MovingExclusion"
 
 		pcall(function()
-			folder:SetAttribute("SanyaPiratOwned", true)
+			folder:SetAttribute("AlexanderPiratOwned", true)
 		end)
 
 		folder.Parent = parent
@@ -21990,26 +22001,26 @@ do
 					local character = player.Character
 
 					if character then
-						-- БЕЗОПАСНАЯ ПРОВЕРКА: Сначала ищем части, чтобы скрипт не падал
-						local rootPart = character:FindFirstChild("HumanoidRootPart")
-						local humanoid2 = character:FindFirstChildOfClass("Humanoid")
+						if character:FindFirstChild("HumanoidRootPart") then
+							local humanoid2 = character:FindFirstChildOfClass("Humanoid")
 
-						if rootPart and humanoid2 then
-							if humanoid2.Health then
-								local torso = character:FindFirstChild("Torso")
+							if humanoid2 then
+								if humanoid2.Health then
+									local torso = character:FindFirstChild("Torso")
 
-								if not (not torso or torso.Transparency == 1) then
-									if not fn20(humanoid2, "15128849047") then
-										if not character:FindFirstChildWhichIsA("ForceField") then
-											if not (character:GetAttribute("Ulted") and (character:GetAttribute("Character") == "Batter" or character:GetAttribute("Character") == "Bald") or character:FindFirstChild("Counter")) then
-												local position = rootPart.Position
+									if not (not torso or torso.Transparency == 1) then
+										if not fn20(humanoid2, "15128849047") then
+											if not character:FindFirstChildWhichIsA("ForceField") then
+												if not (character:GetAttribute("Ulted") and (character:GetAttribute("Character") == "Batter" or character:GetAttribute("Character") == "Bald") or character:FindFirstChild("Counter")) then
+													local position = character.HumanoidRootPart.Position
 
-												if position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700 then
-													local health2 = humanoid2.Health
+													if position.X >= -500 and position.X <= 800 and position.Z >= -600 and position.Z <= 700 then
+														local health2 = humanoid2.Health
 
-													if health2 > 0 and health2 < huge then
-														huge = health2
-														v6 = player
+														if health2 > 0 and health2 < huge then
+															huge = health2
+															v6 = player
+														end
 													end
 												end
 											end
@@ -22827,7 +22838,7 @@ do
 		character:GetAttributeChangedSignal("Ulted"):Connect(function()
 			if localPlayer.Character:GetAttribute("Ulted") then
 				n8 += 1
-				print("[SANYA PIRAT] Ulted detected, time ulted: " .. tostring(n8))
+				print("[Некий Александр Пират] Ulted detected, time ulted: " .. tostring(n8))
 			end
 		end)
 	end)
@@ -22838,7 +22849,7 @@ do
 		localPlayer.Character:GetAttributeChangedSignal("Ulted"):Connect(function()
 			if localPlayer.Character:GetAttribute("Ulted") then
 				n8 += 1
-				print("[SANYA PIRAT] Ulted detected, time ulted: " .. tostring(n8))
+				print("[Некий Александр Пират] Ulted detected, time ulted: " .. tostring(n8))
 			end
 		end)
 	end
@@ -22942,12 +22953,12 @@ getgenv().renderEnabled=%s
 		end
 
 		if flag11 then
-			localPlayer:Kick("[SANYA PIRAT] Kicked by force-hop system.")
+			localPlayer:Kick("[Некий Александр Пират] Kicked by force-hop system.")
 		end
 
 		task.spawn(function()
 			while true do
-				print("[SANYA PIRAT] Hopping ...")
+				print("[Некий Александр Пират] Hopping ...")
 
 				if not flag11 then
 					response = game:GetService("ReplicatedStorage"):WaitForChild("Ranked"):WaitForChild("GetServerBrowserData"):InvokeServer(unpack(tbl4))
@@ -22979,7 +22990,7 @@ getgenv().renderEnabled=%s
 	end
 
 	uiActions.HopServer = function()
-		print("[SANYA PIRAT] Hop server manually...")
+		print("[Некий Александр Пират] Hop server manually...")
 		flag10 = true
 		doHopServer()
 	end
@@ -23212,7 +23223,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			print("[SANYA PIRAT] Received hop server command for: " .. name)
+			print("[Некий Александр Пират] Received hop server command for: " .. name)
 			flag10 = true
 			doHopServer()
 		end
@@ -23229,7 +23240,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			warn("[SANYA PIRAT] Ignored duplicate session kick")
+			warn("[Некий Александр Пират] Ignored duplicate session kick")
 		end
 
 		if result.command == "kill_session" then
@@ -23244,7 +23255,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			warn("[SANYA PIRAT] Ignored admin kick")
+			warn("[Некий Александр Пират] Ignored admin kick")
 		end
 	end
 
@@ -23257,12 +23268,12 @@ getgenv().renderEnabled=%s
 			return false, tostring(result)
 		end
 		flag = true
-		print("[SANYA PIRAT] Server connected")
+		print("[Некий Александр Пират] Server connected")
 		getgenv().PBF_WS.OnMessage:Connect(fn11)
 
 		getgenv().PBF_WS.OnClose:Connect(function()
 			flag = false
-			print("[SANYA PIRAT] Server closed")
+			print("[Некий Александр Пират] Server closed")
 		end)
 
 		return true
@@ -23274,7 +23285,7 @@ getgenv().renderEnabled=%s
 
 		while not flag12 do
 			n11 += 1
-			print("[SANYA PIRAT] Connecting... (attempt " .. n11 .. ")")
+			print("[Некий Александр Пират] Connecting... (attempt " .. n11 .. ")")
 			local flag13, flag14
 
 			if fn12() then
@@ -23283,28 +23294,28 @@ getgenv().renderEnabled=%s
 				end
 
 				if not flag12 then
-					print("[SANYA PIRAT] Disconnected, reconnecting in " .. n10 .. "s...")
+					print("[Некий Александр Пират] Disconnected, reconnecting in " .. n10 .. "s...")
 					task.wait(2)
 					n12 = 2
 					flag13 = n11 >= n9
 					flag14 = flag13 and not flag
 
 					if flag14 then
-						warn("[SANYA PIRAT] Max retries reached, giving up")
+						warn("[Некий Александр Пират] Max retries reached, giving up")
 						break
 					else
 						continue
 					end
 				end
 			else
-				warn("[SANYA PIRAT] Connect failed (attempt " .. n11 .. "), retrying in " .. n12 .. "s...")
+				warn("[Некий Александр Пират] Connect failed (attempt " .. n11 .. "), retrying in " .. n12 .. "s...")
 				task.wait(n12)
 				n12 = math.min(n12 * 2, 30)
 				flag13 = n11 >= n9
 				flag14 = flag13 and not flag
 
 				if flag14 then
-					warn("[SANYA PIRAT] Max retries reached, giving up")
+					warn("[Некий Александр Пират] Max retries reached, giving up")
 					break
 				else
 					continue
@@ -23371,7 +23382,7 @@ getgenv().renderEnabled=%s
 		local flag13 = false
 
 		for k, v3 in pairs(arg) do
-			print("[SanyaPiratClanScan] Clan detected: [" .. k .. "] â " .. #v3 .. " members")
+			print("[AlexanderPiratClanScan] Clan detected: [" .. k .. "] â " .. #v3 .. " members")
 
 			for _, v4 in ipairs(v3) do
 				print("  - " .. v4.player.Name .. " (" .. v4.player.DisplayName .. ") matched via " .. v4.source .. ": " .. v4.original)
@@ -23381,22 +23392,22 @@ getgenv().renderEnabled=%s
 		end
 
 		if not flag13 then
-			print("[SanyaPiratClanScan] No clans detected")
+			print("[AlexanderPiratClanScan] No clans detected")
 		else
-			print("[SanyaPiratClanScan] Clans detected, hop server...")
+			print("[AlexanderPiratClanScan] Clans detected, hop server...")
 			flag10 = true
 			doHopServer()
 		end
 	end
 
 	task.spawn(function()
-		print("[SanyaPiratClanScan] Scanning server...")
+		print("[AlexanderPiratClanScan] Scanning server...")
 		local v3 = fn13()
 		fn14(v3)
 
 		Players2.PlayerAdded:Connect(function()
 			task.wait(1)
-			print("[SanyaPiratClanScan] New player joined, rescanning...")
+			print("[AlexanderPiratClanScan] New player joined, rescanning...")
 			local v4 = fn13()
 			fn14(v4)
 		end)
@@ -25562,7 +25573,7 @@ do
 			end
 
 			if not flag4 then
-				print("[SANYA PIRAT] Targeting: " .. v2.Name)
+				print("[Некий Александр Пират] Targeting: " .. v2.Name)
 				flag4 = true
 				humanoid2.AutoRotate = false
 			end
