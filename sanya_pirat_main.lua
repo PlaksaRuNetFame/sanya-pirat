@@ -1,308 +1,12 @@
---[[
-    ═══════════════════════════════════════════
-                    SANYA PIRATE
-             The Strongest Battlegrounds
-    ═══════════════════════════════════════════
-    Telegram: https://t.me
-]]
+local ProtectionConfig = { HubName = "CYBRION PREMIUM PIRATED" }
 
-local ALEXANDER_PIRAT_LINK = "https://t.me"
+print(ProtectionConfig.HubName .. " Loaded Successfully!")
 
-if getgenv().ScriptExecuted then
-	return
-end
 
-if identifyexecutor() then
-	identifyexecutor()
-end
+local HUB_CONTACT = "https://t.me/sanyapiratit"
 
 getgenv().ScriptExecuted = true
 
-local flag = false
-local TweenService = game:GetService("TweenService")
-local RunService = game:GetService("RunService")
-
-local flag2 = true -- Unlocks Premium features
-_G.KeyValidated = true
-
-		return 0
-	end
-
-	local str = "hduSjOT3xk44"
-
-	local function fn()
-		v2("[Некий Александр Пират] This script could not verify its runtime environment.", 0)
-	end
-
-	local tbl = {}
-
-	tbl[#tbl + 1] = function()
-		if v4(Enum.Material.Plastic) ~= "EnumItem" then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		local HttpService = game:GetService("HttpService")
-		local json = HttpService:JSONEncode({ p = true })
-
-		if v3(json) ~= "string" then
-			v2("x")
-		end
-
-		local data = HttpService:JSONDecode(json)
-
-		if v3(data) ~= "table" or data.p ~= true then
-			v2("x")
-		end
-
-		local v7 = HttpService:GenerateGUID(false)
-
-		if v3(v7) ~= "string" or #v7 ~= 36 or string.sub(v7, 9, 9) ~= "-" then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		local n = Vector3.new(1, 2, 3) + Vector3.one
-
-		if v4(n) ~= "Vector3" then
-			v2("x")
-		end
-
-		if n.X ~= 2 or n.Y ~= 3 or n.Z ~= 4 then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		local Workspace_ = game:GetService("Workspace")
-
-		if v4(Workspace_) ~= "Instance" then
-			v2("x")
-		end
-
-		if Workspace_:IsA("Workspace") ~= true then
-			v2("x")
-		end
-
-		if Workspace_:IsA("NC_" .. str) ~= false then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		if v(getfenv, 2147483647) then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		if v(function()
-			return game()
-		end) then
-			v2("x")
-		end
-
-		if v(function()
-			for k in game, nil, nil do
-			end
-		end) then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		local part, v7 = v(Instance.new, "Part")
-
-		if not part or v4(v7) ~= "Instance" then
-			v2("x")
-		end
-
-		local name = "P_" .. str
-		v7.Name = name
-
-		if v7.Name ~= name then
-			v2("x")
-		end
-
-		if v(function()
-			return v7["NP_" .. str]
-		end) then
-			v2("x")
-		end
-
-		v(function()
-			v7:Destroy()
-		end)
-	end
-
-	tbl[#tbl + 1] = function()
-		if v4(game) ~= "Instance" then
-			v2("x")
-		end
-	end
-
-	tbl[#tbl + 1] = function()
-		if v(Instance.new, "NC_" .. str .. tostring(random(1, 1000000))) then
-			v2("x")
-		end
-	end
-
-	local flag = false
-
-	for _, v7 in v6(tbl) do
-		if not v(v7) then
-			flag = true
-		end
-	end
-
-	local n = 0
-
-	local function fn2(arg)
-		if not v(arg) then
-			n += 1
-		end
-	end
-
-	local tbl2 = {}
-
-	tbl2[#tbl2 + 1] = function()
-		local info = debug and debug.info
-		if v3(info) ~= "function" then
-			return
-		end
-		local n2 = 0
-
-		if info(v, "s") ~= "[C]" then
-			n2 = 1
-		end
-
-		if info(v3, "s") ~= "[C]" then
-			n2 += 1
-		end
-
-		if info(v4, "s") ~= "[C]" then
-			n2 += 1
-		end
-
-		if n2 >= 2 then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local info = debug and debug.info
-
-		if v3(info) == "function" and info(print, "s") ~= "[C]" then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local n2 = 0
-
-		local connection = game:GetService("RunService").Heartbeat:Connect(function()
-			n2 += 1
-		end)
-
-		local n3 = 0
-
-		while true do
-			task.wait()
-			n3 += 1
-			if not (n2 >= 2 or n3 >= 8) then
-				continue
-			end
-			break
-		end
-
-		connection:Disconnect()
-
-		if n2 < 2 then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local localPlayer = game:GetService("Players").LocalPlayer
-
-		if v4(localPlayer) ~= "Instance" then
-			v2("x")
-		end
-
-		local userId = localPlayer.UserId
-
-		if v3(userId) ~= "number" or userId <= 0 then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local count = collectgarbage("count")
-		local tbl3 = {}
-
-		for i = 1, 400 do
-			tbl3[i] = { i }
-		end
-
-		if collectgarbage("count") <= count then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local flag2 = false
-
-		local function fn3(...)
-			if v5("#", ...) > 0 then
-				flag2 = true
-			end
-		end
-
-		fn3()
-
-		if flag2 then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local tbl3 = {}
-
-		local v7, v8 = v(function()
-			v2(tbl3)
-		end)
-
-		if v8 ~= tbl3 then
-			v2("x")
-		end
-	end
-
-	tbl2[#tbl2 + 1] = function()
-		local now = os.clock()
-		task.wait()
-
-		if os.clock() - now <= 0 then
-			v2("x")
-		end
-	end
-
-	for _, v7 in v6(tbl2) do
-		fn2(v7)
-	end
-
-if getgenv().ScriptExecuted then
-	return
-end
-
-if identifyexecutor() then
-	identifyexecutor()
-end
-
-getgenv().ScriptExecuted = true
-local flag
-flag = false
 local TweenService
 TweenService = game:GetService("TweenService")
 local RunService
@@ -359,7 +63,7 @@ task.spawn(function()
 		fn2(v)
 	end
 
-	print("[alexanderpirat] Super Fix Lag Activated!")
+	print("[CYBRION PREMIUM PIRATED] Super Fix Lag Activated!")
 end)
 
 local tbl
@@ -384,12 +88,12 @@ HttpService = game:GetService("HttpService")
 local v, fn
 
 do
-	local str = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name
+	local str = "CybrionPremiumPirated/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name
 	local str2 = str .. "/settings.json"
 
 	local function fn2()
-		if not isfolder("AlexanderPiratHub") then
-			makefolder("AlexanderPiratHub")
+		if not isfolder("CybrionPremiumPirated") then
+			makefolder("CybrionPremiumPirated")
 		end
 
 		if not isfolder(str) then
@@ -406,7 +110,7 @@ do
 		if ok then
 			writefile(str2, result)
 		else
-			warn("[Некий Александр Пират] Failed to encode settings:", result)
+			warn("[CYBRION PREMIUM PIRATED] Failed to encode settings:", result)
 		end
 	end
 
@@ -417,12 +121,12 @@ do
 		end
 		local ok, result = pcall(readfile, str2)
 		if not ok then
-			warn("[Некий Александр Пират] Failed to read settings file:", result)
+			warn("[CYBRION PREMIUM PIRATED] Failed to read settings file:", result)
 			return
 		end
 		local ok2, result2 = pcall(HttpService.JSONDecode, HttpService, result)
 		if not ok2 or type(result2) ~= "table" then
-			warn("[Некий Александр Пират] Failed to decode settings file, using defaults")
+			warn("[CYBRION PREMIUM PIRATED] Failed to decode settings file, using defaults")
 			return
 		end
 
@@ -623,7 +327,7 @@ local function preset(background, surface, surface2, surface3, strokeColor, stro
 end
 
 Library.ThemePresets = {
-    AlexanderPirat = preset({ 5, 8, 6 }, { 8, 13, 10 }, { 12, 20, 15 }, { 19, 33, 24 }, { 25, 51, 34 }, { 40, 128, 74 }, { 45, 235, 132 }, { 3, 18, 10 }, { 228, 246, 234 }, { 120, 157, 133 }),
+    CYBRION PREMIUM PIRATED = preset({ 5, 8, 6 }, { 8, 13, 10 }, { 12, 20, 15 }, { 19, 33, 24 }, { 25, 51, 34 }, { 40, 128, 74 }, { 45, 235, 132 }, { 3, 18, 10 }, { 228, 246, 234 }, { 120, 157, 133 }),
     -- Colours here must not be pure white, pure black or any other colour the
     -- library hard-codes, or those objects would get bound to the theme.
     Midnight = preset({ 15, 18, 26 }, { 18, 22, 31 }, { 22, 26, 37 }, { 37, 44, 60 }, { 34, 40, 55 }, { 70, 84, 112 }, { 128, 160, 246 }, { 14, 18, 30 }, { 228, 232, 242 }, { 116, 126, 148 }),
@@ -656,7 +360,7 @@ Library.ThemePresets = {
     Coffee = preset({ 20, 16, 13 }, { 25, 20, 16 }, { 30, 24, 19 }, { 48, 39, 31 }, { 45, 36, 29 }, { 104, 82, 62 }, { 214, 170, 124 }, { 32, 22, 12 }, { 240, 230, 218 }, { 142, 124, 108 }),
 }
 
-Library.ThemeName = "AlexanderPirat"
+Library.ThemeName = "CYBRION PREMIUM PIRATED"
 
 Library.Assets = {
     Shadow = "rbxassetid://6014261993",
@@ -679,7 +383,7 @@ local function loadLucide()
         lucideSet = result
     else
         lucideSet = false
-        warn("[ALEXANDER PIRAT] lucide icons unavailable: " .. tostring(result))
+        warn("[CYBRION PREMIUM PIRATED] lucide icons unavailable: " .. tostring(result))
     end
     return lucideSet
 end
@@ -702,16 +406,16 @@ local FONT_WEIGHTS = {
 function Library:LoadFont(opts)
     opts = normalize(opts, {})
     if type(writefile) ~= "function" or type(isfile) ~= "function" or typeof(getcustomasset) ~= "function" then
-        warn("[ALEXANDER PIRAT] custom fonts need writefile, isfile and getcustomasset")
+        warn("[CYBRION PREMIUM PIRATED] custom fonts need writefile, isfile and getcustomasset")
         return false
     end
     local name = opts.Name or "CustomFont"
     local weights = opts.Weights or FONT_PRESETS[name]
     if type(weights) ~= "table" then
-        warn("[ALEXANDER PIRAT] no font weights for " .. name)
+        warn("[CYBRION PREMIUM PIRATED] no font weights for " .. name)
         return false
     end
-    local folder = opts.Folder or "AlexanderPiratFonts"
+    local folder = opts.Folder or "CYBRION PREMIUM PIRATEDFonts"
     pcall(function()
         if type(isfolder) == "function" and type(makefolder) == "function" and not isfolder(folder) then
             makefolder(folder)
@@ -731,7 +435,7 @@ function Library:LoadFont(opts)
             if ok then
                 table.insert(faces, { name = weightName, weight = info[1], style = "normal", assetId = getcustomasset(path) })
             else
-                warn("[ALEXANDER PIRAT] could not download " .. weightName .. " weight of " .. name)
+                warn("[CYBRION PREMIUM PIRATED] could not download " .. weightName .. " weight of " .. name)
             end
         end
     end
@@ -809,7 +513,7 @@ local function resolveIcon(icon)
     elseif type(entry) == "string" then
         return entry
     end
-    warn("[ALEXANDER PIRAT] unknown lucide icon: " .. name)
+    warn("[CYBRION PREMIUM PIRATED] unknown lucide icon: " .. name)
     return nil
 end
 
@@ -825,8 +529,271 @@ Library.Fonts = {
 local Theme = Library.Theme
 local Assets = Library.Assets
 
+-- The supplied CYBRION PREMIUM PIRATED mark is embedded as a transparent PNG.
+-- Only its empty outer padding was trimmed; its original colors are preserved.
+-- File/custom-asset support is required to show a local image in Roblox.
 local EMBEDDED_LOGO = [=[
-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
+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
 ]=]
 
 local function decodeBase64(data)
@@ -857,7 +824,8 @@ do
         if type(writefile) ~= "function" then
             error("writefile is unavailable", 0)
         end
-        local path = "SanyaPiratLogoNew.png"
+        -- Use a flat path so the logo does not require folder-creation APIs.
+        local path = "CYBRION PREMIUM PIRATEDPremiumPiratedLogo.jpg"
         writefile(path, decodeBase64(EMBEDDED_LOGO))
         local function tryAsset(resolver)
             if type(resolver) ~= "function" then
@@ -875,7 +843,7 @@ do
         end
     end)
     if not ok then
-        warn("[Некий Александр Пират] Custom logo unavailable: " .. tostring(reason))
+        warn("[CYBRION PREMIUM PIRATED] Custom logo unavailable: " .. tostring(reason))
     end
 end
 local Fonts = Library.Fonts
@@ -927,6 +895,11 @@ local METRICS = {
 
 local tweenInfoCache = {}
 
+-- Theme bindings: every instance property painted with a theme color is
+-- remembered by theme key, so SetTheme can repaint the whole UI live.
+-- Held strongly: an Instance's Lua handle can be collected while the Instance
+-- still exists, which would silently drop it from a weak table. Destroyed
+-- objects are pruned instead, once they have been parentless for two sweeps.
 local themeBindings = {}
 local themeHooks = {}
 local themeLookup = {}
@@ -1222,7 +1195,7 @@ local function applyIcon(imageLabel, icon, fixedSize)
     imageLabel.Image = image
     imageLabel.ImageRectOffset = rectOffset or Vector2.zero
     imageLabel.ImageRectSize = rectSize or Vector2.zero
-    -- AlexanderPirat's full-color mark keeps its supplied gradient, not a theme tint.
+    -- CYBRION PREMIUM PIRATED's full-color mark keeps its supplied gradient, not a theme tint.
     local keepColours = custom and not tint
     imageLabel:SetAttribute("CustomIcon", keepColours or nil)
     if keepColours then
@@ -1372,7 +1345,7 @@ local function arrowIndicator(parent, anchorX, offsetX)
             AnchorPoint = Vector2.new(0.5, 0.5),
             Position = UDim2.fromScale(0.5, 0.5),
             Size = UDim2.fromOffset(18, 18),
-            Text = "âº",
+            Text = "›",
             TextSize = 22,
             TextXAlignment = Enum.TextXAlignment.Center,
             TextColor3 = Theme.Muted,
@@ -1476,7 +1449,7 @@ local function safeCall(callback, ...)
     end
     local ok, err = pcall(callback, ...)
     if not ok then
-        warn("[ALEXANDER PIRAT] callback error: " .. tostring(err))
+        warn("[CYBRION PREMIUM PIRATED] callback error: " .. tostring(err))
     end
 end
 
@@ -1767,7 +1740,7 @@ function Tab:Label(opts)
                 if ok and value ~= nil then
                     text_.Text = Library._rich(value)
                 elseif not ok then
-                    warn("[ALEXANDER PIRAT] label update error: " .. tostring(value))
+                    warn("[CYBRION PREMIUM PIRATED] label update error: " .. tostring(value))
                 end
                 task.wait(rate)
             end
@@ -3839,7 +3812,7 @@ function Tab:Stepper(opts)
         end)
         return button
     end
-    local minus = stepButton("â", 1)
+    local minus = stepButton("−", 1)
     local valueLabel = label({
         Size = UDim2.new(0, 30, 1, 0),
         TextSize = 13,
@@ -4255,12 +4228,12 @@ function Tab:OrderList(opts)
         local buttons = {}
         if arrows then
             local up, down
-            up, entry.UpIcon = iconButton(row, "chevron-up", "âº", -90, {
+            up, entry.UpIcon = iconButton(row, "chevron-up", "›", -90, {
                 AnchorPoint = Vector2.new(1, 0),
                 Position = UDim2.new(1, -(ARROW + 6), 0, 0),
                 Size = UDim2.new(0, ARROW, 1, 0),
             })
-            down, entry.DownIcon = iconButton(row, "chevron-down", "âº", 90, {
+            down, entry.DownIcon = iconButton(row, "chevron-down", "›", 90, {
                 AnchorPoint = Vector2.new(1, 0),
                 Position = UDim2.new(1, -4, 0, 0),
                 Size = UDim2.new(0, ARROW, 1, 0),
@@ -4807,13 +4780,13 @@ function Library.Window(_, opts)
         Minimized = false,
         _hideName = false,
         _hideAvatar = false,
-        Title = opts.Title or "Airflow",
+        Title = opts.Title or "CYBRION PREMIUM PIRATED",
         _logoIcon = opts.Icon or Assets.Logo,
         _sessionStart = os.clock(),
         _islandLocked = opts.IslandDraggable == false,
     }, Window)
     local saving = type(opts.ConfigurationSaving) == "table" and opts.ConfigurationSaving or {}
-    self.ConfigFolder = saving.FolderName or "AirflowUI"
+    self.ConfigFolder = saving.FolderName or "CybrionPremiumPiratedUI"
     self.ConfigName = saving.FileName
     self._configListeners = {}
     self._pendingFlags = {}
@@ -4851,7 +4824,7 @@ function Library.Window(_, opts)
     table.insert(self._connections, UserInputService.InputEnded:Connect(dispatch("Ended")))
 
     local gui = create("ScreenGui", {
-        Name = opts.Name or "AirflowUI",
+        Name = opts.Name or "CybrionPremiumPiratedUI",
         IgnoreGuiInset = true,
         ResetOnSpawn = false,
         DisplayOrder = 999,
@@ -4976,7 +4949,7 @@ function Library.Window(_, opts)
         ScaleType = Enum.ScaleType.Fit,
         Parent = header,
     })
-	applyIcon(logo, "zap")
+    applyIcon(logo, opts.Icon or Assets.Logo, true)
     local subtitle = opts.Version or opts.Subtitle
     label({
         Position = UDim2.new(0, 56, 0.5, subtitle and -15 or -9),
@@ -6143,7 +6116,7 @@ function Window:_showLoader(opts)
     local titleLabel = label({
         Position = UDim2.fromOffset(TEXT_X, PAD - 2),
         Size = UDim2.new(1, -(TEXT_X + 70), 0, 18),
-        Text = opts.LoadingTitle or opts.Title or "Airflow",
+        Text = opts.LoadingTitle or opts.Title or "CYBRION PREMIUM PIRATED",
         TextSize = 15,
         FontFace = Fonts.Bold,
         Parent = content,
@@ -6848,7 +6821,7 @@ function Window:_createOpenButton(opts)
         Position = UDim2.fromOffset(28, 0),
         Size = UDim2.new(0, 0, 1, 0),
         AutomaticSize = Enum.AutomaticSize.X,
-        Text = opts.Title or "Airflow",
+        Text = opts.Title or "CYBRION PREMIUM PIRATED",
         TextSize = 13,
         TextTruncate = Enum.TextTruncate.None,
         ZIndex = 31,
@@ -7230,7 +7203,7 @@ end
 -- Colours are {"Hex":"ff5a5a"}, keybinds are key names, an empty dropdown has no Value.
 
 local CONFIG_VERSION = 1
-local LEGACY_SHARE_PREFIX = "airflow:"
+local LEGACY_SHARE_PREFIX = "CybrionPremiumPirated:"
 
 local function configPath(self, name)
     return self.ConfigFolder .. "/" .. name .. ".json"
@@ -7418,7 +7391,7 @@ for index = 1, #B64 do
     B64_INDEX[B64:byte(index)] = index - 1
 end
 
--- Only for reading the old "airflow:<base64>" share codes.
+-- Only for reading the old "CybrionPremiumPirated:<base64>" share codes.
 local function base64Decode(text)
     if #text % 4 ~= 0 then
         return nil
@@ -7447,7 +7420,7 @@ local function base64Decode(text)
 end
 
 -- Reads a config file or a pasted code: the JSON above (Config as a string or
--- a table), a bare flag table, or an old "airflow:" code. Returns flags, info.
+-- a table), a bare flag table, or an old "CybrionPremiumPirated:" code. Returns flags, info.
 local function decodeConfig(text)
     text = tostring(text or ""):match("^%s*(.-)%s*$")
     if text:sub(1, #LEGACY_SHARE_PREFIX) == LEGACY_SHARE_PREFIX then
@@ -8986,7 +8959,7 @@ function Tab:Groupbox(opts, icon)
         local slotLabel = label({
             Size = UDim2.new(1, -24, 0, 40),
             Position = UDim2.fromOffset(12, 0),
-            Text = Library._rich(group.Name) .. '<font transparency="0.4">  Â·  popped out, click to dock</font>',
+            Text = Library._rich(group.Name) .. '<font transparency="0.4">  ·  popped out, click to dock</font>',
             TextSize = 12,
             FontFace = Fonts.Regular,
             TextColor3 = Theme.Muted,
@@ -10580,7 +10553,7 @@ function Tab:Status(opts)
                     end
                     render(true)
                 else
-                    warn("[ALEXANDER PIRAT] status update error: " .. tostring(value))
+                    warn("[CYBRION PREMIUM PIRATED] status update error: " .. tostring(value))
                 end
                 task.wait(rate)
             end
@@ -10936,7 +10909,7 @@ function Tab:StatusList(opts)
                             handle:Set(result)
                         end
                     else
-                        warn("[ALEXANDER PIRAT] status list update error: " .. tostring(result))
+                        warn("[CYBRION PREMIUM PIRATED] status list update error: " .. tostring(result))
                     end
                 end
                 task.wait(rate)
@@ -11111,7 +11084,7 @@ function Tab:Image(opts)
             return false, "replaced by a newer image"
         end
         if not asset then
-            warn("[ALEXANDER PIRAT] image: " .. tostring(err))
+            warn("[CYBRION PREMIUM PIRATED] image: " .. tostring(err))
             return false, err
         end
         image.ImageTransparency = 1
@@ -12497,7 +12470,7 @@ function Window:_searchResults(query)
             local path = tab.Name
             if sub then
                 consider(sub.Name, { Kind = "Page", Tab = tab, Sub = sub, Path = tab.Name })
-                path = tab.Name .. "  âº  " .. sub.Name
+                path = tab.Name .. "  ›  " .. sub.Name
             end
             if not page._noSearch then
                 for _, element in ipairs(page._items or {}) do
@@ -12508,7 +12481,7 @@ function Window:_searchResults(query)
                 for _, group in ipairs(page._groupboxes or {}) do
                     if group._userVisible ~= false then
                         consider(group.Name, { Kind = "Groupbox", Tab = tab, Sub = sub, Target = group, Path = path })
-                        local groupPath = path .. "  âº  " .. group.Name
+                        local groupPath = path .. "  ›  " .. group.Name
                         for _, element in ipairs(group._items) do
                             if shown(element) then
                                 consider(element._searchName, { Kind = element._type, Tab = tab, Sub = sub, Target = element, Group = group, Path = groupPath })
@@ -13262,7 +13235,7 @@ function Window:_buildProfile(sidebar)
     local gameLabel = label({
         Position = UDim2.new(0, 48, 0.5, 1),
         Size = UDim2.new(1, -74, 0, 13),
-        Text = "â¦",
+        Text = "…",
         TextSize = 11,
         FontFace = Fonts.Regular,
         TextColor3 = Theme.Muted,
@@ -13608,7 +13581,7 @@ function Window:_homeGraph(parent, order, icon, title, ceiling)
     local value = label({
         Position = UDim2.fromOffset(0, 16),
         Size = UDim2.new(1, 0, 0, 28),
-        Text = "â¦",
+        Text = "…",
         TextSize = 24,
         FontFace = Fonts.Bold,
         RichText = true,
@@ -13673,7 +13646,7 @@ function Window:_homeFigure(parent, order, title)
     })
     local value = label({
         Size = UDim2.new(1, -8, 0, 20),
-        Text = "â¦",
+        Text = "…",
         TextSize = 15,
         FontFace = Fonts.Bold,
         RichText = true,
@@ -13810,7 +13783,7 @@ function Window:_homeGame(parent, order)
 
     label({
         Size = UDim2.new(1, 0, 0, 26),
-        Text = "Job " .. shortId(game.JobId) .. "  Â·  Place " .. tostring(game.PlaceId),
+        Text = "Job " .. shortId(game.JobId) .. "  ·  Place " .. tostring(game.PlaceId),
         TextSize = 11,
         FontFace = Fonts.Regular,
         TextColor3 = Theme.Muted,
@@ -13822,7 +13795,7 @@ function Window:_homeGame(parent, order)
     -- The detail line keeps the player count live.
     return function()
         local count = #Players:GetPlayers() .. "/" .. Players.MaxPlayers .. " players"
-        detail.Text = owner and ("by " .. owner .. "  Â·  " .. count) or count
+        detail.Text = owner and ("by " .. owner .. "  ·  " .. count) or count
     end
 end
 
@@ -13902,11 +13875,11 @@ end
 -- the feature list is off. Returns the card (or nil) and the feature refresh.
 function Window:_homeLinks(parent, opts, order)
     local links = {}
-    if opts.Discord then
+    if opts.Telegram then
         table.insert(links, {
-            Icon = opts.DiscordIcon or "message-circle",
-            Title = opts.DiscordTitle or "Community",
-            Text = opts.Discord,
+            Icon = opts.TelegramIcon or "message-circle",
+            Title = opts.TelegramTitle or "Community",
+            Text = opts.Telegram,
         })
     end
     if opts.Website then
@@ -14123,7 +14096,7 @@ function Window:_featureGroups()
                     for _, box in ipairs(page._groupboxes or {}) do
                         if box._userVisible ~= false and not box._manager then
                             for _, element in ipairs(box._items) do
-                                addElement(element, box, sub and (sub.Name .. "  âº  " .. box.Name) or box.Name)
+                                addElement(element, box, sub and (sub.Name .. "  ›  " .. box.Name) or box.Name)
                             end
                         end
                     end
@@ -14272,7 +14245,7 @@ function Window:ShowFeatures()
     applyIcon(closeIcon, "x")
     if closeIcon.Image == "" then
         closeIcon:Destroy()
-        label({ Size = UDim2.fromScale(1, 1), Text = "Ã", TextSize = 20, TextColor3 = Theme.Muted, TextXAlignment = Enum.TextXAlignment.Center, Parent = closeButton })
+        label({ Size = UDim2.fromScale(1, 1), Text = "×", TextSize = 20, TextColor3 = Theme.Muted, TextXAlignment = Enum.TextXAlignment.Center, Parent = closeButton })
     end
     closeButton.MouseEnter:Connect(function()
         tween(closeButton, { BackgroundTransparency = 0.5 }, 0.12)
@@ -14644,7 +14617,7 @@ function Window:_homeStats(list, opts, order, tab)
     end
     if values.Execs then
         local executions = bumpExecutions(opts.StatsFolder or self.ConfigFolder)
-        values.Execs.Text = executions and tostring(executions) or "â"
+        values.Execs.Text = executions and tostring(executions) or "—"
     end
     if values.Friends then
         local friends = {}
@@ -14722,7 +14695,7 @@ function Window:_homeStats(list, opts, order, tab)
             local ok, memory = pcall(function()
                 return StatsService:GetTotalMemoryUsageMb()
             end)
-            values.Memory.Text = ok and string.format("%d MB", memory) or "â"
+            values.Memory.Text = ok and string.format("%d MB", memory) or "—"
             tint(values.Memory, ok and Library._healthColor(memory, 1500, 3000, true) or Theme.Text)
         end
     end, function()
@@ -14796,7 +14769,7 @@ local function homePage(sub, page)
             end
             local body = entry.Content or entry.Body
             if type(entry.Changes) == "table" then
-                body = "â¢ " .. table.concat(entry.Changes, "\nâ¢ ")
+                body = "• " .. table.concat(entry.Changes, "\n• ")
             end
             if body then
                 label({
@@ -15091,7 +15064,7 @@ function Window:CloudConfigs(opts)
     local pageSize = math.max(math.floor(tonumber(opts.PageSize) or 20), 1)
     local tagList = type(opts.Tags) == "table" and opts.Tags or {}
     local maxTags = math.max(math.floor(tonumber(opts.MaxTags) or 3), 0)
-    local anonName = tostring(opts.StreamerName or "AlexanderPirat User")
+    local anonName = tostring(opts.StreamerName or "CYBRION PREMIUM PIRATED User")
 
     local cloud = { Tab = tab }
     local records, byId = {}, {}
@@ -15967,7 +15940,7 @@ function Window:CloudConfigs(opts)
         if record.Count then
             table.insert(meta, record.Count .. (record.Count == 1 and " setting" or " settings"))
         end
-        card.Meta.Text = table.concat(meta, "  Â·  ")
+        card.Meta.Text = table.concat(meta, "  ·  ")
         card.Desc.Text = record.Description ~= "" and highlight(record.Description) or "No description"
         card.Desc.TextTransparency = record.Description ~= "" and 0.2 or 0.55
         card.Likes.Text = compact(record.Likes)
@@ -16034,7 +16007,7 @@ function Window:CloudConfigs(opts)
         cornerLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
         card.Star = label({
             Size = UDim2.fromOffset(14, 18),
-            Text = "â",
+            Text = "★",
             TextSize = 13,
             TextColor3 = Theme.Accent,
             TextXAlignment = Enum.TextXAlignment.Center,
@@ -16252,7 +16225,7 @@ function Window:CloudConfigs(opts)
                     page -= 1
                 end
                 if not ok then
-                    warn("[ALEXANDER PIRAT] cloud OnFetch error: " .. tostring(list))
+                    warn("[CYBRION PREMIUM PIRATED] cloud OnFetch error: " .. tostring(list))
                 end
                 hasMore = more and hasMore or false
                 moreButton.Visible = false
@@ -16665,8 +16638,8 @@ function Window:CloudConfigs(opts)
         if otherScript(record) then
             table.insert(meta, "made for " .. record.Folder)
         end
-        detail.Meta.Text = table.concat(meta, "  Â·  ")
-        detail.Stats.Text = ("%s like%s  Â·  %s install%s"):format(
+        detail.Meta.Text = table.concat(meta, "  ·  ")
+        detail.Stats.Text = ("%s like%s  ·  %s install%s"):format(
             compact(record.Likes), record.Likes == 1 and "" or "s",
             compact(record.Installs), record.Installs == 1 and "" or "s")
         if detail.BuiltFor ~= record or detail.BuiltMine ~= record.Mine then
@@ -16725,7 +16698,7 @@ function Window:CloudConfigs(opts)
         local state = installState(record)
         detail.InstallLabel.Text = state == "Update" and "Update" or (state == "Installed" and "Reinstall" or "Install")
         if detail.LikeLabel then
-            detail.LikeLabel.Text = (record.Liked and "Liked" or "Like") .. "  Â·  " .. compact(record.Likes)
+            detail.LikeLabel.Text = (record.Liked and "Liked" or "Like") .. "  ·  " .. compact(record.Likes)
         end
         detail.FavoriteLabel.Text = favorites[record.Id] and "Favorited" or "Favorite"
     end
@@ -17126,7 +17099,7 @@ function Window:CloudConfigs(opts)
             submitText.Text = editing and "Save changes" or "Publish"
             if not ok or result == false then
                 if not ok then
-                    warn("[ALEXANDER PIRAT] cloud publish error: " .. tostring(result))
+                    warn("[CYBRION PREMIUM PIRATED] cloud publish error: " .. tostring(result))
                 end
                 showError(ok and reason and tostring(reason) or "Something went wrong, try again")
                 return
@@ -17671,7 +17644,7 @@ function Window:_overflowHint(host, scroller, items, vertical, fadeColor)
             arrow:Destroy()
             arrow = label({
                 Size = UDim2.fromOffset(10, 20),
-                Text = "âº",
+                Text = "›",
                 TextSize = 16,
                 TextColor3 = Theme.Accent,
                 TextTransparency = 1,
@@ -17978,7 +17951,7 @@ local WEATHER = {
         Count = 38,
         Glow = Color3.fromRGB(30, 200, 90),
         GlowAmount = 0.07,
-        Glyphs = "01234567890123456789ã¢ã¤ã¦ã¨ãªã«ã­ã¯ã±ã³ãµã·ã¹ã»ã½ã¿ããããããããããããããããã ã¡ã¢ã¤ã¦ã¨ã©ãªã«ã¬ã­ã¯ã³+-*=<>:",
+        Glyphs = "01234567890123456789アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン+-*=<>:",
     },
 }
 local WEATHER_NAMES = {
@@ -19550,7 +19523,7 @@ function Window:_buildMiniBar()
             shownNames[index] = Library._rich(names[index])
         end
         local extra = #names - #shownNames
-        runningNames.Text = '<font color="#8A8A93">Running </font>' .. table.concat(shownNames, '<font color="#8A8A93"> Â· </font>')
+        runningNames.Text = '<font color="#8A8A93">Running </font>' .. table.concat(shownNames, '<font color="#8A8A93"> · </font>')
             .. (extra > 0 and string.format('<font color="#8A8A93">  +%d</font>', extra) or "")
         runningNames.Visible = #names > 0
         pinnedLead = nil
@@ -19983,7 +19956,7 @@ function Window:Notify(opts)
         Position = UDim2.new(1, 6, 0, -5),
         Size = UDim2.fromOffset(24, 24),
         BackgroundTransparency = 1,
-        Text = "Ã",
+        Text = "×",
         TextColor3 = Theme.Muted,
         TextSize = 22,
         FontFace = Fonts.Bold,
@@ -20138,7 +20111,7 @@ function Window:Destroy()
         end
     end)
     if not ok then
-        warn("[ALEXANDER PIRAT] unload animation failed, removing the window directly: " .. tostring(err))
+        warn("[CYBRION PREMIUM PIRATED] unload animation failed, removing the window directly: " .. tostring(err))
         remove()
         return
     end
@@ -20261,49 +20234,42 @@ end
 
 return Library
 end)()
+-- END EMBEDDED LIBRARY
 
-_G.KeyValidated = true
-getgenv().KeyValidated = true
-
-if Library then
-    Library.InitKeySystem = function() return true end
-    Library.CreateKeySystem = function() return true end
-    Library.KeySystem = function() return true end
-end
-local Window = Library:CreateWindow({
-    Name = "AlexanderPirat",
-    DefaultTheme = "AlexanderPirat",
-    Version = "TSB",
-    Icon = Library.Assets.Logo,
-    LoadingTitle = "AlexanderPirat",
-    LoadingSubtitle = "TSB",
-    LoadingDuration = 1.2,
-    Size = UDim2.fromOffset(780, 540),
-    ToggleUIKeybind = "RightControl",
-    ToggleButton = {
-        Platform = "Both",
-        Icon = "zap",
-    },
-    Home = false,
-    Backdrop = {
-        Enabled = true,
-        Weather = "Matrix",
-        Mode = "Screen",
-        Dim = true,
-        Tint = 0.5,
-        Density = 1,
-        Speed = 0.85,
-    },
-    UnsupportedExecutor = false,
-    SaveSize = false,
-    ConfigurationSaving = {
-        Enabled = false,
-        FolderName = "AlexanderPiratHub/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
-    },
-})
+    local Window = Library:CreateWindow({
+        Name = "CYBRION PREMIUM PIRATED",
+        DefaultTheme = "CYBRION PREMIUM PIRATED",
+        Version = "TSB",
+        Icon = Library.Assets.Logo,
+        LoadingTitle = "CYBRION PREMIUM PIRATED",
+        LoadingSubtitle = "TSB",
+        LoadingDuration = 1.2,
+        Size = UDim2.fromOffset(780, 540),
+        ToggleUIKeybind = "RightControl",
+        ToggleButton = {
+            Platform = "Both",
+            Icon = Library.Assets.Logo,
+        },
+        Home = false,
+        Backdrop = {
+            Enabled = true,
+            Weather = "Matrix",
+            Mode = "Screen",
+            Dim = true,
+            Tint = 0.5,
+            Density = 1,
+            Speed = 0.85,
+        },
+        UnsupportedExecutor = false,
+        SaveSize = false,
+        ConfigurationSaving = {
+            Enabled = false,
+            FolderName = "CybrionPremiumPirated/PublicFarm/" .. game:GetService("Players").LocalPlayer.Name .. "/UI",
+        },
+    })
 
     -- A previously saved library theme must not replace the requested startup palette.
-    Library:SetTheme("AlexanderPirat", true)
+    Library:SetTheme("CYBRION PREMIUM PIRATED", true)
 
     local Farm = Window:CreateTab({ Name = "Farm", Icon = "zap" })
     local Controls = Farm:AddLeftGroupbox({ Name = "Farming", Icon = "repeat" })
@@ -20518,25 +20484,25 @@ local Window = Library:CreateWindow({
     })
     Settings:CreateParagraph({
         Title = "Credits",
-        Content = "AlexanderPirat interface | Original credit: @ltzhex | idea by: @theomens_",
+        Content = "CYBRION PREMIUM PIRATED interface | Original credit: @ltzhex | idea by: @theomens_",
     })
 
-    local Discord = Window:CreateTab({ Name = "Telegram", Icon = "message-circle" })
-    Discord:CreateParagraph({
-        Title = "Некий Александр Пират",
-        Content = "Join the AlexanderPirat Discord for updates and support.\n" .. ALEXANDER_PIRAT_LINK,
+    local Telegram = Window:CreateTab({ Name = "Telegram", Icon = "message-circle" })
+    Telegram:CreateParagraph({
+        Title = "CYBRION PREMIUM PIRATED community",
+        Content = "Join the CYBRION PREMIUM PIRATED Telegram for updates and support.\n" .. HUB_CONTACT,
     })
-    Discord:CreateButton({
-        Name = "Скопировать ссылку",
+    Telegram:CreateButton({
+        Name = "Copy Telegram invite",
         Icon = "copy",
         Style = "Primary",
         Callback = function()
-            Window:CopyToClipboard(ALEXANDER_PIRAT_LINK, "AlexanderPirat Discord invite")
+            Window:CopyToClipboard(HUB_CONTACT, "CYBRION PREMIUM PIRATED Telegram invite")
         end,
     })
-    Discord:CreateParagraph({
-        Title = "Как зайти",
-        Content = "Скопируй ссылку и открой в браузере или Телеграме.",
+    Telegram:CreateParagraph({
+        Title = "How to join",
+        Content = "Copy the invite, then paste it into your browser or Telegram to join the community.",
     })
 end
 
@@ -20642,7 +20608,7 @@ do
 		local tbl4 = {
 			embeds = {
 				{
-					title = "Некий Александр Пират",
+					title = "CYBRION PREMIUM PIRATED Public Farm",
 					color = 0x2DEB84,
 					description = string.format([[**User:** ||%s||
 **Kills farmed:** %s
@@ -20754,7 +20720,7 @@ do
 		folder.Name = "MovingExclusion"
 
 		pcall(function()
-			folder:SetAttribute("AlexanderPiratOwned", true)
+			folder:SetAttribute("ZKAYOwned", true)
 		end)
 
 		folder.Parent = parent
@@ -22263,7 +22229,7 @@ do
 		character:GetAttributeChangedSignal("Ulted"):Connect(function()
 			if localPlayer.Character:GetAttribute("Ulted") then
 				n8 += 1
-				print("[Некий Александр Пират] Ulted detected, time ulted: " .. tostring(n8))
+				print("[CYBRION PREMIUM PIRATED] Ulted detected, time ulted: " .. tostring(n8))
 			end
 		end)
 	end)
@@ -22274,7 +22240,7 @@ do
 		localPlayer.Character:GetAttributeChangedSignal("Ulted"):Connect(function()
 			if localPlayer.Character:GetAttribute("Ulted") then
 				n8 += 1
-				print("[Некий Александр Пират] Ulted detected, time ulted: " .. tostring(n8))
+				print("[CYBRION PREMIUM PIRATED] Ulted detected, time ulted: " .. tostring(n8))
 			end
 		end)
 	end
@@ -22378,12 +22344,12 @@ getgenv().renderEnabled=%s
 		end
 
 		if flag11 then
-			localPlayer:Kick("[Некий Александр Пират] Kicked by force-hop system.")
+			localPlayer:Kick("[CYBRION PREMIUM PIRATED] Kicked by force-hop system.")
 		end
 
 		task.spawn(function()
 			while true do
-				print("[Некий Александр Пират] Hopping ...")
+				print("[CYBRION PREMIUM PIRATED] Hopping ...")
 
 				if not flag11 then
 					response = game:GetService("ReplicatedStorage"):WaitForChild("Ranked"):WaitForChild("GetServerBrowserData"):InvokeServer(unpack(tbl4))
@@ -22415,7 +22381,7 @@ getgenv().renderEnabled=%s
 	end
 
 	uiActions.HopServer = function()
-		print("[Некий Александр Пират] Hop server manually...")
+		print("[CYBRION PREMIUM PIRATED] Hop server manually...")
 		flag10 = true
 		doHopServer()
 	end
@@ -22648,7 +22614,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			print("[Некий Александр Пират] Received hop server command for: " .. name)
+			print("[CYBRION PREMIUM PIRATED] Received hop server command for: " .. name)
 			flag10 = true
 			doHopServer()
 		end
@@ -22665,7 +22631,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			warn("[Некий Александр Пират] Ignored duplicate session kick")
+			warn("[CYBRION PREMIUM PIRATED] Ignored duplicate session kick")
 		end
 
 		if result.command == "kill_session" then
@@ -22680,7 +22646,7 @@ getgenv().renderEnabled=%s
 				getgenv().PBF_WS = nil
 			end
 
-			warn("[Некий Александр Пират] Ignored admin kick")
+			warn("[CYBRION PREMIUM PIRATED] Ignored admin kick")
 		end
 	end
 
@@ -22693,12 +22659,12 @@ getgenv().renderEnabled=%s
 			return false, tostring(result)
 		end
 		flag = true
-		print("[Некий Александр Пират] Server connected")
+		print("[CYBRION PREMIUM PIRATED] Server connected")
 		getgenv().PBF_WS.OnMessage:Connect(fn11)
 
 		getgenv().PBF_WS.OnClose:Connect(function()
 			flag = false
-			print("[Некий Александр Пират] Server closed")
+			print("[CYBRION PREMIUM PIRATED] Server closed")
 		end)
 
 		return true
@@ -22710,7 +22676,7 @@ getgenv().renderEnabled=%s
 
 		while not flag12 do
 			n11 += 1
-			print("[Некий Александр Пират] Connecting... (attempt " .. n11 .. ")")
+			print("[CYBRION PREMIUM PIRATED] Connecting... (attempt " .. n11 .. ")")
 			local flag13, flag14
 
 			if fn12() then
@@ -22719,28 +22685,28 @@ getgenv().renderEnabled=%s
 				end
 
 				if not flag12 then
-					print("[Некий Александр Пират] Disconnected, reconnecting in " .. n10 .. "s...")
+					print("[CYBRION PREMIUM PIRATED] Disconnected, reconnecting in " .. n10 .. "s...")
 					task.wait(2)
 					n12 = 2
 					flag13 = n11 >= n9
 					flag14 = flag13 and not flag
 
 					if flag14 then
-						warn("[Некий Александр Пират] Max retries reached, giving up")
+						warn("[CYBRION PREMIUM PIRATED] Max retries reached, giving up")
 						break
 					else
 						continue
 					end
 				end
 			else
-				warn("[Некий Александр Пират] Connect failed (attempt " .. n11 .. "), retrying in " .. n12 .. "s...")
+				warn("[CYBRION PREMIUM PIRATED] Connect failed (attempt " .. n11 .. "), retrying in " .. n12 .. "s...")
 				task.wait(n12)
 				n12 = math.min(n12 * 2, 30)
 				flag13 = n11 >= n9
 				flag14 = flag13 and not flag
 
 				if flag14 then
-					warn("[Некий Александр Пират] Max retries reached, giving up")
+					warn("[CYBRION PREMIUM PIRATED] Max retries reached, giving up")
 					break
 				else
 					continue
@@ -22807,7 +22773,7 @@ getgenv().renderEnabled=%s
 		local flag13 = false
 
 		for k, v3 in pairs(arg) do
-			print("[AlexanderPiratClanScan] Clan detected: [" .. k .. "] â " .. #v3 .. " members")
+			print("[ZKClanScan] Clan detected: [" .. k .. "] — " .. #v3 .. " members")
 
 			for _, v4 in ipairs(v3) do
 				print("  - " .. v4.player.Name .. " (" .. v4.player.DisplayName .. ") matched via " .. v4.source .. ": " .. v4.original)
@@ -22817,22 +22783,22 @@ getgenv().renderEnabled=%s
 		end
 
 		if not flag13 then
-			print("[AlexanderPiratClanScan] No clans detected")
+			print("[ZKClanScan] No clans detected")
 		else
-			print("[AlexanderPiratClanScan] Clans detected, hop server...")
+			print("[ZKClanScan] Clans detected, hop server...")
 			flag10 = true
 			doHopServer()
 		end
 	end
 
 	task.spawn(function()
-		print("[AlexanderPiratClanScan] Scanning server...")
+		print("[ZKClanScan] Scanning server...")
 		local v3 = fn13()
 		fn14(v3)
 
 		Players2.PlayerAdded:Connect(function()
 			task.wait(1)
-			print("[AlexanderPiratClanScan] New player joined, rescanning...")
+			print("[ZKClanScan] New player joined, rescanning...")
 			local v4 = fn13()
 			fn14(v4)
 		end)
@@ -24998,7 +24964,7 @@ do
 			end
 
 			if not flag4 then
-				print("[Некий Александр Пират] Targeting: " .. v2.Name)
+				print("[CYBRION PREMIUM PIRATED] Targeting: " .. v2.Name)
 				flag4 = true
 				humanoid2.AutoRotate = false
 			end
